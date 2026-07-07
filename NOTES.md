@@ -117,6 +117,25 @@ Does a NONSOLVABLE number field ramified only at 2 exist? (thesis's ultimate tar
 - PARI nflist installed (nflistdata 3.5MB -> scratchpad/data; set pari.default('datadir')).
   Supports A5 among nonsolvable groups; used as cross-check.
 
+REALIZABILITY FILTER (torsion_module.sage `nongalois_realizability_scan`, CLI 'ngr'):
+Combines the centralizer screen with option-2's nonexistence results. The mod-2 image
+is confined to the centralizer of Aut(X); its nonsolvable Wedderburn blocks are simple
+groups PSL_a(q). A candidate can yield the prize only if some PSL_a(q) is REALIZABLE
+ramified only at 2. Realizability oracle: PSL_2(16) YES (Dembele); min-deg<=32 NO
+(LMFDB complete, 0 nonsolvable fields ram-only-2); min-deg>32 UNKNOWN.
+RESULT (orders 16,32): ALL 126 non-Galois genus-2,3 candidates DEAD.
+  - genus 2: blocks PSL_4(2)=A8 (deg8), PSL_5(2) (deg31) -- unrealizable.
+  - genus 3: block PSL_3(2)=PSL_2(7) (deg7) -- unrealizable.
+  0 FRONTIER/OPEN. So no 2-group Belyi map with Galois closure order<=32 gives a
+  nonsolvable field ram only at 2. (Galois case: solvable through order 64 already.)
+FRONTIER: the only realizable nonsolvable group PSL_2(16) has smallest F_2-symplectic
+rep of dim 8 => needs an M_2(F_16) centralizer block => GENUS >= 4. This is a
+COMPUTATIONAL, conditional "need genus >= 4" (conditional on PSL_2(16) being the
+smallest simple group realizable ram-only-2 = current knowledge). Caveat: genus-3
+candidates with TRIVIAL Aut(X) would give unconstrained image in Sp_6(2); Sp_6(2)/
+U_3(3) (deg 28) realizability ram-only-2 is UNKNOWN -- genuinely open. (ngr flags
+these as OPEN/UNKNOWN if they exist; order-64 scan checks.)
+
 BIG PICTURE / where the prize could still be:
 - Galois 2-group Belyi maps: J[2] field provably solvable (deg<=64). Dead.
 - Non-Galois, genus 2: no nonsolvable J[2] (LMFDB g2c, all 2-power-cond curves). Dead.
