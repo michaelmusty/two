@@ -1,0 +1,69 @@
+# Non-Galois 2-group Belyi maps: landscape census.
+#
+# A degree-d Belyi map with monodromy group G (a 2-group) and NON-normal point
+# stabilizer H is non-Galois.  Its Galois closure is the regular G-cover X~; X = X~/H.
+# We need core_G(H)=1 (faithful monodromy = G) and H != 1 (H=1 is the Galois case).
+# Genus of X from the coset action of the triple (s0,s1,sinf=（s0 s1)^-1) on G/H:
+#   2 g_X - 2 = -2 d + sum_i ( d - #cycles(sigma_i on G/H) ),   d = [G:H].
+# Aut(X) = N_G(H)/H.  Small |Aut(X)| => weak obstruction => candidate for nonsolvable
+# Q(J[2]); large |Aut(X)| => strong constraint.
+import sys
+from collections import defaultdict
+
+F = libgap.FreeGroup(2); fg = libgap.GeneratorsOfGroup(F)
+
+def ncycles(perm, d):
+    # number of cycles (incl. fixed points) of a GAP permutation on [1..d]
+    return int(libgap.Length(libgap.Cycles(perm, libgap.eval(f"[1..{d}]"))))
+
+def census(degrees):
+    rows = []
+    for order in degrees:
+        n = int(libgap.NrSmallGroups(order))
+        for i in range(1, n + 1):
+            G = libgap.SmallGroup(order, i)
+            if bool(libgap.IsAbelian(G)):
+                continue                     # abelian: all subgroups normal => Galois only
+            struct = str(libgap.StructureDescription(G))
+            # core-free, nontrivial subgroup classes (=> non-Galois, faithful)
+            ccs = libgap.ConjugacyClassesSubgroups(G)
+            Hreps = []
+            for k in range(int(libgap.Length(ccs))):
+                H = libgap.Representative(ccs[k])
+                oH = int(libgap.Order(H))
+                if oH == 1 or oH == order:
+                    continue
+                if int(libgap.Order(libgap.Core(G, H))) != 1:
+                    continue                 # need faithful monodromy = G
+                Hreps.append(H)
+            if not Hreps:
+                continue
+            quos = libgap.GQuotients(F, G)
+            for H in Hreps:
+                d = order // int(libgap.Order(H))
+                autX = int(libgap.Order(libgap.Normalizer(G, H))) // int(libgap.Order(H))
+                act = libgap.FactorCosetAction(G, H)     # G -> Sym(G/H)
+                best = None
+                for h in quos:
+                    s0 = libgap.Image(act, libgap.Image(h, fg[0]))
+                    s1 = libgap.Image(act, libgap.Image(h, fg[1]))
+                    sinf = (s0 * s1)**(-1)
+                    c = ncycles(s0, d) + ncycles(s1, d) + ncycles(sinf, d)
+                    g2 = -2*d + (3*d - c)
+                    assert g2 % 2 == 0
+                    g = 1 + g2 // 2
+                    if best is None or g < best:
+                        best = g
+                if best is not None:
+                    rows.append((best, d, order, i, struct, autX))
+    rows.sort()
+    print("genus  deg  |G|   G                         |Aut(X)=N/H|")
+    for g, d, order, i, struct, autX in rows:
+        print(f"  {g:<4} {d:<4} {order:<5} [{order},{i}] {struct:<20} {autX}")
+    print(f"\n{len(rows)} non-Galois (curve,triple-min-genus) records; "
+          f"{sum(1 for r in rows if r[0] in (2,3))} with genus in {{2,3}}")
+    return rows
+
+if __name__ == "__main__":
+    args = [int(x) for x in sys.argv[1:]] or [8, 16, 32]
+    census(args)

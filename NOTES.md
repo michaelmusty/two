@@ -65,8 +65,26 @@ RESULT (Galois case, 2-torsion):
   e.g. Roberts's deg-2^20 triple, thesis 6.2.2), or (b) higher 2-power torsion J[2^n]
   / ell-torsion, or (c) the moduli/refined-passport field rather than J[2].
 
-TODO next: J[4] (mod-4 image in GSp_4(Z/4)); non-Galois covers (subgroup H<G, act on
-coset space) — the module method extends by using the H-cover instead of regular rep.
+NON-GALOIS extension (torsion_module.sage `analyze_nongalois`, `nongalois_scan`):
+X = X~/H for core-free H<G; H^1(X,F_2)=H^1(X~,F_2)^H with Aut(X)=N_G(H)/H acting.
+Rigorous screen (same logic; Gal(M/Q) solvable by thesis Thm 1.2.4):
+centralizer of Aut(X) solvable => Q(J[2]) solvable; nonsolvable => CANDIDATE.
+nongalois_census.sage maps genus/Aut(X); smallest genus-2 non-Galois maps appear at
+deg 16 (Galois closure order 32).
+
+RESULT (orders 16,32): 126 non-Galois genus>=2 records; 108 SOLVABLE (ruled out),
+18 CANDIDATES. Distinct candidate families:
+  * d=8  genus2  G=[32,6],[32,7]  |Aut(X)|=2  centralizer >= GL_5(F_2)   <- SMALLEST
+  * d=16 genus2  G=[32,19]=QD32   |Aut(X)|=2  centralizer >= GL_4(F_2)
+  * d=16 genus3  G=[32,6],[32,7]  |Aut(X)|=4  centralizer has GL_3(F_2) block
+Insight: genus-2 candidates have |Aut(X)|=2 = the HYPERELLIPTIC INVOLUTION, which
+acts as -1 = trivial on J[2]; hence NO 2-torsion obstruction -- image unconstrained
+in Sp_4(F_2)=S_6. Whether Q(J[2]) is actually nonsolvable is now PURELY ARITHMETIC:
+compute the genus-2 sextic and its Galois group (subgroup of S_6; nonsolvable iff
+>= A_5). => need equations (M3), or the Frobenius fingerprint over F_p (M3 over F_p).
+
+TODO next: M3 over F_p -> build the d=8 genus-2 candidate curve over several primes,
+factor the sextic, Frobenius-fingerprint Gal(Q(J[2])) <= S_6.
 
 ## Setup
     set -a; source .env; set +a          # load keys

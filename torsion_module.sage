@@ -99,11 +99,9 @@ def analyze(G, s0, s1, verbose=True):
         x = Mbasis.solve_left(V(v))
         return vector(F2, list(x)[:twog])
 
-    # left G-action matrices on H_1
-    gens = list(libgap.GeneratorsOfGroup(G))
-    Ms = []
-    for h in list(gens):
-        Lp = left_perm(elts, idx, h)
+    # matrix of the left action of an arbitrary group element g on H_1(X~,F_2)
+    def matfn(g):
+        Lp = left_perm(elts, idx, g)
         cols = []
         for zb in basisH:             # zb is a V-vector (a cycle in Zs)
             y = [0]*(2*d)
@@ -111,9 +109,45 @@ def analyze(G, s0, s1, verbose=True):
                 if zb[g_]:   y[Lp[g_]] += 1     # e0_g -> e0_{h g}
                 if zb[d+g_]: y[d+Lp[g_]] += 1   # e1_g -> e1_{h g}
             cols.append(proj(V(y)))
-        M = Matrix(F2, cols).transpose()        # columns = images of basis
-        Ms.append(M)
-    return genus, twog, Ms
+        return Matrix(F2, cols).transpose()     # columns = images of basis
+
+    gens = list(libgap.GeneratorsOfGroup(G))
+    Ms = [matfn(h) for h in gens]
+    return genus, twog, Ms, matfn
+
+def restrict_to_invariants(matfn, twog, Hgens):
+    """M^H = common fixed space of H on H^1(X~,F_2); return (basis matrix, dim)."""
+    I = identity_matrix(F2, twog)
+    stack = []
+    for h in Hgens:
+        stack.append(matfn(h) - I)
+    if stack:
+        Big = block_matrix(F2, [[m] for m in stack], subdivide=False)
+        MH = Big.right_kernel()
+    else:
+        MH = (F2**twog)
+    return MH
+
+def analyze_nongalois(G, s0, s1, H):
+    """Compute H^1(X,F_2)=H^1(X~)^H with the Aut(X)=N_G(H)/H action.
+    Returns (genus_X, dim, action_matrices) for the solvability screen."""
+    genus_t, twog, _Ms, matfn = analyze(G, s0, s1)
+    Hgens = list(libgap.GeneratorsOfGroup(H))
+    MH = restrict_to_invariants(matfn, twog, Hgens)
+    B = MH.basis_matrix()                 # rows = basis of M^H, in H^1(X~) coords
+    dimX = MH.dimension()
+    # N/H action on M^H: for nu in gens(N_G(H)), restrict matfn(nu) to M^H.
+    N = libgap.Normalizer(G, H)
+    Ngens = list(libgap.GeneratorsOfGroup(N))
+    A = []
+    for nu in Ngens:
+        Mnu = matfn(nu)
+        # image of each basis row under Mnu (acts on column vectors): (Mnu * b^T)^T
+        rows_img = [Mnu * B[r] for r in range(dimX)]
+        # express in basis B: solve  X * B = img  for coordinates
+        coords = [B.solve_left(v) for v in rows_img]
+        A.append(Matrix(F2, coords))       # action on M^H in basis B (row convention)
+    return dimX // 2, dimX, A
 
 def gl_solvable(a, q):
     # GL_a(q) solvable iff a==1, or (a==2 and q in {2,3}). (q is a power of 2 here.)
@@ -139,11 +173,10 @@ def commutant_basis(n, Ms):
     K = C.right_kernel()
     return [Matrix(F2, n, n, list(v)) for v in K.basis()]
 
-def solvable_report(genus, dim, Ms, label):
-    # Centralizer of rho(G) in GL(2g,2) = unit group of the commutant algebra A.
-    # A^* solvable  iff  every Wedderburn block M_{a_j}(F_{q_j}) of A/rad has
-    # GL_{a_j}(q_j) solvable.  (For a 2-group in char 2 the blocks can have q_j=2^k>2,
-    # so a multiplicity-only test is INSUFFICIENT -- we decompose A/rad properly.)
+def centralizer_solvable(dim, Ms):
+    """Is the centralizer of <Ms> in GL(dim,2) solvable?  = unit group of the
+    commutant algebra A.  A^* solvable iff every Wedderburn block M_{a}(F_q) of
+    A/rad has GL_a(q) solvable.  Returns (solvable?, blocks[(a,q)], dim End)."""
     n = dim
     basis = commutant_basis(n, Ms)
     dimA = len(basis)
@@ -164,12 +197,57 @@ def solvable_report(genus, dim, Ms, label):
         blocks.append((a, q))
         if not gl_solvable(a, q):
             solvC = False
+    return solvC, blocks, dimA
+
+def solvable_report(genus, dim, Ms, label):
+    solvC, blocks, dimA = centralizer_solvable(dim, Ms)
     ordH = int(libgap.Order(libgap.Group(libgap([libgap(M) for M in Ms]))))
     shape = " x ".join(f"M_{a}(F_{q})" for a, q in sorted(blocks))
     flag = "" if solvC else "   <<< NONSOLVABLE CENTRALIZER"
     print(f"{label}: genus={genus} dimJ2={dim} |rho(G)|={ordH} dimEnd={dimA} "
           f"A/rad={shape} solvable={solvC}{flag}", flush=True)
     return solvC, blocks
+
+def nongalois_scan(degrees):
+    """Screen non-Galois 2-group Belyi maps: for core-free H<G and each triple,
+    test whether the centralizer of Aut(X)=N_G(H)/H on H^1(X,F_2)=H^1(X~)^H is
+    solvable.  Solvable => Q(J[2]) provably solvable; nonsolvable => candidate."""
+    Fr = libgap.FreeGroup(2); fg = libgap.GeneratorsOfGroup(Fr)
+    cands = []; nscanned = 0
+    for order in degrees:
+        n = int(libgap.NrSmallGroups(order))
+        for i in range(1, n + 1):
+            G = libgap.SmallGroup(order, i)
+            if bool(libgap.IsAbelian(G)):
+                continue
+            struct = str(libgap.StructureDescription(G))
+            ccs = libgap.ConjugacyClassesSubgroups(G)
+            Hreps = []
+            for k in range(int(libgap.Length(ccs))):
+                H = libgap.Representative(ccs[k]); oH = int(libgap.Order(H))
+                if oH == 1 or oH == order: continue
+                if int(libgap.Order(libgap.Core(G, H))) != 1: continue
+                Hreps.append(H)
+            if not Hreps: continue
+            quos = libgap.GQuotients(Fr, G)
+            for H in Hreps:
+                d = order // int(libgap.Order(H))
+                autX = int(libgap.Order(libgap.Normalizer(G, H))) // int(libgap.Order(H))
+                for h in quos:
+                    s0 = libgap.Image(h, fg[0]); s1 = libgap.Image(h, fg[1])
+                    gX, dim, Amats = analyze_nongalois(G, s0, s1, H)
+                    if gX < 2: continue
+                    nscanned += 1
+                    solvC, blocks, _ = centralizer_solvable(dim, Amats)
+                    if not solvC:
+                        shape = " x ".join(f"M_{a}(F_{q})" for a, q in sorted(blocks))
+                        print(f"  CANDIDATE d={d} G=[{order},{i}]{struct} gX={gX} "
+                              f"|Aut(X)|={autX} A/rad={shape}", flush=True)
+                        cands.append((order, i, gX, d, autX))
+    print(f"\n--- non-Galois scan: {nscanned} (curve,triple) with genus>=2 ---")
+    print(f"==== {len(cands)} NONSOLVABLE-centralizer candidates ====" if cands
+          else "==== NONE: every non-Galois genus>=2 map here has solvable Q(J[2]) ====")
+    return cands
 
 def scan(degrees):
     F = libgap.FreeGroup(2); fgens = libgap.GeneratorsOfGroup(F)
@@ -184,7 +262,7 @@ def scan(degrees):
             struct = str(libgap.StructureDescription(G))
             for h in libgap.GQuotients(F, G):
                 s0 = libgap.Image(h, fgens[0]); s1 = libgap.Image(h, fgens[1])
-                genus, dim, Ms = analyze(G, s0, s1)
+                genus, dim, Ms, _ = analyze(G, s0, s1)
                 if genus < 2:
                     continue
                 ntri += 1
@@ -202,11 +280,15 @@ def scan(degrees):
 
 if __name__ == "__main__":
     import sys
-    args = [int(x) for x in sys.argv[1:]]
+    argv = sys.argv[1:]
+    if argv and argv[0] == "ng":
+        nongalois_scan([int(x) for x in argv[1:]] or [16, 32])
+        sys.exit(0)
+    args = [int(x) for x in argv]
     if args:
         scan(args)
     else:
         G = libgap.SmallGroup(8,4)
         gens = libgap.GeneratorsOfGroup(G)
-        genus, dim, Ms = analyze(G, gens[0], gens[1])
+        genus, dim, Ms, _ = analyze(G, gens[0], gens[1])
         solvable_report(genus, dim, Ms, "Q8 (8,4) demo")
