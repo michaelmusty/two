@@ -145,6 +145,22 @@ BIG PICTURE / where the prize could still be:
   need to reach Dembele-scale wild 2-adic ramification. Needs M3 equations or a direct
   Sp_6(F_2)-image search.
 
+## PIPELINE VALIDATION on a real curve (belyi/validate_q8.sage)
+Source of actual curves: michaelmusty/2GroupDessins (thesis DB). Char-0 (Q-bar)
+equations in TwoDBPassportChar0/{2,4,8}; TwoDB has degrees 2..256.
+Validated on Q8 8T5-4,4,4-g2 (over Q(i)):
+  y^8 + (1/2 x^3-3/2 x^2+x)y^4 + (1/16 x^6-1/8 x^5+1/16 x^4)=0.
+- Verifier confirms genus 2, Belyi, passport (4,4,4). [verify.sage on real curve]
+- Hand tower-reduction -> hyperelliptic model y^2 = 16m^5-m = m(4m^2-1)(4m^2+1).
+- Sage: genus 2, disc = -2^20 (ramified ONLY at 2, per Beckmann), quintic splits
+  over Q(i) => Q(J[2]) = Q(i), Gal = C_2, SOLVABLE.
+- MATCHES the group-theory prediction (Q8 centralizer = M_1(F_4), solvable) AND the
+  LMFDB genus-2 pattern (tiny abelian 2-torsion field at 2-power conductor).
+The whole obstruction pipeline is now grounded in a real thesis curve.
+Note: LMFDB belyi_galmaps only reaches genus 1 for 2-power degree; genus>=2 curves
+come from 2GroupDessins. Sage F.L_polynomial() too slow for degree-8 models; use the
+hyperelliptic reduction + splitting field instead.
+
 ## Setup
     set -a; source .env; set +a          # load keys
     . .venv/bin/activate                  # aristotle CLI on PATH
