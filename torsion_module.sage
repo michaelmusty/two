@@ -208,6 +208,90 @@ def solvable_report(genus, dim, Ms, label):
           f"A/rad={shape} solvable={solvC}{flag}", flush=True)
     return solvC, blocks
 
+def _min_faithful_degree(G):
+    ordG = int(libgap.Order(G)); best = None
+    maxs = libgap.MaximalSubgroupClassReps(G)
+    for k in range(int(libgap.Length(maxs))):
+        M = maxs[k]
+        if int(libgap.Order(libgap.Core(G, M))) == 1:   # faithful coset action
+            idx = ordG // int(libgap.Order(M))
+            best = idx if best is None else min(best, idx)
+    return best or ordG
+
+def block_status(a, q):
+    """For a Wedderburn block M_a(F_q) of the centralizer, classify its nonsolvable
+    simple factor PSL_a(q) by realizability as a Galois group ramified only at 2.
+    Returns (kind, description).  kind in {'solvable','NO','FRONTIER','UNKNOWN'}."""
+    if not (a >= 3 or (a == 2 and q >= 4)):
+        return ('solvable', f"GL_{a}(F_{q}) solvable")
+    import math
+    k = int(round(math.log2(q)))
+    T = libgap.PSL(a, q)                 # nonsolvable composition factor of GL_a(q)
+    n = _min_faithful_degree(T)
+    name = f"PSL_{a}(F_{q})"
+    if a == 2 and q == 16:
+        return ('FRONTIER', f"{name}=PSL2(16) min-deg {n}: REALIZABLE ram-only-2 (Dembele 2009)")
+    if n <= 32:
+        return ('NO', f"{name} min-deg {n}: no nonsolvable field ram-only-2 (LMFDB/disc-bound)")
+    return ('UNKNOWN', f"{name} min-deg {n}>32: realizability ram-only-2 UNKNOWN")
+
+def nongalois_realizability_scan(degrees):
+    """For every non-Galois genus>=2 candidate, confine the mod-2 image to the
+    centralizer of Aut(X) and classify each nonsolvable block by realizability
+    ramified only at 2.  DEAD = all nonsolvable factors unrealizable => Q(J[2])
+    provably solvable.  FRONTIER/OPEN = a realizable/unknown factor survives."""
+    Fr = libgap.FreeGroup(2); fg = libgap.GeneratorsOfGroup(Fr)
+    dead = 0; live = []; seen_status = {}
+    for order in degrees:
+        n = int(libgap.NrSmallGroups(order))
+        for i in range(1, n + 1):
+            G = libgap.SmallGroup(order, i)
+            if bool(libgap.IsAbelian(G)): continue
+            struct = str(libgap.StructureDescription(G))
+            ccs = libgap.ConjugacyClassesSubgroups(G)
+            Hreps = []
+            for k in range(int(libgap.Length(ccs))):
+                H = libgap.Representative(ccs[k]); oH = int(libgap.Order(H))
+                if oH == 1 or oH == order: continue
+                if int(libgap.Order(libgap.Core(G, H))) != 1: continue
+                Hreps.append(H)
+            if not Hreps: continue
+            quos = libgap.GQuotients(Fr, G)
+            for H in Hreps:
+                d = order // int(libgap.Order(H))
+                autX = int(libgap.Order(libgap.Normalizer(G, H))) // int(libgap.Order(H))
+                for h in quos:
+                    s0 = libgap.Image(h, fg[0]); s1 = libgap.Image(h, fg[1])
+                    gX, dim, Amats = analyze_nongalois(G, s0, s1, H)
+                    if gX < 2: continue
+                    solvC, blocks, _ = centralizer_solvable(dim, Amats)
+                    if solvC:
+                        dead += 1; continue
+                    verdicts = [block_status(a, q) for (a, q) in blocks]
+                    ns = [v for v in verdicts if v[0] != 'solvable']
+                    worst = ('NO' if all(v[0] == 'NO' for v in ns) else
+                             'FRONTIER' if any(v[0] == 'FRONTIER' for v in ns) else 'UNKNOWN')
+                    if worst == 'NO':
+                        dead += 1
+                        seen_status[('DEAD', gX, tuple(sorted(v[1] for v in ns)))] = \
+                            seen_status.get(('DEAD', gX, tuple(sorted(v[1] for v in ns))), 0) + 1
+                    else:
+                        tag = f"g{gX} d={d} G=[{order},{i}]{struct} |Aut|={autX}"
+                        live.append((worst, tag, [v[1] for v in ns]))
+    print(f"\n==== REALIZABILITY FILTER ({sum(len(v) for v in [range(0)]) or ''}) ====")
+    print(f"DEAD (provably solvable Q(J[2])): {dead} candidate-records")
+    by_g = {}
+    for (kind, gX, descs), c in seen_status.items():
+        by_g.setdefault(gX, []).append((descs, c))
+    for gX in sorted(by_g):
+        allblocks = set()
+        for descs, c in by_g[gX]: allblocks.update(descs)
+        print(f"   genus {gX}: dead via {sorted(allblocks)}")
+    print(f"FRONTIER/OPEN (could yield nonsolvable field): {len(live)}")
+    for worst, tag, descs in live:
+        print(f"   [{worst}] {tag}: {descs}")
+    return dead, live
+
 def nongalois_scan(degrees):
     """Screen non-Galois 2-group Belyi maps: for core-free H<G and each triple,
     test whether the centralizer of Aut(X)=N_G(H)/H on H^1(X,F_2)=H^1(X~)^H is
@@ -283,6 +367,9 @@ if __name__ == "__main__":
     argv = sys.argv[1:]
     if argv and argv[0] == "ng":
         nongalois_scan([int(x) for x in argv[1:]] or [16, 32])
+        sys.exit(0)
+    if argv and argv[0] == "ngr":
+        nongalois_realizability_scan([int(x) for x in argv[1:]] or [16, 32])
         sys.exit(0)
     args = [int(x) for x in argv]
     if args:
