@@ -1,0 +1,77 @@
+{
+  "group": "[8,4] Q8",
+  "degree": 8,
+  "top_genus": 2,
+  "levels": [
+    {
+      "i": 0,
+      "order_Hi": 8,
+      "index": 1,
+      "passport": [
+        1,
+        1,
+        1
+      ],
+      "genus": 0
+    },
+    {
+      "i": 1,
+      "order_Hi": 4,
+      "index": 2,
+      "passport": [
+        2,
+        1,
+        2
+      ],
+      "genus": 0
+    },
+    {
+      "i": 2,
+      "order_Hi": 2,
+      "index": 4,
+      "passport": [
+        2,
+        2,
+        2
+      ],
+      "genus": 0
+    },
+    {
+      "i": 3,
+      "order_Hi": 1,
+      "index": 8,
+      "passport": [
+        4,
+        4,
+        4
+      ],
+      "genus": 2
+    }
+  ],
+  "steps": [
+    {
+      "from": 0,
+      "to": 1,
+      "ramified_branch_points": [
+        "0",
+        "oo"
+      ]
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "ramified_branch_points": [
+        "1"
+      ]
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "ramified_branch_points": [
+        "0",
+        "1",
+        "oo"
+      ]
+    }
+  ]
+}
