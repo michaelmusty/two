@@ -83,8 +83,25 @@ in Sp_4(F_2)=S_6. Whether Q(J[2]) is actually nonsolvable is now PURELY ARITHMET
 compute the genus-2 sextic and its Galois group (subgroup of S_6; nonsolvable iff
 >= A_5). => need equations (M3), or the Frobenius fingerprint over F_p (M3 over F_p).
 
-TODO next: M3 over F_p -> build the d=8 genus-2 candidate curve over several primes,
-factor the sextic, Frobenius-fingerprint Gal(Q(J[2])) <= S_6.
+GENUS-2 RESULT via LMFDB (lmfdb-lite `from lmf import db`, g2c_curves):
+For genus 2, two_torsion_field[2] = [deg,Tnum] = Gal(Q(J[2])) as an nTt group.
+- 66158 genus-2 curves in LMFDB (abs_disc <= 10^6); 41795 (63%) have NONSOLVABLE
+  Q(J[2]) (groups A5=5T4, S5=5T5, A6=6T15, S6=6T16). So nonsolvable 2-torsion is
+  COMMON in general.
+- Of those 41795, conductor is a power of 2 for EXACTLY 0. Minimal odd part of any
+  nonsolvable-J2 conductor = 29 (never 1). Smallest: 277.a (cond 277, S5).
+- All 29 genus-2 curves of 2-power conductor have Gal(Q(J[2])) in {C2=2T1, C4=4T1,
+  V4=4T2, D4=4T3} -- all solvable, in fact tiny (these curves are automorphism-rich).
+CONCLUSION (genus 2, within LMFDB range abs_disc<=10^6): NO genus-2 curve with good
+reduction outside 2 has a nonsolvable Q(J[2]).  The prize does NOT exist in genus 2
+here.  Confirms thesis Q1.2.5 for genus 2 empirically; matches our obstruction
+(genus-2 Aut(X) contains the hyperelliptic involution => image constrained).
+Caveat: complete only for abs_disc<=10^6, not all conductor-2^k curves.
+
+TODO next: the prize (if any) needs genus >= 3. LMFDB lacks a genus-3 2-torsion
+oracle, so genus>=3 needs the equation route (M3) or a Frobenius-image computation
+on the genus-3 candidates ([32,6],[32,7], deg16). Alternatively: number-field route
+(PARI nflist) for nonsolvable fields ramified only at 2 directly.
 
 ## Setup
     set -a; source .env; set +a          # load keys
