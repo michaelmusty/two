@@ -56,8 +56,8 @@ Tools:
   computes rho(G) <= GL(2g,2) and tests IsSolvable(Centralizer).
 
 RESULT (Galois case, 2-torsion):
-- deg 8, 16: EVERY nonabelian genus>=2 triple has solvable centralizer
-  => Q(J[2]) provably solvable. (deg 32, 64 scanning.)
+- deg 8,16,32,64: EVERY nonabelian genus>=2 triple has solvable centralizer
+  => Q(J[2]) PROVABLY SOLVABLE. (1+18+82+370 triples; F_4-aware Wedderburn test.)
 - Interpretation: confirms thesis Q1.2.5 (2-torsion) on this range and explains WHY
   (unipotent 2-group action => small/solvable centralizer). The Galois route almost
   certainly CANNOT produce a nonsolvable field at 2-torsion.
