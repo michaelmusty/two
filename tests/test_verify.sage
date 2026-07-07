@@ -25,12 +25,12 @@ def o1():
 
 # --- Oracle 2: y^16 + (4x-2)y^8 + 1  (f16T13-2,2,8-g0): deg16 genus0 passport {2,2,8}
 def o2():
-    L, x = make(QQ, lambda x, Y: Y**16 + (4*x - 2)*Y**8 + 1)
+    L, x = make(GF(7), lambda x, Y: Y**16 + (4*x - 2)*Y**8 + 1)
     verify_belyi(L, x, expected_passport=(2, 2, 8), expected_genus=0, name="16T13 y^16+(4x-2)y^8+1")
 
 # --- Oracle 3: y^16 = -x^2 (x-1)^7  (f16T1-8,16,16-g7): deg16 genus7 passport {8,16,16}
 def o3():
-    L, x = make(QQ, lambda x, Y: Y**16 + x**2 * (x - 1)**7)
+    L, x = make(GF(5), lambda x, Y: Y**16 + x**2 * (x - 1)**7)
     verify_belyi(L, x, expected_passport=(8, 16, 16), expected_genus=7, name="16T1 y^16=-x^2(x-1)^7")
 
 # --- Oracle 4: y^8 + 2x^6+2x^5+2x^4+x^3+x^2+x  over F_3 (8T1-8,8,4-g3): deg8 genus3

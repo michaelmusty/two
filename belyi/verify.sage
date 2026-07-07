@@ -13,18 +13,18 @@
 
 from sage.all import lcm, Infinity
 
-def _ram_indices(dec):
-    return sorted(int(t[-1]) for t in dec)      # e = last component (calibrated)
+def _ef_pairs(dec):
+    # decomposition triple is (prime, f, e): last=ramification index e, middle=residue degree f.
+    return sorted((int(t[-1]), int(t[-2])) for t in dec)   # (e, f) pairs
 
 def ramification_over(L, x, a):
-    """Multiset (sorted list) of ramification indices of L/K over x = a (a in k or oo)."""
+    """List of (e, f) pairs of the places of L/K over x = a (a in k or oo)."""
     if a is Infinity:
         dec = L.maximal_order_infinite().decomposition()
     else:
-        K = x.parent()
         prime = (x - a).zeros()[0].prime_ideal()
         dec = L.maximal_order().decomposition(prime)
-    return _ram_indices(dec)
+    return _ef_pairs(dec)
 
 def local_data(L, x):
     return {0: ramification_over(L, x, 0),
@@ -32,14 +32,16 @@ def local_data(L, x):
             Infinity: ramification_over(L, x, Infinity)}
 
 def genus_from_local(deg, ram):
-    """Tame Riemann-Hurwitz genus assuming ramification only over {0,1,oo}."""
-    S = sum(sum(e - 1 for e in ram[p]) for p in (0, 1, Infinity))
+    """Tame Riemann-Hurwitz genus assuming ramification only over {0,1,oo}.
+    deg(Different) = sum over places (e-1)*f  (tame: different exponent = e-1,
+    each place weighted by its residue degree f)."""
+    S = sum((e - 1) * f for p in (0, 1, Infinity) for (e, f) in ram[p])
     assert S % 2 == 0, ("odd total ramification -- not tame?", S)
     return 1 - deg + S // 2
 
 def passport(ram):
-    """The three ramification ORDERS (lcm of each local multiset) over 0, 1, oo."""
-    return tuple(int(lcm(ram[p])) for p in (0, 1, Infinity))
+    """The three ramification ORDERS (lcm of the ramification indices) over 0, 1, oo."""
+    return tuple(int(lcm([e for (e, f) in ram[p]])) for p in (0, 1, Infinity))
 
 def verify_belyi(L, x, expected_passport=None, expected_genus=None, name=""):
     """Return a dict of computed invariants and assert the Belyi identity + expectations."""
