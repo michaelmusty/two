@@ -42,6 +42,32 @@ Pilot: prove the d=4 generating-pair counts in Lean 4 (ZMod 4 → 12 pairs, V4 �
 12/2 + 6/6 = 7). CLI quirk: prompt >255 bytes crashes (parsed as a path) — put the
 statement in a --project-dir file and keep the prompt short. See aristotle_deg4/.
 
+## Nonsolvability search (the "nonsolvable field ramified only at 2" program)
+Mechanism: 2-group Belyi map => good reduction outside 2 (Beckmann) => Q(J[2^n])
+ramified only at 2 (Neron-Ogg-Shafarevich). Galois image sits in Sp_{2g}(F_2)
+(nonsolvable for g>=2). BUT for GALOIS covers the image must CENTRALIZE rho(G),
+G a 2-group acting on J[2]. So: if C_{GL(2g,2)}(rho(G)) is solvable, Q(J[2]) is
+provably solvable for that triple.
+
+Tools:
+- census.sage    : genus (Riemann-Hurwitz) + group structure of every triple.
+- torsion_module.sage : builds J[2]=H_1(X,F_2) as F_2[G]-module (G-cover homology
+  via puncture-filling; validated: dim=2g, center of Q8 acts trivially mod 2),
+  computes rho(G) <= GL(2g,2) and tests IsSolvable(Centralizer).
+
+RESULT (Galois case, 2-torsion):
+- deg 8, 16: EVERY nonabelian genus>=2 triple has solvable centralizer
+  => Q(J[2]) provably solvable. (deg 32, 64 scanning.)
+- Interpretation: confirms thesis Q1.2.5 (2-torsion) on this range and explains WHY
+  (unipotent 2-group action => small/solvable centralizer). The Galois route almost
+  certainly CANNOT produce a nonsolvable field at 2-torsion.
+- Corollary for strategy: the prize needs (a) NON-Galois covers (no full G-action;
+  e.g. Roberts's deg-2^20 triple, thesis 6.2.2), or (b) higher 2-power torsion J[2^n]
+  / ell-torsion, or (c) the moduli/refined-passport field rather than J[2].
+
+TODO next: J[4] (mod-4 image in GSp_4(Z/4)); non-Galois covers (subgroup H<G, act on
+coset space) — the module method extends by using the H-cover instead of regular rep.
+
 ## Setup
     set -a; source .env; set +a          # load keys
     . .venv/bin/activate                  # aristotle CLI on PATH
