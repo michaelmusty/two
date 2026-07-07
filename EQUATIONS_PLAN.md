@@ -109,4 +109,8 @@ S-places ramify -> radicand = prod(t-t_j) over them; adjoin sqrt; verify.
   M1 DONE (2026-07-07): verify.sage passes 4 thesis oracles + negative control.
   M2 DONE (2026-07-07): cyclic.sage builds C_{2^n} Kummer covers; passport formula
        cross-checked against the verifier. 4/4 tests.
-  M3 next: quadstep primitive (Riemann-Roch radicand) + general absolute-model tower.
+  M3.1 DONE compose_sqrt; M3.3 DONE group driver (belyi/groups.sage);
+       M3.4 DONE genus-0-intermediate tower reconstructor (belyi/reconstruct.sage):
+       Q8 triple -> y^2=s^5-s, Q(J[2])=Q(i) solvable (1/1 test). Pure Sage, no Pic^0.
+  NEXT: general radicand solver for POSITIVE-genus intermediates needs Pic^0[2]
+       -> pivot to Hecke.jl (Path C).
