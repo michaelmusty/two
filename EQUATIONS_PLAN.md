@@ -66,7 +66,7 @@ Checks each builder output must pass:
 
 ## Milestones
   M1  verify.sage + tests on the four oracles.  [DONE: 5/5 tests pass]
-  M2  cyclic/superelliptic tower (trivial square roots); tests on the C_16 oracle.
+  M2  cyclic/superelliptic tower (trivial square roots).  [DONE: 4/4 tests pass]
   M3  quadstep primitive (Riemann-Roch radicand); test: Q8 genus-2 tower over F_3.
   M4  group driver: permutation triple -> chief series -> tower -> equation;
       regenerate deg<=16 database over F_3; cross-check counts (census.sage) & genera.
@@ -84,4 +84,6 @@ Checks each builder output must pass:
 
 ## Status
   M1 DONE (2026-07-07): verify.sage passes 4 thesis oracles + negative control.
-  M1 in progress.
+  M2 DONE (2026-07-07): cyclic.sage builds C_{2^n} Kummer covers; passport formula
+       cross-checked against the verifier. 4/4 tests.
+  M3 next: quadstep primitive (Riemann-Roch radicand) + general absolute-model tower.
