@@ -82,6 +82,29 @@ Checks each builder output must pass:
     Equations are needed precisely where that test is inconclusive (non-Galois) or
     to exhibit the explicit polynomial.
 
+## M3 scoping (path A over F_p) -- de-risked 2026-07-07
+KEY SAGE LIMITATION (confirmed): FunctionField.class_group() is the AFFINE class
+group (finite maximal order), NOT Pic^0. E.g. z^4=x(x-1)/F_7: class_group order 1
+but |Pic^0(F_7)| = L_polynomial(1) = 8. So Cl[2]/representative divisors for the
+general radicand solver are NOT available in Sage. => positive-genus intermediate
+curves are the Path-C (Hecke.jl) trigger.
+
+BUT genus-0 intermediates need NO class group (Pic^0 trivial): radicand = explicit
+S-unit = product of linear factors. Many towers (incl. Q8) pass through genus-0
+curves until a final hyperelliptic step. Q8 chief series Q8 > <i> > <-1> > 1 gives
+Fix(<i>) g0, Fix(<-1>) g0 (V4-quotient, ram (2,2,2)), X g2 = double cover of a P^1.
+
+CONFIRMED WORKING Sage capabilities for the genus-0 tower solver:
+- genus-0 parametrization: RR of a degree-1 place (P.divisor().basis_function_space())
+  yields a degree-1 generator t; e.g. y^2=x -> t=y, x=t^2.
+- locate S-places in t: t.evaluate(Q) gives the t-value of a place Q over x=0,1,oo.
+- L.places_above(base_place), P.divisor(), .basis_function_space() (Riemann-Roch).
+- compose_sqrt (M3.1) assembles the absolute model; verify.sage (M1) checks each level.
+
+Method (genus-0 intermediates): parametrize X_i=F_p(t); write x=c*prod(t-t_j)^{e_j}
+from div(x); group data (I_Q = H_i cap g<sigma_b>g^{-1} not-subset H_{i+1}) -> which
+S-places ramify -> radicand = prod(t-t_j) over them; adjoin sqrt; verify.
+
 ## Status
   M1 DONE (2026-07-07): verify.sage passes 4 thesis oracles + negative control.
   M2 DONE (2026-07-07): cyclic.sage builds C_{2^n} Kummer covers; passport formula
