@@ -98,10 +98,33 @@ here.  Confirms thesis Q1.2.5 for genus 2 empirically; matches our obstruction
 (genus-2 Aut(X) contains the hyperelliptic involution => image constrained).
 Caveat: complete only for abs_disc<=10^6, not all conductor-2^k curves.
 
-TODO next: the prize (if any) needs genus >= 3. LMFDB lacks a genus-3 2-torsion
-oracle, so genus>=3 needs the equation route (M3) or a Frobenius-image computation
-on the genus-3 candidates ([32,6],[32,7], deg16). Alternatively: number-field route
-(PARI nflist) for nonsolvable fields ramified only at 2 directly.
+NUMBER-FIELD ROUTE (option 2; nf_ramified_at_2.py, uses LMFDB nf_fields + PARI nflist):
+Does a NONSOLVABLE number field ramified only at 2 exist? (thesis's ultimate target.)
+- LMFDB: 1184 number fields ramified only at 2; ALL solvable. Degrees present are only
+  {2,4,8,16,17,32} -- NO degree 5,6,7 field ramified only at 2 exists at all.
+- Rigorous 2-adic disc bound: a degree-n field ramified only at 2 has |disc| <= 2^D(n)
+  (D(5)=11, D(6)=D(7)=14 from max 2-adic different, partitions {4,1},{4,2},{4,2,1};
+  quartic 2-adic field max disc-exp = 11). Compare to minimal |disc| of nonsolvable
+  groups: A5(18496), A6(287296), PGL2(5)(1778112), PSL2(7)(2007889) all EXCEED their
+  2^D bound => IMPOSSIBLE ramified only at 2. S5(1609),S6(14731) not excluded by size
+  but absent from LMFDB's complete degree-5,6 list.
+- CONCLUSION: no nonsolvable field ramified only at 2 through degree 32; the smallest
+  nonsolvable groups (A5,S5,A6,S6,PGL2(5),PSL2(7)) provably cannot occur. This is why
+  the prize is HARD: it needs large WILD 2-adic ramification (2 | degree).
+- Known minimal example: Dembele (2009), degree 17 = P^1(F_16), Galois image SL2(F16)
+  (nonsolvable, PSL2(16) factor), via Hilbert modular forms -- beyond enumeration and
+  beyond LMFDB. This is the frontier the 2-group Belyi construction would need to reach.
+- PARI nflist installed (nflistdata 3.5MB -> scratchpad/data; set pari.default('datadir')).
+  Supports A5 among nonsolvable groups; used as cross-check.
+
+BIG PICTURE / where the prize could still be:
+- Galois 2-group Belyi maps: J[2] field provably solvable (deg<=64). Dead.
+- Non-Galois, genus 2: no nonsolvable J[2] (LMFDB g2c, all 2-power-cond curves). Dead.
+- Small nonsolvable number fields ramified only at 2: provably don't exist (above). Dead.
+- REMAINING: genus>=3 non-Galois 2-group Belyi maps (candidates [32,6],[32,7] deg16
+  genus3), whose J[2] sits in Sp_6(F_2); OR higher-torsion/moduli fields. These would
+  need to reach Dembele-scale wild 2-adic ramification. Needs M3 equations or a direct
+  Sp_6(F_2)-image search.
 
 ## Setup
     set -a; source .env; set +a          # load keys
