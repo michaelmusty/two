@@ -145,6 +145,23 @@ BIG PICTURE / where the prize could still be:
   need to reach Dembele-scale wild 2-adic ramification. Needs M3 equations or a direct
   Sp_6(F_2)-image search.
 
+## NILPOTENCY OBSTRUCTION (frontier.sage) -- reshapes the frontier
+G is a 2-group => nilpotent => normalizer condition: N_G(H) STRICTLY contains H for
+every proper H. So Aut(X)=N_G(H)/H >= C_2 ALWAYS for non-Galois 2-group Belyi maps.
+There are NO trivial-Aut(X) candidates at any order (frontier.sage confirms 0 at
+order 32; theorem gives 0 everywhere).
+Consequence for the prize: the mod-2 image must centralize the ever-present central
+involution iota in Aut(X). The minimal prize PSL_2(16) acts IRREDUCIBLY on F_2^8
+(genus 4), centralizer in Sp_8 = F_16^* = C_15 (no 2-part) => no room for a nontrivial
+centralizing 2-group => GENUS 4 IMPOSSIBLE for this construction.
+Refined frontier (by action of iota on J[2]):
+  - iota trivial on J[2] => X/iota=P^1 => X HYPERELLIPTIC => image <= Gal on 2g+2
+    branch points <= S_{2g+2}; PSL_2(16) (min deg 17) needs 2g+2>=17 => GENUS >= 8.
+  - iota nontrivial on J[2] => image <= C_{Sp_2g}(iota), a proper subgroup (also higher
+    genus).
+So the true frontier is GENUS >= 8 (hyperelliptic route), not 4. This is a rigorous
+structural obstruction from the nilpotency of the 2-group deck group.
+
 ## PIPELINE VALIDATION on a real curve (belyi/validate_q8.sage)
 Source of actual curves: michaelmusty/2GroupDessins (thesis DB). Char-0 (Q-bar)
 equations in TwoDBPassportChar0/{2,4,8}; TwoDB has degrees 2..256.
