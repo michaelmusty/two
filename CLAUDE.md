@@ -75,6 +75,34 @@ hypothesis.
   FILE path, gzip-tar; a directory path errors). Prompt >255 bytes crashes the CLI.
 - `.env` (API keys) is gitignored — do not commit it.
 
+## Cross-machine setup (nothing here travels with `git`)
+
+The repo is code + prose only; every tool below is an external install and must be
+provisioned on a new machine. Verified versions on the original host (macOS):
+
+| Tool | Version | Provides / used for | Install |
+|---|---|---|---|
+| **SageMath** | 10.6 | `sage`, `libgap`; bundles **GAP 4.14.0** + SmallGroups library + MeatAxe. Core of `torsion_module/fast/shard.sage`, `belyi/`. | conda `sage`, or sagemath.org binaries |
+| **Julia** | 1.12.6 | `belyi_jl/` Hecke tower + radicand solver | julialang.org |
+| Julia pkgs | Hecke, Combinatorics, JSON | pinned in `belyi_jl/{Project,Manifest}.toml` | `julia --project=belyi_jl -e 'using Pkg; Pkg.instantiate()'` |
+| **Python** | 3.10 | Aristotle CLI (`aristotlelib`) in `.venv/` | `python3 -m venv .venv && . .venv/bin/activate && pip install aristotlelib` |
+| PARI/GP | 2.17.x | `nflist` number-field enumeration (earlier route) — **optional** | pari.math.u-bordeaux.fr |
+| lmfdb-lite | — | `lmf` package for LMFDB Postgres queries (genus-2 verdict) — **optional**, external | see `[[lmfdb-lite]]` / user's setup |
+
+**Secrets (gitignored — recreate by hand):** `.env` at repo root must contain
+`ARISTOTLE_API_KEY=...` (get one at aristotle.harmonic.fun/dashboard/keys). The earlier work
+also referenced `AXIOMATIC_API_KEY`. `.env` is in `.gitignore` and must never be committed.
+
+**Minimum to reproduce the headline result** (the 2008/2008 indecomposability scans): just
+**SageMath 10.6** — no Julia, Python-venv, PARI, or LMFDB needed. Julia/Hecke is only for the
+equation/tower solver; the Aristotle venv is only for re-running/continuing the Lean proof
+(the proof itself, `aristotle_solvable/FiniteLocalSolvable.lean`, is a static artifact and
+needs only a Lean 4 + Mathlib toolchain — `leanprover/lean4:v4.28.0` — to recompile).
+
+**Project memory:** rich session history lives in the user's `~/.claude/…/memory/` (keyed to
+this directory path), not in the repo — it auto-loads for a session opened *here on this
+machine* but does not travel. This `CLAUDE.md` + `writeup/` are the portable substitute.
+
 ## Reproduce the headline scan
 
 ```
