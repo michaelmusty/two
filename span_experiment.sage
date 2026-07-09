@@ -160,8 +160,8 @@ def find_cases(order):
             chain = chief_series_indices(G)
             genera = [gfp(int(libgap.Index(G, chain[j])),
                           level_passport(G, s0, s1, chain[j])) for j in range(len(chain))]
-            # first intermediate rung with positive genus, and a further step exists
-            for j in range(1, len(chain)-2):
+            # first intermediate rung with positive genus, with a further step to test
+            for j in range(1, len(chain)-1):
                 if genera[j] > 0:
                     out.append((order, i, qi, str(libgap.StructureDescription(G)), genera)); break
     return out
