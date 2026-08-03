@@ -77,6 +77,15 @@ splitting field \(E/F\). Its Galois conjugates can then be combined and descende
 This phase will most likely require Magma's Hilbert modular forms machinery, or an
 equivalent computation using quaternionic modular forms.
 
+The Magma package
+[`edgarcosta/hilbertmodularforms`](https://github.com/edgarcosta/hilbertmodularforms)
+is a directly relevant starting point. It extends Magma's built-in `ModFrmHil` machinery
+with q-expansion bases, Hecke and diamond operators, definite-case support, and
+precomputation hooks; its `ModFrmHil` patches and `ModFrmHilD` implementation should be
+evaluated when reproducing Dembélé's Hecke algebra. It does not by itself guarantee support
+for the required mod-\(2\) torsion eigensystems, so compatibility with the field \(F\),
+parallel weight \(2\), level \(1\), and reduction modulo \(2\) must be tested explicitly.
+
 ### 2. Determine which constructive route is available
 
 The method of
