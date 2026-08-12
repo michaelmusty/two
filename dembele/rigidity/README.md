@@ -187,6 +187,15 @@ Two independent passports with different coset structures ((1, φ, φ³) vs
 obstruction is structural at fixed q (torus primes 5 | q−1, 17 = q+1), not an
 artifact of the class choice. Exact data: `out/exact_map_444_rep{1..4}_data.m`.
 
+**Local mechanism at 3, 5, 17** (scripts `17`, `18`; **`local-mechanism.md`** for
+the full analysis): both passports share the SAME moduli field (IsIsomorphic
+verified). Good-reduction weights of the 8 conjugate covers: 8/8 at p=3, 4/8 at
+p=5 (one place collapses the map to degree 2, the e=3 place sends points to ∞),
+6/8 at p=17 (bad only at the ramified e=2 place). Hence ≥2 conjugate covers have
+good reduction at EVERY odd prime — the obstruction to only-at-2 lives in the
+moduli field K (ramified at 5, 17), not in the cover geometry. The k=8 question
+becomes: is the moduli field of the k=8 all-2-power passports only-2-ramified?
+
 k=4 control: the inverse-galois-hmf sweep found no only-at-2 SL₂(F₁₆)⋊C₄ field,
 consistent with {5,17} being genuinely unavoidable here; at k=8 (torus primes
 3·5·17 and 257) Dembélé's field exists, and the question of a cover with bad

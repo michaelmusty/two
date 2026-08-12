@@ -141,11 +141,11 @@ if ok then
     Puts(DF, "QR<zq> := PolynomialRing(Rationals());");
     Puts(DF, Sprintf("K<w> := NumberField(%m);", DefiningPolynomial(K)));
     Puts(DF, "RK<y> := PolynomialRing(K);");
-    Puts(DF, Sprintf("cK := K!%m;", cK));
-    Puts(DF, Sprintf("SK := RK!%m;", SK));
-    Puts(DF, Sprintf("TK := RK!%m;", TK));
-    Puts(DF, Sprintf("AK := RK!%m;", AK));
-    Puts(DF, Sprintf("CK := RK!%m;", CK));
+    Puts(DF, Sprintf("cK := K!%m;", Eltseq(cK)));
+    Puts(DF, Sprintf("SK := RK![ K!s : s in %m ];", [ Eltseq(cf) : cf in Coefficients(SK) ]));
+    Puts(DF, Sprintf("TK := RK![ K!s : s in %m ];", [ Eltseq(cf) : cf in Coefficients(TK) ]));
+    Puts(DF, Sprintf("AK := RK![ K!s : s in %m ];", [ Eltseq(cf) : cf in Coefficients(AK) ]));
+    Puts(DF, Sprintf("CK := RK![ K!s : s in %m ];", [ Eltseq(cf) : cf in Coefficients(CK) ]));
     Puts(DF, "// psi = cK*y*SK^2/TK^8; identity: cK*y*SK^2 - TK^8 = cK*(y-1)^2*AK^4*CK");
     delete DF;
     printf "exact data saved to out/exact_map_248_rep1_data.m\n";
