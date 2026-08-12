@@ -178,6 +178,15 @@ Consequence: specializations give PΓL₂(16)-extensions of K unramified outside
 For the k=8 program this is the key structural encouragement: the odd obstruction
 is a short, structured list (torus primes), not everything dividing |G|.
 
+**Second passport (4,4,4)** (scripts `15`, `16`; outputs `out/*444*`): all four
+covers computed and certified the same way (exact identity
+c·y²·F⁴·E₁ − G⁴ = c·(y−1)²·H⁴·J over K; monodromy certified per rep).
+**Same answer**: degree-8 moduli field, disc 2¹⁸·5²·17, **bad primes {2, 5, 17}**.
+Two independent passports with different coset structures ((1, φ, φ³) vs
+(φ, φ, φ²)) produce identical odd obstruction primes {5, 17} — evidence the
+obstruction is structural at fixed q (torus primes 5 | q−1, 17 = q+1), not an
+artifact of the class choice. Exact data: `out/exact_map_444_rep{1..4}_data.m`.
+
 k=4 control: the inverse-galois-hmf sweep found no only-at-2 SL₂(F₁₆)⋊C₄ field,
 consistent with {5,17} being genuinely unavoidable here; at k=8 (torus primes
 3·5·17 and 257) Dembélé's field exists, and the question of a cover with bad
