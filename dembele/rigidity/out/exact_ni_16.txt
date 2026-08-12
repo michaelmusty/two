@@ -1,0 +1,5 @@
+triple [ 3, 5, 11 ] (orders 2,4,8): total=320 gen=256 |Cx|=64 -> Ni_total=5 Ni_gen=4 sub={* 64^^64, 16320^^256 *}
+triple [ 3, 6, 10 ] (orders 2,4,8): total=320 gen=256 |Cx|=64 -> Ni_total=5 Ni_gen=4 sub={* 64^^64, 16320^^256 *}
+triple [ 3, 10, 11 ] (orders 2,8,8): total=1080 gen=768 |Cx|=64 -> Ni_total=135/8 Ni_gen=12 sub={* 8^^8, 16^^16, 32^^32, 136^^256, 16320^^768 *}
+triple [ 2, 10, 10 ] (orders 2,8,8): total=1320 gen=960 |Cx|=240 -> Ni_total=11/2 Ni_gen=4 sub={* 32^^120, 320^^240, 16320^^960 *}
+triple [ 5, 5, 7 ] (orders 4,4,4): total=180 gen=96 |Cx|=24 -> Ni_total=15/2 Ni_gen=4 sub={* 32^^12, 320^^72, 16320^^96 *}
