@@ -139,7 +139,51 @@ attack surface for the only-at-2 question via good-reduction analysis.
    whose specializations are wild only at 2; (2,2,2,2) is Euclidean hence solvable,
    so r ≥ 5 is forced). Hurwitz dimension 2; park unless 1–4 stall.
 
-## Status of the pilot computation (2026-08-11, paused)
+## PILOT RESULT (2026-08-11): the (2,4,8) covers are computed and certified
+
+Following Zhang's account of the M23 computation (how-we-found-m23.pdf: recognition
+fails in triangle-group coordinates at any precision; Galois-equivariant coordinates
+collapse the heights), scripts `10`–`14` complete the k=4 pilot:
+
+- **Gauge**: every fiber of the (2,4,8) passport has a canonical point (unique
+  simple zero, unique double point over 1, unique simple pole). Sending them to
+  0, 1, ∞ kills all PGL₂ freedom equivariantly. Crucially the coefficients are
+  extracted from the dumped **Newton factors** (multiple-root extraction from the
+  expanded polynomials loses accuracy^(1/multiplicity) and made every naive LLL fit
+  spurious — heights at the noise floor 10^(prec/(deg+1)) and unstable under
+  precision changes, the tell-tale we used to reject them).
+- **All 4 covers recognized** (17/17 coefficients each, LLL at 1000 digits verified
+  independently at 2000 digits; passport identity residual ~10⁻⁴⁷⁸⁰). All four have
+  the SAME degree-8 moduli field: 𝔊_Q permutes the 8 covers (this passport and its
+  Q(i)-conjugate) transitively — no M23-style fixed point, as in their (2A,8A,8A).
+- **The moduli field** K = Q[w]/(w⁸+4w⁷+4w⁶+2w⁴+12w³+20w²+8w+2) has
+  **disc = 2¹⁸·5²·17**, unique quadratic subfield Q(i).
+- **Exact certificate**: the map ψ = c·y·S(y)²/T(y)⁸ (S monic deg 8, T monic deg 2)
+  satisfies c·y·S² − T⁸ = c·(y−1)²·A⁴·C exactly in K[y] (`14`, output
+  `out/exact_map_248_rep1.txt` with the full coefficients).
+- **Bad primes of the model: exactly {2, 5, 17}** (support of all pairwise fiber
+  resultants, fiber discriminants, and c). Away from them the branch divisors stay
+  étale-disjoint and all odd ramification is tame (indices 2,4,8) — wildness only
+  at 2. **3 does not appear**, although 3 | |PΓL₂(16)|: the obstruction primes are
+  the torus primes 5 | q−1 and 17 = q+1 = degree, NOT all odd primes of |G|.
+
+- **Monodromy certified**: `GaloisGroup` (rigorous, Magma) of the t=3 fiber of the
+  exact map over K has order 16320 = |PΓL₂(16)| — so the arithmetic monodromy of
+  ψ over K(t) contains (hence realizes) PΓL₂(16), and the t=3 fiber is already a
+  certified PΓL₂(16)-extension of K. Exact map data (loadable):
+  `out/exact_map_248_rep1_data.m`.
+
+Consequence: specializations give PΓL₂(16)-extensions of K unramified outside
+{2, 5, 17} ∪ {primes forced by t₀} — and K itself is ramified only at {2,5,17}.
+For the k=8 program this is the key structural encouragement: the odd obstruction
+is a short, structured list (torus primes), not everything dividing |G|.
+
+k=4 control: the inverse-galois-hmf sweep found no only-at-2 SL₂(F₁₆)⋊C₄ field,
+consistent with {5,17} being genuinely unavoidable here; at k=8 (torus primes
+3·5·17 and 257) Dembélé's field exists, and the question of a cover with bad
+reduction only at 2 is now a sharply posed geometry question.
+
+## Status of the earlier passport-mode attempts (superseded)
 
 Scripts `06`–`09` drive the actual Belyi map computation through the local clone of
 the Belyi package (`~/Belyi`, spec `Code/spec`, C solver `Cext/powser_arnoldi`,
