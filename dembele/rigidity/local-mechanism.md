@@ -59,9 +59,48 @@ conjugates) but:
 
 If, as at k=4, it must pick up torus primes (3, 5, 17 | 255 or 257), the cover
 route to Dembélé's exact field closes with a clean explanation; if some k=8
-passport has an only-2-ramified moduli field, the route is live. Because the
-moduli-field ramification at p reflects the good/bad partition of the passport
-at p, this may be probeable by counting char-p tame covers group-theoretically
-— *before* computing any genus-28 equations. That count (good-reduction
-weights for the k=8 passports at p = 3, 5, 17, 257, calibrated against the
-verified k=4 weights 8/4/6) is the recommended next computation.
+passport has an only-2-ramified moduli field, the route is live.
+
+## The k=8 probe (script `19`, output `out/twist_probe.txt`)
+
+**Dead end recorded first**: counting char-p tame covers directly via the
+genus-0 shape identity over F̄_p (Gröbner) fails at degree 17+ — the
+ramification profile does not isolate PΓL-monodromy covers (the profile's
+Hurwitz number includes a flood of A₁₇-type covers), so the solution variety
+counts the wrong thing.
+
+**What discriminates 3 from {5, 17} at k=4**: the Frobenius twist. For p | |G|
+consider x ↦ xᵖ on the class multiset. At k=4 (all three all-2-power
+passports, including the uncomputed genus-1 one): p = 5, 17 (≡ 1 mod 4) FIX
+each passport; p = 3 MOVES it (swaps the conjugate passports). The measured
+weights: fixing primes are weight-deficient (4/8, 6/8), the moving prime is
+full (8/8). *Transfer hypothesis* (empirical, calibrated on this one group;
+"moves ⇒ full" has no proof — ε-conjugation makes conjugate passports behave
+identically at every p, so moving is a marker, not yet a mechanism):
+twist-fixing primes dividing |G| are weight-deficient and produce moduli
+ramification; twist-moving primes are full-weight and unramified.
+
+**k=8 result of the probe** (both passports, (2@φ⁴, 8@φ, 16@φ³) genus 34 and
+(2@inner, 8@φ⁷, 8@φ) genus 28):
+
+| p | twist action | prediction |
+|---|---|---|
+| 3 | MOVES | full weight — K₈ unramified at 3 |
+| 5 | MOVES | full weight — K₈ unramified at 5 |
+| 17 | FIXES (17 ≡ 1 mod 16) | deficient — K₈ ramified at 17 |
+| 257 | FIXES (257 ≡ 1 mod 16) | deficient — K₈ ramified at 257 |
+
+Predicted: **ram(K₈) ⊆ {2, 17, 257}, with the q−1 torus primes 3 and 5
+dropping out** (unlike k=4, where 5 ≡ 1 mod 4 fixed the passports; at k=8 the
+class orders reach 16, and 3, 5 ≢ 1 mod 16 move everything).
+
+**Structural corollary of the fixing criterion** (unconditional): any p ≡ 1
+mod 2^(max class order) acts trivially on every all-2-power class, so it fixes
+EVERY all-2-power passport. For q = 2^k the nonsplit-torus prime divides
+q + 1 ≡ 1 mod 2^k — it always fixes. So under the transfer hypothesis the
+q+1-prime(s) obstruct the only-at-2 dream for **every** all-2-power passport
+of PΓL₂(2^k), at every k: the cover route would close for the whole family,
+mirroring (one level up) the legacy 2-group obstruction. Falsifiable: compute
+the k=8 moduli field (the genus-28 (2,8,8) computation) and check its
+ramification against the prediction {2, 17, 257}; or replace the hypothesis
+with a real count via Bouw–Wewers deformation data at p ∥ |G|.

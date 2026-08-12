@@ -1,0 +1,33 @@
+
+==== PGammaL(2,16) ====
+multiset [ 3, 5, 11 ] = [ <2, 0>, <4, 1>, <8, 3> ]:
+  p = 3   : image classes [ 3, 6, 10 ]  -> MOVES (full weight predicted)
+  p = 5   : image classes [ 3, 5, 11 ]  -> FIXES (deficiency predicted)
+  p = 7   : image classes [ 3, 6, 10 ]  -> MOVES (full weight predicted)
+  p = 17  : image classes [ 3, 5, 11 ]  -> FIXES (deficiency predicted)
+multiset [ 5, 5, 7 ] = [ <4, 1>, <4, 1>, <4, 2> ]:
+  p = 3   : image classes [ 6, 6, 7 ]  -> MOVES (full weight predicted)
+  p = 5   : image classes [ 5, 5, 7 ]  -> FIXES (deficiency predicted)
+  p = 7   : image classes [ 6, 6, 7 ]  -> MOVES (full weight predicted)
+  p = 17  : image classes [ 5, 5, 7 ]  -> FIXES (deficiency predicted)
+multiset [ 2, 10, 10 ] = [ <2, 2>, <8, 1>, <8, 1> ]:
+  p = 3   : image classes [ 2, 11, 11 ]  -> MOVES (full weight predicted)
+  p = 5   : image classes [ 2, 10, 10 ]  -> FIXES (deficiency predicted)
+  p = 7   : image classes [ 2, 11, 11 ]  -> MOVES (full weight predicted)
+  p = 17  : image classes [ 2, 10, 10 ]  -> FIXES (deficiency predicted)
+
+k=8 class indices: inv0=3 inv4=2 o8(c1,c3,c5,c7)=[ 11, 10, 13, 12 ] o16=[ 22, 23, 20, 21 ]
+
+==== PGammaL(2,256) ====
+multiset [ 2, 11, 23 ] = [ <2, 4>, <8, 1>, <16, 3> ]:
+  p = 3   : image classes [ 2, 10, 22 ]  -> MOVES (full weight predicted)
+  p = 5   : image classes [ 2, 13, 21 ]  -> MOVES (full weight predicted)
+  p = 7   : image classes [ 2, 12, 20 ]  -> MOVES (full weight predicted)
+  p = 17  : image classes [ 2, 11, 23 ]  -> FIXES (deficiency predicted)
+  p = 257 : image classes [ 2, 11, 23 ]  -> FIXES (deficiency predicted)
+multiset [ 3, 12, 11 ] = [ <2, 0>, <8, 7>, <8, 1> ]:
+  p = 3   : image classes [ 3, 10, 13 ]  -> MOVES (full weight predicted)
+  p = 5   : image classes [ 3, 10, 13 ]  -> MOVES (full weight predicted)
+  p = 7   : image classes [ 3, 11, 12 ]  -> FIXES (deficiency predicted)
+  p = 17  : image classes [ 3, 11, 12 ]  -> FIXES (deficiency predicted)
+  p = 257 : image classes [ 3, 11, 12 ]  -> FIXES (deficiency predicted)
