@@ -1,0 +1,31 @@
+
+==== Sz(8): order 29120 = [ <2, 6>, <5, 1>, <7, 1>, <13, 1> ], degree 65 ====
+#classes 11; element orders [ 1, 2, 4, 5, 7, 13 ]
+order-4 classes: [ 3, 4 ] (sizes [ 1820, 1820 ])
+  class 3: ratdeg 2, cyclotomic conductor 4
+  class 4: ratdeg 2, cyclotomic conductor 4
+  twist of class 3: [ <5, 3>, <7, 4>, <13, 3> ]
+  twist of class 4: [ <5, 4>, <7, 3>, <13, 4> ]
+multiset [3,3,3]: n=27/4 genus=8 hits=15 gen=12 subs={* 32^^3, 29120^^12 *}
+multiset [3,3,4]: n=27/4 genus=8 hits=15 gen=14 subs={* 32, 29120^^14 *}
+multiset [3,4,4]: n=27/4 genus=8 hits=15 gen=14 subs={* 32, 29120^^14 *}
+multiset [4,4,4]: n=27/4 genus=8 hits=15 gen=15 subs={* 29120^^15 *}
+
+==== Sz(32): order 32537600 = [ <2, 10>, <5, 2>, <31, 1>, <41, 1> ], degree 1025 ====
+#classes 35; element orders [ 1, 2, 4, 5, 25, 31, 41 ]
+order-4 classes: [ 3, 4 ] (sizes [ 508400, 508400 ])
+  class 3: ratdeg 2, cyclotomic conductor 4
+  class 4: ratdeg 2, cyclotomic conductor 4
+  twist of class 3: [ <5, 3>, <31, 4>, <41, 3> ]
+  twist of class 4: [ <5, 4>, <31, 3>, <41, 4> ]
+multiset [3,3,3]: n=495/4 genus=128 hits=15 gen=15 subs={* 32537600^^15 *}
+multiset [3,3,4]: n=495/4 genus=128 hits=15 gen=15 subs={* 32537600^^15 *}
+multiset [3,4,4]: n=495/4 genus=128 hits=15 gen=13 subs={* 32^^2, 32537600^^13 *}
+multiset [4,4,4]: n=495/4 genus=128 hits=15 gen=15 subs={* 32537600^^15 *}
+DONE
+
+Exact Nielsen counts (full enumeration, Sz(8)):
+multiset [3,3,3]: Ni_total=27/4-> total 108/|C|=16, Ni_gen=6
+multiset [3,3,4]: Ni_gen=6
+multiset [3,4,4]: Ni_gen=6
+multiset [4,4,4]: Ni_gen=6

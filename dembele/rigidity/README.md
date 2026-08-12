@@ -196,6 +196,17 @@ good reduction at EVERY odd prime — the obstruction to only-at-2 lives in the
 moduli field K (ramified at 5, 17), not in the cover geometry. The k=8 question
 becomes: is the moduli field of the k=8 all-2-power passports only-2-ramified?
 
+**Suzuki census** (script `21`, `out/suzuki_census.txt`): Sz(q) has 2-Sylow of
+exponent 4, so the SIMPLE group admits all-2-power (4,4,4) triples — no outer
+cosets needed. Sz(8): two order-4 classes (inverse pair, character conductor 4
+= Q(i)), four passports, each with exactly Ni_gen = 6, genus-8 degree-65
+covers, robust generation. Twist: 5, 13 FIX (both ≡ 1 mod 4), 7 MOVES. Sz(32):
+same shape (5, 41 fix; 31 moves; genus 128). Provable congruence: every
+p | q²+1 satisfies p ≡ 1 mod 4 (ord_p(q) = 4), and every p | 2^k+1 (k = 2^j)
+satisfies p ≡ 1 mod 2^(j+1) — the "+1-torus" primes ALWAYS satisfy the
+twist-fixing condition, in both families. Under the transfer hypothesis the
+whole char-2 landscape is blocked at its +1-torus primes.
+
 k=4 control: the inverse-galois-hmf sweep found no only-at-2 SL₂(F₁₆)⋊C₄ field,
 consistent with {5,17} being genuinely unavoidable here; at k=8 (torus primes
 3·5·17 and 257) Dembélé's field exists, and the question of a cover with bad
