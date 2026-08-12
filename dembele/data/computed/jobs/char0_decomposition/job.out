@@ -1,0 +1,21 @@
+
+In file "two_remote_magma/dembele_jobs/char0_decomposition/job.m", line 9, column 1:
+>> require hmf_root ne "" :
+   ^
+User error: Require statements only allowed in intrinsics
+
+WARNING
+Class group unconditional proof is expensive.
+Hint: to obtain class group proven under GRH, input
+> SetClassGroupBounds("GRH");
+before starting the current calculation.
+
+RESULT|newform_piece_count|6
+RESULT|newform_dimensions|[ 1, 2, 2, 4, 16, 32 ]
+PIECE|1|dimension|1
+PIECE|2|dimension|2
+PIECE|3|dimension|2
+PIECE|4|dimension|4
+PIECE|5|dimension|16
+PIECE|6|dimension|32
+PASS|dembele_char0_decomposition

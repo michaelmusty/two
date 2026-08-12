@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "source": {
+    "title": "A non-solvable Galois extension of Q ramified at 2 only",
+    "author": "Lassina Dembele",
+    "arxiv": "0811.4379",
+    "table": 1
+  },
+  "base_field": {
+    "name": "Q(zeta_32)^+",
+    "generator": "beta = zeta_32 + zeta_32^(-1)",
+    "minimal_polynomial_coefficients_high_to_low": [
+      1,
+      0,
+      -8,
+      0,
+      20,
+      0,
+      -16,
+      0,
+      2
+    ],
+    "integral_basis": [
+      "1",
+      "beta",
+      "beta^2",
+      "beta^3",
+      "beta^4",
+      "beta^5",
+      "beta^6",
+      "beta^7"
+    ],
+    "galois_generator": "sigma(beta) = -beta^3 + 3*beta",
+    "galois_group_order": 8,
+    "discriminant": "2^31"
+  },
+  "finite_field": {
+    "size": 256,
+    "multiplicative_group_order": 255,
+    "paper_generator": "alpha",
+    "normalization": "The paper specifies alpha only as a generator of GF(256)^*. It does not specify a defining polynomial or a canonical embedding."
+  },
+  "space": {
+    "notation": "S_2(1, F_2)",
+    "parallel_weight": 2,
+    "level": 1,
+    "dimension_over_F2": 57,
+    "zero_primary_dimension": 41,
+    "nonzero_irreducible_constituent_dimensions": [
+      8,
+      8
+    ]
+  },
+  "hecke_characteristic_polynomials_mod_2": {
+    "prime_above_2": "x^41*(x^2+x+1)^8",
+    "first_prime_above_31": "x^41*(x^8+x^4+x^3+x+1)*(x^8+x^6+x^5+x^2+1)"
+  },
+  "prime_orbits": {
+    "31": {
+      "generator_power_basis_coordinates": [
+        1,
+        2,
+        0,
+        -4,
+        0,
+        1,
+        0,
+        0
+      ],
+      "ordering": "p_31^i = sigma^(i-1)(p_31), i=1,...,8"
+    },
+    "97": {
+      "generator_power_basis_coordinates": [
+        1,
+        -12,
+        -4,
+        19,
+        1,
+        -8,
+        0,
+        1
+      ],
+      "ordering": "p_97^i = sigma^(i-1)(p_97), i=1,...,8"
+    }
+  },
+  "table_1": {
+    "31": {
+      "f_trace_exponents": [
+        100,
+        19,
+        145,
+        76,
+        70,
+        49,
+        25,
+        196
+      ],
+      "f_frobenius_orders": [
+        257,
+        255,
+        257,
+        255,
+        257,
+        255,
+        257,
+        255
+      ],
+      "f_prime_trace_exponents": [
+        196,
+        100,
+        19,
+        145,
+        76,
+        70,
+        49,
+        25
+      ],
+      "f_prime_frobenius_orders": [
+        255,
+        257,
+        255,
+        257,
+        255,
+        257,
+        255,
+        257
+      ]
+    },
+    "97": {
+      "f_trace_exponents": [
+        23,
+        1,
+        92,
+        4,
+        113,
+        16,
+        197,
+        64
+      ],
+      "f_frobenius_orders": [
+        257,
+        51,
+        257,
+        51,
+        257,
+        51,
+        257,
+        51
+      ],
+      "f_prime_trace_exponents": [
+        64,
+        23,
+        1,
+        92,
+        4,
+        113,
+        16,
+        197
+      ],
+      "f_prime_frobenius_orders": [
+        51,
+        257,
+        51,
+        257,
+        51,
+        257,
+        51,
+        257
+      ]
+    }
+  },
+  "galois_action_claims": {
+    "coefficient_frobenius": "tau(alpha) = alpha^2",
+    "sigma_squared": "a_(sigma^2(p))(f) = tau^2(a_p(f)), and similarly for f_prime",
+    "sigma_interchange": "a_(sigma(p))(f) = a_p(f_prime)",
+    "indexing_warning": "The printed f_prime rows are a one-place right shift of the f rows. The exact sigma versus sigma^(-1) convention must be checked computationally."
+  },
+  "target_extension": {
+    "geometric_group": "SL(2,256)^2",
+    "quotient_over_Q": "C8",
+    "paper_notation": "SL(2,256)^2 . 8",
+    "sl2_order": 16776960,
+    "degree_over_Q": 2251731094732800,
+    "ramified_rational_primes": [
+      2
+    ],
+    "root_discriminant_bound": "2^(47/8)"
+  }
+}

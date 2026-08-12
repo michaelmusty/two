@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "source_script": "dembele/magma/31_lift_field_ideals.m",
+  "assumption": "GRH class-group bounds",
+  "class_group": {
+    "invariants": [2],
+    "order": 2
+  },
+  "narrow_class_group": {
+    "invariants": [2, 2],
+    "order": 4
+  },
+  "primes_above_2": [
+    {
+      "index": 1,
+      "ordinary_class": "0",
+      "narrow_class": "0",
+      "principal": true,
+      "narrowly_principal": true
+    },
+    {
+      "index": 2,
+      "ordinary_class": "0",
+      "narrow_class": "0",
+      "principal": true,
+      "narrowly_principal": true
+    }
+  ],
+  "codifferent": {
+    "ordinary_class": "0",
+    "narrow_class": "0",
+    "principal": true,
+    "narrowly_principal": true
+  }
+}

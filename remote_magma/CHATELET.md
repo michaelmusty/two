@@ -46,6 +46,15 @@ Upload, verify, execute, and remove one Magma source file:
 python3 remote_magma/cocalc.py --timeout 3600 run path/to/job.m
 ```
 
+Use repeatable `--remote-env KEY=VALUE` options for package paths and parallel lane
+parameters:
+
+```sh
+python3 remote_magma/cocalc.py --timeout 3600 \
+  --remote-env HMF_ROOT=two_hilbertmodularforms \
+  --remote-env ORBIT_INDEX=1 run path/to/job.m
+```
+
 Run a diagnostic shell command:
 
 ```sh

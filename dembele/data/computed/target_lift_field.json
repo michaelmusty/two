@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "source_script": "dembele/magma/21_target_lift_field.m",
+  "magma_version": "V2.29-8",
+  "target_component_dimension": 16,
+  "hecke_field": {
+    "degree": 16,
+    "defining_polynomial_coefficients_high_to_low": [
+      1,
+      -12,
+      -255,
+      3655,
+      18005,
+      -393541,
+      119362,
+      17669515,
+      -50861545,
+      -286668975,
+      1402550907,
+      756001636,
+      -11972369685,
+      12087897420,
+      26153849155,
+      -54404306283,
+      26601321401
+    ]
+  },
+  "order_at_2": {
+    "equation_order_to_2_maximal_order_index": 1,
+    "index_2_adic_valuation": 0
+  },
+  "defining_polynomial_mod_2": {
+    "coefficients_high_to_low": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "irreducible_factors": [
+      {
+        "polynomial": "y^8+y^4+y^3+y+1",
+        "multiplicity": 1
+      },
+      {
+        "polynomial": "y^8+y^6+y^5+y^2+1",
+        "multiplicity": 1
+      }
+    ]
+  },
+  "primes_above_2": [
+    {
+      "ramification_index": 1,
+      "residue_degree": 8,
+      "norm": 256
+    },
+    {
+      "ramification_index": 1,
+      "residue_degree": 8,
+      "norm": 256
+    }
+  ],
+  "conclusion": "The two mod-2 degree-8 eigensystems are reductions of the unique degree-16 characteristic-zero newform orbit at the two primes above 2."
+}

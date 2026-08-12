@@ -25,6 +25,15 @@ Upload and run one Magma file:
 python3 remote_magma/cocalc.py --timeout 3600 run path/to/job.m
 ```
 
+Forward repeatable environment settings when a job depends on remote paths or lane
+parameters:
+
+```sh
+python3 remote_magma/cocalc.py --timeout 3600 \
+  --remote-env HMF_ROOT=two_hilbertmodularforms \
+  --remote-env ORBIT_INDEX=1 run path/to/job.m
+```
+
 Run a diagnostic shell command:
 
 ```sh

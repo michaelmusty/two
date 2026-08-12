@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "source_script": "manual exhaustion pass + dembele/tests/frob_disc_gate.py + Magma probes",
+  "ideas": {
+    "twisted_L_oda_periods": {
+      "verdict": "dead",
+      "evidence": "dembele/certificates/period-feasibility.md; Nm(c)=991 needs ~1.35e10 coeffs/digit"
+    },
+    "greenberg_voight_shimura_periods": {
+      "verdict": "dead",
+      "evidence": "level-1 even-degree F forces definite JL; Magma IsDefinite=true; Algorithm II exports Hecke only"
+    },
+    "magma_riemann_surfaces": {
+      "verdict": "dead",
+      "evidence": "needs algebraic curve equation; outputs Jac(C) periods, not RM 16-fold periods"
+    },
+    "hack_hmf_for_periods": {
+      "verdict": "dead",
+      "evidence": "force_indefinite requires valuation-1 prime in NewLevel; InternalHMFRawDataDefinite is Hecke-only"
+    },
+    "csv_pipeline_without_new_frontend": {
+      "verdict": "dead",
+      "evidence": "back end (Eisenstein) ready; front end is twisted L; paper has no period-free path"
+    },
+    "omega_plus_plus_RM_recovers_signs": {
+      "verdict": "dead",
+      "evidence": "V_f,s_i = H*Omega^{s_i} ⊕ H*Omega^+ needs both W_∞-eigenspaces; RM acts within H-structure, not across signs; Oda Thm 4.4 only relates opposite signs"
+    },
+    "omega_plus_alone_computable": {
+      "verdict": "dead_for_pipeline",
+      "evidence": "Nm(c)=1 needs ~4.2e6 coeffs for 1 digit; possibly computable but insufficient without s_i periods"
+    },
+    "dense_frobenius_hunter": {
+      "verdict": "dead",
+      "evidence": "dembele/certificates/frob-disc-gate.md; filtered log10(volume)~24084"
+    },
+    "sparse_trinomial_x_n_ax_b": {
+      "verdict": "dead",
+      "evidence": "exhaustive: 0/930 polys x^257+ax+b over F_31 realize types 257^1, 1^2*255^1, or 1^2*51^5; 0/2000 samples mod 97"
+    },
+    "sparse_trinomial_other_k": {
+      "verdict": "dead",
+      "evidence": "x^257+a x^k+b for k in {2,3,5,17,51,128,256}: never type 257^1 or 1^2*51^5 in samples; only k=2 yields some 1^2*255"
+    },
+    "sparse_quadrinomial": {
+      "verdict": "dead",
+      "evidence": "3000 samples mod 31: 0 inert, 0 type 51; house bound log10(M^n)~232 for M=8 forces enormous constant terms even if a sparse shape existed"
+    },
+    "lmfdb_or_tables_deg_257": {
+      "verdict": "dead",
+      "evidence": "no tabulated deg-257 / PSL2(F_256) fields ramified only at 2; Dembele existence is non-explicit; Jones-Roberts DB does not reach this degree"
+    },
+    "classical_mod2_level_2power": {
+      "verdict": "dead",
+      "evidence": "S_2(Gamma0(2^k)) newform max Hecke degree only 2 through N=256; far from residue field F_256"
+    },
+    "modular_CRT_reconstruction_16fold": {
+      "verdict": "dead",
+      "evidence": "no algorithm/package reconstructs principally polarized AV of dim 16 from Frobenius charpolys; moduli dim 136"
+    },
+    "cerednik_drinfeld_from_brandt": {
+      "verdict": "dead_direct",
+      "evidence": "CD needs Shimura curve / multiplicative reduction place; our JL algebra is totally definite of finite disc 1 (level 1). Remains research-level long-shot only via congruent level-raising"
+    },
+    "mascot_division_polynomials": {
+      "verdict": "dead",
+      "evidence": "CSV uses this after a curve model of Jac exists; we have no curve/AV equation"
+    },
+    "base_change_or_inner_twist_reduction": {
+      "verdict": "dead",
+      "evidence": "dembele/certificates/constructive-feasibility.md; trace alpha^100 order 51 blocks quadratic inner twist and proper base change"
+    },
+    "descent_to_GSpin_periods": {
+      "verdict": "dead_as_period_source",
+      "evidence": "even successful descent gives End^0=Q(sqrt5) GSpin_17 object; no period algorithm; Schur-index gap remains"
+    },
+    "overconvergent_hmf_symbols": {
+      "verdict": "long_shot_no_tooling",
+      "evidence": "no package for parallel weight 2 over degree-8 F; GV flag quaternionic overconvergent as future work"
+    }
+  },
+  "still_running": {
+    "lift_field_generators": "chatelet job still running (~4.5h at last check); de-GRHs principality only; does not unblock polynomial"
+  },
+  "verdict": {
+    "explicit_polynomial_reachable_with_current_ideas": false,
+    "summary": "All concrete constructive ideas currently available are blocked. The CSV architecture remains correct but waits on a new period or torsion front end that does not yet exist in software for this (F, level 1, g=16) case."
+  }
+}

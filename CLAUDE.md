@@ -1,18 +1,26 @@
-# Project: nonsolvable number field ramified only at 2, via 2-group Belyi maps
+# Project: making Dembélé's field explicit
 
-Research repo building on **Michael Musty's 2019 Dartmouth thesis "2-Group Belyi Maps"**
-(advisor J. Voight). The user (michaelmusty@gmail.com) is the thesis author.
+The current objective is to construct an explicit polynomial whose splitting field is
+Dembélé's nonsolvable Galois extension of `Q`, ramified only at `2`. The base field is
+`F = Q(zeta_32)^+`; the target group fits into
+`1 → SL₂(F₂₅₆)² → Gal(K/Q) → C₈ → 1`.
 
-## Goal & current answer
+Start new work in **`dembele/`**. The immediate milestone is to reproduce the
+57-dimensional level-one, parallel-weight-two mod-2 Hilbert Hecke module, recover its two
+8-dimensional nonzero constituents, and determine whether their maximal ideals lift through
+the integral characteristic-zero Hecke algebra. The pinned local HMF package is
+`/Users/musty/hilbertmodularforms`; heavy Magma jobs can run through `remote_magma/`.
+
+## Legacy 2-group Belyi investigation
 
 **Original goal:** find an *explicit* nonsolvable number field ramified only at 2 — the
 thesis's "long-term application" (open questions Q1.2.5, Q6.2.1). Mechanism: a 2-group Belyi
 map has good reduction outside 2 (Beckmann), so `Q(J[2^n])` is ramified only at 2; if the
 Galois image in `Sp_{2g}(F₂)` were nonsolvable you'd get such a field explicitly.
 
-**What we found (a NEGATIVE resolution):** the 2-group Belyi construction **cannot** produce
-one. Such a field *does* exist (Dembélé 2009) but is not small/explicit; this construction
-provably can't reach it. Full argument in **`writeup/main-result.md`**. In brief:
+**What we found (a strong conditional obstruction):** assuming Lemma B below, the 2-group
+Belyi construction cannot produce one. Such a field exists (Dembélé 2009) but is not
+explicit. Full argument in **`writeup/main-result.md`**. In brief:
 - Frobenius acts `F₂[G]`-linearly on `J[2] = H¹(X,F₂)`, so the arithmetic image lies in
   `Aut_{F₂[G]}(J[2])` (the centralizer of the deck group).
 - **Lemma A** (indecomposable module ⟹ solvable automorphism group) — **PROVED, formalized
@@ -20,7 +28,7 @@ provably can't reach it. Full argument in **`writeup/main-result.md`**. In brief
 - **Lemma B** (`J[2]` is always indecomposable) — **OPEN**, but verified for ALL genus-≥2
   triples with `|G| ≤ 128` (**2008/2008**, no exceptions). This is the one remaining gap.
 - Non-Galois covers are controlled by their Galois closure (a Galois 2-group Belyi map), so
-  they die with the Galois route. Both routes blocked.
+  they are conditionally blocked with the Galois route.
 
 ## Status ledger
 
@@ -44,6 +52,10 @@ hypothesis.
 
 ## File map
 
+- **`dembele/`** — CURRENT WORK: published data, exact Magma computations, tests,
+  certificates, and eventual explicit polynomials.
+- **`remote_magma/`** — tested CoCalc/chatelet client for Magma V2.29-8; operational
+  details in `remote_magma/CHATELET.md`.
 - **`writeup/`** — START HERE. `main-result.md`, `lemma-B-open-problem.md`, `README.md`.
 - **`aristotle_solvable/FiniteLocalSolvable.lean`** — Lean proof of Lemma A (via Aristotle).
 - **`torsion_module.sage`** — `analyze(G,s0,s1)` builds `H¹(X,F₂)` as `F₂[G]`-module + exact
@@ -82,6 +94,8 @@ provisioned on a new machine. Verified versions on the original host (macOS):
 
 | Tool | Version | Provides / used for | Install |
 |---|---|---|---|
+| **Magma** | 2.29-8 | Current `dembele/` Hilbert modular forms and exact number-field computations; installed locally and available remotely on chatelet. | licensed Magma install; remote setup in `remote_magma/CHATELET.md` |
+| `hilbertmodularforms` | commit `f5ce6582…` | Definite quaternionic Hilbert Hecke/Brandt machinery; pin recorded in `dembele/upstream.lock`. | clone `edgarcosta/hilbertmodularforms` outside this repo |
 | **SageMath** | 10.6 | `sage`, `libgap`; bundles **GAP 4.14.0** + SmallGroups library + MeatAxe. Core of `torsion_module/fast/shard.sage`, `belyi/`. | conda `sage`, or sagemath.org binaries |
 | **Julia** | 1.12.6 | `belyi_jl/` Hecke tower + radicand solver | julialang.org |
 | Julia pkgs | Hecke, Combinatorics, JSON | pinned in `belyi_jl/{Project,Manifest}.toml` | `julia --project=belyi_jl -e 'using Pkg; Pkg.instantiate()'` |
@@ -89,9 +103,9 @@ provisioned on a new machine. Verified versions on the original host (macOS):
 | PARI/GP | 2.17.x | `nflist` number-field enumeration (earlier route) — **optional** | pari.math.u-bordeaux.fr |
 | lmfdb-lite | — | `lmf` package for LMFDB Postgres queries (genus-2 verdict) — **optional**, external | see `[[lmfdb-lite]]` / user's setup |
 
-**Secrets (gitignored — recreate by hand):** `.env` at repo root must contain
-`ARISTOTLE_API_KEY=...` (get one at aristotle.harmonic.fun/dashboard/keys). The earlier work
-also referenced `AXIOMATIC_API_KEY`. `.env` is in `.gitignore` and must never be committed.
+**Secrets (gitignored — recreate by hand):** `.env` at repo root contains the Aristotle
+key and the `COCALC_ACCOUNT_API_KEY`, `COCALC_PROJECT_ID`, and `COCALC_BASE` settings used
+by remote Magma. See `remote_magma/CHATELET.md`. `.env` must never be committed.
 
 **Minimum to reproduce the headline result** (the 2008/2008 indecomposability scans): just
 **SageMath 10.6** — no Julia, Python-venv, PARI, or LMFDB needed. Julia/Hecke is only for the

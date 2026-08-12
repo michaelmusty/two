@@ -1,0 +1,532 @@
+{
+  "discriminant": {
+    "artin_conductor_status": "No small explicit conductor exponent for the projective residual representation is available from the present data; the Hunter gate is decided by coefficient-box volume under optimistic conjugate bounds, which already exceeds the kill threshold without needing a disc upper bound.",
+    "artin_conductor_upper_bound": null,
+    "base_of_target_field": "Q(sqrt(2))",
+    "disc_Q_sqrt2_shape": "power of the unique prime above 2",
+    "galois_closure_image": "PSL2(F_256) semidirect C_4 (abstract model)",
+    "ramification": "only above 2",
+    "target_degree": 257
+  },
+  "finite_field": {
+    "char_2_sl2_equals_psl2": true,
+    "p1_size": 257,
+    "psl2_order": 16776960,
+    "q": 256
+  },
+  "frobenius_cycle_types": {
+    "31": {
+      "1": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            257,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 257,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "257^1",
+          "degree_partition": [
+            [
+              257,
+              1
+            ]
+          ],
+          "fixed_points": 0,
+          "number_of_cycles": 1
+        },
+        "sl2_class": "nonsplit_singer",
+        "trace_mask": 2
+      },
+      "2": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            1,
+            2
+          ],
+          [
+            255,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 255,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "1^2 * 255^1",
+          "degree_partition": [
+            [
+              1,
+              2
+            ],
+            [
+              255,
+              1
+            ]
+          ],
+          "fixed_points": 2,
+          "number_of_cycles": 3
+        },
+        "sl2_class": "split_maximal",
+        "trace_mask": 165
+      },
+      "3": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            257,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 257,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "257^1",
+          "degree_partition": [
+            [
+              257,
+              1
+            ]
+          ],
+          "fixed_points": 0,
+          "number_of_cycles": 1
+        },
+        "sl2_class": "nonsplit_singer",
+        "trace_mask": 16
+      },
+      "4": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            1,
+            2
+          ],
+          [
+            255,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 255,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "1^2 * 255^1",
+          "degree_partition": [
+            [
+              1,
+              2
+            ],
+            [
+              255,
+              1
+            ]
+          ],
+          "fixed_points": 2,
+          "number_of_cycles": 3
+        },
+        "sl2_class": "split_maximal",
+        "trace_mask": 72
+      },
+      "5": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            257,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 257,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "257^1",
+          "degree_partition": [
+            [
+              257,
+              1
+            ]
+          ],
+          "fixed_points": 0,
+          "number_of_cycles": 1
+        },
+        "sl2_class": "nonsplit_singer",
+        "trace_mask": 94
+      },
+      "6": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            1,
+            2
+          ],
+          [
+            255,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 255,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "1^2 * 255^1",
+          "degree_partition": [
+            [
+              1,
+              2
+            ],
+            [
+              255,
+              1
+            ]
+          ],
+          "fixed_points": 2,
+          "number_of_cycles": 3
+        },
+        "sl2_class": "split_maximal",
+        "trace_mask": 24
+      },
+      "7": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            257,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 257,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "257^1",
+          "degree_partition": [
+            [
+              257,
+              1
+            ]
+          ],
+          "fixed_points": 0,
+          "number_of_cycles": 1
+        },
+        "sl2_class": "nonsplit_singer",
+        "trace_mask": 77
+      },
+      "8": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            1,
+            2
+          ],
+          [
+            255,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 255,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "1^2 * 255^1",
+          "degree_partition": [
+            [
+              1,
+              2
+            ],
+            [
+              255,
+              1
+            ]
+          ],
+          "fixed_points": 2,
+          "number_of_cycles": 3
+        },
+        "sl2_class": "split_maximal",
+        "trace_mask": 245
+      }
+    },
+    "97": {
+      "1": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            257,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 257,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "257^1",
+          "degree_partition": [
+            [
+              257,
+              1
+            ]
+          ],
+          "fixed_points": 0,
+          "number_of_cycles": 1
+        },
+        "sl2_class": "nonsplit_singer",
+        "trace_mask": 244
+      },
+      "2": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            1,
+            2
+          ],
+          [
+            51,
+            5
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 51,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "1^2 * 51^5",
+          "degree_partition": [
+            [
+              1,
+              2
+            ],
+            [
+              51,
+              5
+            ]
+          ],
+          "fixed_points": 2,
+          "number_of_cycles": 7
+        },
+        "sl2_class": "split_torus",
+        "trace_mask": 76
+      },
+      "3": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            257,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 257,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "257^1",
+          "degree_partition": [
+            [
+              257,
+              1
+            ]
+          ],
+          "fixed_points": 0,
+          "number_of_cycles": 1
+        },
+        "sl2_class": "nonsplit_singer",
+        "trace_mask": 164
+      },
+      "4": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            1,
+            2
+          ],
+          [
+            51,
+            5
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 51,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "1^2 * 51^5",
+          "degree_partition": [
+            [
+              1,
+              2
+            ],
+            [
+              51,
+              5
+            ]
+          ],
+          "fixed_points": 2,
+          "number_of_cycles": 7
+        },
+        "sl2_class": "split_torus",
+        "trace_mask": 3
+      },
+      "5": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            257,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 257,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "257^1",
+          "degree_partition": [
+            [
+              257,
+              1
+            ]
+          ],
+          "fixed_points": 0,
+          "number_of_cycles": 1
+        },
+        "sl2_class": "nonsplit_singer",
+        "trace_mask": 73
+      },
+      "6": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            1,
+            2
+          ],
+          [
+            51,
+            5
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 51,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "1^2 * 51^5",
+          "degree_partition": [
+            [
+              1,
+              2
+            ],
+            [
+              51,
+              5
+            ]
+          ],
+          "fixed_points": 2,
+          "number_of_cycles": 7
+        },
+        "sl2_class": "split_torus",
+        "trace_mask": 17
+      },
+      "7": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            257,
+            1
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 257,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "257^1",
+          "degree_partition": [
+            [
+              257,
+              1
+            ]
+          ],
+          "fixed_points": 0,
+          "number_of_cycles": 1
+        },
+        "sl2_class": "nonsplit_singer",
+        "trace_mask": 25
+      },
+      "8": {
+        "component": "q1",
+        "expected_degree_partition": [
+          [
+            1,
+            2
+          ],
+          [
+            51,
+            5
+          ]
+        ],
+        "field_modulus_mask": 283,
+        "frobenius_order": 51,
+        "matches_group_theoretic_partition": true,
+        "p1_cycle_type": {
+          "as_factorization_type": "1^2 * 51^5",
+          "degree_partition": [
+            [
+              1,
+              2
+            ],
+            [
+              51,
+              5
+            ]
+          ],
+          "fixed_points": 2,
+          "number_of_cycles": 7
+        },
+        "sl2_class": "split_torus",
+        "trace_mask": 95
+      }
+    }
+  },
+  "hunter_estimates": {
+    "chebotarev_log10_savings_two_primes_upper_bound": 14.4494265381542,
+    "extreme_absolute_M1": {
+      "conjugate_bound_M": 1.0,
+      "degree": 257,
+      "dominant_coefficient_index": 128,
+      "log10_coefficient_box_volume": 14118.071321342743,
+      "log10_dominant_coefficient_choices": 76.36144826287777,
+      "log10_middle_coefficient_choices": 76.36144826287777,
+      "middle_coefficient_index": 128
+    },
+    "filtered_optimistic_log10_volume": 24083.66934105255,
+    "optimistic_absolute_M2": {
+      "conjugate_bound_M": 2.0,
+      "degree": 257,
+      "dominant_coefficient_index": 171,
+      "log10_coefficient_box_volume": 24098.118767590706,
+      "log10_dominant_coefficient_choices": 121.64240796442357,
+      "log10_middle_coefficient_choices": 114.89328770786736,
+      "middle_coefficient_index": 128
+    },
+    "relative_over_Q_sqrt2_M2": {
+      "conjugate_bound_M": 2.0,
+      "degree": 257,
+      "dominant_coefficient_index": 171,
+      "log10_coefficient_box_volume": 24098.118767590706,
+      "log10_dominant_coefficient_choices": 121.64240796442357,
+      "log10_middle_coefficient_choices": 114.89328770786736,
+      "middle_coefficient_index": 128
+    }
+  },
+  "schema_version": 1,
+  "source": {
+    "constituents": "dembele/data/computed/constituents.json",
+    "scorecard": "dembele/certificates/torsion-construction-scorecard.md",
+    "script": "dembele/tests/frob_disc_gate.py"
+  },
+  "verdict": {
+    "filtered_log10_volume_optimistic_M2": 24083.66934105255,
+    "kill_volume_threshold": 1000000000000,
+    "killed_by_hunter_volume": true,
+    "killed_by_missing_2_power_disc_upper_bound": true,
+    "pure_frobenius_hunter_reconstruction_feasible": false,
+    "summary": "DEAD: even with conjugate bound M=2 and two maximal Chebotarev filters, the monic degree-257 Hunter box has log10(volume) \u2248 24083.7 \u226b 12."
+  }
+}

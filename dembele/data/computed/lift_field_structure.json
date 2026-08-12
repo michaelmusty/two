@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "source_script": "dembele/magma/30_lift_field_structure.m",
+  "field": {
+    "degree": 16,
+    "signature": [
+      16,
+      0
+    ],
+    "discriminant": "51536621539079846122207574462890625",
+    "discriminant_factorization": {
+      "5": 14,
+      "89": 7,
+      "661": 4
+    },
+    "automorphism_group": "C8",
+    "is_galois_over_Q": false
+  },
+  "unique_embedded_subfields": [
+    {
+      "degree": 2,
+      "isomorphism_description": "Q(sqrt(5))",
+      "defining_polynomial": "x^2+326243*x+26601321401",
+      "discriminant": 5,
+      "automorphism_count": 2
+    },
+    {
+      "degree": 4,
+      "defining_polynomial": "x^4-1364*x^3-1042099*x^2+228371036*x+26601321401",
+      "discriminant": 2225,
+      "discriminant_factorization": {
+        "5": 2,
+        "89": 1
+      },
+      "automorphism_count": 2
+    },
+    {
+      "degree": 8,
+      "defining_polynomial": "x^8+218*x^7+18263*x^6+714011*x^5+11517840*x^4-12312339*x^3-1919681667*x^2-6177513277*x+26601321401",
+      "discriminant": 11015140625,
+      "discriminant_factorization": {
+        "5": 6,
+        "89": 3
+      },
+      "automorphism_count": 4
+    }
+  ],
+  "primes_above_2": [
+    {
+      "ramification_index": 1,
+      "residue_degree": 8,
+      "norm": 256
+    },
+    {
+      "ramification_index": 1,
+      "residue_degree": 8,
+      "norm": 256
+    }
+  ],
+  "dimension_reduction_tests": {
+    "trace_alpha_100_multiplicative_order": 51,
+    "trace_alpha_100_fixed_by_16th_power": false,
+    "trace_at_sigma4_prime_equal": false,
+    "quadratic_inner_twist": "excluded",
+    "proper_base_change": "excluded",
+    "expected_abelian_variety_dimension": 16
+  }
+}

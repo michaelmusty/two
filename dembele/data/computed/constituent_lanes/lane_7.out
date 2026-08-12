@@ -1,0 +1,27 @@
+
+In file "two_remote_magma/dembele_constituents/constituent_orbit_job.m", line 14, column 1:
+>> require hmf_root ne "" :
+   ^
+User error: Require statements only allowed in intrinsics
+
+In file "two_remote_magma/dembele_constituents/constituent_orbit_job.m", line 16, column 1:
+>> require index_text ne "" :
+   ^
+User error: Require statements only allowed in intrinsics
+
+In file "two_remote_magma/dembele_constituents/constituent_orbit_job.m", line 19, column 1:
+>> require orbit_index in [1..8] :
+   ^
+User error: Require statements only allowed in intrinsics
+
+WARNING
+Class group unconditional proof is expensive.
+Hint: to obtain class group proven under GRH, input
+> SetClassGroupBounds("GRH");
+before starting the current calculation.
+
+TRACE|31|7|q1|t^6 + t^3 + t^2 + 1|257
+TRACE|31|7|q2|t^7 + t^4 + t^3 + 1|255
+TRACE|97|7|q1|t^4 + t^3 + 1|257
+TRACE|97|7|q2|t^7 + t^5 + t^4 + t^2 + t|51
+PASS|constituent_orbit|7

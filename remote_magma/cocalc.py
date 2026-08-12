@@ -6,6 +6,8 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import re
+import shlex
 import socket
 import ssl
 import sys
@@ -19,6 +21,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 ENV_PATH = ROOT / ".env"
 REMOTE_DIR = "two_remote_magma"
+ENVIRONMENT_NAME = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
 
 try:
     import certifi
@@ -112,19 +115,43 @@ def rexec(
     return result
 
 
+def environment_prefix(environment: list[str] | None) -> str:
+    """Build a safely quoted POSIX ``env`` prefix from KEY=VALUE arguments."""
+    if not environment:
+        return ""
+    assignments = []
+    for assignment in environment:
+        if "=" not in assignment:
+            raise RuntimeError(f"remote environment must use KEY=VALUE: {assignment!r}")
+        key, value = assignment.split("=", 1)
+        if not ENVIRONMENT_NAME.fullmatch(key):
+            raise RuntimeError(f"invalid remote environment name: {key!r}")
+        assignments.append(f"{key}={shlex.quote(value)}")
+    return "env " + " ".join(assignments) + " "
+
+
 def run_magma_text(
-    conf: dict[str, str], source: str, *, timeout: int = 120
+    conf: dict[str, str],
+    source: str,
+    *,
+    timeout: int = 120,
+    environment: list[str] | None = None,
 ) -> dict:
     """Run a short Magma program without creating a remote file."""
     encoded = base64.b64encode(source.encode()).decode()
     command = (
-        f"printf '%s' '{encoded}' | base64 -d | /usr/local/bin/magma -b"
+        f"printf '%s' '{encoded}' | base64 -d | "
+        f"{environment_prefix(environment)}/usr/local/bin/magma -b"
     )
     return rexec(conf, command, timeout=timeout)
 
 
 def run_magma_file(
-    conf: dict[str, str], path: Path, *, timeout: int = 120
+    conf: dict[str, str],
+    path: Path,
+    *,
+    timeout: int = 120,
+    environment: list[str] | None = None,
 ) -> dict:
     """Upload one Magma source file in 64 KB chunks, run it, then remove it."""
     data = path.read_bytes()
@@ -156,7 +183,8 @@ def run_magma_file(
     try:
         return rexec(
             conf,
-            f"/usr/local/bin/magma -b < {remote_base}",
+            f"{environment_prefix(environment)}/usr/local/bin/magma -b "
+            f"< {remote_base}",
             timeout=timeout,
         )
     finally:
@@ -181,6 +209,13 @@ def main() -> int:
         default=120,
         help="remote CPU and synchronous request limit in seconds",
     )
+    parser.add_argument(
+        "--remote-env",
+        action="append",
+        default=[],
+        metavar="KEY=VALUE",
+        help="set an environment variable for the remote command; repeatable",
+    )
     commands = parser.add_subparsers(dest="mode", required=True)
 
     shell_parser = commands.add_parser("exec", help="run a remote shell command")
@@ -195,11 +230,25 @@ def main() -> int:
     args = parser.parse_args()
     conf = env()
     if args.mode == "exec":
-        result = rexec(conf, args.command, timeout=args.timeout)
+        result = rexec(
+            conf,
+            environment_prefix(args.remote_env) + args.command,
+            timeout=args.timeout,
+        )
     elif args.mode == "eval":
-        result = run_magma_text(conf, args.source, timeout=args.timeout)
+        result = run_magma_text(
+            conf,
+            args.source,
+            timeout=args.timeout,
+            environment=args.remote_env,
+        )
     else:
-        result = run_magma_file(conf, args.path, timeout=args.timeout)
+        result = run_magma_file(
+            conf,
+            args.path,
+            timeout=args.timeout,
+            environment=args.remote_env,
+        )
     return emit(result)
 
 

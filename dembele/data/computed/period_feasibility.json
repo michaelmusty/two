@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "source_script": "dembele/magma/41_period_feasibility.m",
+  "base_field": {
+    "degree": 8,
+    "discriminant": "2147483648",
+    "discriminant_factorization": {
+      "2": 31
+    }
+  },
+  "required_signs": {
+    "description": "all-positive sign followed by eight single-negative signs",
+    "minimum_quadratic_character_conductor_norms": [
+      1,
+      991,
+      991,
+      991,
+      991,
+      991,
+      991,
+      991,
+      991
+    ],
+    "search_bound": 1000
+  },
+  "l_series_coefficient_bounds": {
+    "decimal_precisions": [1, 2, 5, 10, 20, 40, 80],
+    "conductor_norm_1": [
+      4246733,
+      13290701,
+      95631975,
+      1056532017,
+      29589598005,
+      1869269484654,
+      212410318900588
+    ],
+    "conductor_norm_991": [
+      13529146983,
+      38171521844,
+      210790200116,
+      1902989662695,
+      43635994803076,
+      2351241006596040,
+      240341865945550376
+    ]
+  },
+  "verdict": {
+    "naive_twisted_l_value_period_recovery_feasible": false,
+    "reason": "Even one decimal digit for a required single-negative twist asks Magma's approximate functional equation for coefficients through 13,529,146,983."
+  }
+}

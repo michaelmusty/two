@@ -21,11 +21,13 @@ Bosman polynomial:
   x^17 -2x^16 +12x^15 -28x^14 +60x^13 -160x^12 +200x^11 -500x^10 +705x^9 -886x^8
   +2024x^7 -604x^6 +2146x^5 +80x^4 -1376x^3 -496x^2 -1013x -490
 
-## The genuine "ramified only at 2" example: Dembele (2009)
-Exists and is PROVEN (nonsolvable Galois extension of Q unramified outside 2, image
-SL2(F_2^8)^2 ⋊ Z/2). It is a mod-2 Galois representation of a Hilbert modular form
-over Q(zeta_32)^+ (degree 8, disc a power of 2), level a power of 2 -- NOT a small
-explicit polynomial.
+## The genuine "ramified only at 2" example: Dembélé (2009)
+Exists and is proven: a nonsolvable Galois extension of Q unramified outside 2, with
+group written by Dembélé as `SL2(F_256)^2 . 8`. More precisely, its Galois group fits
+into an extension of `C8` by `SL2(F_256)^2`; the dot notation does not by itself assert
+that the extension splits. It comes from two mod-2 Galois representations attached to
+level-1, parallel-weight-2 Hilbert modular forms over `Q(zeta_32)^+` (degree 8,
+discriminant `2^31`) -- not from a small explicit polynomial.
 
 ## LMFDB HMF search (route 1) -- negative
 For SL2(F16) ramified only at 2 need: base field totally real with 2-power disc AND
@@ -42,8 +44,7 @@ GL2(F2)=S3, SOLVABLE). Dembele's base field Q(zeta_32)^+ (degree 8) is NOT in LM
 - Making it explicit requires reproducing the Hilbert modular form computation over
   Q(zeta_32)^+ -- needs Magma's HMF package (the 17T7 authors, incl. Voight/Schiavone/
   Costa, have this machinery).
-- WHY 2-group Belyi maps can't shortcut this: the successful route builds SL2(F16)
-  from the 2-torsion of an abelian variety with REAL MULTIPLICATION (the RM supplies
-  the irreducible F16-action). A 2-group deck group is nilpotent, so Aut(X)>=C2 and
-  its automorphisms can never supply that F16-action (nilpotency obstruction). The
-  HMF/RM route succeeds precisely where the 2-group Belyi route is structurally blocked.
+- The earlier 2-group Belyi investigation gives a strong conditional obstruction:
+  the mod-2 Jacobian module was indecomposable in all 2008 cases through group order
+  128, and indecomposability forces a solvable centralizer. The general
+  indecomposability statement remains open; see `writeup/lemma-B-open-problem.md`.

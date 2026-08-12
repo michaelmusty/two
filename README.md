@@ -79,35 +79,29 @@ equivalent computation using quaternionic modular forms.
 
 The Magma package
 [`edgarcosta/hilbertmodularforms`](https://github.com/edgarcosta/hilbertmodularforms)
-is a directly relevant starting point. It extends Magma's built-in `ModFrmHil` machinery
-with q-expansion bases, Hecke and diamond operators, definite-case support, and
-precomputation hooks; its `ModFrmHil` patches and `ModFrmHilD` implementation should be
-evaluated when reproducing Dembélé's Hecke algebra. It does not by itself guarantee support
-for the required mod-\(2\) torsion eigensystems, so compatibility with the field \(F\),
-parallel weight \(2\), level \(1\), and reduction modulo \(2\) must be tested explicitly.
+is now pinned and validated for this computation. Its integral raw Brandt matrices
+reproduce the 58-dimensional raw module, the 57-dimensional cuspidal module, both published
+mod-\(2\) characteristic polynomials, and every trace and Frobenius order in Dembélé's
+table.
 
 ### 2. Determine which constructive route is available
 
 The method of
 [van Bommel–Costa–Elkies–Keller–Schiavone–Voight](https://arxiv.org/abs/2411.07857)
 turns a characteristic-zero Hilbert newform into a period matrix and then an explicit
-isogeny polynomial. It is the main model for this project, but it does not automatically
-apply here: Dembélé's eigensystems are mod-\(2\) forms.
+isogeny polynomial. The lift decision has now been resolved positively: the two mod-\(2\)
+systems are reductions of the unique 16-dimensional characteristic-zero component at the
+two unramified residue-degree-8 primes above \(2\) in its Hecke field. The integral Hecke
+generator is already \(2\)-maximal, and its defining polynomial modulo \(2\) factors as
+exactly Dembélé's two degree-8 polynomials. See
+`dembele/certificates/lift-report.md`.
 
-The first mathematical decision is therefore to determine whether the maximal ideals
-corresponding to \(f\) and \(f'\) lift to suitable characteristic-zero parallel-weight-\(2\)
-Hilbert newforms.
+The next gate is constructive suitability: compute enough exact Hecke eigenvalues and
+twisted \(L\)-values, determine the required polarization and ideal-class data, and
+prototype period recovery and a small sample of the \(257\) isogeny neighbors before
+scaling to the full polynomial.
 
-- **If suitable lifts exist:** reconstruct the attached abelian variety from twisted
-  \(L\)-values and periods, then compute its \(2\)-isogeny polynomial. In this setting the
-  relevant projective action should produce \(257\) roots.
-- **If the eigensystems are genuinely torsion:** period reconstruction is unavailable
-  as stated. The project must instead compute the residual representation directly from
-  quaternionic or Shimura-curve cohomology, adapting constructive torsion-representation
-  methods to the Hilbert setting.
-
-This lift-versus-torsion check is the first major milestone after reproducing the Hecke
-calculation.
+The lift-versus-torsion milestone is complete.
 
 ### 3. Construct and descend the field
 
@@ -133,6 +127,10 @@ identification must use exact arithmetic.
 
 ## Current repository
 
+- `dembele/` — current computation: pinned dependencies, machine-readable published data,
+  exact Magma certificates, tests, and eventual defining polynomials.
+- `remote_magma/` — tested client and operational documentation for running Magma V2.29-8
+  on chatelet through the CoCalc API.
 - `nonsolvable_at_2_examples.md` — preliminary comparison with other explicit
   nonsolvable fields.
 - `writeup/` — results and remaining gap from the 2-group Belyi-map investigation.

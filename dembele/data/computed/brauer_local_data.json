@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "source_script": "dembele/magma/33_brauer_local_data.m",
+  "extension": {
+    "base_field": "Q(sqrt(5))",
+    "base_field_defining_polynomial": "x^2 + 326243*x + 26601321401",
+    "relative_degree": 8,
+    "relative_discriminant_norm": "131933751140044406072851390625",
+    "relative_discriminant_factorization": {
+      "5": 6,
+      "89": 7,
+      "661": 4
+    }
+  },
+  "local_decomposition": {
+    "2": [
+      {
+        "base_prime_norm": 4,
+        "prime_count": 2,
+        "ramification_index": 1,
+        "residue_degree": 4,
+        "local_degree": 4
+      }
+    ],
+    "5": [
+      {
+        "base_prime_norm": 5,
+        "prime_count": 1,
+        "ramification_index": 4,
+        "residue_degree": 2,
+        "local_degree": 8
+      }
+    ],
+    "89": [
+      {
+        "base_prime_norm": 89,
+        "prime_count": 1,
+        "ramification_index": 8,
+        "residue_degree": 1,
+        "local_degree": 8
+      },
+      {
+        "base_prime_norm": 89,
+        "prime_count": 1,
+        "ramification_index": 1,
+        "residue_degree": 8,
+        "local_degree": 8
+      }
+    ],
+    "661": [
+      {
+        "base_prime_norm": 661,
+        "prime_count": 8,
+        "ramification_index": 1,
+        "residue_degree": 1,
+        "local_degree": 1
+      },
+      {
+        "base_prime_norm": 661,
+        "prime_count": 1,
+        "ramification_index": 2,
+        "residue_degree": 4,
+        "local_degree": 8
+      }
+    ]
+  }
+}

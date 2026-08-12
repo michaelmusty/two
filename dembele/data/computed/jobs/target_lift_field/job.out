@@ -1,0 +1,20 @@
+
+WARNING
+Class group unconditional proof is expensive.
+Hint: to obtain class group proven under GRH, input
+> SetClassGroupBounds("GRH");
+before starting the current calculation.
+
+RESULT|target_dimension|16
+RESULT|hecke_field_polynomial|x^16 - 12*x^15 - 255*x^14 + 3655*x^13 + 18005*x^12 - 393541*x^11 + 119362*x^10 + 17669515*x^9 - 50861545*x^8 - 286668975*x^7 + 1402550907*x^6 + 756001636*x^5 - 11972369685*x^4 + 12087897420*x^3 + 26153849155*x^2 - 54404306283*x + 26601321401
+RESULT|equation_order_2_maximal_index|1
+RESULT|equation_order_2_index_valuation|0
+RESULT|defining_polynomial_mod2|y^16 + y^14 + y^13 + y^12 + y^11 + y^9 + y^8 + y^7 + y^6 + y^4 + y^2 + y + 1
+RESULT|defining_polynomial_mod2_factorization|[
+<y^8 + y^4 + y^3 + y + 1, 1>,
+<y^8 + y^6 + y^5 + y^2 + 1, 1>
+]
+RESULT|prime_2_count|2
+PRIME2|1|e|1|f|8|norm|256
+PRIME2|2|e|1|f|8|norm|256
+PASS|dembele_target_lift_field

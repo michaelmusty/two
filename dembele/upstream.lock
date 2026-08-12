@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "magma": {
+    "version": "V2.29-8"
+  },
+  "hilbertmodularforms": {
+    "repository": "https://github.com/edgarcosta/hilbertmodularforms",
+    "commit": "f5ce65826697ee1ba7ed6e77a3fda0ef779f633b",
+    "default_branch": "master",
+    "license": "BSD-3-Clause"
+  },
+  "eichler_shimura_hmf": {
+    "repository": "https://github.com/edgarcosta/EichlerShimuraHMF",
+    "commit": "452aad0321d57b47ac280a20007f2e22812b94fe",
+    "default_branch": "main",
+    "license": null
+  },
+  "seventeen_t7": {
+    "repository": "https://github.com/SamSchiavone/17T7",
+    "commit": "66b814d82383d463665a942f2a84bf7034d4951c",
+    "default_branch": "main",
+    "license": null
+  },
+  "chimp": {
+    "repository": "https://github.com/edgarcosta/CHIMP",
+    "commit": "d37a448a174feb7aa3738414cfe6bf6d5cf46ace",
+    "default_branch": "master",
+    "license": null,
+    "status": "current revision recorded for compatibility testing; not yet validated"
+  },
+  "inverse_galois_hmf": {
+    "repository": "https://github.com/michaelmusty/inverse-galois-hmf",
+    "commit": "4d60ea1943376636a7dca2c0ab805fb8f403aa0b",
+    "default_branch": "main"
+  },
+  "primary_sources": {
+    "dembele_2009": {
+      "title": "A non-solvable Galois extension of Q ramified at 2 only",
+      "arxiv": "https://arxiv.org/abs/0811.4379",
+      "doi": "10.1016/j.crma.2008.12.004"
+    },
+    "serre_2009": {
+      "title": "Un complement a la Note de Lassina Dembele",
+      "doi": "10.1016/j.crma.2008.12.006"
+    },
+    "cunningham_dembele_2017": {
+      "title": "Lifts of Hilbert modular forms and application to modularity of abelian varieties",
+      "arxiv": "https://arxiv.org/abs/1705.03054",
+      "version": "v1"
+    }
+  }
+}

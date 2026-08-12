@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "purpose": "direct Hilbert-Eisenstein control for the 17T7 genus-4 example",
+  "rm_field": {
+    "defining_polynomial": "x^4 - 10*x^3 + 20*x^2 + 25*x - 25",
+    "degree": 4,
+    "discriminant": 725,
+    "narrow_class_number": 1
+  },
+  "form": {
+    "parallel_weight": 4,
+    "constant_term_normalization": "1",
+    "zeta_K_minus_3": "541/15",
+    "nonconstant_coefficient_scale": "240/541"
+  },
+  "reference_point": {
+    "source": "Schottky-selected neighbor from pinned EichlerShimuraHMF",
+    "neighbor_index_magma_one_based": 15,
+    "schottky_absolute_value": "5.83398771151540185649504101120667972377980948405543065386757422501507778808049e-73"
+  },
+  "truncations": {
+    "coarse_bare_exponential_tolerance": "1e-18",
+    "fine_bare_exponential_tolerance": "1e-22",
+    "coarse_term_counts_base_half_double": [2249, 35973, 141],
+    "fine_term_counts_base_half_double": [5007, 80286, 315]
+  },
+  "results": {
+    "neighbor_count": 17,
+    "minimum_root_separation": "1.1513089255741095981012697923201283407048913113767789716962124981",
+    "coarse_fine_root_error": "0.0024877338482993830476727467535622191028777406626097251808010930195",
+    "maximum_root_absolute_value": "75342.485818015387642808929662244286092079552792876157305089482022",
+    "maximum_coefficient_absolute_value": "6.0161428043689261608792205900885507330170054266386616289660957409e42",
+    "maximum_coefficient_imaginary_part": "6.6561242740756392026378298014238855216993274201213497238550847973e-19",
+    "coarse_fine_coefficient_error": "2.9821666403387337925783215765546945201124677177771650170056936690e37",
+    "separates_neighbors": true,
+    "coefficient_descent_numerically_real": true,
+    "exact_coefficients_recognized": false
+  },
+  "caveats": [
+    "The truncation comparison is empirical, not a rigorous analytic tail bound.",
+    "The period point has only about 85 decimal digits of input precision.",
+    "Exact rational coefficient recognition has not yet been attempted successfully."
+  ]
+}
