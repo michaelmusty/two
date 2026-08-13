@@ -191,11 +191,14 @@ class fields; twist: 5, 13 fix, 7 moves) conforms.
 
 ## 8. What would decide the remaining questions
 
-1. **k = 8 falsification target.** The twist probe predicts `ram(K₈) ⊆ {2, 17, 257}` for
-   the `(2,8,8)` (genus 28) and `(2,8,16)` (genus 34) passports of `PΓL₂(256)` — the
-   `q−1`-torus primes 3, 5 *move* at k = 8 and are predicted unramified. Computing the
-   k = 8 moduli field (a heavy but M23-lineage computation) tests both the hypothesis and
-   the family-wide closure at once.
+1. **k = 8 falsification target** (exact data, script `30`). The `(2,8,16)` passport
+   (genus 34) has exactly **Ni_gen = 32** generating classes, ε-orbit 4, moduli degree
+   ≤ 128, forced layer `Q(ζ₈)`; the `(2,8,8)` passport (genus 28) has **Ni_gen = 200**,
+   ε-orbit 2, moduli degree ≤ 400, forced layer `Q(√2)` — pleasingly, the same quadratic
+   base as the target degree-257 polynomial. The twist probe predicts
+   `ram(K₈) ⊆ {2, 17, 257}` (3 and 5 move at k = 8). The genus-34 passport, despite the
+   higher genus, is the better computational target (32 covers vs 200). Computing either
+   moduli field tests both the hypothesis and the family-wide closure at once.
 2. **A theorem in place of the hypothesis**: count good-reduction covers at `p ∥ |G|` via
    Bouw–Wewers special deformation data; the k = 4 weights 8/4/6 are the test data.
    (Recorded dead end: counting char-p covers by Gröbner on the shape identity fails at
