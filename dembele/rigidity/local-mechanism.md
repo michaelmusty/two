@@ -104,3 +104,27 @@ mirroring (one level up) the legacy 2-group obstruction. Falsifiable: compute
 the k=8 moduli field (the genus-28 (2,8,8) computation) and check its
 ramification against the prediction {2, 17, 257}; or replace the hypothesis
 with a real count via Bouw–Wewers deformation data at p ∥ |G|.
+
+## Postscript (2026-08-12/13): the k=4 universal field, and closure of the r=4 track
+
+The genus-1 (2@φ², 8@φ, 8@φ) passport — linchpin for the (8@φ)⁴ short braid
+components via the boundary bijection (script 24) — was computed on chatelet
+(scripts 25–26, offline j-invariant recognition from the dumped Newton data:
+j has an exact degree-8 minimal polynomial with leading coefficient 5²⁰).
+Its j-field is **isomorphic to the same degree-8 field K** with
+disc = 2¹⁸·5²·17 as every other all-2-power moduli field at k=4.
+
+Conclusion: ONE universal moduli field K governs all all-2-power covers of
+PΓL₂(16) — r=3 passports of genus 0 and 1, and (via cusp equivariance) all
+short r=4 Hurwitz components. The braid/λ freedom does NOT evade the moduli
+obstruction: sibling components glue through the boundary Galois action into
+K. The r=4 short-orbit track at k=4 is CLOSED by the same mechanism as r=3,
+and the failure mode of the control experiment is identified as
+moduli-field gluing (not bad reduction, not absence of short orbits).
+
+Together with the twice-calibrated twist analysis, the covers program now
+supports a sharp conjectural conclusion: every all-2-power cover object over
+PΓL₂(2^k) (any r, any k) has moduli field ramified at the +1-torus prime
+(≡ 1 mod the 2-exponent, provably twist-fixing), so no cover specialization
+in this family is ramified only at 2. The explicit k=4 universal field is
+the complete worked example.
