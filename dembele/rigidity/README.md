@@ -1,5 +1,11 @@
 # Rigidity/Belyi front end for the Dembélé group (after the M23 paper)
 
+> **Consolidated account:** the finished narrative of this investigation —
+> the k=4 closure, the universal moduli field, the fixing congruence, and the
+> family-wide conditional negative — is written up in
+> **`../../writeup/all-2-power-covers.md`**. This README remains the
+> chronological lab record.
+
 Date: 2026-08-11. Prompted by Huang–Jackson–Lee–Poonen–Pries–Zhang,
 *The Mathieu group M23 is a Galois group over Q* (arXiv:2608.08538), which realized
 M23 explicitly via a non-rigid triple, the KMSV numerical Belyi algorithm, and
