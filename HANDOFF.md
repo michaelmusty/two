@@ -136,7 +136,18 @@ the polynomial. Nothing else should be launched from the killed-route list below
 
 ## Current bottleneck and recommended next work
 
-**Hard stop.** An exhaustive audit of constructive ideas is recorded in:
+**Update 2026-08-13.** The hard stop below is superseded: the one unexplored
+door in the exhaustion audit ("Level-raising + CD at an auxiliary prime") is
+now the plan of record — see **`dembele/certificates/levelraise-cd-plan.md`**
+(gates, prior art, contingencies; gate-1 scan running on chatelet). The
+M23-inspired covers investigation is complete and negative — one universal
+moduli field (disc 2^18 5^2 17) blocks every all-2-power cover at k=4, with a
+proved fixing congruence + calibrated transfer hypothesis closing the family —
+written up in **`writeup/all-2-power-covers.md`** with full provenance in
+`dembele/rigidity/`. Chatelet is operational for heavy compute
+(`remote_magma/upload_dir.py`, detached-nohup pattern; Belyi package deployed).
+
+**Hard stop (historical, 2026-08-04).** An exhaustive audit of constructive ideas is recorded in:
 
 - `dembele/certificates/idea-exhaustion.md`
 - `dembele/data/computed/idea_exhaustion.json`
