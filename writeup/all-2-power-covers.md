@@ -78,14 +78,19 @@ moduli field
 
     K = Q[z]/(z⁸ + 4z⁷ + 4z⁶ + 2z⁴ + 12z³ + 20z² + 8z + 2),   disc K = 2¹⁸·5²·17,
 
-with unique quadratic subfield `Q(i)` (`IsIsomorphic` verified). The Galois action on each
-passport-pair's eight covers is transitive: there is no M23-style fixed point, and the
-excess over the forced 2-cyclotomic layer is where 5 and 17 enter.
+with unique quadratic subfield `Q(i)` (`IsIsomorphic` verified). Completeness and
+transitivity are *certified* rather than observed: a canonical-gauge coefficient has an
+irreducible degree-8 minimal polynomial, so its 8 embeddings give 8 pairwise distinct
+covers — the full Nielsen count — and each cover's stabilizer has index 8. There is no
+M23-style fixed point, and the excess over the forced 2-cyclotomic layer is where 5 and
+17 enter.
 
 The genus-1 passport `(2@φ², 8@φ, 8@φ)` was computed on chatelet (scripts `25`–`26`);
 its gauge-invariant j-invariant has an exact degree-8 minimal polynomial (leading
-coefficient `5²⁰`) whose field is again **isomorphic to `K`**. Thus every computed
-all-2-power triple passport of `PΓL₂(16)` has moduli field `K`. (Unchecked corners: the
+coefficient `5²⁰`) whose field is again **isomorphic to `K`**. (Precisely: the
+genus-1 moduli field *contains* `Q(j) ≅ K`; it could a priori be larger, which
+only strengthens the negative conclusion.) Thus every computed all-2-power
+triple passport of `PΓL₂(16)` has moduli field containing `K`. (Unchecked corners: the
 genus-2 passport `(2@0,8,8)` with Ni = 12 and the genus-4 `(4@φ²,8,8)`; both are
 boundary-linked to the same web and are expected to conform.)
 
@@ -100,9 +105,15 @@ Place-by-place reduction analysis of the exact covers over `K` (scripts `17`–`
 
 | p | places (e,f) of K | reduction of the 8 conjugate covers | good weight |
 |---|---|---|---|
-| 3 | inert (1,8) | étale; full ramification divisor survives | 8/8 |
-| 5 | (1,1),(1,1),(3,1),(1,3) | one unramified place: map collapses to degree 2; the e=3 place: pole escape; two good | 4/8 |
-| 17 | (2,1),(1,1),(1,2),(1,3) | bad exactly at the ramified e=2 place; three good | 6/8 |
+| 3 | inert (1,8) | étale; full ramification divisor survives | 8/8 (exact) |
+| 5 | (1,1),(1,1),(3,1),(1,3) | one unramified place: map collapses to degree 2; the e=3 place: pole escape; two good | ∈ [4, 7] |
+| 17 | (2,1),(1,1),(1,2),(1,3) | bad exactly at the ramified e=2 place; three good | ∈ [6, 7] |
+
+(*Weights are certified as bounds, not values: a smooth model certifies good
+reduction, but a degenerate model does not certify bad reduction. The upper
+bounds < 8 are proved by K's ramification — all-good at p would force K
+unramified at p. The calibration below uses only the certified qualitative
+structure: full at 3, deficient at 5 and 17.*)
 
 This is the Raynaud/Bouw–Wewers mixed ordinary/supersingular picture at `p ∥ |G|` made
 fully explicit. Counting embeddings: `good₅ (4) + good₁₇ (6) − 8 ≥ 2`, and 3 is uniformly
@@ -129,7 +140,12 @@ correspondence is a Galois-equivariant *bijection* onto known Nielsen classes:
 - the third `(8@φ)⁴` components ↔ four classes of the genus-4 `(4@φ²,8,8)` passport.
 
 Since the boundary objects' moduli field is `K` (§3), Galois permutes the components as it
-permutes the cusps, and every short component is defined over (a conjugate of) `K`. The
+permutes the cusps, and every short component is defined over (a conjugate of) `K`.
+(*Convention check (`out/audit_convention.txt`): of the two merge orderings, exactly one
+yields generating boundary triples — and that one is bijective onto the Nielsen classes;
+the other lands in proper subgroups every time. So the identification is forced, not a
+convention artifact. The underlying equivariance — Hurwitz boundary morphisms are defined
+over Q — is standard.*) The
 λ-freedom does not evade the obstruction: **the r = 4 track closes at k = 4 by
 moduli-field gluing through the boundary** — not by bad reduction, and not for lack of
 short orbits.
@@ -167,6 +183,7 @@ class fields; twist: 5, 13 fix, 7 moves) conforms.
 |---|---|---|
 | 2-group Belyi maps (`main-result.md`) | Frobenius centralizer: `Aut_{F₂[G]}(J[2])` solvable (Lemma A, Lean) given indecomposability (Lemma B, 2008/2008 verified) | conditional on Lemma B |
 | simple `SL₂(2^k)`, r = 3 | no all-2-power triples (elementary abelian 2-Sylow) | proved |
+| `PΓL₂(4) = S₅` (k = 2), r = 3 | no all-2-power triples: `(2,4,4)` is Euclidean and signs obstruct the rest — the family's triple story starts at k = 4 | proved |
 | any group, r = 4 all-involution | Euclidean `(2,2,2,2)` ⇒ solvable | proved |
 | `PΓL₂(16)`, r = 3 and short r = 4 | the universal moduli field `K`, disc `2¹⁸·5²·17` | proved, explicit |
 | `PΓL₂(2^k)` all `k`; `Sz(q)` | `+1`-torus prime fixes every passport (proved) ⇒ moduli ramification (transfer hypothesis) | conditional |
