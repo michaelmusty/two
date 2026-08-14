@@ -170,7 +170,10 @@ progress is checkpointed via the DONE skip-set, so restarts lose little;
 plausibly a startup stampede; (c) liveness monitoring on *verified* process
 patterns, since a dead fleet writes nothing and looks identical to a quiet
 one. Meta-lesson, the operational cousin of D16: before theorizing about a
-mysterious failure, verify the measurement instrument.
+mysterious failure, verify the measurement instrument. Final resolution: the
+"unkillable survivors" were other tenants' Magma jobs — the shared host exposes
+other CoCalc projects' processes in ps, so every unfiltered count was polluted.
+All fleet accounting now filters by uid (`ps -u $(id -u)`).
 
 ---
 
