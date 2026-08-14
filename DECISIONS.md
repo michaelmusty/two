@@ -149,6 +149,15 @@ the kernel keeps noise vectors at any precision. Patched to scale with genus
 column count). Meta-lesson, same family as D3: when raising precision doesn't
 change the failure, the failure is not about precision.
 
+**D17. Park the Sz(8) probe.** The widened matrix (D16) did not fix the
+hyperelliptic test: the kernel is genuinely multi-dimensional — the package's
+automatic coordinate choice (ratios of the first basis forms) degenerates on
+this curve, independent of precision. Fixing coordinate selection is a rabbit
+hole; the right tool for a genus-8 (likely non-hyperelliptic) curve is the
+vBCPS26 canonical-embedding method — a proper mini-project. Parked with blocker
+documented; the independent-family hypothesis test is deferred, not abandoned.
+The genus-2 corner (imminent) carries the audit's validation weight meanwhile.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
