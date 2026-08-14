@@ -158,6 +158,20 @@ vBCPS26 canonical-embedding method — a proper mini-project. Parked with blocke
 documented; the independent-family hypothesis test is deferred, not abandoned.
 The genus-2 corner (imminent) carries the audit's validation weight meanwhile.
 
+**D18. Ops incident: fleet deaths, real and imagined.** The chatelet project
+restarted (twice), killing all detached jobs — real. The subsequent "instant
+deaths" of relaunched jobs were **not** real: the verification pattern
+`pgrep -f "magma -b"` never matched the actual process (`magma.exe -b` after
+the wrapper exec), so healthy fleets read as dead, triggering an escalating
+false diagnosis (session reaping? memory kills? — sentinel and memory-hog
+probes both came back clean, which was the tell). Resolutions: (a) scan
+progress is checkpointed via the DONE skip-set, so restarts lose little;
+(b) staggered relaunches (30 s gaps) — the one bulk 11-job relaunch died,
+plausibly a startup stampede; (c) liveness monitoring on *verified* process
+patterns, since a dead fleet writes nothing and looks identical to a quiet
+one. Meta-lesson, the operational cousin of D16: before theorizing about a
+mysterious failure, verify the measurement instrument.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
