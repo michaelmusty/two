@@ -139,6 +139,16 @@ degree-24 junk-gauge fields (response: hyperelliptic dump hook + offline Igusa
 plan), Sz(8) needed a precision sweet spot (40 too low for the hyperelliptic
 rank test, 115 too high for memory; trying 70).
 
+**D16. Diagnose "try higher precision" as a bug, not a precision problem.** The
+Sz(8) hyperelliptic test failed identically at 40 and 70 digits ("multiple
+relations"). Precision-independence of a numerical failure ⇒ structural cause:
+found the relation-matrix column count hard-coded (`+15` hack, flagged TODO in
+the package source) — sufficient at genus ≤ 4, under-determined at genus 8, so
+the kernel keeps noise vectors at any precision. Patched to scale with genus
+(fourth upstream-worthy `~/Belyi` patch: TrialDivision guard, two dump hooks,
+column count). Meta-lesson, same family as D3: when raising precision doesn't
+change the failure, the failure is not about precision.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
