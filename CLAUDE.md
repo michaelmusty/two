@@ -56,7 +56,10 @@ hypothesis.
   certificates, and eventual explicit polynomials.
 - **`remote_magma/`** — tested CoCalc/chatelet client for Magma V2.29-8; operational
   details in `remote_magma/CHATELET.md`.
-- **`writeup/`** — START HERE. `main-result.md`, `lemma-B-open-problem.md`, `README.md`.
+- **`writeup/`** — START HERE. `main-result.md`, `lemma-B-open-problem.md`,
+  `all-2-power-covers.md` (the covers negative arc), `README.md`.
+- **`DECISIONS.md`** — running decision log: every fork, the alternatives, the
+  reason, the outcome. Append an entry whenever a significant choice is made.
 - **`aristotle_solvable/FiniteLocalSolvable.lean`** — Lean proof of Lemma A (via Aristotle).
 - **`torsion_module.sage`** — `analyze(G,s0,s1)` builds `H¹(X,F₂)` as `F₂[G]`-module + exact
   centralizer solvability (commutant/Wedderburn). CLI: `scan`, `ng`, `ngr`.
