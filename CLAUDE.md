@@ -60,6 +60,9 @@ hypothesis.
   `all-2-power-covers.md` (the covers negative arc), `README.md`.
 - **`DECISIONS.md`** — running decision log: every fork, the alternatives, the
   reason, the outcome. Append an entry whenever a significant choice is made.
+- **`REFERENCES.md`** — running ledger of papers/people/software and *how each
+  is used* (role tags + repo pointers). Add an entry when a new source enters
+  the work; prefer over-attribution.
 - **`aristotle_solvable/FiniteLocalSolvable.lean`** — Lean proof of Lemma A (via Aristotle).
 - **`torsion_module.sage`** — `analyze(G,s0,s1)` builds `H¹(X,F₂)` as `F₂[G]`-module + exact
   centralizer solvability (commutant/Wedderburn). CLI: `scan`, `ng`, `ngr`.
