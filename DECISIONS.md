@@ -191,6 +191,43 @@ toolchain pin (`leanprover/lean4:v4.28.0`) and cited in
 of the project after Lemma A. The *transfer* hypothesis ("fixing ⇒ deficient ⇒
 ramified") remains empirical — formalization does not touch it.
 
+**D20. Credential outage, and the duplicate-work bug it exposed.** The
+chatelet account API key stopped authenticating (`/api/v1/ping`, which takes no
+arguments, returned "No account found" under all four auth encodings, while
+`/customize` served 200 — so: key revoked or expired, not an outage). The key
+was rotated by hand; `remote_magma/set_key.py` now does that rewrite without
+echoing the key, and `.env.bak` was added to `.gitignore`, which the bare
+`.env` rule did not cover.
+
+The reconnect survey (`remote_magma/reconnect.py`, read-only by design) found
+all 8 lanes alive at 19.5 h uptime — the fleet had survived the whole outage —
+but every lane had spent that time **recomputing a prime it had already
+finished**: 1249, 1279, 1409, 1439, 1471, 1567, 1601, 1663, at 14–20 h each,
+≈130 CPU-hours lost. Cause: a restarted lane always resumes at its first
+non-`DONE` prime, and `DONE` is a static literal in the script, so results not
+hand-harvested are replayed. HANDOFF said "harvest before any rescan edits";
+`restore_scan.py` restarts lanes automatically and never harvests, so the
+instruction could not hold in practice. **Lesson: a manual step in the recovery
+path of an automated restart loop is a bug, not a procedure.**
+
+Fix, in the script rather than the runbook: (a) *self-harvest* — `DONE` is
+augmented at startup from every prime recorded in the lane logs, matched on the
+full `q over NNN): trace` pattern so a half-written line from a killed process
+cannot register a truncated prime; (b) *stable assignment* — lanes are assigned
+by position in the FULL sorted prime list before done-filtering, since with the
+filter applied first, two lanes restarting with different harvest sets can be
+handed the same prime. (b) is backward-compatible: the 24 statically-DONE
+primes are exactly the 24 smallest by norm and 24 ≡ 0 mod 8, so the historical
+assignment is unchanged — verified by recomputing the ordering independently in
+Python and matching all 8 observed lane-to-prime pairs. Results are now banked
+in the repo (`dembele/scanjob/scan_results.csv`) instead of living only in
+remote `*.out` files, and the lane script itself
+(`dembele/scanjob/37_levelraise_lane.m`) is committed — it had existed only on
+chatelet, so a project wipe would have made gate 1 unreproducible.
+
+Scan state after harvest: 32 rationals scanned, `const2val = 0` throughout, 0
+hits. Cost is 14–20 h per prime and rising with norm.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
