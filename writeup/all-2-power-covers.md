@@ -154,7 +154,8 @@ short orbits.
 
 ## 6. The fixing congruence and the transfer hypothesis
 
-**Lemma (fixing congruence; proved).** Let `q = 2^k` with `k = 2^j`, and let `p` be a
+**Lemma (fixing congruence; proved — and formalized in Lean 4:
+`aristotle_fixing/FixingCongruence.lean`, 0 `sorry`, no new axioms).** Let `q = 2^k` with `k = 2^j`, and let `p` be a
 prime dividing `q + 1`. Then `2^k ≡ −1 (mod p)`, so `ord_p(2) = 2k/odd`, whence
 `2^{j+1} | p − 1`. Since every 2-power-order class of `PΓL₂(2^k)` has order dividing
 `2k = 2^{j+1}`, the twist `x ↦ x^p` **fixes every all-2-power class multiset**. Similarly

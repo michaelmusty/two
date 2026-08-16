@@ -177,6 +177,20 @@ mysterious failure, verify the measurement instrument. Final resolution: the
 other CoCalc projects' processes in ps, so every unfiltered count was polluted.
 All fleet accounting now filters by uid (`ps -u $(id -u)`).
 
+**D19. The fixing congruence is now machine-checked.** The Aristotle project
+`aristotle_fixing` (submitted 2026-08-13) returned proved: `FixingCongruence.lean`
+contains three theorems — `fixing_congruence_gl` (`p | 2^{2^j}+1 ⟹ 2^{j+1} | p−1`),
+`fixing_congruence_sz` (`p | q²+1 ⟹ p ≡ 1 mod 4`), and `twist_fixes`
+(`x^{2^m} = 1` and `2^m | p−1 ⟹ x^p = x`) — with no `sorry` and no new axioms
+beyond `propext`/`Classical.choice`/`Quot.sound`. All three route through one
+helper: if `a^{2^n} = −1` in `ZMod p` then `ord(a) = 2^{n+1}`, so `2^{n+1} | p−1`
+by Fermat. Note the reported slack: the Suzuki statement never uses evenness of
+`q`; it holds for every natural `q`. Banked in `aristotle_fixing/` alongside its
+toolchain pin (`leanprover/lean4:v4.28.0`) and cited in
+`writeup/all-2-power-covers.md` §6. This is the second Lean-certified component
+of the project after Lemma A. The *transfer* hypothesis ("fixing ⇒ deficient ⇒
+ramified") remains empirical — formalization does not touch it.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
