@@ -98,7 +98,22 @@ Sort(~prs, func< a, b | Norm(a) - Norm(b) >);
 printf "full list: %o primes of F with norm <= %o (%o still to do)\n",
     #prs, NORMBOUND, #[ p : p in prs | Factorization(Norm(p))[1][1] notin DONE ];
 
+// MEMORY (2026-08-16).  A lane's Magma process grows monotonically: ~12 GB
+// after one prime, ~15 GB during the second, and the per-prime requirement
+// itself rises with Nq.  Eight mature lanes then exceed the 125 GB host and
+// the OOM killer takes the largest -- losing a whole in-flight prime, and
+// endangering the other tenants sharing the machine.  CHATELET.md's own
+// guidance is to start a fresh process per slice; that used to cost a
+// recomputed prime, but with the log self-harvest above a restart is free.
+// So: do PRIMES_PER_RUN primes, then exit and let the watchdog relaunch.
+// Overhead is the ~12 min startup against a 14-20 h prime, under 2%.
+ppr := GetEnv("PRIMES_PER_RUN");
+primes_per_run := ppr eq "" select 1 else StringToInteger(ppr);
+printf "will exit after %o completed prime(s) so the watchdog restarts fresh\n",
+    primes_per_run;
+
 hits := 0;
+done_this_run := 0;
 for pi in [1..#prs] do
     if (pi mod nlanes) ne lane then continue; end if;
     pr := prs[pi];
@@ -121,6 +136,12 @@ for pi in [1..#prs] do
         RealField(4)!Cputime(t0);
     if ev then hits +:= 1; end if;
     if hits ge 4 then printf "found %o admissible primes; stopping\n", hits; break; end if;
+    done_this_run +:= 1;
+    if done_this_run ge primes_per_run then
+        printf "completed %o prime(s) this run; exiting for a fresh process\n",
+            done_this_run;
+        break;
+    end if;
 end for;
 printf "DONE (%o hits)\n", hits;
 quit;
