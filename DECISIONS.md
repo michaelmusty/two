@@ -177,7 +177,9 @@ mysterious failure, verify the measurement instrument. Final resolution: the
 other CoCalc projects' processes in ps, so every unfiltered count was polluted.
 All fleet accounting now filters by uid (`ps -u $(id -u)`).
 
-**D19. The fixing congruence is now machine-checked.** The Aristotle project
+**D19. The fixing congruence is now machine-checked.** (Same event as the
+outcome line appended to D14 by a concurrent session in `d50f0c4`; this entry
+carries the detail.) The Aristotle project
 `aristotle_fixing` (submitted 2026-08-13) returned proved: `FixingCongruence.lean`
 contains three theorems — `fixing_congruence_gl` (`p | 2^{2^j}+1 ⟹ 2^{j+1} | p−1`),
 `fixing_congruence_sz` (`p | q²+1 ⟹ p ≡ 1 mod 4`), and `twist_fixes`
