@@ -32,7 +32,20 @@ printf "loading %o\n", dumpfile;
 // `load` needs a literal filename, so read and eval instead (this also keeps
 // the dump's other variables out of the way).
 dumptext := Read(dumpfile);
-curve_coeffs := eval (dumptext cat "\nreturn curve_coeffs;");
+// Magma's %m output writes complex entries as "...*I" without binding I, so
+// bind it at the dump's own precision (read off the ComplexField(N) marker --
+// binding it at any other precision would silently truncate every entry).
+ix := Index(dumptext, "ComplexField(");
+error if ix eq 0, "no ComplexField marker in " cat dumpfile;
+rest := Substring(dumptext, ix + 13, 20);
+digits := "";
+for c in Eltseq(rest) do
+    if c in "0123456789" then digits cat:= c; else break; end if;
+end for;
+dumpprec := StringToInteger(digits);
+printf "dump complex precision: %o\n", dumpprec;
+curve_coeffs := eval (Sprintf("I := ComplexField(%o).1;\n", dumpprec)
+                      cat dumptext cat "\nreturn curve_coeffs;");
 
 g := 2;
 CC := Parent(curve_coeffs[1]);
@@ -77,7 +90,7 @@ else
 end if;
 
 // Recognition with the 12/26 discipline.
-degs := [1,2,3,4,6,8,12];        // Ni = 12 bounds the Galois orbit
+degs := [1,2,3,4,6,8,12,16,24];   // package DegreeBound for this passport is 24 (pointed)
 // The dumped coefficients carry ~prec digits with a noise floor near
 // 10^-(prec-10); the Igusa invariants lose some of that to amplification, so
 // run LLL well inside the usable range and verify against the full precision.

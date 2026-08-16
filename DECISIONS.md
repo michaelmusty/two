@@ -230,6 +230,39 @@ chatelet, so a project wipe would have made gate 1 unreproducible.
 Scan state after harvest: 32 rationals scanned, `const2val = 0` throughout, 0
 hits. Cost is 14–20 h per prime and rising with norm.
 
+**D21. The genus-2 corner is precision-blocked, and the instrument says so
+honestly.** The 24 h local run produced its dump; no absolute Igusa invariant
+admits a certifiable relation of degree ≤ 24. The verdict is *precision*, not
+mathematics: the numerical curve carries ~25 correct digits of the 285 it
+formally reports. Established three ways — LLL heights growing linearly with
+precision at every degree (noise, not a relation); a gauge probe showing the
+Igusa formulas themselves preserve 257–274 digits; and the package's own two
+outputs of the same curve (pre- and post-`TriangleRescaleCoefficients`, proved
+identical up to a weighted gauge by the ratio pattern) agreeing to only 24–26
+digits. The loss is upstream, in the power-series → `NumericalKernel` curve
+solve; the Arnoldi eigenvector itself converged to 1e-273, and there is no
+Newton refinement anywhere in the genus-2 path to recover it. Corollary: the
+package's own `MakeK` search at `DegreeBound = 24` was running on the same
+~25-digit data and could not have succeeded legitimately — a hit there would
+have been spurious. Full argument in
+`dembele/certificates/g2-corner-precision.md`.
+
+**Lesson worth keeping:** a recogniser must be able to *fail*. The first
+version of `32_g2_field.m` used a fixed height threshold, which neither
+rejects a marginal noise fit nor accepts a genuine large-height one; the
+precision-ladder test (does the fitted polynomial stop moving as precision
+rises?) distinguishes them structurally, and it is what turned "no answer"
+into the diagnosis above rather than a plausible wrong field. Also switched to
+the low-weight ratios `I4/I2^2, I6/I2^3, I10/I2^5`: same field, but the
+classical `I2^5/I10` triple is weight 30 and reaches height 1e22 at degree 12,
+beyond certification at any precision this run could offer.
+
+Options recorded, none taken unilaterally: rerun at ~500 digits (~a week,
+since the ~260-digit conditioning loss is roughly constant in the working
+precision); diagnose the kernel solve (cheaper if the ill-conditioning is a
+construction detail); or leave it — this corner verifies an arc already closed
+and written up negatively, and is not on the critical path.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
