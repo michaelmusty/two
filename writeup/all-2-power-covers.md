@@ -6,7 +6,9 @@ genus-1 covers in a third, and every short 4-point Hurwitz component — has the
 degree-8 moduli field `K`, ramified at `{2, 5, 17}`; hence no specialization of any of
 them is ramified only at 2. For the whole family `PΓL₂(2^k)` (and the Suzuki groups) the
 conclusion is conditional on a *transfer hypothesis* calibrated twice at `k = 4`; its
-combinatorial core (the fixing congruence for `q+1`-torus primes) is proved. A concrete
+combinatorial core (the fixing congruence for `q+1`-torus primes) is proved and
+**formally verified in Lean 4** (`aristotle_fixing/FixingCongruence.lean`, 0 sorries,
+no new axioms; the Suzuki variant holds for all `q`, evenness unneeded). A concrete
 falsification target for `k = 8` is stated in §8.
 
 This document consolidates the 2026-08-11/13 investigation (repository directory

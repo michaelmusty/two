@@ -124,7 +124,9 @@ bounds; ⊇; k=2 rung). Two items resolved by *argument*: completeness/transitiv
 certified by the degree-8 coefficient; the boundary convention forced by the
 generating-vs-subgroup dichotomy (exactly one merge ordering gives generating
 triples, and it is bijective). Submitted the fixing congruence to Aristotle for
-Lean formalization (project 11dcaed0, `aristotle_fixing/`).
+Lean formalization (project 11dcaed0, `aristotle_fixing/`). **Outcome (2026-08-16):
+all three theorems proved — 0 sorries, no new axioms — and Aristotle noted the
+Suzuki evenness hypothesis is unnecessary, slightly strengthening the lemma.**
 
 **D15. Probe everything cheap in parallel while the scan runs.** User chose
 breadth: Sz(8) covers (independent-family hypothesis test), the k=4 genus-2
