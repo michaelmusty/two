@@ -130,3 +130,44 @@ under a minute. **So the order should be: finish the dimension-2 calibration
 through periods and recognition first, and only then write the kernel.** The
 kernel is what makes the degree-8 case runnable; the recognition step is what
 decides whether the degree-8 case is worth running.
+
+---
+
+## Measured: the kernel constant (2026-08-17)
+
+The 85–2000 core-hour spread above was the dominant remaining uncertainty, so it
+was worth measuring rather than reasoning about. The batching trick makes this
+cheap to prototype without writing any C: for a **fixed** coset `k`, the
+operation across all positions is one `(M x M) x (M x positions)` integer matrix
+multiply, which flint already does well. Timing that at `q0 = 2003` and scaling
+to the real shape (`positions = 58 x 2112`, `cosets = 2112`, `M` iterations,
+16 classes):
+
+| `M` | entry size | one multiply (chunk 4000) | per iteration | **16 classes** |
+|---|---|---|---|---|
+| 20 | 220 bits | 0.040 s | 2 572 s | **229 core-h** |
+| 40 | 439 bits | 0.120 s | 7 740 s | **1 376 core-h** |
+| 100 | 1 097 bits | 1.379 s | 89 211 s | **39 649 core-h** |
+
+The measured 229 core-hours at `M = 20` sits near the optimistic end of the
+earlier 85–2000 estimate. Observed scaling is `~M^3.2` (cost rises 173x from
+`M = 20` to `M = 100`), slightly worse than the `M^3` model because the entry
+bit-size grows with `M` too.
+
+### What that means for the real run
+
+Combining with the height estimate (`M ~ 70-140`, likely lower given weight 2):
+
+| `M` | 16 classes | wall-clock on 24 cores |
+|---|---|---|
+| 70 | ~7 400 core-h | ~13 days |
+| 100 | ~39 600 core-h | ~69 days |
+| 140 | ~109 000 core-h | ~6 months |
+
+**So gate 4 is feasible** — weeks to months of compute, not decades, and this is
+with generic Sage/flint matrices rather than a dedicated fixed-precision C
+kernel, which should buy a further 2–5x. The `Nq0^2` sensitivity still bites
+hard, so a low-norm hit remains worth a great deal.
+
+The rewrite is therefore justified on the numbers, with the same caveat as
+before: it is worth building only once gate 1 produces a usable hit.
