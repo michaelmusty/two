@@ -263,6 +263,24 @@ precision); diagnose the kernel solve (cheaper if the ill-conditioning is a
 construction detail); or leave it — this corner verifies an arc already closed
 and written up negatively, and is not on the critical path.
 
+**D22. Ops: the fixer caused the fault it was built to prevent.** After the
+recycler retired four lanes at once, half the fleet sat idle waiting for the
+watchdog's 10-minute sweep, so I ran `restore_scan.py` by hand to bring them
+back sooner. The watchdog swept at the same moment; both censused, both saw the
+same lanes missing, and both launched them. Lanes 3 and 4 ended up with two
+processes each — quietly duplicating a 14-20 h prime, which is precisely the
+waste D20's self-harvest was introduced to stop. Duplicates were identified by
+the uid-filtered, environ-based census (D18) and the younger process of each
+pair killed.
+
+The bug was latent in `restore_scan.py` from the start: census and relaunch are
+separate round trips, with no interlock. Impatience only exposed it. Fixed with
+a local `flock` plus a re-check of each lane immediately before launching.
+**Lesson: an idempotent-looking repair tool that is not actually idempotent is
+a loaded gun, and the moment you reach for it manually is exactly when the
+automation is also running.** Prefer waiting for the scheduled sweep, or make
+the tool safe to run concurrently — we did the latter.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
