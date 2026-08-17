@@ -119,13 +119,83 @@ That is roughly fourteen methods. Supplying a definite S-arithmetic group class
 that implements them against our Brandt data would let `cohomology_arithmetic`
 and `integrals` — the overconvergent machinery we actually want — run unchanged.
 
+## Both follow-up checks, done
+
+### 1. The word problem is NOT Fuchsian — this is the good news
+
+`reduce_in_amalgam` and its workers `_reduce_fast` / `_reduce_in_amalgam`
+(sarithgroup.py 805–928) are **purely p-adic**: they embed with
+`self.embed(x, prec)`, test membership with `is_in_Gamma0loc`, and descend on
+`dval = -min valuation of the entries` against the Bruhat–Tits representatives.
+No fundamental domain, no side pairings, no archimedean data appears anywhere
+in the reduction. It is already the tree algorithm.
+
+Tracing the rest of the S-arithmetic layer the same way, it touches the
+underlying group only through:
+
+- `gens()` — a generating set, as quaternions (`enumerate_elements` merely
+  multiplies out words in it)
+- `is_in_Gpn_order()` — order membership, algebraic
+- `embed()` — the local embedding `B -> M_2(F_q0)`
+- arithmetic in `B`
+
+The fundamental domain is only *how the Fuchsian class obtains* `gens()`. In
+the definite setting those come for free: `O^x` modulo centre is **finite**
+(that is why Brandt class numbers are finite), and by Ihara the S-arithmetic
+group `O[1/q0]^x` acts on the tree with finite stabilisers and finite quotient
+— the Brandt graph — so generators come from a spanning tree plus edge
+elements, all derivable from data we already compute. `B` is split at `q0`
+(the definite algebra is ramified only at the 8 infinite places), so
+`B ⊗ F_q0 = M_2(F_q0)` and `embed` exists.
+
+One member needs overriding rather than inheriting: `get_BT_reps` finds the
+`Nq0+1` coset representatives by *searching* through `Gn.enumerate_elements()`
+until local conditions are met — fine for `p = 5`, hopeless as a search at
+`Nq0 ~ 2000`. But these are exactly the `P^1(F_q0)` neighbours the Brandt
+machinery constructs directly, and the class already has a precedent for
+supplying them explicitly (the `_hardcode_matrices` branch).
+
+### 2. The dimension-2 assumption DOES leak into the cohomology layer
+
+Not only into `padicperiods`. In `cohomology_arithmetic`:
+
+- The component search accepts **only** 2-dimensional irreducible pieces:
+  `if U0.dimension() == 1: continue`; `if U0.dimension() == 2 and is_irred:
+  good_components.append(...)`; `else: # U0.dimension() > 2 or not is_irred`
+  re-queues the component to be split further by more Hecke operators. A
+  16-dimensional irreducible component is never accepted — it is split at until
+  `num_hecke_operators >= bound` and then abandoned. Another driver asserts
+  outright: `if U0.dimension() != 2: raise ValueError("Hecke data does not
+  suffice to cut out space")`.
+- More fundamentally, the lift's normalisation assumes a **rational** `U_p`
+  eigenvalue: `scale = ZZ(self.Tq_eigenvalue(p)) ** -1`, where `Tq_eigenvalue`
+  is `ans = ZZ(f / f0)` on the class itself. For our component the eigenvalues
+  generate a degree-16 field, so `f` is not a scalar multiple of `f0` at all;
+  this fails structurally, not merely by coercion.
+
+The first is a driver-level restriction we would bypass, supplying our own
+component from the level-`q0` Brandt module. The second is real work: the
+overconvergent lift must be normalised over `H ⊗ Q_q0` rather than `ZZ`,
+i.e. carried out on the isotypic subspace with eigenvalues in the Hecke field.
+
+## Where that leaves gate 4
+
+The seam is not where the plan guessed. The *group* side is in better shape
+than feared — the word problem is already tree-based, and the definite group's
+generators are within reach of the Brandt data. The *coefficient* side is worse
+— the dimension-2 assumption is not confined to `padicperiods` but reaches into
+the eigenclass normalisation of the overconvergent lift, which is the one piece
+the plan expected to reuse wholesale ("only the overconvergent lifting is new
+code" — in fact the lifting is precisely what needs rewriting for eigenvalues
+in a degree-16 field).
+
 ## Next actions
 
-1. Scope the definite S-arithmetic group class against that interface. The hard
-   member is `reduce_in_amalgam` (the word problem): in the Fuchsian case it
-   comes from side pairings, and in the definite case it must come from the
-   tree quotient / Brandt graph. Everything else is routine.
-2. Check how `cohomology_arithmetic` handles the dimension of the Hecke
-   eigencomponent — the genus-2 assumption lives in `padicperiods`, but confirm
-   it does not leak into the cohomology layer, where we need dimension 16.
-3. Only then write code.
+1. Scope the overconvergent lift over `H ⊗ Q_q0`: the moment normalisation and
+   the `U_p`-eigenvalue scaling, generalised from `ZZ` to the Hecke field. This
+   is the true new-code core of gate 4.
+2. Build the definite S-arithmetic group class against the four-method
+   interface above, overriding `get_BT_reps` from the `P^1(F_q0)` neighbours.
+3. Validate the pair on a case where the answer is known — a real quadratic
+   field with a 2-dimensional component, reproducing a published
+   Guitart–Masdeu abelian surface — before pointing it at degree 8.
