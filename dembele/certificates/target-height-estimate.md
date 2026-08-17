@@ -94,3 +94,62 @@ Note that (3) is not obviously hopeless even in the bad case: what we need is
 *the field*, and a defining polynomial is only one presentation of it. A
 presentation adapted to the tower `L/F` with its `e = 256` local structure could
 be far smaller than a generic degree-257 polynomial over `Q(sqrt 2)`.
+
+---
+
+## Answered with published data: Bosman's Table 1
+
+`arXiv:0710.1237`, Table 1 — polynomials for projectivised mod-`ell` level-one
+representations, degree `ell+1`, Galois group `PGL_2(F_ell)`, ramified only at
+`ell`. Exactly our family one scale down. Largest coefficient by (weight,
+`ell`):
+
+| deg | `log10 H` (by weight `k`) |
+|---|---|
+| 12 | 2.5 (k=12) |
+| 14 | 3.4 (k=12) |
+| 18 | 5.3 (12), 6.1 (16), 8.3 (18) |
+| 20 | 4.7 (12), 6.8 (16), 9.3 (18), 8.8 (20) |
+| 24 | 8.6 (16), 11.4 (18), 12.1 (20), **15.4 (22)** |
+
+Two extrapolations to degree 257:
+
+- linear fit `log10 H = 0.809 n - 8.0` → **`log10 H ~ 200`**
+- structural model `log10 H = n log10(2) + (n/2) log10|alpha|`, whose implied
+  `|alpha| ~ 1.47` is impressively stable across the table → **`log10 H ~ 99`**
+
+So `log10 H` in the range **100–200**, giving `M ~ 70–140` and a kernel cost
+multiplier of **43–318x** over the `M = 20` baseline. Against the optimised
+kernel's 85–2000 core-hours at `M = 20`, that is 3 700–630 000 core-hours:
+about a week on 24 cores at the optimistic end, three years at the pessimistic.
+
+### One strong effect in our favour
+
+The table shows height rising sharply with **weight**: at degree 24, `log10 H`
+goes 8.6 → 11.4 → 12.1 → 15.4 as `k` goes 16 → 18 → 20 → 22, a slope of ~1.1
+per unit weight. **Our form has parallel weight 2** — below every entry in
+Bosman's table, which starts at 12. Naive extrapolation of that slope down to
+`k = 2` runs negative, so it clearly saturates, but the direction is
+unambiguous: minimal weight is the small-height end of this family. The 100–200
+estimate, fitted on weights 12–22, is therefore likely an **over**estimate.
+
+### Byproduct: a much sharper discriminant
+
+Bosman's Corollary 2 gives, for exactly this configuration,
+`v_ell(Disc(K/Q)) = k + ell - 2`. The analogue here (`k = 2`, `q = 256`) is
+`v_2(disc(L/F)) = 256`, far below the worst-case wild bound of 2303 used above.
+That gives `rd(L) = 2^((256 + 31*257)/2056) ~ 16.0`, and correspondingly
+**strengthens the "not totally real" conclusion**: 16.0 is far below Odlyzko's
+60.8, and now also below the totally-imaginary bound 22.3 — which would force
+`L` to have both real and complex places rather than being totally imaginary.
+Worth checking carefully, since it is a sharp structural claim resting on an
+analogy across `F_ell` to `F_256` that has not been verified.
+
+## Verdict
+
+**The height does not kill the route.** The honest position: `M` is probably in
+the 70–140 band and plausibly lower given weight 2, which makes gate 4 range
+from a week to a few years of compute depending on the kernel constant — and
+that constant (85 vs 2000 core-hours at `M = 20`, a 24x spread) is now the
+dominant uncertainty, ahead of the height. Narrowing it means prototyping the
+kernel's inner loop, which is a day's work rather than the full month.
