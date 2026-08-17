@@ -1,20 +1,9 @@
 # Gate-1 level-raising scan: verdicts recovered from the chatelet lane logs.
 # A prime q0 is admissible iff the constant coefficient of charpoly(T_q|V16)
 # is even, i.e. const2val >= 1.  const2val = 0 everywhere below: no hit.
-# Primes listed in the script's static DONE set whose log lines predate the
-# surviving *.out files are recorded as scanned with verdict no-hit; their
-# trace/valuation detail is lost (logs not retained).
+# Primes in the script's static DONE set whose log lines predate the surviving
+# *.out files are recorded as scanned with verdict only.
 q,norm,trace_mod2,const2val,source
-17,289,0,0,log
-31,31,0,0,log
-97,97,0,0,log
-127,127,1,0,log
-191,191,0,0,log
-193,193,1,0,log
-223,223,1,0,log
-257,257,0,0,log
-353,353,1,0,log
-383,383,0,0,log
 1249,1249,1,0,log
 1279,1279,0,0,log
 1409,1409,0,0,log
@@ -23,6 +12,21 @@ q,norm,trace_mod2,const2val,source
 1567,1567,0,0,log
 1601,1601,0,0,log
 1663,1663,1,0,log
+1697,1697,0,0,log
+1759,1759,1,0,log
+1823,1823,0,0,log
+1889,1889,0,0,log
+1951,1951,1,0,log
+17,,,,done-set
+31,,,,done-set
+97,,,,done-set
+127,,,,done-set
+191,,,,done-set
+193,,,,done-set
+223,,,,done-set
+257,,,,done-set
+353,,,,done-set
+383,,,,done-set
 449,,,,done-set
 479,,,,done-set
 577,,,,done-set
