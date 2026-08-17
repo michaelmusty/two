@@ -115,10 +115,28 @@ step 3. Rough figures for `Nq0 ~ 2000`:
   the iteration wants ~20 of them.
 
 That is ~`5e9` moment-level operations for one class, ~`8e10` for sixteen.
-Feasible in compiled code, not in the Python layer these modules are written in.
-**This, not the algebra, is what to benchmark next**: time a single `apply_Up`
-at small `Nq0` and measure the scaling in `Nq0`, before committing to the
-approach.
+
+**Measured, rather than guessed.** Timing the inner operation (scale-and-
+accumulate on a moment vector) in Sage's `Zp` arithmetic at the `q0` we would
+actually use:
+
+| `p` | moments `M` | per operation | one class | sixteen classes |
+|---|---|---|---|---|
+| 2003 | 20 | 5.3 us | 6.9 core-hours | **110 core-hours** |
+| 2003 | 40 | 10.6 us | 13.7 core-hours | **219 core-hours** |
+
+So the dominant loop is of order `1e2` core-hours, and the sixteen basis
+classes are **independent — embarrassingly parallel**. That is days on one
+core, well under a day spread across the machine. This is feasible, and it
+revises the earlier "not in the Python layer these modules are written in":
+even generic Sage `p`-adic vector arithmetic is fast enough at this size.
+
+Caveats, so the figure is not over-read: it counts only the inner loop, and
+ignores per-position group bookkeeping inside `apply_Up`, which could add a
+constant factor; `M = 20` moments and ~20 iterations are placeholders until the
+precision analysis is done (the table shows the cost is close to linear in `M`);
+and it assumes the level-`q0` structure really is `58·(Nq0+1)`. Treat it as a
+lower bound of the right order, not a schedule.
 
 ## Validation performed
 
