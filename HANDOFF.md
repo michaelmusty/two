@@ -7,9 +7,33 @@ Plan of record: `dembele/certificates/levelraise-cd-plan.md`, now materially
 revised by this session's measurements — read
 `dembele/certificates/roadmap-reevaluation.md` **before** deciding what to do next.
 
-### FIRST ACTION ON RESUME: re-arm the scan watchdog
+### The scan now survives session close (2026-08-18)
 
-Monitors die with the session. Nothing else restarts the chatelet lanes.
+A **remote supervisor runs on chatelet** and keeps the 8 lanes alive without any
+local session: `dembele/scanjob/supervise.sh`, deployed to
+`two_scanjob2/supervise.sh`, running under `flock` so a second launch is a no-op.
+
+```sh
+# stop it
+python3 remote_magma/cocalc.py exec "touch two_scanjob2/STOP_SUPERVISOR"
+# start it (safe to repeat; flock makes a duplicate launch a no-op)
+python3 remote_magma/cocalc.py exec "rm -f two_scanjob2/STOP_SUPERVISOR; \
+  setsid nohup flock -n \$HOME/two_scanjob2/.sup.lock \
+  sh \$HOME/two_scanjob2/supervise.sh \
+  >> \$HOME/two_remote_magma/supervisor.log 2>&1 < /dev/null & echo ok"
+```
+
+**Why this was needed, and the regression it fixes.** One-prime-per-process
+(D20) bounded memory but made the fleet *depend* on something relaunching it.
+That something was a watchdog living in the local Claude session — and monitors
+die when the session closes, so the fleet would have drained to zero within one
+prime-time (14–20 h) of the session ending. The earlier version of this handoff
+said "re-arm the watchdog first" without noticing that the scan could not
+survive a closed session at all. It can now.
+
+The supervisor still dies when the *project* restarts (D18). So when a session
+is open it is still worth arming the local watchdog, which covers that case and
+will also restart the supervisor:
 
 ```sh
 cd /Users/musty/two
@@ -17,9 +41,9 @@ while true; do out=$(python3 remote_magma/restore_scan.py 2>&1); \
   [ -n "$out" ] && echo "[watchdog] $(date -u +%H:%MZ) $out"; sleep 600; done
 ```
 
-`restore_scan.py` now takes a `flock` and re-checks each lane before launching
-(D22) — running it by hand while the watchdog is armed is safe, but prefer
-waiting for the sweep.
+`restore_scan.py` takes a `flock` and re-checks each lane before launching (D22),
+so it is safe to run alongside the remote supervisor — but prefer letting them
+work rather than hand-running either.
 
 ### State of the tracks
 
