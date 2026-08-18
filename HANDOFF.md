@@ -1,72 +1,123 @@
 # Session handoff
 
-## SESSION CLOSE 2026-08-15 — read this first
+## SESSION CLOSE 2026-08-17/18 — read this first
 
-Full narrative: `DECISIONS.md` (D1–D18) and `writeup/all-2-power-covers.md`.
-Attributions: `REFERENCES.md`. Plan of record: `dembele/certificates/levelraise-cd-plan.md`.
+Full narrative: `DECISIONS.md` (D1–D22). Attributions: `REFERENCES.md`.
+Plan of record: `dembele/certificates/levelraise-cd-plan.md`, now materially
+revised by this session's measurements — read
+`dembele/certificates/roadmap-reevaluation.md` **before** deciding what to do next.
+
+### FIRST ACTION ON RESUME: re-arm the scan watchdog
+
+Monitors die with the session. Nothing else restarts the chatelet lanes.
+
+```sh
+cd /Users/musty/two
+while true; do out=$(python3 remote_magma/restore_scan.py 2>&1); \
+  [ -n "$out" ] && echo "[watchdog] $(date -u +%H:%MZ) $out"; sleep 600; done
+```
+
+`restore_scan.py` now takes a `flock` and re-checks each lane before launching
+(D22) — running it by hand while the watchdog is armed is safe, but prefer
+waiting for the sweep.
 
 ### State of the tracks
 
-1. **Covers/rigidity arc: CLOSED and written up** (unconditional at k=4 — one
-   universal degree-8 moduli field, disc 2¹⁸·5²·17, catches every computed
-   all-2-power object; family-wide closure conditional on the twice-calibrated
-   transfer hypothesis; the +1-torus fixing congruence is proved). Sixteen
-   exact certified covers + exact k=8 data (Ni_gen = 32 / 200, forced layers
-   Q(ζ₈) / Q(√2), predicted ram(K₈) ⊆ {2,17,257}).
-2. **Period route (level-raising + Cerednik–Drinfeld/Greenberg–Voight): the
-   sole live path.** Gate 1 (find q₀ of F with ā_{q₀} = 0, i.e. even constant
-   coefficient of charpoly(T_q|V16)) is scanning on chatelet: 8 lanes, one
-   prime per rational prime (conjugates share the verdict — see D13), norm ≤
-   20000, ~280 independent samples, ~2/3 heuristic odds. 32 rationals done
-   (all DONE-listed in `two_scanjob2/37_levelraise_lane.m` + 8 more at norms
-   1249–1663), 0 hits — on script.
-3. **k=4 genus-2 corner (last open verification, decides the twelve
-   [10,10,11,11] braid components via cusp bijection): computing LOCALLY**
-   (`dembele/rigidity/31_g2_local.m`, mid-numerics at session close). On dump
-   (`out/g2_rep1_cfs.m`): recognize Igusa invariants offline (gauge-invariant;
-   pattern of scripts 12/26 with noise-floor + two-precision discipline);
-   verdict = whether its moduli field also contains K.
-4. **Sz(8) hypothesis test: PARKED** (D17 — package coordinate-degeneracy at
-   genus 8; needs the vBCPS26 canonical-embedding method).
-5. **Aristotle**: project `11dcaed0` (aristotle_fixing, the fixing congruence
-   in Lean) shows IDLE — download and check next session
-   (`aristotle download 11dcaed0-... --destination out.zip`; source `.env`
-   first: `set -a; . ./.env; set +a; . .venv/bin/activate`).
+1. **Covers/rigidity arc: CLOSED and written up.** Unchanged, except the last
+   open corner is now *closed as unanswerable at this precision*: the genus-2
+   run finished, and its numerical curve carries only ~25 correct digits of the
+   285 it reports (three independent confirmations, D21,
+   `dembele/certificates/g2-corner-precision.md`). The package's own `MakeK`
+   also failed rather than inventing a field. Deciding it needs a ~500-digit
+   rerun (~a week); it verifies an already-negative arc and is **not** on the
+   critical path. `32_g2_field.m` is a validated instrument waiting for a
+   better dump.
+2. **Period route: still the sole live path, and now fully costed.** Gate 1
+   scanning (below). Gates 3–5 were scoped end-to-end this session; see
+   "What changed" below — the headline is that the route is **feasible** but
+   needs an inner-loop rewrite.
+3. **Aristotle fixing congruence: DONE.** Proved, banked in `aristotle_fixing/`,
+   cited in `writeup/all-2-power-covers.md` §6, logged D19. Second
+   Lean-certified component after Lemma A.
+4. **Sz(8) hypothesis test: PARKED** (D17), unchanged.
 
-### Running computations and their care
+### Running computation and its care
 
-- **Chatelet scan lanes (8–9 processes)**: the project restarts on an
-  hours-scale and kills detached jobs (three times so far). A local persistent
-  watchdog runs `python3 remote_magma/restore_scan.py` every 10 min
-  (environ-census, relaunches missing lanes, append mode) — RE-ARM THIS
-  WATCHDOG in the new session (monitors die with the session). Manual check:
-  the census inside `restore_scan.py`; per-lane identity via
-  `/proc/PID/environ` (LANE=), never via timestamps or launch order (D18).
-  Harvest completed rationals into the script's DONE set before any rescan
-  edits. Cost ≈ linear in Nq (~hours/prime at current norms).
-- **Local genus-2** (`31_g2_local.m` + `out/g2_local.txt`): if dead without
-  `out/g2_rep1_cfs.m`, just relaunch (env: BELYI_DUMP_CFS, BELYI_SKIP_POLRED,
-  POWSER_ARNOLDI_BIN). ~4 h.
-- **~/Belyi carries SIX uncommitted patches** (TrialDivision guard; dump hooks
-  in newton.m, newton_hyperelliptic{,-new}.m, recognition.m genus-2 block;
-  genus-scaled columns in hyperelliptic.m; polred escape in theta.m). The
-  ACTIVE spec loads `newton_hyperelliptic-new.m` and `recognition.m` — the
-  genus-2 flow is recognition.m's `Genus eq 2` block. Chatelet's `two_belyi`
-  mirrors these. Consider upstreaming.
+**Eight chatelet lanes** (`dembele/scanjob/37_levelraise_lane.m`, now committed
+— it previously existed only on chatelet). Three properties added this session,
+all load-bearing:
+
+- **self-harvesting DONE set** — a restarted lane reads the lane logs and skips
+  every prime already recorded, so a restart costs only in-flight work (D20);
+- **restart-stable lane assignment** — lanes are assigned by position in the
+  full prime list before done-filtering, so assignments do not shift as the
+  harvest grows;
+- **one prime per process** — each lane exits after one prime and the watchdog
+  relaunches it fresh, bounding memory (D20 note). Overhead ~12 min startup
+  against a 14–20 h prime.
+
+This was exercised for real on 2026-08-17: the project restarted and killed all
+8 lanes; the watchdog restored them; every lane harvested all 37 completed
+primes and lost nothing but in-flight work. Before this session the same event
+would have silently replayed ~200 CPU-hours.
+
+Scan state: **37 rationals scanned, `const2val = 0` throughout, 0 hits.**
+Results banked in `dembele/scanjob/scan_results.csv` (they previously lived
+only in remote `*.out` files). Cost 14–20 h per prime and rising with norm.
+
+### What changed in the plan (read before resuming)
+
+- **Gate-4 cost goes as `Nq0^2 * M^3`**, so a hit's usefulness decays
+  quadratically in its norm. The headline "≈2/3 odds" counts hits we may not be
+  able to exploit; treat **norm ~5000 as a decision point** rather than grinding
+  to 20000 (`roadmap-reevaluation.md`).
+- **The degree-16 Hecke field is a non-issue.** The isotypic component is
+  `Q`-rational and the lift is `Q_q0`-linear, so it never meets `H`; `U_q0 = ±1`
+  is a scalar on the whole component (verified three ways, including on the
+  exact GM example). `H (x) Q_q0` enters only at period assembly.
+  (`gate4-lift-scoping.md`.)
+- **`darmonpoints` cannot serve as a reference implementation.** Its period path
+  has bit-rotted under Sage 10.6 — four version-drift bugs, each deeper;
+  abandoned deliberately rather than risk silently wrong periods. The
+  overconvergent *lift* does work and is timed. (`gate4-dim2-calibration.md`.)
+- **Gate 4 is feasible but is a rewrite.** The existing Python stack is ~1.6e5
+  core-hours (infeasible); an optimised kernel measures **229 core-h at M=20**,
+  and the real run at `M ~ 70–140` is **13 days to 6 months on 24 cores**. The
+  inner loop is a fixed sparse block operator — precompute the table once, then
+  it is pure linear algebra. (`gate4-kernel-rewrite-scope.md`.)
+- **Precision is bounded.** Recognition obeys `M ~ 1.1–1.3 d log_q0(H)`
+  (measured); our recognition degree is 2, so `M ~ 0.7 log10(H)`, and Bosman's
+  published heights for the same family put `log10 H ~ 100–200`, likely lower
+  since our weight is 2. (`target-height-estimate.md`.)
+- **Byproduct: `L` cannot be totally real.** `rd(L) <= 31.9 < 60.8` (Odlyzko),
+  so complex conjugation acts as a unipotent involution — a structural fact
+  about Dembélé's field from ramification alone, checkable against any
+  polynomial we produce.
 
 ### Next actions, in order
 
-1. On genus-2 dump: offline Igusa recognition → close/crack the last k=4
-   corner; append the verdict to `writeup/all-2-power-covers.md` §3 and
-   DECISIONS.md.
-2. On scan hit: gate 3 — level-q₀ Brandt module on chatelet, find the
+1. **Re-arm the watchdog** (above). Nothing else keeps the scan alive.
+2. **Let gate 1 run.** It needs no attention. Re-assess at norm ~5000 rather
+   than on autopilot to 20000.
+3. **On a hit:** gate 3 — level-`q0` Brandt module on chatelet, find the
    congruent Steinberg eigensystem (verify, don't trust mod-2 level raising).
-3. Check the Aristotle result; if proved, record alongside Lemma A.
-4. Then the real project: CD/GV q₀-adic periods (de-risk via `darmonpoints`
-   on a small totally real case first). The endgame (2-torsion = square roots
-   of the period lattice; p-adic LLL with equivariant gauges; the ready
-   Eisenstein back end) is specified in the plan of record.
+   Then the kernel rewrite becomes worth building, and only then.
+4. **Optional, cheap, and not blocked by anything:** verify the sharper
+   discriminant claim in `target-height-estimate.md` (Bosman's Cor. 2 analogue
+   giving `rd(L) ~ 16`), which if correct would put `rd` below the
+   totally-imaginary bound too — a sharp claim currently resting on an unverified
+   analogy from `F_ell` to `F_256`.
 5. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork and new source.
+
+### Gotchas added this session
+
+- `.env.bak` is now gitignored; `remote_magma/set_key.py` rotates the CoCalc key
+  without echoing it (the key died once already — see D22's neighbours).
+- Never run a repair tool by hand while its automation is armed unless it is
+  genuinely idempotent. `restore_scan.py` was not, and double-launched two lanes
+  (D22).
+- A second Claude session has committed to this repo (`d50f0c4`). Concurrent
+  sessions on one working tree can collide.
 
 
 ## Objective and exact target
@@ -182,28 +233,17 @@ See:
 This descent issue is mathematically interesting but is not currently the main blocker
 to an explicit polynomial.
 
-## Running computation
+## Running computation (historical)
 
-One remote Magma job may still be active:
-
-```text
-job: lift_field_generators
-script: dembele/magma/34_lift_field_generators.m
-purpose: explicit totally positive generators for both primes above 2 and the codifferent
-```
-
-Check and fetch it with:
-
-```sh
-python3 dembele/jobs/chatelet_job.py status \
-  lift_field_generators --marker 'PASS|dembele_lift_field_generators'
-python3 dembele/jobs/chatelet_job.py fetch lift_field_generators
-```
-
-Allow it to finish if still running. It only de-GRHs principality; it does not unblock
-the polynomial. Nothing else should be launched from the killed-route list below.
+*Superseded — see "Running computation and its care" at the top of this file for
+what is actually running. The job recorded here, `lift_field_generators`
+(`dembele/magma/34_lift_field_generators.m`, de-GRHing principality of the two
+primes above 2 and the codifferent), belongs to an earlier session and does not
+unblock the polynomial either way.*
 
 ## Current bottleneck and recommended next work
+
+**Update 2026-08-17.** The level-raising route below remains the plan of record, but its costs and risks were measured this session and the conclusions changed — read `dembele/certificates/roadmap-reevaluation.md` first.
 
 **Update 2026-08-13.** The hard stop below is superseded: the one unexplored
 door in the exhaustion audit ("Level-raising + CD at an auxiliary prime") is
