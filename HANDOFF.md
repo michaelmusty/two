@@ -31,9 +31,21 @@ prime-time (14–20 h) of the session ending. The earlier version of this handof
 said "re-arm the watchdog first" without noticing that the scan could not
 survive a closed session at all. It can now.
 
-The supervisor still dies when the *project* restarts (D18). So when a session
-is open it is still worth arming the local watchdog, which covers that case and
-will also restart the supervisor:
+**Project restarts are covered too (2026-08-19).** CoCalc runs `~/project_init.sh`
+at project start; ours (`dembele/scanjob/project_init.sh`) relaunches the
+supervisor, honours the STOP sentinel, and exits 0 (CoCalc's Supervisor
+re-runs the script on any exit code other than 0 or 2). So the chain is now:
+
+| failure | covered by |
+|---|---|
+| a lane finishes its prime and exits | remote supervisor |
+| the Claude session closes | remote supervisor |
+| the project/host restarts | `~/project_init.sh` |
+| the supervisor itself dies | local watchdog, when a session is open |
+
+All three launchers take the same `flock`, so running any of them alongside the
+others is a no-op rather than a double-launch. Arming the local watchdog while a
+session is open is still worthwhile as the last layer:
 
 ```sh
 cd /Users/musty/two
