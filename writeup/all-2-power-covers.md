@@ -208,6 +208,18 @@ class fields; twist: 5, 13 fix, 7 moves) conforms.
    degree ≥ 17 — the ramification profile does not isolate `PΓL`-monodromy.)
 3. **The unchecked k = 4 corners**: the genus-2 `(2@0,8,8)` (Ni = 12) and genus-4
    `(4@φ²,8,8)` passports; expected to have moduli `K` (they are cusps of the same web).
+   **Genus-2 attempted 2026-08-16 and undecided on precision, not on mathematics.** A
+   24 h local run produced the curve, but its coefficients carry only ~25 correct digits
+   of the 285 reported, so no relation of degree ≤ 24 is certifiable; the package's own
+   `MakeK` also failed rather than inventing a field. Established three ways: LLL heights
+   growing linearly with precision at every degree; a gauge probe showing the Igusa
+   formulas themselves preserve 257–274 digits; and the package's two outputs of the
+   *same* curve (pre- and post-rescale, provably related by a weighted gauge) agreeing to
+   only 24–26 digits. The loss is upstream, in the power-series → `NumericalKernel` solve,
+   and the genus-2 path has no Newton refinement to recover it. Deciding it needs a
+   ~500-digit rerun (~a week). The offline recogniser `dembele/rigidity/32_g2_field.m` is
+   validated and waiting for a better dump. Detail:
+   `dembele/certificates/g2-corner-precision.md`, D21.
 4. **r = 5 all-involution covers** of the simple group: the one shape outside every
    argument above; 2-parameter families, no rigidity, marker vacuous — parked.
 
