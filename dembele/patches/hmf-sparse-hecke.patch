@@ -1,0 +1,90 @@
+--- /tmp/definite.m.orig	2026-08-22 08:18:30
++++ /Users/musty/hilbertmodularforms/ModFrmHil/definite.m	2026-08-22 08:18:30
+@@ -136,6 +136,19 @@
+          "This space is computed as a subspace of another space: use M`Ambient";
+ 
+   return HeckeOperatorDefiniteBig(M, p);
++end intrinsic;
++
++intrinsic InternalHMFRawHeckeDefiniteSparse(M::ModFrmHil, p::RngOrdIdl) -> Mtrx
++{The Hecke operator T_p on the raw space containing M, assembled as a SPARSE
++ matrix.  Same mathematics as InternalHMFRawHeckeDefinite; avoids the dense
++ dim x dim intermediate, which is 45 GB at level q0.  Parallel weight 2 only.}
++
++  require not assigned M`Ambient :
++         "This space is computed as a subspace of another space: use M`Ambient";
++  require Seqset(Weight(M)) eq {2} :
++         "Sparse assembly is implemented for parallel weight 2 only";
++
++  return HeckeOperatorDefiniteBig(M, p : Sparse);
+ end intrinsic;
+ 
+ intrinsic HeckeMatrixRaw(M::ModFrmHil, p::RngOrdIdl) -> Mtrx
+@@ -978,7 +991,7 @@
+ 
+ // TO DO: sparse
+ 
+-function HeckeOperatorDefiniteBig(M, p : Columns:="all")
++function HeckeOperatorDefiniteBig(M, p : Columns:="all", Sparse:=false)
+ 
+    assert not assigned M`Ambient; // M is an ambient
+ 
+@@ -1069,7 +1082,15 @@
+      end for;
+    end if;
+ 
+-   if not cached then
++   if Sparse then
++     // PATCH (dembele project, 2026-08-22): assemble into a sparse matrix.
++     // The dense allocation below is dim x dim; at level q0 (dim 109240) that
++     // is 45 GB, while the operator has only ~Norm(p)+1 nonzeros per column.
++     // The package already STORES the result sparsely -- only the assembly was
++     // dense.  Sparse mode does not touch the cache, so the dense path is
++     // unaffected.
++     Tsp := SparseMatrix(F, dim, dim);
++   elif not cached then
+      Tp := MatrixRing(F, dim) ! 0; 
+    end if;
+ 
+@@ -1119,8 +1140,21 @@
+                     lookup:= PLDl`Lookuptable; 
+                     P1rep := PLDl`P1Rep;
+ 
+-                    Tplm := ExtractBlock(Tp, row+1, col+1, #FDl, #FDm);
+                     mms := [mm : mm in [1..#FDm] | col+mm in bcolumns];
++                    if Sparse then
++                       for ll := 1 to #tpml do
++                          mat := tpml[ll] @ sm;
++                          for mm in mms do
++                             u := mat * FDm[mm];
++                             bool, u0 := P1rep(u, checkP1, false);
++                             if bool then
++                                n := lookup[u0,1];
++                                Tsp[row+n, col+mm] := Tsp[row+n, col+mm] + 1;
++                             end if;
++                          end for;
++                       end for;
++                    else
++                    Tplm := ExtractBlock(Tp, row+1, col+1, #FDl, #FDm);
+                     for ll := 1 to #tpml do
+                        mat := tpml[ll] @ sm;
+                        for mm in mms do 
+@@ -1134,6 +1168,7 @@
+                        end for;
+                     end for;
+                     InsertBlock(~Tp, Tplm, row+1, col+1);
++                    end if;
+ 
+                  else
+ 
+@@ -1180,6 +1215,10 @@
+ 
+    end if;
+ 
++   if Sparse then
++     return Tsp;
++   end if;
++
+    // new columns were computed, so renew the cache
+    M`HeckeBig[p] := SparseMatrix(Tp);
+    M`HeckeBigColumns[p] := Sort(old_cols cat columns);
