@@ -313,6 +313,49 @@ CD arguments — they need only *a* finite prime — but means the local field a
 The scan continues: a second hit at lower norm would be cheaper downstream, and
 redundancy matters if gate 3 rejects this `q0`.
 
+**D24. Gate 3: surgery on the pinned HMF package, and why we are verifying
+rather than invoking Ribet.** Two forks resolved on 2026-08-22.
+
+*(a) The package could not build the objects.* Level `q0` has dim **109240**
+(14 s to compute — the mathematics was never the issue), but `definite.m`
+materialises dense `dim x dim` matrices, 45.5 GB apiece here. Two sites, both
+patched additively and recorded in `dembele/patches/`: the Hecke assembly, and —
+the binding one, since it fires first — `BasisMatrixDefinite`. The finding there
+is worth keeping: at parallel weight 2 every per-factor `basis_matrix` is the
+**identity** (the package's own `TO DO` calls them removable), so
+`basis_matrix_big` *is* the identity, built densely and inverted by a global
+`Solution` call. 45.5 GB twice plus an O(n^3) solve, to construct and invert an
+identity matrix. Downstream it is read only through `Ncols`/`Nrows`, and its
+inverse never at all. Verified by comparing against the pristine package: level 1
+for the Hecke hunk (`Matrix(sparse) eq dense`, V16's degree-16 factor unchanged),
+and — since level 1 takes the "easy" branch and never reaches the basis-matrix
+code — **level 31** for that one, matching on dimension, `Nrows`, trace, and the
+sum and sum-of-squares of every entry of `T_97`. At level `q0` the operator now
+builds in 963 s with 3 494 618 nonzeros, **31.99 per column** against the
+predicted `Norm(p)+1 = 32`. This surgery was required for gate 4 regardless: the
+level-`q0` module *is* the Bruhat–Tits tree quotient.
+
+*(b) Verify, or invoke the theorem?* The plan said "verify, don't trust mod-2
+level-raising theorems", and on inspection that instinct was right. Level raising
+for Hilbert modular forms is general **for `ell > 2`**; `ell = 2` is a separate
+and delicate case (there is a dedicated literature on it). Worse, Rajaei's
+theorem carries a hypothesis for even `d = [F:Q]` requiring the automorphic
+representation to be **special or supercuspidal at some finite prime** — and our
+`f` has level 1, so it is unramified at every finite prime. Our configuration
+(`ell = 2`, `d = 8` even, level 1) sits exactly in the corner the theorems avoid.
+So: **direct verification**, not invocation. *(This reading is from secondary
+sources; the primary text should be checked before either conclusion is
+published.)* Running: `charpoly(T_31 mod 2)` at level `q0`, testing whether the
+residual invariant `g16bar` divides it and with what multiplicity.
+
+*Method lesson, twice earned.* Both of this session's serious mis-estimates were
+unmeasured guesses about constants: the overconvergent inner loop (wrong by
+1300x, because a distribution action is `O(M^2)` with Python overhead, not the
+`O(M)` vector op I timed) and dense `GF(2)` multiplication (wrong by ~15x in the
+*pessimistic* direction — Magma is bitsliced, so `n = 109240` costs ~22 min, not
+the ~5 h I asserted; that error nearly discarded a viable approach). **Measure
+the constant before letting it decide anything.**
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

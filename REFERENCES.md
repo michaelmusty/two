@@ -102,8 +102,16 @@ happens.
 - **H. Jacquet & R. Langlands**. **[theory]** The correspondence moving
   Dembélé's form between definite and indefinite quaternion algebras; the
   parity constraint that forces the auxiliary prime.
-- **K. Ribet**. **[theory]** Level raising — the congruence condition
-  (mod-2 case treated computationally, not by theorem: gate 3).
+- **K. Ribet**; **A. Rajaei** (*On the levels of mod ell Hilbert modular
+  forms*, J. reine angew. Math. 2001); **R. Taylor**; **F. Jarvis**.
+  **[theory]** Level raising and lowering. The congruence condition
+  `a_q = +-(Nq+1) mod lambda` is what the gate-1 scan searches for. We
+  deliberately **do not invoke** these theorems for gate 3: they are general for
+  `ell > 2`, whereas `ell = 2` is a separate delicate case (cf. *Level raising
+  mod 2 and arbitrary 2-Selmer ranks*, arXiv:1501.01344), and Rajaei's
+  even-degree hypothesis asks for a special or supercuspidal place, which our
+  level-one form does not have. Hence the direct computation (D24,
+  `dembele/certificates/gate3-status.md`).
 - **I. Cerednik; V. Drinfeld**. **[theory]** p-adic uniformization of Shimura
   curves with a finite disc prime — the pivot that eliminates the genus wall
   (`levelraise-cd-plan.md`).
@@ -117,6 +125,14 @@ happens.
   algebraically recognized equations* — the published proof-of-concept for our
   endgame pattern. **M. Masdeu**'s `darmonpoints` (Sage/Magma) is the closest
   existing implementation and the designated de-risking vehicle for gate 4.
+  **Assessed 2026-08-16** (`gate4-*.md`): the overconvergent *lift* works and is
+  timed (dimension-2 case reproduced, matching an independent modular-symbols
+  ground truth), but the *period* path has bit-rotted under Sage 10.6 — four
+  version-drift failures, abandoned rather than risk silently wrong periods — and
+  `padicperiods` is genus-2 specific (three half-periods, Igusa recognition),
+  while the group layer only offers the Fuchsian construction for totally real
+  base fields. So it is a source of algorithms and a partial reference, not a
+  drop-in engine.
 - **H. Shimizu**. **[theory]** The volume formula behind the archimedean
   infeasibility computation (ζ_F(−1) = 5820 ⇒ genus ≥ ~91(Nq₀−1)/2).
 - **M. Kirschmer & J. Voight**. **[tool/theory]** Quaternion ideal-class
@@ -131,6 +147,19 @@ happens.
   `dembele/certificates/eisenstein-prototype.md`; and (with van Bommel, Elkies,
   Keller) the descent-congruence certification method behind the
   `inverse-galois-hmf` sweep that supplies our k=4 nonexistence control.
+- **J. Bosman**, *On the computation of Galois representations associated to
+  level one modular forms* (arXiv:0710.1237), with **B. Edixhoven,
+  J-M. Couveignes** et al. **[context/method]** Explicit polynomials for
+  projectivised mod-`ell` level-one representations — degree `ell+1`, ramified
+  only at `ell`, Galois group `PGL_2(F_ell)`: the same *shape* as our degree-257
+  target one scale down. Table 1 supplies the only empirical anchor we have for
+  the **height** of the polynomial we are trying to produce, and hence for the
+  precision `M` the endgame needs (`dembele/certificates/target-height-estimate.md`).
+- **A. Odlyzko**. **[theory]** Discriminant lower bounds. Used twice: to note
+  that effective Chebotarev is vacuous at our conductor, and — with the
+  ramification analysis at 2 — to prove `L` **cannot be totally real**
+  (`rd(L) <= 31.9 < 60.8`), so complex conjugation acts as a unipotent
+  involution.
 - **J. Igusa**. **[theory]** Genus-2 invariants — the gauge-invariant
   recognition planned for the genus-2 corner verdict.
 - **Kronecker–Weber**; **J. Lagarias & A. Odlyzko**. **[theory/context]** The
