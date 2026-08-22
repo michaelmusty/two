@@ -108,3 +108,52 @@ it), but a *direct* gate-3 verification is a further algorithmic project. The
 alternative remains to verify Ribet's hypotheses — `rho-bar` irreducible (image
 `SL_2(F_256)`), `q0` prime to the level, `abar_q0 = 0` (measured) — and let the
 congruence be confirmed inside gate 4, where the same module is built anyway.
+
+
+---
+
+## 2026-08-23: first positive evidence for the congruence at q0
+
+`charpoly(T_31 mod 2)` at level `q0` (degree 109241, 3341 s) against the
+residual invariant from level 1:
+
+    g16bar = f1 * f2,  two DISTINCT irreducible factors of degree 8
+    f1 : multiplicity 4 at level q0
+    f2 : multiplicity 2 at level q0
+
+**The factorisation is the expected shape.** `H` has degree 16 with two primes
+`lambda, lambda'` above 2, each of residue degree 8 — Dembele's two residual
+systems — so the degree-16 invariant splits into one degree-8 factor per system.
+
+**The asymmetry is the signal.** Each level-1 newform yields *two* oldforms at
+level `q0` (the two degeneracy maps), so the oldform baseline is multiplicity 2
+for each factor. Observed: `f2` sits exactly at baseline (excess 0), while `f1`
+is at 4 — an **excess of 2** unaccounted for by oldforms.
+
+**And the asymmetry is the one gate 1 predicted.** The hit was
+`const2val = 8`, i.e. `v_lambda + v_lambda' = 1`: exactly *one* of the two
+residual systems has `abar_q0 = 0`, so exactly one should level-raise. Precisely
+one factor shows excess. The two independent computations — a 36 h Hecke
+eigenvalue valuation at level 1, and a mod-2 characteristic polynomial at level
+`q0` — agree on *which side* the phenomenon sits.
+
+### What this does and does not establish
+
+Established: there are forms at level `q0`, beyond the oldforms, whose residual
+Hecke system at 31 matches one of Dembele's two systems — and it is the system
+gate 1 singled out.
+
+Not yet established:
+
+1. **Steinberg at `q0`.** The excess forms must have `U_q0 = ±1`. Until that is
+   checked they are only "extra forms with the right residual system at 31".
+2. **One prime is not an eigensystem.** Matching at `ell = 31` alone leaves room
+   for coincidence; the same excess should appear at further `ell`, and the
+   saved charpoly makes each additional prime cheap (the operator, not the
+   charpoly, is the cost).
+3. **Why the excess is 2 rather than 1** — consistent with a new form whose
+   Hecke field contributes `2 x 8`, or with two new forms, but not yet pinned
+   down.
+
+The charpoly is now banked (`gate3_charpoly_q0.m`), so none of this needs
+recomputing.
