@@ -281,6 +281,38 @@ a loaded gun, and the moment you reach for it manually is exactly when the
 automation is also running.** Prefer waiting for the scheduled sweep, or make
 the tool safe to run concurrently — we did the latter.
 
+**D23. GATE 1 IS SATISFIED: q0 = the prime above 7 of norm 2401.** On
+2026-08-22, after 53 rationals scanned, lane 0 returned
+`Nq=2401 (q over 7): trace=0 const2val=8 <== LEVEL-RAISING PRIME` (128 700 s).
+Since `v_2(Norm a_q) = 8 v_lambda + 8 v_lambda'`, a valuation of exactly **8**
+forces `v_lambda + v_lambda' = 1`: precisely one of the two primes above 2
+divides `a_q`, i.e. `abar_q = 0` for exactly one of Dembele's two residual
+systems. That the valuation is exactly 8 — the residue degree — rather than
+some arbitrary even number is itself a consistency check that a spurious or
+buggy verdict would be unlikely to pass. Single occurrence, no conflicting
+verdict for q = 7 anywhere in the logs.
+
+**This is what the entire period route was dammed behind.** Every gate from 3
+onward was scoped, costed and waiting on it.
+
+**Two pieces of luck worth recording.** (i) The norm is 2401, comfortably inside
+the affordable window: gate-4 cost goes as `Nq0^2`, and 2401 sits close to the
+2111 used in the cost tables (a 1.29x multiplier — ~157 core-hours at M = 20),
+far from the norm-5000 decision point where a hit would have become painful and
+20000 where it would have been useless. (ii) It arrived at the 53rd rational
+rather than deep in the tail; the cumulative-odds table put ~28% by norm 5000.
+
+**Not yet trusted.** The plan of record deliberately makes gate 3 a
+*verification* rather than an assumption: compute the level-`q0` Brandt module
+and find the Steinberg eigensystem congruent to `f` mod `lambda`, instead of
+relying on mod-2 level-raising theorems. That is now the immediate next action.
+Note `q0` has residue degree 4 (`2401 = 7^4`), which is fine for the parity and
+CD arguments — they need only *a* finite prime — but means the local field at
+`q0` is the unramified quartic extension of `Q_7`.
+
+The scan continues: a second hit at lower norm would be cheaper downstream, and
+redundancy matters if gate 3 rejects this `q0`.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

@@ -1,9 +1,14 @@
 # Gate-1 level-raising scan: verdicts recovered from the chatelet lane logs.
 # Admissible iff the constant coefficient of charpoly(T_q|V16) is even,
-# i.e. const2val >= 1.  const2val = 0 everywhere below: no hit.
-# Primes in the static DONE set whose logs predate the surviving *.out
-# files are recorded as scanned with verdict only.
+# i.e. const2val >= 1.
+#
+# HIT 2026-08-22: q = 7, norm 2401 = 7^4 (residue degree 4), const2val = 8.
+# Since v_2(Norm a_q) = 8 v_lambda + 8 v_lambda', const2val = 8 means
+# v_lambda + v_lambda' = 1 -- exactly one of the two primes above 2 divides
+# a_q, i.e. abar_q = 0 for exactly one residual system.  Gate 1 satisfied,
+# pending direct verification at level q0 (gate 3).
 q,norm,trace_mod2,const2val,source
+7,2401,0,8,log,HIT
 17,289,0,0,log
 31,31,0,0,log
 47,2209,0,0,log
@@ -35,6 +40,13 @@ q,norm,trace_mod2,const2val,source
 2143,2143,1,0,log
 2207,2207,0,0,log
 2239,2239,0,0,log
+2273,2273,1,0,log
+2399,2399,0,0,log
+2591,2591,0,0,log
+2593,2593,0,0,log
+2657,2657,1,0,log
+2687,2687,1,0,log
+2689,2689,0,0,log
 449,,,,done-set
 479,,,,done-set
 577,,,,done-set
