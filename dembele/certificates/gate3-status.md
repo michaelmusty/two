@@ -56,3 +56,55 @@ module gets built regardless.
 verification.** The surgery is unavoidable; doing it now buys the gate-3
 verification as a by-product, and the by-product is exactly the check the plan
 wanted.
+
+
+---
+
+## Update 2026-08-22 (evening): enablers DONE and verified; algorithm needs redesign
+
+**Both patches verified and deployed.** At level `q0` the probe now runs:
+
+    T_31 sparse: 109241 x 109241, 3,494,618 nonzeros, 31.99 per column [963 s]
+    expected ~Norm(p)+1 = 32 per column
+    dense would have been 44.46 GB
+
+Exactly `Nell+1` neighbours per vertex — the Brandt matrix is what it should be,
+built in 16 minutes and under a GB. The 45.5 GB blocker is gone.
+
+**But the drafted verification (`38_gate3_congruence.m`) is infeasible as
+written.** It calls `Kernel(Evaluate(g16bar, T2))` on a dense GF(2) matrix.
+Dense GF(2) multiplication at `n = 109240` is ~`n^3/64 = 2e13` word ops, ~5 h
+each; Horner on a degree-16 polynomial needs 16 of them, per prime — ~350 h.
+The mistake was reasoning "GF(2) dense is only 1.49 GB, so it's cheap": the
+*storage* is cheap, the *multiplication* is not.
+
+**Measured alternative.** The operator is sparse, so:
+
+| | cost |
+|---|---|
+| one sparse matvec | 3.5 ms |
+| Wiedemann, ~`2n` matvecs | 765 s (13 min) |
+
+so anything expressible in matvecs is ~1000x cheaper than the dense route.
+
+**What still needs designing.** "Cut out the eigenspace" is not a kernel
+computation at this size. A workable shape:
+
+1. Wiedemann for the minimal polynomial of `T_ell mod 2`; check `g16bar` divides.
+2. Build the projector onto the `g16bar`-primary part from that factorisation and
+   apply it to random vectors — each application is `O(deg)` matvecs.
+3. The projected vectors span the eigenspace; get its dimension by rank of a
+   modest dense block (`k x n`, cheap for small `k`).
+4. Restrict `U_q0` to it and check `+-1`.
+
+Step 4 needs `U_q0` at the level prime, whose cost is not yet measured — at
+level 1 the norm-2401 operator took 36 h, and the level-prime operator is a
+different (and possibly cheaper) computation, but that is an assumption, not a
+measurement.
+
+**The fork from the top of this file is therefore still live**, and better
+informed: the enabling surgery is done and was worth it regardless (gate 4 needs
+it), but a *direct* gate-3 verification is a further algorithmic project. The
+alternative remains to verify Ribet's hypotheses — `rho-bar` irreducible (image
+`SL_2(F_256)`), `q0` prime to the level, `abar_q0 = 0` (measured) — and let the
+congruence be confirmed inside gate 4, where the same module is built anyway.
