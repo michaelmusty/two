@@ -30,7 +30,18 @@ CENSUS = (
 
 
 def live_lanes(conf):
-    r = rexec(conf, CENSUS, timeout=120)
+    """Lanes currently alive, or None if the census could not be taken.
+
+    A transient API failure must NOT be read as "no lanes are alive" -- that
+    would relaunch all eight on top of a healthy fleet. Returning None lets the
+    caller skip the pass instead (the host is often loaded enough that SSL reads
+    time out; observed 2026-08-23).
+    """
+    try:
+        r = rexec(conf, CENSUS, timeout=120)
+    except Exception as exc:
+        print(f"census failed ({type(exc).__name__}); skipping this pass")
+        return None
     return {int(l.split("=")[1]) for l in r.get("stdout", "").split()
             if l.startswith("LANE=")}
 
@@ -44,13 +55,17 @@ def main():
         return 0
 
     conf = env()
-    missing = sorted(set(range(8)) - live_lanes(conf))
+    live = live_lanes(conf)
+    if live is None:
+        return 0
+    missing = sorted(set(range(8)) - live)
     if not missing:
         return 0
     for lane in missing:
         # re-check: the lane may have been launched since the census above
-        if lane in live_lanes(conf):
-            print(f"lane {lane} appeared since census; not launching")
+        recheck = live_lanes(conf)
+        if recheck is None or lane in recheck:
+            print(f"lane {lane} appeared since census (or recheck failed); not launching")
             continue
         rexec(conf,
               f"cd two_remote_magma && HMF_ROOT=../two_hilbertmodularforms "
