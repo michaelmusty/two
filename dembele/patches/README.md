@@ -42,10 +42,30 @@ weight/level combination violating the assumption fails loudly instead of
 silently returning a wrong basis. Gated on `weight2 and EisensteinAllowed`,
 leaving `RemoveEisenstein` and the higher-weight paths untouched.
 
-**Verified.** At level 1, `Matrix(sparse) eq dense` is `true`, and the degree-16
-factor of `charpoly(T_31)` that defines `V16` is unchanged. Note the apparent
-speedup in that test (995 s dense vs 0.000 s sparse) is a caching artifact —
-`get_tps` was already computed. **The patch buys memory, not time.**
+**A bug this patch had, and the test that failed to catch it.** The first
+version handled only the *non-easy* branch (level != discriminant); in the easy
+branch `Tp` was never initialised in sparse mode. The regression that was
+supposed to catch this called the **dense** version *first*, which populated
+`M`HeckeBig[p]`; the sparse call then read `Tp` from that cache and never ran
+the sparse assembly at all — it compared the dense result against itself. The
+bug surfaced only when gate 3 called the sparse path with a cold cache.
+
+**Lesson: in a regression against a reference implementation, call order is part
+of the test.** A shared cache can make both paths return the same object, so the
+comparison passes while proving nothing. Call the *new* path first.
+
+Fixed by handling the easy branch and by ignoring the cache entirely in sparse
+mode (the cached branch densifies, which is the allocation being avoided).
+
+**Verified (properly, 2026-08-23).** Sparse called FIRST, both branch types:
+
+    EASY    (level 1)    Matrix(sparse) eq dense = true    58 x 58
+    NONEASY (level 31)   Matrix(sparse) eq dense = true    1461 x 1461, 139052 nonzeros
+
+and at level `q0` the operator has 31.99 nonzeros per column against the
+predicted `Norm(p)+1 = 32`. Note the apparent speedup in the original test
+(995 s dense vs 0.000 s sparse) was the same caching artifact.
+**The patch buys memory, not time.**
 
 For the basis-matrix hunk, level 1 is **not** a valid test — it takes the "easy"
 branch and never reaches this code. Tested instead at level 31 (non-easy),
