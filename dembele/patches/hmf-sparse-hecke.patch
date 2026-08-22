@@ -1,11 +1,9 @@
 --- /tmp/definite.m.orig	2026-08-22 08:18:30
-+++ /Users/musty/hilbertmodularforms/ModFrmHil/definite.m	2026-08-22 08:18:30
-@@ -136,6 +136,19 @@
-          "This space is computed as a subspace of another space: use M`Ambient";
- 
++++ /Users/musty/hilbertmodularforms/ModFrmHil/definite.m	2026-08-22 10:01:12
+@@ -138,6 +138,19 @@
    return HeckeOperatorDefiniteBig(M, p);
-+end intrinsic;
-+
+ end intrinsic;
+ 
 +intrinsic InternalHMFRawHeckeDefiniteSparse(M::ModFrmHil, p::RngOrdIdl) -> Mtrx
 +{The Hecke operator T_p on the raw space containing M, assembled as a SPARSE
 + matrix.  Same mathematics as InternalHMFRawHeckeDefinite; avoids the dense
@@ -17,10 +15,35 @@
 +         "Sparse assembly is implemented for parallel weight 2 only";
 +
 +  return HeckeOperatorDefiniteBig(M, p : Sparse);
- end intrinsic;
- 
++end intrinsic;
++
  intrinsic HeckeMatrixRaw(M::ModFrmHil, p::RngOrdIdl) -> Mtrx
-@@ -978,7 +991,7 @@
+ {"}//"
+   require not assigned M`Ambient :
+@@ -927,6 +940,22 @@
+           Id := MatrixAlgebra(Rationals(), d) ! 1;
+           M`basis_matrix_big := Id;
+           M`basis_matrix_big_inv := Id;
++        elif weight2 and EisensteinAllowed then
++          // PATCH (dembele project, 2026-08-22).  At parallel weight 2 every
++          // direct factor's basis_matrix is the IDENTITY (set in
++          // HilbertModularSpaceDirectFactors, which even carries a TO DO to
++          // remove them), so the block-diagonal B below IS the identity matrix
++          // and so is its inverse.  The generic code builds both as DENSE
++          // dim x dim matrices and obtains the second by a global linear solve:
++          // at level q0 (dim 109240) that is 45.5 GB each, spent constructing
++          // and inverting an identity matrix.  Downstream, basis_matrix_big is
++          // only ever read via Ncols/Nrows and basis_matrix_big_inv is never
++          // read at all, so a sparse identity is faithful.
++          HMDF := HilbertModularSpaceDirectFactors(M);
++          dimB := &+ [Ncols(HMDF[m]`basis_matrix): m in [1..#HMDF]];
++          assert &and [IsOne(HMDF[m]`basis_matrix) : m in [1..#HMDF]];
++          M`basis_matrix_big := IdentitySparseMatrix(Rationals(), dimB);
++          M`basis_matrix_big_inv := IdentitySparseMatrix(Rationals(), dimB);
+         else
+           HMDF := HilbertModularSpaceDirectFactors(M);
+           nrows := &+ [Nrows(HMDF[m]`basis_matrix): m in [1..#HMDF]];
+@@ -978,7 +1007,7 @@
  
  // TO DO: sparse
  
@@ -29,7 +52,7 @@
  
     assert not assigned M`Ambient; // M is an ambient
  
-@@ -1069,7 +1082,15 @@
+@@ -1069,7 +1098,15 @@
       end for;
     end if;
  
@@ -46,7 +69,7 @@
       Tp := MatrixRing(F, dim) ! 0; 
     end if;
  
-@@ -1119,8 +1140,21 @@
+@@ -1119,8 +1156,21 @@
                      lookup:= PLDl`Lookuptable; 
                      P1rep := PLDl`P1Rep;
  
@@ -69,7 +92,7 @@
                      for ll := 1 to #tpml do
                         mat := tpml[ll] @ sm;
                         for mm in mms do 
-@@ -1134,6 +1168,7 @@
+@@ -1134,6 +1184,7 @@
                         end for;
                      end for;
                      InsertBlock(~Tp, Tplm, row+1, col+1);
@@ -77,14 +100,15 @@
  
                   else
  
-@@ -1180,6 +1215,10 @@
- 
-    end if;
+@@ -1177,7 +1228,11 @@
+         col +:= nCFD[m] * wd;
+         row := 0;
+      end for;
++
++   end if;
  
 +   if Sparse then
 +     return Tsp;
-+   end if;
-+
+    end if;
+ 
     // new columns were computed, so renew the cache
-    M`HeckeBig[p] := SparseMatrix(Tp);
-    M`HeckeBigColumns[p] := Sort(old_cols cat columns);
