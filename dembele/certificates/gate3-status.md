@@ -157,3 +157,50 @@ Not yet established:
 
 The charpoly is now banked (`gate3_charpoly_q0.m`), so none of this needs
 recomputing.
+
+
+---
+
+## 2026-08-23: the excess reproduces at a second prime
+
+`charpoly(T_97 mod 2)` at level `q0` (degree 109241, 5275 s), against the
+`ell`-specific invariant `charpoly(T_97|V16) mod 2` from level 1:
+
+| `ell` | one degree-8 factor | the other |
+|---|---|---|
+| 31 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
+| 97 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
+
+**A genuine second draw, not the same measurement twice.** The invariant is
+`ell`-specific: for `ell = 97` it is the degree-16 charpoly of `T_97` restricted
+to `V16` — a different polynomial — tested against a different operator at level
+`q0`. The two computations share only `V16` itself.
+
+**Three independent things now agree.** (i) The gate-1 valuation
+`const2val = 8` says `v_lambda + v_lambda' = 1`: exactly one residual system has
+`abar_q0 = 0`. (ii) At `ell = 31` exactly one degree-8 factor carries excess.
+(iii) At `ell = 97` the same. Coincidence is a strain.
+
+**Two more confirmations that the patched assembly is correct:** the operators
+have 31.99 and 97.94 nonzeros per column against the predicted `Norm(p)+1` of
+32 and 98.
+
+### Still not established
+
+1. **Same subspace.** Multiplicities cannot see whether the `ell = 31` and
+   `ell = 97` excesses come from the *same* forms — that is a claim about a
+   common eigenspace.
+2. **Steinberg.** The excess forms must satisfy `U_q0 = ±1`.
+
+One computation settles both: restrict to the excess subspace and compute
+`U_q0` there. That is strictly better than adding a third prime, and is the next
+step. Cost still unmeasured — the operator is at the level prime, norm 2401,
+and the level-1 operator at that norm took 36 h.
+
+### Cost note
+
+The `ell = 97` charpoly took 5275 s against 3341 s for `ell = 31` at the *same*
+dimension over the same field: Magma's `GF(2)` charpoly cost is data-dependent,
+not a function of dimension alone. Relatedly, a 6 GB memory cap set from the
+`ell = 31` job's 4.6 GB peak was too small for `ell = 97`'s ~7.5 GB. Bank
+intermediates; do not extrapolate a constant from one observation.
