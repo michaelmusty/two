@@ -112,6 +112,11 @@ happens.
   even-degree hypothesis asks for a special or supercuspidal place, which our
   level-one form does not have. Hence the direct computation (D24,
   `dembele/certificates/gate3-status.md`).
+- **D. Mumford; J. Tate**. **[theory]** Non-archimedean uniformization of
+  abelian varieties with multiplicative reduction. Why the Eisenstein
+  q-expansion can be evaluated on q₀-adic periods at all: the period generators
+  are topologically nilpotent, exactly as for a Tate curve
+  (`gate5-padic-eisenstein.md`).
 - **I. Cerednik; V. Drinfeld**. **[theory]** p-adic uniformization of Shimura
   curves with a finite disc prime — the pivot that eliminates the genus wall
   (`levelraise-cd-plan.md`).
@@ -144,7 +149,12 @@ happens.
   arXiv:2411.07857 and companions; `edgarcosta/hilbertmodularforms`,
   `SamSchiavone/17T7`). **[method/tool]** The pinned HMF package our Brandt
   computations run on; the isogeny-polynomial/Eisenstein framework adapted in
-  `dembele/certificates/eisenstein-prototype.md`; and (with van Bommel, Elkies,
+  `dembele/certificates/eisenstein-prototype.md` — and, as relocated on
+  2026-08-25, **the mechanism by which the route terminates in a polynomial**:
+  the 257 λ-isogeny neighbours of `B` are the 257 points of `P¹(F₂₅₆)`, Galois
+  permutes them, and a separating invariant evaluated at each yields the
+  degree-257 polynomial (`csv-paper-adaptation.md`,
+  `gate5-padic-eisenstein.md`); and (with van Bommel, Elkies,
   Keller) the descent-congruence certification method behind the
   `inverse-galois-hmf` sweep that supplies our k=4 nonexistence control.
 - **J. Bosman**, *On the computation of Galois representations associated to
