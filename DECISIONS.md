@@ -356,6 +356,64 @@ unmeasured guesses about constants: the overconvergent inner loop (wrong by
 the ~5 h I asserted; that error nearly discarded a viable approach). **Measure
 the constant before letting it decide anything.**
 
+**D25. Gate 3 has positive evidence; U_q0 is the first job the durability
+chain did not cover; and a self-correction on gate 5.** Three things since D24.
+
+*(a) The congruence shows up, twice.* With the package surgery done, the test is
+whether the residual invariant of `rho-bar_f` appears at level `q0` beyond what
+oldforms explain. It does, and only on one side. `g16bar` splits into two
+*distinct* irreducible degree-8 factors — one per prime above 2 in `H`, i.e. one
+per residual system — and against an oldform baseline of 2 each:
+
+| `ell` | one factor | the other |
+|---|---|---|
+| 31 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
+| 97 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
+
+The `ell = 97` invariant is a different polynomial tested against a different
+operator, so it is a second draw, not a restatement. And the side carrying the
+excess is the side gate 1 predicted: `const2val = 8` means
+`v_lambda + v_lambda' = 1`, so exactly one system has `abar_q0 = 0`. Three
+computations sharing almost no machinery agree. **The baseline is not an
+assumption either** — the non-raising system is its own control, sitting at
+exactly 2 in both rows.
+
+Not yet established: that the two excesses are the *same* subspace, and
+Steinberg. One computation settles both — `dim ker(U_q0 - 1)` on the excess
+subspace. Note the naive test is vacuous: oldforms satisfy
+`x^2 - a_q0 x + Nq0`, which mod 2 is `(x+1)^2` precisely *because* `a_q0 = 0`
+mod `lambda` — the very hit that makes `q0` interesting collapses the obvious
+Steinberg check, and the separation has to come from `U - 1` being nilpotent
+nonzero on the old part but zero on the new.
+
+*(b) A 40–50 h job cannot run unprotected on this host.* `U_q0` was launched as
+a bare `nohup` and chatelet restarted after ~18 h, destroying it. The scan's
+chain (`project_init.sh` → supervisor → lanes) came back automatically with
+exactly one process per lane and no duplicates — its first real test against a
+project restart, passed — but `U_q0` was outside that chain. Observed uptimes
+between restarts: ~3 days, ~5 days, then this one. A job needing two days is a
+coin flip, and without checkpointing each failure costs everything. Response:
+chunk it. `HeckeOperatorDefiniteBig` already takes `Columns`, so the operator
+can be assembled in column blocks that are disjoint and simply add; each block
+is banked, so a restart costs one block. **Lesson: durability is a property of
+the *job*, not of the host — and "it survives session close" is not the same as
+"it survives the host".**
+
+*(c) I was wrong that gate 5 was under-specified.* I claimed reaching a global
+polynomial from q0-adic periods had no stated mechanism and would need a model
+of a 16-dimensional abelian variety. `csv-paper-adaptation.md` states the
+mechanism: the **257 λ-isogeny neighbours are the 257 points of `P^1(F_256)`**,
+Galois permutes them, and a separating invariant evaluated at each gives the
+degree-257 polynomial. No model is needed — only separation. The narrower real
+gap is that the Eisenstein prototype is archimedean while the route is q0-adic;
+but for a Mumford-uniformized variety the periods are topologically nilpotent,
+so the same q-expansion converges with `q^nu` replacing
+`exp(2 pi i Tr(nu z))`, as on a Tate curve. Enumeration and divisor sums carry
+over; only evaluation and cutoff change. What genuinely remains unverified:
+whether the invariant separates 257 neighbours at genus 16 (17 at genus 4 is
+all that is tested), and the q0-adic term count, which depends on period
+valuations. Detail: `dembele/certificates/gate5-padic-eisenstein.md`.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
