@@ -1,160 +1,74 @@
 # Session handoff
 
-## SESSION CLOSE 2026-08-17/18 — read this first
+## STATE 2026-08-25 — read this first
 
-Full narrative: `DECISIONS.md` (D1–D22). Attributions: `REFERENCES.md`.
-Plan of record: `dembele/certificates/levelraise-cd-plan.md`, now materially
-revised by this session's measurements — read
-`dembele/certificates/roadmap-reevaluation.md` **before** deciding what to do next.
+Narrative: `DECISIONS.md` (D1–D25). Attributions: `REFERENCES.md`. Plan of
+record: `dembele/certificates/levelraise-cd-plan.md`, revised by measurement —
+read `roadmap-reevaluation.md` and `gate5-padic-eisenstein.md` before deciding
+anything.
 
-### The scan now survives session close (2026-08-18)
+### GATE 1 IS DONE: q0 = the prime above 7 of norm 2401
 
-A **remote supervisor runs on chatelet** and keeps the 8 lanes alive without any
-local session: `dembele/scanjob/supervise.sh`, deployed to
-`two_scanjob2/supervise.sh`, running under `flock` so a second launch is a no-op.
+Found 2026-08-22 after 53 rationals (`const2val = 8`, i.e.
+`v_lambda + v_lambda' = 1`: exactly one of Dembele's two residual systems has
+`abar_q0 = 0`). D23. Banked in `dembele/scanjob/scan_results.csv`. The norm is
+comfortably inside the affordable window — gate-4 cost goes as `Nq0^2`, and 2401
+sits beside the 2111 used in the cost tables.
 
-```sh
-# stop it
-python3 remote_magma/cocalc.py exec "touch two_scanjob2/STOP_SUPERVISOR"
-# start it (safe to repeat; flock makes a duplicate launch a no-op)
-python3 remote_magma/cocalc.py exec "rm -f two_scanjob2/STOP_SUPERVISOR; \
-  setsid nohup flock -n \$HOME/two_scanjob2/.sup.lock \
-  sh \$HOME/two_scanjob2/supervise.sh \
-  >> \$HOME/two_remote_magma/supervisor.log 2>&1 < /dev/null & echo ok"
-```
+The scan continues for redundancy only (61 rationals as of 2026-08-25). Its
+marginal value is now low, and it occupies the whole host; **consider winding it
+down to 2–3 lanes** — it is what created the memory contention that has twice
+interfered with gate-3 jobs.
 
-**Why this was needed, and the regression it fixes.** One-prime-per-process
-(D20) bounded memory but made the fleet *depend* on something relaunching it.
-That something was a watchdog living in the local Claude session — and monitors
-die when the session closes, so the fleet would have drained to zero within one
-prime-time (14–20 h) of the session ending. The earlier version of this handoff
-said "re-arm the watchdog first" without noticing that the scan could not
-survive a closed session at all. It can now.
+### GATE 3: positive evidence, one check outstanding
 
-**Project restarts are covered too (2026-08-19).** CoCalc runs `~/project_init.sh`
-at project start; ours (`dembele/scanjob/project_init.sh`) relaunches the
-supervisor, honours the STOP sentinel, and exits 0 (CoCalc's Supervisor
-re-runs the script on any exit code other than 0 or 2). So the chain is now:
+The residual invariant `g16bar` splits into two distinct degree-8 factors (one
+per prime above 2 in `H`). At level `q0`, against an oldform baseline of 2:
 
-| failure | covered by |
-|---|---|
-| a lane finishes its prime and exits | remote supervisor |
-| the Claude session closes | remote supervisor |
-| the project/host restarts | `~/project_init.sh` |
-| the supervisor itself dies | local watchdog, when a session is open |
+| `ell` | one factor | the other |
+|---|---|---|
+| 31 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
+| 97 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
 
-All three launchers take the same `flock`, so running any of them alongside the
-others is a no-op rather than a double-launch. Arming the local watchdog while a
-session is open is still worthwhile as the last layer:
+Two independent draws, and the excess is on the side gate 1 predicted. The
+non-raising system is a built-in control at exactly the baseline.
 
-```sh
-cd /Users/musty/two
-while true; do out=$(python3 remote_magma/restore_scan.py 2>&1); \
-  [ -n "$out" ] && echo "[watchdog] $(date -u +%H:%MZ) $out"; sleep 600; done
-```
+**Outstanding:** whether the two excesses are the same subspace, and Steinberg.
+Both are settled by `dim ker(U_q0 - 1)` on the excess subspace. Note the naive
+`U_q0 = ±1 mod 2` test is **vacuous** — see D25.
 
-`restore_scan.py` takes a `flock` and re-checks each lane before launching (D22),
-so it is safe to run alongside the remote supervisor — but prefer letting them
-work rather than hand-running either.
+### The package is patched, and results depend on it
 
-### State of the tracks
-
-1. **Covers/rigidity arc: CLOSED and written up.** Unchanged, except the last
-   open corner is now *closed as unanswerable at this precision*: the genus-2
-   run finished, and its numerical curve carries only ~25 correct digits of the
-   285 it reports (three independent confirmations, D21,
-   `dembele/certificates/g2-corner-precision.md`). The package's own `MakeK`
-   also failed rather than inventing a field. Deciding it needs a ~500-digit
-   rerun (~a week); it verifies an already-negative arc and is **not** on the
-   critical path. `32_g2_field.m` is a validated instrument waiting for a
-   better dump.
-2. **Period route: still the sole live path, and now fully costed.** Gate 1
-   scanning (below). Gates 3–5 were scoped end-to-end this session; see
-   "What changed" below — the headline is that the route is **feasible** but
-   needs an inner-loop rewrite.
-3. **Aristotle fixing congruence: DONE.** Proved, banked in `aristotle_fixing/`,
-   cited in `writeup/all-2-power-covers.md` §6, logged D19. Second
-   Lean-certified component after Lemma A.
-4. **Sz(8) hypothesis test: PARKED** (D17), unchanged.
+`dembele/patches/hmf-sparse-hecke.patch` against the pinned HMF package. Two
+dense `dim x dim` allocations (45.5 GB each at `dim = 109240`) removed: the
+Hecke assembly, and `BasisMatrixDefinite` — which at parallel weight 2 was
+building *and inverting an identity matrix*. **Apply the patch before
+reproducing anything in gate 3.** Verified sparse-first on both branch types and
+against the pristine package at level 31.
 
 ### Running computation and its care
 
-**Eight chatelet lanes** (`dembele/scanjob/37_levelraise_lane.m`, now committed
-— it previously existed only on chatelet). Three properties added this session,
-all load-bearing:
-
-- **self-harvesting DONE set** — a restarted lane reads the lane logs and skips
-  every prime already recorded, so a restart costs only in-flight work (D20);
-- **restart-stable lane assignment** — lanes are assigned by position in the
-  full prime list before done-filtering, so assignments do not shift as the
-  harvest grows;
-- **one prime per process** — each lane exits after one prime and the watchdog
-  relaunches it fresh, bounding memory (D20 note). Overhead ~12 min startup
-  against a 14–20 h prime.
-
-This was exercised for real on 2026-08-17: the project restarted and killed all
-8 lanes; the watchdog restored them; every lane harvested all 37 completed
-primes and lost nothing but in-flight work. Before this session the same event
-would have silently replayed ~200 CPU-hours.
-
-Scan state: **37 rationals scanned, `const2val = 0` throughout, 0 hits.**
-Results banked in `dembele/scanjob/scan_results.csv` (they previously lived
-only in remote `*.out` files). Cost 14–20 h per prime and rising with norm.
-
-### What changed in the plan (read before resuming)
-
-- **Gate-4 cost goes as `Nq0^2 * M^3`**, so a hit's usefulness decays
-  quadratically in its norm. The headline "≈2/3 odds" counts hits we may not be
-  able to exploit; treat **norm ~5000 as a decision point** rather than grinding
-  to 20000 (`roadmap-reevaluation.md`).
-- **The degree-16 Hecke field is a non-issue.** The isotypic component is
-  `Q`-rational and the lift is `Q_q0`-linear, so it never meets `H`; `U_q0 = ±1`
-  is a scalar on the whole component (verified three ways, including on the
-  exact GM example). `H (x) Q_q0` enters only at period assembly.
-  (`gate4-lift-scoping.md`.)
-- **`darmonpoints` cannot serve as a reference implementation.** Its period path
-  has bit-rotted under Sage 10.6 — four version-drift bugs, each deeper;
-  abandoned deliberately rather than risk silently wrong periods. The
-  overconvergent *lift* does work and is timed. (`gate4-dim2-calibration.md`.)
-- **Gate 4 is feasible but is a rewrite.** The existing Python stack is ~1.6e5
-  core-hours (infeasible); an optimised kernel measures **229 core-h at M=20**,
-  and the real run at `M ~ 70–140` is **13 days to 6 months on 24 cores**. The
-  inner loop is a fixed sparse block operator — precompute the table once, then
-  it is pure linear algebra. (`gate4-kernel-rewrite-scope.md`.)
-- **Precision is bounded.** Recognition obeys `M ~ 1.1–1.3 d log_q0(H)`
-  (measured); our recognition degree is 2, so `M ~ 0.7 log10(H)`, and Bosman's
-  published heights for the same family put `log10 H ~ 100–200`, likely lower
-  since our weight is 2. (`target-height-estimate.md`.)
-- **Byproduct: `L` cannot be totally real.** `rd(L) <= 31.9 < 60.8` (Odlyzko),
-  so complex conjugation acts as a unipotent involution — a structural fact
-  about Dembélé's field from ramification alone, checkable against any
-  polynomial we produce.
+- **Scan**: 8 lanes, self-harvesting, one prime per process. Chain:
+  `~/project_init.sh` (project restart) → remote supervisor (session close, lane
+  exit) → local watchdog (supervisor death, when a session is open). All share a
+  `flock`. Verified against a real project restart on 2026-08-24.
+- **U_q0**: destroyed by that same restart after ~18 h, because it was outside
+  the chain. Being rebuilt **in column chunks** (`Columns` parameter, disjoint
+  and additive) so a restart costs one chunk. Do not run it unprotected again.
 
 ### Next actions, in order
 
-1. **Re-arm the watchdog** (above). Nothing else keeps the scan alive.
-2. **Let gate 1 run.** It needs no attention. Re-assess at norm ~5000 rather
-   than on autopilot to 20000.
-3. **On a hit:** gate 3 — level-`q0` Brandt module on chatelet, find the
-   congruent Steinberg eigensystem (verify, don't trust mod-2 level raising).
-   Then the kernel rewrite becomes worth building, and only then.
-4. **Optional, cheap, and not blocked by anything:** verify the sharper
-   discriminant claim in `target-height-estimate.md` (Bosman's Cor. 2 analogue
-   giving `rd(L) ~ 16`), which if correct would put `rd` below the
-   totally-imaginary bound too — a sharp claim currently resting on an unverified
-   analogy from `F_ell` to `F_256`.
-5. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork and new source.
-
-### Gotchas added this session
-
-- `.env.bak` is now gitignored; `remote_magma/set_key.py` rotates the CoCalc key
-  without echoing it (the key died once already — see D22's neighbours).
-- Never run a repair tool by hand while its automation is armed unless it is
-  genuinely idempotent. `restore_scan.py` was not, and double-launched two lanes
-  (D22).
-- A second Claude session has committed to this repo (`d50f0c4`). Concurrent
-  sessions on one working tree can collide.
-
+1. **Finish the chunked `U_q0`**, then `dim ker(U_q0 - 1)` on the excess
+   subspace — that completes gate 3.
+2. **Test whether the Eisenstein invariant separates at genus 16.** Only 17
+   neighbours at genus 4 has been tested; 257 at genus 16 is assumed. This can
+   invalidate the endgame and is testable *before* any of gate 4 is built. It is
+   the highest-value open question in the project.
+3. Estimate the q0-adic term count for the Eisenstein evaluation (depends on
+   period valuations; never estimated).
+4. Only then the gate-4 build: definite S-arithmetic group class + optimised
+   kernel (~229 core-h at M=20; 13 days–6 months at M = 70–140).
+5. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
 
 ## Objective and exact target
 
