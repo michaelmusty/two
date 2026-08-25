@@ -86,3 +86,44 @@ then one more for the kernel.
 
 This upgrades the evidence from "the residual invariant appears more often than
 oldforms explain" to "here is the subspace, and here is its eigensystem".
+
+
+---
+
+## 2026-08-25: the banked operators are in different bases
+
+The eigensystem test failed at `Solution(BW, BW * A97)` with *No solution
+exists* — i.e. `T_97` does not preserve `ker f1(T_31)`. Hecke operators at
+primes coprime to the level commute, so that cannot happen for correctly
+assembled operators in a common basis. Direct check on the banked pair:
+
+    random vectors where v*A*B ne v*B*A: 5 of 5     COMMUTE=false
+
+`T_31` and `T_97` at level `q0` were computed in **separate Magma sessions**, and
+the package's internal ordering (ideal-class representatives, unit generators,
+`P^1` enumeration) is not guaranteed reproducible across sessions.
+
+### What this does and does not affect
+
+- **The multiplicity results are unaffected.** A characteristic polynomial is
+  basis-independent, so multiplicities 4 and 2 at `ell = 31` and `ell = 97` stand,
+  as does the baseline check (single session, level 1). The gate-3 evidence of
+  D25 is intact.
+- **Any JOINT analysis is invalid** across banked operators: eigenspaces,
+  common kernels, restrictions. Those need operators from one session.
+
+### The alternative explanation, and how it is being excluded
+
+Non-commuting could equally mean **the sparse patch produces wrong operators at
+level `q0`**, which would invalidate everything built on them. The shape checks
+(31.99 / 32 and 97.94 / 98) and the level-1 and level-31 equality tests do not
+fully exclude it, since neither exercised level `q0` against a dense reference.
+
+`46_gate3_onesession.m` decides it: both operators recomputed in one session, so
+they share a basis by construction and **must** commute if the assembly is
+correct. Commuting ⇒ basis artefact, and the eigensystem test proceeds in the
+same session. Not commuting ⇒ the assembly is wrong and the gate-3 results built
+on these operators must be withdrawn.
+
+**Operational rule going forward: bank operators only with the session identity
+that produced them, and never combine banked operators from different sessions.**
