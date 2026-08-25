@@ -32,8 +32,18 @@ for t in fac do
         Degree(t[1]), t[2], IsIrreducible(t[1]);
 end for;
 
-load "gate3_charpoly_q0.m";      // cp := charpoly(T_31 mod 2) at level q0
-printf "F|loaded charpoly of degree %o\n", Degree(cp);
+load "gate3_T31_sparse.m";
+A := Matrix(ChangeRing(T31, F2));
+t0 := Cputime();
+cp := CharacteristicPolynomial(A);
+printf "F|charpoly recomputed, degree %o [%o s]\n", Degree(cp), Cputime(t0);
+Write("gate3_charpoly_q0.m", Sprintf("cp := %m;", cp) : Overwrite := true);
+
+// BASELINE: how much multiplicity do the OLDFORMS alone account for?  Each
+// level-1 newform yields two oldforms at level q0 (the two degeneracy maps),
+// so V16 contributes multiplicity 2 of g16bar before any level raising.  A
+// Steinberg newform congruent to f would push the count ABOVE that baseline.
+printf "F|oldform baseline for g16bar: multiplicity 2 (two degeneracy maps)\n";
 for t in fac do
     h := t[1];
     m := 0; cc := cp;
