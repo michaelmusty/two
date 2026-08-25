@@ -48,27 +48,83 @@ against the pristine package at level 31.
 
 ### Running computation and its care
 
-- **Scan**: 8 lanes, self-harvesting, one prime per process. Chain:
+- **Scan**: 8 lanes, self-harvesting, one prime per process. Durability chain:
   `~/project_init.sh` (project restart) → remote supervisor (session close, lane
-  exit) → local watchdog (supervisor death, when a session is open). All share a
-  `flock`. Verified against a real project restart on 2026-08-24.
-- **U_q0**: destroyed by that same restart after ~18 h, because it was outside
-  the chain. Being rebuilt **in column chunks** (`Columns` parameter, disjoint
-  and additive) so a restart costs one chunk. Do not run it unprotected again.
+  exit) → local watchdog (supervisor death, only while a session is open). All
+  three take the same `flock`. **Verified against a real project restart on
+  2026-08-24**: everything returned automatically with exactly one process per
+  lane. The local watchdog dies with the session; re-arm it if you want the
+  third layer:
+
+  ```sh
+  cd /Users/musty/two
+  while true; do out=$(python3 remote_magma/restore_scan.py 2>&1); \
+    [ -n "$out" ] && echo "[watchdog] $(date -u +%H:%MZ) $out"; sleep 600; done
+  ```
+
+- **Nothing else is running.** `U_q0` was destroyed by that restart after ~18 h
+  and is **not** being rebuilt — see below, it is no longer needed.
+
+### Banked gate-3 artifacts (on chatelet, `two_gate3/`)
+
+Do not recompute these; each is hours of work.
+
+| file | what | cost to redo |
+|---|---|---|
+| `gate3_T31_sparse.m` | `T_31` at level `q0`, sparse | 963 s |
+| `gate3_T97_sparse.m` | `T_97` at level `q0`, sparse | 3628 s |
+| `gate3_charpoly_q0.m` | `charpoly(T_31 mod 2)` | 3341 s |
+| `gate3_charpoly97_q0.m` | `charpoly(T_97 mod 2)` | 5275 s |
+| `gate3_inv97.m` | the `ell=97` level-1 invariant | ~45 min |
 
 ### Next actions, in order
 
-1. **Finish the chunked `U_q0`**, then `dim ker(U_q0 - 1)` on the excess
-   subspace — that completes gate 3.
-2. **Test whether the Eisenstein invariant separates at genus 16.** Only 17
-   neighbours at genus 4 has been tested; 257 at genus 16 is assumed. This can
-   invalidate the endgame and is testable *before* any of gate 4 is built. It is
-   the highest-value open question in the project.
-3. Estimate the q0-adic term count for the Eisenstein evaluation (depends on
-   period valuations; never estimated).
-4. Only then the gate-4 build: definite S-arithmetic group class + optimised
+1. **Close gate 3 — cheaply.** `U_q0` is *not* required. A newform of level
+   exactly `q0` with trivial character is Steinberg at `q0`, so **newness
+   suffices**, and newness is a degeneracy-map question.
+   `DegUp1Big`/`DegDown1Big`/`DegUppBig` call `get_tps` **zero** times, so they
+   avoid the norm-2401 enumeration that made `U_q0` a 40–50 h job. Steps:
+   (i) build the two degeneracy maps level 1 → level `q0`;
+   (ii) isolate the `f1`-primary subspace mod 2 (dim ≤ 32) from the banked
+   operators; (iii) compare with the old subspace — oldforms predict 16 of 32;
+   (iv) more than that ⇒ new ⇒ Steinberg ⇒ **gate 3 closed**. This settles the
+   "same subspace" question as a by-product.
+   *Do not* revive column-chunking: it is correct but useless, since all the
+   cost is `get_tps`, which is per-prime and would be repeated per process.
+
+2. **Test whether the Eisenstein invariant separates at genus 16.** The
+   highest-value open question in the project: only 17 neighbours at genus 4 has
+   ever been tested, 257 at genus 16 is assumed, and if it fails the degree-257
+   polynomial degenerates. Cheap relative to everything downstream, and it can
+   invalidate the gate-4 build — so do it *before* that build, not after.
+
+3. **Estimate the q0-adic term count** for the Eisenstein evaluation (depends on
+   period valuations; never estimated). See `gate5-padic-eisenstein.md`.
+
+4. **Consider winding the scan down to 2–3 lanes.** We have `q0`; further hits
+   are redundancy, and the fleet occupies the whole host — it is what created
+   the memory contention that twice interfered with gate-3 jobs.
+
+5. **Only then** the gate-4 build: definite S-arithmetic group class + optimised
    kernel (~229 core-h at M=20; 13 days–6 months at M = 70–140).
-5. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
+
+6. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
+
+### Hard-won operational lessons (all cost real time)
+
+- Durability is a property of the **job**, not the host. "Survives session
+  close" is not "survives the host" (D25).
+- A regression against a reference implementation must call the **new** path
+  first — a shared cache can make both paths return the same object, so the test
+  passes while proving nothing (`dembele/patches/README.md`).
+- **Measure constants; never extrapolate one observation.** Three separate
+  mis-estimates this week: the overconvergent inner loop (1300x), dense `GF(2)`
+  multiplication (15x, nearly discarded a viable route), and a memory cap set
+  from a single peak.
+- A monitor whose failure filter is broader than its subject retires itself on
+  the first network hiccup — and silence looks exactly like "still running".
+- Never hand-run a repair tool while its automation is armed unless it is
+  genuinely idempotent (D22).
 
 ## Objective and exact target
 
