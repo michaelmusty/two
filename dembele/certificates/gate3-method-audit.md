@@ -28,7 +28,7 @@ Computed twice (`ell = 31`, `ell = 97`), on `ell`-specific invariants against
 different operators. The operators were themselves shape-checked: 31.99 and
 97.94 nonzeros per column against the predicted `Norm(p)+1` of 32 and 98.
 
-## 4. The oldform baseline is `2 * m1` — UNDER TEST
+## 4. The oldform baseline is `2 * m1` — **VERIFIED, `m1 = 1`**
 
 `m1` = multiplicity of `f1` in the level-1 charpoly mod 2. I assumed `m1 = 1`
 (V16 the only level-1 component with that residual system) **without checking**.
@@ -37,8 +37,15 @@ share a residual system. **If `m1 = 2` the baseline is 4, the excess is zero and
 steps 3–5 carry no information** — and the `ell = 97` "corroboration" would be
 the same error twice, not independent evidence.
 
-Sub-claim, standard but unverified here: the two degeneracy maps are injective
-with trivially-intersecting images, so the old subspace really is two copies.
+**Result (2026-08-25).** Computed against the *full* level-1 charpoly mod 2
+(degree 58, not merely `V16`): **both** degree-8 factors occur with multiplicity
+exactly **1**. So no other level-1 component shares either residual system, the
+baseline is 2, and the observed 4 / 2 is a genuine excess of +2 on exactly one
+system. The assumption that could have collapsed steps 3–5 holds.
+
+Sub-claim, standard but still unverified here: the two degeneracy maps are
+injective with trivially-intersecting images, so the old subspace really is two
+copies. This is the remaining soft spot in step 4.
 
 ## 5. Excess ⇒ new forms with residual system `f1` — CONTINGENT on 4
 
