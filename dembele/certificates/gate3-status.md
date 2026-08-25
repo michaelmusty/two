@@ -204,3 +204,46 @@ dimension over the same field: Magma's `GF(2)` charpoly cost is data-dependent,
 not a function of dimension alone. Relatedly, a 6 GB memory cap set from the
 `ell = 31` job's 4.6 GB peak was too small for `ell = 97`'s ~7.5 GB. Bank
 intermediates; do not extrapolate a constant from one observation.
+
+
+---
+
+## 2026-08-25: chunking is useless, and U_q0 is unnecessary
+
+**The chunking plan failed its own test — informatively.** Column-chunked
+assembly is *correct*: at level 31, four disjoint column blocks summed to
+139052 nonzeros against the full operator's 139052, `IDENTICAL=true`. But the
+timings kill the idea:
+
+    full operator   3149.79 s
+    chunk 0..3      0.43 / 0.40 / 0.41 / 0.36 s
+
+Essentially the entire cost is `get_tps`, the quaternion-element enumeration,
+which is **per-prime, not per-column**, and was cached in-process. Across
+*separate* processes — which is what checkpointing means — every chunk repeats
+the enumeration, so ten chunks cost ten full builds: 400+ h instead of 40.
+**Column chunking checkpoints nothing.**
+
+**But U_q0 is not needed at all.** A newform of level exactly `q0` with trivial
+character is Steinberg at `q0`, so *newness* is sufficient — and newness is a
+statement about the degeneracy maps, not about `U_q0`. The two maps from level 1
+span the old subspace; if the excess subspace is not contained in that span, the
+excess is new, hence Steinberg.
+
+And the degeneracy maps are cheap: `DegUp1Big` / `DegDown1Big` / `DegUppBig`
+call `get_tps` **zero** times (against 2 in `HeckeOperatorDefiniteBig`) — they
+are built from the `P^1`/fundamental-domain combinatorics alone, with no
+element enumeration at norm 2401. That is the entire 40–50 h cost avoided.
+
+### Revised plan for finishing gate 3
+
+1. Build the two degeneracy maps level 1 → level `q0` (cheap, no `get_tps`).
+2. Isolate the `f1`-primary subspace at level `q0` mod 2 (dimension `<= 32`,
+   from the already-banked `T_31`/`T_97`).
+3. Compare with the old subspace: `dim(f1-primary and old)` against
+   `dim(f1-primary)`. The oldform prediction is 16 of 32; a strictly larger
+   `f1`-primary space means new forms are present.
+4. New + level exactly `q0` + trivial character ⇒ Steinberg. Gate 3 closed.
+
+This also settles the "same subspace" question, since it is performed on the
+subspace the excess actually occupies.
