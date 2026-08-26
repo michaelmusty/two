@@ -1,167 +1,142 @@
 # Session handoff
 
-## STATE 2026-08-25 — read this first
+## STATE 2026-08-26 — read this first
 
-Narrative: `DECISIONS.md` (D1–D25). Attributions: `REFERENCES.md`. Plan of
-record: `dembele/certificates/levelraise-cd-plan.md`, revised by measurement —
-read `roadmap-reevaluation.md` and `gate5-padic-eisenstein.md` before deciding
-anything.
+Narrative: `DECISIONS.md` (D1–D27). Attributions: `REFERENCES.md`. Plan of
+record: `dembele/certificates/levelraise-cd-plan.md`, revised by
+`roadmap-reevaluation.md`, `gate5-padic-eisenstein.md`, and — new today —
+**`gate5-genus16-term-count.md`**, which blocks the gate-4 build on one
+computable number. Read that and the 2026-08-26 section of
+`gate3-method-audit.md` before deciding anything.
 
 ### GATE 1 IS DONE: q0 = the prime above 7 of norm 2401
 
-Found 2026-08-22 after 53 rationals (`const2val = 8`, i.e.
-`v_lambda + v_lambda' = 1`: exactly one of Dembele's two residual systems has
-`abar_q0 = 0`). D23. Banked in `dembele/scanjob/scan_results.csv`. The norm is
-comfortably inside the affordable window — gate-4 cost goes as `Nq0^2`, and 2401
-sits beside the 2111 used in the cost tables.
+Found 2026-08-22 (`const2val = 8`: exactly one of the two residual systems has
+`abar_q0 = 0`). D23. Banked in `dembele/scanjob/scan_results.csv`. 61 rationals
+scanned by 2026-08-25; primes now cost ~2 days each.
 
-The scan continues for redundancy only (61 rationals as of 2026-08-25). Its
-marginal value is now low, and it occupies the whole host; **consider winding it
-down to 2–3 lanes** — it is what created the memory contention that has twice
-interfered with gate-3 jobs.
+### GATE 3: multiplicity evidence intact; eigensystem evidence REOPENED
 
-### GATE 3: verified to the eigensystem level
-
-The residual invariant splits into two distinct degree-8 factors (one per prime
-above 2 in `H`). At level `q0`, against an oldform baseline of 2:
+What stands (basis-independent, D25/D26):
 
 | `ell` | one factor | the other |
 |---|---|---|
 | 31 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
 | 97 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
 
-**Three independent signatures now agree**, and the excess is always on the side
-gate 1 predicted (`const2val = 8` ⇒ exactly one system has `abar_q0 = 0`):
+with the oldform baseline `2·m1 = 2` verified against the full level-1
+charpoly, and the sparse assembly validated by same-session commutation.
 
-1. **Multiplicity excess** at two primes, on `ell`-specific invariants.
-2. **Eigensystem match on the subspace.** `W = ker f(T_31)` is 16-dimensional and
-   `charpoly(T_97|W)` is a *single* degree-8 irreducible squared, matching a
-   factor of the independently computed level-1 `a_97` invariant. This is the
-   step-7 evidence the multiplicity method could not reach.
-3. **Non-semisimplicity, exactly where predicted.** Over the residue field the
-   block count is `dim ker / 8`. `f1`: primary dimension 32, `dim ker` 16 ⇒
-   blocks of size 2, **non-semisimple**. `f2`: primary dimension 16, `dim ker`
-   16 ⇒ **semisimple**. Old/new congruence produces precisely that non-split
-   gluing, and it appears only on the factor carrying the excess.
+What fell (2026-08-26, D27b): the "eigensystem match on the subspace" used
+`W = ker f1(T_31)`, 16-dimensional — but the mod-2 old subspace is 16-dimensional
+and `T_31`-semisimple, so `O ⊆ W`, and under Ihara's lemma `W = O`. Restricting
+`T_ell` to `W` only re-derives level-1 data. The four-prime job built on `W`
+was retired. Non-semisimplicity is likewise not proof of old/new gluing.
 
-**Verified assumptions** (each could have voided the above; see
-`gate3-method-audit.md` for the step-by-step grading):
+**Running now (the decisive test):** `two_gate3/48_gate3_genkernel.m`
+(attempt 2, launched 15:55Z 2026-08-26 with a 3-day CPU limit; output
+`two_gate3/genkernel.out`; ~12–14 h). In one session it builds `T_31, T_97,
+T_127, T_191` at level `q0`, checks commutation, takes the **generalised**
+eigenspace `G = ker f1(T_31)^2` (32-dim) on the excess side only (selected via
+the banked level-`q0` charpoly), and prints for each `ell` whether
+`charpoly(T_ell | G) = (level-1 charpoly of T_ell on the f1-part)^4`. Because
+the old contribution `(f1^{(ell)})^2` is forced by local theory, that equality
+is exactly "the new quotient has `f`'s residual system at `ell`". Look for the
+lines `T_ell on NEW quotient G/O: ... equals level-1 charpoly^2: true`.
 
-- *Oldform baseline = 2*: against the **full** level-1 charpoly mod 2 (degree 58,
-  not just `V16`) both degree-8 factors have multiplicity exactly 1, so no other
-  level-1 component shares either residual system.
-- *The sparse assembly is correct at level `q0`*: rebuilt in one session, `T_31`
-  and `T_97` **commute** (0 failures of 8) — a far tighter constraint than the
-  nonzeros-per-column shape check that was previously all we had at that level.
+If all four are `true`: gate 3 is verified at the eigensystem level on four
+primes; write `gate3-closure.md` (excess + baseline ⇒ new forms; new + prime
+level + trivial character ⇒ Steinberg; residual system matches `f` at
+31/97/127/191; the full congruence `rho-bar_g = rho-bar_f` is still not
+*proved* — no Sturm bound is affordable — but it is what the final
+Galois-group certification of the polynomial would catch). If any is `false`:
+the new forms carrying the `T_31` excess do not carry `f`'s system at that
+prime; the level-raising picture at `q0` is wrong and the scan must resume.
 
-**Still open:** more primes (two is not a Sturm bound; running), and which
-level-1 factor each `W` matches — the script printed degrees, not polynomials.
-Newness itself follows from the excess plus the verified baseline; Steinberg then
-follows from level exactly `q0` with trivial character.
+A local smoke test of the same script at level 31 (`G3_LEVEL=31`) runs in
+`scratchpad/gk/smoke31.out`; its tail was unit-tested on a synthetic commuting
+pair. Attempt 1 on chatelet died at CoCalc's default 120 CPU-second rlimit —
+**launch detached jobs only through `rexec(..., timeout=86400*3,
+sock_timeout=60)`**, never plain `exec`.
+
+### GATE 5: the back end has a go/no-go number, and gate 4 waits for it
+
+`gate5-genus16-term-count.md` (D27c). The Fourier-term count law
+`sqrt(D)·C^n/(n!·N(y))` is validated on the genus-4 control to 0.3%. At genus
+16 the q0-adic count is bounded by `1.1·10^4 · M^16 / Δ'`, with `Δ'` the
+determinant of the period-valuation pairing relative to unimodular. Feasible
+only if `Δ' ≳ 10^20–10^30` (period valuations of tens), and larger valuations
+raise the recognition precision `M`, which gate 4 pays for as `M^2`. `Δ'` is
+computable from the level-`q0` character group (monodromy pairing on the
+`g`-isotypic part, §5 of the certificate) with gate-3 machinery plus an
+integral sparse kernel. **Compute `Δ'` before building gate 4.** The
+handoff's old item 3 (an archimedean separation run at genus 16) is not the
+binding question and was not run.
 
 ### TRAP: never combine banked operators from different sessions
 
-The package's internal basis (ideal-class reps, unit generators, `P^1`
-enumeration) is **not reproducible across Magma sessions**. Banked operators from
-different runs do not commute and any joint analysis — eigenspaces, common
-kernels, restrictions — is invalid. Characteristic polynomials are
-basis-independent, so multiplicity results are safe. Anything joint must be
-computed in **one session**.
+Unchanged (D26b). Characteristic polynomials are safe; joint analysis is not.
 
 ### The package is patched, and results depend on it
 
-`dembele/patches/hmf-sparse-hecke.patch` against the pinned HMF package. Two
-dense `dim x dim` allocations (45.5 GB each at `dim = 109240`) removed: the
-Hecke assembly, and `BasisMatrixDefinite` — which at parallel weight 2 was
-building *and inverting an identity matrix*. **Apply the patch before
-reproducing anything in gate 3.** Verified sparse-first on both branch types and
-against the pristine package at level 31.
+`dembele/patches/hmf-sparse-hecke.patch`. Unchanged; apply before reproducing.
 
 ### Running computation and its care
 
-- **Scan**: 8 lanes, self-harvesting, one prime per process. Durability chain:
-  `~/project_init.sh` (project restart) → remote supervisor (session close, lane
-  exit) → local watchdog (supervisor death, only while a session is open). All
-  three take the same `flock`. **Verified against a real project restart on
-  2026-08-24**: everything returned automatically with exactly one process per
-  lane. The local watchdog dies with the session; re-arm it if you want the
-  third layer:
-
-  ```sh
-  cd /Users/musty/two
-  while true; do out=$(python3 remote_magma/restore_scan.py 2>&1); \
-    [ -n "$out" ] && echo "[watchdog] $(date -u +%H:%MZ) $out"; sleep 600; done
-  ```
-
-- **Four-prime eigensystem test**: `47_gate3_multiprime.m`, launched
-  2026-08-26, ~8 h, 16 GB cap, output `two_gate3/multiprime.out`. It is a plain
-  detached job with **no durability layer** — if chatelet restarts, relaunch it
-  by hand. Confirmed running at session close.
-- **The local watchdog is currently down** (it dies with the session that armed
-  it). Layers 1 and 2 are up and the fleet was verified healthy — 8 lanes, 61
-  rational primes scanned — so this is a redundancy gap, not an outage.
-- `U_q0` was destroyed by a host restart after ~18 h and is **not** being
-  rebuilt — see below, it is no longer needed.
+- **Scan: winding down.** `two_scanjob2/STOP_SUPERVISOR` exists (set 13:48Z
+  2026-08-26); the supervisor has exited; lane 0 was retired fresh; lanes 1–7
+  finish their current primes (norms ≈ 2700–3300, started ~43 h earlier) and
+  exit without relaunch. `project_init.sh` honours the STOP file, so a host
+  restart does not resurrect the fleet. The local watchdog is not armed and
+  must not be (it would relaunch 8 lanes). **To resume at 3 lanes** after the
+  fleet drains: `NLANES=3`, `for L in 0 1 2` in `supervise.sh`, mirror in
+  `restore_scan.py`, remove the STOP file, relaunch the supervisor (command in
+  its header). Do not do this while lanes with `NLANES=8` are still running.
+- **`48_gate3_genkernel.m`**: plain detached job, no durability layer; if
+  chatelet restarts, relaunch by hand with the `rexec` pattern above
+  (`cd two_gate3 && G3_CPBANK=gate3_charpoly_q0.m G3_MEMCAP=16
+  HMF_ROOT=../two_hilbertmodularforms nohup /usr/local/bin/magma -b
+  48_gate3_genkernel.m > genkernel.out`).
+- Memory: 116/125 GB used at launch; each exiting lane frees 14–17 GB.
 
 ### Banked gate-3 artifacts (on chatelet, `two_gate3/`)
 
-Do not recompute these; each is hours of work.
-
 | file | what | cost to redo |
 |---|---|---|
-| `gate3_T31_sparse.m` | `T_31` at level `q0`, sparse | 963 s |
-| `gate3_T97_sparse.m` | `T_97` at level `q0`, sparse | 3628 s |
-| `gate3_charpoly_q0.m` | `charpoly(T_31 mod 2)` | 3341 s |
-| `gate3_charpoly97_q0.m` | `charpoly(T_97 mod 2)` | 5275 s |
+| `gate3_T31_sparse.m`, `gate3_T97_sparse.m` | level-`q0` operators, separate sessions | 963 s / 3628 s |
+| `gate3_T31_same.m`, `gate3_T97_same.m` | the same pair from ONE session (they commute) | 1254 s / 4269 s |
+| `gate3_charpoly_q0.m` (`cp`) | `charpoly(T_31 mod 2)` at `q0` | 3341 s |
+| `gate3_charpoly97_q0.m` (`cp97`) | `charpoly(T_97 mod 2)` at `q0` | 5275 s |
 | `gate3_inv97.m` | the `ell=97` level-1 invariant | ~45 min |
+
+The `_same` pair is usable for a two-prime `G` analysis without rebuilding.
 
 ### Next actions, in order
 
-1. **Read the four-prime result** (`two_gate3/multiprime.out`, launched
-   2026-08-26, ~8 h): primes 31/97/127/191 in one session, each kernel computed
-   once and every operator restricted to it, printing *which* level-1 factor
-   matches. Extends the eigensystem evidence and closes the labelling gap.
-2. **Close gate 3 formally**, writing the argument down: excess + verified
-   baseline ⇒ new forms; new + level exactly `q0` + trivial character ⇒
-   Steinberg. Optionally verify the degeneracy maps' injectivity/trivial
-   intersection, the last soft spot in audit step 4 — `DegUp1Big` /
-   `DegDown1Big` / `DegUppBig` call `get_tps` **zero** times, so this is cheap.
-3. **Test whether the Eisenstein invariant separates at genus 16.** The
-   highest-value open question in the project: only 17 neighbours at genus 4 has
-   been tested, 257 at genus 16 is assumed, and if it fails the degree-257
-   polynomial degenerates. Cheap relative to gate 4, and it can invalidate that
-   build — so do it *before*, not after.
-4. **Estimate the q0-adic term count** for the Eisenstein evaluation (depends on
-   period valuations; never estimated). `gate5-padic-eisenstein.md`.
-5. **Consider winding the scan down to 2–3 lanes.** We have `q0`; further hits
-   are redundancy, and the fleet occupies the whole host — it has repeatedly
-   squeezed gate-3 jobs (117/125 GB at the last check).
-6. **Only then** the gate-4 build: definite S-arithmetic group class + optimised
-   kernel (~229 core-h at M=20; 13 days–6 months at M = 70–140).
-7. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
+1. **Read `genkernel.out`** and act on it as above.
+2. **Compute `Δ'`** (`gate5-genus16-term-count.md` §5): the monodromy pairing
+   on the `g`-part of the character group at level `q0`. This is the gate-4
+   go/no-go and the highest-value open computation in the project.
+3. Write `gate3-closure.md` once 1 is in.
+4. Resume the scan at 3 lanes only after the fleet drains, if redundancy is
+   still wanted.
+5. Gate-4 build only after 2 says the window exists.
+6. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
 
 ### Hard-won operational lessons (all cost real time)
 
-- Durability is a property of the **job**, not the host. "Survives session
-  close" is not "survives the host" (D25).
-- A regression against a reference implementation must call the **new** path
-  first — a shared cache can make both paths return the same object, so the test
-  passes while proving nothing (`dembele/patches/README.md`).
-- **Measure constants; never extrapolate one observation.** Three separate
-  mis-estimates this week: the overconvergent inner loop (1300x), dense `GF(2)`
-  multiplication (15x, nearly discarded a viable route), and a memory cap set
-  from a single peak.
+- Durability is a property of the **job**, not the host (D25).
+- A regression test must call the **new** path first (`patches/README.md`).
+- **Measure constants; never extrapolate one observation** (D24).
 - A monitor whose failure filter is broader than its subject retires itself on
-  the first network hiccup — and silence looks exactly like "still running".
-- Never hand-run a repair tool while its automation is armed unless it is
-  genuinely idempotent (D22).
-- **Audit assumptions before building on them.** Two of the seven links in the
-  gate-3 chain were unchecked assumptions; one (the oldform baseline) would have
-  voided the whole argument, and its failure mode was to make a second
-  "independent" confirmation into the same error twice.
-- When a computation fails in a way that *should be impossible* (operators that
-  must commute, not commuting), enumerate the benign and the fatal explanation
-  and design a test that separates them — do not assume the benign one.
+  the first hiccup — and silence looks like "still running".
+- Never hand-run a repair tool while its automation is armed (D22).
+- **Audit assumptions before building on them** — twice now: the oldform
+  baseline (D26) and the eigenspace-equals-old-subspace trap (D27).
+- **Check what a test could *fail* to see.** A test whose output is the same
+  whether or not the claim holds is not a test (D27b).
+- CoCalc `exec` kills detached children at 120 CPU-seconds; `Bash
+  run_in_background` here kills at ~2 h. Detach properly and verify.
 
 ## Objective and exact target
 

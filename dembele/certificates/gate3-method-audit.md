@@ -138,3 +138,64 @@ tighter constraint: a mis-assembled operator would have to preserve an
 
 **Operational rule going forward: bank operators only with the session identity
 that produced them, and never combine banked operators from different sessions.**
+
+---
+
+## 2026-08-26: the eigenspace test of step 7 is vacuous under Ihara's lemma
+
+Re-reading D26(c) while drafting the closure argument. The evidence there is
+`charpoly(T_97 | W) = (f1^{(97)})^2` for `W = ker f1(T_31)` at level `q0`,
+`dim W = 16`. But:
+
+- the mod-2 **old** subspace on the `f1` side, `O`, is the image of two copies
+  of the level-1 `f1`-part (8-dimensional each, `m1 = 1` verified in step 4),
+  and `T_31` acts on each copy as at level 1, where its characteristic
+  polynomial is the irreducible `f1` — so `T_31` is semisimple on `O` and
+  `O ⊆ ker f1(T_31) = W`;
+- `dim O = 16` if the mod-2 degeneracy map `L/2 ⊕ L/2 → M_q0/2` is injective on
+  the `f1`-part — Ihara's lemma, which is the expected situation (and the one
+  the baseline argument tacitly assumed).
+
+Then `O = W` by dimensions, and restricting *any* `T_ell` to `W` recovers the
+level-1 eigensystem twice **by construction**. It says nothing about the new
+forms. The four-prime job `47_gate3_multiprime.m` restricts to `W` and so
+would have returned the same output whether or not the new forms are congruent
+to `f`. It has been retired (D27).
+
+Non-semisimplicity (D26(d)) is likewise not by itself evidence of old/new
+gluing: a new form whose `T_31` acts non-semisimply mod 2 (non-maximal order at
+2, or ramification) produces the same Jordan data with `G = O ⊕ N` split.
+
+### The correct test, and why it needs no degeneracy maps
+
+Let `G = ker f1(T_31)^2` (the generalised eigenspace, 32-dimensional). It is
+stable under every `T_ell`, contains `O`, and
+
+    charpoly(T_ell | G) = charpoly(T_ell | O) · charpoly(T_ell | G/O).
+
+`charpoly(T_ell | O) = (f1^{(ell)})^2` is forced: the old space at level `q0`
+is, per level-1 eigenform, the two-dimensional space of Iwahori-fixed vectors of
+an unramified principal series, and `T_ell` (`ell ≠ q0`) commutes with both
+degeneracy maps. Hence
+
+    charpoly(T_ell | G) = (f1^{(ell)})^4   ⟺   the new quotient G/O has residual
+                                              T_ell-system f1^{(ell)}.
+
+Here `f1^{(ell)}` must be the characteristic polynomial of `T_ell` on the
+level-1 `f1`-primary part (the `λ`-part of `V16 ⊗ F_2`), so that the pairing
+`f1 ↔ f1^{(ell)}` is by the same prime `λ`, not by index in a factorisation.
+
+Cost over the retired job: one dense `GF(2)` multiply (`f1(T_31)^2`) and one
+kernel. Building `O` explicitly would need the second degeneracy map, i.e.
+`get_tps` at `q0` — the `U_q0` cost — and is unnecessary. Implemented as
+`dembele/magma/48_gate3_genkernel.m`, which also uses the banked
+(basis-independent) level-`q0` characteristic polynomial to identify the excess
+factor and skip the non-raising side.
+
+### What survives of D26
+
+- Step 3 (multiplicities 4 / 2 at two primes) and step 4 (baseline 2): intact,
+  basis-independent.
+- Step 6 (new + prime level + trivial character ⇒ Steinberg): intact.
+- The same-session commutation check (patch validation at level `q0`): intact.
+- Step 7: **open again**; decided by `48`.

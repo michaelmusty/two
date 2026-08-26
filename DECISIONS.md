@@ -463,6 +463,75 @@ computing each kernel once and restricting every operator to it, and printing
 *which* level-1 factor matches so the correspondence is checked rather than
 assumed.
 
+**D27. Three forks on 2026-08-26: the scan is wound down, the four-prime job
+was vacuous and is replaced, and the Eisenstein back end has a computable
+go/no-go.** Resumed from handoff; every item below is recorded before its
+outcome is known.
+
+*(a) Scan: `STOP_SUPERVISOR` set, fresh lane 0 retired.* The host had 0 GB
+available (7 lanes at 14–17 GB each, plus a just-relaunched lane 0 about to
+grow into the same 16 GB the gate-3 job needs). The handoff itself recommended
+winding down to 2–3 lanes: `q0` is banked, the primes now cost ~2 days each
+(norms ≈ 3000), and further hits are redundancy. Chosen: stop relaunches
+(`touch two_scanjob2/STOP_SUPERVISOR`), kill only the 52-minute-old lane 0,
+let the seven in-flight lanes finish their primes and exit. Not chosen: killing
+in-flight lanes (43 h of work each), or editing `NLANES` while lanes with
+`NLANES=8` are mid-prime (the position-mod-`NLANES` assignment would double-
+assign their primes). **To resume at 3 lanes** once the fleet has drained: set
+`NLANES=3` and the loop `for L in 0 1 2` in `two_scanjob2/supervise.sh`,
+mirror it in `remote_magma/restore_scan.py`, remove the STOP file, relaunch the
+supervisor with the command in its header. Doing that before the lanes drain
+duplicates work.
+
+*(b) `47_gate3_multiprime.m` retired; `48_gate3_genkernel.m` launched.* While
+writing the closure argument I found that the eigenspace `W = ker f1(T_31)`
+used for the step-7 "eigensystem match" is, under Ihara's lemma, exactly the
+mod-2 old subspace: `O` (two copies of the level-1 `f1`-part, `T_31`
+semisimple on it) sits inside `W`, and both are 16-dimensional. Restricting
+`T_ell` to `W` then re-derives level-1 data by construction; the running
+four-prime job could not have distinguished "new forms congruent to `f`" from
+"not". Full argument in `gate3-method-audit.md` (2026-08-26 section). The
+replacement restricts to the 32-dimensional generalised eigenspace
+`G = ker f1(T_31)^2` and tests `charpoly(T_ell | G) = (f1^{(ell)})^4`, which is
+equivalent to the **new quotient** carrying `f`'s system at `ell` because the
+old contribution `(f1^{(ell)})^2` is forced by local theory (two Iwahori-fixed
+vectors per unramified principal series). No degeneracy maps are built — the
+second one needs `get_tps` at `q0`, the `U_q0` cost. Extra cost over 47: one
+dense `GF(2)` multiply and one kernel. The banked, basis-independent level-`q0`
+characteristic polynomial selects the excess factor so the non-raising side
+(old forms only) is skipped. The script's level-1 phase was validated locally
+at level 31 and its tail on a synthetic commuting pair with the expected
+Jordan structure (`[4, 2]` multiplicities, quotient `= level-1^2`). Killing 47
+cost 3.3 h of sunk compute; its four operator builds could not be reused (they
+die with the session) and its output was uninterpretable.
+
+*(c) Gate 5: term count quantified; gate-4 build blocked on one determinant.*
+`gate5-genus16-term-count.md`. The Fourier-term count obeys
+`sqrt(D)·C^n/(n!·N(y))`, validated on all three genus-4 counts to 0.3%. At
+genus 16, with the integrality of the q0-adic valuation pairing, it is bounded
+by `1.1·10^4 · M^16 / Δ'`, `Δ'` = determinant of the period-valuation pairing
+relative to unimodular. Feasibility needs `Δ' ≳ 10^20–10^30`, i.e. period
+valuations of tens, and large valuations raise the recognition precision `M`
+which gate 4 pays for quadratically. `Δ'` is computable now from the level-`q0`
+character group (monodromy pairing on the `g`-isotypic part) — the right next
+computation and the one that can invalidate the gate-4 build. The handoff's
+item 3 (an archimedean "separation test" at genus 16) is not the binding
+question and is not being run. Side finding: `ζ_H(−3) ≈ 10^{87.7}` makes the
+constant-term-1 `E_4` equal to `1 + O(10^{−13})` on the whole fundamental
+domain — a scale artefact of the discriminant, removable by rescaling but
+requiring `ζ_H(−3)` exactly; irrelevant q0-adically.
+
+*Operational.* `Bash run_in_background` here kills its process after ~2 h; the
+local smoke test died at the level-31 phase and was relaunched with
+`nohup … & disown` (macOS has no `setsid`). The first chatelet launch of 48
+through `cocalc.py exec` died silently after ~15 min: CoCalc applies the
+`project_exec` timeout to the command tree as `RLIMIT_CPU` (default 120
+CPU-seconds), and `setsid`/`nohup` do not shed an rlimit. Relaunched via
+`rexec(..., timeout=86400*3, sock_timeout=60)` — the pattern `CHATELET.md`
+and `restore_scan.py` already prescribe. Lesson re-learned: a detached launch
+must go through `rexec` with an explicit CPU limit, never through a plain
+`exec`.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

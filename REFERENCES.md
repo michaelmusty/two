@@ -147,12 +147,24 @@ happens.
   across Magma sessions**, so Hecke operators banked in different runs sit in
   different bases and cannot be combined for eigenspace work. Characteristic
   polynomials are basis-independent and therefore safe (`gate3-method-audit.md`).
-- **J-P. Serre; K. Ribet (Ihara's lemma / multiplicity one)**. **[theory]** The
-  structural reading of gate 3's evidence: a congruence between an oldform and a
-  newform makes the Hecke action on the mod-`lambda` space **non-semisimple**,
-  gluing old and new into non-split extensions. Observed exactly on the residual
-  factor carrying the excess, and not on the other — the third of the three
-  independent signatures (D26).
+- **K. Ribet (1984, level-raising; Ihara's lemma); F. Diamond & R. Taylor,
+  *Non-optimal levels of mod l modular representations* (Invent. 1994, the
+  Hilbert / definite-quaternion Ihara lemma).** **[theory]** Two uses. (i) The
+  structural reading of the non-semisimplicity seen in gate 3 (D26) — with the
+  **correction of 2026-08-26** that a Jordan block of `T_31` on the generalised
+  eigenspace is *not* by itself evidence of old/new gluing (a new form with a
+  non-maximal order at 2 gives the same data with a split module). (ii) The
+  decisive one: Ihara's lemma (injectivity of the mod-2 degeneracy map on the
+  non-Eisenstein part) makes the eigenspace `ker f1(T_31)` at level `q0` equal
+  to the old subspace, which is why the eigensystem test of D26(c) was vacuous
+  and `48_gate3_genkernel.m` works on the generalised eigenspace instead
+  (`gate3-method-audit.md`, 2026-08-26; D27). Caveat: Diamond–Taylor is stated
+  for odd `l`; at `l = 2` the lemma is expected but not cited, which is one
+  more reason to compute rather than assume.
+- **Iwahori fixed vectors (local theory, e.g. Casselman)**. **[theory]** An
+  unramified principal series of `GL_2(F_q0)` has a two-dimensional space of
+  Iwahori-fixed vectors; this is what fixes the old contribution
+  `(f1^{(ell)})^2` to `charpoly(T_ell | G)` without building degeneracy maps.
 - **J. Voight**, *Quaternion Algebras* (book) and the Magma Fuchsian/arithmetic
   machinery. **[theory/tool]** Reference frame for the whole quaternionic side.
 - **E. Costa, S. Schiavone, J. Voight et al.** (the 17T7 project,
