@@ -20,22 +20,53 @@ marginal value is now low, and it occupies the whole host; **consider winding it
 down to 2–3 lanes** — it is what created the memory contention that has twice
 interfered with gate-3 jobs.
 
-### GATE 3: positive evidence, one check outstanding
+### GATE 3: verified to the eigensystem level
 
-The residual invariant `g16bar` splits into two distinct degree-8 factors (one
-per prime above 2 in `H`). At level `q0`, against an oldform baseline of 2:
+The residual invariant splits into two distinct degree-8 factors (one per prime
+above 2 in `H`). At level `q0`, against an oldform baseline of 2:
 
 | `ell` | one factor | the other |
 |---|---|---|
 | 31 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
 | 97 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
 
-Two independent draws, and the excess is on the side gate 1 predicted. The
-non-raising system is a built-in control at exactly the baseline.
+**Three independent signatures now agree**, and the excess is always on the side
+gate 1 predicted (`const2val = 8` ⇒ exactly one system has `abar_q0 = 0`):
 
-**Outstanding:** whether the two excesses are the same subspace, and Steinberg.
-Both are settled by `dim ker(U_q0 - 1)` on the excess subspace. Note the naive
-`U_q0 = ±1 mod 2` test is **vacuous** — see D25.
+1. **Multiplicity excess** at two primes, on `ell`-specific invariants.
+2. **Eigensystem match on the subspace.** `W = ker f(T_31)` is 16-dimensional and
+   `charpoly(T_97|W)` is a *single* degree-8 irreducible squared, matching a
+   factor of the independently computed level-1 `a_97` invariant. This is the
+   step-7 evidence the multiplicity method could not reach.
+3. **Non-semisimplicity, exactly where predicted.** Over the residue field the
+   block count is `dim ker / 8`. `f1`: primary dimension 32, `dim ker` 16 ⇒
+   blocks of size 2, **non-semisimple**. `f2`: primary dimension 16, `dim ker`
+   16 ⇒ **semisimple**. Old/new congruence produces precisely that non-split
+   gluing, and it appears only on the factor carrying the excess.
+
+**Verified assumptions** (each could have voided the above; see
+`gate3-method-audit.md` for the step-by-step grading):
+
+- *Oldform baseline = 2*: against the **full** level-1 charpoly mod 2 (degree 58,
+  not just `V16`) both degree-8 factors have multiplicity exactly 1, so no other
+  level-1 component shares either residual system.
+- *The sparse assembly is correct at level `q0`*: rebuilt in one session, `T_31`
+  and `T_97` **commute** (0 failures of 8) — a far tighter constraint than the
+  nonzeros-per-column shape check that was previously all we had at that level.
+
+**Still open:** more primes (two is not a Sturm bound; running), and which
+level-1 factor each `W` matches — the script printed degrees, not polynomials.
+Newness itself follows from the excess plus the verified baseline; Steinberg then
+follows from level exactly `q0` with trivial character.
+
+### TRAP: never combine banked operators from different sessions
+
+The package's internal basis (ideal-class reps, unit generators, `P^1`
+enumeration) is **not reproducible across Magma sessions**. Banked operators from
+different runs do not commute and any joint analysis — eigenspaces, common
+kernels, restrictions — is invalid. Characteristic polynomials are
+basis-independent, so multiplicity results are safe. Anything joint must be
+computed in **one session**.
 
 ### The package is patched, and results depend on it
 
@@ -79,36 +110,28 @@ Do not recompute these; each is hours of work.
 
 ### Next actions, in order
 
-1. **Close gate 3 — cheaply.** `U_q0` is *not* required. A newform of level
-   exactly `q0` with trivial character is Steinberg at `q0`, so **newness
-   suffices**, and newness is a degeneracy-map question.
-   `DegUp1Big`/`DegDown1Big`/`DegUppBig` call `get_tps` **zero** times, so they
-   avoid the norm-2401 enumeration that made `U_q0` a 40–50 h job. Steps:
-   (i) build the two degeneracy maps level 1 → level `q0`;
-   (ii) isolate the `f1`-primary subspace mod 2 (dim ≤ 32) from the banked
-   operators; (iii) compare with the old subspace — oldforms predict 16 of 32;
-   (iv) more than that ⇒ new ⇒ Steinberg ⇒ **gate 3 closed**. This settles the
-   "same subspace" question as a by-product.
-   *Do not* revive column-chunking: it is correct but useless, since all the
-   cost is `get_tps`, which is per-prime and would be repeated per process.
-
-2. **Test whether the Eisenstein invariant separates at genus 16.** The
+1. **Read the four-prime result** (`two_gate3/multiprime.out`, launched
+   2026-08-26, ~8 h): primes 31/97/127/191 in one session, each kernel computed
+   once and every operator restricted to it, printing *which* level-1 factor
+   matches. Extends the eigensystem evidence and closes the labelling gap.
+2. **Close gate 3 formally**, writing the argument down: excess + verified
+   baseline ⇒ new forms; new + level exactly `q0` + trivial character ⇒
+   Steinberg. Optionally verify the degeneracy maps' injectivity/trivial
+   intersection, the last soft spot in audit step 4 — `DegUp1Big` /
+   `DegDown1Big` / `DegUppBig` call `get_tps` **zero** times, so this is cheap.
+3. **Test whether the Eisenstein invariant separates at genus 16.** The
    highest-value open question in the project: only 17 neighbours at genus 4 has
-   ever been tested, 257 at genus 16 is assumed, and if it fails the degree-257
-   polynomial degenerates. Cheap relative to everything downstream, and it can
-   invalidate the gate-4 build — so do it *before* that build, not after.
-
-3. **Estimate the q0-adic term count** for the Eisenstein evaluation (depends on
-   period valuations; never estimated). See `gate5-padic-eisenstein.md`.
-
-4. **Consider winding the scan down to 2–3 lanes.** We have `q0`; further hits
-   are redundancy, and the fleet occupies the whole host — it is what created
-   the memory contention that twice interfered with gate-3 jobs.
-
-5. **Only then** the gate-4 build: definite S-arithmetic group class + optimised
+   been tested, 257 at genus 16 is assumed, and if it fails the degree-257
+   polynomial degenerates. Cheap relative to gate 4, and it can invalidate that
+   build — so do it *before*, not after.
+4. **Estimate the q0-adic term count** for the Eisenstein evaluation (depends on
+   period valuations; never estimated). `gate5-padic-eisenstein.md`.
+5. **Consider winding the scan down to 2–3 lanes.** We have `q0`; further hits
+   are redundancy, and the fleet occupies the whole host — it has repeatedly
+   squeezed gate-3 jobs (117/125 GB at the last check).
+6. **Only then** the gate-4 build: definite S-arithmetic group class + optimised
    kernel (~229 core-h at M=20; 13 days–6 months at M = 70–140).
-
-6. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
+7. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
 
 ### Hard-won operational lessons (all cost real time)
 
@@ -125,6 +148,13 @@ Do not recompute these; each is hours of work.
   the first network hiccup — and silence looks exactly like "still running".
 - Never hand-run a repair tool while its automation is armed unless it is
   genuinely idempotent (D22).
+- **Audit assumptions before building on them.** Two of the seven links in the
+  gate-3 chain were unchecked assumptions; one (the oldform baseline) would have
+  voided the whole argument, and its failure mode was to make a second
+  "independent" confirmation into the same error twice.
+- When a computation fails in a way that *should be impossible* (operators that
+  must commute, not commuting), enumerate the benign and the fatal explanation
+  and design a test that separates them — do not assume the benign one.
 
 ## Objective and exact target
 
