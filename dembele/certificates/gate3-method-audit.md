@@ -119,11 +119,22 @@ level `q0`**, which would invalidate everything built on them. The shape checks
 (31.99 / 32 and 97.94 / 98) and the level-1 and level-31 equality tests do not
 fully exclude it, since neither exercised level `q0` against a dense reference.
 
-`46_gate3_onesession.m` decides it: both operators recomputed in one session, so
-they share a basis by construction and **must** commute if the assembly is
-correct. Commuting ⇒ basis artefact, and the eigensystem test proceeds in the
-same session. Not commuting ⇒ the assembly is wrong and the gate-3 results built
-on these operators must be withdrawn.
+`46_gate3_onesession.m` decided it (2026-08-26):
+
+    T_31 built [1253.78 s], 31.9900 per column
+    T_97 built [4268.79 s], 97.9449 per column
+    COMMUTE(same session)=true  (failures 0 of 8)
+
+**The assembly is correct.** Rebuilt in one session the operators commute, as
+Hecke operators at primes coprime to the level must. The banked mismatch was
+purely the basis artefact.
+
+This is also the **strongest validation the sparse patch has had at level `q0`
+itself** — the one place it had never been checked against a real invariant.
+The earlier evidence there was only the shape check (nonzeros per column); the
+equality-against-dense tests were at levels 1 and 31. Commutativity is a far
+tighter constraint: a mis-assembled operator would have to preserve an
+`O(n^2)`-dimensional family of relations by accident to pass it.
 
 **Operational rule going forward: bank operators only with the session identity
 that produced them, and never combine banked operators from different sessions.**
