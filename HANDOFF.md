@@ -93,8 +93,15 @@ against the pristine package at level 31.
     [ -n "$out" ] && echo "[watchdog] $(date -u +%H:%MZ) $out"; sleep 600; done
   ```
 
-- **Nothing else is running.** `U_q0` was destroyed by that restart after ~18 h
-  and is **not** being rebuilt — see below, it is no longer needed.
+- **Four-prime eigensystem test**: `47_gate3_multiprime.m`, launched
+  2026-08-26, ~8 h, 16 GB cap, output `two_gate3/multiprime.out`. It is a plain
+  detached job with **no durability layer** — if chatelet restarts, relaunch it
+  by hand. Confirmed running at session close.
+- **The local watchdog is currently down** (it dies with the session that armed
+  it). Layers 1 and 2 are up and the fleet was verified healthy — 8 lanes, 61
+  rational primes scanned — so this is a redundancy gap, not an outage.
+- `U_q0` was destroyed by a host restart after ~18 h and is **not** being
+  rebuilt — see below, it is no longer needed.
 
 ### Banked gate-3 artifacts (on chatelet, `two_gate3/`)
 
