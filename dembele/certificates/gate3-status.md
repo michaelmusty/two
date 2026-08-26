@@ -247,3 +247,50 @@ element enumeration at norm 2401. That is the entire 40–50 h cost avoided.
 
 This also settles the "same subspace" question, since it is performed on the
 subspace the excess actually occupies.
+
+---
+
+## 2026-08-26: eigensystem test on the subspace, and a third signature
+
+With both operators rebuilt in one session (commutativity verified, 0 failures
+of 8), `W = ker f(T_31)` at level `q0` for each degree-8 residual factor:
+
+| factor | `dim ker f(T_31)` | `charpoly(T_97|W)` | match to level-1 `a_97` invariant |
+|---|---|---|---|
+| 1 | 16 [6191 s] | `[<8, 2>]` | **yes**, multiplicity 2 |
+| 2 | 16 [6125 s] | `[<8, 2>]` | **yes**, multiplicity 2 |
+
+**On the actual subspace, `T_97` acts with a residual eigensystem of Dembele's
+form** — a *single* degree-8 irreducible squared, matching a factor of the
+independently computed level-1 `a_97` invariant. Not a mixture, and not a
+minimal-polynomial coincidence counted inside a degree-109241 charpoly. This is
+the two-prime eigensystem evidence the multiplicity method could not reach
+(audit step 7).
+
+### The third signature: non-semisimplicity, exactly where predicted
+
+The kernel dimensions carry more than the match does. Over the residue field the
+number of Jordan blocks is `dim ker / 8`:
+
+- **`f1`**: charpoly multiplicity 4, so the primary component is `4 x 8 = 32`;
+  `dim ker = 16` gives **2 blocks summing to size 4** — i.e. blocks of size 2.
+  **Non-semisimple.**
+- **`f2`**: multiplicity 2, primary component `2 x 8 = 16`; `dim ker = 16` gives
+  2 blocks of size 1. **Semisimple.**
+
+That asymmetry is itself a congruence signature. When an oldform and a newform
+are congruent mod `lambda`, the Hecke action on the mod-`lambda` space does not
+split — old and new glue into non-split extensions. `f1`, which carries the
+excess, is non-semisimple with blocks of size 2 (16 old + 16 new, glued
+pairwise); `f2`, which has no new forms, stays semisimple. A third independent
+observation of the same asymmetry, and one that would be hard to produce by
+accident.
+
+### Gap in the reporting
+
+The script prints factor *degrees*, not the polynomials, so it does not record
+**which** of the two level-1 `a_97` factors each `W` matched. The consistent
+picture is that each matched its own system's factor; the alternative (both
+matching the same one) would be strange and would want explaining. Resolving it
+needs the kernels recomputed with the polynomials printed — 1.7 h per factor —
+or, better, banked once and reused.
