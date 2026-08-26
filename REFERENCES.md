@@ -142,7 +142,17 @@ happens.
   infeasibility computation (ζ_F(−1) = 5820 ⇒ genus ≥ ~91(Nq₀−1)/2).
 - **M. Kirschmer & J. Voight**. **[tool/theory]** Quaternion ideal-class
   algorithms (inside Magma) — the Brandt infrastructure and, prospectively, the
-  CD dual graph.
+  CD dual graph. *Practical note (2026-08-26):* the ideal-class representatives,
+  unit generators and `P^1` enumeration underlying these are **not reproducible
+  across Magma sessions**, so Hecke operators banked in different runs sit in
+  different bases and cannot be combined for eigenspace work. Characteristic
+  polynomials are basis-independent and therefore safe (`gate3-method-audit.md`).
+- **J-P. Serre; K. Ribet (Ihara's lemma / multiplicity one)**. **[theory]** The
+  structural reading of gate 3's evidence: a congruence between an oldform and a
+  newform makes the Hecke action on the mod-`lambda` space **non-semisimple**,
+  gluing old and new into non-split extensions. Observed exactly on the residual
+  factor carrying the excess, and not on the other — the third of the three
+  independent signatures (D26).
 - **J. Voight**, *Quaternion Algebras* (book) and the Magma Fuchsian/arithmetic
   machinery. **[theory/tool]** Reference frame for the whole quaternionic side.
 - **E. Costa, S. Schiavone, J. Voight et al.** (the 17T7 project,
