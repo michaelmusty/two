@@ -414,6 +414,55 @@ whether the invariant separates 257 neighbours at genus 16 (17 at genus 4 is
 all that is tested), and the q0-adic term count, which depends on period
 valuations. Detail: `dembele/certificates/gate5-padic-eisenstein.md`.
 
+**D26. Gate 3 is verified to the eigensystem level, and the audit that got it
+there.** On request I re-audited the chain step by step
+(`dembele/certificates/gate3-method-audit.md`) rather than trusting it, and two
+of the seven links turned out to be load-bearing assumptions I had never checked.
+
+*(a) The oldform baseline — the one that could have voided everything.* The
+excess argument reads "multiplicity 4 at `q0`, baseline 2, excess 2". But the
+baseline is `2*m1`, where `m1` is the multiplicity of the residual factor at
+**level 1** — each level-1 form with that residual system contributes two
+oldforms. I had assumed `m1 = 1` without checking, and at `m1 = 2` the baseline
+would be 4, the excess zero, and the `ell = 97` "corroboration" would have been
+the same error twice. **Verified:** against the *full* level-1 charpoly mod 2
+(degree 58, not just `V16`), both degree-8 factors occur with multiplicity
+exactly 1. Baseline 2 confirmed; the excess is real.
+
+*(b) Banked operators from different sessions are incomparable.* The eigensystem
+test failed with `Solution: No solution exists` — `T_97` did not preserve
+`ker f1(T_31)`, impossible for commuting operators. Direct check: the banked
+pair failed to commute on 5 of 5 random vectors. They had been built in separate
+Magma sessions, and the package's internal ordering (ideal-class reps, unit
+generators, `P^1` enumeration) is not reproducible across sessions. Crucially
+this does **not** touch the multiplicity results — characteristic polynomials
+are basis-independent — but it invalidates any *joint* analysis. The alternative
+explanation, that the sparse patch was simply wrong at level `q0`, had to be
+excluded rather than assumed: rebuilding both in one session gave
+`COMMUTE = true` (0 failures of 8), which also became **the strongest validation
+the patch has had at level `q0`**, where previously only the
+nonzeros-per-column shape check applied. **Rule: never combine banked operators
+from different sessions.**
+
+*(c) The eigensystem evidence itself.* `W = ker f(T_31)` at level `q0` is
+16-dimensional, and `charpoly(T_97|W)` is a *single* degree-8 irreducible
+squared, matching a factor of the independently computed level-1 `a_97`
+invariant — a two-prime eigensystem match on the actual subspace, which the
+multiplicity method could not reach (audit step 7).
+
+*(d) A third signature, unlooked for.* The kernel dimensions give the Jordan
+structure over the residue field. `f1`: primary dimension 32, `dim ker = 16`,
+so blocks of **size 2** — non-semisimple. `f2`: primary dimension 16,
+`dim ker = 16` — semisimple. Congruence between an oldform and a newform
+produces exactly that non-split gluing, and it appears **only** on the factor
+carrying the excess. Three independent observations now agree: the gate-1
+valuation, the multiplicity excess at two primes, and the Jordan structure.
+
+Running at session close: a four-prime test (31, 97, 127, 191) in one session,
+computing each kernel once and restricting every operator to it, and printing
+*which* level-1 factor matches so the correspondence is checked rather than
+assumed.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
