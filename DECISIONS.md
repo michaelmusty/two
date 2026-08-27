@@ -530,7 +530,17 @@ CPU-seconds), and `setsid`/`nohup` do not shed an rlimit. Relaunched via
 `rexec(..., timeout=86400*3, sock_timeout=60)` — the pattern `CHATELET.md`
 and `restore_scan.py` already prescribe. Lesson re-learned: a detached launch
 must go through `rexec` with an explicit CPU limit, never through a plain
-`exec`.
+`exec`. Attempt 2 then ran 11 h, built all four level-`q0` operators
+(**commuting pairwise, 0 failures of 27 checks** — the sparse patch validated
+at four primes in one session), evaluated `f1(T_31)` (3938 s) and squared it
+(585 s), and died at its own 16 GB cap on the kernel: four dense `GF(2)`
+operators at 1.5 GB each plus two dense polynomials plus the kernel workspace.
+The cap was inherited from 47 without re-measuring — the D24 lesson again.
+Attempt 3 (2026-08-27 03:xxZ) keeps the operators sparse (dense only for the
+polynomial evaluation), prints memory at each checkpoint, runs under a 40 GB
+cap (47 GB free after four lanes exited), and **banks the four integer sparse
+operators** (`two_gate3/gk_s3_T{31,97,127,191}.m`, ~120 MB each) — a
+commuting set in one basis, which the `Δ'` computation over `Z` will need.
 
 ---
 

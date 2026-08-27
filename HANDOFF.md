@@ -34,8 +34,12 @@ and `T_31`-semisimple, so `O ⊆ W`, and under Ihara's lemma `W = O`. Restrictin
 was retired. Non-semisimplicity is likewise not proof of old/new gluing.
 
 **Running now (the decisive test):** `two_gate3/48_gate3_genkernel.m`
-(attempt 2, launched 15:55Z 2026-08-26 with a 3-day CPU limit; output
-`two_gate3/genkernel.out`; ~12–14 h). In one session it builds `T_31, T_97,
+(attempt 3, launched ~03:00Z 2026-08-27, 3-day CPU limit, 40 GB memory cap,
+operators kept sparse; output `two_gate3/genkernel.out`; ~12 h). Attempt 2
+(`genkernel.attempt2.out`) got through all four operator builds and the
+27-pair commutation check with 0 failures, then died at a 16 GB cap on the
+kernel — see D27. Attempt 3 also banks the four integer operators as
+`two_gate3/gk_s3_T*.m` (one session, commuting) for the `Δ'` computation. In one session it builds `T_31, T_97,
 T_127, T_191` at level `q0`, checks commutation, takes the **generalised**
 eigenspace `G = ker f1(T_31)^2` (32-dim) on the excess side only (selected via
 the banked level-`q0` charpoly), and prints for each `ell` whether
@@ -105,6 +109,7 @@ Unchanged (D26b). Characteristic polynomials are safe; joint analysis is not.
 |---|---|---|
 | `gate3_T31_sparse.m`, `gate3_T97_sparse.m` | level-`q0` operators, separate sessions | 963 s / 3628 s |
 | `gate3_T31_same.m`, `gate3_T97_same.m` | the same pair from ONE session (they commute) | 1254 s / 4269 s |
+| `gk_s3_T{31,97,127,191}.m` (being written by attempt 3) | integer sparse operators, ONE session, all commute | 1418 / 4329 / 4195 / 6720 s |
 | `gate3_charpoly_q0.m` (`cp`) | `charpoly(T_31 mod 2)` at `q0` | 3341 s |
 | `gate3_charpoly97_q0.m` (`cp97`) | `charpoly(T_97 mod 2)` at `q0` | 5275 s |
 | `gate3_inv97.m` | the `ell=97` level-1 invariant | ~45 min |

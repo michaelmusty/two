@@ -90,9 +90,16 @@ A := AssociativeArray();
 for pr in prs do
     t0 := Cputime();
     S := InternalHMFRawHeckeDefiniteSparse(M, pr);
-    A[Norm(pr)] := Matrix(ChangeRing(S, F2));
-    printf "GK|T_%o built [%o s], %o per column\n",
-        Norm(pr), Cputime(t0), RealField(6)!(#Support(S)/Ncols(S));
+    // keep the operators SPARSE (dense GF(2) copies cost 1.5 GB each and the
+    // first run of this script died at its 16 GB cap at the kernel step)
+    A[Norm(pr)] := ChangeRing(S, F2);
+    printf "GK|T_%o built [%o s], %o per column, memory %o MB\n",
+        Norm(pr), Cputime(t0), RealField(6)!(#Support(S)/Ncols(S)), GetMemoryUsage() div 1024^2;
+    // bank the integer operator with a session tag: the four form a commuting
+    // set in ONE basis, usable together later (e.g. the Delta' computation over Z)
+    if GetEnv("G3_BANK") ne "" then
+        Write(Sprintf("%o_T%o.m", GetEnv("G3_BANK"), Norm(pr)), Sprintf("T%o := %m;", Norm(pr), S) : Overwrite := true);
+    end if;
 end for;
 V := VectorSpace(F2, Ncols(A[31])); bad := 0;
 for i in [1..3] do
@@ -140,14 +147,17 @@ end if;
 for idx in order do
     f1 := fac31[idx];
     t0 := Cputime();
-    P := Evaluate(f1, A[31]);
-    printf "GK|=== T_31 factor %o (degree %o): f(T_31) evaluated [%o s]\n", idx, Degree(f1), Cputime(t0);
+    A31d := Matrix(A[31]);
+    P := Evaluate(f1, A31d);
+    delete A31d;
+    printf "GK|=== T_31 factor %o (degree %o): f(T_31) evaluated [%o s], memory %o MB\n",
+        idx, Degree(f1), Cputime(t0), GetMemoryUsage() div 1024^2;
     t0 := Cputime();
     P2 := P * P;
-    printf "GK|  f(T_31)^2 [%o s]\n", Cputime(t0);
+    printf "GK|  f(T_31)^2 [%o s], memory %o MB\n", Cputime(t0), GetMemoryUsage() div 1024^2;
     t0 := Cputime();
     G := Kernel(P2);
-    printf "GK|  dim ker f(T_31)^2 = %o [%o s]\n", Dimension(G), Cputime(t0);
+    printf "GK|  dim ker f(T_31)^2 = %o [%o s], memory %o MB\n", Dimension(G), Cputime(t0), GetMemoryUsage() div 1024^2;
     delete P2;
     if Dimension(G) eq 0 then continue; end if;
     BG := BasisMatrix(G);
