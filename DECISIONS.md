@@ -573,6 +573,41 @@ ambiguous one; the version that actually decides the question needed a
 quotient, not a subspace, and it needed no new mathematics — only asking
 what output the test would produce if the claim were false.
 
+**D29. `Δ'` is computed as the mass-Gram of the `g`-sublattice, not a graph
+kernel — the character group needs no boundary map.** With gate 3 closed, the
+binding question is `Δ'` (`gate5-genus16-term-count.md`). The certificate
+framed it as a monodromy pairing on `X = ker(∂: Z[edges] → Z[vertices])` and
+flagged the integral kernel of `∂` on the 109240-dim space as the obstacle.
+That obstacle is illusory: `g` is **new** at `q0`, so it lies in the kernel of
+both degeneracy maps to level 1, i.e. `∂ = 0` on the whole `g`-part. Hence the
+`g`-isotypic part of the raw Brandt lattice already *is* its character lattice,
+and the monodromy pairing is the diagonal Brandt mass pairing
+(`InnerProductMatrixBig`, verified diagonal at parallel weight 2,
+`definite.m:748`) restricted to it. `Δ'` is therefore
+`det(B W Bᵀ)/(N(𝓛)²·D_H)` for a saturated `Z`-basis `B` of the `g`-sublattice
+and mass vector `W` — no graph, no `get_tps`, no boundary operator. Plan in
+`gate5-delta-prime-plan.md`; the raw operators we banked (`gk_s3_T*.m`) and the
+mass vector share a basis, so they compose directly.
+
+*Package change (recorded as a patch, D-worthy because results depend on it):*
+the mass pairing was not reachable from outside the package —
+`InnerProductMatrixBig` is internal and the cuspidal `InnerProductMatrix`
+errors "Not implemented" on these spaces. Added a two-line additive intrinsic
+`InternalHMFRawInnerProductDefinite` (+ a `forward` declaration),
+`dembele/patches/hmf-raw-innerproduct.patch`, applied locally, **not yet on
+chatelet**. First fact it produced: at level 31 the masses are `{1,3}`, not all
+equal — some ideal class has an order-3 unit stabiliser — so `W` is genuinely
+non-scalar and the pairing cannot be replaced by the standard dot product.
+
+*Status:* the pipeline prototype `49_delta_prime_proto.m` (validate over `Q` at
+a small level: self-adjointness of `T` under `W`, new ⊥ old, saturation, the
+sub/quotient Gram determinants) is **running at level 31** (`~/dp31_proto.out`),
+not yet verified — the level-31 raw operator builds are ~1 h each, so it is
+slow for a prototype. Once it passes, the `q0` computation is multimodular:
+`det(Γ) mod p` for ~20–50 primes, CRT'd — parallel, ~1–2 core-days, no
+host-scale job. Sub vs quotient determinant and the polarisation factor remain
+the real ambiguity (`gate5-genus16-term-count.md` §; both reported).
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

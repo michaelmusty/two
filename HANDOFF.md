@@ -1,8 +1,8 @@
 # Session handoff
 
-## STATE 2026-08-26 — read this first
+## STATE 2026-08-27 — read this first
 
-Narrative: `DECISIONS.md` (D1–D27). Attributions: `REFERENCES.md`. Plan of
+Narrative: `DECISIONS.md` (D1–D29). Attributions: `REFERENCES.md`. Plan of
 record: `dembele/certificates/levelraise-cd-plan.md`, revised by
 `roadmap-reevaluation.md`, `gate5-padic-eisenstein.md`, and — new today —
 **`gate5-genus16-term-count.md`**, which blocks the gate-4 build on one
@@ -37,19 +37,36 @@ quotient argument fix it without building degeneracy maps.
 integer sparse operators, commuting, one basis (39/118/154/231 MB). Use them
 *together*; never with operators from any other session.
 
-### GATE 5: the back end has a go/no-go number, and gate 4 waits for it
+### GATE 5: computing `Δ'`, the gate-4 go/no-go (IN PROGRESS)
 
-`gate5-genus16-term-count.md` (D27c). The Fourier-term count law
-`sqrt(D)·C^n/(n!·N(y))` is validated on the genus-4 control to 0.3%. At genus
-16 the q0-adic count is bounded by `1.1·10^4 · M^16 / Δ'`, with `Δ'` the
-determinant of the period-valuation pairing relative to unimodular. Feasible
-only if `Δ' ≳ 10^20–10^30` (period valuations of tens), and larger valuations
-raise the recognition precision `M`, which gate 4 pays for as `M^2`. `Δ'` is
-computable from the level-`q0` character group (monodromy pairing on the
-`g`-isotypic part, §5 of the certificate) with gate-3 machinery plus an
-integral sparse kernel. **Compute `Δ'` before building gate 4.** The
-handoff's old item 3 (an archimedean separation run at genus 16) is not the
-binding question and was not run.
+`gate5-genus16-term-count.md` (D27c): the Fourier-term count at genus 16 is
+`≤ 1.1·10^4 · M^16 / Δ'`, feasible only if `Δ' ≳ 10^20–10^30`. `Δ'` is the
+determinant of the period-valuation pairing.
+
+**The computation is simpler than the certificate first said (D29).** Because
+`g` is new at `q0`, `∂ = 0` on the `g`-part, so the character lattice IS the
+`g`-isotypic sublattice of the raw Brandt lattice, and the monodromy pairing is
+the diagonal **Brandt mass** pairing. No graph, no boundary kernel. Plan:
+`gate5-delta-prime-plan.md`. Then
+
+    Δ' = det(B W Bᵀ) / (N(𝓛)² · D_H),
+
+`B` a saturated `Z`-basis of the `g`-sublattice, `W` the mass vector — which
+shares a basis with the banked operators `gk_s3_T*.m`.
+
+**Package change:** the mass vector needed a new exported intrinsic
+`InternalHMFRawInnerProductDefinite` — `dembele/patches/hmf-raw-innerproduct.patch`,
+**applied locally, NOT on chatelet yet** (apply before the `q0` run). First
+finding: level-31 masses are `{1,3}`, so `W` is non-scalar (matters).
+
+**In flight at session close:** the pipeline prototype
+`49_delta_prime_proto.m` runs over `Q` at level 31 (`~/dp31_proto.out`,
+detached, survives session close) to validate self-adjointness, new⊥old,
+saturation and the sub/quotient Gram determinants. **Unverified** — check its
+output first thing. Caveat: level-31 raw operator builds are ~1 h each, so the
+prototype is slow; if it is still churning or wrong, the mechanics are cheap to
+re-derive from the plan. Do NOT scale to `q0` until the prototype's checks pass
+(especially: `Γ` integral and positive definite, new⊥old = true).
 
 ### TRAP: never combine banked operators from different sessions
 
@@ -94,20 +111,21 @@ The `_same` pair is usable for a two-prime `G` analysis without rebuilding.
 
 ### Next actions, in order
 
-1. **Compute `Δ'`** (`gate5-genus16-term-count.md` §5): the monodromy pairing
-   on the `g`-isotypic sublattice of the level-`q0` character group. Inputs
-   are in hand: the banked four-operator set `gk_s3_T*.m` (one basis), the
-   boundary map to the 116 vertices (two copies of the level-1 class set — the
-   package's `P^1` orbit data gives it), and the excess factor. The new piece
-   is an **integral** rank-16 kernel on a 109240-dimensional space (multi-
-   modular kernel + saturation, or a sparse integer nullspace); everything so
-   far is mod 2. Both the sub- and quotient-lattice determinants are wanted.
-   This is the gate-4 go/no-go and the highest-value open computation.
-2. Gate-4 build only if 1 says the window exists (`Δ' ≳ 10^20–10^30` with an
-   affordable recognition precision).
-3. Scan: stays stopped. Resume at 3 lanes (instructions above) only if a
-   second `q0` is wanted for downstream reasons.
-4. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
+1. **Read `~/dp31_proto.out`** (the level-31 `Δ'` prototype). Confirm: `T`
+   self-adjoint under `W`; new ⊥ old = true; `L_g` saturates; `Γ` integral and
+   positive definite; a sensible `det Γ`. If it errors or is still running,
+   fix/finish it — the plan (`gate5-delta-prime-plan.md`) has the mechanics.
+2. **Apply `hmf-raw-innerproduct.patch` on chatelet**, then run `Δ'` at `q0`
+   multimodularly: `det(Γ) mod p` for ~20–50 split primes, CRT'd; reuse the
+   banked `gk_s3_T*.m` (one basis) for the `g`-sublattice, pair against the
+   mass vector. ~1–2 core-days, parallel, no host-scale job. Report BOTH the
+   sub and quotient determinants (the polarisation ambiguity, D29 / term-count
+   §). This is the gate-4 go/no-go.
+3. Gate-4 build only if 2 gives `Δ' ≳ 10^20–10^30` with an affordable
+   recognition precision `M`.
+4. Scan: stays stopped. Resume at 3 lanes (instructions above) only if a
+   second `q0` is wanted (e.g. a smaller norm for gate 4).
+5. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
 
 ### Hard-won operational lessons (all cost real time)
 
