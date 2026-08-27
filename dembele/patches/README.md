@@ -79,3 +79,17 @@ identical on all fields (3502 s vs 3455 s — again memory, not speed).
 Apply with:
 
     cd /Users/musty/hilbertmodularforms && git apply /path/to/hmf-sparse-hecke.patch
+
+## `hmf-raw-innerproduct.patch` (2026-08-27, gate 5 / Delta')
+
+`ModFrmHil/definite.m`, additive. Exposes `InnerProductMatrixBig` (the internal
+diagonal Brandt mass pairing) as a public intrinsic
+`InternalHMFRawInnerProductDefinite(M) -> SeqEnum`, returning the mass vector in
+the **same basis** as `InternalHMFRawHeckeDefiniteSparse`. Needed because the
+`Delta'` computation (`../certificates/gate5-delta-prime-plan.md`) pairs the
+`g`-isotypic sublattice against this mass matrix, and neither the internal
+function nor the cuspidal `InnerProductMatrix` (which errors "Not implemented"
+on these spaces) was reachable from outside the package. Requires a
+`forward InnerProductMatrixBig;` declaration since the new intrinsic sits ~600
+lines above the function's definition. Applied on the LOCAL package on
+2026-08-27; **not yet applied on chatelet** — apply before the `q0` run there.

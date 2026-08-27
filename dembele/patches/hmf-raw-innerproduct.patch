@@ -1,0 +1,33 @@
+Additive, self-contained. Exposes the raw Brandt mass pairing (the diagonal
+inner product InnerProductMatrixBig computes internally) as a public intrinsic,
+so the Delta' computation can read the monodromy pairing in the same basis as
+InternalHMFRawHeckeDefiniteSparse. Apply on top of hmf-sparse-hecke.patch.
+
+Two changes to ModFrmHil/definite.m:
+
+1. A forward declaration, next to the existing `forward HeckeOperatorDefiniteBig;`
+   (InnerProductMatrixBig is a function defined ~600 lines below the new
+   intrinsic, so it must be forward-declared):
+
+     forward HeckeOperatorDefiniteBig;
+    +forward InnerProductMatrixBig;
+
+2. A new intrinsic, immediately after InternalHMFRawHeckeDefiniteSparse
+   (i.e. right before `intrinsic HeckeMatrixRaw`):
+
++intrinsic InternalHMFRawInnerProductDefinite(M::ModFrmHil) -> SeqEnum
++{The diagonal Brandt mass pairing on the raw space containing M (the natural
++ Hecke-invariant inner product), returned as the sequence of diagonal masses in
++ the same basis as InternalHMFRawHeckeDefiniteSparse.  Parallel weight 2 only.
++ This is the monodromy pairing on the character lattice of the Cerednik-Drinfeld
++ toric reduction (dembele/certificates/gate5-delta-prime-plan.md).}
++
++  require not assigned M`Ambient :
++         "This space is computed as a subspace of another space: use M`Ambient";
++  require Seqset(Weight(M)) eq {2} :
++         "Only implemented for parallel weight 2";
++
++  IP := InnerProductMatrixBig(M);
++  assert IsDiagonal(IP);
++  return [ Integers()! IP[i,i] : i in [1..Nrows(IP)] ];
++end intrinsic;
