@@ -1,0 +1,33 @@
+GK|level norm 2401, primes: [ 31, 97, 127, 191 ]
+GK|level-1 T_31 residual factors: degrees [ 8, 8 ]
+GK|level-1 factor 1: primary dim 8 (expect 8 = deg*1)
+GK|  level-1 factor 1, T_31 charpoly factors [ <8, 1> ]
+GK|  level-1 factor 1, T_97 charpoly factors [ <8, 1> ]
+GK|  level-1 factor 1, T_127 charpoly factors [ <8, 1> ]
+GK|  level-1 factor 1, T_191 charpoly factors [ <8, 1> ]
+GK|level-1 factor 2: primary dim 8 (expect 8 = deg*1)
+GK|  level-1 factor 2, T_31 charpoly factors [ <8, 1> ]
+GK|  level-1 factor 2, T_97 charpoly factors [ <8, 1> ]
+GK|  level-1 factor 2, T_127 charpoly factors [ <8, 1> ]
+GK|  level-1 factor 2, T_191 charpoly factors [ <8, 1> ]
+GK|level q0 dim 109240
+GK|T_31 built [855.540 s], 31.9900 per column, memory 4387 MB
+GK|T_97 built [2646.500 s], 97.9449 per column, memory 5693 MB
+GK|T_127 built [2897.850 s], 127.892 per column, memory 6800 MB
+GK|T_191 built [5162.740 s], 191.800 per column, memory 8739 MB
+GK|COMMUTE all pairs: failures 0
+GK|banked level-q0 charpoly: factor multiplicities [ 4, 2 ] (old baseline 2 each)
+GK|processing factors in order [ 1 ]
+GK|=== T_31 factor 1 (degree 8): f(T_31) evaluated [3101.170 s], memory 8977 MB
+GK|  f(T_31)^2 [594.680 s], memory 10399 MB
+GK|  dim ker f(T_31)^2 = 32 [276.280 s], memory 10399 MB
+GK|  rank of f(T_31) on G = 16  (0 = semisimple; dim ker f(T_31) = 16)
+GK|  T_31 on G: charpoly factors [ <8, 4> ] ; divisible by (level-1 charpoly)^2: true
+GK|  T_31 on NEW quotient G/O: charpoly factors [ <8, 2> ] ; equals level-1 charpoly^2: true
+GK|  T_97 on G: charpoly factors [ <8, 4> ] ; divisible by (level-1 charpoly)^2: true
+GK|  T_97 on NEW quotient G/O: charpoly factors [ <8, 2> ] ; equals level-1 charpoly^2: true
+GK|  T_127 on G: charpoly factors [ <8, 4> ] ; divisible by (level-1 charpoly)^2: true
+GK|  T_127 on NEW quotient G/O: charpoly factors [ <8, 2> ] ; equals level-1 charpoly^2: true
+GK|  T_191 on G: charpoly factors [ <8, 4> ] ; divisible by (level-1 charpoly)^2: true
+GK|  T_191 on NEW quotient G/O: charpoly factors [ <8, 2> ] ; equals level-1 charpoly^2: true
+GK|done

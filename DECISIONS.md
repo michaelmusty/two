@@ -542,6 +542,37 @@ cap (47 GB free after four lanes exited), and **banks the four integer sparse
 operators** (`two_gate3/gk_s3_T{31,97,127,191}.m`, ~120 MB each) — a
 commuting set in one basis, which the `Δ'` computation over `Z` will need.
 
+**D28. GATE 3 IS CLOSED: the level-`q0` new quotient carries `f`'s residual
+system at 31, 97, 127 and 191.** `48_gate3_genkernel.m`, attempt 3, finished
+2026-08-27 10:26Z (`dembele/data/computed/gate3_genkernel_q0.out`,
+`gate3-closure.md`). On the 32-dimensional generalised eigenspace
+`G = ker f1(T_31)^2` every one of the four commuting operators has
+characteristic polynomial `(f1^{(ell)})^4`; the old part accounts for
+`(f1^{(ell)})^2` by local theory, so the new quotient has `f`'s system at all
+four primes, with the pairing of the four polynomials fixed by the single
+prime `lambda` on the `f` side. `T_31` has Jordan blocks of size 2 on `G`
+(rank 16), semisimple on the old part — now a corollary of the congruence, not
+a signature (D27b). Steinberg at `q0` follows from newness at prime level with
+trivial character. Not proved and not needed: `rho-bar_g = rho-bar_f` itself
+(no affordable Sturm bound; a Galois-conjugate system cuts out the same field;
+the gate-5 certification is the backstop).
+
+*Decision:* the Hecke side of the route is done; no more primes will be added
+(each costs a full same-session rebuild, ~5 h, for evidence that cannot become
+a proof this way). The four integer operators are banked from this session
+(`two_gate3/gk_s3_T*.m`, commuting, one basis) as the input for the next
+computation, `Delta'` (D27c), which is now the binding question of the whole
+route. The scan stays stopped: `q0` is confirmed level-raising in the strongest
+sense a finite computation gives, so redundancy has little value; resume at
+three lanes only if a *second* `q0` is wanted for downstream reasons (e.g. a
+smaller norm for gate 4).
+
+*Method note.* Two of the three "independent signatures" of D26 turned out to
+be one signature (the multiplicity excess) plus one vacuous test plus one
+ambiguous one; the version that actually decides the question needed a
+quotient, not a subspace, and it needed no new mathematics — only asking
+what output the test would produce if the claim were false.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

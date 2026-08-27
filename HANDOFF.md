@@ -15,53 +15,27 @@ Found 2026-08-22 (`const2val = 8`: exactly one of the two residual systems has
 `abar_q0 = 0`). D23. Banked in `dembele/scanjob/scan_results.csv`. 61 rationals
 scanned by 2026-08-25; primes now cost ~2 days each.
 
-### GATE 3: multiplicity evidence intact; eigensystem evidence REOPENED
+### GATE 3 IS CLOSED (2026-08-27, D28)
 
-What stands (basis-independent, D25/D26):
+`48_gate3_genkernel.m` (attempt 3) verified, in one Magma session at level
+`q0`, that on the 32-dimensional generalised eigenspace `G = ker f1(T_31)^2`
+each of the four commuting operators `T_31, T_97, T_127, T_191` has
+characteristic polynomial `(f1^{(ell)})^4`. The old subspace accounts for
+`(f1^{(ell)})^2` (two Iwahori-fixed vectors per level-1 form), so the **new
+quotient carries `f`'s residual system at all four primes**; Steinberg at `q0`
+follows from newness at prime level with trivial character. Full argument and
+the honest limits (no Sturm bound; Galois-conjugate systems give the same
+field) in **`dembele/certificates/gate3-closure.md`**; output in
+`dembele/data/computed/gate3_genkernel_q0.out`.
 
-| `ell` | one factor | the other |
-|---|---|---|
-| 31 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
-| 97 | multiplicity 4, **excess +2** | multiplicity 2, excess 0 |
+What was wrong before (D27b): the earlier "eigensystem match" used the
+eigenspace `W = ker f1(T_31)`, which under Ihara's lemma *is* the old
+subspace, so that test was vacuous; the generalised eigenspace and the
+quotient argument fix it without building degeneracy maps.
 
-with the oldform baseline `2·m1 = 2` verified against the full level-1
-charpoly, and the sparse assembly validated by same-session commutation.
-
-What fell (2026-08-26, D27b): the "eigensystem match on the subspace" used
-`W = ker f1(T_31)`, 16-dimensional — but the mod-2 old subspace is 16-dimensional
-and `T_31`-semisimple, so `O ⊆ W`, and under Ihara's lemma `W = O`. Restricting
-`T_ell` to `W` only re-derives level-1 data. The four-prime job built on `W`
-was retired. Non-semisimplicity is likewise not proof of old/new gluing.
-
-**Running now (the decisive test):** `two_gate3/48_gate3_genkernel.m`
-(attempt 3, launched ~03:00Z 2026-08-27, 3-day CPU limit, 40 GB memory cap,
-operators kept sparse; output `two_gate3/genkernel.out`; ~12 h). Attempt 2
-(`genkernel.attempt2.out`) got through all four operator builds and the
-27-pair commutation check with 0 failures, then died at a 16 GB cap on the
-kernel — see D27. Attempt 3 also banks the four integer operators as
-`two_gate3/gk_s3_T*.m` (one session, commuting) for the `Δ'` computation. In one session it builds `T_31, T_97,
-T_127, T_191` at level `q0`, checks commutation, takes the **generalised**
-eigenspace `G = ker f1(T_31)^2` (32-dim) on the excess side only (selected via
-the banked level-`q0` charpoly), and prints for each `ell` whether
-`charpoly(T_ell | G) = (level-1 charpoly of T_ell on the f1-part)^4`. Because
-the old contribution `(f1^{(ell)})^2` is forced by local theory, that equality
-is exactly "the new quotient has `f`'s residual system at `ell`". Look for the
-lines `T_ell on NEW quotient G/O: ... equals level-1 charpoly^2: true`.
-
-If all four are `true`: gate 3 is verified at the eigensystem level on four
-primes; write `gate3-closure.md` (excess + baseline ⇒ new forms; new + prime
-level + trivial character ⇒ Steinberg; residual system matches `f` at
-31/97/127/191; the full congruence `rho-bar_g = rho-bar_f` is still not
-*proved* — no Sturm bound is affordable — but it is what the final
-Galois-group certification of the polynomial would catch). If any is `false`:
-the new forms carrying the `T_31` excess do not carry `f`'s system at that
-prime; the level-raising picture at `q0` is wrong and the scan must resume.
-
-A local smoke test of the same script at level 31 (`G3_LEVEL=31`) runs in
-`scratchpad/gk/smoke31.out`; its tail was unit-tested on a synthetic commuting
-pair. Attempt 1 on chatelet died at CoCalc's default 120 CPU-second rlimit —
-**launch detached jobs only through `rexec(..., timeout=86400*3,
-sock_timeout=60)`**, never plain `exec`.
+**Banked from that session (chatelet `two_gate3/`):** `gk_s3_T{31,97,127,191}.m`,
+integer sparse operators, commuting, one basis (39/118/154/231 MB). Use them
+*together*; never with operators from any other session.
 
 ### GATE 5: the back end has a go/no-go number, and gate 4 waits for it
 
@@ -96,12 +70,14 @@ Unchanged (D26b). Characteristic polynomials are safe; joint analysis is not.
   fleet drains: `NLANES=3`, `for L in 0 1 2` in `supervise.sh`, mirror in
   `restore_scan.py`, remove the STOP file, relaunch the supervisor (command in
   its header). Do not do this while lanes with `NLANES=8` are still running.
-- **`48_gate3_genkernel.m`**: plain detached job, no durability layer; if
-  chatelet restarts, relaunch by hand with the `rexec` pattern above
-  (`cd two_gate3 && G3_CPBANK=gate3_charpoly_q0.m G3_MEMCAP=16
-  HMF_ROOT=../two_hilbertmodularforms nohup /usr/local/bin/magma -b
-  48_gate3_genkernel.m > genkernel.out`).
-- Memory: 116/125 GB used at launch; each exiting lane frees 14–17 GB.
+- **No gate-3 job is running**; `48` finished 2026-08-27 10:26Z. Relaunch
+  recipe if ever needed: `cd two_gate3 && G3_CPBANK=gate3_charpoly_q0.m
+  G3_MEMCAP=40 G3_BANK=<tag> HMF_ROOT=../two_hilbertmodularforms nohup
+  /usr/local/bin/magma -b 48_gate3_genkernel.m > genkernel.out`, launched via
+  `rexec(..., timeout=86400*3, sock_timeout=60)`. Peak memory 10.4 GB with
+  sparse operators.
+- Memory: 67/125 GB used at 10:30Z 2026-08-27 with three scan lanes still
+  finishing; each exiting lane frees 14–17 GB.
 
 ### Banked gate-3 artifacts (on chatelet, `two_gate3/`)
 
@@ -118,15 +94,20 @@ The `_same` pair is usable for a two-prime `G` analysis without rebuilding.
 
 ### Next actions, in order
 
-1. **Read `genkernel.out`** and act on it as above.
-2. **Compute `Δ'`** (`gate5-genus16-term-count.md` §5): the monodromy pairing
-   on the `g`-part of the character group at level `q0`. This is the gate-4
-   go/no-go and the highest-value open computation in the project.
-3. Write `gate3-closure.md` once 1 is in.
-4. Resume the scan at 3 lanes only after the fleet drains, if redundancy is
-   still wanted.
-5. Gate-4 build only after 2 says the window exists.
-6. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
+1. **Compute `Δ'`** (`gate5-genus16-term-count.md` §5): the monodromy pairing
+   on the `g`-isotypic sublattice of the level-`q0` character group. Inputs
+   are in hand: the banked four-operator set `gk_s3_T*.m` (one basis), the
+   boundary map to the 116 vertices (two copies of the level-1 class set — the
+   package's `P^1` orbit data gives it), and the excess factor. The new piece
+   is an **integral** rank-16 kernel on a 109240-dimensional space (multi-
+   modular kernel + saturation, or a sparse integer nullspace); everything so
+   far is mod 2. Both the sub- and quotient-lattice determinants are wanted.
+   This is the gate-4 go/no-go and the highest-value open computation.
+2. Gate-4 build only if 1 says the window exists (`Δ' ≳ 10^20–10^30` with an
+   affordable recognition precision).
+3. Scan: stays stopped. Resume at 3 lanes (instructions above) only if a
+   second `q0` is wanted for downstream reasons.
+4. Maintain `DECISIONS.md` and `REFERENCES.md` at every fork.
 
 ### Hard-won operational lessons (all cost real time)
 
