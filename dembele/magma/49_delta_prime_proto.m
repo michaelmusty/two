@@ -28,11 +28,20 @@ q := deg1primes(ln)[1];
 printf "DP|level norm %o\n", Norm(q);
 
 M := HilbertCuspForms(F, q, [2 : i in [1..8]]);
-W := InternalHMFRawInnerProductDefinite(M);
+// The self-adjoint pairing is the STABILIZER-ORDER diagonal (D31), not the
+// Eichler-mass diagonal (its reciprocal up to ulcm/g) first used here.
+Wm := InternalHMFRawInnerProductDefinite(M);
+W, ulcm, g := InternalHMFRawStabOrdersDefinite(M);
+W := [ Integers()!e : e in W ];
 N := #W;
 Wd := DiagonalMatrix(Rationals(), W);
-printf "DP|raw dim N = %o ; masses: distinct %o, min %o, max %o\n",
+printf "DP|raw dim N = %o ; stab orders: distinct %o, min %o, max %o\n",
     N, #Seqset(W), Min(W), Max(W);
+printf "DP|CHECK mass_i * stab_i = ulcm/g = %o for all i: %o\n",
+    ulcm div g, forall{ i : i in [1..N] | Wm[i]*W[i] eq ulcm div g };
+if GetEnv("DP_BANK") ne "" then
+    Write(Sprintf("%o_W.m", GetEnv("DP_BANK")), Sprintf("Wtrue := %m;", W) : Overwrite := true);
+end if;
 
 // raw T_ell for several split primes coprime to the level
 cands := [97,127,191,223,257,353,383,449];  // primes ≡ ±1 mod 32 (deg-1 in F)
@@ -40,6 +49,9 @@ Tr := AssociativeArray(); usable := [];
 for e in cands do
     pe := deg1primes(e); if #pe eq 0 then continue; end if;
     S := InternalHMFRawHeckeDefiniteSparse(M, pe[1]);
+    if GetEnv("DP_BANK") ne "" then
+        Write(Sprintf("%o_T%o.m", GetEnv("DP_BANK"), e), Sprintf("T%o := %m;", e, S) : Overwrite := true);
+    end if;
     Tr[e] := ChangeRing(Matrix(S), Rationals()); Append(~usable, e);
     if #usable ge 2 then break; end if;
 end for;

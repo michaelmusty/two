@@ -1,5 +1,61 @@
 # Session handoff
 
+## STATE 2026-08-31 — read this first (supplements the 08-27 section)
+
+Session work in progress; narrative through **D31** in `DECISIONS.md`.
+
+**MAJOR CORRECTION (D31): the monodromy pairing diagonal is the stabilizer
+orders `e_i`, NOT the Eichler masses.** The q0 self-adjointness check caught
+D29's reciprocal error. `m_i e_i = ulcm/g = 48` at q0 (basis-independent)
+converts the banked mass vector offline. Verified: the banked `dp_T31` is
+self-adjoint under the converted diagonal on ALL 3 494 618 support entries.
+**Authoritative Δ' inputs (chatelet `two_gate3/`): `dp_T31.m` + `dp_W.m`
+(masses) + `dp_Wtrue.m` (stab orders), one session, one basis.** The gate-3
+banked `gk_s3_T*` are a DIFFERENT session's basis (rebuild ≠ banked,
+confirmed) and must not be paired with them. Two package intrinsics now:
+`InternalHMFRawStabOrdersDefinite` (the pairing) and
+`InternalHMFRawInnerProductDefinite` (dual masses; rewritten to avoid a
+95 GB densification that killed the first run of 50). Patch file revised;
+chatelet re-uploaded (md5 `c5d39f28...`).
+
+- **The 08-27 level-31 prototype died** ~2 h in (only 2 output lines; the
+  detachment lesson struck again). Relaunched locally, then superseded: the
+  corrected-pairing version (49 now uses stab orders + banks its operators,
+  `DP_BANK=dp31`) **runs on chatelet**, output `two_gate3/dp31_proto.out`.
+  Local runs sat at ~40% duty — the launching shell's nice put them on
+  E-cores; chatelet is ~2× faster for these builds.
+- **CoCalc job pattern (the real semantics):** `timeout` = RLIMIT_CPU
+  inherited by detached children; launch with
+  `nohup magma -b X.m > out 2>&1 < /dev/null & echo PID=$!`, a LARGE
+  `timeout`, `sock_timeout≈60`, then POLL the output file. The socket timing
+  out does NOT kill the job. Reusable launcher in the session scratchpad
+  (`launch_remote.py`); a client retry once duplicated a job — check
+  `ps aux | grep <script>` after launching.
+- **`hmf-raw-innerproduct.patch` is now applied on chatelet**: local
+  `definite.m` (md5 `a761f109...`) uploaded over the remote copy (backup at
+  `two_hilbertmodularforms/ModFrmHil/definite.m.pre-innerproduct.bak`);
+  spec compiles remotely, intrinsic visible. Note the remote copy previously
+  had an OLDER sparse-hecke revision (no `Columns` option); the upload also
+  brought that up to the local revision. Basis compatibility with the banked
+  `gk_s3_T*.m` is NOT assumed — it is asserted by `50_delta_prime_q0_W.m`.
+- **Scan fleet fully drained** on chatelet; ~100 GB free. The 15 magma
+  processes visible there are another user's (`bsd_magma_v7`, Magma 2.29-9).
+- **New scripts** (both untested at q0 until the prototype passes):
+  - `dembele/magma/50_delta_prime_q0_W.m` — step 1: rebuild raw `M_q0`, read
+    `W`, rebuild `T_31`, **assert equality with banked `gk_s3_T31`**, bank `W`.
+  - `dembele/magma/51_delta_prime_q0_hg.m` — step (a) of the plan Addendum:
+    2-adic block lifting to determine `d_g` and `h_g`. Level-1 self-test ran
+    this session; a full self-test at a small prime level should run on
+    chatelet before q0. At q0 use `G3_MULT=4,2 G3_TBANK=gk_s3_T31.m`.
+- **Plan revision (D30)**: `gate5-delta-prime-plan.md` Addendum 2026-08-31.
+  Naive per-prime full charpolys at q0 are memory/time-infeasible; the route
+  is 2-adic `h_g` recognition (Deligne bound certifies the balanced lift) +
+  per-prime Wiedemann/minimal-polynomial projections for `L_g` (script 52,
+  not yet written). **`d_g` (16 vs >16) is the first deliverable** — gate 3's
+  new-part residual multiplicity is 2, so a single degree-32 orbit is
+  possible, which would make gate 4's term count `M^32/Δ'` — a probable no-go.
+  Gate-3 out confirms multiplicities `[4, 2]` and block min-poly `f1²`.
+
 ## STATE 2026-08-27 — read this first
 
 Narrative: `DECISIONS.md` (D1–D29). Attributions: `REFERENCES.md`. Plan of

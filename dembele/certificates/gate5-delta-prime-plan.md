@@ -124,6 +124,88 @@ alignment with the raw operators, `∂ = 0` on the new part (newforms orthogonal
 to old under `W` is the check), saturation, and the sub/quotient determinant
 pair. Only after it passes is the `q0` multimodular run worth launching.
 
+## Correction 2026-08-31 (D31): the pairing diagonal is the stabilizer orders
+
+The claim above that the pairing is "the diagonal **Brandt mass** pairing
+(`InnerProductMatrixBig`)" is off by a reciprocal. Empirically (level 1 and
+level q0): with the Eichler-mass diagonal `m_i = (ulcm/g)/e_i` the
+self-adjointness `W_i T_ij = W_j T_ji` FAILS; the unique consistent diagonal,
+derived from `T`'s entry ratios along the (connected) support graph, is
+`W_i = e_i`, the **stabilizer orders** — the classical Brandt relation
+`e_j T_ij = e_i T_ji`, and the Cerednik–Drinfeld monodromy pairing's edge
+lengths (Gross, Ribet). The relation `m_i e_i = ulcm/g` (basis-independent;
+`= 48` at q0, `e_i ∈ {1,2,3,4,8,16}`) converts the banked mass vector without
+any rebuild; `dp_Wtrue.m` on chatelet is the converted vector in the
+`dp_T31.m` basis, and self-adjointness holds on all 3 494 618 support entries
+(`54_delta_prime_q0_wfix.m`). Everywhere `W` appears below, read the
+stabilizer-order diagonal. The exposed intrinsics are
+`InternalHMFRawStabOrdersDefinite` (the pairing) and
+`InternalHMFRawInnerProductDefinite` (the package's dual mass normalization,
+kept for cross-checks).
+
+## Addendum 2026-08-31: the q0 implementation route (revises step 2)
+
+Step 2 above said "take the `g`-factor `h_p`" per prime without saying how the
+`g`-factor is known. Working out the costs shows the naive reading — a full
+`charpoly(T_31 mod p)` per odd prime — is **infeasible**: dense linear algebra
+at `N = 109240` over a word-size odd prime is 47–95 GB (no bit-packing, unlike
+mod 2) and ~`N³ ≈ 1.3·10^15` field ops ≈ day(s) per prime. The route below
+avoids every dense-mod-`p` object of size `N²`.
+
+**(0) `d_g` is a first-class unknown, and gate 4 depends on it.** Gate 3 gives
+the new `f1`-primary part dimension 16 = `deg(f1)²`, i.e. residual multiplicity
+**2**, versus multiplicity 1 at level 1. Possible char-0 orbit structures: one
+degree-16 orbit whose two primes over 2 both reduce to `f1`-systems; two
+degree-16 orbits splitting `(8,8)` like `H` (one the `C8`-mirror carrying the
+`f2` side); or **one degree-32 orbit** with `(16,16)` over the two mod-2
+systems. In the last case `dim B_g = 32` and the gate-4 term count is
+`~M^32/Δ'` — almost certainly a no-go. So the first output of the q0 run is
+`d_g`, not `Δ'`.
+
+**(a) Identify `h_g` 2-adically (cheap: everything is mod 2 or 32×32).**
+The mod-2 `f1`-primary block `G = ker f1(T_31)² ` (dim 32, gate 3) is the
+reduction of the 2-adic `m`-primary lattice block. Hensel-lift a basis of it
+to `Z/2^k`, `k = 192`, by the standard step: solve `P^e·C ≡ rhs (mod 2)` where
+`P = f1(T_31) mod 2` and `P^e` is computed by ~`log e` dense **mod-2**
+(bit-packed, 1.5 GB) matrix squarings. Restrict `T_31` to the lifted block:
+`cp_m32 mod 2^k` (32×32 charpoly, trivial). Divide by `u1²` where `u1` is the
+degree-8 Hensel factor of the **exact** level-1 degree-16 factor `g16 ≡ f1`
+(a 16-degree polynomial factorization over `Z_2`, trivial): the quotient
+`h' (deg 16, mod 2^k)` is the charpoly of `T_31` on the **new** `f1`-block.
+Repeat on the `f2` side for `h''`. Deligne bounds the true coefficients:
+roots `|a| ≤ 2√31`, so a degree-16 factor has coefficients `< 2^70` and a
+degree-32 factor `< 2^140`; with `k = 192` the balanced lift of whichever of
+`h'`, `h''`, `h'·h''` is a global factor is exact and the coefficient bound
+rejects the others (a non-global product has ~`2^k`-size lifted coefficients).
+This decides `d_g` and produces `h_g ∈ Z[z]`.
+
+**(b) Verify `h_g` and build `L_g` mod word-size primes (sparse only).**
+`W` is positive definite and `T_31` is `W`-self-adjoint, so `T_31` is
+diagonalizable over `R` and the global minimal polynomial `μ` is squarefree.
+Per word-size prime `p`: compute `μ mod p` by Wiedemann (Berlekamp–Massey on
+`u·T_31^i·v`, `~2N` sparse matvecs at ~3.5·10^6 nnz ⇒ tens of minutes);
+**check `h_g | μ mod p`** — this is the per-prime verification of (a). Then
+project random vectors: `v_g = (μ/h_g)(T_31)·v` (Horner, `~N` matvecs,
+~10 min) lies in `L_g ⊗ F_p` with generically nonzero `g`-component since `μ`
+is squarefree; ~20 vectors span. Reduced echelon form w.r.t. a fixed pivot
+set is canonical, so the per-prime bases are CRT-compatible: CRT + rational
+reconstruction gives `B ⊗ Q`, clear denominators, saturate, then
+`Γ = B W Bᵀ` and `det Γ` **exactly over Z** (16×16 or 32×32 — tiny). Add
+primes until the reconstruction stabilizes and `B·h_g(T_31) = 0` holds over
+`Z` (a posteriori exact certificate). Primes where the projection drops rank
+(dividing a resultant) are skipped.
+
+**Cost.** (a): one-off, dominated by ~7–8 dense mod-2 squarings ≈ minutes each
++ the lift solves; well under a day, ~4 GB. (b): ~1–3 h per prime, fully
+parallel across chatelet lanes; expected 10–40 primes. No step allocates a
+dense `N×N` matrix over an odd-prime field. This keeps the plan's 1–2
+core-day estimate honest.
+
+**Prerequisite** (step 1, unchanged): `50_delta_prime_q0_W.m` reads `W` and
+asserts a rebuilt `T_31` equals the banked `gk_s3_T31`, tying `W`'s basis to
+the banked operators. If that assert fails, all four operators must be rebuilt
+with `W` in one session before (b).
+
 ## Honest caveats
 
 - The identification “Brandt mass pairing = CD monodromy pairing” is standard

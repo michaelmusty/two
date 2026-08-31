@@ -608,6 +608,60 @@ slow for a prototype. Once it passes, the `q0` computation is multimodular:
 host-scale job. Sub vs quotient determinant and the polarisation factor remain
 the real ambiguity (`gate5-genus16-term-count.md` §; both reported).
 
+**D30 (2026-08-31). The q0 `Δ'` run identifies `h_g` 2-adically and builds
+`L_g` by Wiedemann projection — per-prime full charpolys are rejected; and
+`d_g` (16 vs 32) is promoted to the first output.** The D29 plan's step 2 left
+"take the `g`-factor `h_p`" unspecified. Costing the naive reading killed it:
+a dense mod-`p` charpoly at `N = 109240` over an odd word-size prime is
+47–95 GB (no bit-packing) and ~a day per prime — unaffordable for 20–50
+primes. *Decision:* (a) recognize the global factor `h_g` from the 2-adic side,
+where everything is mod-2 dense (bit-packed, cheap) or 32×32: Hensel-lift the
+gate-3 block `ker f1(T_31)²` to `Z/2^192`, take the block charpoly, divide out
+the exact level-1 old part `u1²`, and balanced-lift under the Deligne
+coefficient bound (`|a_31| ≤ 2√31` ⇒ deg-16 coefficients `< 2^70 ≪ 2^192`);
+(b) per word-size prime, get `μ mod p` by Wiedemann (sparse matvecs only),
+verify `h_g | μ`, and span `L_g ⊗ F_p` by `(μ/h_g)(T_31)·v` projections —
+valid because `W ≻ 0` and `W`-self-adjointness force `μ` squarefree; CRT the
+canonical echelon bases, saturate, `Γ = B W Bᵀ` exact. *Alternative rejected:*
+computing `charpoly(T_31) mod p` per prime and guessing the factor by degree —
+memory-infeasible and the factor is not identifiable mod odd `p` anyway.
+*Promoted question:* gate 3's residual multiplicity on the new part is 2
+(vs 1 at level 1), so the char-0 orbit could be a single degree-32 orbit; then
+`dim B_g = 32` and gate 4's term count is `M^32/Δ'` — a probable no-go. `d_g`
+is therefore the run's first deliverable, before `Δ'`. Full mechanics in
+`gate5-delta-prime-plan.md` (Addendum 2026-08-31); step-1 script
+`dembele/magma/50_delta_prime_q0_W.m` (rebuild `W` + `T_31`, assert equality
+with banked `gk_s3_T31` before trusting the pairing).
+
+**D31 (2026-08-31). The monodromy pairing diagonal is the STABILIZER ORDERS
+`e_i`, not the Eichler masses — D29's identification of `W` was off by a
+reciprocal.** The q0 self-adjointness check (`50_delta_prime_q0_W.m`) failed:
+with the Eichler-mass diagonal of `InternalHMFRawInnerProductDefinite`
+(`m_i = (ulcm/g)/e_i`, the package's `InnerProductMatrixBig` weights),
+`W_i T_ij = W_j T_ji` fails on 304/1197 support entries already at level 1.
+Deriving the unique consistent diagonal directly from `T_31`'s entry ratios
+along the support graph (connected; zero cycle inconsistencies) gives exactly
+the reciprocal pattern: `W'_i · m_i = ulcm/g` for every `i` — i.e. `W' = e_i`,
+the stabilizer orders, which is the classical Brandt relation
+`e_j T_ij = e_i T_ji` and the Cerednik–Drinfeld monodromy edge lengths
+(Gross/Ribet), as it should have been from the start. *Fixes:* new intrinsic
+`InternalHMFRawStabOrdersDefinite` (returns `e_i`, `ulcm`, `g`; patch file
+revised); since `m_i e_i = ulcm/g` is **basis-independent**, the banked q0
+mass vector converts offline — `54_delta_prime_q0_wfix.m` read `C = 48` at q0
+(`ulcm 96, g 2`; `e_i ∈ {1,2,3,4,8,16}`) and verified the converted diagonal
+is self-adjoint for the banked `dp_T31` on **all 3 494 618** support entries;
+`dp_Wtrue.m` banked in the `dp_T31` basis. The level-31 prototype was
+relaunched (chatelet) with the corrected pairing. *Unaffected:* `h_g`/`d_g`
+(51) and the `L_g` construction (52) are pairing-independent; only the Gram
+step uses `W`. *Also learned:* the raw basis is confirmed session-dependent
+(rebuilt `T_31` ≠ `gk_s3_T31`), so the authoritative Δ' inputs are the
+same-session trio `dp_T31.m` + `dp_W.m` + `dp_Wtrue.m` on chatelet;
+`gk_s3_T97/127/191` cannot be paired with them. And
+`InternalHMFRawInnerProductDefinite` originally went through
+`InnerProductMatrixBig`, whose `return Matrix(...)` densifies the diagonal —
+95 GB at q0, which killed the first run of 50; the intrinsic now computes the
+masses directly (patch revised; regression: level-31 masses unchanged).
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
