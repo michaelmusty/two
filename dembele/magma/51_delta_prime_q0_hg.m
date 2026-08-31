@@ -161,6 +161,8 @@ else
 end if;
 
 selftest := GetEnv("G3_SELFTEST") ne "";
+cpZ := Zz!0;   // assigned unconditionally: the factor loop compiles as a unit,
+               // so every identifier it mentions must exist even when unused
 if selftest then
     t0 := Cputime();
     cpZ := Zz!CharacteristicPolynomial(Matrix(T));

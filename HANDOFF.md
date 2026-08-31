@@ -47,6 +47,12 @@ chatelet re-uploaded (md5 `c5d39f28...`).
     2-adic block lifting to determine `d_g` and `h_g`. Level-1 self-test ran
     this session; a full self-test at a small prime level should run on
     chatelet before q0. At q0 use `G3_MULT=4,2 G3_TBANK=gk_s3_T31.m`.
+- **51's level-31 self-test PASSED** (2026-08-31, `two_gate3/hg_l31_test.out`):
+  both blocks T-stable mod 2^192, block charpolys EXACTLY match the Hensel
+  factors of the true charpoly, old-part `u²`-division clean with new-part
+  degree 0 (correct: nothing raises at 31). Banked: `l1_T97.m`, `l31_T97.m`.
+  **The q0 run is launched**: `dp_hg_q0.out`, env `G3_TBANK=dp_T31.m
+  G3_MULT=4,2 G3_PREC=192 HG_BANK=dp_hg` — its first deliverable is `d_g`.
 - **Plan revision (D30)**: `gate5-delta-prime-plan.md` Addendum 2026-08-31.
   Naive per-prime full charpolys at q0 are memory/time-infeasible; the route
   is 2-adic `h_g` recognition (Deligne bound certifies the balanced lift) +
