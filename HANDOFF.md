@@ -1,8 +1,34 @@
 # Session handoff
 
-## STATE 2026-09-01 — read this first (supplements everything below)
+## STATE 2026-09-01 (session close) — read this first
 
-Narrative through **D32** in `DECISIONS.md`.
+Narrative through **D32** in `DECISIONS.md`. Current work: the **Tate
+pilot** — `dembele/certificates/tate-pilot-plan.md`, workspace
+`dembele/tate_pilot/` (README, NOTES, class skeleton, over-Q scripts).
+
+**Pilot state at close:**
+- **Monodromy layer ground-truthed over Q**: `v(q_CD-optimal) = ⟨v,v⟩_stab/2`
+  on six curve classes, (D,p) = (2,13),(2,7),(3,5),(5,11)
+  (`tate_pilot/overq_monodromy2.sage`). Read all `ord(q)` outputs with the
+  /2 rule. Derivation of the uniform /2 still owed.
+- **Phase 1 RUNNING on chatelet at close** (survives session close by
+  construction — RLIMIT_CPU 86400, detached): `56_tate_pilot_lattice.m`,
+  output `two_gate3/tate_lattice.out`. FIRST ACTION NEXT SESSION: read that
+  file; expect per curve (a_97 ∈ {14,6,2,-6,-14}): saturated vector bank
+  `tate_v_a*.m`, ⟨v,v⟩ (halve it!), U_31 sign, a_127; plus banks
+  `tate_T97/U31/stabs.m` in ONE session basis. The session's monitors die
+  with the session — poll the file, don't wait for notifications.
+- **Next implementation step** (the core): definite S-arithmetic group class
+  over Q first — (2,13) fully instrumented in `tate_pilot/overq_data.sage`
+  (Hurwitz order, 3 classes, stabs (3,2,3), wp of norm 13, 13-adic splitting
+  to 13^40). Wire into darmonpoints (8.3, installed in Sage 10.6; interface
+  notes in `tate_pilot/README.md` + NOTES); decisive test = computed q vs
+  `EllipticCurve('26a1').tate_curve(13).parameter()`. darmonpoints REJECTS
+  definite discs even over Q (tested) — the class is unavoidable; build it
+  over Q, then retarget via the Magma element export (script 57, NOT yet
+  written; must be same-session-complete, see tate_pilot/README).
+- Remote job launcher: `remote_magma/launch_remote.py` (upload + detached
+  nohup + RLIMIT pattern).
 
 **GATE 5 ANSWERED: NO-GO AT THIS q0 (D32).** The `d_g` determination ran to
 completion with every internal check exact. `d_g > 16`: the degree-16
