@@ -137,7 +137,38 @@ happens.
   `padicperiods` is genus-2 specific (three half-periods, Igusa recognition),
   while the group layer only offers the Fuchsian construction for totally real
   base fields. So it is a source of algorithms and a partial reference, not a
-  drop-in engine.
+  drop-in engine. **Update 2026-09-01 (Tate pilot):** confirmed empirically
+  that definite discriminants are rejected even over `Q` (the Magma Fuchsian
+  layer errors), so the pilot builds a definite S-arithmetic group class
+  against the ~14-method seam (`tate_pilot/README.md`), over `Q` first with
+  `E.tate_curve(p).parameter()` as ground truth, then retargeted at `F` via a
+  Magma element export.
+- **B. Gross**, *Heights and the special values of L-series* (1987).
+  **[theory]** The definite-quaternion height pairing `⟨e_i, e_j⟩ = w_i δ_ij`
+  with `w_i` the stabilizer orders, and the Brandt symmetry
+  `w_j B_ij = w_i B_ji`. Source of the **D31 correction**: the monodromy
+  diagonal is the stabilizer orders, not the Eichler masses — re-derived
+  empirically from `T`'s entry ratios before being recognized as Gross's
+  pairing. Verified on all 3 494 618 support entries at q0
+  (`54_delta_prime_q0_wfix.m`).
+- **P. Deligne** (Weil II), with **J-L. Brylinski & J-P. Labesse / D. Blasius**
+  for Hilbert modular forms. **[theory]** The Ramanujan bound
+  `|a_v| ≤ 2√(Nv)` — the load-bearing inequality of the D30/D32 balanced-lift
+  certification (a degree-`d` global factor has coefficients under
+  `C(d,d/2)·⌈2√Nv⌉^d`, observed non-global lifts sit at `~2^{190}`).
+- **K. Ribet**, *Mod p Hecke operators and component groups of Jacobians*
+  (and the Bertolini–Darmon usage). **[theory]** Component groups and the
+  monodromy pairing on the character lattice with stabilizer edge lengths —
+  the frame for `Δ'` and for the Tate pilot's valuation rule
+  `v(q) = ⟨v,v⟩_stab/2` (empirically exact on six curve classes,
+  `tate_pilot/overq_monodromy2.sage`; the uniform /2 still owes its
+  derivation to this literature).
+- **Y. Maeda** (the Hida–Maeda conjecture and its heuristics). **[context]**
+  Giant-Galois-orbit expectation for newspaces — the reason the D32 no-go
+  generalizes: a small orbit carrying the residual system would be a
+  Maeda-violating accident, and the structured exceptions (CM, base change,
+  twists) are forbidden by the nonsolvable residual image
+  (`stocktake-2026-09-01.md` §1).
 - **H. Shimizu**. **[theory]** The volume formula behind the archimedean
   infeasibility computation (ζ_F(−1) = 5820 ⇒ genus ≥ ~91(Nq₀−1)/2).
 - **M. Kirschmer & J. Voight**. **[tool/theory]** Quaternion ideal-class
@@ -204,7 +235,18 @@ happens.
 - **The Belyi package** (Musty–Schiavone–Sijsling–Voight) with our four local
   patches — all cover numerics.
 - **`hilbertmodularforms`** (Costa et al., pinned commit in
-  `dembele/upstream.lock`) — Brandt/Hecke computations.
+  `dembele/upstream.lock`) — Brandt/Hecke computations, carrying our two
+  local patches (`dembele/patches/`): sparse Hecke assembly and the D31
+  pairing intrinsics (`InternalHMFRawStabOrdersDefinite`,
+  `InternalHMFRawInnerProductDefinite`) — candidates for upstreaming.
+- **Sage `BrandtModule`** (A. Pizer's algorithms; implementation
+  Kohel–Stein–Tornaría lineage) — the over-`Q` ground-truth layer of the
+  Tate pilot (`tate_pilot/overq_*.sage`): Brandt eigensystems, ideal classes,
+  and `EllipticCurve.tate_curve` as the independent check of the monodromy
+  rule.
+- **`darmonpoints` 8.3** (M. Masdeu et al.; installed in Sage 10.6) — the
+  overconvergent/integration layers targeted for reuse in the Tate pilot;
+  see the assessment entry above for what is and is not usable.
 - **chatelet.mit.edu** (MIT-hosted CoCalc; Magma license courtesy of the host
   institution) — all heavy compute; client in `remote_magma/`.
 - **Aristotle** (Harmonic) + **Lean 4 / Mathlib** — formalization of Lemma A
