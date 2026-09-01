@@ -691,6 +691,27 @@ per candidate ≈ one 51 run, ~8 h), (b) rework gate 4 to use only the
 a genuine research question, (c) the contingencies of
 `levelraise-cd-plan.md`. The route is NOT killed; this q0 is.
 
+**D33 (2026-09-01). The Tate pilot answers at phase 1: `M_rec ~ 10⁴` — the
+recognition wall kills the q0-adic-period route (option (b)) on precision,
+and retro-confirms gate 4 was precision-infeasible independently of D32.**
+The five rational newforms at level p31 have `ord(q_E) = ⟨v,v⟩_stab/2 ∈
+{7960, ..., 62872}` (56_tate_pilot_lattice.m; the /2 normalization was
+ground-truthed over Q on six curve classes first — Gross pairing, CD-optimal
+member selected each time). Heights of the j-invariants follow by the product
+formula: ~10³–10⁴ digits, so algebraic recognition needs `M_rec ≈ 10⁴–10⁵`
+q0-adic digits; the overconvergent lift at that precision costs ≳10¹³ ops at
+an optimistic C floor (O(M) moment updates) and ~10¹⁷ realistically — out of
+reach; Python out by orders more. *Decision:* pilot phases 2–4 are not
+built; the roadmap's `M_rec` question is ANSWERED (feared ~100, actual ~10⁴).
+The level-raising/CD arc is now closed by two independent obstructions
+(D32: no rational small-orbit piece; D33: recognition precision), both
+measured, both documented. *What could reopen it:* a quadratically
+convergent overconvergent lift (log M iterations), or a small-height
+recognition target — neither identified; heights of this scale are intrinsic
+to conductor-p31 objects over the disc-2³¹ field. *Assets that stand:* the
+over-Q-validated monodromy layer (v(q) = ⟨v,v⟩/2), the orbit-degree
+certification method, the D31 pairing intrinsics, all banks.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

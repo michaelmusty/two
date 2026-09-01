@@ -1,5 +1,25 @@
 # The Tate pilot: q0-adic periods → algebraic recognition, at dimension 1
 
+> **OUTCOME 2026-09-01, delivered by phase 1 alone: the recognition wall.**
+> The five curves' Tate valuations are `ord(q_E) = ⟨v,v⟩/2 ∈
+> {7960, 8120, 10344, 12888, 62872}` (`tate_lattice.out`; the /2 rule is the
+> over-Q-validated normalization). By the product formula the j-invariants
+> have heights of ~10³–10⁴ digits, so ANY algebraic-recognition endgame needs
+> `M_rec ≈ 10⁴–10⁵` q0-adic digits — against which the overconvergent lift
+> costs ~10¹³ operations even at an optimistic C floor with O(M) moment
+> updates, and ~10¹⁷ with the realistic O(M²) distribution action. **The
+> naive option-(b) chain is dead on precision at level 31 over this field**,
+> and a fortiori at any usable q0 — which also retro-confirms gate 4 was
+> precision-infeasible independently of the D32 `d_g` obstruction
+> (`roadmap-reevaluation.md` feared `M ~ 100`; the answer is ~10⁴). These
+> heights are intrinsic to conductor-p31 objects over the disc-2³¹ field,
+> not an artifact of the method. What could revive (b): a quadratically
+> convergent lift (log M iterations — research), or a recognition target of
+> genuinely small height, none identified. Phases 2–4 are NOT being built;
+> the over-Q machinery validation stands available but no longer leads
+> anywhere. Full internal checks in the outcome table below the plan;
+> data: `../data/computed/tate_lattice.out`, banks `tate_*.m` on chatelet.
+
 **Date:** 2026-09-01. Follows `stocktake-2026-09-01.md` (option (b)) and the
 gate-4 scoping trio (`gate4-darmonpoints-assessment.md`,
 `gate4-dim2-calibration.md`, `gate4-kernel-rewrite-scope.md`).

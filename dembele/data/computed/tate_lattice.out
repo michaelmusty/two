@@ -1,0 +1,30 @@
+TP|level norm 31: stab orders distinct { 1, 3 }, ulcm 96, g 32
+TP|T_97 built [4824.420 s]
+TP|T_127 built [4885.220 s]
+TP|U_31 built [672.650 s]
+TP|CHECK T_97 charpoly matches banked session: true
+TP|CHECK T_97 self-adjoint under stab pairing: 0 bad of 139052
+TP|CHECK T_127 self-adjoint under stab pairing: 0 bad of 178745
+TP|CHECK U_31 self-adjoint under stab pairing: 41420 bad of 42017
+TP|=== a_97 = 14: eigenspace dim 1
+TP|  U_31 eigenvalue: -1 (consistent: true)
+TP|  T_127 eigenvalue: 16 (consistent: true)
+TP|  ord(q_E) = <v,v>_stab = 16240 ; support size 1280 ; max |v_i| 9
+TP|=== a_97 = 6: eigenspace dim 1
+TP|  U_31 eigenvalue: -1 (consistent: true)
+TP|  T_127 eigenvalue: -16 (consistent: true)
+TP|  ord(q_E) = <v,v>_stab = 20688 ; support size 1287 ; max |v_i| 12
+TP|=== a_97 = 2: eigenspace dim 1
+TP|  U_31 eigenvalue: 1 (consistent: true)
+TP|  T_127 eigenvalue: 8 (consistent: true)
+TP|  ord(q_E) = <v,v>_stab = 25776 ; support size 1292 ; max |v_i| 13
+TP|=== a_97 = -6: eigenspace dim 1
+TP|  U_31 eigenvalue: 1 (consistent: true)
+TP|  T_127 eigenvalue: -8 (consistent: true)
+TP|  ord(q_E) = <v,v>_stab = 125744 ; support size 1342 ; max |v_i| 28
+TP|=== a_97 = -14: eigenspace dim 1
+TP|  U_31 eigenvalue: 1 (consistent: true)
+TP|  T_127 eigenvalue: 8 (consistent: true)
+TP|  ord(q_E) = <v,v>_stab = 15920 ; support size 1226 ; max |v_i| 12
+TP|banked: tate_T97.m, tate_U31.m, tate_stabs.m, tate_v_a*.m (one basis)
+TP|done

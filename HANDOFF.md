@@ -2,8 +2,34 @@
 
 ## STATE 2026-09-01 (session close) — read this first
 
-Narrative through **D32** in `DECISIONS.md`. Current work: the **Tate
-pilot** — `dembele/certificates/tate-pilot-plan.md`, workspace
+Narrative through **D33** in `DECISIONS.md`.
+
+**THE TATE PILOT ANSWERED AT PHASE 1 (D33): `M_rec ~ 10⁴` — recognition
+wall.** Phase 1 completed before session close: the five level-31 curves have
+`ord(q_E) ∈ {7960, 8120, 10344, 12888, 62872}` (already the /2-corrected
+values; full table with U_31 signs and a_127 in
+`dembele/data/computed/tate_lattice.out`). Heights ⇒ recognition precision
+~10⁴–10⁵ digits ⇒ the overconvergent chain is out of reach at any
+implementation quality. **Option (b) is dead as designed; the
+level-raising/CD arc is closed by two measured, independent obstructions
+(D32 + D33). Pilot phases 2–4 were NOT built.** The 08-31/09-01 sections
+below describe the arc; treat them as history. What stands: the validated
+monodromy layer (`v(q) = ⟨v,v⟩_stab/2`, six ground-truth classes over Q),
+the orbit-degree certification method (51/55), the D31 pairing intrinsics,
+all chatelet banks (`dp_*`, `tate_*`, `l1_*`, `l31_*`).
+
+**Open directions after this arc** (stocktake + D32/D33): a quadratically
+convergent overconvergent lift or a small-height recognition target would
+reopen (b) — neither known; otherwise the Dembélé explicit-polynomial goal
+returns to "needs a new mathematical front end"
+(`idea-exhaustion.md`, now with the level-raising door also closed and
+priced). Lemma B (`writeup/lemma-B-open-problem.md`) remains the clean open
+problem elsewhere in the project.
+
+**Historical below this line.**
+
+Former current work: the **Tate pilot** —
+`dembele/certificates/tate-pilot-plan.md` (outcome banner at top), workspace
 `dembele/tate_pilot/` (README, NOTES, class skeleton, over-Q scripts).
 
 **Pilot state at close:**
