@@ -712,6 +712,26 @@ to conductor-p31 objects over the disc-2³¹ field. *Assets that stand:* the
 over-Q-validated monodromy layer (v(q) = ⟨v,v⟩/2), the orbit-degree
 certification method, the D31 pairing intrinsics, all banks.
 
+**D34 (2026-09-01). A feasible one-pass lift algorithm was identified for the
+level-31 computation — and declined, to stay on the original goal.** Analysis
+prompted by "would Newton make recognition feasible?": the recognition (LLL)
+is cheap and the lift equation is linear, so Newton per se is moot — but the
+M-fold Pollack–Stevens iteration is not fundamental. The `U_p` coset maps act
+by `t ↦ pt + a`, so the level-`j` moment block is `1 − a⁻¹p^j A ≡ 1 mod p^j`
+(Neumann-invertible): a **filtration-ordered direct solve** computes the lift
+in one pass; with the precision profile (moment `j` at `M−j` digits) and
+online convolution for the binomial sums, the best level-31 curve
+(`M ≈ 9000`) prices at ~10²–10³ core-hours and 40–80 GB — feasible on
+chatelet with a bespoke C-level implementation. This would yield a genuine
+standalone: explicit equations of conductor-norm-31 modular elliptic curves
+over the degree-8 field via p-adic uniformization (~1500-digit heights).
+*But it does not transfer:* at any usable q0 the positions (~75×) and the
+Γ-diagonal heights (10–100× in `M`) put the target 10⁵–10⁷× beyond even this
+algorithm, and D32 closed the route independently. *Decision (user):* stay
+on the original goal; the standalone is not pursued. D33's "no escape
+identified" is hereby refined to "escape identified, priced, and out of
+scope for the goal." The level-raising/CD arc remains closed.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

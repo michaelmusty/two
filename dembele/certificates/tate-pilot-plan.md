@@ -13,12 +13,18 @@
 > precision-infeasible independently of the D32 `d_g` obstruction
 > (`roadmap-reevaluation.md` feared `M ~ 100`; the answer is ~10⁴). These
 > heights are intrinsic to conductor-p31 objects over the disc-2³¹ field,
-> not an artifact of the method. What could revive (b): a quadratically
-> convergent lift (log M iterations — research), or a recognition target of
-> genuinely small height, none identified. Phases 2–4 are NOT being built;
-> the over-Q machinery validation stands available but no longer leads
-> anywhere. Full internal checks in the outcome table below the plan;
+> not an artifact of the method. Phases 2–4 are NOT being built.
+> Full internal checks in the outcome table below the plan;
 > data: `../data/computed/tate_lattice.out`, banks `tate_*.m` on chatelet.
+>
+> **Refinement (D34):** the M-fold lift iteration is avoidable — the level-j
+> moment block is `1 − a⁻¹p^j A ≡ 1 mod p^j`, so a filtration-ordered direct
+> solve (+ precision profile + online convolution) computes the lift in one
+> pass: ~10²–10³ core-h and 40–80 GB at level 31, i.e. the STANDALONE
+> level-31 curve computation is feasible with bespoke C-level code. It does
+> not transfer to any usable q0 (positions ×75, `M` ×10–100 ⇒ 10⁵–10⁷×
+> over budget), and the user chose to stay on the original goal, so it is
+> recorded, not pursued.
 
 **Date:** 2026-09-01. Follows `stocktake-2026-09-01.md` (option (b)) and the
 gate-4 scoping trio (`gate4-darmonpoints-assessment.md`,

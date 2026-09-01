@@ -18,13 +18,20 @@ monodromy layer (`v(q) = ⟨v,v⟩_stab/2`, six ground-truth classes over Q),
 the orbit-degree certification method (51/55), the D31 pairing intrinsics,
 all chatelet banks (`dp_*`, `tate_*`, `l1_*`, `l31_*`).
 
-**Open directions after this arc** (stocktake + D32/D33): a quadratically
-convergent overconvergent lift or a small-height recognition target would
-reopen (b) — neither known; otherwise the Dembélé explicit-polynomial goal
-returns to "needs a new mathematical front end"
-(`idea-exhaustion.md`, now with the level-raising door also closed and
-priced). Lemma B (`writeup/lemma-B-open-problem.md`) remains the clean open
-problem elsewhere in the project.
+**Open directions after this arc** (stocktake + D32/D33/D34): the fast-lift
+escape was found and priced (D34: one-pass filtration solve — makes the
+STANDALONE level-31 curve computation feasible, but transfers to no usable
+q0) and the **user chose to stay on the original goal**. So the state of the
+goal is: **every door in `idea-exhaustion.md` plus the level-raising/CD door
+is now closed and priced**. The next session's task is the hard one the
+2026-08-04 hard stop already named: a genuinely new mathematical front end
+for realizing the λ-torsion — no candidate is currently on the table. The
+priced-out routes and their exact obstructions (orbit sizes D32, intrinsic
+heights D33) are the constraints any new idea must clear; read
+`stocktake-2026-09-01.md` §1–2 before proposing one. Lemma B
+(`writeup/lemma-B-open-problem.md`) remains the clean, self-contained open
+problem elsewhere in the project — a legitimate place to spend effort while
+the Dembélé front end has no live candidate.
 
 **Historical below this line.**
 
