@@ -662,6 +662,35 @@ same-session trio `dp_T31.m` + `dp_W.m` + `dp_Wtrue.m` on chatelet;
 95 GB at q0, which killed the first run of 50; the intrinsic now computes the
 masses directly (patch revised; regression: level-31 masses unchanged).
 
+**D32 (2026-09-01). GATE 5 ANSWERS NO-GO: `d_g > 16` at q0 — the residual
+system has no rational 16-dimensional isotypic piece, so the gate-4 genus-16
+construction is unavailable at this auxiliary prime.** The q0 run of
+`51_delta_prime_q0_hg.m` (banked `dp_T31`, precision `2^192`) lifted both
+residual blocks T-stably with every internal check exact: the `f1` block
+(dim 32) has `cp_m = u1² · h'` with zero remainder and `deg h' = 16`; the
+`f2` block (dim 16) is purely old (`cp_m = u2²`, new-part degree 0), exactly
+as gate 1 predicted. Over `Z_2`, `h'` splits into TWO irreducible degree-8
+pieces (matching residual multiplicity 2). The Deligne coefficient bound
+(`|a_31| ≤ 2√31`; a degree-d global factor balanced-lifts under
+`C(d,d/2)·12^d`) rejects **all** sub-products: `h'` itself and each degree-8
+piece lift to coefficients ~`2^190` against bounds `2^71`/`2^35`
+(`55_subproduct_f1block.m`, 0 of 3 pass). Hence every global Hecke orbit
+meeting the `f1`-side new block has degree > 16 — its other 2-adic pieces lie
+over residual factors other than `f1` and `f2` — so `dim B_g > 16` (compare:
+already at level 31 the new orbits have degrees 656/684), the
+`gate5-genus16-term-count` premise `genus = 16` fails, and the term count
+`~M^{d_g}` is out of reach for any plausible `Δ'`. Moreover the `f1`-new
+lattice is only `Z_2`-rational, so the `Δ'`-as-integer framing (D27c/D29/D30)
+loses its object: scripts 52/53 are moot at this prime. *Evidence:*
+`dembele/data/computed/dp_hg_q0.out`, `dp_hg_f1_block.m` (the lifted 32×32
+block action). *What remains open:* `d_g` is a property of the CHOSEN q0; the
+options are (a) resume the gate-1 scan for a different auxiliary prime and
+re-run 51 there (the whole pipeline is now banked + validated; marginal cost
+per candidate ≈ one 51 run, ~8 h), (b) rework gate 4 to use only the
+16-dimensional 2-adic toric data rather than the global abelian variety —
+a genuine research question, (c) the contingencies of
+`levelraise-cd-plan.md`. The route is NOT killed; this q0 is.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

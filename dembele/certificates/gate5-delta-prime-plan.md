@@ -1,5 +1,17 @@
 # Computing `Δ'`: the plan, and a simplification that removes the graph
 
+> **OUTCOME 2026-09-01 (D32): NO-GO at this q0.** The step-(a) run decided
+> `d_g > 16`: the `f1`-side new block's charpoly `h'` (degree 16) splits
+> 2-adically into two irreducible degree-8 pieces, and NO sub-product
+> balanced-lifts within the Deligne bound (~`2^190` observed vs `2^35`–`2^71`
+> allowed; `55_subproduct_f1block.m`). Every rational orbit meeting the block
+> has degree > 16, the `f2` side is purely old, and the `f1`-new lattice is
+> only `Z_2`-rational — so the genus-16 premise of
+> `gate5-genus16-term-count.md` fails at this auxiliary prime and steps (b)
+> onward (52/53) do not apply here. Evidence:
+> `../data/computed/dp_hg_q0.out`, `../data/computed/dp_hg_f1_block.m`.
+> Options forward are recorded in D32.
+
 **Date:** 2026-08-27. Prerequisite reading: `gate5-genus16-term-count.md`
 (why `Δ'` is the gate-4 go/no-go) and `gate3-closure.md` (the `g`-isotypic
 newform space at level `q0` is established). Package facts verified against

@@ -1,6 +1,33 @@
 # Session handoff
 
-## STATE 2026-08-31 — read this first (supplements the 08-27 section)
+## STATE 2026-09-01 — read this first (supplements everything below)
+
+Narrative through **D32** in `DECISIONS.md`.
+
+**GATE 5 ANSWERED: NO-GO AT THIS q0 (D32).** The `d_g` determination ran to
+completion with every internal check exact. `d_g > 16`: the degree-16
+`f1`-side new charpoly splits 2-adically into two degree-8 irreducibles and
+no sub-product passes the Deligne bound — every rational Hecke orbit meeting
+the block has degree > 16, so the genus-16 gate-4 construction is unavailable
+at this auxiliary prime and 52/53 are moot here. The `f2` side is purely old
+(as gate 1 predicted). Evidence in `dembele/data/computed/dp_hg_q0.out` and
+`dp_hg_f1_block.m`; analysis script `dembele/magma/55_subproduct_f1block.m`.
+
+**Paths forward (D32):** (a) a SECOND auxiliary prime from the scan (resume
+at 3 lanes per the 08-27 instructions); the 51 pipeline is validated and
+banked, so each new candidate costs one ~8 h run — but note a new q0 needs
+its own gate-3-style closure AND its own `dp_T31`-equivalent (a fresh
+same-session build at that level, ~30 min); (b) rework gate 4 to use only
+the rank-16 2-adic toric data (research question); (c) the contingencies in
+`levelraise-cd-plan.md`.
+
+**Banked on chatelet (`two_gate3/`), all validated:** `dp_T31.m` + `dp_W.m` +
+`dp_Wtrue.m` (q0, one basis; self-adjoint, D31); `l1_T31.m`, `l1_T97.m`
+(level-1 operators); `l31_T97.m`, `dp31_T97/T127/W.m` (level 31);
+`dp_hg_f1.m`/`dp_hg_f2.m` (the lifted q0 block actions, 32×32 and 16×16
+integer matrices mod 2^192 — `f1`'s is also in the repo).
+
+## STATE 2026-08-31 (superseded by 09-01 above)
 
 Session work in progress; narrative through **D31** in `DECISIONS.md`.
 

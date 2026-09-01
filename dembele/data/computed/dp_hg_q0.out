@@ -1,0 +1,25 @@
+HG|level norm 2401, operator T_31, precision 2^192
+HG|banked level-1 T_31 loaded
+HG|level-1 deg-16 factor: residual factor degrees [ 8, 8 ]
+HG|banked T_31 loaded: 109241 x 109241, 3494618 nonzeros
+HG|residual multiplicities (given): [ 4, 2 ]
+HG|=== factor 1 (deg 8, mult 4): block dim 32
+HG|  P = f(Tbar) dense [120.230 s]
+HG|  rank P^1 = 109225 (kernel 16, want 32) [1289.030 s]
+HG|  rank P^2 = 109209 (kernel 32, want 32) [1177.080 s]
+HG|  V-projector built [1329.040 s]
+HG|  lifted block to 2^192 [15818.270 s]
+HG|  CHECK block T-stable mod 2^192: true
+HG|  block charpoly degree 32
+HG|  CHECK cp_m divisible by u^2 (old part): true ; new-part degree 16
+HG|=== factor 2 (deg 8, mult 2): block dim 16
+HG|  P = f(Tbar) dense [125.220 s]
+HG|  rank P^1 = 109225 (kernel 16, want 16) [1192.370 s]
+HG|  V-projector built [1290.400 s]
+HG|  lifted block to 2^192 [8081.500 s]
+HG|  CHECK block T-stable mod 2^192: true
+HG|  block charpoly degree 16
+HG|  CHECK cp_m divisible by u^2 (old part): true ; new-part degree 0
+HG|candidate global factors (balanced lifts, Deligne bound test):
+HG|  h_f1: degree 16, max |coeff| ~2^190, bound ~2^71, GLOBAL: false
+HG|done
