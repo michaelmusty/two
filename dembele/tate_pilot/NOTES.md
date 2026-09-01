@@ -21,6 +21,23 @@
   level 31 = {1,3}, ulcm 96, g 32 — note `ulcm/g = 3` matches D31's level-31
   reciprocal constant.
 
+## 2026-09-01, later: monodromy layer GROUND-TRUTHED over Q
+
+`overq_data.sage` + `overq_monodromy2.sage`: for (D,p) in (2,13), (2,7),
+(3,5), (5,11) — Brandt eigensystems match the conductor-Dp curves; T_ell is
+self-adjoint under diag(stabs mod ±1); and on SIX curve classes the rule
+
+    v(q_of-the-CD-optimal-curve) = <v,v>_stab / 2
+
+holds exactly (26a→3=6/2, 26b→7=14/2, 14a→3, 15a→2, 55a→2), each time
+selecting an existing member of the isogeny class. The /2 is uniform (holds
+with all stabilizers 1), so it is a normalization of the edge lengths, not a
+stabilizer effect — conceptual derivation deferred, empirical rule
+established. CONSEQUENCE for phase 1 over F: read ord(q_E) as
+<v,v>_stab / 2 there too; the 56 outputs should be even (check on landing).
+Also: conductor 22 has no elliptic curve and BrandtModule(2,11) is
+Eisenstein-only — consistency freebie.
+
 ## Open items (ordered)
 
 1. 56 results: five (ord q_E, U-sign, a_127) triples.  [running]
