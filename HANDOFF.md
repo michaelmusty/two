@@ -1,6 +1,35 @@
 # Session handoff
 
-## STATE 2026-09-01 (session close) — read this first
+## STATE 2026-09-01 (second session) — read this first
+
+**Lemma B is proved for cyclic 2-groups** (`writeup/lemma-B-cyclic.md`, D35).
+Method: coinvariants of the relation module via Hopf's formula; general formula
+`dim H_1(X,F_2)_G = 2 + d(M(G)) − r` with `r ≤ 3` the rank of the three puncture
+classes. Checks in `lemmaB/`. Dembélé front end unchanged (no candidate; see
+below). **Next:** (1) `d(M(G)) = 0` groups (`Q_{2^m}`, `SD_{2^m}`) — show `r ≥ 1`;
+(2) tabulate `r` vs `d(M(G))` across the census to isolate the genuinely glued
+cases; (3) optional Lean formalization of the proposition (Hopf + Nakayama).
+
+**Dembélé front end — one unpriced door found in the 09-01 stock-take review
+(NOT started, user to decide):** level raising at the prime `𝔭` above 2 itself.
+The gate-1 scan started at norm 31 (its congruence assumed odd norm) and never
+considered `𝔭`. Facts: the algebra ramified at `𝔭` + 7 real places is admissible,
+so a Gal(F/Q)-stable Shimura curve `X_𝔭` of discriminant `𝔭`, level 1 exists;
+its 𝔭-adic CD uniformization uses our definite disc-1 order on the 3-regular
+tree (residue field F₂); positions ~174, lattice ~58-dim, so every q0-route
+cost drops by 3–6 orders of magnitude and the D34 one-pass lift applies as is.
+Obstacle: Ribet's criterion at `𝔭` would need `ā_𝔭 = 1`, but
+`11_hecke_fingerprints.m` gives charpoly `(t²+t+1)^8` for `T_𝔭` mod 2 on the
+16-block, i.e. `ā_𝔭 = ω`; the criterion is not a theorem at `𝔭 | 2` with
+`e = 8`, so the question is a Serre-weight/multiplicity one at `𝔭`. **Decisive
+cheap test:** level-`𝔭` Brandt module (~174-dim), `T_31` on it, check whether
+the two degree-8 mod-2 factors divide the charpoly of the `𝔭`-new part. Hours
+locally. If it fails at level `𝔭`, conductor `𝔭^k` (supercuspidal at `𝔭`) is
+the same family with level structure. Second-tier: extend the 2-power-level
+scan over `Q(ζ₁₆)⁺` past LMFDB's range for a residue-field-F₁₆ hit (check
+Moon–Taguchi-type nonexistence first).
+
+## STATE 2026-09-01 (first session close)
 
 Narrative through **D33** in `DECISIONS.md`.
 

@@ -732,6 +732,28 @@ on the original goal; the standalone is not pursued. D33's "no escape
 identified" is hereby refined to "escape identified, priced, and out of
 scope for the goal." The level-raising/CD arc remains closed.
 
+**D35 (2026-09-01). Dembélé front end has no live candidate (D32–D34); the
+session moved to Lemma B per the handoff, and step (a) of the attack plan is
+now a theorem: Lemma B holds for every cyclic 2-group.** Proof
+(`writeup/lemma-B-cyclic.md`): coinvariants of the relation module are
+`(N/[F,N]) ⊗ F_2`, which by Hopf's formula is an extension of `L/2L` (`L` the
+index-`|G^{ab}|` lattice in `Z²`) by `M(G)/2`; the three puncture classes map to
+`(e_0,0), (0,e_1), (e_∞,e_∞)`; for cyclic `G` the multiplier vanishes and
+`(n,0) ∉ 2L` when `a` is odd, so `dim H_1(X,F_2)_G = 1`, and a module with
+1-dimensional top over the local ring `F_2[G]` is cyclic hence indecomposable.
+By-product: the general **coinvariant formula**
+`dim H_1(X,F_2)_G = 2 + d(M(G)) − r`, `r ≤ 3` = rank of the puncture classes,
+which explains the census socle dimensions (up to 3) structurally and shows
+the socle/top criterion can only work when `d(M(G)) ≤ 2`. Numerics:
+`lemmaB/cyclic_check.sage` (930 cyclic triples, `n ≤ 32`, all `dim M_G = 1`),
+`lemmaB/coinv_formula_check.sage`. *Alternatives:* invent a new Dembélé
+front end with no candidate (declined — nothing on the table, see
+stocktake §1–2); Lean-formalize now (deferred: the topological
+identification of the module is outside Mathlib, the algebra is short).
+*Next:* `d(M(G)) = 0` groups (generalized quaternion, semidihedral) via
+`r ≥ 1`; tabulate `r` vs `d(M(G))` over the census to isolate the genuinely
+glued cases.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the

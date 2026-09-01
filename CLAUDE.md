@@ -38,15 +38,17 @@ explicit. Full argument in **`writeup/main-result.md`**. In brief:
 | Indecomposable ⟹ solvable (Lemma A) | **proved + Lean-formalized** |
 | pro-2: `J[2]` controls `J[2^∞]` | standard |
 | non-Galois ⟹ Galois-closure subquotient | rigorous (boundary term to tidy) |
-| `J[2]` indecomposable (Lemma B) | **OPEN**; verified `\|G\| ≤ 128` |
+| `J[2]` indecomposable (Lemma B) | **OPEN** in general; **PROVED for cyclic `G`** (`writeup/lemma-B-cyclic.md`); verified `\|G\| ≤ 128` |
 
 ## The one open problem (Lemma B)
 
 Prove `H¹(X,F₂)` is an indecomposable `F₂[G]`-module for 2-group Belyi maps. Full attack
 plan in **`writeup/lemma-B-open-problem.md`**: Gruenberg relation-module framework
 `0 → H¹(X°,F₂) → F₂[G]² → I_G → 0` + puncture quotient; simple socle AND top already ruled
-out (socle dim reaches 3; self-dual). **Start with cyclic `G`** (reduces to an `F₂[G]`-cyclic
-check over the uniserial ring `F₂[t]/(t^{2^k})`). Highest-value experiment: find where
+out (socle dim reaches 3; self-dual). **Cyclic `G` is DONE** (`writeup/lemma-B-cyclic.md`:
+Hopf-formula coinvariant count; general formula `dim M_G = 2 + d(M(G)) − r`). Next: the
+`d(M(G)) = 0` groups (quaternion, semidihedral), then tabulate `r` vs `d(M(G))` over the
+census (`lemmaB/`). Highest-value experiment: find where
 indecomposability *first fails* (non-2-generated? positive-genus base?) to pin the minimal
 hypothesis.
 

@@ -3,7 +3,9 @@
 This is the sole remaining gap in the negative resolution of Musty Q1.2.5 (see
 `writeup/main-result.md`). It is a problem in the **modular representation theory of finite
 2-groups** — specifically about a distinguished quotient of the Gruenberg relation module.
-Overwhelming computational evidence (2008/2008 cases, `|G| ≤ 128`); no proof yet.
+Overwhelming computational evidence (2008/2008 cases, `|G| ≤ 128`). **Proved for cyclic `G`
+(2026-09-01): see `lemma-B-cyclic.md`**, which also gives the general coinvariant formula
+`dim H_1(X,F_2)_G = 2 + d(M(G)) − r`. Open for noncyclic `G`.
 
 ---
 
