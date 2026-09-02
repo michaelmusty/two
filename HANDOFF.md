@@ -10,8 +10,20 @@ below). **Next:** (1) `d(M(G)) = 0` groups (`Q_{2^m}`, `SD_{2^m}`) — show `r �
 (2) tabulate `r` vs `d(M(G))` across the census to isolate the genuinely glued
 cases; (3) optional Lean formalization of the proposition (Hopf + Nakayama).
 
-**Dembélé front end — one unpriced door found in the 09-01 stock-take review
-(NOT started, user to decide):** level raising at the prime `𝔭` above 2 itself.
+**Dembélé front end — the norm-2 door is now CLOSED (D36, 2026-09-02).** Level
+raising at the prime `𝔭 | 2` (conductor `𝔭¹`, Steinberg) was tested directly
+(`57_levelraise_p2.m`, `dembele/data/computed/levelraise_p2.out`): the `𝔭`-new
+part carries no copy of `f`'s residual system (mult 0 over the old baseline; the
+new part is residue-field F₁₆, not F₂₅₆). Reason: Steinberg raising at `𝔭` needs
+`ā_𝔭 = 1`, but `ā_𝔭 = ω` (cube root of 1). Only conductor `𝔭^k`, k≥2
+(supercuspidal) remains untested on this door — larger, murkier, not an
+afternoon. The two paper-math holes that survive the whole arc (independent of
+the auxiliary prime): **(1)** does `λ`-torsion localize in the CD uniformization
+(→ `d_g > 16` stops mattering, D32 option b); **(2)** recognize a smaller-height
+invariant than the deg-257 polynomial (→ attacks `M_rec ~ 10⁴`, D33). Original
+note below, superseded.
+
+**[SUPERSEDED] level raising at the prime `𝔭` above 2 itself.**
 The gate-1 scan started at norm 31 (its congruence assumed odd norm) and never
 considered `𝔭`. Facts: the algebra ramified at `𝔭` + 7 real places is admissible,
 so a Gal(F/Q)-stable Shimura curve `X_𝔭` of discriminant `𝔭`, level 1 exists;

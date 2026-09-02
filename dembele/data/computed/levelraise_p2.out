@@ -1,0 +1,43 @@
+R57|level1 T31,T2 built [1002.810 s] raw dim 58
+R57|g16bar(31) = zz^16 + zz^14 + zz^13 + zz^12 + zz^11 + zz^9 + zz^8 + zz^7 + zz^6 + zz^4 + zz^2 + zz + 1
+R57|charpoly T_p2 on 16-block: z^16 - 8*z^15 + 20*z^14 - 70*z^12 + 56*z^11 + 112*z^10 - 120*z^9 - 125*z^8 + 120*z^7 + 112*z^6 - 56*z^5 - 70*z^4 + 20*z^2 + 8*z + 1
+R57|... mod 2: [
+<zz^2 + zz + 1, 8>
+]
+R57|level1 T97 built [3282.780 s]
+R57|g16bar(97) = zz^16 + zz^14 + zz^13 + zz^12 + zz^11 + zz^9 + zz^7 + zz^6 + zz^2 + zz + 1 (irreducible false)
+R57|level p2 cuspidal dim 154 [0.530 s]
+R57|level p2 T31 built, raw dim 155 [300.980 s]
+R57|WARNING cp1_31^2 does not divide cp_31; gcd degree 115
+R57|p2-new charpoly(T31) degree 40
+R57|p2-new factor degrees over Q: [ <4, 1>, <4, 1>, <4, 1>, <4, 1>, <24, 1> ]
+R57|p2-new charpoly(T31) mod 2 factors: [
+<zz^4 + zz + 1, 5>,
+<zz^4 + zz^3 + zz^2 + zz + 1, 5>
+]
+R57|multiplicity of g16bar in cp_31: total 2, old 2, new 0
+R57|ker g16bar(T31) mod 2: level1 dim 16, level p2 dim 32 (old expectation 32)
+R57|level p2 U_p2 built [13.070 s]
+R57|U_p2 on V: charpoly [
+<zz, 16>,
+<zz^2 + zz + 1, 8>
+]
+R57|W_new (sum of T31-kernels of new factors) dim 40
+R57|level p2 T97 built [8537.340 s]
+R57|multiplicity of g16bar97 in cp_97: total 2, old 2
+
+In file "dembele/magma/57_levelraise_p2.m", line 119, column 23:
+>> K31 := Kernel(Evaluate(g16bar, T31n2));
+                         ^
+Runtime error in 'Evaluate': Bad argument types
+Argument types given: RngUPolElt[FldFin], ModMatFldElt[FldFin]
+
+
+// --- run terminated : the confirmatory joint-lattice block above hit a
+// matrix-coercion bug (fixed 2026-09-02: MA! coercion) AFTER the decisive
+// lines had printed. VERDICT (from the two multiplicity lines, both primes):
+//   g16bar  in cp(T31) at level p2: total 2, old 2, NEW 0
+//   g16bar97 in cp(T97) at level p2: total 2, old 2, NEW 0
+// => NO level raising at p2. rho-bar_f is entirely oldform at level p2; the
+// p2-new part is residue-field F16 ((t^4+t+1)^5 (t^4+t^3+t^2+t+1)^5), not
+// F256. Steinberg raising needs a-bar_p2 = 1 but a-bar_p2 = omega. (D36)

@@ -754,6 +754,35 @@ identification of the module is outside Mathlib, the algebra is short).
 `r ≥ 1`; tabulate `r` vs `d(M(G))` over the census to isolate the genuinely
 glued cases.
 
+**D36 (2026-09-02). The norm-2 level-raising door is closed by direct
+computation: no Steinberg newform at the prime `𝔭 | 2` carries Dembélé's
+residual system.** The stock-take review found one unpriced door — level
+raising at `𝔭` itself (the gate-1 scan assumed odd norm and skipped it), where
+every downstream cost collapses (level-`𝔭` cuspidal dim **154** vs 109240 at
+q0, tree 3-regular, D34 one-pass lift applies). `57_levelraise_p2.m`
+(`dembele/data/computed/levelraise_p2.out`) computes the level-`𝔭` Brandt
+module and settles it: the residual invariant `g16bar` (the degree-16 mod-2
+factor of `cp(T_31)` at level 1) divides `cp(T_31)` at level `𝔭` with
+multiplicity **2 = old baseline (2), new part 0**; `ker g16bar(T_31)` mod 2
+has dim 32 = 2×(level-1 dim 16), entirely oldforms. Sharper: the `𝔭`-new part
+(dim 40) has `cp(T_31)` mod 2 `= (t⁴+t+1)⁵·(t⁴+t³+t²+t+1)⁵` — the two
+irreducible **quartics** over F₂, i.e. residue field **F₁₆**, not F₂₅₆; so
+`f`'s F₂₅₆ system cannot occur in the `𝔭`-new part for a residue-field reason.
+*Why, in one line:* Steinberg level raising at 𝔮 needs `ā_𝔮 = ±(N𝔮+1) mod λ`;
+at `𝔭`, `N𝔭+1 = 3 ≡ 1 mod 2`, so it needs `ā_𝔭 = 1`, but the level-1
+fingerprint gives `cp(T_𝔭)|₁₆-block ≡ (z²+z+1)⁸ mod 2`, i.e. `ā_𝔭 = ω` (a
+cube root of unity) `≠ 1`. The computation confirms the eigenvalue prediction
+in the `ℓ = 2` corner where it is not a theorem. *Closed:* the cheap
+(conductor `𝔭¹`, Steinberg) norm-2 door — the obstruction is intrinsic to `ω`.
+*NOT touched:* conductor `𝔭^k`, k≥2 (supercuspidal at `𝔭`) — different
+congruence, larger space, murkier theory; a real computation, not an
+afternoon. *Unaffected:* the two paper-math holes from the arc review — does
+`λ`-torsion localize in the CD uniformization (would make `d_g > 16`
+irrelevant, D32 option (b)), and recognizing a smaller-height invariant than
+the degree-257 polynomial (attacks D33's `M_rec ~ 10⁴`); neither depends on
+the auxiliary prime. *Cost:* ~1 h real compute (laptop slept overnight,
+inflating wall clock).
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
