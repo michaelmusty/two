@@ -12,10 +12,15 @@ cases; (3) optional Lean formalization of the proposition (Hopf + Nakayama).
 
 **Dembélé front end — the norm-2 door is now CLOSED (D36, 2026-09-02).** Level
 raising at the prime `𝔭 | 2` (conductor `𝔭¹`, Steinberg) was tested directly
-(`57_levelraise_p2.m`, `dembele/data/computed/levelraise_p2.out`): the `𝔭`-new
-part carries no copy of `f`'s residual system (mult 0 over the old baseline; the
-new part is residue-field F₁₆, not F₂₅₆). Reason: Steinberg raising at `𝔭` needs
-`ā_𝔭 = 1`, but `ā_𝔭 = ω` (cube root of 1). Only conductor `𝔭^k`, k≥2
+(`57_levelraise_p2.m`, `dembele/data/computed/levelraise_p2.out`): on the
+level-`𝔭` space (cuspidal dim **154**, raw 155) the residual invariant has
+multiplicity **2 = oldform baseline** at BOTH 31 and 97 (excess 0), so the
+`𝔭`-new part (dim 40) carries no copy of `f`'s residual system; that new part is
+residue-field **F₁₆** (`cp mod 2 = (t⁴+t+1)⁵(t⁴+t³+t²+t+1)⁵`), not F₂₅₆. Reason:
+Steinberg raising at `𝔭` needs `ā_𝔭 = 1`, but `ā_𝔭 = ω` (cube root of 1). NB the
+script's confirmatory joint-lattice tail hit a matrix-coercion bug (fixed 09-02,
+`MA!` coercion) AFTER both verdict lines printed; the answer rests on the two
+multiplicity lines, not that block — no rerun needed. Only conductor `𝔭^k`, k≥2
 (supercuspidal) remains untested on this door — larger, murkier, not an
 afternoon. The two paper-math holes that survive the whole arc (independent of
 the auxiliary prime): **(1)** does `λ`-torsion localize in the CD uniformization
