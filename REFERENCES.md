@@ -116,7 +116,13 @@ happens.
   abelian varieties with multiplicative reduction. Why the Eisenstein
   q-expansion can be evaluated on q₀-adic periods at all: the period generators
   are topologically nilpotent, exactly as for a Tate curve
-  (`gate5-padic-eisenstein.md`).
+  (`gate5-padic-eisenstein.md`). Also the source of the Kummer description
+  of torsion, `0 → Hom(X/n, μ_n) → J[n] → Λ/nΛ → 0`, used to answer the
+  `λ`-torsion localization question negatively-for-the-goal
+  (`lambda-torsion-localization.md`, D38): torsion localizes as a *local*
+  Galois module, but the uniformization coordinates of torsion points are
+  transcendental (`q^{1/2}`, not `j(q)`), so no algebraic data leaves `q₀`
+  without functions on the full `d_g`-dimensional variety.
 - **I. Cerednik; V. Drinfeld**. **[theory]** p-adic uniformization of Shimura
   curves with a finite disc prime — the pivot that eliminates the genus wall
   (`levelraise-cd-plan.md`).

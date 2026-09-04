@@ -12,9 +12,19 @@ quaternion; `End/rad = F_2` except `Q_8` (`F_4`). Details: `writeup/lemma-B-cycl
 Belyi side is **parked** here by user decision; if resumed, the next experiment is
 whether summand socles are always spanned by distinct fibre classes (§4.6).
 
-**Dembélé goal — current work:** paper-math hole (1): does `λ`-torsion localize in the
-Cerednik–Drinfeld uniformization (would make `d_g > 16` irrelevant and reopen the CD route
-closed at D32)? Framing and outcome to be recorded below / in DECISIONS as it develops.
+**Dembélé goal — hole (1) answered (D38, `lambda-torsion-localization.md`):** `λ`-torsion
+DOES localize in the CD uniformization — as a *local* Galois module at `q₀`, determined by
+the banked 2-adic block plus 64 period values mod squares — but this is local data and the
+torsion points' uniformization coordinates are transcendental; reaching the global field
+needs algebraic functions on the full `d_g`-dimensional `B_g`. So D32 option (b) is closed
+and hole (1) collapses into hole (2). **The CD arc now has no conceptual door left.** What
+remains for the goal: (i) the auxiliary-prime lottery (resume 3 lanes on chatelet; path
+probability `~10⁻³`; instructions in the 08-27 section), (ii) the untested supercuspidal
+conductor-`𝔭^k` family at the prime above 2 (D36) — a real computation and it inherits a
+`d_g` question, (iii) hole (2): an algebraic invariant of `K_Dembélé` computable without a
+`d_g`-dimensional variety — no candidate; this is the 2026-08-04 front-end problem
+restated. Free consistency check for any future `q₀` run: the Kummer class must be
+unramified (even monodromy-pairing valuations on the `f1`-new block).
 
 ## STATE 2026-09-01 (second session)
 

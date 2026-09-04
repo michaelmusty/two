@@ -816,6 +816,38 @@ uniformization — since a positive answer reopens the CD route closed by D32.
 *Cost:* ~1 h compute at `≤ 32`, ~75 min at 64 (once the harness's duplicate
 launches were killed).
 
+**D38 (2026-09-04). Paper-math hole (1) — "does `λ`-torsion localize in the
+CD uniformization?" — is answered: yes, and it does not reopen the route.**
+`dembele/certificates/lambda-torsion-localization.md`. Kummer theory for the
+totally degenerate `B_g = T_g/Λ_g` over `F_{q₀}` gives
+`0 → Hom(X_g/λ, μ₂) → B_g[λ] → Λ_g/λΛ_g → 0` with trivial local Galois action
+on both ends and extension class = the `λ`-block of the period pairing modulo
+squares — an `8×8` matrix over `F₂` with values in `F_{q₀}^×/(F_{q₀}^×)² =
+(Z/2)²`. So the `G_{F_{q₀}}`-module `B_g[λ]` is determined by the banked
+rank-16 2-adic block plus 64 period values mod squares (cheaper than the
+stocktake's budget). *Why it is not a lever:* this is local data at `q₀`; the
+global field `F(B_g[λ]) = K_Dembélé` can only be reached from it through
+algebraic functions on `B_g` (theta series over `Λ_g`, rank `d_g`), because the
+uniformization coordinates `√u(l,x)` of torsion points are transcendental (as
+`q^{1/2}` is for a Tate curve) — so stocktake question 2 ("`λ`-division + LLL")
+has no algebraic target, and the `λ`-block is not the 2-torsion of any
+16-dimensional variety (that would be a degree-16 Hecke orbit, excluded by
+D32 and heuristically everywhere). Local data at one prime, or at all primes,
+gives only the shape of `K` (Frobenius data already known from `a_p mod λ`).
+Hence `d_g` remains the operative parameter of gate 4; D32 option (b) is
+closed; hole (1) collapses into hole (2) (an algebraic invariant of `K`
+computable without a `d_g`-dimensional variety — no candidate). *Byproduct:*
+a free consistency check for any future `q₀` run — `ρ̄_f` has level 1, so the
+Kummer class must be unramified: the monodromy pairing on the `f1`-new block
+must have even valuations mod 2. *Alternatives considered:* base change
+(never creates Steinberg places, so no Shimura curve for `A_f`); the level-1
+`A_f` itself (good reduction everywhere over `F`, no multiplicative
+uniformization anywhere — only the killed archimedean routes). *State of the
+goal after D38:* the CD arc has no conceptual door left; what remains is the
+auxiliary-prime lottery (`~10⁻³`), the untested supercuspidal `𝔭^k` family
+(D36; also subject to a `d_g` question), and the front-end problem itself.
+*Cost:* paper only.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
