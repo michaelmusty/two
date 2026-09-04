@@ -88,25 +88,38 @@ Aristotle; to re-verify run `lake build` + `#print axioms`.)
 
 ## 4. Lemma B — the geometric input (open; overwhelmingly supported)
 
-> **Lemma B (conjecture).** For every 2-group Belyi map, `H¹(X, F₂)` is an indecomposable
-> `F₂[G]`-module.
+> **Lemma B (conjecture; corrected 2026-09-03).** For every 2-group Belyi map, `H¹(X, F₂)`
+> is a **multiplicity-free** `F₂[G]`-module: no indecomposable summand occurs twice.
+> Equivalently `End_{F₂[G]}(H¹(X,F₂))/rad` is commutative (a product of finite fields).
+
+**Correction.** Earlier versions of this document stated Lemma B as "`H¹(X,F₂)` is
+indecomposable". That is **false**: for the generalized quaternion groups `Q_{2^m}`,
+`m ≥ 4`, `J[2] = A ⊕ B` with `A ≇ B` (`Q_16, Q_32, Q_64` in range; details and three
+independent confirmations in `lemma-B-cyclic.md` §4). The scans below computed the maximal
+multiplicity of an indecomposable summand (`max_multiplicity == 1`), i.e. exactly the
+multiplicity-free property, which is what Lemma A needs — the tally stands, its label was
+wrong. Lemma A's proof goes through verbatim for multiplicity-free `M` (`E/J` is then a
+product of finite fields, with abelian unit group); the Lean file formalizes only the
+local case, and the product-of-fields extension is a one-line addition not yet formalized.
 
 **Evidence:** exhaustive computation over all genus-`≥ 2` triples for `|G| ≤ 128`, the last
 computationally feasible order (only 2-generated 2-groups occur, since the monodromy is a
 quotient of `F₂`):
 
-| `\|G\|` | genus-≥2 triples | indecomposable |
-|---|---|---|
-| 16 | 18 | 18 |
-| 32 | 82 | 82 |
-| 64 | 370 | 370 |
-| 128 | 1538 | 1538 |
-| **total** | **2008** | **2008 (100%)** |
+| `\|G\|` | genus-≥2 triples | multiplicity-free | decomposable (non-isomorphic summands) |
+|---|---|---|---|
+| 16 | 18 | 18 | 3 (`Q_16`) |
+| 32 | 82 | 82 | 3 (`Q_32`) |
+| 64 | 370 | 370 | 3 (`Q_64`) |
+| 128 | 1538 | 1538 | not tabulated (expect `Q_128`) |
+| **total** | **2008** | **2008 (100%)** | |
 
-Not a single decomposable `J[2]`, hence not a single nonsolvable centralizer, anywhere in
-range. (Computation: `torsion_module.sage` for the module, MeatAxe
-`MTX.Indecomposition`/`MTX.IsIndecomposable` for the multiplicity screen in
-`torsion_shard.sage`; cross-checked on the hardest case `[32,5]` quo 1, genus 9.)
+Not a single `J[2]` with a repeated summand, hence not a single nonsolvable centralizer,
+anywhere in range. (Computation: `torsion_module.sage` for the module, MeatAxe
+`MTX.Indecomposition` + `MTX.IsomorphismModules` for the multiplicity screen in
+`torsion_shard.sage`; the indecomposable/decomposable split and `End/rad` residue fields
+for `|G| ≤ 64` are in `lemmaB/census_top.sage` outputs. The only non-`F₂` residue field is
+`Q_8` (`End/rad = F₄`).)
 
 Lemma B is the sole remaining gap. Its proof strategy is the subject of the companion
 document `writeup/lemma-B-open-problem.md`.
@@ -155,10 +168,10 @@ argument reduce the whole statement to Lemma B. Lemma B holds for all `|G| ≤ 1
 | Component | Status |
 |---|---|
 | Frobenius `F₂[G]`-linear ⟹ image ⊆ centralizer | standard (Beckmann + Néron–Ogg–Shafarevich) |
-| Indecomposable ⟹ solvable centralizer (Lemma A) | **proved, formalized in Lean** |
+| Indecomposable ⟹ solvable centralizer (Lemma A) | **proved, formalized in Lean**; multiplicity-free ⟹ solvable is the same proof, not yet in Lean |
 | Pro-2 reduction: `J[2]` controls `J[2^∞]` | standard |
 | Non-Galois ⟹ Galois-closure subquotient | rigorous (boundary term needs clean statement) |
-| `J[2]` indecomposable (Lemma B) | **open**; verified `\|G\| ≤ 128` (2008/2008) |
+| `J[2]` multiplicity-free (Lemma B, corrected) | **open**; verified `\|G\| ≤ 128` (2008/2008); **"indecomposable" is false** (`Q_{2^m}`, `m ≥ 4`); proved for cyclic `G` |
 
 The one mathematical frontier is Lemma B. See the companion document.
 
@@ -168,8 +181,10 @@ The one mathematical frontier is Lemma B. See the companion document.
 
 - `torsion_module.sage` — `analyze(G,s0,s1)`: builds `H¹(X,F₂)` as `F₂[G]`-module; exact
   centralizer solvability via commutant + Wedderburn.
-- `torsion_fast.sage`, `torsion_shard.sage` — MeatAxe multiplicity screen (indecomposability
-  test), 80× faster; the order-16/32/64/128 scans above.
+- `torsion_fast.sage`, `torsion_shard.sage` — MeatAxe multiplicity screen (multiplicity-free
+  test, NOT an indecomposability test), 80× faster; the order-16/32/64/128 scans above.
+- `lemmaB/census_top.sage` — per-triple `dim M_G`, `r`, indecomposability, `End/rad`
+  (`|G| ≤ 64`); `lemmaB/quaternion_*.sage` — the `Q_{2^m}` decomposition.
 - `belyi/` — equation toolkit (verifier, cyclic builder, tower construction).
 - `belyi_jl/` — Julia/Hecke tower + radicand solver (validated to genus 5).
 - `aristotle_solvable/FiniteLocalSolvable.lean` — the Lean proof of Lemma A.

@@ -1,4 +1,12 @@
-# Lemma B: proving `H¹(X, F₂)` is indecomposable for 2-group Belyi maps
+# Lemma B: proving `H¹(X, F₂)` is multiplicity-free for 2-group Belyi maps
+
+**Correction (2026-09-03).** The statement below ("indecomposable") is **false**: for
+`G = Q_{2^m}`, `m ≥ 4`, `H¹(X,F₂) = A ⊕ B` with `A ≇ B`. The correct target — the one the
+census verified and the one Lemma A needs — is **multiplicity-freeness** (no repeated
+indecomposable summand; `End/rad` commutative). See `lemma-B-cyclic.md` §4 for the
+counterexample, the corrected statements B′/B″, and the census tables. The framework in
+§2 below is still the right one; read "indecomposable" as "multiplicity-free" throughout,
+and note §3's socle/top remarks now have a structural explanation (the coinvariant formula).
 
 This is the sole remaining gap in the negative resolution of Musty Q1.2.5 (see
 `writeup/main-result.md`). It is a problem in the **modular representation theory of finite

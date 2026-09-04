@@ -24,9 +24,12 @@ explicit. Full argument in **`writeup/main-result.md`**. In brief:
 - Frobenius acts `F₂[G]`-linearly on `J[2] = H¹(X,F₂)`, so the arithmetic image lies in
   `Aut_{F₂[G]}(J[2])` (the centralizer of the deck group).
 - **Lemma A** (indecomposable module ⟹ solvable automorphism group) — **PROVED, formalized
-  in Lean 4**: `aristotle_solvable/FiniteLocalSolvable.lean` (0 sorry/axiom).
-- **Lemma B** (`J[2]` is always indecomposable) — **OPEN**, but verified for ALL genus-≥2
-  triples with `|G| ≤ 128` (**2008/2008**, no exceptions). This is the one remaining gap.
+  in Lean 4**: `aristotle_solvable/FiniteLocalSolvable.lean` (0 sorry/axiom). The
+  multiplicity-free version (End/rad a product of fields ⟹ solvable) is the same proof, not in Lean.
+- **Lemma B** (`J[2]` is always **multiplicity-free** — no repeated indecomposable summand) —
+  **OPEN**, verified for ALL genus-≥2 triples with `|G| ≤ 128` (**2008/2008**). **CORRECTED
+  2026-09-03:** the older phrasing "indecomposable" is FALSE — `Q_{2^m}`, `m ≥ 4`, gives
+  `J[2] = A ⊕ B`, `A ≇ B` (`writeup/lemma-B-cyclic.md` §4). This is the one remaining gap.
 - Non-Galois covers are controlled by their Galois closure (a Galois 2-group Belyi map), so
   they are conditionally blocked with the Galois route.
 
@@ -38,19 +41,21 @@ explicit. Full argument in **`writeup/main-result.md`**. In brief:
 | Indecomposable ⟹ solvable (Lemma A) | **proved + Lean-formalized** |
 | pro-2: `J[2]` controls `J[2^∞]` | standard |
 | non-Galois ⟹ Galois-closure subquotient | rigorous (boundary term to tidy) |
-| `J[2]` indecomposable (Lemma B) | **OPEN** in general; **PROVED for cyclic `G`** (`writeup/lemma-B-cyclic.md`); verified `\|G\| ≤ 128` |
+| `J[2]` multiplicity-free (Lemma B, corrected) | **OPEN** in general; **PROVED for cyclic `G`**; "indecomposable" is FALSE for `Q_{2^m}`, `m ≥ 4`; multiplicity-free verified `\|G\| ≤ 128` |
 
 ## The one open problem (Lemma B)
 
-Prove `H¹(X,F₂)` is an indecomposable `F₂[G]`-module for 2-group Belyi maps. Full attack
-plan in **`writeup/lemma-B-open-problem.md`**: Gruenberg relation-module framework
-`0 → H¹(X°,F₂) → F₂[G]² → I_G → 0` + puncture quotient; simple socle AND top already ruled
-out (socle dim reaches 3; self-dual). **Cyclic `G` is DONE** (`writeup/lemma-B-cyclic.md`:
-Hopf-formula coinvariant count; general formula `dim M_G = 2 + d(M(G)) − r`). Next: the
-`d(M(G)) = 0` groups (quaternion, semidihedral), then tabulate `r` vs `d(M(G))` over the
-census (`lemmaB/`). Highest-value experiment: find where
-indecomposability *first fails* (non-2-generated? positive-genus base?) to pin the minimal
-hypothesis.
+Prove `H¹(X,F₂)` is a **multiplicity-free** `F₂[G]`-module for 2-group Belyi maps. Full
+attack plan in **`writeup/lemma-B-open-problem.md`**: Gruenberg relation-module framework
+`0 → H¹(X°,F₂) → F₂[G]² → I_G → 0` + puncture quotient. **Cyclic `G` is DONE**
+(`writeup/lemma-B-cyclic.md`: Hopf-formula coinvariant count; general formula
+`dim M_G = 2 + d(M(G)) − r`, `r` = rank of `res: H²(G,F₂) → ⊕_b H²(⟨σ_b⟩,F₂)`). **Census
+`|G| ≤ 64` DONE** (`lemmaB/census_top.sage`, 707 triples): `J[2]` is indecomposable for
+every group except `Q_{2^m}`, `m ≥ 4` (two non-isomorphic summands of dim `g`, socles
+spanned by the fibre classes over `0` and `1`); `End/rad = F₂` except `Q_8` (`F₄`). Next:
+test whether summand socles are always spanned by distinct fibre classes (would reduce B′
+to a statement about the three fibre classes in `M^G`); prove B′ for `Q_{2^m}` via the
+hyperelliptic model `y² = x(x^{2g}−1)`.
 
 ## File map
 
@@ -68,8 +73,8 @@ hypothesis.
 - **`aristotle_solvable/FiniteLocalSolvable.lean`** — Lean proof of Lemma A (via Aristotle).
 - **`torsion_module.sage`** — `analyze(G,s0,s1)` builds `H¹(X,F₂)` as `F₂[G]`-module + exact
   centralizer solvability (commutant/Wedderburn). CLI: `scan`, `ng`, `ngr`.
-- **`torsion_fast.sage`, `torsion_shard.sage`** — MeatAxe multiplicity screen (80× faster
-  indecomposability test). `torsion_shard.sage ORDER LO HI` or `... list i1,i2,...` →
+- **`torsion_fast.sage`, `torsion_shard.sage`** — MeatAxe multiplicity-free screen (80× faster
+  multiplicity-free test — not an indecomposability test). `torsion_shard.sage ORDER LO HI` or `... list i1,i2,...` →
   `/tmp/shard_*.csv`. This ran the order-16/32/64/128 scans.
 - **`belyi/`** — equation toolkit: `verify.sage` (M1), `cyclic.sage` (M2), `towers.sage`,
   `groups.sage`, `reconstruct.sage`; **`combinatorial_tower.sage`** (fast group-theoretic
@@ -83,8 +88,11 @@ hypothesis.
 
 - Only **2-generated** 2-groups occur (monodromy = quotient of `F₂ = π₁(P¹∖{0,1,∞})`). At
   order 128 that's 159 of 2313 nonabelian groups — makes scans feasible.
-- MeatAxe `max_multiplicity == 1` ⟺ indecomposable ⟺ (Lemma A) solvable centralizer. A
-  decomposable `J[2]` with a repeated summand would be a prize candidate — none found.
+- MeatAxe `max_multiplicity == 1` ⟺ **multiplicity-free** (NOT indecomposable!) ⟹ solvable
+  centralizer. A `J[2]` with a repeated summand would be a prize candidate — none found.
+  `MTX` functions must be fetched via `libgap.eval("MTX.X")`; attribute access fails.
+  Background jobs launched from the agent shell can get duplicated — check `ps` before
+  trusting a shared output file.
 - Sage's `class_group()` is the AFFINE class group, not `Pic⁰`; `is_square`/relative-tower
   places are unimplemented → the Hecke pivot exists for exactly these gaps.
 - Hecke has no packaged function-field class group; it does have `is_principal` (true
@@ -115,7 +123,7 @@ provisioned on a new machine. Verified versions on the original host (macOS):
 key and the `COCALC_ACCOUNT_API_KEY`, `COCALC_PROJECT_ID`, and `COCALC_BASE` settings used
 by remote Magma. See `remote_magma/CHATELET.md`. `.env` must never be committed.
 
-**Minimum to reproduce the headline result** (the 2008/2008 indecomposability scans): just
+**Minimum to reproduce the headline result** (the 2008/2008 multiplicity-free scans): just
 **SageMath 10.6** — no Julia, Python-venv, PARI, or LMFDB needed. Julia/Hecke is only for the
 equation/tower solver; the Aristotle venv is only for re-running/continuing the Lean proof
 (the proof itself, `aristotle_solvable/FiniteLocalSolvable.lean`, is a static artifact and
@@ -129,5 +137,5 @@ machine* but does not travel. This `CLAUDE.md` + `writeup/` are the portable sub
 
 ```
 sage torsion_shard.sage 64 1 68        # → /tmp/shard_64_1_68.csv ; all maxmult=1
-awk '$1!="#"{print $5}' /tmp/shard_64_*.csv | sort | uniq -c   # → all "1" (indecomposable)
+awk '$1!="#"{print $5}' /tmp/shard_64_*.csv | sort | uniq -c   # → all "1" (multiplicity-free)
 ```

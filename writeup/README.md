@@ -19,10 +19,15 @@ sequel.
   `|G| ≤ 128` (2008/2008 cases). The algebraic core (Lemma A) is formally proved in Lean 4
   (`../aristotle_solvable/FiniteLocalSolvable.lean`).
 
-- **`lemma-B-open-problem.md`** — the sole remaining gap: proving `H¹(X, F₂)` is an
-  indecomposable `F₂[G]`-module. Precise statement, the Gruenberg-relation-module
-  framework, what has been ruled out (simple socle/top), a proof strategy (cyclic case
-  first), the relevant literature, and computational experiments to pursue.
+- **`lemma-B-open-problem.md`** — the sole remaining gap: proving `H¹(X, F₂)` is a
+  **multiplicity-free** `F₂[G]`-module (the original "indecomposable" phrasing is false —
+  `Q_{2^m}`, `m ≥ 4`, splits into two non-isomorphic summands; see `lemma-B-cyclic.md` §4).
+  Precise statement, the Gruenberg-relation-module framework, what has been ruled out, a
+  proof strategy (cyclic case first), the relevant literature, experiments to pursue.
+- **`lemma-B-cyclic.md`** — Lemma B proved for cyclic `G` (as a cyclic-module statement);
+  the coinvariant formula `dim M_G = 2 + d(M(G)) − r` with `r` = rank of restriction
+  `H²(G,F₂) → ⊕_b H²(⟨σ_b⟩,F₂)`; the `|G| ≤ 64` census tables and the quaternion
+  correction (§4).
 
 ## One-paragraph summary
 
@@ -30,8 +35,9 @@ A nonsolvable number field ramified only at 2 **exists** (Dembélé 2009), but i
 explicit object. The thesis hoped to obtain an explicit one as `Q(J[2])` of a 2-group Belyi
 curve. This fails: for such a curve, arithmetic Frobenius acts `F₂[G]`-linearly on
 `J[2] = H¹(X, F₂)`, so the Galois image lies in `Aut_{F₂[G]}(J[2])`; when `J[2]` is
-indecomposable this centralizer is solvable (Lemma A, Lean-verified), forcing `Q(J[2^∞])`
-solvable. `J[2]` is indecomposable in all 2008 feasible cases (Lemma B, conjectural in
-general). The non-Galois version is controlled by its Galois closure and dies with it. Hence
+multiplicity-free (no repeated indecomposable summand) this centralizer is solvable (Lemma
+A, Lean-verified in the indecomposable case), forcing `Q(J[2^∞])` solvable. `J[2]` is
+multiplicity-free in all 2008 feasible cases (Lemma B, conjectural in general; it is
+indecomposable in all but the generalized-quaternion cases). The non-Galois version is controlled by its Galois closure and dies with it. Hence
 the construction provably cannot reach the (existing) field — a negative answer to Q1.2.5
 for the torsion field, contingent only on Lemma B.

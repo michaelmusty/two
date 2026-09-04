@@ -1,6 +1,22 @@
 # Session handoff
 
-## STATE 2026-09-01 (second session) — read this first
+## STATE 2026-09-04 — read this first
+
+**Lemma B corrected (D37).** "`J[2]` indecomposable" is **false**: `Q_{2^m}`, `m ≥ 4`,
+gives `J[2] = A ⊕ B`, `A ≇ B` (`Q_16, Q_32, Q_64` verified three ways). The property the
+2008/2008 scans tested is **multiplicity-free** (`max_multiplicity == 1`), which is what
+the solvability argument needs; all writeups + CLAUDE.md now say so. Census `|G| ≤ 64`
+(`lemmaB/census_top.sage`, 707 triples): formula `dim M_G = 2 + d(M(G)) − r` exact
+everywhere, `r = rank(res: H²(G,F_2) → ⊕_b H²(⟨σ_b⟩,F_2))`; decomposable only for
+quaternion; `End/rad = F_2` except `Q_8` (`F_4`). Details: `writeup/lemma-B-cyclic.md` §4.
+Belyi side is **parked** here by user decision; if resumed, the next experiment is
+whether summand socles are always spanned by distinct fibre classes (§4.6).
+
+**Dembélé goal — current work:** paper-math hole (1): does `λ`-torsion localize in the
+Cerednik–Drinfeld uniformization (would make `d_g > 16` irrelevant and reopen the CD route
+closed at D32)? Framing and outcome to be recorded below / in DECISIONS as it develops.
+
+## STATE 2026-09-01 (second session)
 
 **Lemma B is proved for cyclic 2-groups** (`writeup/lemma-B-cyclic.md`, D35).
 Method: coinvariants of the relation module via Hopf's formula; general formula

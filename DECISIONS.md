@@ -783,6 +783,39 @@ the degree-257 polynomial (attacks D33's `M_rec ~ 10⁴`); neither depends on
 the auxiliary prime. *Cost:* ~1 h real compute (laptop slept overnight,
 inflating wall clock).
 
+**D37 (2026-09-03/04). Lemma B is false as stated and is restated as
+multiplicity-freeness; the census tabulation is done to `|G| ≤ 64`; the
+session then returns to the Dembélé goal.** Following D35's plan, the
+coinvariant formula was tabulated with `r` computed directly from the module
+(`lemmaB/census_top.sage`, 707 Aut-classes of positive-genus triples,
+`|G| ≤ 64`). The formula `dim M_G = 2 + d(M(G)) − r` holds in every case, and
+`r` is identified as the rank of restriction `H²(G,F_2) → ⊕_b H²(⟨σ_b⟩,F_2)`
+(the coinvariant group `V = N/[F,N]N²` is the kernel of the universal
+2-generated central `F_2`-extension, `H² = V^*`, and `res_{⟨σ_b⟩} λ ≠ 0` iff
+`λ([w_b^{e_b}]) ≠ 0`). *The finding:* the same run computed indecomposability
+outright and found `J[2]` **decomposable** for `Q_16, Q_32, Q_64` — two
+non-isomorphic summands of dimension `g` each (`End/rad = F_2 × F_2`), confirmed
+by MeatAxe, by the commutant/Wedderburn computation, and by the explicit
+hyperelliptic model `y² = x(x^{2g}−1)` with `G/z = D_{2g}` on the Weierstrass
+points (`lemmaB/quaternion_*.sage`). For `Q_8`, `End/rad = F_4`. *Root cause of
+the misstatement:* `torsion_fast/shard.sage` test `max_multiplicity == 1`
+(multiplicity-free), which the writeups and CLAUDE.md called "indecomposable";
+the 2008/2008 tally is correct for the property actually tested. *Impact on the
+main result:* none — Lemma A's proof goes through verbatim for multiplicity-free
+`M` (`End/rad` a product of finite fields); the Lean file covers only the local
+case (extension not formalized). *Alternatives:* leave the wording (rejected:
+the claim is false and checkable); try to rescue "indecomposable" by excluding
+quaternion groups (recorded as the refined conjecture B″, verified `≤ 64`, but
+B′ is the honest statement). The handoff's "show `r ≥ 1` for quaternion" was
+already contradicted by §3 of the cyclic writeup (`r = 0`); it is retired.
+Subgroup-determinacy: `M` is determined by the conjugacy classes of the three
+cyclic subgroups in 151/155 bins (4 exceptions at order 64). *Decision (user):*
+commit the correction, then **stop the Belyi side and return to the Dembélé
+goal** on paper-math hole (1) — whether `λ`-torsion localizes in the CD
+uniformization — since a positive answer reopens the CD route closed by D32.
+*Cost:* ~1 h compute at `≤ 32`, ~75 min at 64 (once the harness's duplicate
+launches were killed).
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
