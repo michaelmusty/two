@@ -1,0 +1,118 @@
+R58|level1 T31 built [1084.880 s] raw dim 58
+R58|g16bar(31) = zz^16 + zz^14 + zz^13 + zz^12 + zz^11 + zz^9 + zz^8 + zz^7 + zz^6 + zz^4 + zz^2 + zz + 1 ; matches D36 reference: true
+R58|residual factors f1 = zz^8 + zz^4 + zz^3 + zz + 1 ; f2 = zz^8 + zz^6 + zz^5 + zz^2 + 1
+R58|level1 residual multiplicities in cp1 mod 2: [ 1, 1 ]
+R58|k=1 cuspidal dim 154 raw dim 155 ; T31 built [310.140 s]
+R58|k=1 old-part degree 115 (product of lower new charpolys has degree 116) ; new degree 40 (expected 40)
+R58|k=1 new factor degrees over Q: [ <4, 1>, <4, 1>, <4, 1>, <4, 1>, <24, 1> ]
+R58|k=1 new charpoly(T31) mod 2 factors: [
+<zz^4 + zz + 1, 5>,
+<zz^4 + zz^3 + zz^2 + zz + 1, 5>
+]
+R58|k=1 residual multiplicities [f1,f2]: total [ 2, 2 ], old baseline [ 2, 2 ], NEW [ 0, 0 ]
+R58|k=1 U_p2 built [14.810 s]
+R58|k=1 U_p2 on generalized f1-eigenspace mod 2 (dim 16): charpoly [
+<zz, 8>,
+<zz^2 + zz + 1, 4>
+]
+R58|k=1 U_p2 on generalized f2-eigenspace mod 2 (dim 16): charpoly [
+<zz, 8>,
+<zz^2 + zz + 1, 4>
+]
+R58|k=1 W_new (sum of T31-kernels of new factors) dim 40
+R58|k=1 U_p2 charpoly on W_new (char 0): [
+<z - 1, 16>,
+<z + 1, 24>
+]
+R58|VERDICT|k=1|no copy of rho-bar_f in the p2^1-new part (T31 residual multiplicity)
+R58|k=2 cuspidal dim 299 raw dim 300 ; T31 built [332.910 s]
+R58|k=2 old-part degree 252 (product of lower new charpolys has degree 254) ; new degree 48 (expected 48)
+R58|k=2 new factor degrees over Q: [ <48, 1> ]
+R58|k=2 new charpoly(T31) mod 2 factors: [
+<zz, 32>,
+<zz^8 + zz^4 + zz^3 + zz + 1, 1>,
+<zz^8 + zz^6 + zz^5 + zz^2 + 1, 1>
+]
+R58|k=2 residual multiplicities [f1,f2]: total [ 4, 4 ], old baseline [ 3, 3 ], NEW [ 1, 1 ]
+R58|k=2 char-0 new factor of degree 48 (mult 1) reduces with residual multiplicities [ 1, 1 ]
+R58|k=2 U_p2 built [14.740 s]
+R58|k=2 U_p2 on generalized f1-eigenspace mod 2 (dim 32): charpoly [
+<zz, 24>,
+<zz^2 + zz + 1, 4>
+]
+R58|k=2 U_p2 on generalized f2-eigenspace mod 2 (dim 32): charpoly [
+<zz, 24>,
+<zz^2 + zz + 1, 4>
+]
+R58|k=2 W_new (sum of T31-kernels of new factors) dim 48
+R58|k=2 U_p2 charpoly on W_new (char 0): [
+<z, 48>
+]
+R58|VERDICT|k=2|LEVEL RAISING at p2^2: residual system(s) present in the new part with multiplicities [ 1, 1 ]
+R58|k=3 cuspidal dim 580 raw dim 581 ; T31 built [339.440 s]
+R58|k=3 old-part degree 445 (product of lower new charpolys has degree 448) ; new degree 136 (expected 136)
+R58|k=3 new factor degrees over Q: [ <64, 1>, <72, 1> ]
+R58|k=3 new charpoly(T31) mod 2 factors: [
+<zz, 64>,
+<zz^4 + zz + 1, 5>,
+<zz^4 + zz^3 + zz^2 + zz + 1, 5>,
+<zz^8 + zz^4 + zz^3 + zz + 1, 2>,
+<zz^8 + zz^6 + zz^5 + zz^2 + 1, 2>
+]
+R58|k=3 residual multiplicities [f1,f2]: total [ 8, 8 ], old baseline [ 6, 6 ], NEW [ 2, 2 ]
+R58|k=3 char-0 new factor of degree 64 (mult 1) reduces with residual multiplicities [ 1, 1 ]
+R58|k=3 char-0 new factor of degree 72 (mult 1) reduces with residual multiplicities [ 1, 1 ]
+R58|k=3 U_p2 built [14.630 s]
+R58|k=3 U_p2 on generalized f1-eigenspace mod 2 (dim 64): charpoly [
+<zz, 56>,
+<zz^2 + zz + 1, 4>
+]
+R58|k=3 U_p2 on generalized f2-eigenspace mod 2 (dim 64): charpoly [
+<zz, 56>,
+<zz^2 + zz + 1, 4>
+]
+R58|k=3 W_new (sum of T31-kernels of new factors) dim 136
+R58|k=3 U_p2 charpoly on W_new (char 0): [
+<z, 136>
+]
+R58|VERDICT|k=3|LEVEL RAISING at p2^3: residual system(s) present in the new part with multiplicities [ 2, 2 ]
+R58|k=4 cuspidal dim 1142 raw dim 1143 ; T31 built [327.550 s]
+R58|k=4 old-part degree 862 (product of lower new charpolys has degree 866) ; new degree 281 (expected 281)
+R58|k=4 new factor degrees over Q: [ <1, 1>, <1, 4>, <2, 2>, <4, 1>, <4, 1>, <4, 1>, <4, 1>, <16, 1>, <24, 1>, <32, 1>, <48, 1>, <64, 1>, <72, 1> ]
+R58|k=4 new charpoly(T31) mod 2 factors: [
+<zz, 137>,
+<zz^4 + zz + 1, 10>,
+<zz^4 + zz^3 + zz^2 + zz + 1, 10>,
+<zz^8 + zz^4 + zz^3 + zz + 1, 4>,
+<zz^8 + zz^6 + zz^5 + zz^2 + 1, 4>
+]
+R58|k=4 residual multiplicities [f1,f2]: total [ 16, 16 ], old baseline [ 12, 12 ], NEW [ 4, 4 ]
+R58|k=4 char-0 new factor of degree 16 (mult 1) reduces with residual multiplicities [ 1, 1 ]
+R58|k=4 char-0 new factor of degree 48 (mult 1) reduces with residual multiplicities [ 1, 1 ]
+R58|k=4 char-0 new factor of degree 64 (mult 1) reduces with residual multiplicities [ 1, 1 ]
+R58|k=4 char-0 new factor of degree 72 (mult 1) reduces with residual multiplicities [ 1, 1 ]
+R58|k=4 U_p2 built [14.630 s]
+R58|k=4 U_p2 on generalized f1-eigenspace mod 2 (dim 128): charpoly [
+<zz, 120>,
+<zz^2 + zz + 1, 4>
+]
+R58|k=4 U_p2 on generalized f2-eigenspace mod 2 (dim 128): charpoly [
+<zz, 120>,
+<zz^2 + zz + 1, 4>
+]
+R58|k=4 W_new (sum of T31-kernels of new factors) dim 281
+R58|k=4 U_p2 charpoly on W_new (char 0): [
+<z, 281>
+]
+R58|VERDICT|k=4|LEVEL RAISING at p2^4: residual system(s) present in the new part with multiplicities [ 4, 4 ]
+R58|confirm k=2: level1 T97 built [3581.430 s]
+R58|confirm k=2: g16bar(97) = zz^16 + zz^14 + zz^13 + zz^12 + zz^11 + zz^9 + zz^7 + zz^6 + zz^2 + zz + 1 ; factors [
+zz^8 + zz^4 + zz^3 + zz^2 + 1,
+zz^8 + zz^6 + zz^5 + zz + 1
+]
+R58|confirm k=2: level p2^2 T97 built [9106.950 s]
+R58|confirm k=2: residual(97) multiplicities in cp(T97) at level p2^2: [ 4, 4 ] (level 1: [ 1, 1 ])
+R58|confirm k=2: on W_new mod 2, gen. f1(31)-space dim 8 ; joint with gen. spaces of residual(97) factors: [ 0, 8 ]
+R58|confirm k=2: on W_new mod 2, gen. f2(31)-space dim 8 ; joint with gen. spaces of residual(97) factors: [ 8, 0 ]
+R58|VERDICT|confirm k=2|see joint dimensions above (nonzero joint = same residual system at 31 and 97)
+PASS|58_levelraise_p2k

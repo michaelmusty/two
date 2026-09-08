@@ -1,5 +1,29 @@
 # Session handoff
 
+## STATE 2026-09-08 — read this first
+
+**D39: the supercuspidal `𝔭^k` family is computed and closed as a route
+(`dembele/certificates/levelraise-p2k.md`).** Level raising at the prime above
+2 DOES happen for k ≥ 2: new multiplicity per residual system 0, 1, 2, 4 at
+`𝔭¹..𝔭⁴`, carried by rational Hecke orbits of degree **48** (`𝔭²`, the whole
+new space, depth-zero supercuspidal), **64, 72** (`𝔭³`), and at `𝔭⁴` only
+`Q(ζ₃₂)/F`-twists of level 1 and of those (twist-minimal remainder 0,
+verified). Why it is not a path: supercuspidal at `𝔭` ⇒ `A_g` has potentially
+good *supersingular* reduction at `𝔭` (no toric part), the carrying Shimura
+curve (level `1+𝔭_D`, genus 136) is a Drinfeld-`Σ¹` quotient with genus-1
+reduction components — no Mumford curve, no CD periods — and D38's locality
+objection stands; `d_g = 48` besides. Scripts `58_levelraise_p2k.m` (sweep;
+`T_97` confirmation at k = 2 done, certificate §4) and
+`59_p2k_twist_check.m` (replayable from the banked charpolys
+`levelraise_p2k_charpolys.m` with `BANK_IN=1`). Sparse `T_31` builds are
+~330 s at every level `𝔭^k` (flat), `T_97` ~25× that.
+
+**What remains for the goal (unchanged in kind):** (i) the auxiliary-prime
+lottery on chatelet (`~10⁻³`; 08-27 instructions), (iii) hole (2) — an
+algebraic invariant of `K_Dembélé` computable without a `d_g`-dimensional
+variety; no candidate. Item (ii) of the 09-04 list is done. Belyi side still
+parked (next experiment there: `lemma-B-cyclic.md` §4.6).
+
 ## STATE 2026-09-04 — read this first
 
 **Lemma B corrected (D37).** "`J[2]` indecomposable" is **false**: `Q_{2^m}`, `m ≥ 4`,

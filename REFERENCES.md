@@ -126,6 +126,28 @@ happens.
 - **I. Cerednik; V. Drinfeld**. **[theory]** p-adic uniformization of Shimura
   curves with a finite disc prime — the pivot that eliminates the genus wall
   (`levelraise-cd-plan.md`).
+- **V. Drinfeld** (coverings of the p-adic upper half plane) and
+  **J. Teitelbaum**, *Geometry of an étale covering of the p-adic upper half
+  plane* (Ann. Inst. Fourier 1990). **[theory]** The level-`1+𝔭_D` Shimura
+  curve carrying the `𝔭²`-new forms of D39 is uniformized by a quotient of the
+  first Drinfeld covering `Σ¹ → Ω`, whose reduction has Deligne–Lusztig
+  components of genus `q(q−1)/2 = 1` at `q = 2`: not a Mumford curve, no
+  period lattice — the reason the supercuspidal family is not a route
+  (`levelraise-p2k.md` §3).
+- **C. Bushnell & G. Henniart**, *The local Langlands conjecture for GL(2)*
+  (depth-zero / conductor-`𝔭²` supercuspidals, Jacquet–Langlands for the
+  division algebra). **[theory]** Identifies the `𝔭²`-new forms as depth-zero
+  supercuspidal (`U_𝔭 = 0`, tame inertial type `Ind χ`, `χ` of order 3 on
+  `F₄^×`), hence potentially good supersingular reduction of `A_g` at `𝔭`
+  (`levelraise-p2k.md` §3, D39).
+- **C. Breuil & A. Mézard; T. Gee & M. Kisin** (Breuil–Mézard multiplicities,
+  potentially Barsotti–Tate lifts) and **K. Buzzard, F. Diamond, F. Jarvis**
+  (Serre weights for Hilbert modular forms). **[theory, heuristic only]** The
+  prediction behind D39: with residue field `F₂` there are two Serre weights
+  and `ρ̄_f` carries both, so every inertial type at `𝔭` should admit a
+  modular lift, with the depth-zero type at multiplicity equal to the level-1
+  one (both reduce to the trivial weight). Confirmed at `𝔭²` (new multiplicity
+  `[1,1]`); none of it is a theorem at `p = 2`, `e = 8`.
 - **J. Teitelbaum**. **[method]** First explicit p-adic periods of Shimura
   curves; the lineage of our planned computation.
 - **M. Greenberg** (2006–09). **[method]** Numerical p-adic integration on the

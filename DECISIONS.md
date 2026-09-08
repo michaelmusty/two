@@ -848,6 +848,44 @@ auxiliary-prime lottery (`~10⁻³`), the untested supercuspidal `𝔭^k` family
 (D36; also subject to a `d_g` question), and the front-end problem itself.
 *Cost:* paper only.
 
+**D39 (2026-09-08). The supercuspidal conductor-`𝔭^k` family at the prime
+above 2 is computed: the congruence exists, the route does not.**
+`dembele/magma/58_levelraise_p2k.m` + `59_p2k_twist_check.m`
+(`dembele/data/computed/levelraise_p2k.out`, `p2k_twist_check.out`,
+`levelraise_p2k_charpolys.m`), certificate `levelraise-p2k.md`. Levels
+`𝔭^k`, k = 1..4 (cuspidal dims 154, 299, 580, 1142; new 40, 48, 136, 281),
+basis-free `T_31` characteristic-polynomial counts on the raw Brandt module.
+*Result:* the `𝔭^k`-new multiplicity of each residual system `f1, f2` is
+**0, 1, 2, 4** for k = 1, 2, 3, 4 (old baselines 2, 3, 6, 12 — all exact).
+The carriers: at `𝔭²` ONE rational Hecke orbit of degree **48** (the whole
+new space; depth-zero supercuspidal, `U_𝔭 = 0`, `cp mod 2 = t³²·f1·f2`); at
+`𝔭³` two orbits of degrees **64, 72**; at `𝔭⁴` the four copies are all
+twists by the quadratic character of `Q(ζ₃₂)/F` (conductor exactly `𝔭²`,
+`χ(𝔭₃₁) = −1`) of the level-1 form (degree 16 = `A_f` twisted, same field)
+and of the `𝔭²`, `𝔭³` carriers — verified factor-by-factor: the entire
+`𝔭⁴`-new part is `57 + 40 + 48 + 136` twists, twist-minimal remainder 0.
+*Why the congruence was expected:* residue field `F₂` has two Serre weights,
+`ρ̄_f` carries both, every type at `𝔭` should lift (Breuil–Mézard heuristic;
+not a theorem at p = 2, e = 8) — D36's Steinberg failure was the eigenvalue
+condition `ā_𝔭 = 1`, not a Serre-weight obstruction. *Why it is not a route
+(certificate §3):* supercuspidal at `𝔭` means `ρ_g|G_𝔭` irreducible of tame
+type, so `A_g` (dim 48) has potentially good **supersingular** reduction at
+`𝔭` (good over the tame cubic extension, special fibre `~ E₀⁴⁸`, `j = 0`);
+the Shimura curve carrying it (level `1+𝔭_D`, genus 136, degree-3 cover of
+the genus-40 discriminant-`𝔭` curve) is uniformized by a quotient of
+Drinfeld's `Σ¹`, whose reduction components are genus-1 Deligne–Lusztig
+curves: no Mumford curve, no period lattice, no monodromy pairing. Nothing
+from the CD arc applies, D38's locality objection applies verbatim, and
+`d_g = 48 > 16` anyway. *Alternatives considered:* k = 5 (dim 2249; would
+only add depth-1 supercuspidals and principal-series types, same geometry —
+not run); building the confirmatory `T_97` at every level (only k = 2 is
+confirmed, sufficient for the verdict). *State of the goal after D39:* item
+(ii) of the D38 list is closed; what remains is the auxiliary-prime lottery
+(`~10⁻³`) and the front-end problem (hole 2), unchanged. *Byproduct worth
+keeping:* the local shape of `K_Dembélé` at 2 — the `λ`-torsion of a
+48-dimensional variety with supersingular reduction after a tame cubic base
+change of `F_𝔭`. *Cost:* ~4 h local Magma (two detached jobs), paper for §3.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
