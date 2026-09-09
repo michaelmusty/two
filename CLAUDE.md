@@ -5,12 +5,13 @@ Dembélé's nonsolvable Galois extension of `Q`, ramified only at `2`. The base 
 `F = Q(zeta_32)^+`; the target group fits into
 `1 → SL₂(F₂₅₆)² → Gal(K/Q) → C₈ → 1`.
 
-**Status (2026-09-08, D39):** every constructive door is closed and priced — see
-`HANDOFF.md` top and `DECISIONS.md` D32–D39. Latest: level raising at the prime above 2
-exists for conductor `𝔭^k`, k ≥ 2 (carriers of degree 48, 64, 72; `𝔭⁴` is all twists),
-but supercuspidal ⇒ supersingular reduction ⇒ no period machinery
-(`dembele/certificates/levelraise-p2k.md`). Open: auxiliary-prime lottery, and the
-front-end problem (hole 2).
+**Status (2026-09-08, D40):** every constructive door to Dembélé's field is closed and
+priced (`HANDOFF.md`, `DECISIONS.md` D32–D39). **New target (D40,
+`dembele/certificates/review-2026-09-08.md`):** the level-`𝔭` Steinberg forms over `F`
+carry `SL₂(F₁₆)`-representations ramified only at 2 — a second, much smaller nonsolvable
+field, with 4-dimensional carriers of split multiplicative reduction at the norm-2 prime.
+The explicit-polynomial pipeline (Cerednik–Drinfeld at `𝔭`, degree-17 polynomial over
+`F`) is now being pursued there first; Dembélé's field remains the long-term goal.
 
 Start new work in **`dembele/`**. The immediate milestone is to reproduce the
 57-dimensional level-one, parallel-weight-two mod-2 Hilbert Hecke module, recover its two

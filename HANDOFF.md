@@ -1,5 +1,28 @@
 # Session handoff
 
+## STATE 2026-09-08 (evening) — NEW TARGET, read this first
+
+**D40 / `dembele/certificates/review-2026-09-08.md`.** The comprehensive review found
+the object every closed route was missing, sitting in D36's own output: the **level-`𝔭`
+Steinberg newforms over `F` have residue field `F₁₆`**, and each such mod-2 system is an
+**`SL₂(F₁₆)`-representation of `G_F` unramified outside `𝔭`** — a second nonsolvable
+extension of `Q` ramified only at 2 (expected group `SL₂(16)² ⋊ C₈`), carried by
+**4-dimensional** abelian varieties with **split multiplicative reduction at the norm-2
+prime** (`a_𝔭 = +1`, Hecke fields `Q(ζ₁₅)⁺` and the conductor-95 cyclic quartic, 2
+inert). Period valuations `20–458` (vs `10⁴` at level 31), 174 tree positions, 17
+neighbours (the validated genus-4 back end), Fuchsian signature `⟨40; 3¹⁸, 16⟩`.
+Nothing lower in the tower (`Q(ζ₁₆)⁺` to `𝔭¹⁰`, `Q(√2)` to `𝔭¹⁴`: all traces in `F₂`).
+**FIRST ACTION NEXT SESSION:** read the tail of `dembele/data/computed/f16_steinberg.out`
+(job left running detached at close, PID 87628; expected to finish within the hour) and
+copy the `T_97` block — `dihedral survivors` per class and the two `VERDICT` lines — into
+`review-2026-09-08.md` §2.5 and D40; if a survivor remains, the class-number fallback
+line decides it. Then: Phase 1 = write the field up + Frobenius cycle-type table (31: 17-cycle; add
+97, 127, 191 — each `T_ℓ` at level `𝔭` is a same-session build, 5 min–4 h); Phase 2 = the
+CD-at-`𝔭` pipeline at dimension 4 (review §4). Scripts: `60_f16_steinberg.m` (replayable;
+its T_97 tail is the anti-dihedral certificate), `61_fuchsian_p2_probe.m`. Magma gotcha:
+`InternalNeighbors` asserts (`ideals.m:237`) on the *conjugate* primes `τ^i(𝔭₃₁)` at
+level `𝔭` — use `𝔭₃₁`, `𝔭₉₇`, … themselves, and Galois-conjugation arguments for the rest.
+
 ## STATE 2026-09-08 — read this first
 
 **D39: the supercuspidal `𝔭^k` family is computed and closed as a route

@@ -126,6 +126,15 @@ happens.
 - **I. Cerednik; V. Drinfeld**. **[theory]** p-adic uniformization of Shimura
   curves with a finite disc prime — the pivot that eliminates the genus wall
   (`levelraise-cd-plan.md`).
+- **L. E. Dickson** (finite subgroups of `PGL₂(F̄_p)`; e.g. Huppert, *Endliche
+  Gruppen I*, II.8.27) and **H. Moon & Y. Taguchi** (nonexistence of mod-2
+  representations unramified outside 2 over small fields). **[theory]** The
+  image argument of D40: an irreducible, non-dihedral mod-2 representation of
+  `G_F` with trace field `F₁₆` has image `SL₂(F₁₆)`; irreducibility from the
+  2-group ray class groups of `F` mod `𝔭^k`, dihedrality excluded by inert
+  primes with nonzero trace (`review-2026-09-08.md` §2.2, `60_f16_steinberg.m`).
+  The empty sweeps over `Q(√2)` and `Q(ζ₁₆)⁺` at 2-power levels are the
+  Moon–Taguchi-type picture seen from the modular side.
 - **V. Drinfeld** (coverings of the p-adic upper half plane) and
   **J. Teitelbaum**, *Geometry of an étale covering of the p-adic upper half
   plane* (Ann. Inst. Fourier 1990). **[theory]** The level-`1+𝔭_D` Shimura

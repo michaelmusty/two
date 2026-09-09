@@ -1,0 +1,123 @@
+R60|8 primes above 31 ordered along the tau-orbit; tau of order 8
+R60|sweep Q(zeta16)+: prime above 2 norm 2, test prime norm 17
+R60|sweep Q(zeta16)+: k=1 cusp dim 2 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 3>
+]
+R60|sweep Q(zeta16)+: k=2 cusp dim 3 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 4>
+]
+R60|sweep Q(zeta16)+: k=3 cusp dim 4 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 5>
+]
+R60|sweep Q(zeta16)+: k=4 cusp dim 6 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 7>
+]
+R60|sweep Q(zeta16)+: k=5 cusp dim 9 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 10>
+]
+R60|sweep Q(zeta16)+: k=6 cusp dim 15 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 16>
+]
+R60|sweep Q(zeta16)+: k=7 cusp dim 23 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 24>
+]
+R60|sweep Q(zeta16)+: k=8 cusp dim 39 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 40>
+]
+R60|sweep Q(zeta16)+: k=9 cusp dim 79 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 80>
+]
+R60|sweep Q(zeta16)+: k=10 cusp dim 159 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 160>
+]
+R60|sweep Q(sqrt2): prime above 2 norm 2, test prime norm 7
+R60|sweep Q(sqrt2): k=1 dim 0
+R60|sweep Q(sqrt2): k=2 dim 0
+R60|sweep Q(sqrt2): k=3 dim 0
+R60|sweep Q(sqrt2): k=4 dim 0
+R60|sweep Q(sqrt2): k=5 cusp dim 1 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 2>
+]
+R60|sweep Q(sqrt2): k=6 cusp dim 3 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 4>
+]
+R60|sweep Q(sqrt2): k=7 cusp dim 7 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 8>
+]
+R60|sweep Q(sqrt2): k=8 cusp dim 15 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 16>
+]
+R60|sweep Q(sqrt2): k=9 cusp dim 31 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 32>
+]
+R60|sweep Q(sqrt2): k=10 cusp dim 63 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 64>
+]
+R60|sweep Q(sqrt2): k=11 cusp dim 127 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 128>
+]
+R60|sweep Q(sqrt2): k=12 cusp dim 255 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 256>
+]
+R60|sweep Q(sqrt2): k=13 cusp dim 511 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 512>
+]
+R60|sweep Q(sqrt2): k=14 cusp dim 1023 ; mod-2 factors of degree >= 2: [] ; degree-1 factors: [
+<zz, 1024>
+]
+R60|T_p31 built [307.830 s]
+R60|level p2 raw dim 155; U_p2 built; commutes with T_p31: true
+R60|new orbits (charpoly of T_p31): [
+<4, z^4 - 8*z^3 - 36*z^2 + 433*z - 899>,
+<4, z^4 + 2*z^3 - 56*z^2 + 133*z - 19>,
+<4, z^4 + 7*z^3 - 51*z^2 - 407*z - 359>,
+<4, z^4 + 17*z^3 + 69*z^2 - 87*z - 649>,
+<24, z^24 - 5*z^23 - 394*z^22 + 1875*z^21 + 65197*z^20 - 290345*z^19 - 5971688*z^18 + 24512352*z^17 + 334827907*z^16 - 1248434133*z^15 - 11985764842*z^14 + 39986362182*z^13 + 277300949432*z^12 - 813434736718*z^11 - 4112389863330*z^10 + 10350725339490*z^9 + 38065001496228*z^8 - 78928952001773*z^7 - 209629741001791*z^6 + 333029659747168*z^5 + 631077648250081*z^4 - 675734494684132*z^3 - 853661005158482*z^2 + 476668756056812*z + 269568122503283>
+]
+R60|new charpoly(T_p31) mod 2 has factor t: false (if false, every system has abar != 0 at all 8 primes above 31)
+R60|stab orders: distinct values { 1, 2, 4, 8, 16, 32 }, ulcm 96, g 3
+R60|T_p31 self-adjoint under stab-order diagonal: true
+R60|orbit 1 (dim 4): U_p2 charpoly [
+<z - 1, 4>
+] ; charpoly(T_p31) mod 2 [
+<zz^4 + zz + 1, 1>
+]
+R60|orbit 1: Hecke field z^4 - 8*z^3 - 36*z^2 + 433*z - 899, disc 1125, primes above 2 (e,f): [ <1, 4> ]
+R60|orbit 1: monodromy Gram (stab-order pairing) = [ 40, 40, 20, 20, 40, 80, 60, 40, 20, 60, 428, 84, 20, 40, 84, 128 ] ; det 60652800
+R60|orbit 1: successive minima of the monodromy lattice [ 40, 40, 128, 388 ] ; LLL Gram [ 40, 0, 20, 20, 0, 40, 20, 0, 20, 20, 128, 64, 20, 0, 64, 388 ]
+R60|orbit 2 (dim 4): U_p2 charpoly [
+<z - 1, 4>
+] ; charpoly(T_p31) mod 2 [
+<zz^4 + zz + 1, 1>
+]
+R60|orbit 2: Hecke field z^4 + 2*z^3 - 56*z^2 + 133*z - 19, disc 45125, primes above 2 (e,f): [ <1, 4> ]
+R60|orbit 2: monodromy Gram (stab-order pairing) = [ 40, 40, -380, 280, 40, 80, -600, 460, -380, -600, 17456, -12972, 280, 460, -12972, 9684 ] ; det 744992000
+R60|orbit 2: successive minima of the monodromy lattice [ 40, 40, 640, 916 ] ; LLL Gram [ 40, 0, -20, -20, 0, 40, -20, 0, -20, -20, 640, 320, -20, 0, 320, 916 ]
+R60|orbit 3 (dim 4): U_p2 charpoly [
+<z - 1, 4>
+] ; charpoly(T_p31) mod 2 [
+<zz^4 + zz^3 + zz^2 + zz + 1, 1>
+]
+R60|orbit 3: Hecke field z^4 + 7*z^3 - 51*z^2 - 407*z - 359, disc 1125, primes above 2 (e,f): [ <1, 4> ]
+R60|orbit 3: monodromy Gram (stab-order pairing) = [ 80, 40, -20, -40, 40, 40, 0, -20, -20, 0, 388, -44, -40, -20, -44, 128 ] ; det 60652800
+R60|orbit 3: successive minima of the monodromy lattice [ 40, 40, 128, 388 ] ; LLL Gram [ 40, 0, -20, 0, 0, 40, -20, -20, -20, -20, 128, -44, 0, -20, -44, 388 ]
+R60|orbit 4 (dim 4): U_p2 charpoly [
+<z - 1, 4>
+] ; charpoly(T_p31) mod 2 [
+<zz^4 + zz^3 + zz^2 + zz + 1, 1>
+]
+R60|orbit 4: Hecke field z^4 + 17*z^3 + 69*z^2 - 87*z - 649, disc 45125, primes above 2 (e,f): [ <1, 4> ]
+R60|orbit 4: monodromy Gram (stab-order pairing) = [ 80, 40, 100, -40, 40, 40, 40, -20, 100, 40, 2276, -980, -40, -20, -980, 640 ] ; det 744992000
+R60|orbit 4: successive minima of the monodromy lattice [ 40, 40, 640, 916 ] ; LLL Gram [ 40, 0, -20, 20, 0, 40, -20, 0, -20, -20, 640, -320, 20, 0, -320, 916 ]
+R60|orbit 5 (dim 24): U_p2 charpoly [
+<z + 1, 24>
+] ; charpoly(T_p31) mod 2 [
+<zz^4 + zz + 1, 3>,
+<zz^4 + zz^3 + zz^2 + zz + 1, 3>
+]
+R60|(T_p31, U_p2) residual systems over F16: 8 spaces, dims [ 5, 5, 5, 5, 5, 5, 5, 5 ]; distinct up to Frobenius: 2
+R60|class 1: a(p31) = w (min poly zz^4 + zz + 1), U = 1, F2-orbit size 4, total dim 20
+R60|class 2: a(p31) = w^3 (min poly zz^4 + zz^3 + zz^2 + zz + 1), U = 1, F2-orbit size 4, total dim 20
+R60|F^x/(F^x)^2 unramified outside 2: 9 generators (incl. -1 and pi)
+R60|Legendre functionals at the 8 primes above 31: rank 8 of 9
+R60|quadratic classes not excluded by the primes above 31 (needs abar != 0 there, true for all systems): 1

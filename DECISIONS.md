@@ -886,6 +886,49 @@ keeping:* the local shape of `K_Dembélé` at 2 — the `λ`-torsion of a
 48-dimensional variety with supersingular reduction after a tame cubic base
 change of `F_𝔭`. *Cost:* ~4 h local Magma (two detached jobs), paper for §3.
 
+**D40 (2026-09-08). Comprehensive review after D39; the overlooked object:
+the level-`𝔭` Steinberg forms over `F` carry `SL₂(F₁₆)`-representations
+ramified only at 2 — a second nonsolvable field, with 4-dimensional carriers
+of split multiplicative reduction at the norm-2 prime. New target adopted.**
+`dembele/certificates/review-2026-09-08.md`; job `60_f16_steinberg.m`
+(`f16_steinberg.out`), probe `61_fuchsian_p2_probe.m`. *Review verdict:* for
+`ρ̄_f` itself no closed door reopens — every route died on a measured number
+(table in §1). *The gap:* D36 recorded the `𝔭`-new part (dim 40; orbits
+4,4,4,4,24) as "residue field F₁₆, not F₂₅₆" and moved on; but each of those
+mod-2 systems is a 2-dimensional representation of `G_F` unramified outside
+`𝔭` with trace field `F₁₆`, irreducible (ray class groups mod `𝔭^k` are
+2-groups, `h(F)=1`, residue field `F₂`), and not dihedral (for every quadratic
+class `d` unramified outside 2 there is a prime `𝔮` inert in `F(√d)` with
+`ā_𝔮 ≠ 0` — 510/511 classes killed by the eight primes above 31 alone, the
+last by 97 [T_97 block: see review §2.5]) ⇒ image `SL₂(F₁₆)` by Dickson.
+Invisible to Dembélé's level-1 search because its only Serre weight at `𝔭` is
+the Steinberg weight `V₁` (très ramifié). *Numbers:* Hecke fields `Q(ζ₁₅)⁺`
+(×2) and the conductor-95 cyclic quartic (×2), 2 inert, `a_𝔭 = +1` (split
+multiplicative); two residual classes up to Frobenius (`ā_31` of order 15 and
+5), swapped by `C₈` ⇒ expected Galois group over `Q` is `SL₂(16)² ⋊ C₈`
+(order `1.3·10⁸`, vs `~10¹⁵` for Dembélé's); Frobenius above 31 is a 17-cycle
+on `P¹(F₁₆)`; monodromy Gram valuation diagonals `20, 20, 64, 194` and
+`20, 20, 320, 458` (vs 7960–62872 at level 31, D33) — heights 20–300× smaller,
+2-adic, with 174 tree positions. Nothing exists lower in the tower: 2-power
+levels over `Q(ζ₁₆)⁺` (`k ≤ 10`, dim 159) and `Q(√2)` (`k ≤ 14`, dim 1023) have
+all mod-2 eigenvalues in `F₂`. The Fuchsian group of the discriminant-`𝔭`
+algebra has signature `⟨40; 3¹⁸, 16⟩` (Magma, 20 s), area 571 — inside the
+range where fundamental domains have been computed. *Decision:* adopt the
+`F₁₆` field as the explicit target (degree-17 polynomial over `F`): it answers
+the thesis question (an explicit nonsolvable field ramified only at 2), it is
+the cheapest possible instance of the never-run link `periods → 2-torsion →
+recognition` (`d_g = 4`, `N𝔭 = 2`, the validated genus-4/17-neighbour back
+end), and it is the only object on which hole (2) can be measured rather than
+extrapolated. Dembélé's field stays the long-term goal; everything learned
+transfers. *Alternatives considered:* auxiliary-prime lottery (kept as
+background only), k=8 covers falsification target (does not bear on
+explicitness), Lemma B (self-contained, unchanged). *Plan:* review §4 —
+Phase 1 write-up + Frobenius table; Phase 2 the CD-at-`𝔭` pipeline at
+dimension 4 (tree quotient banked in kind, one-pass lift D34, Eisenstein
+invariant on 17 neighbours, LLL, `GaloisGroup` certification), with the
+Fuchsian fundamental domain as the archimedean cross-check. *Cost:* review
+paper + ~3 h local Magma.
+
 ---
 
 *Maintenance note: append an entry per significant fork — the decision, the
