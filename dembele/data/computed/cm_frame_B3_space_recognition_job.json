@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/150_cm_frame_B3_space_recognition.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 26.510226833052002,
+  "timeout_seconds": 300,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_space_recognition.out",
+    "sha256": "ffd1256a84894e37cf2711d9c86897254f41950e92893fd3b537120e0f09e629"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/150_cm_frame_B3_space_recognition.py",
+      "sha256": "6b753b30cb2bc1762beecda09b59f47642d6f7210ddb022038dd1b404ad96db1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d76-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

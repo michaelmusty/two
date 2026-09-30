@@ -1,0 +1,38 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/310_cm_frame_double_cover_shifted.py",
+    "--bank",
+    "current",
+    "--build-cache"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 27.740284250001423,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_double_cover_polynomials_current_d87_shifted_build.out",
+    "sha256": "fef9e4d1eed7d6113aceba324b9b31eef1ea9baeb97ca87d38a8204a40f93a1a"
+  },
+  "private_process_group": 4704,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/311_cm_frame_double_cover_shifted_jobs.py",
+      "sha256": "19deed4ed27e24d7297b778796f5d1ce4709af2c7bfbdbc4716aff057b3f5f3b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/310_cm_frame_double_cover_shifted.py",
+      "sha256": "d06c9cc268bedcd27e0c554e3505961b6e588ad5171f69b2152fb7674a44f43b"
+    }
+  ]
+}

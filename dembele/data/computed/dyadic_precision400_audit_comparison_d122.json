@@ -1,0 +1,91 @@
+{
+  "status": "pass",
+  "milestone": "D122",
+  "phase": "comparison",
+  "certificates": {
+    "frame_relation_certified_error_beta": 501,
+    "change_column_error_bounds_beta": [
+      537,
+      536,
+      537,
+      536,
+      536,
+      540,
+      536,
+      539,
+      537,
+      537,
+      538,
+      536,
+      539,
+      536,
+      536,
+      536
+    ],
+    "inherited_inverse_norm_preserved_by_overlap_beta": 399,
+    "all_actual_jet_values_checked": 1088,
+    "independent_quadric_coefficients_checked": 6188,
+    "positive_coefficients_checked": 4641,
+    "certified_mismatch_count": 0,
+    "degree16_section_lower_beta": [
+      4194,
+      4145,
+      4128
+    ],
+    "anchor_section_lower_beta": [
+      3976,
+      3648,
+      3384
+    ],
+    "sufficient_nonanchor_beta": [
+      25305,
+      25419,
+      25526
+    ],
+    "W_Gaussian": {
+      "valuation_beta": 1024,
+      "error_beta": 1225
+    },
+    "W_Gaussian_inverted": false,
+    "positive_exact_vanishing_proved": false,
+    "method": "integer quotient absolute-error balls, frame residual bounds, gradients and polar forms"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_height_budget_d118.json",
+      "sha256": "23246bb6effb1f20fcee619d0413424f099bf7f0e8ff61ea0c9eb8f1c5b5f8a6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_frame_beta21168_d122.json",
+      "sha256": "b41cbb135838e3d0fc43614f19a8bc455a4e354964bb8b3a02ce9fea6edcaa54"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_integral_quadrics400_d122.json",
+      "sha256": "ba3ef3465e333f6258c9b8017460d5cf44119ddffb58e361e48908ba32147003"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_d115.json",
+      "sha256": "bc043dfe632db80984eef2578841611325767cb4afb214bebfa354354f8fb699"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision400_d122.json",
+      "sha256": "bb5d1ca8df99c41e1bae5d686aac0d7d72121b4c09f64a782fc0650be2eabbe3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision_design_d120.json",
+      "sha256": "73ef4ac68166c782b0b8be54a5d959d70e5bad35f04a795fcdd32c37fd940ec1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_residue_frame400_d122.json",
+      "sha256": "00cf519af92570c1007c4b041b8e48a790fd61c275801a36c524dfddbf6ed5c5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    }
+  ]
+}

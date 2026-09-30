@@ -1,0 +1,41 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_quadratic_space_run.m"
+  ],
+  "status": "failed",
+  "exit_code": 0,
+  "wall_seconds": 2.618219791096635,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_space_exponent_failure.out",
+    "sha256": "e61ae74023609d343629f19b0de883cbd4df97fb198dcd933c6cc955a559e5e9"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/201_cm_frame_cubic_precision.py",
+      "sha256": "f0e07e7b36002bbf3547b264b0909007ebf2dc0bf4111f4a772b8c6316dad608"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_space_exponent_failure.m",
+      "sha256": "ca5996781006ebc8bf8aabbac4be3517699fe28b9fdd9515d3c9596ad087e076"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_quadratic_space_run.m",
+      "sha256": "ea893a6e8232d5c9cd6c0676762e91defd47b136c8678846ec56be3ebae94567"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_1_check.json",
+      "sha256": "8d7319a2460f7e42ac0c1d89e85a56ce275d03e18d7216bab0e6ef6e39a5ca3b"
+    }
+  ],
+  "diagnostic": "Use documented Exponents for a multivariate monomial; ExponentSequence is not defined."
+}

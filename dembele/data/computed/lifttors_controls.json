@@ -1,0 +1,425 @@
+{
+  "q8": {
+    "genus": 2,
+    "d0": 6,
+    "p": 7,
+    "a": 2,
+    "precision_exponent": 64,
+    "evaluation_points": 32,
+    "section_dimensions": [
+      5,
+      11,
+      17
+    ],
+    "torsion_count": 16,
+    "frobenius_fixed_count": 8,
+    "frobenius_rows": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "polynomial_coefficients_ascending": [
+      "-73511771484375/1996081395841995112285583",
+      "-3574898578125/7141615011957048702274",
+      "-353144842235625/185681990310883266259124",
+      "18240305285973389875/15968651166735960898284664",
+      "-117708223840534629725/15968651166735960898284664",
+      "-1478297616415075018305/15968651166735960898284664",
+      "14204321587617442386981/31937302333471921796569328",
+      "-71549027188916129215189/63874604666943843593138656",
+      "-273831550860782057408835/63874604666943843593138656",
+      "253844576108252193071245/3992162791683990224571166",
+      "-5617068878402203625542667/31937302333471921796569328",
+      "1118646121494627391573731/1485455922487066130072992",
+      "-507775153744025261805/220034946302335376992",
+      "4139788205877022525/1188436994958946408",
+      "-509624730154629/176038660192408",
+      "1"
+    ],
+    "factor_degrees": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "timing_ms": {
+      "init": 17,
+      "basis": 711,
+      "lift_four_points": 865,
+      "span_and_evaluate": 551,
+      "polynomial_and_checks": 6
+    },
+    "wall_seconds": 2.792
+  },
+  "validator": {
+    "comparison_count": 70,
+    "tamper_valuations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "wall_seconds": 0.783
+  },
+  "lift_validator": {
+    "comparison_count": 60,
+    "threads": [
+      1,
+      2
+    ],
+    "final_initial_precisions": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        16,
+        3
+      ],
+      [
+        64,
+        1
+      ]
+    ],
+    "points_including_origin": 5,
+    "timing_ms": 11765,
+    "wall_seconds": 11.804
+  },
+  "kernel_validator": {
+    "known_kernel_cases": 12,
+    "rank_drop_rejections": 6,
+    "rows": 787,
+    "columns": 17,
+    "initial_zero_rows": 512,
+    "timing_ms": 203,
+    "wall_seconds": 0.233
+  },
+  "genus16": {
+    "genus": 16,
+    "d0": 33,
+    "p": 97,
+    "a": 2,
+    "precision_exponent": 4,
+    "evaluation_points": 166,
+    "section_dimensions": [
+      18,
+      51,
+      84
+    ],
+    "jacobian_size_bytes": 6058784,
+    "timing_ms": {
+      "init": 181,
+      "double_and_zero_check": 646,
+      "lift_one_point": 10076,
+      "lift_checks": 854
+    },
+    "wall_seconds": 12.429
+  },
+  "genus64": {
+    "genus": 64,
+    "d0": 129,
+    "p": 97,
+    "a": 2,
+    "precision_exponent": 4,
+    "evaluation_points": 646,
+    "section_dimensions": [
+      66,
+      195,
+      324
+    ],
+    "jacobian_size_bytes": 90719008,
+    "timing_ms": {
+      "init": 7537,
+      "double_and_zero_check": 30507,
+      "lift_one_point": 613521,
+      "lift_checks": 39461
+    },
+    "wall_seconds": 784.161
+  },
+  "backend": {
+    "repository": "https://github.com/nmascot/LiftTors",
+    "revision": "fd6403caf7147b21b67dcb17dbedccea762d6262",
+    "upstream_modified": false,
+    "compiled_adaptation": "exact batched DivSub_dimval; streamed PicLiftTors products; batched lifting kernel",
+    "adapter_sha256": "b2386845df3fc146c156fa33ce31ab5293b3db1c7d058fc876f8d547309451e2",
+    "lift_adapter_sha256": {
+      "lifttors_lift.py": "680cd96790ff7101cbaf907f290170f3f967e41dfc2177aadcd7e7ae559f41f0",
+      "lifttors_streamed.c": "f8b77d8e9dbd2f320f371117227ef81a23c7660a4583d5c17183f0d08f85d47e"
+    },
+    "pari_prefix": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "command": [
+      "cc",
+      "-O3",
+      "-Wall",
+      "-fno-strict-aliasing",
+      "-fPIC",
+      "-dynamiclib",
+      "-I/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/include",
+      "-I/Users/musty/two/dembele/vendor/LiftTors",
+      "/Users/musty/two/dembele/vendor/LiftTors/linalg.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/exp.c",
+      "/Users/musty/two/dembele/pari/.build/lifttors/pic_bounded.c",
+      "/Users/musty/two/dembele/pari/.build/lifttors/lift_streamed.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/freyruck.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/rr.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/torsspace.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/zeta.c",
+      "/Users/musty/two/dembele/pari/lifttors_bounded.c",
+      "/Users/musty/two/dembele/pari/lifttors_streamed.c",
+      "-L/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/lib",
+      "-Wl,-rpath,/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/lib",
+      "-lpari",
+      "-lm",
+      "-o",
+      "/Users/musty/two/dembele/pari/.build/lifttors/liblifttors.so"
+    ],
+    "source_sha256": {
+      "ExDavide2.gp": "970a72034d123cc83d9294380cbaf010a864eb84154503df86e1c2887cf23a96",
+      "ExDavide3.gp": "b236a7f6ad3d0d4eaf3e82f5789b0b0de101383196f7a3a5775b4d366d9fc07b",
+      "ExH2.gp": "1b62ff24f34bc65830558a19bd23195abdb6343d5e809e700d9c28dcde0d0341",
+      "ExHyper.gp": "aba8f29a6ff8cdeb9832d13cd44e3df77109e84abfef6d0396a4e193cd598c98",
+      "ExHyperAlg.gp": "c517067b5dd5aa02d31e6147ddcdd1ff07dc0ebc7e03dba3a216ad94b2aa9472",
+      "ExSmooth.gp": "f4534186c4a8aab8d9ff930ed8065b362e713a2a1c9d3ee5b19ed34cc103d27f",
+      "ExSmoothAlg.gp": "0f9205e8e8c795ce9f8ce7d9527a72a3aec42c4a0dfbbc066475b7b8fe998887",
+      "ExSuper.gp": "5161e036a4f0b42eb158c4b6052efbdad14fc19ddbc68eee9001764c40c57d74",
+      "ExSuperAlg.gp": "1e043ca94b08e7fa771296239f7202ce700e271991efe134ef3abeba70c02a78",
+      "ExSuperDbg.gp": "3f8a8a67603cbbe50a6270cd9352cb846ef153a89246137f2ed38fe40a28c0fe",
+      "GalRep.gp": "45aa8c6dc674ddd36d7c34374c4f24da86133418818069ea2c54e11477e18725",
+      "Hyper2RR.gp": "26c8f863996520e46d049f2eede8230436a42b11bc6aad5974e76a611417abfe",
+      "PtIsOnCurve.gp": "f1e27e016df4e2504b9de19e6b553b9de5f7fbb70ca2b07cf173fbe09478e658",
+      "Smooth2RR.gp": "53c2dd71331f1e30a982a02d32750d494dbda202306ad3add54da45d1aae64e8",
+      "Super2RR.gp": "cd12dab990726b9f6fb2726cb36cbb86962d7a5c781530e5548b8327e59f01e7",
+      "TorsGen.gp": "456daa37fefbf7cba15556e76a33a021fb12a0ac758eed2c8495e163c8881a92",
+      "TorsHensel.gp": "1e81ad6bcddb4a7e96b5794b13ffa9ed033dea57c54b71abce36e2c5c2825104",
+      "TorsSpace.gp": "019446c283ccfaeaaea4987e51ef6c8a92fdbb25c893953a7f2114b7516c3dd5",
+      "exp.c": "0386c0729caef7a138d640971b21a39b659868168d5dc36388ca8c871756c168",
+      "exp.h": "b1c22ff499b3a3ec769d98a654c634de0add64a4393b0e8c5ddce03b706a1bdf",
+      "freyruck.c": "443265842fd6c47a4cf6dc4fa492f34fd44dfcd2973457a667bc7797e0926fb7",
+      "freyruck.h": "c030b39548508f9dcc21728d6f8b946b45100c2aa4698cf78f212fffbd38123b",
+      "install.gp": "d493753e2f1d2d12b234e2479bb067f79c79449748d4e66a135667a6475216ca",
+      "lift.c": "5aaf51562a8b446bc1e988ab1966d34ad45a45125c9e6c434885c806d2d5a1dc",
+      "linalg.c": "7ba3b6bad57ca40f9787b8e98890fe810910f979e3ef0ff26fbd7a701533dcce",
+      "linalg.h": "586be6e04d2d5cda9745c4837be25fecae269987a2d30d38b71399601d75bbdb",
+      "pic.c": "90308fc74d05582a5dc36cfd6624c59b8312306625ff6e14f2ebe226b79eaf06",
+      "pic.h": "58fb8ebd696c5e97493ee855ab79d6ffd538fafe32923a440233fd4a91a91792",
+      "rr.c": "0ab3f64bf324ff74dd6e70d49974d57cf30a787fb0cc60cbfa28576be5281234",
+      "torsspace.c": "adc71a970fb9983b775108965decd80e78578ef2665ab3b6367608f47a9e5ba4",
+      "zeta.c": "2917f9234dc394004a1919a7b69a8967b49a2e81a318a9d66d6fcaf5c7be929b"
+    },
+    "library_sha256": "f6d9b701de6ee65caa1f877dcfeaadeecae1d6cd4498249770f4834a4976c057"
+  },
+  "memory_diagnostics": {
+    "eager_products": {
+      "source": {
+        "path": "dembele/data/computed/lifttors_g64_eager_d63.out",
+        "sha256": "64186f31a94a4eb6c55a336e29d9a2643cd0318a6bc1022879df3d9b25c44158"
+      },
+      "stack_overflow": true,
+      "complete_control_pass": false,
+      "eager_product_checkpoints": [
+        {
+          "count": 1,
+          "stack_bytes_relative_to_lift_entry": 36601096
+        },
+        {
+          "count": 16,
+          "stack_bytes_relative_to_lift_entry": 570789312
+        },
+        {
+          "count": 32,
+          "stack_bytes_relative_to_lift_entry": 1140582520
+        },
+        {
+          "count": 48,
+          "stack_bytes_relative_to_lift_entry": 1710353704
+        }
+      ],
+      "lifting_systems": [],
+      "kernel_checks": []
+    },
+    "streamed_products_only": {
+      "source": {
+        "path": "dembele/data/computed/lifttors_g64_streamed_probe.out",
+        "sha256": "9cfcfd1d775197a148074cc4b4076158418b5dc7af505cdd2c2202a57f5170cc"
+      },
+      "stack_overflow": true,
+      "complete_control_pass": false,
+      "eager_product_checkpoints": [],
+      "lifting_systems": [
+        {
+          "rows": 21252,
+          "columns": 259,
+          "stack_bytes_relative_to_lift_entry": 673338832
+        }
+      ],
+      "kernel_checks": []
+    },
+    "streamed_products_and_batched_kernel": {
+      "source": {
+        "path": "dembele/data/computed/lifttors_g64_scale.out",
+        "sha256": "ce50e102503583e479c3c18a5a06a90970b0e1a17a8e7ebfd32bf3277a679704"
+      },
+      "stack_overflow": false,
+      "complete_control_pass": true,
+      "eager_product_checkpoints": [],
+      "lifting_systems": [
+        {
+          "rows": 21252,
+          "columns": 259,
+          "stack_bytes_relative_to_lift_entry": 673338832
+        },
+        {
+          "rows": 21252,
+          "columns": 259,
+          "stack_bytes_relative_to_lift_entry": 599728216
+        }
+      ],
+      "kernel_checks": [
+        {
+          "rank": 129,
+          "nullity": 130,
+          "rows": 21252
+        },
+        {
+          "rank": 129,
+          "nullity": 130,
+          "rows": 21252
+        }
+      ]
+    }
+  },
+  "execution_policy": {
+    "initial_pari_stack": "512M",
+    "maximum_pari_stack": "2G",
+    "per_process_timeout_seconds": 900,
+    "memory_checkpoints_are_peak_rss": false
+  },
+  "pari_version": "2.17.1",
+  "sources": [
+    {
+      "path": "dembele/pari/run_lifttors_controls.py",
+      "sha256": "c65b75694043c556f9da235f7392e4d49d87d2a08d652546bdcfa62645b2d28f"
+    },
+    {
+      "path": "dembele/pari/build_lifttors.py",
+      "sha256": "05278b216566e4803d84fb77f3d99bd2773353410d992bb8d09310fa50a4ae3f"
+    },
+    {
+      "path": "dembele/pari/lifttors_bounded.c",
+      "sha256": "b2386845df3fc146c156fa33ce31ab5293b3db1c7d058fc876f8d547309451e2"
+    },
+    {
+      "path": "dembele/pari/lifttors_lift.py",
+      "sha256": "680cd96790ff7101cbaf907f290170f3f967e41dfc2177aadcd7e7ae559f41f0"
+    },
+    {
+      "path": "dembele/pari/lifttors_streamed.c",
+      "sha256": "f8b77d8e9dbd2f320f371117227ef81a23c7660a4583d5c17183f0d08f85d47e"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_q8_control.bin",
+      "sha256": "23b6ced69335425bf27f552bb0770ef17671091b371550dc5e6bdfba43ac4949"
+    },
+    {
+      "path": "dembele/pari/100_lifttors_control.gp",
+      "sha256": "f2b2e1cc0d58a7890a116ac89138a2d0fbaa3e8508e7db797f1fc920a980d532"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_q8_control.out",
+      "sha256": "7996cd54095d40d2bd6884acd516073cc4d5228ad06f53aee54d83a6444c8c64"
+    },
+    {
+      "path": "dembele/pari/102_lifttors_validation.gp",
+      "sha256": "28a4176d706f7da679a83d8537e5bc0702f401fd34703b4d581b74e18b606489"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_validation.out",
+      "sha256": "136d2b0565ba32bd5b933026f2b640d43fd94de2cce090db7a2c4e7c067c0863"
+    },
+    {
+      "path": "dembele/pari/103_lifttors_lift_validation.gp",
+      "sha256": "69eeb308412394ab81c01c7c13c81fd9d98d23ebd5734bfa76eb655d3f2b7f12"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_lift_validation.out",
+      "sha256": "170c7a77cc945e0049945b05e1ccc92d571b7fe449639cd47f8ad25b1157d8b4"
+    },
+    {
+      "path": "dembele/pari/104_lifttors_kernel_validation.gp",
+      "sha256": "79d223ef48be86b097424299334fefad0a765f82cbc600dab5be77d91845cfcb"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_kernel_validation.out",
+      "sha256": "f866b999da2274c80a549bfe0d85fc1cc62adc58f2a57df28d0c0dbaf66ef281"
+    },
+    {
+      "path": "dembele/pari/101_lifttors_scale.gp",
+      "sha256": "ecbaf0856a19bdb8055d08c9bd061d7d530a83d6199026a2a51eb9bd11f93708"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_g16_scale.out",
+      "sha256": "0e106dea533b5eb2ca0036d4cf2d4d11bc3d95f9a38c989b3a374b0b4641a22b"
+    },
+    {
+      "path": "dembele/pari/101_lifttors_scale.gp",
+      "sha256": "ecbaf0856a19bdb8055d08c9bd061d7d530a83d6199026a2a51eb9bd11f93708"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_g64_scale.out",
+      "sha256": "ce50e102503583e479c3c18a5a06a90970b0e1a17a8e7ebfd32bf3277a679704"
+    }
+  ],
+  "scope": {
+    "known_q8_torsion_field_recovered": "Q(i)",
+    "generic_divisor_backend_exercised": true,
+    "padic_lifting_and_evaluation_exercised": true,
+    "genus64_control_is_target_Y": false,
+    "genus64_lift_succeeded": true,
+    "target_residue_degree_51_benchmarked": false,
+    "target_arithmetic_sections_available": false,
+    "target_polynomial_obtained": false
+  }
+}

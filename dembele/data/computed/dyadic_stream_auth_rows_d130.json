@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "phase": "rows",
+  "certificates": {
+    "manifest_metadata": {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_stream_auth_manifest_d130.json",
+      "sha256": "f8cb33b704dc04ad6479123b0369f9cf6b90424d202d82c969c41fd7f3ed7fc6"
+    },
+    "complete_reverse_order_row_checks": 174,
+    "authenticated_row_bytes": 222720000,
+    "maximum_row_read_bytes": 1280000,
+    "requested_rows_seconds": 0.1039203330874443,
+    "per_request_full_payload_hashes": 0,
+    "corrupt_private_row_copy_rejected": true,
+    "malformed_row_manifest_rejections": 3,
+    "manifest_must_be_bound_to_a_verified_committed_generation": true,
+    "frozen_payload_modified": false,
+    "production_reader_replaced": false
+  },
+  "wall_seconds": 0.10506120813079178,
+  "peak_rss_bytes": 21725184,
+  "actual_harmonic_precision_increased": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_stream_auth_manifest_d130.json",
+      "sha256": "f8cb33b704dc04ad6479123b0369f9cf6b90424d202d82c969c41fd7f3ed7fc6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/537_dyadic_streaming_authentication_control.py",
+      "sha256": "e309b831f2e5723e819e2dab47024fba26e50f145fafc4f5c363a18bcf8a84ca"
+    }
+  ]
+}

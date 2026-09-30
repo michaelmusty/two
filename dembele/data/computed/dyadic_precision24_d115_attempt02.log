@@ -1,0 +1,9 @@
+OPERATORS|P=24 built in 4.12s
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/417_dyadic_precision_comparison.py", line 207, in <module>
+    if __name__=='__main__':main()
+  File "/Users/musty/two/dembele/pari/417_dyadic_precision_comparison.py", line 203, in main
+    result=calculations(args.precision,args.seed)
+  File "/Users/musty/two/dembele/pari/417_dyadic_precision_comparison.py", line 140, in calculations
+    assert gain>=iteration, {'iteration':iteration,'gain':gain,
+AssertionError: {'iteration': 17, 'gain': 16, 'first_bad': {'edge': 7, 'degree': 1, 'old': [[0, 4, 4, 6, 0, 6, 6, 6], [0, 4, 4, 4, 0, 0, 0, 4], [0, 0, 4, 0, 4, 4, 0, 0], [0, 0, 4, 0, 0, 4, 4, 4], [0, 0, 0, 4, 4, 4, 4, 4], [0, 0, 0, 0, 4, 0, 4, 4], [0, 0, 0, 4, 4, 4, 0, 4], [0, 0, 4, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 4, 0, 0, 0, 0, 0], [0, 0, 4, 0, 0, 0, 0, 0], [0, 0, 4, 0, 0, 0, 4, 0], [0, 0, 4, 0, 0, 0, 4, 0]], 'new': [[4, 0, 4, 2, 4, 6, 6, 2], [0, 4, 0, 0, 4, 0, 0, 0], [0, 4, 0, 0, 0, 0, 4, 0], [0, 0, 4, 4, 0, 0, 4, 0], [0, 0, 4, 4, 0, 4, 4, 0], [0, 0, 4, 4, 0, 0, 4, 4], [0, 0, 4, 4, 0, 4, 0, 4], [0, 0, 4, 4, 0, 4, 4, 4], [0, 0, 4, 0, 0, 0, 4, 0], [0, 0, 0, 0, 0, 0, 0, 4], [0, 0, 0, 0, 4, 0, 0, 4], [0, 0, 4, 0, 0, 0, 4, 0], [0, 0, 4, 4, 4, 4, 4, 0], [0, 0, 4, 0, 0, 4, 4, 0], [0, 0, 4, 4, 0, 0, 4, 4], [0, 0, 0, 0, 4, 0, 0, 4]]}}

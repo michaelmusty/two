@@ -1,0 +1,27 @@
+START formula_a2
+formula_a2: PASS; None; wall 0.832 s
+START formula_a51
+formula_a51: PASS; None; wall 2.452 s
+START kernel
+kernel: PASS; 265; wall 0.33 s
+START lift_comparison
+lift_comparison: PASS; 16942; wall 17.001 s
+START q8
+q8: PASS; {'init': 10, 'basis': 720, 'lift_four_points': 856, 'span_and_evaluate': 558, 'polynomial_and_checks': 7}; wall 2.803 s
+START genus4_a2
+genus4_a2: PASS; {'init': 8, 'double_and_zero_check': 20, 'lift_one_point': 261, 'lift_checks': 24}; wall 0.365 s
+START genus4_a51
+genus4_a51: PASS; {'init': 205, 'double_and_zero_check': 551, 'lift_one_point': 8263, 'lift_checks': 685}; wall 9.957 s
+START genus16_a2
+genus16_a2: PASS; {'init': 179, 'double_and_zero_check': 646, 'lift_one_point': 10070, 'lift_checks': 823}; wall 12.401 s
+START genus64_a2
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/107_lifttors_rows.py", line 178, in <module>
+    reports["sources"] = [source(path) for path in dict.fromkeys(paths)]
+  File "/Users/musty/two/dembele/pari/107_lifttors_rows.py", line 151, in main
+    check(script.read_text() == expected, "Generated control changed")
+  File "/Users/musty/two/dembele/pari/107_lifttors_rows.py", line 97, in collect
+    def collect(name, template, path):
+  File "/Users/musty/two/dembele/pari/107_lifttors_rows.py", line 32, in check
+    raise ValueError(message)
+ValueError: GP error: /Users/musty/two/dembele/data/computed/lifttors_rows_genus64_a2.out

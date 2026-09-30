@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "milestone": "D121",
+  "eliminated_positive_moments": 32,
+  "working_precision_pi": 200,
+  "low_block_dimension": 5568,
+  "coefficient_table_seconds": 0.38548374990932643,
+  "factorization": {
+    "factor_seconds": 4.721553332870826,
+    "block_updates": 2246,
+    "diagonal_inverse_blocks": 174,
+    "lower_blocks": 506,
+    "upper_blocks": 546
+  },
+  "sixteen_column_rhs_seconds": 2.028346583014354,
+  "sixteen_column_triangular_solve_seconds": 1.127123000100255,
+  "actual_harmonic_columns_checked": 16,
+  "actual_low_scalar_coefficients_checked": 712704,
+  "unrelated_rhs_original_residual_checked": true,
+  "unrelated_rhs_scalar_equations_checked": 89088,
+  "factor_payload_bytes": 80347136,
+  "guaranteed_Schur_correction_gain_pi": 33,
+  "wall_seconds": 14.796263125026599,
+  "actual_moment_precision_increased": false,
+  "full_Schur_iteration_validated_for_this_r": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/467_dyadic_sparse_low_blocks.py",
+      "sha256": "168084fa6b835cdf69400ccd1ce3cfd2b90aa9a5808567d1bb9c99f3986a5735"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/464_dyadic_low_moment_block.py",
+      "sha256": "e83603701872d36ecdfad5ee385ce4ba1020dfe932f439977cf3e769e9eecc65"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_low_moment_block_d121.npz",
+      "sha256": "b34740787b2307ec0a85e98a73869872018077c6d1a06106cee93a65879443c7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_low_moment_block_d121.json",
+      "sha256": "50a110cc9a711dcf8ae661e559035ce1aec4d67c8d9a8274fc0842248fcfe06b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_d115.json",
+      "sha256": "bc043dfe632db80984eef2578841611325767cb4afb214bebfa354354f8fb699"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_sparse_low_r32_d121.npz",
+      "sha256": "299b53c7a803001d23d54b40b0a1e515d49bc2f3104f909a76af9357b30b6a00"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/414_dyadic_moment_extension.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.593537415959872,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_moment_extension_d114_attempt01.log",
+    "sha256": "7a03cb57b7f932202d9928589faf6f84a8f704a749cef9191f6839221be9e541"
+  },
+  "private_process_group": 44317,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/414_dyadic_moment_extension.py",
+    "sha256": "ce948723a489dbde61ddc48ce1e5c0f9af1261b15c8b8cb800944b2e6eeb5d21"
+  }
+}

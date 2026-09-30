@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "milestone": "D129",
+  "working_precision_pi": 3200,
+  "seed_precision_pi": 1600,
+  "harmonic_basis_column": 0,
+  "scratch_limit_bytes": 2147483648,
+  "conservative_simultaneous_slots": {
+    "old_seed_input": 111360000,
+    "seed_extension_chunks": 222720000,
+    "two_complete_checkpoints": 338047200,
+    "new_prepared_weighted_state": 113343600,
+    "prepared_correction": 55680000,
+    "one_active_operator_sweep": 222720000,
+    "assembled_uniform_state": 222720000,
+    "final_full_residual": 222720000,
+    "scratch_metadata_allowance": 1048576
+  },
+  "conservative_total_bytes": 1510359376,
+  "full_output_reservations_serialized_by_lock_and_hard_byte_check": true,
+  "rows_written_concurrently_within_reserved_file_lengths": true,
+  "permanent_phase_metadata_and_receipts_outside_scratch": true,
+  "maximum_workers": 3,
+  "phase_timeout_seconds": 180,
+  "operator_chunk_size": 6,
+  "low_rhs_chunk_size": 29,
+  "maximum_serialized_state_row_bytes": 1280000,
+  "fixed_low_system_shape": [
+    174,
+    32,
+    1,
+    8
+  ],
+  "complete_long_state_bank_decoding_disabled": true,
+  "full_bank_or_target_size_cost_certificate": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/529_dyadic_streamed_pilot.py",
+      "sha256": "0b0ca17d4cba6cbb1055e1cf7eea5a95b0e0b8b771a274a417a31cbbd0acc941"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/528_dyadic_streamed_precision3200.py",
+      "sha256": "f06cab0b85ac323560fb3f5b042a9d183b350a2a579b73a3fb6c73e93098250d"
+    }
+  ]
+}

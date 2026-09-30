@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/405_dyadic_edge_reducer.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 6.590330209000967,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_edge_reducer_d111_attempt01.log",
+    "sha256": "c4f7bc6fc3a82ffe51133668164b0aa4d68ce1a7ef6f8d331a097b761b97a57b"
+  },
+  "private_process_group": 20430,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/405_dyadic_edge_reducer.py",
+    "sha256": "d1897608bffff74265910fdc9d3deb448fa76819308d69a2a27a3408c8e75e2c"
+  }
+}

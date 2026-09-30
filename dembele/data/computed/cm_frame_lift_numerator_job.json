@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "dembele/pari/126_cm_frame_lift_numerator.py"
+  ],
+  "exit_code": 0,
+  "timeout_seconds": 120,
+  "wall_seconds": 7.643495541997254,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/126_cm_frame_lift_numerator.py",
+      "sha256": "099b94394117100738f87bfe87e1886d0710dc6b635888872ee483fc08a2c88d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_lift_numerator.json",
+      "sha256": "0f36278010b49ab5d95b5fcdc12b2c3ef923bbe79815285b79bf9045e77c9ec1"
+    }
+  ],
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_lift_numerator.out",
+    "sha256": "13d70a7af280b43c5812a4abf505256a28b7b2540cd07302274307cd7d584c2b"
+  },
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d72-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

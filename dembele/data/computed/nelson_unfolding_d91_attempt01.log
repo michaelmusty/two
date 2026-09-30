@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/327_nelson_unfolding_data.py", line 115, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/Users/musty/two/dembele/pari/327_nelson_unfolding_data.py", line 95, in main
+    "mixed":bool(q!=parallel and parallel),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "sage/algebras/quatalg/quaternion_algebra_element.pyx", line 336, in sage.algebras.quatalg.quaternion_algebra_element.QuaternionAlgebraElement_abstract.__bool__ (build/cythonized/sage/algebras/quatalg/quaternion_algebra_element.cpp:10386)
+  File "sage/rings/number_field/number_field_element.pyx", line 2777, in sage.rings.number_field.number_field_element.NumberFieldElement.__int__ (build/cythonized/sage/rings/number_field/number_field_element.cpp:34799)
+  File "sage/rings/polynomial/polynomial_element.pyx", line 1438, in sage.rings.polynomial.polynomial_element.Polynomial.__int__ (build/cythonized/sage/rings/polynomial/polynomial_element.c:24806)
+  File "sage/rings/polynomial/polynomial_element.pyx", line 1416, in sage.rings.polynomial.polynomial_element.Polynomial._scalar_conversion (build/cythonized/sage/rings/polynomial/polynomial_element.c:24668)
+TypeError: cannot convert nonconstant polynomial

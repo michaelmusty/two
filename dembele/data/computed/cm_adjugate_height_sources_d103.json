@@ -1,0 +1,38 @@
+{
+  "milestone": "D103",
+  "review_date": "2026-09-24",
+  "scope": "Primary structural and metric sources. The adjugate bound, uniform CM displacement estimate and specialization to 513*H_CM_disk+8400 are project deductions.",
+  "sources": [
+    {
+      "title": "The Stacks Project, The relative dualizing sheaf",
+      "url": "https://stacks.math.columbia.edu/tag/0E6N",
+      "locations": ["Lemma 109.19.1", "Lemma 109.19.3"],
+      "use": "Relative duality and invertibility/base change of the dualizing sheaf on the nodal stable model. The integral nodal differential and Gaussian map are proved locally in the D103 report.",
+      "does_not_supply": "The stable coarse-canonical fibre height or its comparison with a quaternionic Hodge model."
+    },
+    {
+      "title": "Ariyan Javanpeykar, Polynomial bounds for Arakelov invariants of Belyi curves; appendix by Peter Bruin",
+      "url": "https://msp.org/ant/2014/8-1/ant-v8-n1-p04-s.pdf",
+      "bibliography": "Algebra & Number Theory 8 (2014), 89-140; DOI 10.2140/ant.2014.8.89",
+      "locations": ["Section 2.1, pages 93-94: L2 and determinant metrics", "Sections 2.2-2.3, pages 97-98: arithmetic degree and stable Faltings height", "Lemma 2.4.4, page 101: Bost lower bound"],
+      "use": "Matching metric normalization and the universal lower bound h_Fal(C)>=-g*log(2*pi).",
+      "does_not_supply": "An upper bound for H_CM_disk. No Belyi map or Belyi-degree upper bound is assumed or used."
+    },
+    {
+      "title": "Roy Zhao, Heights of Special Points on Quaternionic Shimura Varieties",
+      "url": "https://arxiv.org/pdf/2309.08886",
+      "version_reviewed": "v1, 16 September 2023",
+      "locations": ["Theorem 1.1", "Section 6: arithmetic Hodge bundles and metrics"],
+      "use": "Potential next input for an arithmetic Hodge height; its finite ramification condition allows the common dyadic ramification here.",
+      "does_not_supply": "A proved integral comparison with the stable coarse-canonical fibre of our genus-16 normalizer quotient. No numerical H_CM_disk bound is claimed."
+    }
+  ],
+  "saved_arithmetic_inputs": [
+    "D58 marked descent: conjugate quaternionic covers, norm-one/normalizer comparison and CM transport",
+    "D90 and D92: maximal order, beta^2=-pi, CM orthogonal decomposition, full unit signatures",
+    "D102: integral saved field basis and trace-centered factor 17"
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "numeric_actual_Shimura_tangent_height_bound_obtained": false,
+  "remaining_numeric_height": "Stable coarse-canonical CM fibre in the centered uniformizing disk metric"
+}

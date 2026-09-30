@@ -1,0 +1,471 @@
+{
+  "status": "pass",
+  "milestone": "D83",
+  "date": "2026-09-22",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/263_cm_frame_cubic_64_audit.py",
+      "sha256": "0dbc811fa10cb61376de8474f3f45f661915d3531767cdf8999cffa59d36e98b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_package_64.json",
+      "sha256": "28c1f49e92f8ef7a495856f93addfda55d467148bc2f479e41d0f07aae7a80e5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_audit_32.json",
+      "sha256": "8f8b0dea1751046bb90133a045513b65930c8c92c18d0d88fd8d0b302175ab0e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_64_check.json",
+      "sha256": "fa971ec766bce527f489b5ae5127c05471e8c0393e48357402780d2a8f9038e1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_64_check.json",
+      "sha256": "a0ee51b41cada8c076b9d2cf746744b9d560bb48fbb17c6ef3eb3d02d21b5100"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_64_recognition.json",
+      "sha256": "d1e5fabb69ee515b44a886265c7a9a7ece65b338b2e3f39df076ac9c9b68fc95"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision64_charts_receipt.json",
+      "sha256": "8c5aef5f2e04b8a71200437d1a8a4958b816c47aa87d04e92d147dfdb5a7ab8e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision64_divisor_receipt.json",
+      "sha256": "7fd17e254c3ebcbdca0fc9909e70476dc2ce29b81c69f87f53716d27b077a3f6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision64_jets_receipt.json",
+      "sha256": "1c730adb3901bd975d459e0e6c32f50f7c01bbece56229a0871fefbc1e45f828"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision64_newton_divisor_receipt.json",
+      "sha256": "bead12338a5508454592849f3bfa42ea1c833e7df63a22fbf0c176ad6dc9d0a2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision64_publish_cubic_receipt.json",
+      "sha256": "0e55f8a7055455857a429e3d1898646fe22b3e34e3333802eb9a945768e50cd2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision64_publish_third_receipt.json",
+      "sha256": "8bf925bd9f7fee2eb85f9803afa03db9942c183fdefe24082103e6c26acca7bf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision64_sections_receipt.json",
+      "sha256": "b2a889b5078bfe847592693da085c82acb286cfeaf9119ac87ffd5486fce0f3e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_height_late_archive.json",
+      "sha256": "ae65082bb0cde5445bd9e534edb9da0fdc5a14c65d1e1ca1ad988cccb7cb7c5d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_bounded_sage_timeout_control.json",
+      "sha256": "407b9dfbc2580618a0cfe3425eb5163182802d5391c2307e131af44a717d152f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/274_cm_frame_bounded_recognition.py",
+      "sha256": "1c267bf53ded651827db0f3ff5f51b885c1fee2fab59fa85a010b12b7060c653"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_64_newton_check_job.json",
+      "sha256": "2daa5b5864ae36f95b467b52dd5ab9e1f5cc65f396b279fc317f4b75588544f1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_64_function_checkpoint_job.json",
+      "sha256": "bddc8d1c1c29bcd92563c5d794a9f679a7ceb46d8332cdc1eadbfa2baba441dc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_height_64_48_0_job.json",
+      "sha256": "522e348f08e3b719bb4dc12a16cc1453cb2fdee7f3344c2013c199bff0391904"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_0.json",
+      "sha256": "1f28affcbcc4db862fb03798a3c5970b8e64bb41f08ec77b90f7cdf6af632d9f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_1.json",
+      "sha256": "a709335d31da1c240d38445d92902fbe1a234ea9a44f28fead546e9fa9aac5de"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_2.json",
+      "sha256": "e8c8243a58d2b8f5a5023bb1b85f936b828eb65edc76020a719d213068c4ba62"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_3.json",
+      "sha256": "a4ef0de07917b5d915ff0acc96886f17ffd0f3d525f82cbe202eb62ef73f7098"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_4.json",
+      "sha256": "373a92ee16d0bfdb2451dec983bd1672deae4cef58ce22c736fad3c1d1721d65"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_5.json",
+      "sha256": "d3efb6670db47a22fbf580f9d137db4b8a0d9b2297dc36ebc0e135c572f44ca4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_6.json",
+      "sha256": "7b507191a69aa83e7e01093d2a6584124044820c77a1a2f52c858a2d794cd4e4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_7.json",
+      "sha256": "598c87e091c15ba75267d99cf7339a73206b4d622306375e2a2b9f06caa1efde"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_60_0.json",
+      "sha256": "604a763545aa31420eb3f4866a7aa264f3c7dbb68a33a350a8f63b075686ce68"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_60_1.json",
+      "sha256": "df637a7783537f551d03439634482f24a7363944ced2401b4d9b4e6e54594c54"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_60_2.json",
+      "sha256": "e1a43b281c6b59f76482f12f5c4e135a687aa54ccc192d725eb413470dbce6a6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_60_3.json",
+      "sha256": "d107d91125cffbefd7cb50bd47ec5c6d678ceba0b4301d91fc6da724fc9430ec"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_60_4.json",
+      "sha256": "913e1646b1e221cd90fe842ce8505be9206370d6dd5b7f903a5f54005b9fc81c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_60_5.json",
+      "sha256": "055346a330daed7a1867b41cf389ccc87a5b89bf425562da31ccdfded5356bec"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_60_6.json",
+      "sha256": "76014e00bbaa5cff1c2fc391d1fc1f1dd9c55c7a6534237307cffe0b67d12aa2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_60_7.json",
+      "sha256": "93b6e495396432a4df105be8d624b5087a64226cb98387eb9285dfc1a916dc75"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_0.json",
+      "sha256": "ef8c5517b2bc9f322433806c6a2d5e3a9698396b345e403bf8e3464249258ed2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_1.json",
+      "sha256": "67dc9d946b7c301047a6b99c5b27e4d8bb8d90a7e53be8e679214955e17f779e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_2.json",
+      "sha256": "ab39429e5643e51c35f057b61be0a2cbd5ad5292ada42f492f7fa8d1a71c593f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_3.json",
+      "sha256": "0bebc3c6a2f330d48f2c1128176afb2c815d9cbdfa08d71b98ee18e88fbcef16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_4.json",
+      "sha256": "51a1ce1982da4c9613556c3eaac5291c2d1634148dc2a140533b3625a55a7d5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_5.json",
+      "sha256": "52e1c00e653b9293624025bd5a4124fc152e9ec0a1c187d19f5f1f91e0f8f06a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_6.json",
+      "sha256": "68040671be1c01e300db34ee999d301801b61d7d574dadc5afcf90aab92ef7b3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_7.json",
+      "sha256": "055027a670c9aa110b5884fc836c80c13a0ff6888585b344044054ceec6e34a7"
+    }
+  ],
+  "distinct_files_verified": 1329,
+  "linked_json_records_verified": 493,
+  "frozen_D78_sha256": "a81750ea1fe8abfbbf27ac338154ef863ecea72dc95ada066656f8d981429931",
+  "python_sources_parsed": [
+    "dembele/data/computed/cm_frame_cubic_lift_pilot_data_syntax_failure.py",
+    "dembele/data/computed/cm_frame_cubic_point_check_load_syntax_failure_1.py",
+    "dembele/pari/114_cm_projective_frame.py",
+    "dembele/pari/115_cm_frame_quadric_search.py",
+    "dembele/pari/116_cm_frame_curve_check.py",
+    "dembele/pari/117_cm_frame_verification.py",
+    "dembele/pari/119_cm_frame_marks.py",
+    "dembele/pari/120_cm_frame_marks_check.py",
+    "dembele/pari/122_cm_frame_resolvent_check.py",
+    "dembele/pari/124_cm_frame_resolvent_lift.py",
+    "dembele/pari/125_cm_frame_resolvent_lift_check.py",
+    "dembele/pari/126_cm_frame_lift_numerator.py",
+    "dembele/pari/127_cm_frame_numerator_lattice.py",
+    "dembele/pari/129_cm_frame_normalization_check.py",
+    "dembele/pari/130_cm_frame_precision_doubling.py",
+    "dembele/pari/131_cm_frame_doubling_check.py",
+    "dembele/pari/132_cm_frame_denominator_recognition.py",
+    "dembele/pari/133_cm_frame_projective_denominator.py",
+    "dembele/pari/135_cm_frame_denominator_space_nullspace_probe.py",
+    "dembele/pari/135_cm_frame_denominator_space_reduction.py",
+    "dembele/pari/137_cm_frame_arithmetic_check.py",
+    "dembele/pari/138_cm_frame_joint_field_recognition.py",
+    "dembele/pari/139_cm_frame_joint_height_bounds.py",
+    "dembele/pari/141_cm_frame_joint_field_check.py",
+    "dembele/pari/142_cm_frame_B3_numerator.py",
+    "dembele/pari/144_cm_frame_B3_check.py",
+    "dembele/pari/146_cm_frame_B3_moving_sections.py",
+    "dembele/pari/148_cm_frame_B3_lift_check.py",
+    "dembele/pari/150_cm_frame_B3_space_recognition.py",
+    "dembele/pari/152_cm_frame_B3_veronese.py",
+    "dembele/pari/154_cm_frame_B3_rational_model.py",
+    "dembele/pari/156_cm_frame_B3_rational_check.py",
+    "dembele/pari/158_cm_frame_B3_fiber_data.py",
+    "dembele/pari/160_cm_frame_B3_fiber_structure.py",
+    "dembele/pari/162_cm_frame_B3_fiber_check.py",
+    "dembele/pari/163_cm_frame_B3_branch_class.py",
+    "dembele/pari/165_cm_frame_cover_section_data.py",
+    "dembele/pari/167_cm_frame_cover_makdisi_data.py",
+    "dembele/pari/172_cm_frame_cover_third.py",
+    "dembele/pari/174_cm_frame_cover_check.py",
+    "dembele/pari/177_cm_frame_cubic_data.py",
+    "dembele/pari/179_cm_frame_cubic_check.py",
+    "dembele/pari/181_cm_frame_cubic_point_data.py",
+    "dembele/pari/183_cm_frame_cubic_point_check.py",
+    "dembele/pari/185_cm_frame_cubic_lift_section_data.py",
+    "dembele/pari/189_cm_frame_cubic_lift_third.py",
+    "dembele/pari/192_cm_frame_cubic_lift_data.py",
+    "dembele/pari/194_cm_frame_cubic_lift_check.py",
+    "dembele/pari/196_cm_frame_cubic_gauge.py",
+    "dembele/pari/201_cm_frame_cubic_precision.py",
+    "dembele/pari/205_cm_frame_cubic_precision_check.py",
+    "dembele/pari/209_cm_frame_cubic_formal_divisor.py",
+    "dembele/pari/211_cm_frame_cubic_formal_third.py",
+    "dembele/pari/213_cm_frame_cubic_formal_check.py",
+    "dembele/pari/219_cm_frame_cubic_pointed_jets.py",
+    "dembele/pari/221_cm_frame_cubic_pointed_function.py",
+    "dembele/pari/223_cm_frame_cubic_pointed_check.py",
+    "dembele/pari/225_cm_frame_cubic_pointed_isomorphism.py",
+    "dembele/pari/226_cm_frame_cubic_pointed_class_lift.py",
+    "dembele/pari/229_cm_frame_cubic_pointed_newton.py",
+    "dembele/pari/232_cm_frame_cubic_pointed_recognition.py",
+    "dembele/pari/236_cm_frame_cubic_pointed_check.py",
+    "dembele/pari/238_cm_frame_cubic_pointed_local_invariants.py",
+    "dembele/pari/239_cm_frame_cubic_pointed_local_recognition.py",
+    "dembele/pari/241_cm_frame_cubic_pointed_direct_function.py",
+    "dembele/pari/243_cm_frame_cubic_pointed_direct_check.py",
+    "dembele/pari/244_cm_frame_cubic_pointed_publish.py",
+    "dembele/pari/245_cm_frame_cubic_precision_audit.py",
+    "dembele/pari/247_cm_frame_cubic_quartic_space_jets.py",
+    "dembele/pari/248_cm_frame_cubic_quartic_space_lattice.py",
+    "dembele/pari/250_cm_frame_cubic_adjoint_probe.py",
+    "dembele/pari/252_cm_frame_cubic_adjoint_check.py",
+    "dembele/pari/253_cm_frame_cubic_adjoint_lift.py",
+    "dembele/pari/255_cm_frame_cubic_adjoint_quadratic_space.py",
+    "dembele/pari/257_cm_frame_cubic_adjoint_isomorphism.py",
+    "dembele/pari/258_cm_frame_cubic_adjoint_recognition.py",
+    "dembele/pari/259_cm_frame_cubic_adjoint_joint_recognition.py",
+    "dembele/pari/260_cm_frame_cubic_adjoint_audit.py",
+    "dembele/pari/261_cm_frame_cubic_precision64.py",
+    "dembele/pari/262_cm_frame_cubic_staged_functions.py",
+    "dembele/pari/263_cm_frame_cubic_64_audit.py",
+    "dembele/pari/264_cm_frame_cubic_class_checks.py",
+    "dembele/pari/265_cm_frame_cubic_pointed64_check.py",
+    "dembele/pari/266_cm_frame_cubic_pointed64_functions.py",
+    "dembele/pari/267_cm_frame_cubic_adjoint64_functions.py",
+    "dembele/pari/268_cm_frame_cubic_adjoint64_check.py",
+    "dembele/pari/269_cm_frame_cubic_adjoint64_move.py",
+    "dembele/pari/270_cm_frame_cubic_recognition_height.py",
+    "dembele/pari/271_cm_frame_cubic_dual_height.py",
+    "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "dembele/pari/273_cm_frame_timeout_control.py",
+    "dembele/pari/274_cm_frame_bounded_recognition.py",
+    "dembele/pari/94_cm_arithmetic.py",
+    "dembele/pari/95_marked_descent.py",
+    "dembele/pari/96_cm_orbit.py",
+    "dembele/pari/97_cm_field_recognition.py",
+    "dembele/pari/d83_64_219_cm_frame_cubic_pointed_jets.py",
+    "dembele/pari/d83_64_229_cm_frame_cubic_pointed_newton.py",
+    "dembele/pari/d83_64_244_cm_frame_cubic_pointed_publish.py"
+  ],
+  "verified_precision_digits": 64,
+  "coefficientwise_reduction_to_32_verified": true,
+  "joint_F_recognition": [
+    {
+      "training_digits": 48,
+      "validation_digits": 16,
+      "root_mod31": 4,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 48
+    },
+    {
+      "training_digits": 48,
+      "validation_digits": 16,
+      "root_mod31": 9,
+      "known_control_survivors": 6,
+      "target_survivors": 0,
+      "maximum_matching_digits": 48
+    },
+    {
+      "training_digits": 48,
+      "validation_digits": 16,
+      "root_mod31": 10,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 48
+    },
+    {
+      "training_digits": 48,
+      "validation_digits": 16,
+      "root_mod31": 11,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 48
+    },
+    {
+      "training_digits": 48,
+      "validation_digits": 16,
+      "root_mod31": 20,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 48
+    },
+    {
+      "training_digits": 48,
+      "validation_digits": 16,
+      "root_mod31": 21,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 48
+    },
+    {
+      "training_digits": 48,
+      "validation_digits": 16,
+      "root_mod31": 22,
+      "known_control_survivors": 7,
+      "target_survivors": 0,
+      "maximum_matching_digits": 48
+    },
+    {
+      "training_digits": 48,
+      "validation_digits": 16,
+      "root_mod31": 27,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 48
+    },
+    {
+      "training_digits": 60,
+      "validation_digits": 4,
+      "root_mod31": 4,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 60
+    },
+    {
+      "training_digits": 60,
+      "validation_digits": 4,
+      "root_mod31": 9,
+      "known_control_survivors": 6,
+      "target_survivors": 0,
+      "maximum_matching_digits": 60
+    },
+    {
+      "training_digits": 60,
+      "validation_digits": 4,
+      "root_mod31": 10,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 60
+    },
+    {
+      "training_digits": 60,
+      "validation_digits": 4,
+      "root_mod31": 11,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 60
+    },
+    {
+      "training_digits": 60,
+      "validation_digits": 4,
+      "root_mod31": 20,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 60
+    },
+    {
+      "training_digits": 60,
+      "validation_digits": 4,
+      "root_mod31": 21,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 60
+    },
+    {
+      "training_digits": 60,
+      "validation_digits": 4,
+      "root_mod31": 22,
+      "known_control_survivors": 7,
+      "target_survivors": 0,
+      "maximum_matching_digits": 60
+    },
+    {
+      "training_digits": 60,
+      "validation_digits": 4,
+      "root_mod31": 27,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 60
+    }
+  ],
+  "characteristic_zero_cubic_constructed": false,
+  "independently_verified_height_exclusions": [
+    {
+      "root_mod31": 4,
+      "excluded_height_through": 2160583
+    },
+    {
+      "root_mod31": 9,
+      "excluded_height_through": 2159127
+    },
+    {
+      "root_mod31": 10,
+      "excluded_height_through": 3165549
+    },
+    {
+      "root_mod31": 11,
+      "excluded_height_through": 1301123
+    },
+    {
+      "root_mod31": 20,
+      "excluded_height_through": 4384493
+    },
+    {
+      "root_mod31": 21,
+      "excluded_height_through": 1778583
+    },
+    {
+      "root_mod31": 22,
+      "excluded_height_through": 2998618
+    },
+    {
+      "root_mod31": 27,
+      "excluded_height_through": 1406747
+    }
+  ],
+  "uniform_excluded_integral_height_through": 1301123,
+  "archived_unsuccessful_diagnostics": [
+    {
+      "record": "cm_frame_cubic_pointed_64_newton_check_job.json",
+      "status": "timeout",
+      "wall_seconds": 180.0324424999999
+    },
+    {
+      "record": "cm_frame_cubic_pointed_64_function_checkpoint_job.json",
+      "status": "timeout",
+      "wall_seconds": 180.06842995807528
+    },
+    {
+      "record": "cm_frame_cubic_adjoint_height_64_48_0_job.json",
+      "status": "timeout",
+      "wall_seconds": 180.0100834169425
+    }
+  ],
+  "arithmetic_identification_certified": false,
+  "target_field_constructed": false,
+  "proof": "dembele/certificates/cm-frame-cubic-64.md"
+}

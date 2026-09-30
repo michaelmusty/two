@@ -1,0 +1,36 @@
+{
+  "milestone": "D130",
+  "kind": "bounded_job_plan",
+  "dependent_job_order": true,
+  "jobs": [
+    {
+      "driver": "dembele/pari/537_dyadic_streaming_authentication_control.py",
+      "stem": "dyadic_stream_auth_manifest_d130",
+      "marker": "PASS|537_DYADIC_STREAMING_AUTHENTICATION_CONTROL",
+      "args": [
+        "--phase",
+        "manifest"
+      ]
+    },
+    {
+      "driver": "dembele/pari/537_dyadic_streaming_authentication_control.py",
+      "stem": "dyadic_stream_auth_rows_d130",
+      "marker": "PASS|537_DYADIC_STREAMING_AUTHENTICATION_CONTROL",
+      "args": [
+        "--phase",
+        "rows",
+        "--previous",
+        "dyadic_stream_auth_manifest_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/537_dyadic_streaming_authentication_control.py",
+      "stem": "dyadic_stream_auth_target_d130",
+      "marker": "PASS|537_DYADIC_STREAMING_AUTHENTICATION_CONTROL",
+      "args": [
+        "--phase",
+        "target"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "status": "pass",
+  "milestone": "D124",
+  "working_precision_pi": 1600,
+  "actual_input_precision_pi": 800,
+  "profiled_states": [
+    0,
+    17,
+    61,
+    98,
+    173
+  ],
+  "output_moments": 33,
+  "original_low_equation_scalar_checks": 1320,
+  "older_GMP_backend_scalar_comparisons": 1320,
+  "profiled_FLINT_seconds": 5.719420249806717,
+  "unprofiled_GMP_seconds": 3.839149541920051,
+  "timing_caveat": "Profiling overhead is included only in the FLINT figure; these are not speed-comparison timings.",
+  "top_functions_by_self_time": [
+    {
+      "file": "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py",
+      "line": 39,
+      "function": "value",
+      "calls": 5,
+      "self_seconds": 1.3092521480000001,
+      "cumulative_seconds": 1.8197139160000002
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "line": 102,
+      "function": "<genexpr>",
+      "calls": 5568005,
+      "self_seconds": 0.589577129,
+      "cumulative_seconds": 0.589577129
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 31,
+      "function": "pmul",
+      "calls": 34140,
+      "self_seconds": 0.46209920400000004,
+      "cumulative_seconds": 1.6379670800000001
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/463_dyadic_gmp_transport.py",
+      "line": 44,
+      "function": "product",
+      "calls": 34140,
+      "self_seconds": 0.44659341300000005,
+      "cumulative_seconds": 0.501064949
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "line": 103,
+      "function": "<listcomp>",
+      "calls": 870,
+      "self_seconds": 0.41349133800000004,
+      "cumulative_seconds": 0.7495649990000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.min>",
+      "calls": 5519225,
+      "self_seconds": 0.405539986,
+      "cumulative_seconds": 0.405539986
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "line": 103,
+      "function": "<genexpr>",
+      "calls": 6264000,
+      "self_seconds": 0.336073661,
+      "cumulative_seconds": 0.336073661
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 23,
+      "function": "multiply",
+      "calls": 1290,
+      "self_seconds": 0.269990463,
+      "cumulative_seconds": 0.47973420400000005
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 36,
+      "function": "pack",
+      "calls": 68280,
+      "self_seconds": 0.254795309,
+      "cumulative_seconds": 0.304082803
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 49,
+      "function": "<listcomp>",
+      "calls": 78860,
+      "self_seconds": 0.24156501300000002,
+      "cumulative_seconds": 0.29948721300000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.all>",
+      "calls": 5,
+      "self_seconds": 0.21990912,
+      "cumulative_seconds": 0.8094862490000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'bit_length' of 'int' objects>",
+      "calls": 5488260,
+      "self_seconds": 0.113685558,
+      "cumulative_seconds": 0.113685558
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method from_bytes>",
+      "calls": 1550460,
+      "self_seconds": 0.09898367300000001,
+      "cumulative_seconds": 0.09898367300000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'to_bytes' of 'int' objects>",
+      "calls": 1370380,
+      "self_seconds": 0.087203656,
+      "cumulative_seconds": 0.087203656
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 30,
+      "function": "<genexpr>",
+      "calls": 336690,
+      "self_seconds": 0.067533745,
+      "cumulative_seconds": 0.08014140700000001
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 52,
+      "function": "<genexpr>",
+      "calls": 709740,
+      "self_seconds": 0.053582585,
+      "cumulative_seconds": 0.053582585
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 26,
+      "function": "<genexpr>",
+      "calls": 437400,
+      "self_seconds": 0.040408505000000004,
+      "cumulative_seconds": 0.040408505000000004
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 25,
+      "function": "add",
+      "calls": 48600,
+      "self_seconds": 0.035571674000000005,
+      "cumulative_seconds": 0.07598017900000001
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 25,
+      "function": "<genexpr>",
+      "calls": 218730,
+      "self_seconds": 0.028358782000000003,
+      "cumulative_seconds": 0.03821728
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 26,
+      "function": "<genexpr>",
+      "calls": 216090,
+      "self_seconds": 0.027077317,
+      "cumulative_seconds": 0.03763867
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 36,
+      "function": "pmul",
+      "calls": 35430,
+      "self_seconds": 0.026467565000000002,
+      "cumulative_seconds": 2.148572078
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'join' of 'bytes' objects>",
+      "calls": 2580,
+      "self_seconds": 0.026328467,
+      "cumulative_seconds": 0.102184417
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 30,
+      "function": "<listcomp>",
+      "calls": 1290,
+      "self_seconds": 0.024873439,
+      "cumulative_seconds": 0.10501484600000001
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 105,
+      "function": "homogeneous",
+      "calls": 15970,
+      "self_seconds": 0.019513217000000003,
+      "cumulative_seconds": 1.9348541680000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.len>",
+      "calls": 491695,
+      "self_seconds": 0.016412424000000002,
+      "cumulative_seconds": 0.016412424000000002
+    }
+  ],
+  "top_functions_by_cumulative_time": [
+    {
+      "file": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "line": 96,
+      "function": "apply_rows",
+      "calls": 5,
+      "self_seconds": 0.000274422,
+      "cumulative_seconds": 5.6822996670000006
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 36,
+      "function": "pmul",
+      "calls": 35430,
+      "self_seconds": 0.026467565000000002,
+      "cumulative_seconds": 2.148572078
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 100,
+      "function": "apply",
+      "calls": 10,
+      "self_seconds": 0.000135291,
+      "cumulative_seconds": 1.9469060420000002
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 105,
+      "function": "homogeneous",
+      "calls": 15970,
+      "self_seconds": 0.019513217000000003,
+      "cumulative_seconds": 1.9348541680000002
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py",
+      "line": 39,
+      "function": "value",
+      "calls": 5,
+      "self_seconds": 1.3092521480000001,
+      "cumulative_seconds": 1.8197139160000002
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 31,
+      "function": "pmul",
+      "calls": 34140,
+      "self_seconds": 0.46209920400000004,
+      "cumulative_seconds": 1.6379670800000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.all>",
+      "calls": 5,
+      "self_seconds": 0.21990912,
+      "cumulative_seconds": 0.8094862490000001
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "line": 103,
+      "function": "<listcomp>",
+      "calls": 870,
+      "self_seconds": 0.41349133800000004,
+      "cumulative_seconds": 0.7495649990000001
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "line": 102,
+      "function": "<genexpr>",
+      "calls": 5568005,
+      "self_seconds": 0.589577129,
+      "cumulative_seconds": 0.589577129
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/463_dyadic_gmp_transport.py",
+      "line": 44,
+      "function": "product",
+      "calls": 34140,
+      "self_seconds": 0.44659341300000005,
+      "cumulative_seconds": 0.501064949
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 23,
+      "function": "multiply",
+      "calls": 1290,
+      "self_seconds": 0.269990463,
+      "cumulative_seconds": 0.47973420400000005
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+      "line": 44,
+      "function": "mul",
+      "calls": 19440,
+      "self_seconds": 0.004202794,
+      "cumulative_seconds": 0.41100223900000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.min>",
+      "calls": 5519225,
+      "self_seconds": 0.405539986,
+      "cumulative_seconds": 0.405539986
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 60,
+      "function": "__init__",
+      "calls": 10,
+      "self_seconds": 0.004735261,
+      "cumulative_seconds": 0.348982375
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "line": 103,
+      "function": "<genexpr>",
+      "calls": 6264000,
+      "self_seconds": 0.336073661,
+      "cumulative_seconds": 0.336073661
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 36,
+      "function": "pack",
+      "calls": 68280,
+      "self_seconds": 0.254795309,
+      "cumulative_seconds": 0.304082803
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "line": 49,
+      "function": "<listcomp>",
+      "calls": 78860,
+      "self_seconds": 0.24156501300000002,
+      "cumulative_seconds": 0.29948721300000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'bit_length' of 'int' objects>",
+      "calls": 5488260,
+      "self_seconds": 0.113685558,
+      "cumulative_seconds": 0.113685558
+    },
+    {
+      "file": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "line": 30,
+      "function": "<listcomp>",
+      "calls": 1290,
+      "self_seconds": 0.024873439,
+      "cumulative_seconds": 0.10501484600000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'join' of 'bytes' objects>",
+      "calls": 2580,
+      "self_seconds": 0.026328467,
+      "cumulative_seconds": 0.102184417
+    }
+  ],
+  "input_metadata": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124.json",
+    "sha256": "d526be706de9d6666db5c785b7ce82bcb043f9f066e6c443b66f77782a1bdc7d"
+  },
+  "wall_seconds": 10.119511750061065,
+  "peak_rss_bytes": 202522624,
+  "no_new_harmonic_column": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_block_kernel_d121.dylib",
+      "sha256": "4342eef9f6f6f6770c41a205b77c6982c62cd0ca3d95597c47c578e5d32c5e43"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_polynomial_kernel_d122.dylib",
+      "sha256": "8f165f930e9605338522757132cc795e0870e98dd8ca11ab77453611a8ae591b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124.json",
+      "sha256": "d526be706de9d6666db5c785b7ce82bcb043f9f066e6c443b66f77782a1bdc7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124_correction.bin",
+      "sha256": "2aefc174e43d9aaf4661007beedd53f0a4b7f3b9426f3f33a4ce39348e1fec0e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124_state.bin",
+      "sha256": "808fe967961baf7f65083bf9d2be1980cbd06e5b708b0b9a362951078a605f03"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "sha256": "86d272475bbc0390f28b198462d63eac33262de9b7b9575d634895eebb985542"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/472_dyadic_multiprecision_low_factor.py",
+      "sha256": "ace66e349eaf0554a48e839ebb881e4095f284cdfcbab10ce00964b7503d8283"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py",
+      "sha256": "20f1083cc885512872db8049628260aef8213d5feed4809ac78858b6f343dce3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/476_dyadic_polynomial_kernel.c",
+      "sha256": "1a0f8069f25d4c4f130c686a119fd5144663734627baa1e4aca18d8cac3763bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "sha256": "b91d15359aeebf56a9d71f6d46fb86ae0addf4c79ac63e8b34f55c9bcfefc62d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "sha256": "86c45479d6866a0120b0daefcf915e2a13f5cbc763ed3bd368437d11fb3b6ec8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/501_dyadic_transport_profile.py",
+      "sha256": "ee00b273364a0b650dd46442abc64ef7a320651ba75d4c91eea456750d25dc5b"
+    }
+  ]
+}

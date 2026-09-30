@@ -1,0 +1,103 @@
+// D78: independent verification of saved sections, products and branch spaces.
+// No point search, product-basis selection or kernel solve is repeated.
+SetQuitOnError(true); SetColumns(0); SetSeed(78);
+started:=Cputime();
+load "dembele/data/computed/cm_frame_cover_sections.m";
+load "dembele/data/computed/cm_frame_cover_makdisi.m";
+load "dembele/data/computed/cm_frame_B3_rational_model.m";
+load "dembele/data/computed/cm_frame_B3_fiber.m";
+load "dembele/data/computed/cm_frame_B3_fiber_structure.m";
+U<t>:=PolynomialRing(GF(31));
+assert makdisi_field_modulus eq sections_evaluation_field_modulus;
+k<b>:=ext<GF(31)|U!makdisi_field_modulus>;
+load "dembele/data/computed/cm_frame_curve_candidate.m";
+load "dembele/data/computed/cm_frame_marks.m";
+IC:=Ideal(C_candidate); GC:=GroebnerBasis(IC);
+LM:=[LeadingMonomial(q):q in GC];
+function FromExps(e,R)
+    return &*[R.i^e[i]:i in [1..16]];
+end function;
+mons2:=[FromExps(e,R):e in sections_even_monomial_exponents];
+mons3:=[FromExps(e,R):e in sections_odd_monomial_exponents];
+assert #mons2 eq 45 and #Seqset(mons2) eq 45;
+assert #mons3 eq 75 and #Seqset(mons3) eq 75;
+assert &and[TotalDegree(m) eq 2:m in mons2];
+assert &and[TotalDegree(m) eq 3:m in mons3];
+assert &and[not &or[IsDivisibleBy(m,l):l in LM]:m in mons2 cat mons3];
+oddmat:=Matrix(k,sections_odd_section_rows); assert Rank(oddmat) eq 36;
+odd:=[&+[v[j]*mons3[j]:j in [1..75]]:v in Rows(oddmat)];
+mon:=[R.(p[1])*R.(p[2]):p in pairs];
+function Quad(row,mon)
+    return &+[row[j]*mon[j]:j in [1..#mon]];
+end function;
+ell:=&+[branch_parameter_linear_form[i]*R.i:i in [1..16]];
+IB3:=IC+ideal<R|B3_linear_forms>;
+IU:=Saturation(ColonIdeal(IC+ideal<R|ell>,IB3));
+IE:=Saturation(IC+ideal<R|[Quad(row,mon):row in rational_E_quadrics_F31]>);
+assert Degree(Scheme(P,IU)) eq 21 and Degree(Scheme(P,IE)) eq 18;
+assert Dimension(IU+IE) eq 0 and Dimension(IU+IB3) eq 0;
+assert &and[q in IU and q in IE:q in odd];
+assert Saturation(IC+ideal<R|ell>) eq (IU meet IB3);
+print "PASS|COVER_SECTION_POLE_BOUNDS";
+
+pts:=[[k!row:row in pt]:pt in sections_evaluation_point_coordinates];
+assert #pts eq sections_good_point_count and #Seqset(pts) eq #pts;
+fp:=sections_frobenius_permutation; tp:=sections_involution_permutation;
+assert &and[pts[fp[i]] eq [c^31:c in pts[i]]:i in [1..#pts]];
+assert &and[pts[tp[i]] eq pts[i][1..16] cat [-pts[i][17]]:i in [1..#pts]];
+ee:=makdisi_evaluation_indices; aa:=makdisi_auxiliary_indices;
+assert #ee eq 640 and #aa eq 111 and #(Seqset(ee) meet Seqset(aa)) eq 0;
+assert #Seqset(ee) eq 640 and #Seqset(aa) eq 111;
+assert Seqset([fp[i]:i in aa]) eq Seqset(aa);
+assert [Index(ee,fp[i]):i in ee] eq makdisi_evaluation_frobenius;
+assert [Index(ee,tp[i]):i in ee] eq makdisi_evaluation_involution;
+assert &and[i ne 0:i in makdisi_evaluation_frobenius cat makdisi_evaluation_involution];
+n:=Quad(rational_numerator,mon); den:=Quad(rational_denominator,mon);
+V1rows:=[];
+for i in ee cat aa do
+    pt:=pts[i]; xs:=pt[1..16]; w:=pt[17];
+    assert xs[16] eq 1;
+    assert &and[Evaluate(q,xs) eq 0:q in polys];
+    nv:=Evaluate(n,xs); dv:=Evaluate(den,xs); lv:=Evaluate(ell,xs);
+    assert nv*dv*lv ne 0 and w^2*dv eq nv;
+    Append(~V1rows,[Evaluate(q,xs):q in mons2] cat [w/lv*Evaluate(q,xs):q in odd]);
+end for;
+V1all:=Matrix(k,V1rows); V1:=RowSubmatrix(V1all,1,640);
+function DecodeMatrix(rows,k)
+    return Matrix(k,[[k!(c mod 31)+k.1*(c div 31):c in row]:row in rows]);
+end function;
+assert V1 eq DecodeMatrix(makdisi_v1_evaluations,k);
+assert Rank(V1) eq 81;
+signs:=[k!1:i in [1..45]] cat [k!-1:i in [1..36]];
+assert &and[V1[makdisi_evaluation_frobenius[i],j] eq V1[i,j]^31:i in [1..640],j in [1..81]];
+assert &and[V1[makdisi_evaluation_involution[i],j] eq signs[j]*V1[i,j]:i in [1..640],j in [1..81]];
+V2all:=Matrix(k,[[V1all[r,p[1]]*V1all[r,p[2]]:p in makdisi_product2_pairs]:r in [1..751]]);
+V2:=RowSubmatrix(V2all,1,640);
+assert V2 eq DecodeMatrix(makdisi_v2_evaluations,k) and Rank(V2) eq 201;
+V3:=Matrix(k,[[V1[r,p[1]]*V2[r,p[2]]:p in makdisi_product3_pairs]:r in [1..640]]);
+assert V3 eq DecodeMatrix(makdisi_v3_evaluations,k) and Rank(V3) eq 321;
+print "PASS|COVER_EVALUATIONS_PRODUCTS_AND_ACTIONS";
+
+UA<a>:=PolynomialRing(k); A<bb>:=quo<UA|UA!fiber_nonic_coefficients>;
+bpt:=[A!UA!row:row in fiber_point_coordinates];
+wr:=11*(A!UA!branch_branch_ratio);
+for side in [1,2] do
+    sgn:=side eq 1 select 1 else -1;
+    vals:=[Evaluate(q,bpt):q in mons2] cat [sgn*wr*Evaluate(q,bpt):q in odd];
+    saved:=side eq 1 select sections_branch_plus_section_values else sections_branch_minus_section_values;
+    assert vals eq [A!UA!row:row in saved];
+    bv:=[vals[p[1]]*vals[p[2]]:p in makdisi_product2_pairs];
+    bm:=Transpose(Matrix(k,[[Coefficient(UA!v,j):j in [0..8]]:v in bv]));
+    constraints:=VerticalJoin(RowSubmatrix(V2all,641,111),bm);
+    assert Rank(constraints) eq 120;
+    coeffs:=side eq 1 select makdisi_plus_coefficient_rows else makdisi_minus_coefficient_rows;
+    ker:=DecodeMatrix(coeffs,k); assert Rank(ker) eq 81;
+    assert ker*Transpose(constraints) eq 0;
+    savedW:=side eq 1 select makdisi_plus_evaluations else makdisi_minus_evaluations;
+    W:=DecodeMatrix(savedW,k);
+    assert W eq V2*Transpose(ker) and Rank(W) eq 81;
+end for;
+print "PASS|COVER_BRANCH_DIVISOR_SPACES";
+printf "CPU_SECONDS|%o\n",Cputime(started);
+print "PASS|168_CM_FRAME_COVER_MAKDISI_CHECK";
+quit;

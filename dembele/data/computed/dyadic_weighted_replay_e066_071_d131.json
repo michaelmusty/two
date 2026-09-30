@@ -1,0 +1,94 @@
+{
+  "status": "pass",
+  "milestone": "D131",
+  "phase": "states",
+  "certificates": {
+    "first_state": 66,
+    "last_state": 71,
+    "GMP_original_child_actions": 12,
+    "uniform_scalar_comparisons": 153600,
+    "weighted_scalar_comparisons": 153600,
+    "all_QT_w_equals_w": true,
+    "exact_masses_checked": 6,
+    "rows": [
+      {
+        "state": 66,
+        "uniform_sha256": "be7894b857077e8e624e8ab3f5ccd6b2e648fd9db4c3a74858c85dde08f3869e",
+        "seconds": 4.638972874963656
+      },
+      {
+        "state": 67,
+        "uniform_sha256": "98afdc5fb3617141e996731bf204eedff7aee2eec6e0b372bc43b426133e8c3b",
+        "seconds": 4.816672791959718
+      },
+      {
+        "state": 68,
+        "uniform_sha256": "41b0781ef559c5d566a9b46bbe56e23969ef27eb86d163c2773cbdbb96adfa9f",
+        "seconds": 4.254388916073367
+      },
+      {
+        "state": 69,
+        "uniform_sha256": "efaff7c6ffa7ddf7b54f01edb27fe32a98e1e6ac8cfb45478c43874d5ddd2410",
+        "seconds": 4.397804958978668
+      },
+      {
+        "state": 70,
+        "uniform_sha256": "360e6aff815375b8c5a0644bb794c3266a45072b0efab15f36ae07dd319f61b0",
+        "seconds": 4.232067625038326
+      },
+      {
+        "state": 71,
+        "uniform_sha256": "b4f135c6712500636f9a1775a61765c9f07acaf47a83497777f85aa2435e7357",
+        "seconds": 4.795766917057335
+      }
+    ],
+    "per_request_full_payload_hashes": 0,
+    "new_binary_payload_bytes": 0
+  },
+  "actual_harmonic_precision_increased": false,
+  "working_precision_pi": 3200,
+  "wall_seconds": 27.156596292043105,
+  "peak_rss_bytes": 213041152,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_harmonic_certificate_d111.json",
+      "sha256": "d4c1a33d9d918767e55a856e6cf85b3d88a5135ae4396ae86977789bc35de84a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_manifest_d131.json",
+      "sha256": "66b8b2eb759bd035d097e58a32daa273d6843af9fc0b7e2e4e9d226cfe6326bd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+      "sha256": "d1a595cfd6accde0f0b57419bdc16cbf7da1c65b15842f9ba58c8a91381c7cf2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/463_dyadic_gmp_transport.py",
+      "sha256": "0de66136b95feb0cfdca2a782c85611ef2d81c83a16dc296ab1542eaf06b1b1d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "sha256": "86d272475bbc0390f28b198462d63eac33262de9b7b9575d634895eebb985542"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/472_dyadic_multiprecision_low_factor.py",
+      "sha256": "ace66e349eaf0554a48e839ebb881e4095f284cdfcbab10ce00964b7503d8283"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py",
+      "sha256": "20f1083cc885512872db8049628260aef8213d5feed4809ac78858b6f343dce3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/528_dyadic_streamed_precision3200.py",
+      "sha256": "f06cab0b85ac323560fb3f5b042a9d183b350a2a579b73a3fb6c73e93098250d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/541_dyadic_weighted_certificate.py",
+      "sha256": "75d4ca777b2a1b5748b897a4534bd08ca0e1dd40f87c2c7b23d1128ad1fa5119"
+    }
+  ]
+}

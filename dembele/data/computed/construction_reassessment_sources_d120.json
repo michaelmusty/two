@@ -1,0 +1,83 @@
+{
+  "milestone": "D120",
+  "date": "2026-09-26",
+  "report": "dembele/certificates/construction-reassessment-d120.md",
+  "final_review": "dembele/pari/462_construction_reassessment_review.py",
+  "prior_review": "dembele/data/computed/cm_cartier_frame_review_d119.json",
+  "D119_source_hashes_to_preserve": 922,
+  "external_sources": [
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 manual, Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Public binary import/export interface used by source 463; caller-owned output buffer is sized and checked before export.",
+      "access": "Primary online documentation and installed public gmp.h inspected; installed library and header hashed."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 manual, Integer Arithmetic",
+      "url": "https://gmplib.org/manual/Integer-Arithmetic",
+      "role": "Exact arbitrary-integer multiplication in the carry-free packed polynomial product.",
+      "access": "Primary online documentation inspected."
+    },
+    {
+      "author": "Raymond van Bommel, Edgar Costa, Bjorn Poonen, Padmavathi Srinivasan",
+      "title": "Curve equations from expansions of 1-forms at a nonrational point",
+      "url": "https://arxiv.org/pdf/2506.14026",
+      "location": "Theorem 3.1 and Lemma 4.1",
+      "role": "Reassessment of the exact-expansion alternative: its exact-input hypothesis does not remove the present p-adic equality gap.",
+      "access": "Primary paper inspected. No new identification claim made from it."
+    }
+  ],
+  "inherited_inputs": [
+    "D119: actual Cartier divisor, principal-parts metrics, dyadic residue cokernel and primitive anchor normalization.",
+    "D116--D118: integral quadratic sections, four coarse coefficients, embedded disks, CM height and Faltings lower bound.",
+    "D115: certified P=200 moments, transport centers, residue frame relation and leading evaluation matrix.",
+    "D51 and sources 58/60/64: canonical Y64 realization, integral all-Hecke occurrence, banked norm-97 multiplicities and Frobenius factors."
+  ],
+  "new_deductions": [
+    "The full Cartier inverse-frame bound is worse than D118 after changing both the global norm bound and the measured local zeros consistently.",
+    "The same known evaluation minors give a Faltings upper bound below 30.970856, excluding a Faltings-only rescue of the current D118 certificate.",
+    "Inverse entries have valuation at least -35; explicit propagation gives conditional sufficient moment precision P=10552.",
+    "A division-free moment generating function replaces dense transport tables with homogeneous polynomial operations.",
+    "Exact integral binomial coefficients and GMP packed products pass all selected frozen-bank and synthetic target-size controls.",
+    "Eliminating the first r positive moments gives a Schur-complement iteration divisible by pi^(r+1); its implementation and cost remain open.",
+    "Banked old/new multiplicities imply both norm-97 target factors are coprime to their canonical Y64 Euler cofactors; only the first norm-97 factor has order 51."
+  ],
+  "finite_verification": {
+    "drivers": "458--463",
+    "input_job_attempts": 8,
+    "input_jobs_passed": 7,
+    "input_jobs_failed": 1,
+    "failure": "The first norm-97 check wrongly expected order 51 for both factors. The factorization assertion rejected it. Source 64 already records order 257 for the second; corrected source and independent review agree. Failed source, log and receipt preserved.",
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "independent_methods": [
+      "Recompute inverse-frame bounds from the unsimplified metric expression with a different rigorous logarithm series.",
+      "Check the inverse norm by valuation-ball Gauss--Jordan instead of quotient-ring Smith extraction.",
+      "Re-derive conditional precision and packed storage counts.",
+      "Check norm-97 polynomials using coefficient lists instead of bit-polynomial arithmetic.",
+      "Check packing carry bounds, controls, benchmark scope and every inherited source hash."
+    ]
+  },
+  "next_bounded_task": "Implement and time r=1 low-moment elimination on the frozen P=200 bank, independently check the full original residual and error gains, and cost the low-block solve and streaming storage before any actual precision increase.",
+  "limitations": {
+    "proofs_machine_formalized": false,
+    "inverse_frame_estimate_rejected_for_current_inputs": true,
+    "Faltings_only_rescue_excluded_for_current_bound": true,
+    "conditional_sufficient_moment_precision_pi": 10552,
+    "transport_actual_harmonic_columns_checked": 1,
+    "synthetic_target_test_is_actual_moment_refinement": false,
+    "actual_moment_precision_increased": false,
+    "low_moment_elimination_implemented": false,
+    "large_precision_solver_ready": false,
+    "new_Hecke_computation_performed": false,
+    "full_norm97_Euler_polynomial_computed": false,
+    "genus64_degree51_torsion_backend_validated": false,
+    "positive_quadric_jet_exact_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "correspondence_sent": false
+  }
+}

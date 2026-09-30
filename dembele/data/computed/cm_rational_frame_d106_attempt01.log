@@ -1,0 +1,4 @@
+  File "/Users/musty/two/dembele/pari/387_cm_rational_frame.py", line 176
+    out.append((Q(ak)-sum(b[j]*out[k-j] for j in range(1, min(k+1, len(b))))/b[0])
+              ^
+SyntaxError: '(' was never closed

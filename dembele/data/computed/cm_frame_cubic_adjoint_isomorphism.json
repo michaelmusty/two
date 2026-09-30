@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "milestone": "D82",
+  "date": "2026-09-22",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/257_cm_frame_cubic_adjoint_isomorphism.py",
+      "sha256": "d7cee7ab23265ff9ede534e5b23e7064089e3c5771bee3e478005748f6ba2779"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_isomorphism_job.json",
+      "sha256": "374a819c39a0716b0813ce1d96ec0aad05f695a8c08effae8dc7506ab597ce40"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_1_check.json",
+      "sha256": "8d7319a2460f7e42ac0c1d89e85a56ce275d03e18d7216bab0e6ef6e39a5ca3b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_isomorphism.json",
+      "sha256": "fa347a9119b1e671ade80554366d280078a9e776986ec44f94a9004fc5dd2720"
+    }
+  ],
+  "isomorphism": "v_adjoint = delta*(r/g)*v_pointed",
+  "delta_mod31": 22,
+  "evaluation_points": 2048,
+  "maximum_pole_degree": 1200,
+  "global_kummer_and_involution_identities_verified": true,
+  "point_counts_inherited": {
+    "F31": 68,
+    "F961": 2818
+  },
+  "characteristic_zero_cubic_constructed": false,
+  "arithmetic_identification_certified": false
+}

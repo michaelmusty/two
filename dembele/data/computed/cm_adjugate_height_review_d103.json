@@ -1,0 +1,258 @@
+{
+  "status": "pass",
+  "milestone": "D103",
+  "independent_frame_checks": [
+    {
+      "g": 3,
+      "frame": "dense Vandermonde on 0,...,g",
+      "determinants": "integer Bareiss",
+      "adjugate": "determinant times rational solve",
+      "determinant_bit_length": 8,
+      "Gaussian_ratios_match": true,
+      "corrupted_adjugate_rejected": true
+    },
+    {
+      "g": 16,
+      "frame": "dense Vandermonde on 0,...,g",
+      "determinants": "integer Bareiss",
+      "adjugate": "determinant times rational solve",
+      "determinant_bit_length": 4499,
+      "Gaussian_ratios_match": true,
+      "corrupted_adjugate_rejected": true
+    }
+  ],
+  "independent_field_checks": {
+    "algorithm": "Horner absolute-coefficient bound",
+    "rows": 16,
+    "all_scaled_conjugates_below_2_power_35": true,
+    "Rouche_bound_independently_recomputed": true
+  },
+  "independent_constant_checks": {
+    "coarse_disk_integral_coefficients_without_pi_or_radius": [
+      "1",
+      "1/2",
+      "1/3",
+      "1/4",
+      "1/5",
+      "1/6",
+      "1/7",
+      "1/8",
+      "1/9"
+    ],
+    "coarse_fibre_weights": [
+      33,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "Hodge_determinant_weight": -32,
+    "constant_rational_upper_bound": "41573/5",
+    "bound": "513*H_CM_disk+8400",
+    "failed_toy_chart_explained": true
+  },
+  "D102_bound_source_hashes_checked": 12,
+  "D101_bound_source_hashes_checked": 22,
+  "failed_control_source_preserved": {
+    "path": "/Users/musty/two/dembele/pari/380_cm_adjugate_height_attempt01.py",
+    "sha256": "3c29822fe0ef49a2d2f968eaa258a44135ad3fcac8e0c16b5924df836c43c04f"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-residue-lattice-d102.md",
+      "sha256": "c1f765330d02567a904444252b3dfb7fc2ac8e0746678a2a2efbc0ff19d68080"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-tangent-exactness-d101.md",
+      "sha256": "c21398dcff62037781960c013f44d6db975f43e077b5e8b1d80dc9d07d97c767"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-tangent-local-arithmetic-d89.md",
+      "sha256": "3ecfc088aa12ddc1c1f460df326385a0a90fbbce4f40428e8da8d0e430a75e4b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/d88-cm-expansion-identification-review.md",
+      "sha256": "da5b7ed2495737040efe79e4d96946510e9e3ec61427f3fcf966908e0441d665"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/marked-descent.md",
+      "sha256": "131944c1260cfe7a15026534c024f5ab900c549d8ea3ffd6a73521a98ad96463"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-norm-one-control-d92.md",
+      "sha256": "926cb80afdc0ea5d16673ab0b7e8f2e5e1ee02ec29634093bab8c4fd558c1fa8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-spectral-ideal-d98.md",
+      "sha256": "b8d21717aa3b795b5ac584190075e1ee461c4fbe20e2661c609be1a90003cf26"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-totally-real-kernel-d90.md",
+      "sha256": "48f3e72c10e607eb55ce20eef2a0cbe57e50c6ae26fb8e6aa86381b735abd341"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103.json",
+      "sha256": "468bd2ac0e620e8ee1d2e25189f102987c27de3a813971ef188bc40dd757995b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt01.job.json",
+      "sha256": "769984dd85542377fad852624d2e6697fc64f896a6e5f2de728590d4e6eda8cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt01.log",
+      "sha256": "f996ff5ac967ce438b9c36b5af27c27ff491894c1e0d92f13bdb51ded0e7b497"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt02.job.json",
+      "sha256": "809e2271e2f7b8544195e55afbfc4a90c4e55297cfce046e689d28662587636b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt02.log",
+      "sha256": "0802545e92c7e670b24fae2a0d8d197c573ba2a0931c724538fab495440ee7e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_sources_d103.json",
+      "sha256": "40aefb56e3064b3ec3db50b02fa68d1950eb20aece722f878250a8eb4b922799"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_audit.json",
+      "sha256": "03968cdf38f3b8ab5a0acfcf6bdd2a672908b8b7d17260dfcb501168dbcce281"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_field_recognition.json",
+      "sha256": "b9585a6b40f6c21f4ffadd62caad290cd731cf2f432c54d1f61790d85c6e0ce8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102.json",
+      "sha256": "5191728d51fbdaa909740824ee45b84ef27ce151b9ae581c2d9d00329a6704fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102_attempt01.job.json",
+      "sha256": "1b743cbd20ac2f99d2b0d5ebba006a39cba6a3f38c32fae5036928cf82f88f11"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102_attempt01.log",
+      "sha256": "39866bc4e6aa49581225169b3cffff3e2761216e78002422865cd4cdbb8b016c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_review_d102.json",
+      "sha256": "409a074448c0da9c2744bbafe05f869874f91f901e4e0f3f69cdc4809c730a29"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_sources_d102.json",
+      "sha256": "91020404ef347963f88500d08bafaae9f9388227b4508448ad1d0bb12520766d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_candidate_height_d101_attempt01.job.json",
+      "sha256": "519763cc648b34284850b231c7f97492583c6fd60921b6e4093d80581756a643"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_candidate_height_d101_attempt01.log",
+      "sha256": "1b513b5473bdcda49019d9602012f21cb7a7a27dcc933acf07082c8913d156af"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_candidate_height_d101_input.m",
+      "sha256": "b4902037c530ba34373c3f07e3f5c3d01af0b2f584036862c62b93f035290f30"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101.json",
+      "sha256": "c04fc59567791143ca5f5f479677ab14351a73bc4b31ce7a74fb35aac5d9d3a4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101_parser_failed.py",
+      "sha256": "67b56db232bb9ba0043b8e4083c40e4f7e3d48cc5e0fcfbb0edd90d38b844465"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101_parser_failure.json",
+      "sha256": "6662136cad281beb6aa9f600242e2d84abaa0a3fe40b449a92fa534546313dcf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101_recheck.job.json",
+      "sha256": "88512696696934f460e826ddc2edf8f0b6474318fce7136fbb977635de667c25"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101_recheck.log",
+      "sha256": "33e6189c22acc406eba0457c9bb35caed3373f95dd29032fe16a3e5910c09b06"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_review_d101.json",
+      "sha256": "d3ee4571f4ef9676edf4ef99bbcf9e44084fcfae6f94eb3344f088b8f654d52d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_sources_d101.json",
+      "sha256": "6947bbd2759b800843fb093895a758a0c79ed66529ed8a4282f575e777e856db"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/d88_candidate_cm_jet_rank.json",
+      "sha256": "1268cc028ddcfa0a121ade1298263f2934ee0780aede31e4a320dc2f27831102"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/375_cm_tangent_candidate_height.m",
+      "sha256": "034fed9d4b055691cbe0b7eaa217b8ee2a0390aebc40a414168350d5d231beab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/376_cm_tangent_exactness.py",
+      "sha256": "fc95f5e5caeb574d2564ad4b02a997c16965f2be9996a6cb4cce384c23a6b090"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/377_cm_tangent_exactness_review.py",
+      "sha256": "7870fd8da2b6f9afde8b47fd66e93ee07a41ee2aaaf447d29209f39f34f1076d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/378_cm_residue_lattice.py",
+      "sha256": "0dbe7a49954986f15fd6d03d9d53f9a8733fc9ebd7d4aac5acbd53ecf8b9b45a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/379_cm_residue_lattice_review.py",
+      "sha256": "b1d4c2c6bbbe33708154ffd23827b18b3bdf580b71277e59abc9d1651a249300"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py",
+      "sha256": "2a32027c8b1c1a5db09ea4d0b15c9110135231eaf653dffeac953e556204a544"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/380_cm_adjugate_height_attempt01.py",
+      "sha256": "3c29822fe0ef49a2d2f968eaa258a44135ad3fcac8e0c16b5924df836c43c04f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/381_cm_adjugate_height_review.py",
+      "sha256": "a674c8a07e0cd9b36a5b54db3efe9e31b3625b233931f041720fc0ad39b0f176"
+    }
+  ],
+  "H_CM_disk_numerically_bounded": false,
+  "independent_Shimura_tangent_obtained": false,
+  "spectral_pilot_gate_passed": false,
+  "scope": "Independent exact controls of a conditional height theorem; the intrinsic CM fibre height and arithmetic frame hypotheses remain open."
+}

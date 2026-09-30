@@ -1,0 +1,34 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/471_dyadic_target_transports.py"
+  ],
+  "status": "failed",
+  "exit_code": 1,
+  "wall_seconds": 0.1887940422166139,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121_attempt02.log",
+    "sha256": "908d5c6f1c1af151c72fba6f34c19eedbffec22f065f969a448e0c306cbeef00"
+  },
+  "private_process_group": 97124,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/471_dyadic_target_transports.py",
+    "sha256": "ab9358471172e648930abe3d158e844633428fae8703ede8b256ffa8ae66853c"
+  },
+  "failed_driver_snapshot": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121_attempt02_failed.py",
+    "sha256": "ab9358471172e648930abe3d158e844633428fae8703ede8b256ffa8ae66853c"
+  }
+}

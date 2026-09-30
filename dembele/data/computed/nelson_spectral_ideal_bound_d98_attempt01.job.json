@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/368_nelson_spectral_ideal_bound.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 5.378257291042246,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_spectral_ideal_bound_d98_attempt01.log",
+    "sha256": "0614292f8025e06c1b7704a6cc0682bea8995d0f0e7969a79a4f6bbb2cd7ba69"
+  },
+  "private_process_group": 99816,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/368_nelson_spectral_ideal_bound.py",
+      "sha256": "ee85f12b28a170141dbfb7ebb997d0b871649e27fc299b8e5621ff3ffa978eb6"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d98-spectral-znv5j0ba"
+  }
+}

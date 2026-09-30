@@ -1,0 +1,88 @@
+{
+  "milestone": "D117",
+  "date": "2026-09-26",
+  "report": "dembele/certificates/cm-disk-and-exactness-d117.md",
+  "final_review": "dembele/pari/450_cm_disk_exactness_review.py",
+  "prior_review": "dembele/data/computed/cm_arithmetic_identification_review_d116.json",
+  "D116_source_hashes_to_preserve": 868,
+  "external_sources": [
+    {
+      "author": "Ariyan Javanpeykar",
+      "title": "Polynomial bounds for Arakelov invariants of Belyi curves",
+      "url": "https://msp.org/ant/2014/8-1/ant-v8-n1-p04-s.pdf",
+      "location": "Lemma 2.4.4, with the L2 metric convention checked in D103",
+      "role": "Universal lower bound h_Fal(C)>=-g*log(2*pi). D117 retains the pi factor instead of replacing it by a binary ceiling.",
+      "access": "Primary publisher PDF inspected during this milestone."
+    },
+    {
+      "author": "A. C. Aitken",
+      "title": "On the Evaluation of Determinants, the Formation of their Adjugates, and the Practical Solution of Simultaneous Linear Equations",
+      "url": "https://doi.org/10.1017/S001309150000794X",
+      "role": "Classical complementary-minor framework behind the frozen D116 integral polynomial identity. The norm estimate applied here is proved in D116.",
+      "access": "Reuse of the D116 reading; the D117 refetch returned InternalError and supplies no new reading."
+    },
+    {
+      "author": "Raymond van Bommel, Edgar Costa, Bjorn Poonen and Padmavathi Srinivasan",
+      "title": "Curve equations from expansions of 1-forms at a nonrational point",
+      "url": "https://arxiv.org/pdf/2506.14026",
+      "location": "Lemma 4.1 and Corollary 4.2; D88 and D116 specialization",
+      "role": "Exact four-term quadratic vanishing on the degree-17 divisor identifies the relation since 68>60. Finite enclosures do not prove exact zeros.",
+      "access": "Reuse of the frozen D88/D116 primary-source reading."
+    }
+  ],
+  "inherited_mathematical_inputs": [
+    "D99: actual nonhyperellipticity and the stable reduction input.",
+    "D103: uniform CM normalizer and quaternion decomposition, canonical conjugation, centered-disk metrics, coefficient norms and V<2^35.",
+    "D104--D105: full integer rings of F and M, discriminants, intrinsic CM fibre-height inequality, and arithmetic CM orbit.",
+    "D105--D106: compatible rational descent and residue frame.",
+    "D116: saturated integral harmonic lattice, integral complementary-minor formula for Q(s)/Delta, and conditional divided jets at nodes.",
+    "D116: actual section-valuation bounds 3794/3745/3728 and anchor bounds 3576/3248/2984; no positive jet exactly zero."
+  ],
+  "new_deductions": [
+    "The integral commutator trace lies in O_F, with seven conjugates in [-2,2] and one equal to twice the displacement cosine.",
+    "Exhaustive enumeration of 6167 real trace-lattice vectors excludes a positive outlier in (2,8].",
+    "The integral projection alpha+beta*alpha*beta^-1 belongs to O_M and has seven squared absolute values at most four.",
+    "Exhaustive enumeration of 376935 CM trace-lattice vectors excludes a squared absolute value outlier in (4,64].",
+    "Uniform CM displacement greater than 2*acosh(4), giving embedded open disks with radius squared 3/5.",
+    "Joint unrounded norm/height estimate and sufficient section-valuation thresholds 35947/36096/36237.",
+    "The same bound at the optimistic radius-one limit still requires 32928/33064/33193, excluding radius-only refinement as a way to certify the current data.",
+    "Exact storage counts for examples of the present dense moment-state design, without predicting a required working precision."
+  ],
+  "finite_verification": {
+    "drivers": "446--450",
+    "input_jobs_before_final_audit": 5,
+    "input_jobs_passed": 4,
+    "input_jobs_failed": 1,
+    "failure": "447 attempt01: Python integer-to-decimal serialization limit; preserved snapshot, log and receipt. Fixed by certified outward dyadic rounding.",
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "independent_final_review_probe": "cm_disk_exactness_review_d117_probe01.job.json",
+    "independent_methods": [
+      "Multiplication-matrix traces instead of Newton sums for the Hermitian Gram matrix.",
+      "Eight disjoint root sign changes instead of Sturm isolation.",
+      "Support-pattern enumeration instead of recursive weighted-ball enumeration.",
+      "Interval recurrences instead of polynomial Horner evaluation.",
+      "A separate logarithm series, pi enclosure and radical enclosures for the thresholds."
+    ],
+    "uniform_disk_radius_squared": "3/5",
+    "actual_integral_quadric_jet_lower_beta": [3794, 3745, 3728],
+    "sufficient_integral_quadric_jet_lower_beta": [35947, 36096, 36237],
+    "radius_one_fixed_input_limit_beta": [32928, 33064, 33193]
+  },
+  "next_bounded_arithmetic_task": "Compute proved dyadic finite contributions to D104's ramification-derivative zero divisor and compatible Hodge/stable lattice correction, then assess their effect on the actual section-height bound before choosing further precision.",
+  "limitations": {
+    "uniformization_and_geometric_proofs_machine_verified": false,
+    "lattice_conditions_claimed_sufficient_for_quaternion_units": false,
+    "radius_one_disk_certified": false,
+    "radius_one_limit_is_a_universal_precision_lower_bound": false,
+    "dyadic_ramification_or_Hodge_correction_computed": false,
+    "actual_moment_precision_increased": false,
+    "higher_intrinsic_jets_require_previous_exact_zeros": true,
+    "positive_quadric_jet_exact_vanishing_proved": false,
+    "horizontal_CM_residue_map_index_computed": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "correspondence_sent": false
+  }
+}

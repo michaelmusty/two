@@ -1,0 +1,23 @@
+{
+  "status": "timeout",
+  "milestone": "D70",
+  "scope": "default MaximalOrder and subsequent OptimizedRepresentation on the nonic residue field",
+  "timeout_seconds": 90,
+  "memory_limit_bytes": 2000000000,
+  "original_execution_script": "/private/tmp/dembele_d70_nonic_order.m",
+  "original_script_sha256": "b608b33dd112c31d450bccac197c4afb5abb6f548287eb4b163e38462b9f0b5d",
+  "reproduction_script": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_nonic_order_probe.m",
+    "sha256": "77c3f16ef919587a3f032456f07e59ed72783767c2686f6d537ff6b17fe64e3b"
+  },
+  "polynomial_source": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_nonic_polynomial.txt",
+    "sha256": "a1113e98f7d194deb160c3751c799020b6da0c0130f11d99cb19c346f79fdc27"
+  },
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_nonic_order_probe.out",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "result_obtained": false,
+  "note": "Reproduction script only changes the input polynomial path. The job timed out before printing an order discriminant; OptimizedRepresentation was not reached. No ramification assumption was supplied."
+}

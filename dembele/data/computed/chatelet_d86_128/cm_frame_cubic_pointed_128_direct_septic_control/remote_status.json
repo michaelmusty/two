@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "exit_code": 1,
+  "wall_seconds": 214.63595850300044,
+  "timeout_seconds": 1800,
+  "memory_limit_bytes": 8000000000,
+  "maximum_resident_bytes": 2141642752,
+  "timeout_terminates_process_group": true,
+  "private_process_group": 499645,
+  "input_hashes_verified": true,
+  "output_bytes": 1238,
+  "output_sha256": "f553ade5a881ec13f62258d2c1470666f784ddbee904bc8d07db739bff06d0dd",
+  "command": [
+    "/usr/local/bin/magma",
+    "-bn",
+    "-l",
+    "8000000000",
+    "dembele/data/computed/cm_frame_cubic_pointed_128_direct_septic_control_run.m"
+  ]
+}

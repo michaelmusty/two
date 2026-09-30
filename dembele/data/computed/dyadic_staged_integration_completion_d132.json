@@ -1,0 +1,80 @@
+{
+  "status": "pass",
+  "milestone": "D132",
+  "completion_kind": "Complete resumable driver controls and admission of one P6400 column; no control precision increase",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_integration_review_d132.json",
+    "sha256": "52f3cfc12a4283f7495344aba3a162cbcdebe6c9562cb550ba0ec516de2a31ec"
+  },
+  "fixed_review_source_count": 18589,
+  "inherited_D131_hash_count": 16567,
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_integration_review_d132_attempt01.job.json",
+      "sha256": "293517ff638a9544143e2342f02f1dbbc6a04dd45813b2760df57833115f9432"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_integration_review_d132_recheck01.job.json",
+      "sha256": "e60fdece1b2f21a10dfedb034593af173c24ecc9319f65e4c986e000739ba719"
+    }
+  ],
+  "passing_input_jobs": 471,
+  "passing_review_jobs": 2,
+  "total_passing_jobs": 473,
+  "failed_bounded_jobs": 0,
+  "intentional_interrupted_children": 8,
+  "all_D132_control_coordinators_completed": true,
+  "D132_control_workers_remaining": 0,
+  "subsequent_execution": {
+    "milestone": "D133",
+    "status": "active",
+    "config": {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col00_config_d133.json",
+      "sha256": "22475b09a4812ad26302c1a990bc0ca538d6dfd35fb85ddca96817631bad84bd"
+    },
+    "precision_not_yet_certified": 6400
+  },
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "README.md",
+    "CLAUDE.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "documentation_updated": true,
+  "documentation_updates_pending": false,
+  "next_unused_source": 556,
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 3200,
+    "1": 1600
+  },
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_launch_admitted": false,
+  "one_actual_P6400_column_admitted": true,
+  "unchanged_limits": {
+    "maximum_mathematical_workers": 3,
+    "private_process_group_timeout_seconds": 180,
+    "working_store_bytes": 2147483648,
+    "BLAS_threads": 1
+  },
+  "RAM_admission": {
+    "measured_per_successful_job_peak_bytes": 2147483648,
+    "three_worker_sum_bytes": 6442450944,
+    "OS_hard_limit_claimed": false
+  },
+  "frozen_report_sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-staged-integration-d132.md",
+      "sha256": "71a953e50cc6fa096053bffa09138297bd5919036951e4fd58d639e5c742790e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_integration_sources_d132.json",
+      "sha256": "432d426be38868609d1ea767642da749bb5747e999d07cd8575a99c3fa401657"
+    }
+  ],
+  "mutable_entry_documents_are_frozen_hash_sources": false
+}

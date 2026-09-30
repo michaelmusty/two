@@ -1,0 +1,49 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/275_cm_frame_recognition_calibration.py",
+    "--worker",
+    "--digits",
+    "64",
+    "--train",
+    "48",
+    "--seed",
+    "0",
+    "--root-index",
+    "0",
+    "--powers",
+    "4",
+    "6",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "14"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 36.1423092080513,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_48_0_0_4_6_8_9_10_11_12_14.out",
+    "sha256": "9c5251a6e7fb16d743d67ed1698cd5aeaacf1fc844fe08e93d63e7809703f214"
+  },
+  "private_process_group": 97992,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/275_cm_frame_recognition_calibration.py",
+      "sha256": "ce638fbffe48cc577e9584ea256f33d91ec5d51b41cd1cd093173269bd4d9193"
+    }
+  ]
+}

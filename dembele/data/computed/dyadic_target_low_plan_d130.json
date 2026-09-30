@@ -1,0 +1,407 @@
+{
+  "milestone": "D130",
+  "kind": "bounded_job_plan",
+  "dependent_job_order": true,
+  "jobs": [
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits200_d130_solve",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "solve",
+        "--bits",
+        "200",
+        "--columns",
+        "1"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits200_d130_verify",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "verify",
+        "--bits",
+        "200",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits200_d130_solve"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits400_d130_residual",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "residual",
+        "--bits",
+        "400",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits200_d130_verify"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits400_d130_solve",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "solve",
+        "--bits",
+        "400",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits400_d130_residual"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits400_d130_verify",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "verify",
+        "--bits",
+        "400",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits400_d130_solve"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits600_d130_residual",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "residual",
+        "--bits",
+        "600",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits400_d130_verify"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits600_d130_solve",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "solve",
+        "--bits",
+        "600",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits600_d130_residual"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits600_d130_verify",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "verify",
+        "--bits",
+        "600",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits600_d130_solve"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits800_d130_residual",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "residual",
+        "--bits",
+        "800",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits600_d130_verify"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits800_d130_solve",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "solve",
+        "--bits",
+        "800",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits800_d130_residual"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits800_d130_verify",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "verify",
+        "--bits",
+        "800",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits800_d130_solve"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1000_d130_residual",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "residual",
+        "--bits",
+        "1000",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits800_d130_verify"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1000_d130_solve",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "solve",
+        "--bits",
+        "1000",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits1000_d130_residual"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1000_d130_verify",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "verify",
+        "--bits",
+        "1000",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits1000_d130_solve"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1200_d130_residual",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "residual",
+        "--bits",
+        "1200",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits1000_d130_verify"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1200_d130_solve",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "solve",
+        "--bits",
+        "1200",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits1200_d130_residual"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1200_d130_verify",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "verify",
+        "--bits",
+        "1200",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits1200_d130_solve"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1319_d130_residual",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "residual",
+        "--bits",
+        "1319",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits1200_d130_verify"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1319_d130_solve",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "solve",
+        "--bits",
+        "1319",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits1319_d130_residual"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_c01_bits1319_d130_verify",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "verify",
+        "--bits",
+        "1319",
+        "--columns",
+        "1",
+        "--previous",
+        "dyadic_target_low_c01_bits1319_d130_solve"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_profile_c01_g000_055_d130",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "profile",
+        "--bits",
+        "1319",
+        "--columns",
+        "1",
+        "--first-group",
+        "0",
+        "--stop-group",
+        "55"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_profile_c01_g055_110_d130",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "profile",
+        "--bits",
+        "1319",
+        "--columns",
+        "1",
+        "--first-group",
+        "55",
+        "--stop-group",
+        "110"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_profile_c01_g110_165_d130",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "profile",
+        "--bits",
+        "1319",
+        "--columns",
+        "1",
+        "--first-group",
+        "110",
+        "--stop-group",
+        "165"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_profile_c16_g000_055_d130",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "profile",
+        "--bits",
+        "1319",
+        "--columns",
+        "16",
+        "--first-group",
+        "0",
+        "--stop-group",
+        "55"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_profile_c16_g055_110_d130",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "profile",
+        "--bits",
+        "1319",
+        "--columns",
+        "16",
+        "--first-group",
+        "55",
+        "--stop-group",
+        "110"
+      ]
+    },
+    {
+      "driver": "dembele/pari/534_dyadic_target_low_lift.py",
+      "stem": "dyadic_target_low_profile_c16_g110_165_d130",
+      "marker": "PASS|534_DYADIC_TARGET_LOW_LIFT",
+      "args": [
+        "--phase",
+        "profile",
+        "--bits",
+        "1319",
+        "--columns",
+        "16",
+        "--first-group",
+        "110",
+        "--stop-group",
+        "165"
+      ]
+    }
+  ]
+}

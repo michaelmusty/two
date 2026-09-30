@@ -1,0 +1,341 @@
+{
+  "status": "pass: complete bounded norm-one enumeration and an infinite-family enclosure",
+  "exact": [
+    {
+      "cutoff": 400,
+      "signed_pairs_checked": 21,
+      "norm_one_classes": 13,
+      "interval_recursion_nodes": 36305,
+      "positive_weight_proofs": 16,
+      "unit_signature_rank": 8,
+      "inverse_pairing_checked": true
+    },
+    {
+      "cutoff": 1600,
+      "signed_pairs_checked": 112,
+      "norm_one_classes": 29,
+      "interval_recursion_nodes": 157827,
+      "positive_weight_proofs": 16,
+      "unit_signature_rank": 8,
+      "inverse_pairing_checked": true
+    },
+    {
+      "cutoff": 6400,
+      "signed_pairs_checked": 949,
+      "norm_one_classes": 137,
+      "interval_recursion_nodes": 783089,
+      "positive_weight_proofs": 16,
+      "unit_signature_rank": 8,
+      "inverse_pairing_checked": true
+    },
+    {
+      "cutoff": 25600,
+      "signed_pairs_checked": 11620,
+      "norm_one_classes": 541,
+      "interval_recursion_nodes": 3743707,
+      "positive_weight_proofs": 16,
+      "unit_signature_rank": 8,
+      "inverse_pairing_checked": true
+    }
+  ],
+  "analytic": {
+    "kernel_count": 480,
+    "class_terms": 541,
+    "cutoffs": [
+      {
+        "cutoff": 400,
+        "S11_partial": "[7319.99059629701412358466706075728329502056333204827 +/- 3.37e-48]",
+        "S11_tail_bound": "[26978.5787309956789839470441110847202034228742755011224486821156569758085923342871185572974613 +/- 6.42e-89]"
+      },
+      {
+        "cutoff": 1600,
+        "S11_partial": "[7310.71100175739126971259367666361312501335330354464 +/- 5.41e-48]",
+        "S11_tail_bound": "[9522.5164134094536305226609568954235895890615109087949950387162267071044639028132005472388519 +/- 5.33e-89]"
+      },
+      {
+        "cutoff": 6400,
+        "S11_partial": "[7316.89987505326371398930136742468359941953308358724 +/- 2.84e-48]",
+        "S11_tail_bound": "[3365.31365217729259376368377916701794830802005275903767491742792111000563514166502994434305644 +/- 5.22e-90]"
+      },
+      {
+        "cutoff": 25600,
+        "S11_partial": "[7317.74361027960954084410815092723437776129289444950 +/- 3.66e-48]",
+        "S11_tail_bound": "[1124.69511812482627204279552020065954017613930762566940416749027863095581250934615022111081503 +/- 4.10e-90]"
+      }
+    ],
+    "full_norm_one_S11_proved_positive": true,
+    "analytic_scope": "Arb gamma/zeta nodes and analytic bounds hash-bound; rational disk-average series replayed"
+  },
+  "jobs": [
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T1600_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 6.503980625071563
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T25600_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 81.43335149995983
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T400_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 3.9791579159209505
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T6400_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 17.817246292019263
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T1600_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 3.692040874972008
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T25600_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 21.55318983295001
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T400_attempt01.job.json",
+      "status": "failed",
+      "wall_seconds": 6.3171335000079125
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T400_attempt02.job.json",
+      "status": "pass",
+      "wall_seconds": 3.398975749965757
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T6400_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 5.265267499955371
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_packing_tail_d92_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 3.2398121249862015
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_sum_d92_T25600_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 10.09847470803652
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_sum_d92_T6400_attempt01.job.json",
+      "status": "pass",
+      "wall_seconds": 6.290317500010133
+    }
+  ],
+  "sources": [
+    {
+      "path": "dembele/data/computed/cm_orbit.json",
+      "sha256": "6c70d443b112c49c0a448e63f88b9b7c2ded7fc8f5392db14356ae3c1bfd4e67"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_lattice_d90.json",
+      "sha256": "24f8e464cb5cf6bff4a71828959bb9e3e328ae2a233bae836302aac97682a0af"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T1600.json",
+      "sha256": "6ea93db0560251f5c5e7160b76fa9b141f2b2bd41c528b46a9b2e1d7f029cff9"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T1600_attempt01.job.json",
+      "sha256": "60b7e35865bd37295b445d34e4afd2452640f1871a62f648a324ce14b718afbe"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T1600_attempt01.log",
+      "sha256": "677b57505a0d3e451fc312bcc84e9d1c15e41b9bf5cbea6415cb9b5fecd749c7"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T25600.json",
+      "sha256": "941505bc1dd20ae2a8dfc3889476f11bd40d53e0d8f0417b553d4610a337b377"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T25600_attempt01.job.json",
+      "sha256": "99185f14a4ef49210da06d58f6e365ca0a99f3fca3d3fef0f9c77b9edb9ae8f0"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T25600_attempt01.log",
+      "sha256": "4b57091e4140c2936116591ff8168f15c8aba2930fc611057becf19898c9a2a4"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T400.json",
+      "sha256": "ffa036e303cb80202b8aea7c6d61d2a8d2538de67f0371416d21a3481ecc1fbc"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T400_attempt01.job.json",
+      "sha256": "882d859f736ba7e4b958b1e8f017fcc711a130152f7e2f8f8d17c053d13b2e08"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T400_attempt01.log",
+      "sha256": "e96fbf4b745e482fab0ab6ea685996e3981ab5965f07300e1550b6d3b798b891"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T6400.json",
+      "sha256": "7eed2ce8f4775a180b83d72b5fca701f1810f04b221e3a00eaa0937b4f8110e6"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T6400_attempt01.job.json",
+      "sha256": "d86e661bf03fb2e08dac4c724f332c9cc25a6cda9281d3ae491a0d55df209c67"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_coverage_d92_T6400_attempt01.log",
+      "sha256": "13f604aabebe071a9296a0fa722d716070f9c3a8ad1bb0e6ca255dc363f9556d"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T1600.json",
+      "sha256": "6f8b99e6e2dd7e0600abfa6b4da4970b1e26e85cd5ed5b511d1eb9442acba180"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T1600_attempt01.job.json",
+      "sha256": "3e5dcf96f052c70bbd4b80b737f8e035366d4dff7186beea5a901190fff5fd4d"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T1600_attempt01.log",
+      "sha256": "3b9fea83adaf38a7b9da60a58734da6865fed01e39cd6e29f53ec30c14c7bcf6"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T25600.json",
+      "sha256": "2d7a7e096da81ee86eab617019bf3ec94fe34e6c2433607fcabd8defd42d032d"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T25600_attempt01.job.json",
+      "sha256": "8e6ae85ea4a1f150739361bf09703075ae45bd0c56529872ba2bb47c4d2f783f"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T25600_attempt01.log",
+      "sha256": "2229bc24176a2675cdc0db2b49fba2054f91f260520b33660d859f453d509777"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T400.json",
+      "sha256": "4882fe29701074c414ced5d1e62dc29978858f1cad73948de9c7df49efff631f"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T400_attempt01.job.json",
+      "sha256": "4b1bf974a1069bd85f4e0bc8ec29c6e41353c661d3b8373006f7962e97d24d44"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T400_attempt01.log",
+      "sha256": "0862c28bd2fee1cf8093ef5f10275b9b98f2ce3daf930e0a30b3682e8c2a9bfe"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T400_attempt02.job.json",
+      "sha256": "b19fcea1239518cb1a0d13a42d455b8321f51b33c74a8bf21382bc7c9778cc6e"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T400_attempt02.log",
+      "sha256": "1e3f41b293b28cb8c0a258f2b00a13c0bfc360cb50e6a39809691ce453d4809f"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T6400.json",
+      "sha256": "eb979f888e2e4c1c43591319119a290fed1a48fe6adb6e244ecb0e08fcc66e44"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T6400_attempt01.job.json",
+      "sha256": "42942c07ac713714da303bab948fe0c913815ab6509e21044a1e144f03060b6c"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_d92_T6400_attempt01.log",
+      "sha256": "98b4df272daeb4a47b61d42ed6de0c1e57681783dd3a20cb7d0f3a92b8eba88f"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_packing_tail_d92.json",
+      "sha256": "62f5a6214671373aef739b9707cd6b70656555e3d7eaa21ec66957e476bceb97"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_packing_tail_d92_attempt01.job.json",
+      "sha256": "e73b636c80ce5b81a6fd619f1cf361d7cb6e8869b626817290118864626b519a"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_packing_tail_d92_attempt01.log",
+      "sha256": "9f836ae8bc6c06e5af98d297ec76c00c00300e7002d52ba4be43bc32ca10a768"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_sum_d92_T25600.json",
+      "sha256": "5903b4bbe694427d52348be022ad5fba38585c63994698a28319f388dae3b151"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_sum_d92_T25600_attempt01.job.json",
+      "sha256": "51816004d5c530d73bf3ffe9b33acada1befdc700f54550c30a7dbd304e7c575"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_sum_d92_T25600_attempt01.log",
+      "sha256": "bb6b5b6bc29b5892f093a2cb1be758dde7afde960dbf2ec847df874a9ff90515"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_sum_d92_T6400.json",
+      "sha256": "5fcde375d896390867cf36e3d33acda8ce926ce5f3230ccc5743f289cfd59a90"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_sum_d92_T6400_attempt01.job.json",
+      "sha256": "7d3e6090c037b39347df2cab3ded339545f799d624a9e4c20f1ed0be6a2e30d9"
+    },
+    {
+      "path": "dembele/data/computed/nelson_norm_one_sum_d92_T6400_attempt01.log",
+      "sha256": "6b646ec019e330b4cc3e173eb586a66213b731808b1fd7e29c8e6bfd99ee7cd4"
+    },
+    {
+      "path": "dembele/data/computed/nelson_primitive_classes_d91.json",
+      "sha256": "86941c8138ec5abd4b25129ad0c3d5cdbb0c9b7029aa829dd9dc8d60fed53072"
+    },
+    {
+      "path": "dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "dembele/pari/320_nelson_local_kernel.py",
+      "sha256": "c609baa62ebff55e00283385fe2d7f85b0cebde412e2a5a6f2cbe97cd7a93114"
+    },
+    {
+      "path": "dembele/pari/321_nelson_cm_lattice.py",
+      "sha256": "f8421364564b193f64df30502f3099af4d2316e5b9519cf0617cde75ec2de78d"
+    },
+    {
+      "path": "dembele/pari/325_nelson_d90_audit.py",
+      "sha256": "b185173b4e1ba43113dc4effc0cc9250f349eec2cc9f3bc87cdc6daf5fcdfeb0"
+    },
+    {
+      "path": "dembele/pari/333_nelson_interval_sum.py",
+      "sha256": "5db3901a0fe91117aea146c9e9a101c9a3a11a8dd468e73793b5f169a82c0639"
+    },
+    {
+      "path": "dembele/pari/334_nelson_unfolding_audit.py",
+      "sha256": "bff793989e9f20277a5beb479fa6c68b8681643bcf6fee5e818a290da980e1db"
+    },
+    {
+      "path": "dembele/pari/338_nelson_norm_one_search.py",
+      "sha256": "b30830d473979af7f6e201d12d56a0253f23a8f54ceb4d2a2deb19355cb5d741"
+    },
+    {
+      "path": "dembele/pari/339_nelson_norm_one_search.py",
+      "sha256": "be34d5c6c70d1ee2081bd1d14878609a1720b8f6e719ff9483625b3263500f11"
+    },
+    {
+      "path": "dembele/pari/340_nelson_norm_one_coverage.py",
+      "sha256": "c56220f8c3a5d6d6c81ad1ef5035292d9c6ac0ab6f5aeb063cd9c9012aa60ab6"
+    },
+    {
+      "path": "dembele/pari/341_nelson_norm_one_sum.py",
+      "sha256": "c6418714b982275bc5904ca2ce8d3d45658a13c594de6ece10a626042c7b0019"
+    },
+    {
+      "path": "dembele/pari/342_nelson_norm_one_packing_tail.py",
+      "sha256": "c0c2abbb210b981a4ecc81608a2022c8777309feb70dd3c574ead0f046485621"
+    },
+    {
+      "path": "dembele/pari/343_nelson_norm_one_audit.py",
+      "sha256": "70a946081552dd070b9a759c053f98f541f1aa0815450ed8b8444957ca874641"
+    }
+  ],
+  "complete_norm_one_family_bounded": true,
+  "global_Hilbert_theta_lift_evaluated": false,
+  "Shimura_derivative_computed": false,
+  "next": "extend fixed-norm enumeration to matched Hecke ideals; prove an all-ideal tail and identify the global test vector"
+}

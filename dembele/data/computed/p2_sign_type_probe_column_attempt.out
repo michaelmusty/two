@@ -1,0 +1,9 @@
+R63|level-one ideal classes 58 [15.950 s]
+R63|sign-admissible classes 48; forbidden 10; forbidden indices [ 1, 3, 4, 5, 7, 8, 11, 12, 13, 14 ] [33.530 s]
+R63|supported subspace stable under T31: column false; row true
+R63|factor t^8 + t^4 + t^3 + t + 1: column eigenspace dim 8; supported false
+
+In file "dembele/magma/63_p2_sign_type_probe.m", line 48, column 5:
+>>     printf "R63|factor %o: column eigenspace dim %o; supported %o\n", f, Di
+       ^
+Runtime error in assert: Assertion failed

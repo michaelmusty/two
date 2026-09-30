@@ -1,0 +1,60 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/153_cm_frame_B3_rational_cover.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 30.183083667070605,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_cover.out",
+    "sha256": "19541a95de223f9c6651e496264582b4061bd8f3d186015a29f0705f925e1be8"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/magma/153_cm_frame_B3_rational_cover.m",
+      "sha256": "37349c6b113f54238764d1ecfa4b2fdef1a97710cdeb311e3d045c2a623440e4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+      "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_veronese.m",
+      "sha256": "02463a9ee940c9367945398be17bb58432de7bb49bbbc5fe5dc81d185f1ee9dc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_veronese.json",
+      "sha256": "a5f86e52811537adf2330f5d36d220a325f9a1215f5ab15cc657a0cac7741d60"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_veronese_job.json",
+      "sha256": "a599ed3ef9aa8f44af51b87585a734fb1c1420f08d5d88e24106e3d67b86fc25"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_transfer.m",
+      "sha256": "bfb14fc7fd0a43e233030ce8241f59154530f8c008a3fc4d93cda144ac248c2b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_numerator.m",
+      "sha256": "78124e9fd2d9c3a9fb9d1d8af1b6fd5dffa78af5da7b6ed9c8ab49890d1820d9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_moving_128.m",
+      "sha256": "144c1688c31107bcddcdd86d60586f3f620010c86d30d5eeb5e9a2c0160fca10"
+    }
+  ]
+}

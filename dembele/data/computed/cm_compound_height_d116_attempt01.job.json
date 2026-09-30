@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/433_cm_compound_height.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.14999412500765175,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_compound_height_d116_attempt01.log",
+    "sha256": "0aaf07573f18dc71f0b75e9f8c2915e79d255540958089e46076d58d2a923190"
+  },
+  "private_process_group": 85688,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/433_cm_compound_height.py",
+    "sha256": "7de02311e0271a9cc6a43eaf242f063f63e3dd3c18ab16b723d3711464b4800a"
+  }
+}

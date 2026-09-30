@@ -1,0 +1,56 @@
+{
+  "milestone": "D112",
+  "review_date": "2026-09-25",
+  "scope": "Exact dyadic CM embeddings and coordinates; arithmetic class and polynomial-root labels; rational residue-frame values and actual zeroth chart masses.",
+  "sources": [
+    {
+      "title": "John Voight, Shimura curve computations",
+      "url": "https://jvoight.github.io/articles/shimura-clay-proceedings-071707.pdf",
+      "locations": ["Section 4.3", "Section 4.5"],
+      "use": "Canonical CM reciprocity over a totally real field and compatibility with Atkin-Lehner quotients. Only these general inputs are used."
+    },
+    {
+      "title": "John Voight, Computing CM points on Shimura curves arising from cocompact arithmetic triangle groups, corrected author version",
+      "url": "https://jvoight.github.io/articles/shimcm-fixed-errata.pdf",
+      "locations": ["Theorem 5.1", "Algorithm 5.2"],
+      "use": "The arithmetic Artin inverse-principalizer convention. We use the underlying CM reciprocity law, not triangle-group analytic algorithms or the separate Section 6 descent claim."
+    },
+    {
+      "title": "Lassina Dembele, A hyperelliptic Shimura quotient of genus 16",
+      "url": "https://arxiv.org/pdf/1906.06772",
+      "locations": ["Section 4.1", "Theorem 4.3", "Proposition 4.4"],
+      "use": "Canonical adelic setup and Cerednik-Drinfeld uniformization over the completed maximal unramified extension, with its prime-to-p adelic action. Together with CM reciprocity this gives the localized ideal action in the specified local CM character. The paper's hyperellipticity assertion is not used."
+    }
+  ],
+  "local_sources": [
+    {"path": "dembele/certificates/cm-frame-arithmetic-d105.md", "use": "H is the Hilbert class field of M, Gal(H/Q)=AGL1(F17), and the exact resolvent field."},
+    {"path": "dembele/certificates/cm-rational-frame-jets-d106.md", "use": "Compatible marked Q-descent, unique residue-field identification and the rational projective residue frame."},
+    {"path": "dembele/certificates/cm-root-matching-d107.md", "use": "The complex reference point/root, arithmetic class-3 Frobenius convention and exact directed-cycle resolvent identity and separation."},
+    {"path": "dembele/data/computed/cm_orbit.json", "use": "Saved class generator, complex class labels, polynomial-root lookup and exact gamma(beta)."},
+    {"path": "dembele/data/computed/cm_field_recognition.json", "use": "The actual saved sixteen trace-centered basis polynomials, including their denominators."},
+    {"path": "dembele/data/computed/definite_dyadic_certificate_d109.json", "use": "The same exact integral Hensel splitting, with certified root center and error."},
+    {"path": "dembele/data/computed/dyadic_group_transport_d110.json", "use": "W, the localized arithmetic group, norm parity and geometric uniformization."},
+    {"path": "dembele/data/computed/dyadic_harmonic_review_d111.json", "use": "All existing edges, stabilizers, sixteen harmonic measures, finite reducer, bound d=0 and 661 inherited source hashes."}
+  ],
+  "project_deductions": [
+    "The full integer ring embeds into R for W and both normalized signs of the eight ordinary reversed edges; exact matrices conjugate all seventeen generators to [0,-lambda;1,0].",
+    "The torus-unit argument gives exact order-two stabilizers; k anticommutes with W and exchanges its eigenlines, making W the unique inertia-fixed, hence K-rational, point of D.",
+    "The principal dyadic prime splits in H/M. A simple rational Hensel root and the remaining Newton slopes independently prove uniqueness of the K-root.",
+    "The local embedding is normalized by W's CM eigenvalue character. Prime-to-p adelic equivariance transports the arithmetic Artin convention to the localized ideal relation, also for ramified M_p/K.",
+    "Seventeen exact principal class witnesses relative to (31,beta+16) certify all classes; norm products supported at 2 and localized inclusion prove the requisite right-ideal equalities.",
+    "An exact principal witness makes sigma(beta)=beta^3+3*beta act on the class group by 10. Its root cycle determines the regular C17 subgroup; the certified D107 resolvent selects the unique arithmetic class orientation.",
+    "Independent rational Hensel checks give root errors at least 688 beta-digits and separation at most 17; all 272 rational residue-frame entries have error at least 384 beta-digits.",
+    "At the rational anchor, eta1=theta-2/17 has v2=7 rather than 1; the failed expectation is archived and the correct valuation follows from the independent rational root center.",
+    "The certified reducer gives all 51 actual zeroth-moment vectors, with A0=0 and B0+C0=0, including nonzero B0 values."
+  ],
+  "excluded_inferences": [
+    "No new explicit unramified-descent matrix; inertia uses the existing uniformization over the completed maximal unramified field.",
+    "No direct application of a Qp inert/unramified quadratic p-adic CM theorem to ramified M_p/K.",
+    "Residue-frame algebraic values are not actual harmonic differential evaluations or a harmonic-to-residue change-of-basis matrix.",
+    "No positive-degree moments, actual Shimura tangent/jet, candidate identification or target field polynomial.",
+    "No enlarged class census, new level, Hecke-prime bank or cubic-precision run.",
+    "No unchanged transfer of Qp overconvergent control or inert-31 equality thresholds to the dyadic setting."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

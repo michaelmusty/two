@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "status": "Magma Jacobian minor-count limit; no smoothness conclusion",
+      "files": [
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_smoothness_probe.m",
+          "sha256": "996b5d1c4b5f84ca02adad32761bc4390ba9ff074ec11362a82f6b04d7c59d07"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_smoothness_probe.out",
+          "sha256": "85dea40b32edecc07f138ab4f59e41840c0c81c850d0980c6421cd0450c9486f"
+        }
+      ],
+      "memory_limit_bytes": 2000000000,
+      "timeout_seconds": 180
+    },
+    {
+      "status": "timeout after 180 seconds during geometric genus; no smoothness conclusion",
+      "files": [
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_normalization_probe.m",
+          "sha256": "7c5ce9d116c020320be2a68313d178a60ce727ec64fa20eb13e582167f9e2049"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_normalization_probe.out",
+          "sha256": "ac5be1f606c8a74cfea579ffc082e528949165a1ab5290f381991fabb4c035de"
+        }
+      ],
+      "memory_limit_bytes": 2000000000,
+      "timeout_seconds": 180
+    }
+  ]
+}

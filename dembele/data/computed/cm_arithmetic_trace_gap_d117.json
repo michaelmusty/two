@@ -1,0 +1,392 @@
+{
+  "status": "pass",
+  "milestone": "D117",
+  "field_polynomial_ascending": [
+    2,
+    0,
+    -16,
+    0,
+    20,
+    0,
+    -8,
+    0,
+    1
+  ],
+  "trace_basis_polynomials": [
+    [
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      -2,
+      0,
+      1
+    ],
+    [
+      0,
+      -3,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      -4,
+      0,
+      1
+    ],
+    [
+      0,
+      5,
+      0,
+      -5,
+      0,
+      1
+    ],
+    [
+      -2,
+      0,
+      9,
+      0,
+      -6,
+      0,
+      1
+    ],
+    [
+      0,
+      -7,
+      0,
+      14,
+      0,
+      -7,
+      0,
+      1
+    ]
+  ],
+  "trace_Gram_matrix": [
+    [
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16
+    ]
+  ],
+  "field_discriminant": 2147483648,
+  "real_root_intervals": [
+    [
+      "-9263255070136244284483/4722366482869645213696",
+      "-4631627535068122142241/2361183241434822606848"
+    ],
+    [
+      "-7853008457324316079085/4722366482869645213696",
+      "-1963252114331079019771/1180591620717411303424"
+    ],
+    [
+      "-655901561822962047279/590295810358705651712",
+      "-5247212494583696378231/4722366482869645213696"
+    ],
+    [
+      "-1842575995642420320559/4722366482869645213696",
+      "-921287997821210160279/2361183241434822606848"
+    ],
+    [
+      "921287997821210160279/2361183241434822606848",
+      "1842575995642420320559/4722366482869645213696"
+    ],
+    [
+      "5247212494583696378231/4722366482869645213696",
+      "655901561822962047279/590295810358705651712"
+    ],
+    [
+      "1963252114331079019771/1180591620717411303424",
+      "7853008457324316079085/4722366482869645213696"
+    ],
+    [
+      "4631627535068122142241/2361183241434822606848",
+      "9263255070136244284483/4722366482869645213696"
+    ]
+  ],
+  "trace_search_upper": 8,
+  "weighted_integer_norm_bound": 11,
+  "vectors_enumerated": 6167,
+  "eligible_single_positive_outlier_elements": [
+    {
+      "coefficients_in_trace_basis": [
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "outlier_embedding_index": 1,
+      "outlier_interval": [
+        "356432563843653726919027965111/39614081257132168796771975168",
+        "712865127687307453841728410493/79228162514264337593543950336"
+      ]
+    },
+    {
+      "coefficients_in_trace_basis": [
+        1,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "outlier_embedding_index": 6,
+      "outlier_interval": [
+        "356432563843653726919027965111/39614081257132168796771975168",
+        "712865127687307453841728410493/79228162514264337593543950336"
+      ]
+    },
+    {
+      "coefficients_in_trace_basis": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "outlier_embedding_index": 0,
+      "outlier_interval": [
+        "712865127687307453838975663935/79228162514264337593543950336",
+        "712865127687307453840119920871/79228162514264337593543950336"
+      ]
+    },
+    {
+      "coefficients_in_trace_basis": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "outlier_embedding_index": 7,
+      "outlier_interval": [
+        "712865127687307453838975663935/79228162514264337593543950336",
+        "712865127687307453840119920871/79228162514264337593543950336"
+      ]
+    },
+    {
+      "coefficients_in_trace_basis": [
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "outlier_embedding_index": 2,
+      "outlier_interval": [
+        "356432563843653726919623025393/39614081257132168796771975168",
+        "712865127687307453840543634787/79228162514264337593543950336"
+      ]
+    },
+    {
+      "coefficients_in_trace_basis": [
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        1
+      ],
+      "outlier_embedding_index": 5,
+      "outlier_interval": [
+        "356432563843653726919623025393/39614081257132168796771975168",
+        "712865127687307453840543634787/79228162514264337593543950336"
+      ]
+    },
+    {
+      "coefficients_in_trace_basis": [
+        1,
+        0,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "outlier_embedding_index": 4,
+      "outlier_interval": [
+        "356432563843653726919847385463/39614081257132168796771975168",
+        "356432563843653726920033072103/39614081257132168796771975168"
+      ]
+    },
+    {
+      "coefficients_in_trace_basis": [
+        1,
+        0,
+        -1,
+        1,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "outlier_embedding_index": 3,
+      "outlier_interval": [
+        "356432563843653726919847385463/39614081257132168796771975168",
+        "356432563843653726920033072103/39614081257132168796771975168"
+      ]
+    }
+  ],
+  "uniform_hyperbolic_trace_lower": "8",
+  "disk_radius_tests": [
+    {
+      "disk_radius": "1/4",
+      "trace_required_for_disjoint_translates": "706/225",
+      "certified": true
+    },
+    {
+      "disk_radius": "1/3",
+      "trace_required_for_disjoint_translates": "17/4",
+      "certified": true
+    },
+    {
+      "disk_radius": "3/8",
+      "trace_required_for_disjoint_translates": "15266/3025",
+      "certified": true
+    },
+    {
+      "disk_radius": "2/5",
+      "trace_required_for_disjoint_translates": "2482/441",
+      "certified": true
+    },
+    {
+      "disk_radius": "5/12",
+      "trace_required_for_disjoint_translates": "85922/14161",
+      "certified": true
+    },
+    {
+      "disk_radius": "3/7",
+      "trace_required_for_disjoint_translates": "641/100",
+      "certified": true
+    },
+    {
+      "disk_radius": "4/9",
+      "trace_required_for_disjoint_translates": "29186/4225",
+      "certified": true
+    },
+    {
+      "disk_radius": "1/2",
+      "trace_required_for_disjoint_translates": "82/9",
+      "certified": false
+    }
+  ],
+  "geometric_displacement_implication_in_companion_proof": true,
+  "actual_CM_minimum_displacement_computed": false,
+  "candidate_identification_proved": false,
+  "target_field_polynomial_constructed": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/446_cm_arithmetic_trace_gap.py",
+      "sha256": "ed5786947eb630bbe39ee11c0895a90f52f5977fa1862bf3e4da8381d5fa872e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_d104.json",
+      "sha256": "b862afd83cb47ba6a6c3c9d6aee30440ea7671477ea2848a8b7ef6730a3fdf68"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_identification_review_d116.json",
+      "sha256": "2d04398c867116de354e26bbccdcec44ddbcac9bfa3ce3468b3f4927b084449f"
+    }
+  ]
+}

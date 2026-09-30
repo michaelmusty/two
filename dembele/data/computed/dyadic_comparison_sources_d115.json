@@ -1,0 +1,56 @@
+{
+  "milestone": "D115",
+  "review_date": "2026-09-25",
+  "scope": "Strategic reassessment, actual rational-residue-frame CM ratio coefficients through second order, and the remaining exact-identification requirement.",
+  "sources": [
+    {
+      "title": "Lassina Dembele, A non-solvable Galois extension of Q ramified at 2 only",
+      "url": "https://arxiv.org/pdf/0811.4379",
+      "use": "Original target residual kernels and nonsolvable extension; no new defining polynomial is supplied here."
+    },
+    {
+      "title": "Cameron Franc and Marc Masdeu, Computing fundamental domains for the Bruhat-Tits tree for GL2(Qp), p-adic automorphic forms, and the canonical embedding of Shimura curves",
+      "url": "https://arxiv.org/pdf/1201.0356",
+      "locations": ["Introduction", "Section 6.1"],
+      "use": "Moment/Poisson evaluation framework and the distinction between numerical equation recognition and certification. Ramified-field error bounds are the project's direct proofs, not a transferred Qp theorem."
+    },
+    {
+      "title": "Raymond van Bommel, Edgar Costa, Bjorn Poonen, Padmavathi Srinivasan, Curve equations from expansions of 1-forms at a nonrational point",
+      "url": "https://arxiv.org/abs/2506.14026",
+      "use": "Geometric reconstruction from exact expansions, as applied in D88/D106. The theorem does not remove the need to certify equality of approximate algebraic coefficients."
+    }
+  ],
+  "local_sources": [
+    {"path": "dembele/certificates/construction-methodology-d100.md", "use": "Target kernels, arithmetic carrier, marked-cover and global section/torsion dependencies."},
+    {"path": "dembele/certificates/cm-rational-frame-jets-d106.md", "use": "Rational residue frame, actual coefficient height bounds, ratio formulas and exact J3 criterion."},
+    {"path": "dembele/certificates/dyadic-coarse-d114.md", "use": "Actual coarse kernels, CM involution identity and conservative precision bounds."},
+    {"path": "dembele/data/computed/dyadic_cm_matching_review_d112.json", "use": "Actual CM labels and certified rational residue-frame values."},
+    {"path": "dembele/data/computed/dyadic_moment_transports_d113.json", "use": "Exact child/CM transport matrices retained in the refined packet."},
+    {"path": "dembele/data/computed/dyadic_coarse_review_d114.json", "use": "713 frozen inherited hashes and the prior actual moment/coarse enclosures."},
+    {"path": "dembele/data/computed/cm_ratio_jet_review_d106.json", "use": "Candidate coefficients used only after the actual frame and jets have been constructed."}
+  ],
+  "project_deductions": [
+    "A previous moment bank can be lifted after restoring exact zeroth masses; the correction satisfies the contracting homogeneous equation.",
+    "Batched full-polynomial arithmetic and separate capped phases reach moment precision 200 without changing the process timeout.",
+    "One Hensel step on the same root raises normalized child/CM error bounds to 331/337 pi-digits.",
+    "The W leading coefficient in the first harmonic direction has beta-valuation 296; all sixteen W leading entries are resolved at the final precision.",
+    "The actual 17-point projective frame gives the harmonic-to-rational-residue basis change, independently of candidate jets.",
+    "The chosen Gaussian is numerically nonzero at the sixteen non-anchor CM points; rationality and CM transitivity prove nonvanishing throughout the CM divisor.",
+    "The actual first and second ratio coefficients agree with the candidate within beta-error bounds 101 and 70 at the degree-16 dyadic place.",
+    "Direct formal-series division and reversion independently checks the Gaussian ratio formulas.",
+    "The current height bounds would require beta-errors 274241 and 820774 at that place to certify equality; matching the achieved enclosures does not prove curve identification."
+  ],
+  "excluded_inferences": [
+    "No exact equality of the actual and candidate ratio coefficients, exact curve identification or target field polynomial.",
+    "No numerical division by the still-unresolved W Gaussian.",
+    "No claim that the sufficient height-based thresholds are necessary for every possible proof.",
+    "No new marked-cover, global cubic, norm-97 separation or target-torsion certificate.",
+    "No change to the census, new-level, Hecke-bank or cubic-precision pauses."
+  ],
+  "software": [
+    {"name": "Python standard library", "use": "Exact rational/integer arithmetic, local balls, source hashes and bounded process groups."},
+    {"name": "NumPy", "use": "Integer matrix products and polynomial operations with explicit overflow bounds; no floating-point solve."}
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

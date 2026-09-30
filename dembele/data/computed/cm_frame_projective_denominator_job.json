@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/133_cm_frame_projective_denominator.py"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 35.77959908300545,
+  "timeout_seconds": 300,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/133_cm_frame_projective_denominator.py",
+      "sha256": "8242525ec0f13c7e9ecbdce57b88e04af9305f6fc1eab8824a79c88314397cd9"
+    }
+  ],
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_projective_denominator.out",
+    "sha256": "f7087ba01841dd18dde33eb40c04200f67867f8d452fa32b07d4b2314c5601f5"
+  },
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d74-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/Users/musty/.pyenv/versions/3.10.12/bin/python3",
+    "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py"
+  ],
+  "status": "failed",
+  "exit_code": 1,
+  "wall_seconds": 0.04045737499836832,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt01.log",
+    "sha256": "f996ff5ac967ce438b9c36b5af27c27ff491894c1e0d92f13bdb51ded0e7b497"
+  },
+  "private_process_group": 2932,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py",
+    "sha256": "3c29822fe0ef49a2d2f968eaa258a44135ad3fcac8e0c16b5924df836c43c04f"
+  }
+}

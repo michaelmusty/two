@@ -1,0 +1,226 @@
+{
+  "milestone": "D125",
+  "date": "2026-09-28",
+  "report": "dembele/certificates/dyadic-precision800-d125.md",
+  "final_review_driver": "dembele/pari/513_dyadic_precision800_review.py",
+  "independent_arithmetic_drivers": [
+    "dembele/pari/511_dyadic_precision800_column_audit.py",
+    "dembele/pari/512_dyadic_precision800_comparison_audit.py"
+  ],
+  "prior_review": "dembele/data/computed/dyadic_precision1600_review_d124.json",
+  "inherited_D124_source_hashes_to_preserve": 3535,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Production polynomial multiplication in 476--479. Attribution and installed header/library hashes are preserved from the interim ledger. No additional web source is invoked for the new mathematical review."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited carry-free polynomial arithmetic supplies the older backend for all production final original residuals. Source 486 imports no production arithmetic."
+    }
+  ],
+  "new_external_theorem_invoked": false,
+  "inherited_mathematical_inputs": [
+    "D120/D121: the positive k-th original child column is divisible by pi^k; fixed-mass contraction and integral low inverse.",
+    "D121: refined transport parameters at P=10552 and the CM truncation/kernel-error proof.",
+    "D121/D122: actual P=400 harmonic and CM banks, P=400 r=32 factor, exact masses and original branches.",
+    "D122: independent integer quotient arithmetic in source 486; all curve comparison bounds remain unchanged.",
+    "For fixed masses, T maps I_P={e:e_0=0, v_pi(e_k)>=max(0,P-k)} to pi^P in every output row.",
+    "If Tz-z belongs to I_P, then y=Tz has uniform original residual zero modulo pi^P.",
+    "Moment k, field coordinate i needs max(0,ceil((P-k-i)/8)) binary digits in weighted storage.",
+    "After eliminating r low moments, a high residual of valuation u needs only k<P-u; the next band ends at P-u-r-1.",
+    "Stop the weighted correction stage when u+r+1>=P, then reconstruct; this does not label weighted centers uniformly accurate.",
+    "Composing g=(Ax+B)/(1+Cx), C in pi O, with each original contracting child f preserves c and determinant divisibility by pi; the normalizing denominator 1+C*b is a unit.",
+    "Therefore direct CM moments can be calculated uniformly modulo pi^P from weighted state precision P-k, using P input moments without the 3P state extension. All 34 compositions are checked in separate integer quotient arithmetic.",
+    "The existing carry-free GMP packing proof applies to the new C small-product implementation; no new external theorem is used."
+  ],
+  "new_deductions": [
+    "With exact masses, positive input columns are pi-divisible. If the original finite residual vanishes modulo pi^P, the error e satisfies e=T_+ e modulo pi^P, hence e=0 after P iterations. Correctness of the final moment state does not depend on the seed or intermediate iteration payloads.",
+    "A prospective rolling scratch protocol can bound intermediate storage without weakening that final certificate, provided the original full residual, exact masses, transport/truncation assumptions, final state and required checks are preserved. This protocol has not yet been implemented."
+  ],
+  "actual_results": {
+    "harmonic_basis_columns": 16,
+    "working_precision_pi": 800,
+    "reused_column": 0,
+    "new_columns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "complete_original_residual_scalar_checks": 17817600,
+    "CM_moment_scalar_coefficients": 3481600,
+    "coarse_values": 1088,
+    "coarse_error_beta": [
+      1632,
+      1648,
+      1632,
+      1664
+    ],
+    "new_state_phases": 1215,
+    "new_CM_phases": 15,
+    "weighted_corrections_per_new_column": 12,
+    "all_P400_frame_entry_overlaps": 256,
+    "all_P400_actual_jet_overlaps": 1088
+  },
+  "new_column_independent_checks": {
+    "audits": 15,
+    "original_recurrence_scalars": 2400,
+    "high_seed_recurrence_scalars": 360,
+    "CM_recurrence_scalars": 1080,
+    "coarse_values": 1020,
+    "inherited_column_zero_independent_coarse_values": 68,
+    "weighted_state_scalars": 217152000,
+    "scaled_residual_scalars": 55436400,
+    "weighted_checkpoints": 195,
+    "complete_disjoint_sweeps": 255,
+    "old_low_state_scalars": 8352000,
+    "old_extended_seed_scalars": 16704000,
+    "old_CM_scalars": 1632000,
+    "production_arithmetic_not_imported": true
+  },
+  "comparison_certificates": {
+    "all_bank_assembled_coarse_values_checked": 1088,
+    "frame_relation_certified_error_beta": 1301,
+    "change_column_error_bounds_beta": [
+      1337,
+      1336,
+      1337,
+      1336,
+      1336,
+      1340,
+      1336,
+      1339,
+      1337,
+      1337,
+      1338,
+      1336,
+      1339,
+      1336,
+      1336,
+      1336
+    ],
+    "inherited_inverse_norm_preserved_by_overlap_beta": 799,
+    "all_actual_jet_values_checked": 1088,
+    "independent_quadric_coefficients_checked": 6188,
+    "positive_coefficients_checked": 4641,
+    "certified_mismatch_count": 0,
+    "degree16_section_lower_beta": [
+      4994,
+      4945,
+      4928
+    ],
+    "anchor_section_lower_beta": [
+      4776,
+      4448,
+      4184
+    ],
+    "sufficient_nonanchor_beta": [
+      25255,
+      25369,
+      25476
+    ],
+    "W_Gaussian": {
+      "valuation_beta": 1024,
+      "error_beta": 2025
+    },
+    "W_Gaussian_inverted": false,
+    "positive_exact_vanishing_proved": false,
+    "method": "integer quotient absolute-error balls, frame residual bounds, gradients and polar forms"
+  },
+  "comparison_with_sufficient_bounds": [
+    {
+      "order": 1,
+      "degree16_achieved_lower_beta": 4994,
+      "anchor_achieved_lower_beta": 4776,
+      "sufficient_nonanchor_beta_with_new_anchor": 25255,
+      "gap": 20261,
+      "inequality_is_sufficient": false,
+      "intrinsic_interpretation_conditional_on_previous_orders": false,
+      "exact_vanishing_proved": false
+    },
+    {
+      "order": 2,
+      "degree16_achieved_lower_beta": 4945,
+      "anchor_achieved_lower_beta": 4448,
+      "sufficient_nonanchor_beta_with_new_anchor": 25369,
+      "gap": 20424,
+      "inequality_is_sufficient": false,
+      "intrinsic_interpretation_conditional_on_previous_orders": true,
+      "exact_vanishing_proved": false
+    },
+    {
+      "order": 3,
+      "degree16_achieved_lower_beta": 4928,
+      "anchor_achieved_lower_beta": 4184,
+      "sufficient_nonanchor_beta_with_new_anchor": 25476,
+      "gap": 20548,
+      "inequality_is_sufficient": false,
+      "intrinsic_interpretation_conditional_on_previous_orders": true,
+      "exact_vanishing_proved": false
+    }
+  ],
+  "measurements": {
+    "state_column_coordinator_seconds": 5409.946144042769,
+    "minimum_state_column_seconds": 348.26751925004646,
+    "maximum_state_column_seconds": 398.5452759589534,
+    "CM_phase_seconds": 196.84328637481667,
+    "state_sum_phase_seconds": 10079.10973337572,
+    "all_input_sum_phase_seconds": 11128.151712165214,
+    "maximum_job_seconds": 69.29199804086238,
+    "maximum_single_process_peak_rss_bytes": 811401216,
+    "state_checkpoint_payload_bytes": 3656839680,
+    "minimum_column_audit_seconds": 50.36741766706109,
+    "maximum_column_audit_seconds": 51.00362300011329,
+    "independent_comparison_seconds": 19.447554791811854
+  },
+  "bounded_input_jobs": {
+    "total": 1250,
+    "passed": 1250,
+    "failed": 0,
+    "categories": {
+      "505_dyadic_weighted_bank_chunks.py": 1215,
+      "506_dyadic_direct_CM_bank.py": 15,
+      "507_dyadic_complete_precision800_bank.py": 1,
+      "508_dyadic_precision800_balls.py": 1,
+      "509_dyadic_precision800_residue_frame.py": 1,
+      "510_dyadic_precision800_quadrics.py": 1,
+      "511_dyadic_precision800_column_audit.py": 15,
+      "512_dyadic_precision800_comparison_audit.py": 1
+    },
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "maximum_workers": 3,
+    "BLAS_threads": 1
+  },
+  "decision": "Retain the candidate as compatible with the independently reviewed P800 comparison. Continue the original-kernel construction through the integral-section route, addressing target-size I/O and checkpoint retention before another larger full bank. Finite zero-containing balls do not prove exact vanishing.",
+  "next_bounded_task": "Use new source 514 to control selective state reads at the already certified P1600: compare all weighted projections with the frozen uniform state and selected full original GMP rows, measuring isolated peak memory. Then implement and control a bounded rolling scratch protocol with permanent final states, residual certificates, exact masses, source hashes and receipts. Profile factor decoding/solves and map reuse before choosing any larger full-bank refinement. Preserve all existing frozen artifacts.",
+  "limits": {
+    "positive_exact_quadric_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "complete_target_size_solve_costed": false,
+    "conditional_P10552_design_changed": false,
+    "rolling_scratch_protocol_implemented": false,
+    "all_prior_frozen_files_preserved": true,
+    "all_resource_pauses_preserved": true,
+    "W_Gaussian_inverted": false,
+    "correspondence_sent": false
+  }
+}

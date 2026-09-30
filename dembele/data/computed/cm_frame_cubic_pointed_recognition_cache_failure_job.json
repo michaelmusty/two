@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/232_cm_frame_cubic_pointed_recognition.py",
+    "--digits",
+    "8",
+    "--worker"
+  ],
+  "status": "failed",
+  "exit_code": 1,
+  "wall_seconds": 4.4913531669881195,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_recognition_cache_failure.out",
+    "sha256": "06fa2e1767a27ba87c95d350bb60c3e67396040774beafc042dde3ef239edb53"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_recognition_cache_failure.py",
+      "sha256": "f7cc92ae04e005fa41e67511f49ffd2d50fe2e0603da60d19e323dd3d3319e79"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "diagnostic": "Sage attempted to write its default cache outside writable roots; rerun with a dedicated DOT_SAGE in /private/tmp."
+}

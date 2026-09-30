@@ -1,0 +1,343 @@
+{
+  "status": "pass: complete but conservative central-unit reduction bound",
+  "unit_rank_certified": 7,
+  "full_unit_group_generation_required": false,
+  "alternatives": [
+    {
+      "name": "cyclotomic",
+      "unit_exponent_change": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "units_power_coordinates": [
+        [
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "-2",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "-2",
+          "-3",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "3",
+          "-3",
+          "-4",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "3",
+          "6",
+          "-4",
+          "-5",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "-1",
+          "-4",
+          "6",
+          "10",
+          "-5",
+          "-6",
+          "1",
+          "1"
+        ]
+      ],
+      "cover_constant_integer": 648536,
+      "maximum_vertex_interval": "[648535.712287303419859673621902980183662794407297862355189654500966742062903 +/- 1.48e-70]"
+    },
+    {
+      "name": "LLL",
+      "unit_exponent_change": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "units_power_coordinates": [
+        [
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "-3",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "7",
+          "0",
+          "-14",
+          "0",
+          "7",
+          "0",
+          "-1"
+        ],
+        [
+          "-3",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-3",
+          "0",
+          "13",
+          "0",
+          "-7",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "5",
+          "0",
+          "-5",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "3",
+          "-3",
+          "-4",
+          "1",
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "cover_constant_integer": 2126,
+      "maximum_vertex_interval": "[2125.978902971858946496561027348130352374823966634790336589811957040675447710 +/- 8.30e-73]"
+    }
+  ],
+  "selected": "LLL",
+  "C": 2126,
+  "bound": "A<=T implies some central-unit representative has Q<=1.01*C*(2*T/2^31)^(1/8)",
+  "proof": "center log majorant in the parallelepiped of 2 log|units|; convex exponential sum is maximal at a vertex",
+  "cost_diagnostics": [
+    {
+      "invariant_A_bound": 1,
+      "sufficient_Q_bound": 160,
+      "unrounded_Q_bound_interval": "[159.5960543600464273574886866741054696169992034539910361424489198156951248761 +/- 5.72e-74]",
+      "ellipsoid_volume_at_integer_bound": "[26010445300868405880468289210867062.60898364606204588375605060351326001749933 +/- 8.78e-42]",
+      "volume_is_not_a_lattice_point_count": true
+    },
+    {
+      "invariant_A_bound": 64,
+      "sufficient_Q_bound": 269,
+      "unrounded_Q_bound_interval": "[268.4075000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.72e-74]",
+      "ellipsoid_volume_at_integer_bound": "[105989915266606216292227565604747219246.9106516755895322709859116279475468559 +/- 5.27e-38]",
+      "volume_is_not_a_lattice_point_count": true
+    },
+    {
+      "invariant_A_bound": 359,
+      "sufficient_Q_bound": 333,
+      "unrounded_Q_bound_interval": "[332.9729519200964519897136243164918469768023595342333040797208910845779799081 +/- 6.90e-74]",
+      "ellipsoid_volume_at_integer_bound": "[3223560318370069480306593191625843314606.456945259935153395070332575232137337 +/- 7.73e-37]",
+      "volume_is_not_a_lattice_point_count": true
+    },
+    {
+      "invariant_A_bound": 1000,
+      "sufficient_Q_bound": 379,
+      "unrounded_Q_bound_interval": "[378.4618868367622695209251817912053907191365604579418670352012277041584942821 +/- 5.88e-74]",
+      "ellipsoid_volume_at_integer_bound": "[25553796057659600127668100707656294428766.54469100546767422879541809657229874 +/- 8.50e-36]",
+      "volume_is_not_a_lattice_point_count": true
+    },
+    {
+      "invariant_A_bound": 1000000,
+      "sufficient_Q_bound": 898,
+      "unrounded_Q_bound_interval": "[897.4745670397949720382389055533527299303577785173118598299966685051415111495 +/- 4.25e-74]",
+      "ellipsoid_volume_at_integer_bound": "[25214447225744824085179287313271985286186068323.19307497577519286305659897774 +/- 7.21e-30]",
+      "volume_is_not_a_lattice_point_count": true
+    }
+  ],
+  "complete_cutoff_enumerated": false,
+  "sources": [
+    {
+      "path": "dembele/pari/336_nelson_unit_cutoff.py",
+      "sha256": "15c0ed1cdee10a8588d6c25cb6df03978c2fc935836c6f260124cdbfcc98e669"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_lattice_d90.json",
+      "sha256": "24f8e464cb5cf6bff4a71828959bb9e3e328ae2a233bae836302aac97682a0af"
+    }
+  ]
+}

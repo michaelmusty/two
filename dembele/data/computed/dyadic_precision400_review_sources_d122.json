@@ -1,0 +1,100 @@
+{
+  "milestone": "D122",
+  "date": "2026-09-27",
+  "report": "dembele/certificates/dyadic-precision400-d122.md",
+  "independent_arithmetic_driver": "dembele/pari/486_dyadic_precision400_independent.py",
+  "final_review_driver": "dembele/pari/487_dyadic_precision400_review.py",
+  "prior_review": "dembele/data/computed/dyadic_schur_review_d121.json",
+  "D121_source_hashes_to_preserve": 1079,
+  "interim_checkpoint": "dembele/data/computed/dyadic_precision400_checkpoint_d122.json",
+  "interim_source_hashes_to_preserve": 1844,
+  "interim_ledger_preserved": "dembele/data/computed/dyadic_precision400_sources_d122.json",
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Production polynomial multiplication in 476--479. Attribution and installed header/library hashes are preserved from the interim ledger. No additional web source is invoked for the new mathematical review."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited carry-free polynomial arithmetic supplies the older backend for all production final original residuals. Source 486 imports no production arithmetic."
+    }
+  ],
+  "inherited_mathematical_inputs": [
+    "D121 actual fixed-point uniqueness, Schur iteration, transport precision, column 0 and CM truncation/error proof.",
+    "D112 certified root branches and rational trace-centered CM residue basis.",
+    "D115 actual P=200 overlaps and D111 exact harmonic masses.",
+    "D120 non-anchor Smith factors [0x8,35x8] and inverse-entry valuation bound -35.",
+    "D116 integral section shifts and successive exact-zero hypotheses; D118 global height budget."
+  ],
+  "new_checked_results": {
+    "actual_harmonic_columns": 16,
+    "precision_pi": 400,
+    "coarse_error_beta": [832, 848, 832, 864],
+    "algebraic_eta_error_beta": 21168,
+    "all_coarse_values_independently_checked": 1088,
+    "all_quadric_coefficients_independently_checked": 6188,
+    "positive_quadric_coefficients": 4641,
+    "certified_mismatches": 0,
+    "nonanchor_section_lower_beta": [4194, 4145, 4128],
+    "anchor_section_lower_beta": [3976, 3648, 3384],
+    "sufficient_nonanchor_beta_with_new_anchor": [25305, 25419, 25526],
+    "remaining_valuation_gaps": [21111, 21274, 21398],
+    "W_Gaussian_valuation_beta": 1024,
+    "W_Gaussian_error_beta": 1225,
+    "W_Gaussian_relative_precision_beta": 201,
+    "W_Gaussian_inverted": false
+  },
+  "independent_verification": {
+    "phases": ["roots", "moments", "coarse_00_03", "coarse_04_07", "coarse_08_11", "coarse_12_15", "comparison"],
+    "root_residuals_and_branches": 17,
+    "eta_cross_products": 272,
+    "old_low_state_scalar_overlaps": 8908800,
+    "sampled_original_recurrence_scalar_checks": 2560,
+    "production_full_original_residual_scalar_checks": 8908800,
+    "frame_relation_error_beta_from_residual": 501,
+    "frame_change_column_error_bounds_beta": [537,536,537,536,536,540,536,539,537,537,538,536,539,536,536,536],
+    "methods": [
+      "Horner multiplication in a separately implemented integer polynomial quotient.",
+      "Integral absolute-error balls without production unit normalization or field inversion.",
+      "Neumann stability of the inherited inverse norm; q and basis-change certification from residual equations.",
+      "Alternate binomial-series kernels and Horner evaluation for every coarse value.",
+      "Gradient and polar-form quadratic coefficients rather than production monomial convolution.",
+      "Independent rational atanh series checks the updated strict height inequalities."
+    ],
+    "independent_mathematical_review_complete": true,
+    "geometric_proofs_machine_formalized": false
+  },
+  "bounded_input_jobs": {
+    "computation": 157,
+    "independent_arithmetic": 7,
+    "interim_provenance": 3,
+    "total_before_final_review": 167,
+    "passed": 167,
+    "failed": 0,
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "wrapper": "dembele/pari/run_dyadic_capped.py",
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "BLAS_threads": 1
+  },
+  "decision": "Retain the direct integral-section route. The P=400 comparison survived falsification, but the height gap remains large; cost one staged P=800 column before another full bank or target-size solve.",
+  "next_bounded_task": "Use a new source (488 next unused) to generalize the lift, persist original-operator sweeps in state chunks, and measure one actual P=800 column from P=400 with r=32, including factor, seed, correction, residual and CM costs.",
+  "limitations": {
+    "next_generalized_driver_written": false,
+    "P800_jobs_run": false,
+    "positive_quadric_jet_exact_vanishing_proved": false,
+    "higher_intrinsic_jets_require_preceding_exact_zeros": true,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "full_P10552_solve_ready": false,
+    "global_ratio_height_budget_improved_by_resolving_Gaussian": false,
+    "resource_pauses_preserved": true,
+    "downstream_marked_cover_and_field_tasks_remain": true,
+    "correspondence_sent": false
+  }
+}

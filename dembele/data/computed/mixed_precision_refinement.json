@@ -1,0 +1,23 @@
+{
+  "status": "linear refinement prototype PASS; no validated differential basis",
+  "n": 64,
+  "samples": 128,
+  "decimal_digits": 50,
+  "matrix_condition_2_double": 2266.476375938184,
+  "matrix_free_vs_explicit_relative_difference": "7.90068081634e-51",
+  "high_precision_residual_history": [
+    "2.0082747318e-14",
+    "4.85654928552e-28",
+    "9.82575140481e-42",
+    "1.05441187757e-49"
+  ],
+  "rounded_matrix_solution_true_residual": "7.88341804613e-16",
+  "geometry_metric_error": "7.16952615796e-44",
+  "wall_seconds": 3.0140104580204934,
+  "limitations": [
+    "N=64 is intentionally insufficient for the target curve",
+    "direct DFT assembly is not scalable to N=12288",
+    "geometry input has only about 57 decimal digits",
+    "no interval or truncation certification"
+  ]
+}

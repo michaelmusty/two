@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "milestone": "D131",
+  "plan": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_plan_d131.json",
+    "sha256": "92a73e6fe5932cae7ab7845d4e56b90c1c767174af4fd3a766317d8b2a4a4855"
+  },
+  "coordinator": {
+    "path": "/Users/musty/two/dembele/pari/run_d131_batch.py",
+    "sha256": "04a7f4dc1abdc73cbe5a1a31255a28ca46a6e16a50445af962e5d245ccb33056"
+  },
+  "worker_limit": 3,
+  "completed_jobs": 3,
+  "jobs": [
+    {
+      "stem": "dyadic_rowjournal_actual_control_d131",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_actual_control_d131_attempt01.job.json",
+        "sha256": "d41f6f95f38934f1ff7ed83a12a7525f543ca69ce536ad00682aa137d8bdced5"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_actual_control_d131.json",
+        "sha256": "92b5d4b5e38642b3b619c94503b29303b8171d4f87dd00950ad28262edacc346"
+      },
+      "seconds": 3.136623749975115,
+      "peak_rss_bytes": 42729472,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_rowjournal_target_control_d131",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_target_control_d131_attempt01.job.json",
+        "sha256": "992aedd7da9b08770cc88fd4a1ff6e582d525d281e88963f132d7eb8f4e08a14"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_target_control_d131.json",
+        "sha256": "60c5b6ba2b65d30e5f86c844d9148b9e677e6e23e6398da051961d29d6571ca2"
+      },
+      "seconds": 0.4404663748573512,
+      "peak_rss_bytes": 46350336,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_rowjournal_inventory_control_d131",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_inventory_control_d131_attempt01.job.json",
+        "sha256": "908bd501af74d0d20d0d32b59ccf60129379caea153cb66c00e4791d8a4e6324"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_inventory_control_d131.json",
+        "sha256": "cf2eda222164f5a69d3d51f3a70245d8de4ee670b9a5dac9504cf26c5f525a67"
+      },
+      "seconds": 0.08492412511259317,
+      "peak_rss_bytes": 20676608,
+      "resumed": false
+    }
+  ],
+  "wall_seconds": 3.1740558340679854
+}

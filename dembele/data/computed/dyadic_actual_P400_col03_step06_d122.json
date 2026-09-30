@@ -1,0 +1,123 @@
+{
+  "status": "pass",
+  "milestone": "D122",
+  "phase": "step",
+  "working_precision_pi": 400,
+  "eliminated_positive_moments": 32,
+  "harmonic_basis_column": 3,
+  "residual_lower_bound_pi": 398,
+  "correction_history": [
+    {
+      "before_pi": 200,
+      "after_pi": 233
+    },
+    {
+      "before_pi": 233,
+      "after_pi": 266
+    },
+    {
+      "before_pi": 266,
+      "after_pi": 299
+    },
+    {
+      "before_pi": 299,
+      "after_pi": 332
+    },
+    {
+      "before_pi": 332,
+      "after_pi": 365
+    },
+    {
+      "before_pi": 365,
+      "after_pi": 398
+    }
+  ],
+  "certificate": {},
+  "actual_moment_precision_increased": false,
+  "full_sixteen_column_bank_refined": false,
+  "timings": [
+    {
+      "operation": "low_solve",
+      "modulus_bits": 5,
+      "seconds": 5.446828583953902
+    },
+    {
+      "operation": "original_transport",
+      "input_valuation_pi": 365,
+      "modulus_bits": 5,
+      "input_count": 40,
+      "output_count": 400,
+      "seconds": 4.2545141249429435
+    }
+  ],
+  "wall_seconds": 10.617812083102763,
+  "checkpoint_files": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_actual_P400_col03_step06_d122_state.bin",
+      "sha256": "12aa6b51e02c4d0af2603d0d6d9ff30b97dec1482c7505d520e7efd6993ed4e6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_actual_P400_col03_step06_d122_residual.bin",
+      "sha256": "17778e367b4e4c1dbba5d3908bf2a369b5c4d65323b16175a2f67ecebebf8121"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_actual_P400_col03_step05_d122.json",
+      "sha256": "2a1aad1f14280462d574744529a296af8cf112ad19760073f45a2b6f5f848ecb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_actual_P400_col03_step05_d122_residual.bin",
+      "sha256": "6d0629ecb010b76723cc941979eb78b27471d6bf918279a242ceca76c5694dbf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_actual_P400_col03_step05_d122_state.bin",
+      "sha256": "da9bc5c874d56be74bddf31ff16659adb7c4736b717c829ac2bf81fd9125fbe6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_sparse_low_r32_d121.npz",
+      "sha256": "299b53c7a803001d23d54b40b0a1e515d49bc2f3104f909a76af9357b30b6a00"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "sha256": "86d272475bbc0390f28b198462d63eac33262de9b7b9575d634895eebb985542"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/472_dyadic_multiprecision_low_factor.py",
+      "sha256": "ace66e349eaf0554a48e839ebb881e4095f284cdfcbab10ce00964b7503d8283"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py",
+      "sha256": "20f1083cc885512872db8049628260aef8213d5feed4809ac78858b6f343dce3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/478_dyadic_compiled_lift.py",
+      "sha256": "cbf79125f89cbfd9c636a7ff975557970e1c573607b710fca7c74c14852803a1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "sha256": "b91d15359aeebf56a9d71f6d46fb86ae0addf4c79ac63e8b34f55c9bcfefc62d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/476_dyadic_polynomial_kernel.c",
+      "sha256": "1a0f8069f25d4c4f130c686a119fd5144663734627baa1e4aca18d8cac3763bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_polynomial_kernel_d122.dylib",
+      "sha256": "8f165f930e9605338522757132cc795e0870e98dd8ca11ab77453611a8ae591b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_polynomial_kernel_control_d122.json",
+      "sha256": "0a86734b479d413eba3a281fb9004497239f63f1406cef334ca2dace50a32d56"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_polynomial_target_d122.json",
+      "sha256": "30c3046f093ae87d982cb44cde870d5139fdf43e437fd35a3b3ceaf3aa9e3624"
+    }
+  ],
+  "polynomial_backend": "FLINT_integer_interpolation"
+}

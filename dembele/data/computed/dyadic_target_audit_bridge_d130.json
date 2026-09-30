@@ -1,0 +1,44 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "phase": "bridge",
+  "certificates": {
+    "base_field_polynomial": [
+      2,
+      0,
+      -16,
+      0,
+      20,
+      0,
+      -8,
+      0,
+      1
+    ],
+    "unit_delta": "1+b",
+    "norm_delta": -1,
+    "norm_identity": "Norm(1+b)=f(-1)=-1; a square has square rational norm",
+    "norm31_place_b_residue": 27,
+    "base_polynomial_residual_mod31": 0,
+    "base_polynomial_derivative_mod31": 12,
+    "delta_residue_mod31": 28,
+    "simple_square_root_mod31": 20,
+    "square_root_derivative_mod31": 9,
+    "quadratic_extension_unramified_away_from_2_reason": "delta is an integral unit; discriminant of z^2-delta is 4*delta",
+    "deduction": "delta is nonsquare over F but square at the selected norm31 completion; local agreement and ramification support do not remove scalar twist ambiguity",
+    "candidate_twist_identified_or_disproved": false,
+    "reference": "https://stacks.math.columbia.edu/tag/03PK"
+  },
+  "production_arithmetic_not_imported": true,
+  "wall_seconds": 1.1041061952710152e-05,
+  "peak_rss_bytes": 20561920,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/538_dyadic_target_independent_review.py",
+      "sha256": "102e03b9c71a7f5ef1322b235a110ab3639aa7a0f1a234a67dc9948c6c07e271"
+    }
+  ]
+}

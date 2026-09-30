@@ -1,0 +1,31 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/362_nelson_completed_majorant_audit.py",
+    "--check"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.1291603749850765,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_completed_majorant_recheck_d96_attempt01.log",
+    "sha256": "a8eacfd2534709412612edd63e261ecdccd7f51a5ca335171bff32174ded8692"
+  },
+  "private_process_group": 26673,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/362_nelson_completed_majorant_audit.py",
+      "sha256": "98da7b1357aa9ed6c87c1df5bc407a2b67dc160401f9ccc9be879f40c20fe551"
+    }
+  ]
+}

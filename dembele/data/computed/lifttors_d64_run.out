@@ -1,0 +1,6 @@
+START genus=4 a=2 e=4
+{"genus": 4, "d0": 9, "p": 97, "a": 2, "precision_exponent": 4, "evaluation_points": 46, "section_dimensions": [6, 15, 24], "jacobian_size_bytes": 489240, "timing_ms": {"init": 15, "double_and_zero_check": 19, "lift_one_point": 264, "lift_checks": 25}}
+PASS genus=4 a=2 e=4
+START genus=4 a=51 e=4
+{"genus": 4, "d0": 9, "p": 97, "a": 51, "precision_exponent": 4, "evaluation_points": 51, "section_dimensions": [6, 15, 24], "jacobian_size_bytes": 8566200, "timing_ms": {"init": 214, "double_and_zero_check": 547, "lift_one_point": 8356, "lift_checks": 712}}
+PASS genus=4 a=51 e=4

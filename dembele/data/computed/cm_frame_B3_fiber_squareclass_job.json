@@ -1,0 +1,36 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/159_cm_frame_B3_fiber_squareclass.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.6777215000474826,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_squareclass.out",
+    "sha256": "f92f771fda9b82860d1e4e1f45dc91c7715af0bd81d7662854744e1f3889b8cd"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/magma/159_cm_frame_B3_fiber_squareclass.m",
+      "sha256": "82a96d7223e3382fe101a299791b34e5c3b32641cacc6f380e1dff8e701fb4ef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.m",
+      "sha256": "2774798b08662abb33e26022abcd7ffdc914f7535f19ff6bda20885f766c6e63"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.json",
+      "sha256": "0ba39d65c5b51119eee9819dd8e3ce09fa704dc6a0a42cdc48848b659187731d"
+    }
+  ]
+}

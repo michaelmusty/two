@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py", line 215, in <module>
+    out.write_text(json.dumps(run(args.phase,args.previous,args.column,args.output),indent=2)+'\n')
+  File "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py", line 167, in run
+    data,state,residual,path=checkpoint(previous);paths.append(path)
+  File "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py", line 138, in checkpoint
+    path=DATA/(stem+'.json');data=json.loads(path.read_text())
+  File "/Users/musty/.pyenv/versions/3.10.12/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Users/musty/.pyenv/versions/3.10.12/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/musty/two/dembele/data/computed/dyadic_actual_P400_col0_step02_d121.json'

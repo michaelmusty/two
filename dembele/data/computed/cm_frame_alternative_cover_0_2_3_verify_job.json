@@ -1,0 +1,98 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_3_verify_run.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 6.667436999967322,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_3_verify.out",
+    "sha256": "c5a5075f469ee58e4898753b7ac70c20131d5b483798354daffe41761255bac3"
+  },
+  "private_process_group": 6534,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_3_verify.m",
+      "sha256": "2b70449130f092043e00c86e7b8f0896fc7a5096141c02feda40016a320b9dae"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/178_cm_frame_cubic_check.m",
+      "sha256": "36d3f02218d43d468fef346a141a2c6244e59d5e9e8812de6af566f3d86cbc30"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_3_verify_run.m",
+      "sha256": "45c36dc5ceaf4d9eb3f33c01eb22cfff480a921f235f379d869a3f4506749b36"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_third_ambiguity_0_2.json",
+      "sha256": "ac4cf5e2b83d08704a4a4e4df1291b45234cbc757b69f428f33b757642e5cfb0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/d84_alternative_driver_1181d4787ee10e50.py",
+      "sha256": "1181d4787ee10e50b63fb81be183a7c91134fd15d94b01852b1c9b70c482fc78"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+      "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.m",
+      "sha256": "99ccb18d550b2814ea27fe4bb86a0b19dc685b202c1f4f12caf4e96b1bffc318"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_sections.m",
+      "sha256": "55e88dd9f86ff1300e3a9e6bca964ef8e6ae399b487a4af7f6e978d45ab3139b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_third_check_input.m",
+      "sha256": "abde76b3b0348933aad6b6f7a59221427de1b1c4cb9dad5330b26011b04ed553"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.m",
+      "sha256": "2774798b08662abb33e26022abcd7ffdc914f7535f19ff6bda20885f766c6e63"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_structure.m",
+      "sha256": "1c37e71d16c0c89afbac5a51ee04f236dfbd0b606c1390ac630721517791dc09"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_model.m",
+      "sha256": "6ee87f96e4f0e2383af8e37b6bf8c6dce9cff08705860887103fe87717b59cd1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+      "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_3_third.m",
+      "sha256": "611e9395a6cb21c3565ffd2d51524238c3cf29e58d69b9ec9be7ee3867ae88c8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_3_data.m",
+      "sha256": "788e452a5a3d5609e9582ddebf4a73590a269f4ade4e2f1a31e035433652dee4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_3_construct_job.json",
+      "sha256": "04e149c8bf733b1c2a3048434d19267f3a283d657cf9850b484825e035d9f8aa"
+    }
+  ],
+  "memory_limit_bytes": 2000000000
+}

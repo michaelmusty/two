@@ -1,0 +1,668 @@
+{
+  "status": "pass",
+  "milestone": "D84",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/280_cm_frame_calibration_check.py",
+      "sha256": "dd29d33b6d5d8f2607f4be047e26ee4e053be4e5208ed41a77200e6a942665d1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_128_112_0_0_10_12_14_16_18_19_20_22.json",
+      "sha256": "25f5fbc4195f436955f461a57b2ad2e6f075dbd6aa1635d5398cae517d80d282"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_128_112_0_4_17_18_19.json",
+      "sha256": "4ea394edf7017d212606cc3edb2f95fa5a132a382ddd01c5943c1ec51c05fc5a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_128_112_1_0_16_18_19_20_22.json",
+      "sha256": "023fafb14fc01be0b22cc78eda95cda74c5bc6dde86c2c510a29dfc31197258e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_128_112_2_0_16_18_19.json",
+      "sha256": "c36d896d45041825d45cc9ebe1dc96da7e71f3cfb0b7a6c3b8bbd9220d89dda9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_48_0_0_4_6_8_9_10_11_12_14.json",
+      "sha256": "fd815dcd0a91625b67cf2cc43b720374e4c6ba920ec5ff907b8e5f68098a0f48"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_48_0_0_7.json",
+      "sha256": "a22b2b041845fcea8195d4d1f12c637134d0b1b5328ce8483c8241251bc3ea81"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_48_1_0_4_6_7_8_9_10.json",
+      "sha256": "2a1d97fc9e5c8d30b9202162b0dac3d925cc624105c676019e03568ab739a4c9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_48_2_0_4_6_7_8_9_10.json",
+      "sha256": "0cceb4f0a1739d9c53dc2727c0d3d42d80147395cd4d9861e49c4203b84a81c1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_60_0_0_4_6_8_9_10_11_12_14.json",
+      "sha256": "42fc0b451fd4a804a7276fc1ea6e12f6e5afcf5f1faa47e127b2b5b73f76a972"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_60_0_4_8_9_10.json",
+      "sha256": "e2cb68172f6945125e07fc5573faf575f46e831f9c7394dd02425fb2cc8cc9e9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_60_1_0_4_6_8_9_10_11_12_14.json",
+      "sha256": "cd21de346f667a67b11b152decf65cc077ef864d1b81ef16b4f6031fb921bc66"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_64_60_2_0_4_6_8_9_10_11_12_14.json",
+      "sha256": "945ef28e6765489b113306da000f078d1831185d25465d6e7056ca44fd853aaa"
+    }
+  ],
+  "synthetic_cases": 67,
+  "exact_recoveries_independently_checked": 34,
+  "failed_basis_row_searches": 33,
+  "cases": [
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 4,
+      "height": 10000000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 4,
+      "height": 1000000000000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 4,
+      "height": 100000000000000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 4,
+      "height": 10000000000000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 4,
+      "height": 1000000000000000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 4,
+      "height": 10000000000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 4,
+      "height": 100000000000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 4,
+      "height": 10000000000000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 20,
+      "height": 100000000000000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 20,
+      "height": 1000000000000000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 0,
+      "root": 20,
+      "height": 10000000000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 1,
+      "root": 4,
+      "height": 10000000000000000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 1,
+      "root": 4,
+      "height": 1000000000000000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 1,
+      "root": 4,
+      "height": 10000000000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 1,
+      "root": 4,
+      "height": 100000000000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 1,
+      "root": 4,
+      "height": 10000000000000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 2,
+      "root": 4,
+      "height": 10000000000000000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 2,
+      "root": 4,
+      "height": 1000000000000000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 128,
+      "train": 112,
+      "seed": 2,
+      "root": 4,
+      "height": 10000000000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 10000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 1000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 100000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 1000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 10000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 100000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 1000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 100000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 0,
+      "root": 4,
+      "height": 10000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 1,
+      "root": 4,
+      "height": 10000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 1,
+      "root": 4,
+      "height": 1000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 1,
+      "root": 4,
+      "height": 10000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 1,
+      "root": 4,
+      "height": 100000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 1,
+      "root": 4,
+      "height": 1000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 1,
+      "root": 4,
+      "height": 10000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 2,
+      "root": 4,
+      "height": 10000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 2,
+      "root": 4,
+      "height": 1000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 2,
+      "root": 4,
+      "height": 10000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 2,
+      "root": 4,
+      "height": 100000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 2,
+      "root": 4,
+      "height": 1000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 48,
+      "seed": 2,
+      "root": 4,
+      "height": 10000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 4,
+      "height": 10000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 4,
+      "height": 1000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 4,
+      "height": 100000000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 4,
+      "height": 1000000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 4,
+      "height": 10000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 4,
+      "height": 100000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 4,
+      "height": 1000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 4,
+      "height": 100000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 20,
+      "height": 100000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 20,
+      "height": 1000000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 0,
+      "root": 20,
+      "height": 10000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 1,
+      "root": 4,
+      "height": 10000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 1,
+      "root": 4,
+      "height": 1000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 1,
+      "root": 4,
+      "height": 100000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 1,
+      "root": 4,
+      "height": 1000000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 1,
+      "root": 4,
+      "height": 10000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 1,
+      "root": 4,
+      "height": 100000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 1,
+      "root": 4,
+      "height": 1000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 1,
+      "root": 4,
+      "height": 100000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 2,
+      "root": 4,
+      "height": 10000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 2,
+      "root": 4,
+      "height": 1000000,
+      "recovered": true,
+      "survivors": 8
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 2,
+      "root": 4,
+      "height": 100000000,
+      "recovered": true,
+      "survivors": 7
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 2,
+      "root": 4,
+      "height": 1000000000,
+      "recovered": true,
+      "survivors": 1
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 2,
+      "root": 4,
+      "height": 10000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 2,
+      "root": 4,
+      "height": 100000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 2,
+      "root": 4,
+      "height": 1000000000000,
+      "recovered": false,
+      "survivors": 0
+    },
+    {
+      "digits": 64,
+      "train": 60,
+      "seed": 2,
+      "root": 4,
+      "height": 100000000000000,
+      "recovered": false,
+      "survivors": 0
+    }
+  ],
+  "target_height_bound_claimed": false,
+  "uniform_recovery_guarantee_claimed": false
+}

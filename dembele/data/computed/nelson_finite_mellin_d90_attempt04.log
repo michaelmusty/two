@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/322_nelson_finite_and_mellin.py", line 134, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/322_nelson_finite_and_mellin.py", line 119, in main
+    "finite_pairing":finite_pairing(saved), "Mellin_kernel":mellin_checks(),
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/322_nelson_finite_and_mellin.py", line 44, in finite_pairing
+    assert signs*signs==4
+           ^^^^^^^^^^^^^^
+AssertionError

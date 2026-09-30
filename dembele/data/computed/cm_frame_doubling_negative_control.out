@@ -1,0 +1,10 @@
+Loading "dembele/data/computed/cm_frame_curve_candidate.m"
+Loading "dembele/data/computed/cm_frame_marks.m"
+Loading "dembele/data/computed/cm_frame_doubling_128.m"
+Loading "dembele/data/computed/cm_frame_doubling_normalized_128.m"
+PASS|EXACT_RATIONAL_NUMERATOR_CONDITIONS
+
+In file "/Users/musty/two/dembele/data/computed/cm_frame_doubling_negative_control.m", line 57, column 1:
+>> assert &and[Numerator(c) mod normalized_modulus eq 0:c in Coefficients(resi
+   ^
+Runtime error in assert: Assertion failed

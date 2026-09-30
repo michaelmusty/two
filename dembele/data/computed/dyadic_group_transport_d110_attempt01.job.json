@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/401_dyadic_group_transport.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 8.033959708060138,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_group_transport_d110_attempt01.log",
+    "sha256": "b531ae5de7a84fb2781224e45610bef527680e36e4e746e4329ac97a5634b2ac"
+  },
+  "private_process_group": 87480,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/401_dyadic_group_transport.py",
+    "sha256": "2f7f1fc3192356cf7f602f421da5aad00341f1d24b9cdb0a0e99def856753937"
+  }
+}

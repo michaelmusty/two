@@ -1,0 +1,35 @@
+{
+  "status": "pass: corrupted numerator rejected",
+  "mutation": "add 1 to numerator coefficient of X1^2 modulo 31",
+  "exit_code": 1,
+  "wall_seconds": 2.0255808329675347,
+  "timeout_seconds": 120,
+  "memory_limit_bytes": 2000000000,
+  "expected_failure": "assert qn in ID32 and not qn in IC;",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/magma/122_cm_frame_resolvent_check.m",
+      "sha256": "0d930bf3850d36eb75ad6ade18a50900fb714157f6d7cce05de58e74f31c7254"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_negative_control.m",
+      "sha256": "650402958474b293e875aeba6205a413878b12096f176bc3ce4b67b83ad36e08"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.m",
+      "sha256": "fb0a63bffbfbd7f2d097bf20226c4bc3f5f1211a66dd007847c524a1f97e4348"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+      "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+    }
+  ],
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_negative_control.out",
+    "sha256": "c42541a40cce5ebc50b5096756c6966b99dec97fe136c895907cfad84707b47e"
+  }
+}

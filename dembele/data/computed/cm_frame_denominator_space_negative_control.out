@@ -1,0 +1,10 @@
+Loading "dembele/data/computed/cm_frame_curve_candidate.m"
+Loading "dembele/data/computed/cm_frame_doubling_normalized_128.m"
+Loading "dembele/data/computed/cm_frame_denominator_space_reduced.m"
+Loading "dembele/data/computed/cm_frame_denominator_space_coordinates.m"
+PASS|17_EXACT_INDEPENDENT_DENOMINATOR_SECTIONS
+
+In file "/Users/musty/two/dembele/data/computed/cm_frame_denominator_space_negative_control.m", line 35, column 1:
+>> assert &and[Numerator(c) mod normalized_modulus eq 0:c in Coefficients(resi
+   ^
+Runtime error in assert: Assertion failed

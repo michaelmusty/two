@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/328_nelson_unfolding_data.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 3.870284833945334,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_unfolding_d91_attempt02.log",
+    "sha256": "480fc1c428d447b8395813f3b29a511004e80480fbeabf1d453fd053daa39e30"
+  },
+  "private_process_group": 71973,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/328_nelson_unfolding_data.py",
+      "sha256": "0c1f2e293139b87a584e64b5651efe2572cd7aaeb73b2449d52898fdce75fea3"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d91-sage"
+  }
+}

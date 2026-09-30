@@ -1,0 +1,40 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/217_cm_frame_cubic_pointed_gauge_probe.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 1.4900013749720529,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_gauge_probe.out",
+    "sha256": "38241324d9f8c830ed1604bf7baf65ca67ac7dcbb36d5ec5d58e4686f1950084"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/magma/217_cm_frame_cubic_pointed_gauge_probe.m",
+      "sha256": "0cc6bc39f13049e508ca02984da50dcbd9e4ba27e3ea2a2c05da7df993d9dc49"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_check.json",
+      "sha256": "d6178b6a2e9f42a97a62c851a92bbb9d40420c1d700bafd944e3dadd45f71cf7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks_check.json",
+      "sha256": "0f68c176fca871651ce7dcc1c15a7524c10bf8b7bf42faed70719dc3e443e965"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+      "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+    }
+  ]
+}

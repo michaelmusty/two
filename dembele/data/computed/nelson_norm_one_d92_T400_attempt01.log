@@ -1,0 +1,14 @@
+ENUM_START 400 bound 6405399/800000 elapsed 0.08
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/338_nelson_norm_one_search.py", line 139, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/Users/musty/two/dembele/pari/338_nelson_norm_one_search.py", line 132, in main
+    d=setup();result=search(d,args.bound)
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/338_nelson_norm_one_search.py", line 84, in search
+    result=reduced.__pari__().qfminim((denominator*cutoff).floor(),250000,0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cypari2/auto_gen.pxi", line 30606, in cypari2.gen.Gen_base.qfminim
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: precision too low in qfminim

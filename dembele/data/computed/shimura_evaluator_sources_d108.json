@@ -1,0 +1,70 @@
+{
+  "milestone": "D108",
+  "review_date": "2026-09-25",
+  "scope": "Necessary rejection of the completed per-ideal absolute spectral comparison; conditional ramified-dyadic moment-to-coarse-jet formula. No actual Shimura differential evaluation.",
+  "sources": [
+    {
+      "title": "NIST Digital Library of Mathematical Functions, Gamma recurrence",
+      "url": "https://dlmf.nist.gov/5.5.E1",
+      "use": "Specialize D98's completed multiplier at mu=1, obtaining 8*pi/N*K1(Z0*N)."
+    },
+    {
+      "title": "Paul D. Nelson, Evaluating modular forms on Shimura curves",
+      "url": "https://arxiv.org/pdf/1210.1243",
+      "locations": ["Section 5.6", "Theorem 5.6"],
+      "use": "Background for the existing implemented Shimizu method. D91--D98 supply the project's degree-eight adaptation; this paper is not a new tail certificate."
+    },
+    {
+      "title": "Cameron Franc and Marc Masdeu, Computing fundamental domains for the Bruhat-Tits tree for GL2(Qp), p-adic automorphic forms, and the canonical embedding of Shimura curves",
+      "url": "https://arxiv.org/pdf/1201.0356",
+      "locations": ["Updated arXiv footnote 2 in section 5.2", "Section 6.1", "Theorems 6.1--6.3"],
+      "use": "Poisson moment evaluation and overconvergent computational framework over Qp. The corrected harmonicity/eigencondition matters. No unmodified transfer of its control theorem to the ramified degree-eight local field is asserted."
+    },
+    {
+      "title": "Marc Masdeu and Eloi Torrents, Fundamental domains for quaternionic S-arithmetic groups over totally real fields",
+      "url": "https://arxiv.org/pdf/2510.09356",
+      "locations": ["Section 2.1", "Section 3", "Algorithms 1 and 2"],
+      "use": "General totally-real tree-domain algorithm requiring definite orders, integral local splittings and exact equivalence witnesses; identifies concrete inputs for the next bounded task."
+    },
+    {
+      "title": "Eloitor/btquotients implementation repository",
+      "url": "https://github.com/Eloitor/btquotients",
+      "use": "Public README advertises general number-field input and Sage 10.9 testing. No pinned source review, installation, compatibility or runtime claim is made."
+    },
+    {
+      "title": "SageMath, spaces of p-adic automorphic forms",
+      "url": "https://doc.sagemath.org/html/en/reference/modsym/sage/modular/btquotients/pautomorphicform.html",
+      "locations": ["BruhatTitsHarmonicCocycleElement.derivative", "pAdicAutomorphicFormElement.derivative"],
+      "use": "Distinguishes slow Riemann refinement from moment evaluation in the existing Qp implementation; not an evaluator for our ramified local field."
+    },
+    {
+      "title": "John Voight and John Willis, Computing power series expansions of modular forms",
+      "url": "https://jvoight.github.io/articles/ModFormPaper-090317.pdf",
+      "locations": ["Introduction, printed page 4"],
+      "use": "Assessment only: the numerical power-series method does not itself certify the saved differential bank. No new correctness theorem is attributed to this source."
+    }
+  ],
+  "local_sources": [
+    {"path": "dembele/certificates/nelson-spectral-ideal-d98.md", "use": "Completed multiplier, positive comparison and current absolute Hecke envelopes."},
+    {"path": "dembele/pari/333_nelson_interval_sum.py", "use": "Arb integrand and analytic quadrature bounds, specialized at k=1."},
+    {"path": "dembele/certificates/cm-root-matching-d107.md", "use": "Certified complex labels, with no inferred dyadic embedding matrix."},
+    {"path": "dembele/magma/371_hyperellipticity_fresh_brandt.m", "use": "Actual definite algebra, 58 classes, dyadic residue degree one and ramification eight; exported matrix does not contain boundary transports."},
+    {"path": "/Users/musty/hilbertmodularforms/ModFrmHil/definite.m", "locations": ["InternalHMFRawDataDefinite", "RightIdealClassReps", "QuaternionOrder(M)"], "use": "Read-only inspection of the existing order/ideal interface. Its level-one SplittingMap is not asserted to be a dyadic integral splitting."}
+  ],
+  "project_deductions": [
+    "The mu=1 completed multiplier forces a lower floor for the specified whole-spectrum comparison; one required parameter suffices for rejection, not validation.",
+    "The global maximum h_p(1)=4*pi*(5-2*sqrt(6)) bounds all powers and their positive mixtures when the diagonal uses the unsigned geometric bound.",
+    "At the ramified quadratic CM point, three boundary charts have series-ratio valuations 1/2, 1 and 3/2.",
+    "Bounded measure moments give Taylor errors min((J-k)/2-d,P-(k+1)/2).",
+    "The coarse differential coordinate change cancels the factor two exactly and gives min((J+1)/2-d,P) for orders zero through two."
+  ],
+  "excluded_inferences": [
+    "No lower bound on the actual omitted spectral sum, and no impossibility claim for Nelson's method.",
+    "No new full-spectrum upper bound or replacement of D98's existing enclosure.",
+    "No actual harmonic cocycle, moment bank, dyadic CM matching, Shimura jet or Gaussian chart.",
+    "No automatic reuse of inert-31 precision thresholds at the dyadic prime.",
+    "No candidate identification, target field polynomial, full tree census, new Hecke bank or cubic precision restart."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

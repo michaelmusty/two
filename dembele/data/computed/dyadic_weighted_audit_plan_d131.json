@@ -1,0 +1,33 @@
+{
+  "milestone": "D131",
+  "kind": "bounded_job_plan",
+  "jobs": [
+    {
+      "driver": "dembele/pari/542_dyadic_weighted_independent.py",
+      "stem": "dyadic_weighted_audit_states_d131",
+      "marker": "PASS|542_DYADIC_WEIGHTED_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states"
+      ]
+    },
+    {
+      "driver": "dembele/pari/542_dyadic_weighted_independent.py",
+      "stem": "dyadic_weighted_audit_cm_d131",
+      "marker": "PASS|542_DYADIC_WEIGHTED_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm"
+      ]
+    },
+    {
+      "driver": "dembele/pari/542_dyadic_weighted_independent.py",
+      "stem": "dyadic_weighted_audit_aggregate_d131",
+      "marker": "PASS|542_DYADIC_WEIGHTED_INDEPENDENT",
+      "args": [
+        "--phase",
+        "aggregate"
+      ]
+    }
+  ]
+}

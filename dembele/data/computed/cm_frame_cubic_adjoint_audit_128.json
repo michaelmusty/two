@@ -1,0 +1,438 @@
+{
+  "status": "pass",
+  "milestone": "D86",
+  "date": "2026-09-23",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/303_cm_frame_cubic128_audit.py",
+      "sha256": "27c1ff199aa28e00edd03dd7a8c91652275057ea009a9a6b90a3f18f30aa9820"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_128_attempt_review.json",
+      "sha256": "089d355a0ba900ec0118239ea3b2bfe7f2ac7d62974c4533525cc1e8ef9289b2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_128_check.json",
+      "sha256": "db1818b15508a82af682e38d5a921f7c810d84558f39232c5478e1bda6aaf1ac"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_128_check.json",
+      "sha256": "d8433b5682fcbdb61bdb6a61954b3f22731a470699655fbe5873408cc08d16ac"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_128_recognition.json",
+      "sha256": "f1f19c4b0247fb4006c519701dbacec48c1c2e9ffe596227fb36bfa8af1d9417"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_sections_receipt.json",
+      "sha256": "63c35dbaa6e5be3fb9cd41d06f76baed774ac89c190d51c7b8b9656bab958949"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_jets_receipt.json",
+      "sha256": "937b83cd5c27956c669e1aec54a45c6b060bbe7615c86583867c67ae843ab753"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic128_upload_interruption_d86.json",
+      "sha256": "2efd247496ed893ef21cd1a4c893ff1d1229d9365ac8713fcbde88244530ca0a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic128_transfer_resume_d86.json",
+      "sha256": "4873a5dc4c0f8b0efd61fe547e921a5c8259381581e093b86ddf715ccffc96b1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic128_remote_completion_d86.json",
+      "sha256": "fd4d8d0372c1a63d52a32076ceefeaa445795343b9f9ea840cd02cef80f224ff"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_128_formal_divisor_chatelet_d86_planned_transfer.json",
+      "sha256": "c6df4e43f2a2a7e4410d49d55d09d1d69c000e7b26c48866e4d3a25e27ff0d10"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_divisor_receipt.json",
+      "sha256": "0d26184b5b9b610679d1107a6b74b7e1a1d67875188bd26e0caf0ad6a29bbb20"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_charts_receipt.json",
+      "sha256": "e007806fbe2fa61397eb1fb1c7a2c4c43c26d50659f11268b284b27e176d23e8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_newton_divisor_receipt.json",
+      "sha256": "e8751af5e98ceff65edf0f1e1edd84eee5c45cf64e737ca719209d51c4069a69"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_class_check_receipt.json",
+      "sha256": "7e873920f88ca85ecba5930019663ba14a7d0feec6bb842eb8cd4101797684a6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_publish_third_receipt.json",
+      "sha256": "2a3bc6f92eedd962b056457bde3b2b9f972135dfc2e14a18d4fa35e6816121aa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_pointed_functions_receipt.json",
+      "sha256": "053b49321b576405c23f9cbc31e6be2e1b17bdd9785ccb966041dd9a7e003c06"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_pointed_fit_receipt.json",
+      "sha256": "725f25f790f2031039855c0caebcf1fc1e8600893b96a2af5721d006c13ef640"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_pointed_check_receipt.json",
+      "sha256": "e4cb2b9e534544e0d288edb3979bba7c70f0f04d45c0e0a3b0d515b1cbbe0403"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_publish_cubic_receipt.json",
+      "sha256": "06b956dc0b8029d2c0ded657950a88532a01f67367439febd01b120ffb7f7874"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_adjoint_move_receipt.json",
+      "sha256": "a034e10d14115db8508cdc8c2f427b67101c4694082c26073984c9efaf6d8152"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_adjoint_functions_receipt.json",
+      "sha256": "81cfd469e3e78987a2909cd401b75b294fa1a48dc8c8c6b35cbcbde02db733f1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision128_chatelet_adjoint_check_receipt.json",
+      "sha256": "3800f37193b26b7f65fec97cc56a4e0f599084751a1a3df43826d7a22561dfd0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_0.json",
+      "sha256": "7b19e88fbe8aaf79bc5abf6d4ef30ed64e4a559a8401e6ca28280cd8b5af2509"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_128_112_0.json",
+      "sha256": "c4e99485ba99f3d86db492a9bfda6cb21c5a7439cae4fa9291317cd7c7ba3a53"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_1.json",
+      "sha256": "f0e208a86ecd0f3308cd0ddf77eaad6d3bf829ba84e3ac7eb83bdcd6629e7602"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_128_112_1.json",
+      "sha256": "837114f285f86b3b6659aa5d4de2e7e9d2a3a61ab2a395d95f1a217168455882"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_2.json",
+      "sha256": "441f773116d2a14ce6f087c3ce01c039880962541f7cd439a7704cc9560cdccd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_128_112_2.json",
+      "sha256": "3c9ebcd67f7e00f5978ce44899a18819319262bd8bbeb2f0076f0fc4f751e087"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_3.json",
+      "sha256": "dd85c41381ec69671a50132ec9cd62ea7ab5ec5e7e443b957b231eeac71234ce"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_128_112_3.json",
+      "sha256": "7ee240858d554ac5bfcb1e29abd0cd81efccfa9fc904377058c7b9fce277be99"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_4.json",
+      "sha256": "9e417516b600c58acd8582f498b30ddbae33b543b92bee90386fb537e188467f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_128_112_4.json",
+      "sha256": "0bd02b55d63bb97b158ed9a8c92e675adb28ec5d74a19fc9c19eada094c29d6b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_5.json",
+      "sha256": "c7f2d7affc188f57af0aaa1226810140bec294cccad663c4106815c74d5abeec"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_128_112_5.json",
+      "sha256": "d0c2116bb13f5e51c5d1f9d00ff4b74de1adc1619aca3ffda8f02d05bc1d153d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_6.json",
+      "sha256": "bdcc7314d0981d52d1f271660490e6198efd2b9fe7ef8c6f9e3304b74948faec"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_128_112_6.json",
+      "sha256": "52fcf8ba109f587b945039dd3920cf493fcf6d2a0b1504882579158dd8ffcfb8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_7.json",
+      "sha256": "4998635b4b502f06f35e4a46d507a614397c0e6c5307e977f83aba7140b8cccb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_128_112_7.json",
+      "sha256": "0156f2518708f4679811c7c4bd255c3cb4ecf53cd956236bf2efd69ad7cd2217"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_package_128.json",
+      "sha256": "0e9b3165377bcca69727d05bf8ddb55d7c6cf9a66900220b4c4882245d8a0edd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_package_64.json",
+      "sha256": "28c1f49e92f8ef7a495856f93addfda55d467148bc2f479e41d0f07aae7a80e5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_128.json",
+      "sha256": "28803c7a962cb737b302fbf05f4c599798e471ebb570bae7ed398d6444134620"
+    }
+  ],
+  "distinct_files_verified": 2009,
+  "linked_json_records_verified": 769,
+  "frozen_D78_sha256": "a81750ea1fe8abfbbf27ac338154ef863ecea72dc95ada066656f8d981429931",
+  "verified_precision_digits": 128,
+  "coefficientwise_reduction_to_64_verified": true,
+  "remote_jobs": [
+    {
+      "job": "cm_frame_cubic_adjoint_128_f_coefficients_job.json",
+      "wall_seconds": 160.00781532586552,
+      "maximum_resident_bytes": 1865781248,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_adjoint_128_function_checkpoint_job.json",
+      "wall_seconds": 248.88914678804576,
+      "maximum_resident_bytes": 2184327168,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_adjoint_128_functions_check_job.json",
+      "wall_seconds": 202.35946464398876,
+      "maximum_resident_bytes": 2178949120,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_adjoint_128_move_check_job.json",
+      "wall_seconds": 287.4410215730313,
+      "maximum_resident_bytes": 2185023488,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_adjoint_128_norm_control_job.json",
+      "wall_seconds": 128.45240336703137,
+      "maximum_resident_bytes": 2088701952,
+      "exit_code": 1,
+      "expected_failure": "assert norm_ok;"
+    },
+    {
+      "job": "cm_frame_cubic_adjoint_128_trace_control_job.json",
+      "wall_seconds": 202.6578488748055,
+      "maximum_resident_bytes": 2178322432,
+      "exit_code": 1,
+      "expected_failure": "assert trace_ok;"
+    },
+    {
+      "job": "cm_frame_cubic_adjoint_128_u_checkpoint_job.json",
+      "wall_seconds": 197.9150272810366,
+      "maximum_resident_bytes": 2147655680,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_direct_functions_check_job.json",
+      "wall_seconds": 206.97033088305034,
+      "maximum_resident_bytes": 2133131264,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_direct_geometry_check_job.json",
+      "wall_seconds": 66.57108099316247,
+      "maximum_resident_bytes": 878985216,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_direct_norm_control_job.json",
+      "wall_seconds": 202.2671219331678,
+      "maximum_resident_bytes": 2142334976,
+      "exit_code": 1,
+      "expected_failure": "assert norm_ok;"
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_direct_septic_control_job.json",
+      "wall_seconds": 214.63595850300044,
+      "maximum_resident_bytes": 2141642752,
+      "exit_code": 1,
+      "expected_failure": "assert septic_ok;"
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_f_checkpoint_job.json",
+      "wall_seconds": 154.86985759297386,
+      "maximum_resident_bytes": 1852178432,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_formal_divisor_chatelet_d86_job.json",
+      "wall_seconds": 188.03614066005684,
+      "maximum_resident_bytes": 2246602752,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_function_finish_job.json",
+      "wall_seconds": 54.30133053404279,
+      "maximum_resident_bytes": 1023193088,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_newton_classes_job.json",
+      "wall_seconds": 256.17238004901446,
+      "maximum_resident_bytes": 1264381952,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_newton_divisor_job.json",
+      "wall_seconds": 187.40762176713906,
+      "maximum_resident_bytes": 2250620928,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_newton_normalize_a_job.json",
+      "wall_seconds": 158.18645050912164,
+      "maximum_resident_bytes": 1766006784,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_newton_normalize_b_job.json",
+      "wall_seconds": 152.6529191650916,
+      "maximum_resident_bytes": 1767043072,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_newton_relation_check_job.json",
+      "wall_seconds": 299.7093787409831,
+      "maximum_resident_bytes": 1289744384,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_newton_symmetries_check_job.json",
+      "wall_seconds": 89.3843265241012,
+      "maximum_resident_bytes": 1184993280,
+      "exit_code": 0,
+      "expected_failure": null
+    },
+    {
+      "job": "cm_frame_cubic_pointed_128_u_checkpoint_job.json",
+      "wall_seconds": 199.81747930892743,
+      "maximum_resident_bytes": 2146426880,
+      "exit_code": 0,
+      "expected_failure": null
+    }
+  ],
+  "remote_job_count": 21,
+  "maximum_remote_wall_seconds": 299.7093787409831,
+  "maximum_remote_resident_bytes": 2250620928,
+  "joint_F_recognition": [
+    {
+      "root_mod31": 4,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 112
+    },
+    {
+      "root_mod31": 9,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "known_control_survivors": 6,
+      "target_survivors": 0,
+      "maximum_matching_digits": 112
+    },
+    {
+      "root_mod31": 10,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 112
+    },
+    {
+      "root_mod31": 11,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 112
+    },
+    {
+      "root_mod31": 20,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 112
+    },
+    {
+      "root_mod31": 21,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 112
+    },
+    {
+      "root_mod31": 22,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "known_control_survivors": 7,
+      "target_survivors": 0,
+      "maximum_matching_digits": 112
+    },
+    {
+      "root_mod31": 27,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "known_control_survivors": 8,
+      "target_survivors": 0,
+      "maximum_matching_digits": 112
+    }
+  ],
+  "independently_verified_height_exclusions": [
+    {
+      "root_mod31": 4,
+      "excluded_height_through": 416963134869138
+    },
+    {
+      "root_mod31": 9,
+      "excluded_height_through": 472851805904364
+    },
+    {
+      "root_mod31": 10,
+      "excluded_height_through": 348750355384078
+    },
+    {
+      "root_mod31": 11,
+      "excluded_height_through": 545931952569702
+    },
+    {
+      "root_mod31": 20,
+      "excluded_height_through": 624747224516487
+    },
+    {
+      "root_mod31": 21,
+      "excluded_height_through": 723950521948168
+    },
+    {
+      "root_mod31": 22,
+      "excluded_height_through": 806752711089091
+    },
+    {
+      "root_mod31": 27,
+      "excluded_height_through": 381720305027558
+    }
+  ],
+  "uniform_excluded_integral_height_through": 348750355384078,
+  "characteristic_zero_cubic_constructed": false,
+  "coefficient_field_excluded": false,
+  "arithmetic_identification_certified": false,
+  "target_field_constructed": false,
+  "proof": "dembele/certificates/cm-frame-cubic-128-chatelet.md"
+}

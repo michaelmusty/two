@@ -1,0 +1,78 @@
+{
+  "status": "pass",
+  "milestone": "D84",
+  "case": 6,
+  "third_label": [
+    0,
+    2
+  ],
+  "counts": [
+    {
+      "extension_degree": 1,
+      "point_count": 59,
+      "Hecke_expected": 68,
+      "fiber_distribution": [
+        12,
+        27,
+        1,
+        10
+      ],
+      "independently_verified": true
+    },
+    {
+      "extension_degree": 2,
+      "point_count": 1525,
+      "Hecke_expected": 2818,
+      "fiber_distribution": [
+        650,
+        362,
+        1,
+        387
+      ],
+      "independently_verified": true
+    }
+  ],
+  "matches_both_Hecke_counts": false,
+  "genus": 64,
+  "cover_independently_verified": true,
+  "arithmetic_identification_certified": false,
+  "complete_third_enumeration": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/d84_alternative_driver_1181d4787ee10e50.py",
+      "sha256": "1181d4787ee10e50b63fb81be183a7c91134fd15d94b01852b1c9b70c482fc78"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_third_ambiguity_0_2.json",
+      "sha256": "ac4cf5e2b83d08704a4a4e4df1291b45234cbc757b69f428f33b757642e5cfb0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_6_construct_job.json",
+      "sha256": "a69605c34ac28971485f89a6af8bd98f0ed5fd5fac1585d73f0d42e60c95691b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_6_verify_job.json",
+      "sha256": "41bee778b74f16786fc51911a785f11e6bc2f38aa5b79cd7b5050d27d2f00032"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_6_data.m",
+      "sha256": "3530d027f168e5e4f01abe3e2d163c066262426ef3a78440549202c710310e10"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_6_count_1_job.json",
+      "sha256": "55ac8f8d6a089e45c62c57c91d41d2a3ed47c9a2e5bf4e56b8c096e51ed7892d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_6_count_check_1_job.json",
+      "sha256": "1d8101021fa1437fe56cf08f27d6875b58e473a88fce1524bdad21b0e4169b18"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_6_count_2_job.json",
+      "sha256": "b22aa0f37a15eaa2d79ac6a0168bd2ef471be49579d03384a0814f1ea4c6dfb4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_6_count_check_2_job.json",
+      "sha256": "fe2200fb3a2d996a484f125f05ad64a880d6984dd63a87eb21c0b550b7043462"
+    }
+  ]
+}

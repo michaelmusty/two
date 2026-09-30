@@ -1,0 +1,109 @@
+{
+  "status": "pass",
+  "barrier": 7,
+  "coordinator": {
+    "path": "/Users/musty/two/dembele/pari/520_dyadic_rolling_pilot.py",
+    "sha256": "682306bff6c14caf8ba2e462f5f79e336a575431130cc7462b4b32f42eb95bef"
+  },
+  "anchor_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_P1600_col01_step02_prepared_d127_attempt01.job.json",
+    "sha256": "5cbcae5c60943660b09830a35cb241cab29abf8a17c44df9cae155321bc42eac"
+  },
+  "keep": [
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_extend_d127_e000_028_operator.bin",
+        "sha256": "6e96d6f1166c8c3a57305b90d48434f957b291ece087806dc1caf5489317b224"
+      },
+      "bytes": 9280000
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_extend_d127_e029_057_operator.bin",
+        "sha256": "8e5ae550ca3f172bf193db2a9d5e3b9ae3e790d4cedad046826978a95f862050"
+      },
+      "bytes": 9280000
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_extend_d127_e058_086_operator.bin",
+        "sha256": "97a31d99565497330b479ceb8fdb1cbb99bbb5aa9ea9e29acc7342aba8717c35"
+      },
+      "bytes": 9280000
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_extend_d127_e087_115_operator.bin",
+        "sha256": "588a3a4d3e12d0f9553b2bd8f5bfb5acb2e172301d82f75fc1ed68c645da191d"
+      },
+      "bytes": 9280000
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_extend_d127_e116_144_operator.bin",
+        "sha256": "a649d23bd164f361c815ac1fadd0fa23717bf619e0153fbbf7a4ba3ce2aa700b"
+      },
+      "bytes": 9280000
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_extend_d127_e145_173_operator.bin",
+        "sha256": "fbf4c8f122d3824a19bb52440ba1d42f73e379d133837fe12a76d7a18fe4124b"
+      },
+      "bytes": 9280000
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_input_d127_input.bin",
+        "sha256": "02a4a236563143113403179afca359b9034fd09744b8f7da9fc03435823c7170"
+      },
+      "bytes": 27840000
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_seed_d127_residual.bin",
+        "sha256": "0d3014f21101ee49a1511739be582bf0f550521e6ce8b14925442dbbee3a7784"
+      },
+      "bytes": 14476800
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_seed_low_d127_state.bin",
+        "sha256": "ad91b1a717ec5ce5957f07df9335a71dffef1c1d84925f02d8b2f03eb7cf92d7"
+      },
+      "bytes": 28831800
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_step01_d127_residual.bin",
+        "sha256": "ff0b97c6508cb61ad12fc5343a5d950aabf3c05c39583520ff9952d199f61314"
+      },
+      "bytes": 12811968
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_step01_prepared_d127_state.bin",
+        "sha256": "037cc99a1d575156390418c2884d6dacb9207153ccd40207a7e4c26f320e5601"
+      },
+      "bytes": 28831800
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_step02_prepared_d127_correction.bin",
+        "sha256": "ebefe1dd01c58368f32ea05382a0332eee4d1b9164040f79d12ea9f06b8d79a3"
+      },
+      "bytes": 12811968
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_step02_prepared_d127_state.bin",
+        "sha256": "33fe8fe608a11286581c69bb5f170d26f0555de88c2c0749723e2262bfa88116"
+      },
+      "bytes": 28831800
+    }
+  ],
+  "retire": [],
+  "before_scratch_bytes": 210116629,
+  "final_retirement": false,
+  "retired_payload_hashes_are_history_not_retained_sources": true
+}

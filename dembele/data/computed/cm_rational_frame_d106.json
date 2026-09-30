@@ -1,0 +1,146 @@
+{
+  "status": "pass",
+  "milestone": "D106",
+  "graph": {
+    "algorithm": "collapse identical open neighborhoods, refine colors, exhaust adjacency-preserving quotient bijections, lift every fiber bijection",
+    "twin_blocks": [
+      [
+        43,
+        47
+      ],
+      [
+        44,
+        48
+      ],
+      [
+        45,
+        49
+      ],
+      [
+        46,
+        50
+      ]
+    ],
+    "quotient_vertices": 26,
+    "quotient_automorphisms": 4,
+    "search_nodes": 101,
+    "full_unweighted_automorphism_order": 64,
+    "agrees_with_independent_D99_enumeration": true,
+    "all_automorphisms_preserve_lengths": true,
+    "group_closure_checked": true,
+    "cubic_K4_control_order": 24
+  },
+  "affine_group": {
+    "affine_group_order": 272,
+    "point_stabilizer_orders": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "point_stabilizers_are_self_normalizing": true,
+    "point_stabilizer_core_is_trivial": true,
+    "conjugate_stabilizers": 17,
+    "each_stabilizer_has_one_common_fixed_point": true,
+    "odd_orbit_argument_requires_Galois_normalization_control": true,
+    "degree_17_residue_field_Q_automorphism_order_via_group_correspondence": 1
+  },
+  "formal_higher_jets": {
+    "formal_series_reversion_cases": 3,
+    "orders": [
+      1,
+      2,
+      3
+    ],
+    "coefficients_are_Taylor_coefficients_not_derivatives": true,
+    "nonlinear_coordinate_covariance_weights": [
+      3,
+      3,
+      7,
+      9,
+      15
+    ],
+    "common_function_covariance_weights": [
+      2,
+      2,
+      4,
+      6,
+      10
+    ],
+    "third_derivative_omitted_term_controls_rejected": 2
+  },
+  "height_constants": {
+    "adjugate_section_norm_power_two_exponent": 5141,
+    "derivative_functional_power_two_exponents_orders_0_through_3": [
+      20,
+      41,
+      63,
+      85
+    ],
+    "Gaussian_and_derivative_exponents_after_common_section_factor": [
+      62,
+      84,
+      107
+    ],
+    "B_and_derivative_exponents_after_common_section_factor": [
+      147,
+      170
+    ],
+    "N2_N3_exponents_after_common_section_factor": [
+      187,
+      315
+    ],
+    "D103_sharp_Gaussian_exponent": 60,
+    "actual_ratio_Taylor_height_strict_upper_bounds_orders_1_to_3": [
+      10504,
+      31518,
+      52533
+    ],
+    "requires_a_common_valid_ratio_chart": true,
+    "actual_jets_evaluated": false
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/387_cm_rational_frame.py",
+      "sha256": "dbe3da450ec365905395414826a6d436114025426c6590de66aacfeaa395eeef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/376_cm_tangent_exactness.py",
+      "sha256": "fc95f5e5caeb574d2564ad4b02a997c16965f2be9996a6cb4cce384c23a6b090"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/386_cm_frame_arithmetic_review.py",
+      "sha256": "730cbc1b050e5c07e87c9502258d1bceb3b7811f8260ce9121723cff1394f6eb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_graph_review_d99.json",
+      "sha256": "66316e083be6ff816eadc85155a5525bee4a1799ea7d627cb05f8e522041201e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103.json",
+      "sha256": "468bd2ac0e620e8ee1d2e25189f102987c27de3a813971ef188bc40dd757995b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_d104.json",
+      "sha256": "b862afd83cb47ba6a6c3c9d6aee30440ea7671477ea2848a8b7ef6730a3fdf68"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_arithmetic_review_d105.json",
+      "sha256": "c4cf5e466dfbf3c747bf3bc7f3333d7d81753a96fa08c3085e1db2b78565e44c"
+    }
+  ],
+  "scope": "Finite checks only; actual curve specialization, CM Galois action and marked descent are mathematical inputs to the companion proof."
+}

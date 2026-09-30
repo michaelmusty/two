@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/390_cm_real_structure.py", line 106, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/390_cm_real_structure.py", line 48, in main
+    assert u and target*u==u*base and all(p(u.reduced_norm())>0 for p in places)
+           ^
+  File "sage/algebras/quatalg/quaternion_algebra_element.pyx", line 336, in sage.algebras.quatalg.quaternion_algebra_element.QuaternionAlgebraElement_abstract.__bool__ (build/cythonized/sage/algebras/quatalg/quaternion_algebra_element.cpp:10408)
+  File "sage/rings/number_field/number_field_element.pyx", line 2777, in sage.rings.number_field.number_field_element.NumberFieldElement.__int__ (build/cythonized/sage/rings/number_field/number_field_element.cpp:34799)
+  File "sage/rings/polynomial/polynomial_element.pyx", line 1438, in sage.rings.polynomial.polynomial_element.Polynomial.__int__ (build/cythonized/sage/rings/polynomial/polynomial_element.c:24806)
+  File "sage/rings/polynomial/polynomial_element.pyx", line 1416, in sage.rings.polynomial.polynomial_element.Polynomial._scalar_conversion (build/cythonized/sage/rings/polynomial/polynomial_element.c:24668)
+TypeError: cannot convert nonconstant polynomial

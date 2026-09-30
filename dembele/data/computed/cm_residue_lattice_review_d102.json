@@ -1,0 +1,138 @@
+{
+  "status": "pass",
+  "milestone": "D102",
+  "independent_trace_checks": {
+    "trace_algorithm": "diagonals of multiplication by powers of theta",
+    "determinant_algorithm": "fraction-free Bareiss",
+    "trace_discriminant": 604462909807314587353088,
+    "scaled_centered_index": 1730228566815155980950535730783370329718784,
+    "corrupted_Gram_matrix_rejected": true
+  },
+  "nonhyperelliptic_geometric_control": {
+    "curve": "x^4+y^4=z^4 over Z_17",
+    "genus": 3,
+    "fixed_smooth_nonhyperelliptic_curve": true,
+    "D_degree": 4,
+    "D_split_etale": true,
+    "H1_O_D_zero": true,
+    "CM_counterexample_claimed": false,
+    "closed_point_counterexample_claimed": false,
+    "controls": [
+      {
+        "n": 1,
+        "precision": 9,
+        "root_mod_17_power": 25693258639,
+        "cofactor_valuations": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "residue_index_valuation": 1
+      },
+      {
+        "n": 2,
+        "precision": 10,
+        "root_mod_17_power": 1391771838428,
+        "cofactor_valuations": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "residue_index_valuation": 2
+      },
+      {
+        "n": 4,
+        "precision": 12,
+        "root_mod_17_power": 28673959190179,
+        "cofactor_valuations": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "residue_index_valuation": 4
+      },
+      {
+        "n": 8,
+        "precision": 16,
+        "root_mod_17_power": 42949774758062711577,
+        "cofactor_valuations": [
+          0,
+          0,
+          0,
+          8
+        ],
+        "residue_index_valuation": 8
+      },
+      {
+        "n": 16,
+        "precision": 24,
+        "root_mod_17_power": 37546768689504091391143793403,
+        "cofactor_valuations": [
+          0,
+          0,
+          0,
+          16
+        ],
+        "residue_index_valuation": 16
+      }
+    ]
+  },
+  "D101_bound_source_hashes_checked": 22,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-residue-lattice-d102.md",
+      "sha256": "c1f765330d02567a904444252b3dfb7fc2ac8e0746678a2a2efbc0ff19d68080"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_audit.json",
+      "sha256": "03968cdf38f3b8ab5a0acfcf6bdd2a672908b8b7d17260dfcb501168dbcce281"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_field_recognition.json",
+      "sha256": "b9585a6b40f6c21f4ffadd62caad290cd731cf2f432c54d1f61790d85c6e0ce8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102.json",
+      "sha256": "5191728d51fbdaa909740824ee45b84ef27ce151b9ae581c2d9d00329a6704fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102_attempt01.job.json",
+      "sha256": "1b743cbd20ac2f99d2b0d5ebba006a39cba6a3f38c32fae5036928cf82f88f11"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102_attempt01.log",
+      "sha256": "39866bc4e6aa49581225169b3cffff3e2761216e78002422865cd4cdbb8b016c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_sources_d102.json",
+      "sha256": "91020404ef347963f88500d08bafaae9f9388227b4508448ad1d0bb12520766d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_review_d101.json",
+      "sha256": "d3ee4571f4ef9676edf4ef99bbcf9e44084fcfae6f94eb3344f088b8f654d52d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/378_cm_residue_lattice.py",
+      "sha256": "0dbe7a49954986f15fd6d03d9d53f9a8733fc9ebd7d4aac5acbd53ecf8b9b45a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/379_cm_residue_lattice_review.py",
+      "sha256": "b1d4c2c6bbbe33708154ffd23827b18b3bdf580b71277e59abc9d1651a249300"
+    }
+  ],
+  "actual_residue_index_bounded": false,
+  "independent_Shimura_tangent_obtained": false,
+  "spectral_pilot_gate_passed": false,
+  "scope": "Exact field arithmetic and proof controls; no actual Shimura restriction map or effective recognition tolerance."
+}

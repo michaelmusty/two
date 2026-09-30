@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py", line 289, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py", line 276, in main
+    result = build()
+  File "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py", line 253, in build
+    return {"status": "pass", "milestone": "D103", "frame_controls": frame_controls(),
+  File "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py", line 105, in frame_controls
+    a = next(j for j, x in enumerate(brackets) if x)
+StopIteration

@@ -1,0 +1,32 @@
+STAGE|initialized|genus=64|points=646|ms=7544
+  *** PicIsZero_val: Warning: increasing stack size to 1024000000.
+STAGE|doubling_checked|ms=31459
+Lifting from prec O(97^1) to O(97^2)
+TRACE|lift_column|index=1|stack_bytes=194901848
+TRACE|lift_column|index=16|stack_bytes=222772424
+TRACE|lift_column|index=32|stack_bytes=252503576
+TRACE|lift_column|index=48|stack_bytes=282226168
+TRACE|lift_column|index=64|stack_bytes=311952728
+TRACE|lift_column|index=80|stack_bytes=341679480
+TRACE|lift_column|index=96|stack_bytes=371406776
+TRACE|lift_column|index=112|stack_bytes=401131544
+TRACE|lift_column|index=128|stack_bytes=430861664
+TRACE|lift_column|index=144|stack_bytes=460676552
+TRACE|lift_column|index=160|stack_bytes=490499848
+TRACE|lift_column|index=176|stack_bytes=520322696
+TRACE|lift_column|index=192|stack_bytes=550145216
+TRACE|lift_column|index=208|stack_bytes=579966952
+TRACE|lift_column|index=224|stack_bytes=609789712
+TRACE|lift_column|index=240|stack_bytes=639612088
+TRACE|lift_column|index=256|stack_bytes=669440088
+TRACE|lift_system|rows=21252|columns=259|stack_bytes=673338832
+  *** PicLiftTors: Warning: increasing stack size to 2000011264.
+  ***   at top-level: ...tTors_original(J,W1,1,2),PicLiftTors(J,W1,1,2)
+  ***                                             ^---------------------
+  *** PicLiftTors: the PARI stack overflows !
+  current stack size: 2000011264 (1907.359 Mbytes)
+  [hint] you can increase 'parisizemax' using default()
+
+... skipping file '../../pari/101_lifttors_scale.gp'
+      234.15 real       225.19 user         7.89 sys
+time: sysctl kern.clockrate: Operation not permitted

@@ -1,0 +1,48 @@
+// D82: a global function identity identifies the pointed and D79 S3 covers.
+SetQuitOnError(true); SetColumns(0); started:=Cputime();
+load "dembele/magma/170_cm_frame_cover_class_arithmetic.m";
+load "dembele/data/computed/cm_frame_cover_sections.m";
+load "dembele/data/computed/cm_frame_B3_fiber_structure.m";
+load "dembele/data/computed/cm_frame_cubic.m";
+load "dembele/data/computed/cm_frame_cubic_pointed_1.m";
+oldq:=pointed_cubic_q_coefficients; oldu:=pointed_cubic_u_coefficients;
+oldf:=pointed_cubic_f_coefficients; oldc:=pointed_cubic_norm_scalar;
+oldlambda:=pointed_cubic_scaling_scalar;
+load "dembele/data/computed/cm_frame_cubic_adjoint_1.m";
+pts:=[[k!c:c in pt]:pt in sections_evaluation_point_coordinates];
+assert #pts eq 2048 and #Seqset(pts) eq 2048 and 2048 gt 10*120;
+ev1:=[];
+for pt in pts do
+    xs:=pt[1..16]; ell:=&+[branch_parameter_linear_form[i]*xs[i]:i in [1..16]];
+    even:=[&*[xs[j]^e[j]:j in [1..16]]:e in sections_even_monomial_exponents];
+    mon3:=[&*[xs[j]^e[j]:j in [1..16]]:e in sections_odd_monomial_exponents];
+    odd:=[&+[sections_odd_section_rows[i][j]*mon3[j]:j in [1..75]]:i in [1..36]];
+    Append(~ev1,even cat [pt[17]/ell*x:x in odd]);
+end for;
+ev2:=[[v[p[1]]*v[p[2]]:p in makdisi_product2_pairs]:v in ev1];
+ev3:=[[ev1[i][p[1]]*ev2[i][p[2]]:p in makdisi_product3_pairs]:i in [1..2048]];
+ev4:=[[ev1[i][p[1]]*ev3[i][p[2]]:p in kummer_product4_pairs]:i in [1..2048]];
+G1:=Transpose(Matrix(k,ev1)); G2:=Transpose(Matrix(k,ev2)); G4:=Transpose(Matrix(k,ev4));
+assert Vector(k,adjoint_q_coefficients)*G1 eq Vector(k,oldq)*G1;
+function Mul(v,w) return Vector(k,[v[i]*w[i]:i in [1..2048]]); end function;
+function Pow(v,d) return Vector(k,[x^d:x in Eltseq(v)]); end function;
+function Tau(v) return Vector(k,[v[i]:i in sections_involution_permutation]); end function;
+g:=Vector(k,adjoint_move_g_coefficients)*G2;
+r:=Vector(k,adjoint_move_r_coefficients)*G2;
+uo:=Vector(k,oldu)*G4; fo:=Vector(k,oldf)*G2;
+un:=Vector(k,adjoint_u_coefficients)*G4; fn:=Vector(k,adjoint_f_coefficients)*G2;
+lambda:=k!adjoint_scaling_scalar; cn:=k!adjoint_norm_scalar; co:=k!oldc; lo:=k!oldlambda;
+left3:=cn*lambda^3*Mul(un,Pow(g,3)); right3:=co*lo^3*Mul(uo,Pow(r,3));
+left2:=cn*lambda^2*Mul(fn,Mul(g,Tau(g))); right2:=co*lo^2*Mul(fo,Mul(r,Tau(r)));
+j3:=Min([i:i in [1..2048]|right3[i] ne 0]);
+j2:=Min([i:i in [1..2048]|right2[i] ne 0]);
+r3:=left3[j3]/right3[j3]; r2:=left2[j2]/right2[j2];
+assert r2 ne 0 and r3 ne 0 and r2^31 eq r2 and r3^31 eq r3;
+assert left3 eq r3*right3 and left2 eq r2*right2;
+assert r3^2 eq r2^3;
+delta:=r3/r2; assert delta^3 eq r3 and delta^2 eq r2;
+// Thus v_new=delta*(r/g)*v_old; tau(v)=a/v is respected as well.
+assert left3 eq delta^3*right3 and left2 eq delta^2*right2;
+printf "ADJOINT_ISOMORPHISM_SCALAR|%o\n",Integers()!(GF(31)!delta);
+printf "CPU_SECONDS|%o\n",Cputime(started);
+print "PASS|256_CM_FRAME_CUBIC_ADJOINT_ISOMORPHISM";quit;

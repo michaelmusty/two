@@ -1,0 +1,12 @@
+SetQuitOnError(true);
+precision_digits := 4;
+load "dembele/data/computed/cm_frame_cubic_precision_4_sections.m";
+load "dembele/data/computed/cm_frame_cubic_precision_4_formal_divisor.m";
+formal_chain := [[1, 0, 0], [-1, 1, 0], [2, 2, 2], [-4, 3, 3], [5, 4, 2], [-10, 5, 5], [20, 6, 6], [-40, 7, 7], [80, 8, 8], [-160, 9, 9], [320, 10, 10], [-640, 11, 11], [641, 12, 2]];
+formal_chain_start := 2;
+formal_chain_end := 13;
+formal_saved_indices := [];
+formal_saved_coordinates := [];
+formal_saved_delta := [];
+formal_keep_indices := [1, 13];
+load "dembele/magma/210_cm_frame_cubic_formal_third.m";

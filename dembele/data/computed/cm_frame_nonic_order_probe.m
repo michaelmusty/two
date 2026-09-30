@@ -1,0 +1,11 @@
+SetColumns(0); SetSeed(70); SetQuitOnError(true);
+T<t>:=PolynomialRing(Rationals());
+f:=T!eval Read("dembele/data/computed/cm_frame_nonic_polynomial.txt");
+K<a>:=NumberField(f); started:=Cputime();
+O:=MaximalOrder(K);
+print "DISCRIMINANT",Discriminant(O),Factorization(Discriminant(O));
+print "ORDER_SECONDS",Cputime(started);
+L,iso:=OptimizedRepresentation(K);
+print "REDUCED_POLYNOMIAL",DefiningPolynomial(L);
+print "EXACT_GENERATOR_IMAGE",Eltseq(iso(a));
+printf "CPU|%o\n",Cputime(started);print "PASS|NONIC_ORDER";quit;

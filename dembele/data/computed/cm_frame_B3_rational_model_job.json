@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/154_cm_frame_B3_rational_model.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 3.9006243749754503,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_model.out",
+    "sha256": "98427a0e57f25f8245ddc1ff186bf80cc1ef04ff0ad1910be5ee2572d9225c7c"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/154_cm_frame_B3_rational_model.py",
+      "sha256": "ff7bb62bbcb531f432da14d989142b7df5d4cc8f4168f888254ac200bb6db564"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d76-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

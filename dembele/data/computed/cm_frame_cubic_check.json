@@ -1,0 +1,315 @@
+{
+  "status": "pass",
+  "milestone": "D79",
+  "date": "2026-09-21",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/179_cm_frame_cubic_check.py",
+      "sha256": "bf22faab1dc6278c3be90ac46477c6158a809a694e9232791517ad05ca1f0598"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_check.json",
+      "sha256": "a81750ea1fe8abfbbf27ac338154ef863ecea72dc95ada066656f8d981429931"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic.json",
+      "sha256": "41f65eabb4bdcbfbe6a03050b3bc70b131e0b498e0635ae73ccb7743d66c1a4b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_check_job.json",
+      "sha256": "fed7cffac6aeeab42ce741909c172611ed07def2b3a62d5f8335bb98dbc0599b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_norm_control_job.json",
+      "sha256": "0eb0b304e93914f405877f8580e05cf021f109a44ef6c40387864aa6271da985"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_trace_control_job.json",
+      "sha256": "e02e5146c9fc7b7759e1e2f7c25e065c3a6f94042893494fd2e2fa8dd704eb6c"
+    }
+  ],
+  "historical_failures": [
+    {
+      "record_path": "/Users/musty/two/dembele/data/computed/cm_frame_kummer_function_monomial_syntax_failure_job.json",
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_kummer_function_monomial_syntax_failure.out",
+        "sha256": "a52496d959c22a4249e798e23c91c6db171cb4f8555afee60bbed164dbb35a9d"
+      },
+      "source_snapshot": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_kummer_function_monomial_syntax_failure.m",
+        "sha256": "e458d9e533a67e61864c16c85e1e981ff554a167329a1c43eeade76d5c29811b"
+      },
+      "role": "archived failed run, not an arithmetic proof dependency"
+    },
+    {
+      "record_path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_check_matrix_universe_failure_job.json",
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_check_matrix_universe_failure.out",
+        "sha256": "85b79327a9915aba9822dad5b296d465c2833dd73ab3d0bcd94c6e9de0077e46"
+      },
+      "source_snapshot": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_check_matrix_universe_failure.m",
+        "sha256": "29264c9ba8815cfb7b096e8453e8bd71663ee30fca8fdd2669c5845c2207cb38"
+      },
+      "role": "archived failed run, not an arithmetic proof dependency"
+    }
+  ],
+  "characteristic": 31,
+  "evaluation_count": 1024,
+  "injectivity_bound": 960,
+  "base_divisor_degree": 120,
+  "section_dimensions": [
+    81,
+    201,
+    321,
+    441
+  ],
+  "representative_defined_over_F31": true,
+  "function_divisor": "D+-D-+3E_R-3D0",
+  "norm_scalar": 27,
+  "norm_identity": "h*tau(h)=a^3, h=c*u/q, a=c*f, tau(a)=a",
+  "weighted_equation": "Q4*T^3-3*A4*Q4*T-P10=0, weight(T)=2",
+  "geometric_galois_group": "S3",
+  "base_genus": 16,
+  "quadratic_resolvent_genus": 40,
+  "cyclic_cover_genus": 136,
+  "reflection_quotient_genus": 64,
+  "branch_degrees": {
+    "transposition": 18,
+    "three_cycle": 9
+  },
+  "kummer_function_constructed": true,
+  "cyclic_cubic_constructed": true,
+  "genus64_curve_constructed_modulo31": true,
+  "independent_verification_completed": true,
+  "coefficient_check": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/magma/178_cm_frame_cubic_check.m"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "wall_seconds": 6.331151374964975,
+    "timeout_seconds": 180,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_check.out",
+      "sha256": "4bd487c025ee1db70db48066a5b93551a76bf53a68f7136db1d31a327d3d8da7"
+    },
+    "memory_limit_bytes": 2000000000,
+    "sources": [
+      {
+        "path": "/Users/musty/two/dembele/magma/178_cm_frame_cubic_check.m",
+        "sha256": "36d3f02218d43d468fef346a141a2c6244e59d5e9e8812de6af566f3d86cbc30"
+      },
+      {
+        "path": "/Users/musty/two/dembele/pari/179_cm_frame_cubic_check.py",
+        "sha256": "bf22faab1dc6278c3be90ac46477c6158a809a694e9232791517ad05ca1f0598"
+      },
+      {
+        "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+        "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_check.json",
+        "sha256": "a81750ea1fe8abfbbf27ac338154ef863ecea72dc95ada066656f8d981429931"
+      },
+      {
+        "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+        "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.m",
+        "sha256": "99ccb18d550b2814ea27fe4bb86a0b19dc685b202c1f4f12caf4e96b1bffc318"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_sections.m",
+        "sha256": "55e88dd9f86ff1300e3a9e6bca964ef8e6ae399b487a4af7f6e978d45ab3139b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_third_check_input.m",
+        "sha256": "abde76b3b0348933aad6b6f7a59221427de1b1c4cb9dad5330b26011b04ed553"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_model.m",
+        "sha256": "6ee87f96e4f0e2383af8e37b6bf8c6dce9cff08705860887103fe87717b59cd1"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.m",
+        "sha256": "2774798b08662abb33e26022abcd7ffdc914f7535f19ff6bda20885f766c6e63"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_structure.m",
+        "sha256": "1c37e71d16c0c89afbac5a51ee04f236dfbd0b606c1390ac630721517791dc09"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+        "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic.json",
+        "sha256": "41f65eabb4bdcbfbe6a03050b3bc70b131e0b498e0635ae73ccb7743d66c1a4b"
+      }
+    ]
+  },
+  "wrong_norm_control": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/data/computed/cm_frame_cubic_norm_control.m"
+    ],
+    "status": "pass",
+    "exit_code": 1,
+    "wall_seconds": 4.565063333022408,
+    "timeout_seconds": 180,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_norm_control.out",
+      "sha256": "d25b4abca3a3f4949aa35904c06f9d9637605a89e97dbd3d9aab46bdddee03bd"
+    },
+    "memory_limit_bytes": 2000000000,
+    "sources": [
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_norm_control.m",
+        "sha256": "50d30a07efa3132f8853c1269f428c1c3fcd742aa001f76be2ac8926ea9d3dce"
+      },
+      {
+        "path": "/Users/musty/two/dembele/pari/179_cm_frame_cubic_check.py",
+        "sha256": "bf22faab1dc6278c3be90ac46477c6158a809a694e9232791517ad05ca1f0598"
+      },
+      {
+        "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+        "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_check.json",
+        "sha256": "a81750ea1fe8abfbbf27ac338154ef863ecea72dc95ada066656f8d981429931"
+      },
+      {
+        "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+        "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.m",
+        "sha256": "99ccb18d550b2814ea27fe4bb86a0b19dc685b202c1f4f12caf4e96b1bffc318"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_sections.m",
+        "sha256": "55e88dd9f86ff1300e3a9e6bca964ef8e6ae399b487a4af7f6e978d45ab3139b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_third_check_input.m",
+        "sha256": "abde76b3b0348933aad6b6f7a59221427de1b1c4cb9dad5330b26011b04ed553"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_model.m",
+        "sha256": "6ee87f96e4f0e2383af8e37b6bf8c6dce9cff08705860887103fe87717b59cd1"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.m",
+        "sha256": "2774798b08662abb33e26022abcd7ffdc914f7535f19ff6bda20885f766c6e63"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_structure.m",
+        "sha256": "1c37e71d16c0c89afbac5a51ee04f236dfbd0b606c1390ac630721517791dc09"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+        "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic.json",
+        "sha256": "41f65eabb4bdcbfbe6a03050b3bc70b131e0b498e0635ae73ccb7743d66c1a4b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/magma/178_cm_frame_cubic_check.m",
+        "sha256": "36d3f02218d43d468fef346a141a2c6244e59d5e9e8812de6af566f3d86cbc30"
+      }
+    ]
+  },
+  "wrong_trace_coefficient_control": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/data/computed/cm_frame_cubic_trace_control.m"
+    ],
+    "status": "pass",
+    "exit_code": 1,
+    "wall_seconds": 6.437276458018459,
+    "timeout_seconds": 180,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_trace_control.out",
+      "sha256": "0100c66aad64902a0f265f1eb6146fb4f144487043f50ff0f1fa14b91738ea1d"
+    },
+    "memory_limit_bytes": 2000000000,
+    "sources": [
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_trace_control.m",
+        "sha256": "9af3a0c1761c9bbe857bb4513e76b94e15435bccd477250cf4789a1718673516"
+      },
+      {
+        "path": "/Users/musty/two/dembele/pari/179_cm_frame_cubic_check.py",
+        "sha256": "bf22faab1dc6278c3be90ac46477c6158a809a694e9232791517ad05ca1f0598"
+      },
+      {
+        "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+        "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_check.json",
+        "sha256": "a81750ea1fe8abfbbf27ac338154ef863ecea72dc95ada066656f8d981429931"
+      },
+      {
+        "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+        "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.m",
+        "sha256": "99ccb18d550b2814ea27fe4bb86a0b19dc685b202c1f4f12caf4e96b1bffc318"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_sections.m",
+        "sha256": "55e88dd9f86ff1300e3a9e6bca964ef8e6ae399b487a4af7f6e978d45ab3139b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_third_check_input.m",
+        "sha256": "abde76b3b0348933aad6b6f7a59221427de1b1c4cb9dad5330b26011b04ed553"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_model.m",
+        "sha256": "6ee87f96e4f0e2383af8e37b6bf8c6dce9cff08705860887103fe87717b59cd1"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.m",
+        "sha256": "2774798b08662abb33e26022abcd7ffdc914f7535f19ff6bda20885f766c6e63"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_structure.m",
+        "sha256": "1c37e71d16c0c89afbac5a51ee04f236dfbd0b606c1390ac630721517791dc09"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+        "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic.json",
+        "sha256": "41f65eabb4bdcbfbe6a03050b3bc70b131e0b498e0635ae73ccb7743d66c1a4b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/magma/178_cm_frame_cubic_check.m",
+        "sha256": "36d3f02218d43d468fef346a141a2c6244e59d5e9e8812de6af566f3d86cbc30"
+      }
+    ]
+  },
+  "characteristic_zero_cubic_constructed": false,
+  "arithmetic_identification_certified": false,
+  "prescribed_Fuchsian_monodromy_matched": false,
+  "third_uniqueness_certified": false,
+  "target_field_constructed": false,
+  "proof": "dembele/certificates/cm-frame-cubic-cover.md"
+}

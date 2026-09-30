@@ -1,0 +1,38 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/117_cm_frame_smoothness.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.462877167039551,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_candidate_review_d99.log",
+    "sha256": "824ef1710870d18bebee6e2e98da7b8d0f506c5b959ea21f1fb5cff992253e07"
+  },
+  "private_process_group": 12742,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/117_cm_frame_smoothness.m",
+      "sha256": "d8e261ed48931b908352e0a145615c18a58cac5621a1a61a27c97775d378c860"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    }
+  ],
+  "memory_limit_bytes": 2000000000
+}

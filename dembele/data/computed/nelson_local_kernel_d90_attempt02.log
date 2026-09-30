@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/320_nelson_local_kernel.py", line 215, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/320_nelson_local_kernel.py", line 205, in main
+    result = compute()
+             ^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/320_nelson_local_kernel.py", line 193, in compute
+    "arithmetic": arithmetic_lattices(),
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/320_nelson_local_kernel.py", line 160, in arithmetic_lattices
+    c = F([QQ(round(v*10**8))/10**8 for v in coefficients])
+              ^^^^^^^^^^^^^^
+TypeError: type sage.rings.real_mpfr.RealNumber doesn't define __round__ method

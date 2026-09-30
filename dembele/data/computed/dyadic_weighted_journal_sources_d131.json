@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "milestone": "D131",
+  "execution_status": "complete",
+  "bounded_input_jobs": {
+    "passed": 54,
+    "failed": 0,
+    "sum_wall_seconds": 1268.8538154235575,
+    "maximum_wall_seconds": 78.14319212501869,
+    "maximum_single_process_peak_rss_bytes": 334118912
+  },
+  "source_numbers": [
+    541,
+    542,
+    543,
+    544,
+    545,
+    546
+  ],
+  "coordinator": "dembele/pari/run_d131_batch.py",
+  "report": "dembele/certificates/dyadic-weighted-journal-d131.md",
+  "prior_fixed_review": "dyadic_target_feasibility_review_d130.json",
+  "prior_hash_count": 16142,
+  "weighted_replay": {
+    "uniform_and_weighted_scalars_each": 4454400,
+    "CM_scalars": 870400,
+    "exact_masses": 174,
+    "no_new_uniform_or_CM_binary": true
+  },
+  "row_journal": {
+    "small_interruption_points": 19,
+    "intentional_child_interruptions": 22,
+    "corruption_rejections": 4,
+    "sealed_stores": 24,
+    "retained_payload_bytes": 101567858,
+    "power_loss_tested": false,
+    "per_store_cap_bytes": 2147483648,
+    "aggregate_concurrent_store_cap_certified": false
+  },
+  "arithmetic_integration": {
+    "original_RHS_child_actions": 348,
+    "low_equation_scalars": 44544,
+    "factor_blocks": 1226,
+    "GMP_correction_child_actions": 348,
+    "new_residual_scalars": 1067664,
+    "before_pi": 800,
+    "after_pi": 833,
+    "new_precision_stage": false
+  },
+  "actual_harmonic_precision_increased": false,
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 3200,
+    "1": 1600
+  },
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_target_run_admitted": false,
+  "reference_roles": [
+    "Inherited D121 coefficient valuation and fixed-mass contraction, D130 weighted fixed-point deduction, frozen D129 arithmetic reference, and D124 first-correction reference.",
+    "No new external theorem or fresh external-source verification invoked. Storage recovery is computational process-interruption evidence, not a hardware durability theorem."
+  ],
+  "next_task": "Complete a resumable staged driver with multi-digit low solves, full storage lifetime inventory, one working store and separate RAM budget, then select the first actual higher-precision column after gates pass.",
+  "freeze": "Successful541--546, coordinator, bound outputs/report/ledger/review and sealed stores; all previous freezes remain. Historical overwritten/retired payload hashes are not retained-source claims."
+}

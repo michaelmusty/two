@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "milestone": "D121",
+  "eliminated_positive_moments": 64,
+  "working_precision_pi": 200,
+  "low_block_dimension": 11136,
+  "coefficient_table_seconds": 0.7786115000490099,
+  "factorization": {
+    "factor_seconds": 41.0533291248139,
+    "block_updates": 2246,
+    "diagonal_inverse_blocks": 174,
+    "lower_blocks": 506,
+    "upper_blocks": 546
+  },
+  "sixteen_column_rhs_seconds": 4.114279583096504,
+  "sixteen_column_triangular_solve_seconds": 5.117435166845098,
+  "actual_harmonic_columns_checked": 16,
+  "actual_low_scalar_coefficients_checked": 1425408,
+  "unrelated_rhs_original_residual_checked": true,
+  "unrelated_rhs_scalar_equations_checked": 178176,
+  "factor_payload_bytes": 321388544,
+  "guaranteed_Schur_correction_gain_pi": 65,
+  "wall_seconds": 70.56988354190253,
+  "actual_moment_precision_increased": false,
+  "full_Schur_iteration_validated_for_this_r": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/467_dyadic_sparse_low_blocks.py",
+      "sha256": "168084fa6b835cdf69400ccd1ce3cfd2b90aa9a5808567d1bb9c99f3986a5735"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/464_dyadic_low_moment_block.py",
+      "sha256": "e83603701872d36ecdfad5ee385ce4ba1020dfe932f439977cf3e769e9eecc65"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_low_moment_block_d121.npz",
+      "sha256": "b34740787b2307ec0a85e98a73869872018077c6d1a06106cee93a65879443c7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_low_moment_block_d121.json",
+      "sha256": "50a110cc9a711dcf8ae661e559035ce1aec4d67c8d9a8274fc0842248fcfe06b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_d115.json",
+      "sha256": "bc043dfe632db80984eef2578841611325767cb4afb214bebfa354354f8fb699"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_sparse_low_r64_d121.npz",
+      "sha256": "321b7cb1d5e1f1846a2ebb7c365330aa7eb368f421b1cbe3d5a69ccf04831133"
+    }
+  ]
+}

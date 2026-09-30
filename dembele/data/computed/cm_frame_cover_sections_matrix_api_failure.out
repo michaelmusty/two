@@ -1,0 +1,12 @@
+Loading "dembele/data/computed/cm_frame_curve_candidate.m"
+Loading "dembele/data/computed/cm_frame_marks.m"
+Loading "dembele/data/computed/cm_frame_B3_rational_model.m"
+Loading "dembele/data/computed/cm_frame_B3_fiber.m"
+Loading "dembele/data/computed/cm_frame_B3_fiber_structure.m"
+
+In file "/Users/musty/two/dembele/magma/164_cm_frame_cover_sections.m", line 39, column 19:
+>> assert Rank(Matrix(k,oddrows)) eq 36;
+                     ^
+Runtime error in 'Matrix': Bad argument types
+Argument types given: FldFin, SeqEnum[ModTupFldElt[FldFin]]
+

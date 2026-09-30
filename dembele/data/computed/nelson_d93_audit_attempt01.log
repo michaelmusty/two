@@ -1,0 +1,13 @@
+EXACT_PRIME_CUTOFF_PASS 6400 170
+EXACT_PRIME_CUTOFF_PASS 25600 586
+EXACT_COSETS_PASS 32 586
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/349_nelson_prime31_audit.py", line 297, in <module>
+    if __name__=="__main__":main()
+  File "/Users/musty/two/dembele/pari/349_nelson_prime31_audit.py", line 291, in main
+    result=compute();out=DATA/"nelson_prime31_d93.json"
+  File "/Users/musty/two/dembele/pari/349_nelson_prime31_audit.py", line 270, in compute
+    analytic=analytic_checks(packet,series,global_bounds,old["tail_constants"]["contours"],z0)
+  File "/Users/musty/two/dembele/pari/349_nelson_prime31_audit.py", line 212, in analytic_checks
+    assert error>=max(abs(lo),abs(hi))*prev.read_interval(series["cutoffs"][-1]["infinite_prime_family_tail"][a]["absolute_error_bound"])[1]
+AssertionError

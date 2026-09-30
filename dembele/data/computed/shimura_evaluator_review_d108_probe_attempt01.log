@@ -1,0 +1,34 @@
+{
+  "spectral": {
+    "independent_rational_quadrature_error_bound": true,
+    "independent_pi_and_radical_bounds": true,
+    "global_h_p_mu1_maximum_identity": true,
+    "norm31_primes": [
+      4,
+      9,
+      10,
+      11,
+      20,
+      21,
+      22,
+      27
+    ],
+    "omitted_primes": 7,
+    "method_floor_lower": "2759039694652269266266274877653078055789529961561352499489/5986310706507378352962293074805895248510699696029696",
+    "method_floor_with_delta_zero_lower": "3790270969823346664601993887596903156520817657497037036811/11972621413014756705924586149611790497021399392059392",
+    "method_floor_over_partial_lower": "1479045183421725007351917540069754400798535877501014814921/24519928653854221733733552434404946937899825954937634816",
+    "scope": "Uniform per-ideal h_p comparison, or positive mixtures, with absolute Hecke envelopes and the unsigned geometric diagonal bound. Not the actual remainder."
+  },
+  "dyadic": {
+    "Eisenstein_and_field_relation_checks": true,
+    "ramification_index_F_at_2": 8,
+    "ramification_index_CM_at_2": 16,
+    "coarse_coordinate_identity_checked": true,
+    "three_chart_tail_exponents_replayed": true,
+    "synthetic_controls": 4,
+    "coarse_error_bound": "min((J+1)/2-d,P)",
+    "sign_flip_requires_sufficient_dyadic_precision": true,
+    "actual_measure_moments_supplied": false
+  }
+}
+PASS|D108_EVALUATOR_PROBE

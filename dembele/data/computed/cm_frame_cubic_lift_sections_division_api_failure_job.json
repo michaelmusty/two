@@ -1,0 +1,68 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/184_cm_frame_cubic_lift_sections.m"
+  ],
+  "status": "failed",
+  "exit_code": 1,
+  "wall_seconds": 2.9339252079371363,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_sections_division_api_failure.out",
+    "sha256": "9bfecb4f136b76e240570cfced38d2b3c3ea1841eb56d42009b427cb63ab250e"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_sections_division_api_failure.m",
+      "sha256": "689cd9d3857ef150a68fe81f3446c3548d32cf7d620f88a008280286cd6f0e92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_point_check.json",
+      "sha256": "9a139352d95478a37b9fdce3c4e0d25607a4febeebba0f36b1dcd8e540b4165f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+      "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_model.m",
+      "sha256": "6ee87f96e4f0e2383af8e37b6bf8c6dce9cff08705860887103fe87717b59cd1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_veronese.m",
+      "sha256": "02463a9ee940c9367945398be17bb58432de7bb49bbbc5fe5dc81d185f1ee9dc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.m",
+      "sha256": "2774798b08662abb33e26022abcd7ffdc914f7535f19ff6bda20885f766c6e63"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_structure.m",
+      "sha256": "1c37e71d16c0c89afbac5a51ee04f236dfbd0b606c1390ac630721517791dc09"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_sections.m",
+      "sha256": "55e88dd9f86ff1300e3a9e6bca964ef8e6ae399b487a4af7f6e978d45ab3139b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.m",
+      "sha256": "99ccb18d550b2814ea27fe4bb86a0b19dc685b202c1f4f12caf4e96b1bffc318"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic.m",
+      "sha256": "4c72863126e983fb4b05a78d1a6d6d5ced4f7cc10a2214f1c37f8eb855404f39"
+    }
+  ]
+}

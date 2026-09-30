@@ -1,0 +1,18 @@
+Loading "dembele/data/computed/cm_frame_curve_candidate.m"
+Loading "dembele/data/computed/cm_frame_marks.m"
+Loading "dembele/data/computed/cm_frame_B3_rational_model.m"
+Loading "dembele/data/computed/cm_frame_B3_veronese.m"
+Loading "dembele/data/computed/cm_frame_B3_fiber.m"
+Loading "dembele/data/computed/cm_frame_B3_fiber_structure.m"
+Loading "dembele/data/computed/cm_frame_cover_sections.m"
+Loading "dembele/data/computed/cm_frame_cover_makdisi.m"
+Loading "dembele/data/computed/cm_frame_cubic.m"
+PASS|LIFT_ODD_SUPPORTS_18_AND_21
+PASS|ODD_SECTION_BASIS_LIFT_MOD961
+
+In file "/Users/musty/two/dembele/magma/184_cm_frame_cubic_lift_sections.m", line 142, column 20:
+>>     w-:=(w^2*dv-nv)/(2*w*dv); assert w^2*dv eq nv;
+                      ^
+Runtime error in '/': Bad argument types
+Argument types given: RngGalElt, RngGalElt
+

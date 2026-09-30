@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "milestone": "D115",
+  "input_precision_pi": 40,
+  "anchor_nonvanishing_certified": false,
+  "frame_computed": false,
+  "candidate_identification_proved": false,
+  "candidate_mismatch_certified": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/418_dyadic_rational_frame.py",
+      "sha256": "1d5b04933d51401a91d74b3f3ba1f9e2bfa4e36799b881be35768f9da87258a3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/415_dyadic_coarse_poisson.py",
+      "sha256": "a4ef2539180a748f6693ad0223badf865f8eb43d64d22f7fa16c32f2f57bc092"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision40_d115.json",
+      "sha256": "2885bd1b9ac8fc09369920c3115e11d2d51964402cff3cd7dc908f076808a114"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_cm_matching_review_d112.json",
+      "sha256": "2a64812de8db236cd68fc5007d31904413840b251007bfb3971aff862a9a4a6f"
+    }
+  ],
+  "precision_obstruction": {
+    "stage": "evaluation_row",
+    "CM_index": 0
+  }
+}

@@ -1,0 +1,4 @@
+ADAPTIVE_TARGET|{"backend": "__main__.Ring", "prepare_seconds": 1.5859715410042554, "apply_seconds": 24.653425000142306}
+ADAPTIVE_TARGET|{"backend": "prepared.Ring", "prepare_seconds": 1.9485445420723408, "apply_seconds": 29.426420333096758}
+{"status": "pass", "milestone": "D124", "phase": "target", "certificates": {"synthetic_target_P": 10552, "complete_scalar_comparisons": 84416, "timings": [{"backend": "__main__.Ring", "prepare_seconds": 1.5859715410042554, "apply_seconds": 24.653425000142306}, {"backend": "prepared.Ring", "prepare_seconds": 1.9485445420723408, "apply_seconds": 29.426420333096758}], "actual_harmonic_precision_increased": false, "complete_target_size_solve_costed": false}, "wall_seconds": 57.67150720907375, "peak_rss_bytes": 1188511744, "production_P1600_lift_not_modified": true}
+PASS|503_DYADIC_ADAPTIVE_KERNEL_CONTROL

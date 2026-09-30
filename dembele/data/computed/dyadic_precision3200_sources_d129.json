@@ -1,0 +1,491 @@
+{
+  "milestone": "D129",
+  "date": "2026-09-28",
+  "execution_status": "complete",
+  "report": "dembele/certificates/dyadic-precision3200-d129.md",
+  "final_review_driver": "dembele/pari/532_dyadic_precision3200_review.py",
+  "prior_review": "dembele/data/computed/dyadic_selective_scaling_review_d128.json",
+  "inherited_D128_source_hashes_to_preserve": 9648,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Production polynomial multiplication in 476--479. Attribution and installed header/library hashes are preserved from the interim ledger. No additional web source is invoked for the new mathematical review."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited carry-free polynomial arithmetic supplies the older backend for all production final original residuals. Source 486 imports no production arithmetic."
+    }
+  ],
+  "new_external_theorem_invoked": false,
+  "inherited_mathematical_inputs": [
+    "The D125 fixed-mass original-residual certificate is independent of seed and iteration history.",
+    "Original contracting transports, weighted error lattice, integral low inverse, direct CM and truncation estimates retain their prior proofs and hashes.",
+    "All D125 finite quadric enclosures and exact-zero prerequisites remain unchanged.",
+    "An existing factor modulo 2^m solves the original low system modulo 2^(2m) with two lower-precision solves and exact division of the higher-precision residual by 2^m; every final original sparse equation is checked."
+  ],
+  "bounded_input_jobs": {
+    "passed": 1934,
+    "failed": 0,
+    "sum_wall_seconds": 11115.624915451277,
+    "maximum_wall_seconds": 94.76702250004746,
+    "maximum_single_process_peak_rss_bytes": 491929600,
+    "maximum_workers": 3,
+    "BLAS_threads": 1,
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group"
+  },
+  "state_summary": "dembele/data/computed/dyadic_streamed_pilot_P3200_col00_d129.json",
+  "downstream_scheduler": "dembele/pari/run_d129_checks.py",
+  "downstream_summary": "dembele/data/computed/dyadic_precision3200_checks_d129.json",
+  "scratch_namespace": "dembele/data/computed/dyadic_streamed_scratch_col00_d129",
+  "scratch_limit_bytes": 2147483648,
+  "conservative_scratch_bound_bytes": 1510359376,
+  "state_arithmetic_certificate": {
+    "original_full_residual_zero": true,
+    "actual_new_precision_pi": 3200,
+    "scalar_coefficients_checked": 4454400,
+    "weighted_residual_condition_checked": true,
+    "old_low_scalar_overlaps_checked": 2227200,
+    "old_extended_scalar_overlaps_checked": 4454400,
+    "exact_masses_checked": 174,
+    "full_residual_uses_different_polynomial_backend_from_lift": true
+  },
+  "storage_certificate": {
+    "scratch_limit_bytes": 2147483648,
+    "conservative_scratch_bound_bytes": 1510359376,
+    "maximum_observed_scratch_bytes": 1229041837,
+    "sealed_scratch_bytes": 558830756,
+    "sealed_payload_bytes": 558829536,
+    "retired_payload_count": 1950,
+    "retired_payload_bytes": 9302747376,
+    "retirement_events": 103
+  },
+  "CM_certificate": {
+    "CM_charts_checked": 17,
+    "composed_child_maps_checked": 34,
+    "CM_moment_scalar_coefficients": 870400,
+    "old_CM_moment_scalar_coefficients_checked": 435200,
+    "old_coarse_values_checked": 68,
+    "coarse_error_beta": [
+      6432,
+      6448,
+      6432,
+      6464
+    ],
+    "chunked_moment_payload_bytes": 43520000,
+    "duplicate_assembled_binary_written": false
+  },
+  "independent_audits": {
+    "dyadic_P3200_audit_coarse_c00_05_d129": {
+      "first_chart": 0,
+      "last_chart": 5,
+      "independent_coarse_values_checked": 24,
+      "independent_CM_recurrence_scalar_checks": 24,
+      "old_CM_scalar_overlaps": 153600,
+      "new_CM_scalar_coefficients": 307200,
+      "old_coarse_values_checked": 24,
+      "coarse_error_beta": [
+        6432,
+        6448,
+        6432,
+        6464
+      ]
+    },
+    "dyadic_P3200_audit_coarse_c06_11_d129": {
+      "first_chart": 6,
+      "last_chart": 11,
+      "independent_coarse_values_checked": 24,
+      "independent_CM_recurrence_scalar_checks": 24,
+      "old_CM_scalar_overlaps": 153600,
+      "new_CM_scalar_coefficients": 307200,
+      "old_coarse_values_checked": 24,
+      "coarse_error_beta": [
+        6432,
+        6448,
+        6432,
+        6464
+      ]
+    },
+    "dyadic_P3200_audit_coarse_c12_16_d129": {
+      "first_chart": 12,
+      "last_chart": 16,
+      "independent_coarse_values_checked": 20,
+      "independent_CM_recurrence_scalar_checks": 24,
+      "old_CM_scalar_overlaps": 128000,
+      "new_CM_scalar_coefficients": 256000,
+      "old_coarse_values_checked": 20,
+      "coarse_error_beta": [
+        6432,
+        6448,
+        6432,
+        6464
+      ]
+    },
+    "dyadic_P3200_audit_seed_b0_k00_d129": {
+      "branch": 0,
+      "block": 0,
+      "state": 0,
+      "target_child": 5,
+      "first_input_degree": 0,
+      "last_degree": 400,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b0_k01_d129": {
+      "branch": 0,
+      "block": 1,
+      "state": 0,
+      "target_child": 5,
+      "first_input_degree": 400,
+      "last_degree": 800,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b0_k02_d129": {
+      "branch": 0,
+      "block": 2,
+      "state": 0,
+      "target_child": 5,
+      "first_input_degree": 800,
+      "last_degree": 1200,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b0_k03_d129": {
+      "branch": 0,
+      "block": 3,
+      "state": 0,
+      "target_child": 5,
+      "first_input_degree": 1200,
+      "last_degree": 1600,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "dyadic_P3200_audit_seed_b0_k04_d129": {
+      "branch": 0,
+      "block": 4,
+      "state": 0,
+      "target_child": 5,
+      "first_input_degree": 1600,
+      "last_degree": 2000,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b0_k05_d129": {
+      "branch": 0,
+      "block": 5,
+      "state": 0,
+      "target_child": 5,
+      "first_input_degree": 2000,
+      "last_degree": 2399,
+      "recurrence_steps": 399,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "dyadic_P3200_audit_seed_b0_k06_d129": {
+      "branch": 0,
+      "block": 6,
+      "state": 0,
+      "target_child": 5,
+      "first_input_degree": 2399,
+      "last_degree": 2799,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b0_k07_d129": {
+      "branch": 0,
+      "block": 7,
+      "state": 0,
+      "target_child": 5,
+      "first_input_degree": 2799,
+      "last_degree": 3199,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "dyadic_P3200_audit_seed_b1_k00_d129": {
+      "branch": 1,
+      "block": 0,
+      "state": 0,
+      "target_child": 4,
+      "first_input_degree": 0,
+      "last_degree": 400,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b1_k01_d129": {
+      "branch": 1,
+      "block": 1,
+      "state": 0,
+      "target_child": 4,
+      "first_input_degree": 400,
+      "last_degree": 800,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b1_k02_d129": {
+      "branch": 1,
+      "block": 2,
+      "state": 0,
+      "target_child": 4,
+      "first_input_degree": 800,
+      "last_degree": 1200,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b1_k03_d129": {
+      "branch": 1,
+      "block": 3,
+      "state": 0,
+      "target_child": 4,
+      "first_input_degree": 1200,
+      "last_degree": 1600,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": [
+        1258418525410463103107492047666971606907953327002272759926016,
+        1457399700784917854977156428706176443944024544199354416427264,
+        1429322549088966545188336200530018484662648116342557235491072,
+        420271569469565208077225511289207108201236104320232686317056,
+        1076616083386490472625804076264226790210171480878179890756736,
+        801840596660443019314845578082706111415369674776834434376448,
+        873821637432837957876006855393530406098399219334758514499712,
+        1262094439260063088148929336895711074602840633310955135140096
+      ]
+    },
+    "dyadic_P3200_audit_seed_b1_k04_d129": {
+      "branch": 1,
+      "block": 4,
+      "state": 0,
+      "target_child": 4,
+      "first_input_degree": 1600,
+      "last_degree": 2000,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b1_k05_d129": {
+      "branch": 1,
+      "block": 5,
+      "state": 0,
+      "target_child": 4,
+      "first_input_degree": 2000,
+      "last_degree": 2399,
+      "recurrence_steps": 399,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": [
+        1473333917783494875416248852845969981912324260320419583930624,
+        1337221389447572867627311345314873412532997245411462429031936,
+        1573388845626782056728080229419089143492283859852252821392384,
+        203541153377806557554850281327524714717782840575049247945152,
+        1151743853940625546400007633112649516534450497877599623284352,
+        1175036273452397075027698255172257911592697943234768204574912,
+        772180347059407679796600417702390196473740018934952691881664,
+        877262142448590760748670293090345000136228628252472799255616
+      ]
+    },
+    "dyadic_P3200_audit_seed_b1_k06_d129": {
+      "branch": 1,
+      "block": 6,
+      "state": 0,
+      "target_child": 4,
+      "first_input_degree": 2399,
+      "last_degree": 2799,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": null
+    },
+    "dyadic_P3200_audit_seed_b1_k07_d129": {
+      "branch": 1,
+      "block": 7,
+      "state": 0,
+      "target_child": 4,
+      "first_input_degree": 2799,
+      "last_degree": 3199,
+      "recurrence_steps": 400,
+      "coefficient_count": 1600,
+      "modulus_pi": 1600,
+      "known_old_moment_contribution": [
+        2501489744027691366360190073596079686057457298466853240576,
+        1342198896044367344301902587326171341903320382534958075054144,
+        207283572099505217456278505808237056046396332991472840282112,
+        1092102508236719009229091334554984480800592608928965149468224,
+        738691080645215259739353444029098734781719960449515566922368,
+        1186337981407608080266233109078541503862869855586737611717824,
+        444285578502458488256751360528685065119767565091672023400384,
+        1380513440959708661424381524519422448039161891503455065275264
+      ]
+    },
+    "dyadic_P3200_audit_seed_final_d129": {
+      "independent_high_seed_degrees": [
+        1600,
+        2399,
+        3199
+      ],
+      "independent_high_seed_scalar_checks": 24,
+      "independent_recurrence_blocks": 16,
+      "production_old_extended_scalar_overlaps": 4454400,
+      "retired_production_seed_payloads_replayed": false
+    },
+    "dyadic_P3200_audit_states_d129": {
+      "production_full_original_residual_scalar_checks": 4454400,
+      "old_P1600_low_scalar_overlaps": 2227200,
+      "exact_masses_checked": 174,
+      "child_column_divisibility_checks": 348,
+      "independent_original_recurrence_scalar_checks": 96,
+      "complete_disjoint_sweeps_checked": 101,
+      "complete_long_bank_decoded": false
+    },
+    "dyadic_P3200_audit_weighted_d129": {
+      "final_weighted_reference_scalar_checks": 4454400,
+      "final_scaled_residual_scalar_checks": 45936,
+      "checkpoint_metadata_checked": 49,
+      "recorded_correction_gains_checked": 48,
+      "retired_intermediate_payloads_replayed": false,
+      "final_fixed_mass_original_residual_is_iteration_independent": true
+    }
+  },
+  "certificate_boundaries": [
+    "The original GMP residual and exact masses certify final moments independently of iteration history.",
+    "Independent ordinary recurrence checks are samples; they are not a second all-coordinate original-operator recomputation.",
+    "Retired temporary payloads are not replayed or included as available manifest sources.",
+    "The hard scratch limit counts fully reserved logical file lengths; permanent metadata and CM/audit outputs are outside it.",
+    "Single-process resident peaks do not certify aggregate or target-size memory.",
+    "Writer controls cover interleaved reservation/writes and rejected malformed requests, not injected crashes or power loss.",
+    "A single P=3200 column cannot raise the full-bank quadric section bounds."
+  ],
+  "preserved_global_status": {
+    "full_bank_precision_pi": 800,
+    "actual_columns_at_precision_1600": [
+      1
+    ],
+    "section_lower_bounds": [
+      4994,
+      4945,
+      4928
+    ],
+    "anchor_lower_bounds": [
+      4776,
+      4448,
+      4184
+    ],
+    "sufficient_nonanchor_bounds": [
+      25255,
+      25369,
+      25476
+    ],
+    "gaps": [
+      20261,
+      20424,
+      20548
+    ],
+    "quadric_balls_containing_zero": 6188,
+    "W_Gaussian_valuation": 1024,
+    "W_Gaussian_error": 2025,
+    "W_Gaussian_relative_precision": 1001,
+    "W_Gaussian_inverted": false,
+    "positive_exact_quadric_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "actual_columns_at_precision_3200": [
+      0
+    ]
+  },
+  "next_execution": {
+    "first_unused_source": 533,
+    "decision": "Cost P=10552 child-map full/RHS/extension actions and multi-digit reuse of the existing low factor. Split bounded phases as needed, compare backends and old actual overlaps, then give a complete prospective phase/storage/retention budget before another actual refinement.",
+    "target_low_modulus_bits": 1319,
+    "maximum_existing_factor_bits": 200,
+    "proposed_digit_solves": 7,
+    "target_uniform_bytes_per_column": 2423583360,
+    "target_weighted_bytes_per_column": 1217418840,
+    "compact_zero_residual_and_regenerated_weighted_projection_require_controls": true,
+    "larger_full_bank_costed": false,
+    "complete_P10552_solve_costed": false,
+    "precision_schedules_to_compare": [
+      "staged refinement ladder",
+      "direct target-precision jump"
+    ],
+    "reuse_multiple_RHS_cost_controls_from_D126": true
+  },
+  "freeze": "Passing sources and artifacts freeze at first pass; report and ledger freeze at first passing review. All prior freezes remain in force.",
+  "downstream_gates": [
+    "D99 nonhyperellipticity and D108 spectral rejection",
+    "Original residual kernels and preceding exact-zero prerequisites",
+    "Marked X40/Y64 covers",
+    "Genus-64 section and degree-51 torsion backend",
+    "Global F256 action",
+    "Final invariant and original-kernel/ramification checks"
+  ],
+  "correspondence_sent": false,
+  "state_timing_certificate": {
+    "completed_phases": 1905,
+    "state_arithmetic_phases": 1904,
+    "writer_control_phases": 1,
+    "sum_recorded_phase_seconds": 10562.838037824957,
+    "maximum_phase_seconds": 52.19051416707225,
+    "maximum_single_phase_peak_rss_bytes": 474185728,
+    "coordinator_current_invocation_wall_seconds": 4245.664491750067,
+    "phases_resumed_from_prior_invocations": 0
+  },
+  "finalization_scheduler": {
+    "path": "/Users/musty/two/dembele/pari/run_d129_finish.py",
+    "sha256": "f30125976f9305f39b357b3d78025853343ffaf59ab1ee538c5fb1db0872a53b"
+  }
+}

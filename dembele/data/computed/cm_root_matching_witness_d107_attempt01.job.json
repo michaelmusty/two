@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/392_cm_matching_witness.py"
+  ],
+  "status": "failed",
+  "exit_code": 1,
+  "wall_seconds": 3.046248040976934,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_root_matching_witness_d107_attempt01.log",
+    "sha256": "2d970c9a76b6540fcc3f1b4edd3511e47a539e56b7b460290df297f638cfe018"
+  },
+  "private_process_group": 45697,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/392_cm_matching_witness.py",
+    "sha256": "e65b409b6b3a028aaa6be52e1b251136df4f0b025746066985025062c7b63bc4"
+  },
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d107-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

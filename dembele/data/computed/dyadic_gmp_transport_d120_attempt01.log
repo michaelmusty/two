@@ -1,0 +1,12 @@
+MOBIUS_STATES|1/174; seconds=0.126
+MOBIUS_STATES|31/174; seconds=3.840
+MOBIUS_STATES|61/174; seconds=7.373
+MOBIUS_STATES|91/174; seconds=10.840
+MOBIUS_STATES|121/174; seconds=14.443
+MOBIUS_STATES|151/174; seconds=18.036
+MOBIUS_CONTROL|{"status": "pass", "milestone": "D120", "controls": {"arbitrary_precision_product_bits": [3, 25, 129, 1536], "independent_recurrence_controls": 12, "integer_arithmetic_has_no_fixed_width_overflow": true}, "frozen_working_precision_pi": 200, "basis_columns_checked": [0], "state_equations_checked": 174, "child_actions_checked": 348, "distinct_child_maps_checked": 165, "CM_charts_checked": 17, "state_coefficients_checked": 278400, "CM_coefficients_checked": 54400, "state_sweep_wall_seconds": 20.889108542120084, "CM_charts_wall_seconds": 3.127240707864985, "median_child_wall_seconds": 0.05969729204662144, "maximum_packed_product_bytes": 95640, "polynomial_products": 827393, "dense_operator_table_allocated": false, "actual_moment_precision_increased": false, "full_precision_solver_implemented": false, "candidate_identification_proved": false}
+GMP_COST|{"synthetic_P": 200, "coefficient_modulus_bits": 25, "single_action_wall_seconds": 0.06725379195995629, "maximum_packed_product_bytes": 47640, "polynomial_products": 2104}
+GMP_COST|{"synthetic_P": 400, "coefficient_modulus_bits": 50, "single_action_wall_seconds": 0.1503628338687122, "maximum_packed_product_bytes": 167370, "polynomial_products": 4204}
+GMP_COST|{"synthetic_P": 800, "coefficient_modulus_bits": 100, "single_action_wall_seconds": 0.3958228749688715, "maximum_packed_product_bytes": 646785, "polynomial_products": 8404}
+GMP_COST|{"synthetic_P": 1600, "coefficient_modulus_bits": 200, "single_action_wall_seconds": 1.1456371250096709, "maximum_packed_product_bytes": 2493660, "polynomial_products": 16804}
+PASS|463_DYADIC_GMP_TRANSPORT

@@ -1,0 +1,61 @@
+{
+  "milestone": "D111",
+  "review_date": "2026-09-25",
+  "scope": "Complete arithmetic stars and stabilizers for the existing 58 classes; finite edge reduction; sixteen actual invariant scalar harmonic cocycles and bounded boundary measures.",
+  "sources": [
+    {
+      "title": "Cameron Franc and Marc Masdeu, Computing fundamental domains for the Bruhat-Tits tree for GL2(Qp), p-adic automorphic forms, and the canonical embedding of Shimura curves",
+      "url": "https://arxiv.org/pdf/1201.0356",
+      "locations": ["Sections 4.1 and 4.2", "Section 4.4", "Sections 5 and 6 as context only"],
+      "use": "Definitions of invariant harmonic cocycles and boundary distributions, edge/ball correspondence and finite linear algebra. Our scalar bounded-measure argument is proved directly over the ramified K; no Qp overconvergent control theorem or precision constants are transferred."
+    },
+    {
+      "title": "Marc Masdeu and Eloi Torrents, Fundamental domains for quaternionic S-arithmetic groups over totally real fields",
+      "url": "https://arxiv.org/pdf/2510.09356",
+      "locations": ["Section 2.1", "Lemma 2.2", "Sections 2.2 and 3 as context"],
+      "use": "Column-lattice tree action over local completions of totally real fields and representatives with global integral entries. No external implementation or full domain algorithm is run."
+    },
+    {
+      "title": "Lassina Dembele, A hyperelliptic Shimura quotient of genus 16",
+      "url": "https://arxiv.org/pdf/1906.06772",
+      "locations": ["Theorem 4.3", "Proposition 4.4"],
+      "use": "Geometric uniformization retained from D110. The paper's hyperellipticity claim is not used; the project's D99 nonhyperelliptic conclusion remains unchanged."
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/precompute.m",
+      "locations": ["get_rids", "get_tps", "precompute_tps"],
+      "use": "Read-only same-session ideal and transport data. All local stars and global ideal sandwich assertions are independently certified."
+    },
+    {
+      "path": "dembele/data/computed/hyperellipticity_fresh_brandt_d99.json",
+      "use": "The unchanged 58-class matrix, full stabilizer counts and class-number facts. Complete class/unit enumeration retains its certified Magma provenance."
+    },
+    {
+      "path": "dembele/data/computed/definite_dyadic_certificate_d109.json",
+      "use": "Fixed exact Hensel splitting, refined on the same root branch when reduction needs more precision."
+    },
+    {
+      "path": "dembele/data/computed/dyadic_group_transport_review_d110.json",
+      "use": "Arithmetic group identification, explicit u/W/h witnesses and 643 inherited source hashes."
+    }
+  ],
+  "project_deductions": [
+    "P-supported exact global indices plus residue-spanning local frames certify all 58 global right ideals by localization and Nakayama.",
+    "All 174 neighbor transports and 164 projective stabilizer elements give complete three-element local stars, exact reversals and a terminating arithmetic edge reducer.",
+    "A 376-by-174 integer relation matrix has rank 158; sixteen integral null vectors are independent, certified by exact products and ranks modulo 101.",
+    "There are 155 oriented edge orbits, nine inverted orbits and 73 reversal pairs; scalar harmonic values vanish on the inverted orbits.",
+    "The chosen cocycle basis has integer values of absolute size at most four, giving uniform measure denominator bound d=0 on all boundary compact opens.",
+    "Exact Newton refinement and Hensel branch checks support reduction beyond the initial splitting precision; the reduced-precision control recovers the same depth-32 answer."
+  ],
+  "excluded_inferences": [
+    "No separate connected fundamental subtree, group presentation or complete generating set.",
+    "No saturated integral cohomology basis claim.",
+    "No actual moment bank, dyadic CM/frame matching, Shimura tangent/jet or candidate identification.",
+    "No target polynomial, expanded class census, new level or Hecke prime.",
+    "No unchanged transfer of a Qp overconvergent control theorem to K."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

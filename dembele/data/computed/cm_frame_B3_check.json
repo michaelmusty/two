@@ -1,0 +1,120 @@
+{
+  "status": "pass",
+  "milestone": "D75",
+  "date": "2026-09-18",
+  "independent_check": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/magma/145_cm_frame_B3_check.m"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "wall_seconds": 16.051051042042673,
+    "timeout_seconds": 180,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_check.out",
+      "sha256": "272b85142d022d71f102dd21963f13008292c8f96db020978a2477f0264111aa"
+    },
+    "memory_limit_bytes": 2000000000,
+    "sources": [
+      {
+        "path": "/Users/musty/two/dembele/magma/145_cm_frame_B3_check.m",
+        "sha256": "3216186a4409e4bc74caf640355490b1a09e2b7baac86d9c7d47fa56509ca84d"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_transfer.m",
+        "sha256": "bfb14fc7fd0a43e233030ce8241f59154530f8c008a3fc4d93cda144ac248c2b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+        "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+        "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.m",
+        "sha256": "fb0a63bffbfbd7f2d097bf20226c4bc3f5f1211a66dd007847c524a1f97e4348"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/144_cm_frame_B3_check.py",
+      "sha256": "f1c40dd57d5d0f4b607e133dc86a475095811723c98c1133653bfff9a880d62d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_normalization.json",
+      "sha256": "360c291d304db601e13e7f60cab12eb6d0bcada51857f9b706166f7b622abd8f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_check.json",
+      "sha256": "aa6db163357d0c5b94b207d25322aae0284c4057144c04af675249288286ba2b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_ideal_probe.json",
+      "sha256": "923c34032f5fc5fa888c54ba516f6af70aa832caa41ea36234c9d8fb42ffd3f6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/129_cm_frame_normalization_check.py",
+      "sha256": "7925d6af13a244e11f22981c4746c98492becec5f00822bd63c31e6d25cb7120"
+    }
+  ],
+  "numerator_height": "583",
+  "transfer_precision_digits": 1,
+  "old_128_digit_lift_preserved": true,
+  "number_field_cover_obtained": false,
+  "negative_control": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/data/computed/cm_frame_B3_negative_control.m"
+    ],
+    "status": "pass",
+    "exit_code": 1,
+    "wall_seconds": 15.709471624926664,
+    "timeout_seconds": 180,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_negative_control.out",
+      "sha256": "3dc0629d300578f774b28e7dbc3636d8974a4bae072e079d873929ffbc907a3e"
+    },
+    "memory_limit_bytes": 2000000000,
+    "sources": [
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_negative_control.m",
+        "sha256": "839d990272587c8ea3a79fca6c47daed5e87b453a2fc1a30376a529a000ea5f8"
+      },
+      {
+        "path": "/Users/musty/two/dembele/magma/145_cm_frame_B3_check.m",
+        "sha256": "3216186a4409e4bc74caf640355490b1a09e2b7baac86d9c7d47fa56509ca84d"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_transfer.m",
+        "sha256": "bfb14fc7fd0a43e233030ce8241f59154530f8c008a3fc4d93cda144ac248c2b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+        "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+        "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.m",
+        "sha256": "fb0a63bffbfbd7f2d097bf20226c4bc3f5f1211a66dd007847c524a1f97e4348"
+      }
+    ],
+    "mutation": "negate the denominator: divisor unchanged, nonsquare twist by -1 in F31"
+  }
+}

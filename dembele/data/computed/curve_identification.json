@@ -1,0 +1,582 @@
+{
+  "status": "PASS: exact datum and full-graph audit; geometric argument in companion report",
+  "order": {
+    "field_discriminant": 2147483648,
+    "algebra_finite_discriminant_norm": 2,
+    "real_split_index_ascending": 4,
+    "real_split_b": "0.3901806440322565?",
+    "saved_order_closed_under_products": true,
+    "absolute_reduced_trace_gram_determinant": "85070591730234615865843651857942052864",
+    "maximal_order_discriminant_formula_matches": true,
+    "class_number_proved": 1,
+    "unit_signature_rank": 8,
+    "unit_generators": [
+      "-1",
+      "b^4 - 4*b^2 + 1",
+      "b^6 - 6*b^4 + 9*b^2 - 1",
+      "-b^2 + 1",
+      "-b^7 + 7*b^5 - 14*b^3 + 7*b + 1",
+      "b^5 - 5*b^3 + 5*b - 1",
+      "-b^3 + 3*b - 1",
+      "b^4 + b^3 - 4*b^2 - 4*b + 1"
+    ],
+    "unit_signature_rows": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    ]
+  },
+  "upstairs": {
+    "vertices": 116,
+    "edges": 155,
+    "genus": 40
+  },
+  "atkin_lehner": {
+    "fixed_vertices": 0,
+    "reversed_edges": [
+      [
+        4,
+        62,
+        32
+      ],
+      [
+        42,
+        100,
+        1
+      ],
+      [
+        43,
+        101,
+        1
+      ],
+      [
+        44,
+        102,
+        1
+      ],
+      [
+        45,
+        103,
+        1
+      ],
+      [
+        46,
+        104,
+        1
+      ],
+      [
+        47,
+        105,
+        1
+      ],
+      [
+        48,
+        106,
+        1
+      ],
+      [
+        49,
+        107,
+        1
+      ]
+    ],
+    "homology_trace": -8,
+    "plus_dimension": 16,
+    "minus_dimension": 24
+  },
+  "quotient_with_midpoints": {
+    "vertices": 67,
+    "edges": 82,
+    "genus": 16
+  },
+  "stable": {
+    "vertices": 30,
+    "edges": 45,
+    "genus": 16,
+    "agrees_with_D45_weighted_graph": true
+  },
+  "stabilization_steps": [
+    {
+      "vertex": 0,
+      "neighbors": [
+        1
+      ],
+      "lengths": [
+        "8"
+      ]
+    },
+    {
+      "vertex": 1,
+      "neighbors": [
+        2,
+        3
+      ],
+      "lengths": [
+        "8",
+        "8"
+      ]
+    },
+    {
+      "vertex": 2,
+      "neighbors": [
+        5,
+        3
+      ],
+      "lengths": [
+        "4",
+        "16"
+      ]
+    },
+    {
+      "vertex": 3,
+      "neighbors": [
+        4,
+        5
+      ],
+      "lengths": [
+        "16",
+        "20"
+      ]
+    },
+    {
+      "vertex": 4,
+      "neighbors": [
+        58,
+        5
+      ],
+      "lengths": [
+        "16",
+        "36"
+      ]
+    },
+    {
+      "vertex": 6,
+      "neighbors": [
+        5,
+        8
+      ],
+      "lengths": [
+        "4",
+        "2"
+      ]
+    },
+    {
+      "vertex": 7,
+      "neighbors": [
+        5,
+        9
+      ],
+      "lengths": [
+        "4",
+        "2"
+      ]
+    },
+    {
+      "vertex": 10,
+      "neighbors": [
+        8,
+        14
+      ],
+      "lengths": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "vertex": 11,
+      "neighbors": [
+        9,
+        15
+      ],
+      "lengths": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "vertex": 12,
+      "neighbors": [
+        8,
+        16
+      ],
+      "lengths": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "vertex": 13,
+      "neighbors": [
+        9,
+        17
+      ],
+      "lengths": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "vertex": 26,
+      "neighbors": [
+        18
+      ],
+      "lengths": [
+        "1"
+      ]
+    },
+    {
+      "vertex": 18,
+      "neighbors": [
+        14,
+        30
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 27,
+      "neighbors": [
+        19
+      ],
+      "lengths": [
+        "1"
+      ]
+    },
+    {
+      "vertex": 19,
+      "neighbors": [
+        15,
+        31
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 28,
+      "neighbors": [
+        20
+      ],
+      "lengths": [
+        "1"
+      ]
+    },
+    {
+      "vertex": 20,
+      "neighbors": [
+        16,
+        32
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 29,
+      "neighbors": [
+        21
+      ],
+      "lengths": [
+        "1"
+      ]
+    },
+    {
+      "vertex": 21,
+      "neighbors": [
+        17,
+        33
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 58,
+      "neighbors": [
+        5
+      ],
+      "lengths": [
+        "52"
+      ]
+    },
+    {
+      "vertex": 5,
+      "neighbors": [
+        8,
+        9
+      ],
+      "lengths": [
+        "6",
+        "6"
+      ]
+    },
+    {
+      "vertex": 59,
+      "neighbors": [
+        42
+      ],
+      "lengths": [
+        "1/2"
+      ]
+    },
+    {
+      "vertex": 42,
+      "neighbors": [
+        30,
+        52
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 60,
+      "neighbors": [
+        43
+      ],
+      "lengths": [
+        "1/2"
+      ]
+    },
+    {
+      "vertex": 43,
+      "neighbors": [
+        31,
+        53
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 61,
+      "neighbors": [
+        44
+      ],
+      "lengths": [
+        "1/2"
+      ]
+    },
+    {
+      "vertex": 44,
+      "neighbors": [
+        32,
+        54
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 62,
+      "neighbors": [
+        45
+      ],
+      "lengths": [
+        "1/2"
+      ]
+    },
+    {
+      "vertex": 45,
+      "neighbors": [
+        33,
+        55
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 63,
+      "neighbors": [
+        46
+      ],
+      "lengths": [
+        "1/2"
+      ]
+    },
+    {
+      "vertex": 46,
+      "neighbors": [
+        30,
+        56
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 64,
+      "neighbors": [
+        47
+      ],
+      "lengths": [
+        "1/2"
+      ]
+    },
+    {
+      "vertex": 47,
+      "neighbors": [
+        31,
+        57
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 65,
+      "neighbors": [
+        48
+      ],
+      "lengths": [
+        "1/2"
+      ]
+    },
+    {
+      "vertex": 48,
+      "neighbors": [
+        32,
+        50
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "vertex": 66,
+      "neighbors": [
+        49
+      ],
+      "lengths": [
+        "1/2"
+      ]
+    },
+    {
+      "vertex": 49,
+      "neighbors": [
+        33,
+        51
+      ],
+      "lengths": [
+        "1",
+        "1"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "dembele/pari/99_curve_identification.py",
+      "sha256": "e30269377370abaccc3924ce6f08fe1dc7d3b9c011de207c6da1a96bbc3f1273"
+    },
+    {
+      "path": "dembele/pari/96_cm_orbit.py",
+      "sha256": "d5da76d6f0d130ba24ea1b0c69fcd8782ecefa8bd6c34b5980281c78a00a323b"
+    },
+    {
+      "path": "dembele/data/computed/normalizer_domain.bin",
+      "sha256": "83a00e9829339ac9d1fd1923db9f77cbdd2ad3f72fd3aa0044c724097c119dd0"
+    },
+    {
+      "path": "dembele/data/computed/stable_graph_brandt.json",
+      "sha256": "7f229aa1118aea8c4660fc14010691b641d3faf8c8b8b34db92faa89cb13af56"
+    },
+    {
+      "path": "dembele/data/computed/brandt_graph_check.json",
+      "sha256": "c5d7d24e15218becaba70cd51523ba555b850eb6d0b387b60c041ee41e99f021"
+    },
+    {
+      "path": "dembele/data/computed/stable_graph_audit.json",
+      "sha256": "8a264e71496c017d5c56ac5c288cfdbf4581de3b2aedcb37f84d379e6f009da6"
+    }
+  ]
+}

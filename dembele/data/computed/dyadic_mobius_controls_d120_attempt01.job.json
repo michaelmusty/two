@@ -1,0 +1,31 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+    "--controls"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.20941775012761354,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_mobius_controls_d120_attempt01.log",
+    "sha256": "e30872a1c193b2f2af584e5d2326448af9f7890dd201781cdfbfa7f029eff378"
+  },
+  "private_process_group": 37948,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+    "sha256": "d1a595cfd6accde0f0b57419bdc16cbf7da1c65b15842f9ba58c8a91381c7cf2"
+  }
+}

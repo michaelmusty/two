@@ -1,5 +1,14 @@
 # The height of the target polynomial: the last binding unknown
 
+> **2026-09-14 audit: the ramification-derived numerical estimates below are
+> withdrawn.** Containment in a unipotent group of order 256 does not establish
+> full wild inertia or the asserted splitting pattern. The different estimate
+> does not correctly account for the ramified base. The subsequent extrapolated
+> root-discriminant/height estimates and signature deductions are not certificates.
+> Use the original paper's Serre supplement for ramification bounds; it does not
+> bound coefficients of our eventual generator. See `review-2026-09-14.md` §7.
+> The original text is retained to document the source of the old estimates.
+
 **Date:** 2026-08-16. Follows `gate4-dim2-calibration.md`, which reduced the
 whole precision question to one number: `H`, the height of the coefficients of
 a degree-257 defining polynomial of `L/Q(sqrt 2)` (equivalently `L/F`), since

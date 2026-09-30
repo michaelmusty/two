@@ -1,0 +1,12 @@
+--- a/fdom.c
++++ b/fdom.c
+@@ -4792,7 +4792,7 @@ algtracebasis(GEN al)
+   GEN mt = alg_get_multable(al), p = alg_get_char(al);
+   long i, l = lg(mt);
+   GEN v = cgetg(l, t_VEC);
+-  if (signe(p)) for (i = 1; i < l; i++) gel(v, i) = FpM_trace(gel(mt, i), p);
+-  else          for (i = 1; i < l; i++) gel(v, i) = ZM_trace(gel(mt, i));
++  if (signe(p)) for (i = 1; i < l; i++) gel(v, i) = modii(gtrace(gel(mt, i)), p);
++  else          for (i = 1; i < l; i++) gel(v, i) = gtrace(gel(mt, i));
+   return gerepileupto(av,v);
+ }

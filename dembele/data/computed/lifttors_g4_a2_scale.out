@@ -1,0 +1,17 @@
+STAGE|initialized|genus=4|points=46|ms=15
+STAGE|doubling_checked|ms=19
+Lifting from prec O(97^1) to O(97^2)
+TRACE|lift_column|index=1|stack_bytes=1074880
+TRACE|lift_column|index=16|stack_bytes=1248768
+TRACE|lift_system|rows=132|columns=19|stack_bytes=1273024
+TRACE|lift_kernel_basis|rank=9|nullity=10|rows=132
+Lifting from prec O(97^2) to O(97^4)
+TRACE|lift_column|index=1|stack_bytes=679160
+TRACE|lift_column|index=16|stack_bytes=853688
+TRACE|lift_system|rows=132|columns=19|stack_bytes=878048
+TRACE|lift_kernel_basis|rank=9|nullity=10|rows=132
+STAGE|lift_completed|ms=264
+DATA|{"genus":4,"d0":9,"p":97,"a":2,"precision_exponent":4,"evaluation_points":46,"section_dimensions":[6, 15, 24],"jacobian_size_bytes":489240,"timing_ms":{"init":15,"double_and_zero_check":19,"lift_one_point":264,"lift_checks":25}}
+PASS|101_lifttors_scale
+
+RESOURCE|wall_seconds=0.405

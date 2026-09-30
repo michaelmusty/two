@@ -1,0 +1,44 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/166_cm_frame_cover_makdisi.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 3.9037859580712393,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.out",
+    "sha256": "2f4eee1ae1df231d54ff5847effb4d1b7d5dfb4add240ffff8c336db9927b781"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/magma/166_cm_frame_cover_makdisi.m",
+      "sha256": "e7187e8ac2b5ee3798044471f94c405a7436a82e708c05c83f67121a6deb96bc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_sections.m",
+      "sha256": "55e88dd9f86ff1300e3a9e6bca964ef8e6ae399b487a4af7f6e978d45ab3139b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_sections.json",
+      "sha256": "033915a326c652e3d640420d05efe1e58317138ef16911e91f21d46f78b87c36"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.m",
+      "sha256": "2774798b08662abb33e26022abcd7ffdc914f7535f19ff6bda20885f766c6e63"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_structure.m",
+      "sha256": "1c37e71d16c0c89afbac5a51ee04f236dfbd0b606c1390ac630721517791dc09"
+    }
+  ]
+}

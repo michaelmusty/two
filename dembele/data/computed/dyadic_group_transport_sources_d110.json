@@ -1,0 +1,59 @@
+{
+  "milestone": "D110",
+  "review_date": "2026-09-25",
+  "scope": "Arithmetic group and Atkin-Lehner coset in the fixed D109 splitting, exact selected Brandt ideal correspondences, and certified transports moving the base vertex.",
+  "sources": [
+    {
+      "title": "Lassina Dembele, A hyperelliptic Shimura quotient of genus 16",
+      "url": "https://arxiv.org/pdf/1906.06772",
+      "locations": ["Theorem 4.3", "Proposition 4.4", "Sections 5.1 and 5.4"],
+      "use": "Geometric Cerednik-Drinfeld uniformization, two-layer Brandt graph, and Atkin-Lehner layer interchange. The paper's hyperellipticity claim is not invoked; D99 establishes the project's nonhyperelliptic conclusion."
+    },
+    {
+      "title": "Marc Masdeu and Eloi Torrents, Fundamental domains for quaternionic S-arithmetic groups over totally real fields",
+      "url": "https://arxiv.org/pdf/2510.09356",
+      "locations": ["Sections 2.1 and 2.2", "Section 3"],
+      "use": "Norm-one S-arithmetic setting and column-lattice tree action. No full algorithm execution or degree-eight performance prediction."
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/precompute.m",
+      "locations": ["get_rids", "get_tps", "precompute_tps"],
+      "use": "Read-only access to same-session ideal representatives and cached arithmetic correspondences. Their selected ideal inclusions are independently verified."
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/definite.m",
+      "locations": ["HeckeOperatorDefiniteBig"],
+      "use": "Confirms T[i,j] is the number of representatives tps[j,i]. The new matrix matches D99 entry for entry."
+    },
+    {
+      "path": "dembele/data/computed/hyperellipticity_fresh_brandt_d99.json",
+      "use": "Saved 58-class matrix, stabilizers, and proved ordinary and narrow class numbers."
+    },
+    {
+      "path": "dembele/data/computed/hyperellipticity_order_review_d99.json",
+      "use": "Certified unit signatures imply that totally positive units are squares."
+    },
+    {
+      "path": "dembele/data/computed/definite_dyadic_certificate_d109.json",
+      "use": "Unchanged exact Hensel splitting and the norm-one unit u. All 629 D109 hashes are preserved."
+    }
+  ],
+  "project_deductions": [
+    "Projective R-units have norm-parity quotient C2, whose kernel is the projective norm-one group, using D99's class and unit facts.",
+    "Class number one identifies the localized order normalizer modulo F-star with the projective R-unit group.",
+    "Seven exact ideal sandwiches along the saved odd closed walk supply an arithmetic odd-coset witness.",
+    "Normalizing that witness gives W=(1+b/2)i+cj with W^2=-(2+b), where c=(b^7-7b^5+14b^3-7b)/2.",
+    "The W and W*u*W-inverse actions move the base vertex by seven and fourteen edges, with certified lattice transitions.",
+    "The product u*(W*u*W-inverse) has norm one and trace of valuation -7, proving hyperbolic translation length fourteen."
+  ],
+  "excluded_inferences": [
+    "No complete fundamental domain, generating set or finite edge-reduction implementation.",
+    "No invariant harmonic cocycle, actual moments, dyadic CM/frame labeling or Shimura tangent/jet.",
+    "No new level, additional Hecke prime or expansion of the existing 58-class census.",
+    "No candidate identification or target field polynomial."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

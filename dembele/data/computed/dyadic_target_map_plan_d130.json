@@ -1,0 +1,1041 @@
+{
+  "milestone": "D130",
+  "kind": "bounded_job_plan",
+  "jobs": [
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_full_e000_b1_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "full",
+        "--state",
+        "0",
+        "--branch",
+        "1",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_full_e000_b1_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "full",
+        "--state",
+        "0",
+        "--branch",
+        "1",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_full_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "full",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_full_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "full",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_full_e173_b1_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "full",
+        "--state",
+        "173",
+        "--branch",
+        "1",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_full_e173_b1_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "full",
+        "--state",
+        "173",
+        "--branch",
+        "1",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_rhs_e000_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_rhs_e000_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_rhs_e000_b1_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "0",
+        "--branch",
+        "1",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_rhs_e000_b1_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "0",
+        "--branch",
+        "1",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_rhs_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_rhs_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_rhs_e173_b1_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "173",
+        "--branch",
+        "1",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_rhs_e173_b1_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "173",
+        "--branch",
+        "1",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend3200_e000_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--seed",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend3200_e000_b1_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "0",
+        "--branch",
+        "1",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--seed",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend3200_e000_b1_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "0",
+        "--branch",
+        "1",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--seed",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend3200_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--seed",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend3200_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--seed",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend3200_e173_b1_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "173",
+        "--branch",
+        "1",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--seed",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend3200_e173_b1_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "173",
+        "--branch",
+        "1",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--seed",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_cm_e000_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "cm",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_cm_e000_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "cm",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_cm_e000_b1_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "cm",
+        "--state",
+        "0",
+        "--branch",
+        "1",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_cm_e000_b1_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "cm",
+        "--state",
+        "0",
+        "--branch",
+        "1",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_cm_e016_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "cm",
+        "--state",
+        "16",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_cm_e016_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "cm",
+        "--state",
+        "16",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_cm_e016_b1_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "cm",
+        "--state",
+        "16",
+        "--branch",
+        "1",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_cm_e016_b1_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "cm",
+        "--state",
+        "16",
+        "--branch",
+        "1",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionu800_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--lower",
+        "800"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionu800_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--lower",
+        "800"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionrhsu800_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--lower",
+        "800"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionrhsu800_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--lower",
+        "800"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionu3200_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--lower",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionu3200_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--lower",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionrhsu3200_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--lower",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionrhsu3200_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--lower",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionu6400_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--lower",
+        "6400"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionu6400_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--lower",
+        "6400"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionrhsu6400_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--lower",
+        "6400"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionrhsu6400_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--lower",
+        "6400"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionu9600_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--lower",
+        "9600"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionu9600_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--lower",
+        "9600"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionrhsu9600_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--lower",
+        "9600"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_correctionrhsu9600_e083_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--lower",
+        "9600"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend800_e000_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--seed",
+        "800"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend800_e000_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--seed",
+        "800"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend1600_e000_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "10552",
+        "--seed",
+        "1600"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_target_extend1600_e000_b0_gmp_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "extend",
+        "--state",
+        "0",
+        "--branch",
+        "0",
+        "--backend",
+        "GMP",
+        "--precision",
+        "10552",
+        "--seed",
+        "1600"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_P6400_cost_full_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "full",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "6400"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_P6400_cost_rhs_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "6400"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_P6400_cost_correctionu3200_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "6400",
+        "--lower",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_P6400_cost_correctionrhsu3200_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "6400",
+        "--lower",
+        "3200"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_P3200_cost_correctionu1600_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "3200",
+        "--lower",
+        "1600"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_P3200_cost_correctionrhsu1600_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "3200",
+        "--lower",
+        "1600"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_P1600_cost_correctionu800_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "1600",
+        "--lower",
+        "800"
+      ]
+    },
+    {
+      "driver": "dembele/pari/533_dyadic_target_operation_controls.py",
+      "stem": "dyadic_P1600_cost_correctionrhsu800_e083_b0_adaptive_d130",
+      "marker": "PASS|533_DYADIC_TARGET_OPERATION_CONTROLS",
+      "args": [
+        "--mode",
+        "correction-rhs",
+        "--state",
+        "83",
+        "--branch",
+        "0",
+        "--backend",
+        "ADAPTIVE",
+        "--precision",
+        "1600",
+        "--lower",
+        "800"
+      ]
+    }
+  ]
+}

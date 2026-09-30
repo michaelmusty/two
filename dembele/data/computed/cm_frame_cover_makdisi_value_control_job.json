@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi_value_control.m"
+  ],
+  "status": "pass",
+  "exit_code": 1,
+  "wall_seconds": 2.0881715840660036,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi_value_control.out",
+    "sha256": "8d60d86dee88a3ec34dbd5e8916f73ed7fa768d98561df0f8bdd26a80033fc9a"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/magma/168_cm_frame_cover_makdisi_check.m",
+      "sha256": "b41f420f41bfa4b59244f70f5404c89f81e5baa77afb08b39b0b6513eac26af1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi_value_control.m",
+      "sha256": "87d179207f0fd9ad99a89c07ec2b1351a806fb5433afbabdd83a74fe07cb8ad4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi_check_job.json",
+      "sha256": "a7d342f78f5e30f0797a48fdd20dbdc16f5f6f619a9917b1f32a059eb90f64b6"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+// D85 redirected loads; original SHA256 df4a07e82765366439d24a9c6342d219bdda342bb2c200109d8bea9eb6621d49
+// D85 split and restricted search; original SHA256 51046f3a71cd609bda05b31d7702feceda7f6b20801e517b25c2fa435058a5be
+SetQuitOnError(true); SetColumns(0); SetSeed(83266); started:=Cputime();
+load "dembele/magma/d85_128_199_cm_frame_cubic_precision_model.m";
+WRcoords:=RBase(Matrix(ZZ,checkpoint_descended_divisor_coordinates));
+WR:=RMultiply(WRcoords,RG2);
+qcoeff:=RBaseRow(checkpoint_q_coefficients); q:=RMultiply(qcoeff,RG1);
+ucoeff:=RBaseRow(checkpoint_u_coefficients); u:=RMultiply(ucoeff,RG4);
+cubeSpace:=RProduct(RProduct(WR,WR,201),WR,321);
+normSpace:=RProduct(WR,RTau(WR,tt),201);
+ok,f:=RDegreeZero(RG2,normSpace,RG2); assert ok;
+fcoeff:=RNormalize(RCoordinates(RG2,f)); assert fcoeff[2] eq 0;
+f:=RMultiply(fcoeff,RG2); assert RTau(f,tt) eq f;
+ut:=RTau(u,tt); qt:=RTau(q,tt);
+normleft:=RScaleRows(u,ut);
+normright:=RScaleRows(RScaleRows(RScaleRows(RScaleRows(f,f),f),q),qt);
+good:=Min([j:j in [1..1024]|RReduce(RCols(normright,[j]))[1,1] ne 0]);
+c:=RMultiply(RCols(normleft,[good]),RInverse(RCols(normright,[good])));
+assert c[2] eq 0 and IsUnit(c[1][1,1]);
+assert normleft eq RMultiply(c,normright);
+assert not RIsZero(RSubtract(RScaleRows(u,qt),RScaleRows(ut,q)));
+assert RIsZero(RMultiply(RScaleRows(RG2,u),REquations(cubeSpace)));
+assert RIsZero(RMultiply(RScaleRows(RG2,f),REquations(normSpace)));
+print "PASS|KUMMER_DIVISOR_AND_NORM_AT_HIGHER_PRECISION";
+
+printf "CHECKPOINT_DESCENDED_DIVISOR_COORDINATES|%o\n",BaseCoefficients(WRcoords);
+printf "CHECKPOINT_Q_COEFFICIENTS|%o\n",BaseCoefficients(qcoeff)[1];
+printf "CHECKPOINT_U_COEFFICIENTS|%o\n",BaseCoefficients(ucoeff)[1];
+printf "CHECKPOINT_F_COEFFICIENTS|%o\n",BaseCoefficients(fcoeff)[1];
+printf "CHECKPOINT_NORM_SCALAR|%o\n",Integers()!c[1][1,1];
+printf "CPU_SECONDS|%o\n",Cputime(started);
+print "PASS|266_POINTED_F_AND_NORM";quit;

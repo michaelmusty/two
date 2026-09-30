@@ -1,0 +1,135 @@
+{
+  "milestone": "D130",
+  "kind": "bounded_job_plan",
+  "jobs": [
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_coarse_c00_n0_direct_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "cm",
+        "--chart",
+        "0",
+        "--order",
+        "0",
+        "--method",
+        "direct"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_coarse_c00_n0_horner_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "cm",
+        "--chart",
+        "0",
+        "--order",
+        "0",
+        "--method",
+        "horner"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_coarse_c00_n1_direct_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "cm",
+        "--chart",
+        "0",
+        "--order",
+        "1",
+        "--method",
+        "direct"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_coarse_c00_n1_horner_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "cm",
+        "--chart",
+        "0",
+        "--order",
+        "1",
+        "--method",
+        "horner"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_coarse_c00_n2_direct_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "cm",
+        "--chart",
+        "0",
+        "--order",
+        "2",
+        "--method",
+        "direct"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_coarse_c00_n2_horner_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "cm",
+        "--chart",
+        "0",
+        "--order",
+        "2",
+        "--method",
+        "horner"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_coarse_c00_n3_direct_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "cm",
+        "--chart",
+        "0",
+        "--order",
+        "3",
+        "--method",
+        "direct"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_coarse_c00_n3_horner_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "cm",
+        "--chart",
+        "0",
+        "--order",
+        "3",
+        "--method",
+        "horner"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_synthetic_frame_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "frame"
+      ]
+    }
+  ]
+}

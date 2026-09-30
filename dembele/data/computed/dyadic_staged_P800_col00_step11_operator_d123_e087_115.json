@@ -1,0 +1,134 @@
+{
+  "status": "pass",
+  "milestone": "D123",
+  "working_precision_pi": 800,
+  "eliminated_positive_moments": 32,
+  "harmonic_basis_column": 0,
+  "seed_precision_pi": 400,
+  "actual_moment_precision_increased": false,
+  "full_sixteen_column_bank_refined": false,
+  "seed_stem": "dyadic_actual_P400_col0_verified_d121",
+  "correction_history": [
+    {
+      "before_pi": 400,
+      "after_pi": 433
+    },
+    {
+      "before_pi": 433,
+      "after_pi": 466
+    },
+    {
+      "before_pi": 466,
+      "after_pi": 499
+    },
+    {
+      "before_pi": 499,
+      "after_pi": 532
+    },
+    {
+      "before_pi": 532,
+      "after_pi": 565
+    },
+    {
+      "before_pi": 565,
+      "after_pi": 598
+    },
+    {
+      "before_pi": 598,
+      "after_pi": 631
+    },
+    {
+      "before_pi": 631,
+      "after_pi": 664
+    },
+    {
+      "before_pi": 664,
+      "after_pi": 697
+    },
+    {
+      "before_pi": 697,
+      "after_pi": 730
+    }
+  ],
+  "kind": "operator_chunk",
+  "purpose": "correction",
+  "first_state": 87,
+  "last_state": 115,
+  "input_metadata": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_step11_prepared_d123.json",
+    "sha256": "49fe1181f6941f2043e1535795d01559b2d072301f912dd6e9dd5e24fd67e3e2"
+  },
+  "backend": "FLINT",
+  "checkpoint_files": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_step11_operator_d123_e087_115_operator.bin",
+      "sha256": "aa09f5f3ff838f84eb88cf97a2afcfbc2cfc0f02d616a7f7c5fd6c8b8f5d108c"
+    }
+  ],
+  "phase": "sweep",
+  "timings": [
+    {
+      "operation": "original_transport_chunk",
+      "backend": "FLINT",
+      "first_state": 87,
+      "last_state": 115,
+      "input_valuation_pi": 730,
+      "modulus_bits": 9,
+      "input_count": 72,
+      "output_count": 800,
+      "distinct_prepared_maps": 39,
+      "seconds": 1.9563909580465406
+    }
+  ],
+  "wall_seconds": 2.452369499951601,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_block_kernel_d121.dylib",
+      "sha256": "4342eef9f6f6f6770c41a205b77c6982c62cd0ca3d95597c47c578e5d32c5e43"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_polynomial_kernel_d122.dylib",
+      "sha256": "8f165f930e9605338522757132cc795e0870e98dd8ca11ab77453611a8ae591b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_step11_prepared_d123.json",
+      "sha256": "49fe1181f6941f2043e1535795d01559b2d072301f912dd6e9dd5e24fd67e3e2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_step11_prepared_d123_correction.bin",
+      "sha256": "70564d51727430a9401f209dd10596ea325b4b2b16bae74e62fafb75645d645c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_step11_prepared_d123_state.bin",
+      "sha256": "c1e6da9c6c665a8688cc5b11caa12f57c75fbd8cefedb17482adab7aaaaa30c5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "sha256": "86d272475bbc0390f28b198462d63eac33262de9b7b9575d634895eebb985542"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/472_dyadic_multiprecision_low_factor.py",
+      "sha256": "ace66e349eaf0554a48e839ebb881e4095f284cdfcbab10ce00964b7503d8283"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py",
+      "sha256": "20f1083cc885512872db8049628260aef8213d5feed4809ac78858b6f343dce3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/476_dyadic_polynomial_kernel.c",
+      "sha256": "1a0f8069f25d4c4f130c686a119fd5144663734627baa1e4aca18d8cac3763bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "sha256": "b91d15359aeebf56a9d71f6d46fb86ae0addf4c79ac63e8b34f55c9bcfefc62d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/489_dyadic_staged_lift.py",
+      "sha256": "fd2ffcdb9115e6ceeaf98f7f933acdb0db5d0e5c579fcaf899b99ecb70beea45"
+    }
+  ]
+}

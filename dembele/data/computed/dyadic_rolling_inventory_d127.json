@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "milestone": "D127",
+  "working_precision_pi": 1600,
+  "seed_precision_pi": 800,
+  "harmonic_basis_column": 1,
+  "scratch_limit_bytes": 536870912,
+  "conservative_simultaneous_slots": {
+    "old_seed_input": 27840000,
+    "seed_extension_chunks": 55680000,
+    "two_complete_checkpoints": 86617200,
+    "new_prepared_weighted_state": 28831800,
+    "prepared_correction": 14476800,
+    "one_active_operator_sweep": 55680000,
+    "assembled_uniform_state": 55680000,
+    "final_full_residual": 55680000,
+    "scratch_metadata_allowance": 1048576
+  },
+  "conservative_total_bytes": 381534376,
+  "writes_serialized_by_advisory_lock_and_hard_byte_check": true,
+  "permanent_phase_metadata_and_receipts_outside_scratch": true,
+  "maximum_workers": 3,
+  "phase_timeout_seconds": 180,
+  "full_bank_or_target_size_cost_certificate": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/520_dyadic_rolling_pilot.py",
+      "sha256": "682306bff6c14caf8ba2e462f5f79e336a575431130cc7462b4b32f42eb95bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/519_dyadic_rolling_precision_chunks.py",
+      "sha256": "a1c252e6d81f1f2cea498711dfe58ad45d5ff623998a84042450b9ce64262a51"
+    }
+  ]
+}

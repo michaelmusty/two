@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/447_cm_disk_vanishing_budget.py", line 107, in <module>
+    result=build();out=DATA/'cm_disk_vanishing_budget_d117.json';assert not out.exists()
+  File "/Users/musty/two/dembele/pari/447_cm_disk_vanishing_budget.py", line 97, in build
+    b=bounds();print('DISK_VANISHING_BUDGETS|'+json.dumps([{k:v for k,v in x.items() if k not in ['upper_bound_expression_interval','upper_bound_pieces']} for x in b['thresholds']]),flush=True)
+  File "/Users/musty/two/dembele/pari/447_cm_disk_vanishing_budget.py", line 79, in bounds
+    'upper_bound_expression_interval':list(map(str,total)),
+  File "/Users/musty/.pyenv/versions/3.10.12/lib/python3.10/fractions.py", line 274, in __str__
+    return '%s/%s' % (self._numerator, self._denominator)
+ValueError: Exceeds the limit (4300) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit

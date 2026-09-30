@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/366_nelson_signed_tail_transfer.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 5.75781420909334,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_signed_tail_transfer_d97_attempt03.log",
+    "sha256": "3b192e2e362bd6121abce99ab4f6b72888403e2ee038dc382208d2c508036e8a"
+  },
+  "private_process_group": 90374,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/366_nelson_signed_tail_transfer.py",
+      "sha256": "115fce444355b7e89bbfc795184690751e20db69400c61af5fc946327c93fee9"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d97-transfer-cinlmsdq"
+  }
+}

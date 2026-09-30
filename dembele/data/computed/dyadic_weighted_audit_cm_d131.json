@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "milestone": "D131",
+  "phase": "cm",
+  "certificates": {
+    "kind": "cm",
+    "sampled_states_or_charts": [
+      0,
+      8,
+      16
+    ],
+    "ordinary_power_degrees": [
+      1,
+      2,
+      3
+    ],
+    "full_input_moment_count": 3200,
+    "scalar_equations_checked": 72,
+    "complete_original_operator_independently_recomputed": false
+  },
+  "production_arithmetic_not_imported": true,
+  "actual_harmonic_precision_increased": false,
+  "wall_seconds": 4.376433208119124,
+  "peak_rss_bytes": 48136192,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_manifest_d131.json",
+      "sha256": "66b8b2eb759bd035d097e58a32daa273d6843af9fc0b7e2e4e9d226cfe6326bd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/542_dyadic_weighted_independent.py",
+      "sha256": "f37373691b9da9038a7b37e4eb15675db4d7dd3354b971f7662dc6138c6c77d3"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "milestone": "D120",
+  "GMP_version": "6.3.0",
+  "public_ABI_header_checked": true,
+  "large_buffer_python_integer_controls": 3,
+  "arithmetic_controls": {
+    "arbitrary_precision_product_bits": [
+      3,
+      25,
+      129,
+      1536
+    ],
+    "independent_recurrence_controls": 12,
+    "integer_arithmetic_has_no_fixed_width_overflow": true
+  },
+  "actual_frozen_bank_checks": null,
+  "synthetic_benchmarks": [
+    {
+      "synthetic_P": 10552,
+      "coefficient_modulus_bits": 1319,
+      "single_action_wall_seconds": 50.408225500024855,
+      "maximum_packed_product_bytes": 105082980,
+      "polynomial_products": 110814
+    }
+  ],
+  "all_binomial_divisions_exact_in_Z_before_reduction": true,
+  "actual_moment_precision_increased": false,
+  "full_precision_solver_implemented": false,
+  "target_synthetic_action_is_not_an_actual_refinement": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/463_dyadic_gmp_transport.py",
+      "sha256": "0de66136b95feb0cfdca2a782c85611ef2d81c83a16dc296ab1542eaf06b1b1d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+      "sha256": "d1a595cfd6accde0f0b57419bdc16cbf7da1c65b15842f9ba58c8a91381c7cf2"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/gmp/6.3.0/lib/libgmp.10.dylib",
+      "sha256": "bc6145edbeca608b4fecd4440dbbd7b27cacd55cbfd2b552b8bc333febe43b35"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/gmp/6.3.0/include/gmp.h",
+      "sha256": "920496a9867a23dec3410e19da39ac446743694d539651bd78015240b0704e4b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision_design_d120.json",
+      "sha256": "73ef4ac68166c782b0b8be54a5d959d70e5bad35f04a795fcdd32c37fd940ec1"
+    }
+  ]
+}

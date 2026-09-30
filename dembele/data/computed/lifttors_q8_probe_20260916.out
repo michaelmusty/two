@@ -1,0 +1,90 @@
+  ***   Warning: new maximum stack size = 1073741824 (1024.000 Mbytes).
+PARI|[2, 17, 1]
+T = all of J[2]
+Working with q=7^2
+ Generating a new batch of 2 points in parallel
+ Batch of points generated.
+ Picking point 1 from batch; its order is 2^3
+  Computing pairings...
+  Looking for relations...
+  Good, no relation
+ Applying Frobenius
+  Computing pairings...
+  Looking for relations...
+  Good, no relation
+ B = x^2 + 1 says we'll get linear dependency next time
+ Picking point 2 from batch; its order is 2^3
+  Computing pairings...
+  Looking for relations...
+  Good, no relation
+ Applying Frobenius
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [0, 0, 1, 1]~
+ It actually holds.
+ Dividing relation [0, 0, 1, 1] gives point of order 2^2
+  Computing pairings...
+  Looking for relations...
+  Good, no relation
+Guessing last column of matFrob from charpoly
+Unable to guess last column from charpoly
+ Aut #1 claimed to act as -1
+The matrix of Frob_7 is
+
+[0 1 0 0]
+
+[1 0 0 0]
+
+[0 0 1 0]
+
+[0 0 0 1]
+
+It has order 2
+The matrix of Aut #1 (possibly on a different basis) is
+
+[1 0 0 0]
+
+[0 1 0 0]
+
+[0 0 1 0]
+
+[0 0 0 1]
+
+Time getting basis of T over F_7: cpu 232 ms, real 245 ms
+
+--> Lifting 3 points 7-adically, target O(7^16)
+Lifting from prec O(7^1) to O(7^2)
+Lifting from prec O(7^2) to O(7^4)
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+Lifting from prec O(7^8) to O(7^16)
+Lifting from prec O(7^1) to O(7^2)
+Lifting from prec O(7^2) to O(7^4)
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+Lifting from prec O(7^8) to O(7^16)
+Lifting from prec O(7^1) to O(7^2)
+Lifting from prec O(7^2) to O(7^4)
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+Lifting from prec O(7^8) to O(7^16)
+Time lifting: cpu 361 ms, real 371 ms
+
+--> All of T
+Main loop, touched 5/16
+Done with auts, now touched 5/16
+Computing 4 new points
+Main loop, touched 11/16
+Done with auts, now touched 11/16
+Computing 4 new points
+Evaluating 11 points
+  ***   at top-level: [F,ZF]=HyperGalRep(16*x^5-x,2,7,16,[0,0],[1/2,
+  ***                        ^---------------------------------------
+  ***   in function HyperGalRep: ...,P1,P2);C=concat(C,['y]);
+  ***   GalRep(C,l,p,e,Lp,chi
+  ***   ^---------------------
+  ***   in function GalRep: ...rint("\n--> All of T");Z=TorsSpaceFrobEval(J,W
+  ***                                                   ^---------------------
+  *** TorsSpaceFrobEval: user interrupt after 47,849 ms
+RESULT|F
+FACTORS|Mat([F, 1])

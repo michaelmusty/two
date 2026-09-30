@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/465_dyadic_schur_iteration.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 69.18477550009266,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_schur_iteration_d121_attempt01.log",
+    "sha256": "661ae3808347de3d7bcad26ec60d245969645565140ba1a59e2661bb16efaaca"
+  },
+  "private_process_group": 62156,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/465_dyadic_schur_iteration.py",
+    "sha256": "707db54454e4acff2cc9a7521003325bd0f219488d105f03320da8a7aa4f2633"
+  }
+}

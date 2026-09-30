@@ -1,0 +1,33 @@
+{
+  "milestone": "D131",
+  "kind": "bounded_job_plan",
+  "jobs": [
+    {
+      "driver": "dembele/pari/544_dyadic_row_journal_controls.py",
+      "stem": "dyadic_rowjournal_actual_control_d131",
+      "marker": "PASS|544_DYADIC_ROW_JOURNAL_CONTROLS",
+      "args": [
+        "--phase",
+        "actual"
+      ]
+    },
+    {
+      "driver": "dembele/pari/544_dyadic_row_journal_controls.py",
+      "stem": "dyadic_rowjournal_target_control_d131",
+      "marker": "PASS|544_DYADIC_ROW_JOURNAL_CONTROLS",
+      "args": [
+        "--phase",
+        "target"
+      ]
+    },
+    {
+      "driver": "dembele/pari/544_dyadic_row_journal_controls.py",
+      "stem": "dyadic_rowjournal_inventory_control_d131",
+      "marker": "PASS|544_DYADIC_ROW_JOURNAL_CONTROLS",
+      "args": [
+        "--phase",
+        "inventory"
+      ]
+    }
+  ]
+}

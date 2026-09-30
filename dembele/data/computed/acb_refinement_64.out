@@ -1,0 +1,116 @@
+{
+  "status": "finite linear system converged; differential accuracy is limited by independent audits",
+  "n": 64,
+  "columns": 2,
+  "radius": 0.99991,
+  "decimal_digits": 50,
+  "working_bits": 207,
+  "geometry_replay_decimal_digits": 70,
+  "geometry_source_sha256": "a283ea7caed185d98623d49706305cbd633e5ce0fbbcdb0b94be94a19ddafe0d",
+  "initial_basis": "/Users/musty/two/dembele/data/computed/cm_differentials_10240_refined.npz",
+  "initial_basis_sha256": "94823d3e54b937da646b11a0d72eb4b6e870f644e88f913c3c9711cfe26e7966",
+  "stabilizing_basis_double_sha256": "4f1a962e67fec44baa40c3c6aa480ae16cf3989eb902426cb4b7a1b23be64e5c",
+  "native_source_sha256": "3be6c42f24b964ebc106e407bb60340fb9e95532ba0a6f2d1521030de10ab9ca",
+  "flint_version": "3.1.0",
+  "evaluation_method": "rectangular",
+  "lu_factorizations": 1,
+  "lu_solves_including_initial": 3,
+  "matrix_condition_2_double": 2266.4763759381135,
+  "script78_action_relative_difference": "2.635134001870346e-61",
+  "norm": "column infinity norm; residual bounds normalized by midpoint norm upper bounds",
+  "target_linear_relative_residual": "1e-40",
+  "linear_system_converged": true,
+  "geometry": {
+    "samples": 128,
+    "offset": "0.37",
+    "metric_relative_error": "9.197039741807645e-50",
+    "max_scaled_node_absolute_value": "0.999386381983818",
+    "max_reduction_steps": 3,
+    "radius_power_32n_not_error_bound": "0.831662728374155"
+  },
+  "refinement_history": [
+    {
+      "step": 0,
+      "relative_residuals": [
+        "2.003735838348355e-14",
+        "1.192427834443381e-14"
+      ],
+      "arithmetic_radius_relative_bounds": [
+        "8.979402706390708e-58",
+        "4.711041466718824e-58"
+      ],
+      "residual_seconds": 0.0023862500092945993,
+      "correction_seconds": 6.508297519758344e-05
+    },
+    {
+      "step": 1,
+      "relative_residuals": [
+        "5.185896751764929e-28",
+        "3.650253649725124e-28"
+      ],
+      "arithmetic_radius_relative_bounds": [
+        "8.977410618508862e-58",
+        "4.713913353520731e-58"
+      ],
+      "residual_seconds": 0.0025513750151731074,
+      "correction_seconds": 4.33750101365149e-05
+    },
+    {
+      "step": 2,
+      "relative_residuals": [
+        "1.636420109359046e-41",
+        "1.191725572595934e-41"
+      ],
+      "arithmetic_radius_relative_bounds": [
+        "8.982676261364534e-58",
+        "4.713301438402057e-58"
+      ],
+      "residual_seconds": 0.002866750000976026
+    }
+  ],
+  "finite_operator_relative_residuals": [
+    "0.5415506138911017",
+    "0.5286379451887139"
+  ],
+  "independent_quadrature": {
+    "samples": 192,
+    "offset": "0.19",
+    "metric_relative_error": "1.185095924230693e-49",
+    "max_scaled_node_absolute_value": "0.9996399331033048",
+    "max_reduction_steps": 3,
+    "radius_power_32n_not_error_bound": "0.831662728374155",
+    "relative_residuals": [
+      "1.596644388187899",
+      "1.733071627252329"
+    ]
+  },
+  "all_side_audit": {
+    "samples": 275,
+    "norm": "column infinity norm, normalized by left side",
+    "relative_residuals": [
+      "1.400883679959764",
+      "1.390332578160731"
+    ],
+    "arithmetic_radius_relative_bounds": [
+      "9.908011542106842e-60",
+      "1.004739180023997e-59"
+    ]
+  },
+  "timings": {
+    "geometry_seconds": 0.031203042017295957,
+    "assembly_and_lu_seconds": 0.0034214589977636933,
+    "reference_control_seconds": 0.13951050001196563,
+    "finite_operator_audit_seconds": 0.002483916003257036,
+    "independent_quadrature_seconds": 0.041070249979384243,
+    "all_side_audit_seconds": 0.05735762504627928
+  },
+  "checkpoint": "dembele/data/computed/acb_refinement_64.acb",
+  "limitations": [
+    "geometry input has about 57 decimal digits and is not interval certified",
+    "FLINT balls enclose arithmetic for supplied decimal data, not exact geometry or truncation",
+    "stabilized linear residual does not bound the differential or canonical coefficient error",
+    "independent quadrature and side checks are empirical diagnostics",
+    "no exact algebraic model, field recognition, or torsion calculation"
+  ],
+  "wall_seconds": 0.3405182080459781
+}

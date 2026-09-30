@@ -147,9 +147,12 @@ attack surface for the only-at-2 question via good-reduction analysis.
 
 ## PILOT RESULT (2026-08-11): the (2,4,8) covers are computed and certified
 
-Following Zhang's account of the M23 computation (how-we-found-m23.pdf: recognition
-fails in triangle-group coordinates at any precision; Galois-equivariant coordinates
-collapse the heights), scripts `10`–`14` complete the k=4 pilot:
+Following Zhang's account of the M23 computation (recognition failed at the
+attempted 40, 60 and 90 digits; map-defined coordinates then allowed recovery
+from 40-digit data), scripts `10`–`14` complete the k=4 pilot. The account
+does not claim failure at every possible precision. The updated source and
+the transfer to the current level cover are reviewed in
+[`../certificates/m23-coordinate-review.md`](../certificates/m23-coordinate-review.md).
 
 - **Gauge**: every fiber of the (2,4,8) passport has a canonical point (unique
   simple zero, unique double point over 1, unique simple pole). Sending them to

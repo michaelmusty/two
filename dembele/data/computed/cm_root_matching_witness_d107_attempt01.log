@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "sage/structure/category_object.pyx", line 857, in sage.structure.category_object.CategoryObject.getattr_from_category (build/cythonized/sage/structure/category_object.c:10072)
+KeyError: 'real_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/392_cm_matching_witness.py", line 103, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/392_cm_matching_witness.py", line 39, in main
+    b_approx=C.real_field()(split(b))
+             ^^^^^^^^^^^^
+  File "sage/structure/category_object.pyx", line 851, in sage.structure.category_object.CategoryObject.__getattr__ (build/cythonized/sage/structure/category_object.c:9992)
+  File "sage/structure/category_object.pyx", line 866, in sage.structure.category_object.CategoryObject.getattr_from_category (build/cythonized/sage/structure/category_object.c:10156)
+  File "sage/cpython/getattr.pyx", line 358, in sage.cpython.getattr.getattr_from_other_class (build/cythonized/sage/cpython/getattr.c:4391)
+AttributeError: 'ComplexField_class_with_category' object has no attribute 'real_field'. Did you mean: '_real_field'?

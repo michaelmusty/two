@@ -1,0 +1,64 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_third_161_run.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 55.69605370901991,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_third_161.out",
+    "sha256": "3005f9e9e3423194c2173f968b9e758182618273606ca52ec2ea76db0496cc7f"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/189_cm_frame_cubic_lift_third.py",
+      "sha256": "9bbb3e4428e23914a07b4b03b1f5f3794cc2ebcdba855ab8b1e32ab6261dd3c0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/190_cm_frame_cubic_lift_third.m",
+      "sha256": "863c35be9847d9b0cd65f0530454212e058f548b755c2372d55c53e0ad3b17d7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_third_161_input.m",
+      "sha256": "f0f74c05fff300d3d953d5481800332b17d6a8f60882ab646e8146334358bac0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_third_161_run.m",
+      "sha256": "22968d4010f53455a2b51a3038bafb85029e27ac8137a1daf14be7777b5c68a4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_pilot_job.json",
+      "sha256": "7dbafb7d2c375480cab5dc18264838b45f8dbfb64bc649490ba06fe4c2af1bd6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/186_cm_frame_cubic_lift_arithmetic.m",
+      "sha256": "86fabe1c35c3759512439c01b3d57616cff1bf18926d0b6e1505cc3588828320"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/187_cm_frame_cubic_lift_model.m",
+      "sha256": "68b8018fdac5c5ab37c95154c9528b8447512aa8e9874722c8ffca74459419c7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/172_cm_frame_cover_third.py",
+      "sha256": "de310bfbfcb96e194905539b417ea9eed0d7dec6fcdae38be795d95638136a17"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_third_121_job.json",
+      "sha256": "9c777c154e754ef6b3b42e936e071f51cea23a33a3ca178edd5aad08ef755408"
+    }
+  ],
+  "chain_range": [
+    122,
+    161
+  ]
+}

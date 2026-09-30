@@ -1,0 +1,108 @@
+{
+  "status": "pass",
+  "milestone": "D75",
+  "date": "2026-09-18",
+  "independent_check": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/magma/140_cm_frame_joint_field_check.m"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "wall_seconds": 6.751608042046428,
+    "timeout_seconds": 180,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_check.out",
+      "sha256": "8c1411cee2d9fc82c1d94f67e71e0b532a19b6ac02e041ee194c262440682465"
+    },
+    "memory_limit_bytes": 2000000000,
+    "sources": [
+      {
+        "path": "/Users/musty/two/dembele/magma/140_cm_frame_joint_field_check.m",
+        "sha256": "36ed858113a4853f15d0b2fa0fb91a22a333462429ace2a5c360e380f2cc040b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_data.m",
+        "sha256": "ac2b9d6f4de9596decf1fe1c28ab9fc9ad836b04e3438b372cdcb733bb032aad"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_denominator_space_coordinates.m",
+        "sha256": "5d21c62ca996ee94b7de6416bc9919cde73ddd197e2c6eb1c35e3f51c9116f0e"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/141_cm_frame_joint_field_check.py",
+      "sha256": "9cc55006c2ea1746999887540c13c89d1f79063e28e691097ead09da2183aba5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/129_cm_frame_normalization_check.py",
+      "sha256": "7925d6af13a244e11f22981c4746c98492becec5f00822bd63c31e6d25cb7120"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_recognition.json",
+      "sha256": "a8e7a977a3580834c628cc56725982ebd5e8b66db80b18188f8697628a3f2268"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_height_bounds.json",
+      "sha256": "e6a9e7cc4d0d6f1a36b5e6e8f8574be2e787a98fa3d2199ac7ab13fe9a61eb48"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_recognition_job.json",
+      "sha256": "b6b35810a15caa73b15ca3a742ac3e89c35a488983b037fa2e906e309d85689e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_height_bounds_job.json",
+      "sha256": "cdf62273abbaeeaf997595c4cc233561b351c393a2606705362e73373271a452"
+    }
+  ],
+  "provisional_survivor_count": 0,
+  "uniform_coefficient_box_excluded_through": 8066216,
+  "number_field_cover_obtained": false,
+  "nonmembership_in_F_proved": false,
+  "negative_control": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_negative_control.m"
+    ],
+    "status": "pass",
+    "exit_code": 1,
+    "wall_seconds": 0.8794404580257833,
+    "timeout_seconds": 180,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_negative_control.out",
+      "sha256": "845d2aaa17d2d5967b7a94bb49091e6e3c62620e08d232cd941b03fd3880241d"
+    },
+    "memory_limit_bytes": 2000000000,
+    "sources": [
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_negative_control.m",
+        "sha256": "f00122b3352276dfeae3bb61e31f6e348a2070f48aae5e501039d4123557a2a6"
+      },
+      {
+        "path": "/Users/musty/two/dembele/magma/140_cm_frame_joint_field_check.m",
+        "sha256": "36ed858113a4853f15d0b2fa0fb91a22a333462429ace2a5c360e380f2cc040b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_data.m",
+        "sha256": "ac2b9d6f4de9596decf1fe1c28ab9fc9ad836b04e3438b372cdcb733bb032aad"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_denominator_space_coordinates.m",
+        "sha256": "5d21c62ca996ee94b7de6416bc9919cde73ddd197e2c6eb1c35e3f51c9116f0e"
+      }
+    ],
+    "mutation": "add 31^64 to one non-anchor control coordinate; all fitting digits unchanged"
+  }
+}

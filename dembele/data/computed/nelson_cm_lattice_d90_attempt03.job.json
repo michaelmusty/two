@@ -1,0 +1,38 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/321_nelson_cm_lattice.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.228048291988671,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_cm_lattice_d90_attempt03.log",
+    "sha256": "5e20591f5f2b347d76aee84bf2e0f48bcbef0bfbc7bba59b4e7a34260828a911"
+  },
+  "private_process_group": 33978,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/321_nelson_cm_lattice.py",
+      "sha256": "f8421364564b193f64df30502f3099af4d2316e5b9519cf0617cde75ec2de78d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/320_nelson_local_kernel.py",
+      "sha256": "c609baa62ebff55e00283385fe2d7f85b0cebde412e2a5a6f2cbe97cd7a93114"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d90-sage"
+  }
+}

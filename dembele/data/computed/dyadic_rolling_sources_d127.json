@@ -1,0 +1,409 @@
+{
+  "milestone": "D127",
+  "date": "2026-09-28",
+  "report": "dembele/certificates/dyadic-rolling-pilot-d127.md",
+  "final_review_driver": "dembele/pari/523_dyadic_rolling_review.py",
+  "prior_review": "dembele/data/computed/dyadic_resource_controls_review_d126.json",
+  "inherited_D126_source_hashes_to_preserve": 8816,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Production polynomial multiplication in 476--479. Attribution and installed header/library hashes are preserved from the interim ledger. No additional web source is invoked for the new mathematical review."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited carry-free polynomial arithmetic supplies the older backend for all production final original residuals. Source 486 imports no production arithmetic."
+    }
+  ],
+  "new_external_theorem_invoked": false,
+  "inherited_mathematical_inputs": [
+    "The D125 fixed-mass original-residual certificate is independent of seed and iteration history.",
+    "Original contracting transports, weighted error lattice, integral low inverse, direct CM and truncation estimates retain their prior proofs and hashes.",
+    "All D125 finite quadric enclosures and exact-zero prerequisites remain unchanged."
+  ],
+  "new_algebraic_deduction": "An existing factor modulo 2^m solves the original low system modulo 2^(2m) with two lower-precision solves and exact division of the higher-precision residual by 2^m; every final original sparse equation is checked.",
+  "bounded_input_jobs": {
+    "passed": 235,
+    "failed": 0,
+    "maximum_workers": 3,
+    "BLAS_threads": 1,
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "sum_wall_seconds": 2642.669783706311,
+    "maximum_wall_seconds": 65.94880483392626
+  },
+  "state_pilot": {
+    "status": "pass",
+    "milestone": "D127",
+    "working_precision_pi": 1600,
+    "harmonic_basis_column": 1,
+    "completed_phases": 228,
+    "correction_steps": 24,
+    "verified_checkpoint": {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_P1600_col01_verified_d127.json",
+      "sha256": "60ac4cf6aba7af09ef027a59f87919a242732d30b8c883304952d2222fe41b5e"
+    },
+    "weighted_checkpoint": {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_P1600_col01_step24_d127.json",
+      "sha256": "1d7ebe23e00db28ee6b1213156258bea23dcca6d2dac55c85297121bb867eff1"
+    },
+    "maximum_workers": 3,
+    "chunk_size": 29,
+    "scratch_limit_bytes": 536870912,
+    "conservative_scratch_bound_bytes": 381534376,
+    "maximum_observed_scratch_bytes": 308327101,
+    "sealed_scratch_bytes": 140238953,
+    "sealed_payload_bytes": 140237736,
+    "retired_payload_count": 248,
+    "retired_payload_bytes": 1311643320,
+    "retirement_events": 54,
+    "retired_payloads_are_not_retained_sources": true,
+    "sum_recorded_phase_seconds": 2405.241241665324,
+    "maximum_phase_seconds": 57.98566337488592,
+    "maximum_single_phase_peak_rss_bytes": 1117175808,
+    "coordinator_current_invocation_wall_seconds": 1276.8882769581396,
+    "phases_resumed_from_prior_invocations": 0,
+    "full_sixteen_column_bank_precision_pi": 800,
+    "complete_target_size_solve_costed": false
+  },
+  "original_moment_certificate": {
+    "original_full_residual_zero": true,
+    "actual_new_precision_pi": 1600,
+    "scalar_coefficients_checked": 2227200,
+    "weighted_residual_condition_checked": true,
+    "old_low_scalar_overlaps_checked": 1113600,
+    "old_extended_scalar_overlaps_checked": 2227200,
+    "exact_masses_checked": 174,
+    "full_residual_uses_different_polynomial_backend_from_lift": true
+  },
+  "CM": {
+    "status": "pass",
+    "milestone": "D127",
+    "working_precision_pi": 1600,
+    "harmonic_basis_column": 1,
+    "CM_charts_checked": 17,
+    "composed_child_maps_checked": 34,
+    "input_count": 1600,
+    "CM_cutoff": 3199,
+    "CM_moment_scalar_coefficients": 435200,
+    "old_CM_moment_scalar_coefficients_checked": 217600,
+    "old_coarse_values_checked": 68,
+    "weighted_input_used": true,
+    "state_extension_3P_not_used": true,
+    "verified_state_metadata": {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_P1600_col01_verified_d127.json",
+      "sha256": "60ac4cf6aba7af09ef027a59f87919a242732d30b8c883304952d2222fe41b5e"
+    },
+    "weighted_state_metadata": {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_P1600_col01_step24_d127.json",
+      "sha256": "1d7ebe23e00db28ee6b1213156258bea23dcca6d2dac55c85297121bb867eff1"
+    },
+    "checkpoint_files": [
+      {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_CM_P1600_col01_d127_moments.bin",
+        "sha256": "90be4d74ac2f844aebfe0280048436cecbbaa9dd487be7968935b0607503a08f"
+      }
+    ],
+    "arithmetic_precision_beta": 3264,
+    "coarse_orders": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "kernel_gains_beta": [
+      32,
+      48,
+      32,
+      64
+    ],
+    "coarse_error_beta": [
+      3232,
+      3248,
+      3232,
+      3264
+    ],
+    "direct_CM_seconds": 26.994181375019252,
+    "wall_seconds": 37.06698716711253,
+    "peak_rss_bytes": 162512896,
+    "full_sixteen_column_bank_precision_pi": 800,
+    "candidate_identification_proved": false
+  },
+  "independent_audits": {
+    "states": {
+      "status": "pass",
+      "milestone": "D127",
+      "phase": "states",
+      "working_precision_pi": 1600,
+      "harmonic_basis_column": 1,
+      "full_sixteen_column_bank_precision_pi": 800,
+      "production_arithmetic_not_imported": true,
+      "certificates": {
+        "production_full_original_residual_scalar_checks": 2227200,
+        "old_P800_low_scalar_overlaps": 1113600,
+        "exact_masses_checked": 174,
+        "independent_original_recurrence_scalar_checks": 160,
+        "child_column_divisibility_checks": 348,
+        "complete_disjoint_sweeps_checked": 29
+      },
+      "positive_exact_quadric_vanishing_proved": false,
+      "candidate_identification_proved": false,
+      "target_field_polynomial_constructed": false,
+      "wall_seconds": 34.04263925016858,
+      "peak_rss_bytes": 367362048
+    },
+    "seed": {
+      "status": "pass",
+      "milestone": "D127",
+      "phase": "seed",
+      "working_precision_pi": 1600,
+      "harmonic_basis_column": 1,
+      "full_sixteen_column_bank_precision_pi": 800,
+      "production_arithmetic_not_imported": true,
+      "certificates": {
+        "independent_high_seed_degrees": [
+          800,
+          1199,
+          1599
+        ],
+        "independent_high_seed_scalar_checks": 24,
+        "production_old_extended_scalar_overlaps": 2227200,
+        "retired_seed_extension_payloads_replayed": false
+      },
+      "positive_exact_quadric_vanishing_proved": false,
+      "candidate_identification_proved": false,
+      "target_field_polynomial_constructed": false,
+      "wall_seconds": 65.78939908393659,
+      "peak_rss_bytes": 348536832
+    },
+    "coarse": {
+      "status": "pass",
+      "milestone": "D127",
+      "phase": "coarse",
+      "working_precision_pi": 1600,
+      "harmonic_basis_column": 1,
+      "full_sixteen_column_bank_precision_pi": 800,
+      "production_arithmetic_not_imported": true,
+      "certificates": {
+        "independent_coarse_values_checked": 68,
+        "coarse_error_beta": [
+          3232,
+          3248,
+          3232,
+          3264
+        ],
+        "independent_CM_recurrence_scalar_checks": 72,
+        "old_CM_scalar_overlaps": 217600,
+        "new_CM_scalar_coefficients": 435200,
+        "old_coarse_values_checked": 68
+      },
+      "positive_exact_quadric_vanishing_proved": false,
+      "candidate_identification_proved": false,
+      "target_field_polynomial_constructed": false,
+      "wall_seconds": 15.930534374900162,
+      "peak_rss_bytes": 336363520
+    },
+    "weighted": {
+      "status": "pass",
+      "milestone": "D127",
+      "phase": "weighted",
+      "working_precision_pi": 1600,
+      "harmonic_basis_column": 1,
+      "full_sixteen_column_bank_precision_pi": 800,
+      "production_arithmetic_not_imported": true,
+      "certificates": {
+        "final_weighted_reference_scalar_checks": 2227200,
+        "final_scaled_residual_scalar_checks": 45936,
+        "checkpoint_metadata_checked": 25,
+        "recorded_correction_gains_checked": 24,
+        "active_moment_counts": [
+          800,
+          767,
+          734,
+          701,
+          668,
+          635,
+          602,
+          569,
+          536,
+          503,
+          470,
+          437,
+          404,
+          371,
+          338,
+          305,
+          272,
+          239,
+          206,
+          173,
+          140,
+          107,
+          74,
+          41,
+          33
+        ],
+        "retired_intermediate_payloads_rechecked": false,
+        "final_fixed_mass_original_residual_is_iteration_independent": true
+      },
+      "positive_exact_quadric_vanishing_proved": false,
+      "candidate_identification_proved": false,
+      "target_field_polynomial_constructed": false,
+      "wall_seconds": 2.580791249871254,
+      "peak_rss_bytes": 395837440
+    }
+  },
+  "factor_reuse_controls": {
+    "1600": {
+      "status": "pass",
+      "milestone": "D127",
+      "certificates": {
+        "target_low_system_precision_pi": 1600,
+        "reused_factor_precision_pi": 800,
+        "rhs_columns": 2,
+        "original_sparse_scalar_equations_checked": 89088,
+        "residual_scalar_coefficients_divisible_by_2_power": 89088,
+        "exact_binary_divisor_exponent": 100,
+        "factor_blocks_decoded_for_two_solves": 2452,
+        "maximum_decoded_factor_blocks_held": 1,
+        "distinct_original_maps": 165,
+        "maximum_original_coefficient_blocks_held": 1,
+        "known_full_precision_factor_scalar_comparisons": 89088,
+        "known_full_precision_factor_comparison_performed": true,
+        "larger_factor_constructed": false,
+        "actual_harmonic_precision_increased": false,
+        "all_answers_sha256": "91c6f0b5240268ad30be2b06c61acafc216fb1653786e05c81d43d8bb21d4f6d",
+        "timings": [
+          {
+            "operation": "initial_lower_precision_solve",
+            "seconds": 8.141528917010874
+          },
+          {
+            "operation": "higher_precision_residual_and_exact_division",
+            "seconds": 7.234267374966294
+          },
+          {
+            "operation": "same_factor_correction_solve",
+            "seconds": 8.25136704207398
+          },
+          {
+            "operation": "complete_higher_precision_original_residual",
+            "seconds": 7.12576137506403
+          }
+        ],
+        "factor_read_decode_seconds_for_two_solves": 7.357815320137888,
+        "complete_target_size_solve_costed": false
+      },
+      "wall_seconds": 40.167955624870956,
+      "peak_rss_bytes": 346849280
+    },
+    "3200": {
+      "status": "pass",
+      "milestone": "D127",
+      "certificates": {
+        "target_low_system_precision_pi": 3200,
+        "reused_factor_precision_pi": 1600,
+        "rhs_columns": 2,
+        "original_sparse_scalar_equations_checked": 89088,
+        "residual_scalar_coefficients_divisible_by_2_power": 89088,
+        "exact_binary_divisor_exponent": 200,
+        "factor_blocks_decoded_for_two_solves": 2452,
+        "maximum_decoded_factor_blocks_held": 1,
+        "distinct_original_maps": 165,
+        "maximum_original_coefficient_blocks_held": 1,
+        "known_full_precision_factor_scalar_comparisons": 0,
+        "known_full_precision_factor_comparison_performed": false,
+        "larger_factor_constructed": false,
+        "actual_harmonic_precision_increased": false,
+        "all_answers_sha256": "c870a75881dbef81548be5cbe28bdd0888c937afff034d2f6ef8a87cf990831b",
+        "timings": [
+          {
+            "operation": "initial_lower_precision_solve",
+            "seconds": 9.047803041059524
+          },
+          {
+            "operation": "higher_precision_residual_and_exact_division",
+            "seconds": 10.872107292059809
+          },
+          {
+            "operation": "same_factor_correction_solve",
+            "seconds": 9.038199374917895
+          },
+          {
+            "operation": "complete_higher_precision_original_residual",
+            "seconds": 10.784939707955346
+          }
+        ],
+        "factor_read_decode_seconds_for_two_solves": 7.475017407210544,
+        "complete_target_size_solve_costed": false
+      },
+      "wall_seconds": 40.10126170795411,
+      "peak_rss_bytes": 316194816
+    }
+  },
+  "certificate_boundaries": [
+    "Scratch payloads were declared temporary before execution; all earlier frozen files remain unchanged.",
+    "Retired payload hashes are history records, not retained source claims.",
+    "The final exact masses, full original residual and truncation/contraction proof certify actual moments independently of iteration history.",
+    "No interrupted phase occurred in this pilot; D126 crash controls tested a separate store.",
+    "The full original polynomial residual uses GMP separately from the adaptive lift; low-factor controls use the production matrix kernel.",
+    "Independent finite arithmetic does not machine-formalize the geometric arguments.",
+    "The scratch cap is not an aggregate RAM bound; serial whole-bank assembly remains a scaling obstacle."
+  ],
+  "next_execution": {
+    "first_unused_source": 525,
+    "decision": "Retain the integral-section route and complete rolling refinement. Before P=3200, control selective serial assembly/preparation against retained actual P=1600 data, measure P=3200 transport/RHS chunks, and prove a new complete phase resource inventory. Use the existing P=1600 factor through exact residual lifting; do not construct a P=3200 factor.",
+    "larger_full_bank_costed": false,
+    "complete_P10552_solve_costed": false
+  },
+  "preserved_global_status": {
+    "full_bank_precision_pi": 800,
+    "actual_columns_at_precision_1600": [
+      0,
+      1
+    ],
+    "section_lower_bounds": [
+      4994,
+      4945,
+      4928
+    ],
+    "anchor_lower_bounds": [
+      4776,
+      4448,
+      4184
+    ],
+    "sufficient_nonanchor_bounds": [
+      25255,
+      25369,
+      25476
+    ],
+    "gaps": [
+      20261,
+      20424,
+      20548
+    ],
+    "quadric_balls_containing_zero": 6188,
+    "W_Gaussian_valuation": 1024,
+    "W_Gaussian_error": 2025,
+    "W_Gaussian_relative_precision": 1001,
+    "W_Gaussian_inverted": false,
+    "positive_exact_quadric_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false
+  },
+  "freeze": "Sources 519--524, final retained artifacts, sealed scratch, immutable phase/retirement records, report and ledger at first successful fixed review; preserve every earlier freeze.",
+  "downstream_gates": [
+    "D99 nonhyperellipticity and D108 spectral rejection",
+    "Original residual kernels and preceding exact-zero prerequisites",
+    "Marked X40/Y64 covers",
+    "Genus-64 section and degree-51 torsion backend",
+    "Global F256 action",
+    "Final invariant and original-kernel/ramification checks"
+  ],
+  "correspondence_sent": false
+}

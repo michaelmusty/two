@@ -1,0 +1,114 @@
+{
+  "status": "pass",
+  "milestone": "D75",
+  "date": "2026-09-18",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/139_cm_frame_joint_height_bounds.py",
+      "sha256": "2a9af7adcbdb0374f858e4c65cf07f2e2bc0434dacf8f69b7e76ea70292089cf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_recognition.json",
+      "sha256": "a8e7a977a3580834c628cc56725982ebd5e8b66db80b18188f8697628a3f2268"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_recognition_job.json",
+      "sha256": "b6b35810a15caa73b15ca3a742ac3e89c35a488983b037fa2e906e309d85689e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/129_cm_frame_normalization_check.py",
+      "sha256": "7925d6af13a244e11f22981c4746c98492becec5f00822bd63c31e6d25cb7120"
+    }
+  ],
+  "training_digits": 64,
+  "field_degree": 8,
+  "section_space_dimension": 17,
+  "control": {
+    "label": "known_F_projective_point",
+    "root_mod31": 4,
+    "scaled_inverse_integral": true,
+    "exact_inverse_identity_checked": true,
+    "maximum_inverse_column_l1_norm": "420727471861201264065944273161286435092705327536917763985117546362705320642549320040584258",
+    "coefficient_box_excluded_through": 665499,
+    "wall_seconds": 0.13980866700876504
+  },
+  "denominator_bounds": [
+    {
+      "label": "denominator",
+      "root_mod31": 4,
+      "scaled_inverse_integral": true,
+      "exact_inverse_identity_checked": true,
+      "maximum_inverse_column_l1_norm": "25812359311537467546581930346106748681489242036816122833131563934442167421264114351064128",
+      "coefficient_box_excluded_through": 10847276,
+      "wall_seconds": 0.09921329200733453
+    },
+    {
+      "label": "denominator",
+      "root_mod31": 9,
+      "scaled_inverse_integral": true,
+      "exact_inverse_identity_checked": true,
+      "maximum_inverse_column_l1_norm": "10169883697256292331487221422612490846302583192539077077288296864139572816099065824365717",
+      "coefficient_box_excluded_through": 27531661,
+      "wall_seconds": 0.09819508309010416
+    },
+    {
+      "label": "denominator",
+      "root_mod31": 10,
+      "scaled_inverse_integral": true,
+      "exact_inverse_identity_checked": true,
+      "maximum_inverse_column_l1_norm": "34711913424410341896154269582448416835203069255650119057179772888907143979144561642584414",
+      "coefficient_box_excluded_through": 8066216,
+      "wall_seconds": 0.10458500008098781
+    },
+    {
+      "label": "denominator",
+      "root_mod31": 11,
+      "scaled_inverse_integral": true,
+      "exact_inverse_identity_checked": true,
+      "maximum_inverse_column_l1_norm": "17670883274808814002622426109380779823007685041098444249826579716806945531112664957599070",
+      "coefficient_box_excluded_through": 15844923,
+      "wall_seconds": 0.09906962502282113
+    },
+    {
+      "label": "denominator",
+      "root_mod31": 20,
+      "scaled_inverse_integral": true,
+      "exact_inverse_identity_checked": true,
+      "maximum_inverse_column_l1_norm": "19872036127675557175203802155735369666689835661365301994110852867936468062453051326716041",
+      "coefficient_box_excluded_through": 14089839,
+      "wall_seconds": 0.09918633301276714
+    },
+    {
+      "label": "denominator",
+      "root_mod31": 21,
+      "scaled_inverse_integral": true,
+      "exact_inverse_identity_checked": true,
+      "maximum_inverse_column_l1_norm": "16388338203305383289055734588392823939012079230716558645129683853159573100394872139102365",
+      "coefficient_box_excluded_through": 17084941,
+      "wall_seconds": 0.09566254098899662
+    },
+    {
+      "label": "denominator",
+      "root_mod31": 22,
+      "scaled_inverse_integral": true,
+      "exact_inverse_identity_checked": true,
+      "maximum_inverse_column_l1_norm": "13907049231624760223342073123577624621917829224462007833068312785741649327349249085400785",
+      "coefficient_box_excluded_through": 20133228,
+      "wall_seconds": 0.09751262504141778
+    },
+    {
+      "label": "denominator",
+      "root_mod31": 27,
+      "scaled_inverse_integral": true,
+      "exact_inverse_identity_checked": true,
+      "maximum_inverse_column_l1_norm": "19566452251287435729712560979430888356905150388763110642653421514107331406638908293355362",
+      "coefficient_box_excluded_through": 14309890,
+      "wall_seconds": 0.09704208292532712
+    }
+  ],
+  "uniform_coefficient_box_excluded_through": 8066216,
+  "basis_dependent": true,
+  "nonmembership_in_F_proved": false,
+  "proof": "For v=zR, z=vD/m is integral; ||v||_infinity<=H and H*S<m imply every |z_j|<1.",
+  "wall_seconds": 1.1905269579729065
+}

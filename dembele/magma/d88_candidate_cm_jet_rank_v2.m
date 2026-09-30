@@ -1,0 +1,58 @@
+// D88 bounded diagnostic: candidate-side jets only, no Shimura identification.
+SetColumns(0); SetQuitOnError(true); SetSeed(88);
+started := Cputime();
+k := GF(31);
+load "dembele/data/computed/cm_frame_curve_candidate.m";
+Hcoeffs := [68, -2, -128, 16, 80, 40, 32, -80, -32, 64, 0, -16, 16, 8, 0, 0, -2, 1];
+coord_coeffs := [[9, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [7, 19, 14, 5, 0, 11, 14, 18, 7, 26, 4, 13, 18, 24, 23, 28, 27], [0, 2, 22, 15, 16, 10, 10, 8, 28, 10, 26, 4, 0, 14, 4, 24, 17], [15, 4, 19, 23, 6, 26, 15, 11, 6, 13, 11, 27, 2, 21, 6, 20, 27], [7, 14, 24, 5, 1, 7, 7, 19, 9, 25, 26, 20, 25, 0, 11, 21, 11], [26, 3, 7, 7, 22, 6, 8, 5, 14, 5, 6, 24, 17, 10, 21, 21, 8], [19, 29, 28, 27, 25, 19, 30, 5, 12, 12, 16, 30, 13, 20, 24, 9, 10], [26, 13, 11, 6, 20, 11, 25, 9, 22, 23, 23, 3, 18, 19, 5, 26, 6], [22, 4, 13, 6, 28, 4, 2, 29, 10, 22, 7, 2, 7, 7, 23, 16, 21], [0, 26, 20, 16, 2, 18, 19, 0, 0, 5, 27, 12, 8, 20, 23, 17, 6], [8, 21, 14, 28, 4, 3, 21, 11, 14, 7, 12, 6, 2, 20, 12, 10, 12], [17, 6, 19, 11, 3, 29, 17, 15, 14, 4, 20, 29, 28, 20, 29, 12, 28], [2, 30, 6, 28, 14, 5, 4, 3, 27, 11, 15, 11, 2, 14, 18, 0, 10], [12, 9, 20, 15, 10, 26, 5, 21, 6, 21, 15, 12, 11, 0, 30, 15, 4], [7, 9, 24, 6, 0, 23, 20, 5, 15, 16, 7, 23, 4, 4, 20, 17, 0], [1, 4, 17, 19, 26, 7, 0, 20, 25, 14, 28, 12, 4, 20, 17, 24, 1]];
+
+T<x> := PolynomialRing(k); H := T!Hcoeffs;
+assert IsIrreducible(H) and Degree(H) eq 17;
+E<alpha> := ext<k | H>;
+pt := [ &+[E!vv[j]*alpha^(j-1) : j in [1..17]] : vv in coord_coeffs ];
+anchor := Minimum([i : i in [1..16] | pt[i] ne 0]);
+pt := [z/pt[anchor] : z in pt];
+assert &and[ &+[E!row[h]*pt[pairs[h][1]]*pt[pairs[h][2]] : h in [1..136]] eq 0 : row in rows ];
+jac := ZeroMatrix(E,91,16);
+for z in [1..91] do
+  for h in [1..136] do
+    i,j := Explode(pairs[h]);
+    jac[z,i] +:= E!rows[z][h]*pt[j];
+    jac[z,j] +:= E!rows[z][h]*pt[i];
+  end for;
+end for;
+assert Rank(jac) eq 14;
+anchor_row := Vector(E,[i eq anchor select 1 else 0 : i in [1..16]]);
+M := VerticalJoin(jac,Matrix(E,1,16,Eltseq(anchor_row)));
+tangent := Kernel(Transpose(M)); assert Dimension(tangent) eq 1;
+v := Eltseq(Basis(tangent)[1]);
+a := Minimum([i : i in [1..16] | v[i] ne 0]);
+v := [z/v[a] : z in v];
+parameter_row := Vector(E,[i eq a select 1 else 0 : i in [1..16]]);
+M := VerticalJoin(M,Matrix(E,1,16,Eltseq(parameter_row)));
+assert Rank(M) eq 16;
+rhs := Vector(E,[-&+[E!row[h]*v[pairs[h][1]]*v[pairs[h][2]] : h in [1..136]] : row in rows] cat [E!0,E!0]);
+c := Solution(Transpose(M),rhs);
+assert c*Transpose(M) eq rhs;
+c := Eltseq(c);
+assert pt[anchor] eq 1 and v[anchor] eq 0 and c[anchor] eq 0;
+assert v[a] eq 1 and c[a] eq 0;
+products := [[pt[i]*pt[j],pt[i]*v[j]+v[i]*pt[j],pt[i]*c[j]+v[i]*v[j]+c[i]*pt[j]] where i,j := Explode(ij) : ij in pairs];
+jet_rows := [];
+for s in [1..3] do
+  for d in [1..17] do
+    Append(~jet_rows,[Eltseq(products[h][s])[d] : h in [1..136]]);
+  end for;
+end for;
+J := Matrix(k,jet_rows);
+Qrows := Matrix(k,rows);
+assert Rank(Qrows) eq 91 and Qrows*Transpose(J) eq ZeroMatrix(k,91,51);
+ranks := [Rank(Submatrix(J,1,1,17*n,136)) : n in [1..3]];
+printf "RANKS|%o\n", ranks;
+printf "CHART|%o|%o\n", anchor,a;
+printf "JETS|%o\n", [[[Integers()!v : v in Eltseq(jet[i])] : i in [1..16]] : jet in [pt,v,c]];
+printf "JET_MATRIX|%o\n", [[Integers()!z : z in Eltseq(row)] : row in Rows(J)];
+assert ranks eq [17,34,45];
+printf "CPU_SECONDS|%o\n", Cputime(started);
+print "PASS|D88_CANDIDATE_CM_JET_RANK";
+quit;

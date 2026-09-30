@@ -1,0 +1,293 @@
+{
+  "milestone": "D126",
+  "date": "2026-09-28",
+  "report": "dembele/certificates/dyadic-resource-controls-d126.md",
+  "final_review_driver": "dembele/pari/518_dyadic_resource_controls_review.py",
+  "prior_review": "dembele/data/computed/dyadic_precision800_review_d125.json",
+  "inherited_D125_source_hashes_to_preserve": 8729,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Production polynomial multiplication in 476--479. Attribution and installed header/library hashes are preserved from the interim ledger. No additional web source is invoked for the new mathematical review."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited carry-free polynomial arithmetic supplies the older backend for all production final original residuals. Source 486 imports no production arithmetic."
+    }
+  ],
+  "new_external_theorem_invoked": false,
+  "inherited_mathematical_inputs": [
+    "The D125 fixed-mass original-residual certificate is independent of seed and iteration history.",
+    "Original contracting transports, weighted error lattice, integral low inverse, direct CM and truncation estimates retain their prior proofs and hashes.",
+    "All D125 finite quadric enclosures and exact-zero prerequisites remain unchanged."
+  ],
+  "control_drivers": [
+    "dembele/pari/514_dyadic_selective_state_control.py",
+    "dembele/pari/515_dyadic_rolling_scratch_control.py",
+    "dembele/pari/516_dyadic_factor_and_map_controls.py",
+    "dembele/pari/517_dyadic_streamed_actual_low_control.py"
+  ],
+  "bounded_input_jobs": {
+    "passed": 22,
+    "failed": 0,
+    "maximum_workers": 3,
+    "BLAS_threads": 1,
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "expected_internal_child_crash_exits": 4
+  },
+  "controls": {
+    "scratch": {
+      "metadata": "dembele/data/computed/dyadic_rolling_scratch_control_d126.json",
+      "wall_seconds": 5.681973583996296,
+      "peak_rss_bytes": 120209408,
+      "certificates": {
+        "checkpoint_replays": 25,
+        "expected_process_interruptions": [
+          {
+            "point": "mid_payload",
+            "expected_child_exit_code": 86,
+            "resumed_generation": "g000000",
+            "scratch_bytes_at_crash": 44358247
+          },
+          {
+            "point": "after_generation",
+            "expected_child_exit_code": 86,
+            "resumed_generation": "g000000",
+            "scratch_bytes_at_crash": 84954236
+          },
+          {
+            "point": "before_head",
+            "expected_child_exit_code": 86,
+            "resumed_generation": "g000000",
+            "scratch_bytes_at_crash": 84954288
+          },
+          {
+            "point": "after_head",
+            "expected_child_exit_code": 86,
+            "resumed_generation": "g000001",
+            "scratch_bytes_at_crash": 84954241
+          }
+        ],
+        "corrupt_latest_detected_and_rolled_back": true,
+        "storage_limit_bytes_including_metadata": 87665776,
+        "per_generation_payload_limit_bytes": 43308600,
+        "maximum_observed_scratch_bytes": 84954288,
+        "sealed_scratch_bytes": 57768619,
+        "final_weighted_projection_scalar_checks": 2227200,
+        "old_frozen_files_modified_or_deleted": false,
+        "arithmetic_refinement_integrated": false,
+        "power_loss_durability_tested": false,
+        "history_records_are_not_retained_payload_certificates": true,
+        "final_correctness_still_requires_original_residual_and_exact_masses": true
+      }
+    },
+    "resident_factors": {
+      "metadata": "dembele/data/computed/dyadic_factor_resident_b200_n2_d126.json",
+      "wall_seconds": 21.472541708964854,
+      "peak_rss_bytes": 786153472,
+      "certificates": {
+        "mode": "resident",
+        "modulus_bits": 200,
+        "unrelated_rhs_columns": 2,
+        "complete_original_sparse_residual_scalar_checks": 89088,
+        "factor_blocks_decoded": 1226,
+        "factor_payload_bytes": 251084800,
+        "maximum_decoded_factor_blocks_held": 1226,
+        "authentication_seconds": 0.42803858406841755,
+        "factor_read_decode_seconds": 3.9477705298922956,
+        "solve_seconds_including_decode": 9.208745749900118,
+        "solve_seconds_excluding_decode": 5.260975220007822,
+        "original_sparse_residual_seconds": 11.587521540932357,
+        "peak_rss_after_load_bytes": 721027072,
+        "peak_rss_after_solve_bytes": 786153472,
+        "all_answers_sha256": "a6000f8c83e3a84fb0a51894c786b297ea0a36dead757810c5ad57131a80c1ba",
+        "first_two_rhs_answers_sha256": "a6000f8c83e3a84fb0a51894c786b297ea0a36dead757810c5ad57131a80c1ba",
+        "actual_harmonic_low_rhs_used": false
+      }
+    },
+    "streamed_factors": {
+      "metadata": "dembele/data/computed/dyadic_factor_stream_b200_n2_d126.json",
+      "wall_seconds": 21.28192933392711,
+      "peak_rss_bytes": 293371904,
+      "certificates": {
+        "mode": "stream",
+        "modulus_bits": 200,
+        "unrelated_rhs_columns": 2,
+        "complete_original_sparse_residual_scalar_checks": 89088,
+        "factor_blocks_decoded": 1226,
+        "factor_payload_bytes": 251084800,
+        "maximum_decoded_factor_blocks_held": 1,
+        "authentication_seconds": 0.4279332500882447,
+        "factor_read_decode_seconds": 3.742260994622484,
+        "solve_seconds_including_decode": 8.988103874959052,
+        "solve_seconds_excluding_decode": 5.245842880336568,
+        "original_sparse_residual_seconds": 11.61581295914948,
+        "peak_rss_after_load_bytes": null,
+        "peak_rss_after_solve_bytes": 293371904,
+        "all_answers_sha256": "a6000f8c83e3a84fb0a51894c786b297ea0a36dead757810c5ad57131a80c1ba",
+        "first_two_rhs_answers_sha256": "a6000f8c83e3a84fb0a51894c786b297ea0a36dead757810c5ad57131a80c1ba",
+        "actual_harmonic_low_rhs_used": false
+      }
+    },
+    "batch_factors": {
+      "metadata": "dembele/data/computed/dyadic_factor_stream_b200_n16_d126.json",
+      "wall_seconds": 33.307704833103344,
+      "peak_rss_bytes": 353501184,
+      "certificates": {
+        "mode": "stream",
+        "modulus_bits": 200,
+        "unrelated_rhs_columns": 16,
+        "complete_original_sparse_residual_scalar_checks": 712704,
+        "factor_blocks_decoded": 1226,
+        "factor_payload_bytes": 251084800,
+        "maximum_decoded_factor_blocks_held": 1,
+        "authentication_seconds": 0.42813699995167553,
+        "factor_read_decode_seconds": 3.753431936725974,
+        "solve_seconds_including_decode": 18.18086920795031,
+        "solve_seconds_excluding_decode": 14.427437271224335,
+        "original_sparse_residual_seconds": 13.766330250073224,
+        "peak_rss_after_load_bytes": null,
+        "peak_rss_after_solve_bytes": 353501184,
+        "all_answers_sha256": "1b848cc3720623649856682754621e00ede469d1f3875230ead61f58f5a766cd",
+        "first_two_rhs_answers_sha256": "a6000f8c83e3a84fb0a51894c786b297ea0a36dead757810c5ad57131a80c1ba",
+        "actual_harmonic_low_rhs_used": false
+      }
+    },
+    "map_reuse": {
+      "metadata": "dembele/data/computed/dyadic_map_reuse_d126.json",
+      "wall_seconds": 3.822435958078131,
+      "peak_rss_bytes": 64045056,
+      "certificates": {
+        "actual_harmonic_columns": [
+          0,
+          1
+        ],
+        "working_precision_pi": 800,
+        "output_states": [
+          0,
+          17,
+          61,
+          98,
+          173
+        ],
+        "output_moments": 33,
+        "original_equation_scalar_checks_per_mode": 2640,
+        "maximum_prepared_plans_retained_in_reuse_mode": 1,
+        "comparison_sha256": "ef83db14d9d17dab045ba866b77f243421136e07a8140624afdb291c0369eeaa",
+        "distinct_maps": 8,
+        "timings": [
+          {
+            "reuse_one_map_across_columns_and_destinations": false,
+            "prepared_plans": 20,
+            "prepare_seconds": 0.2783851660788059,
+            "apply_seconds": 1.6747215820942074,
+            "total_seconds_including_selective_reads": 1.9851675000973046
+          },
+          {
+            "reuse_one_map_across_columns_and_destinations": true,
+            "prepared_plans": 8,
+            "prepare_seconds": 0.11150120734237134,
+            "apply_seconds": 1.6211017945315689,
+            "total_seconds_including_selective_reads": 1.7643361249938607
+          }
+        ],
+        "timing_caveat": "One bounded run in fixed order; a control, not a full-bank or target-size speedup claim."
+      }
+    },
+    "actual_harmonic_low": {
+      "metadata": "dembele/data/computed/dyadic_streamed_actual_low_harmonic_d126.json",
+      "wall_seconds": 76.712674416136,
+      "peak_rss_bytes": 184532992,
+      "certificates": {
+        "phase": "harmonic",
+        "input_stems": [
+          "dyadic_staged_P800_col00_verified_d123",
+          "dyadic_weighted_P800_col01_verified_d125"
+        ],
+        "actual_columns": 2,
+        "working_modulus_bits": 100,
+        "input_moments": 800,
+        "low_positive_moments": 32,
+        "full_known_low_scalar_comparisons": 89088,
+        "original_sparse_residual_scalar_checks": 89088,
+        "exact_masses_checked": 348,
+        "distinct_prepared_maps": 165,
+        "maximum_prepared_maps_held": 1,
+        "maximum_decoded_input_states_held": 1,
+        "maximum_decoded_factor_blocks_held": 1,
+        "factor_blocks_decoded": 1226,
+        "rhs_prepare_seconds": 2.4299286582972854,
+        "rhs_apply_seconds": 56.23188936058432,
+        "rhs_seconds_including_selective_reads": 59.8279689589981,
+        "factor_read_decode_seconds": 3.590335996123031,
+        "solve_seconds_including_decode": 7.891713292105123,
+        "original_sparse_residual_seconds": 8.640811332967132,
+        "complete_original_high_residual_still_required_for_new_refinement": true
+      }
+    },
+    "actual_correction_low": {
+      "metadata": "dembele/data/computed/dyadic_streamed_actual_low_correction_d126.json",
+      "wall_seconds": 47.96144925011322,
+      "peak_rss_bytes": 216694784,
+      "certificates": {
+        "phase": "correction",
+        "input_stems": [
+          "dyadic_weighted_P1600_col00_step01_prepared_d124"
+        ],
+        "actual_columns": 1,
+        "working_modulus_bits": 100,
+        "input_moments": 800,
+        "low_positive_moments": 32,
+        "full_known_low_scalar_comparisons": 44544,
+        "original_sparse_residual_scalar_checks": 44544,
+        "exact_masses_checked": 174,
+        "distinct_prepared_maps": 165,
+        "maximum_prepared_maps_held": 1,
+        "maximum_decoded_input_states_held": 1,
+        "maximum_decoded_factor_blocks_held": 1,
+        "factor_blocks_decoded": 1226,
+        "rhs_prepare_seconds": 2.43793205707334,
+        "rhs_apply_seconds": 28.335964251775295,
+        "rhs_seconds_including_selective_reads": 31.354634833987802,
+        "factor_read_decode_seconds": 3.644437897251919,
+        "solve_seconds_including_decode": 7.593207916943356,
+        "original_sparse_residual_seconds": 8.70794487488456,
+        "complete_original_high_residual_still_required_for_new_refinement": true
+      }
+    }
+  },
+  "complete_state_controls": {
+    "uniform": {
+      "scalar_equations": 2227200,
+      "summed_chunk_seconds": 308.5307922072243,
+      "peak_rss_bytes": 220938240
+    },
+    "weighted": {
+      "scalar_equations": 2227200,
+      "summed_chunk_seconds": 307.49220862495713,
+      "peak_rss_bytes": 228753408
+    }
+  },
+  "decision": "Integrate the controlled reads, streamed low solve and prospective rolling scratch in a new P1600 column-1 refinement before another larger full bank. Transport arithmetic remains the principal measured cost.",
+  "next_bounded_task": "New source 519 onward: inventory and enforce a 512 MiB total scratch cap for a full P800-to-P1600 column-1 refinement, including temporary chunks; keep final state, full original residual, exact masses, CM and receipts, and distinguish retired scratch hashes from retained sources. Verify old overlaps and independent recurrences before a larger precision.",
+  "limits": {
+    "actual_moment_precision_increased": false,
+    "full_bank_precision_pi": 800,
+    "positive_exact_quadric_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "complete_target_size_solve_costed": false,
+    "rolling_storage_protocol_controlled": true,
+    "complete_rolling_arithmetic_refinement_executed": false,
+    "power_loss_durability_tested": false,
+    "old_frozen_files_modified_or_deleted": false,
+    "W_Gaussian_inverted": false,
+    "all_resource_pauses_preserved": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/259_cm_frame_cubic_adjoint_joint_recognition.py",
+    "--digits",
+    "128",
+    "--train",
+    "112",
+    "--root-index",
+    "7",
+    "--worker"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 26.257049500010908,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_128_112_7.out",
+    "sha256": "32afb8b4124d718d80fad16d1ba1431b0f64d1b49a34d26b8f6cc1380d411a4c"
+  },
+  "private_process_group": 91144,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/274_cm_frame_bounded_recognition.py",
+      "sha256": "1c267bf53ded651827db0f3ff5f51b885c1fee2fab59fa85a010b12b7060c653"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/259_cm_frame_cubic_adjoint_joint_recognition.py",
+      "sha256": "fad83376b12dd809f3c5069a32f874850a65ba4c54e7ab6f3425835733d9ac76"
+    }
+  ]
+}

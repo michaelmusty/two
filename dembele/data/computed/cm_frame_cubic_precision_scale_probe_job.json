@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/207_cm_frame_cubic_precision_scale_probe.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 2.6465583750978112,
+  "timeout_seconds": 30,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_scale_probe.out",
+    "sha256": "482971f7288e19efb67d7df9067f4d075eefba1239bee610204f78f51dccdb25"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/magma/207_cm_frame_cubic_precision_scale_probe.m",
+      "sha256": "3da05942c849493bfe1c3be041ec6f21ce58197d0e84c04c5b4181d05b1d6414"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/197_cm_frame_cubic_precision_arithmetic.m",
+      "sha256": "f5f36bfd89016f72825b46a1b0c4d4b0cadde97c442bd3c85a78c2d676a6a443"
+    }
+  ]
+}

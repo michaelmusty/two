@@ -1,0 +1,145 @@
+ Generating a new batch of 2 points in parallel
+ Batch of points generated.
+ Picking point 1 from batch; its order is 2^3
+  Computing pairings...
+  Looking for relations...
+  Good, no relation
+ Applying Frobenius
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [1, 1]~
+ It actually holds.
+ Dividing relation [1, 1] gives point of order 2^2
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [1, 1]~
+ It actually holds.
+ Dividing relation [1, 1] gives point of order 2^1
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [1, 1]~
+ Good, it does not actually hold.
+  Changing linear tests so that we don't get a false positive again.
+ Applying Frobenius
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [0, 1, 1]~
+ It actually holds.
+ Giving up this point
+ Picking point 2 from batch; its order is 2^3
+  Computing pairings...
+  Looking for relations...
+  Good, no relation
+ Applying Frobenius
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [0, 0, 1, 1]~
+ It actually holds.
+ Dividing relation [0, 0, 1, 1] gives point of order 2^2
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [0, 0, 1, 1]~
+ It actually holds.
+ Dividing relation [0, 0, 1, 1] gives point of order 2^0
+ Generating a new batch of 1 points in parallel
+ Batch of points generated.
+ Picking point 1 from batch; its order is 2^3
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [1, 1, 0, 1]~
+ Good, it does not actually hold.
+  Changing linear tests so that we don't get a false positive again.
+Guessing last column of matFrob from charpoly
+Unable to guess last column from charpoly
+ Aut #1 claimed to act as -1
+Lifting from prec O(7^1) to O(7^2)
+TRACE|row_setup|cache_bytes=40288|stack_bytes=39312
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=16328|selected_row_bytes=6392|kernel_bytes=5080|stack_checkpoint_bytes=67224|ms=2
+Lifting from prec O(7^2) to O(7^4)
+TRACE|row_setup|cache_bytes=42760|stack_bytes=42568
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17288|selected_row_bytes=7032|kernel_bytes=5216|stack_checkpoint_bytes=72976|ms=2
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+TRACE|row_setup|cache_bytes=43176|stack_bytes=43176
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73416|ms=2
+Lifting from prec O(7^8) to O(7^16)
+TRACE|row_setup|cache_bytes=43208|stack_bytes=43208
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73376|ms=2
+Lifting from prec O(7^16) to O(7^32)
+TRACE|row_setup|cache_bytes=43208|stack_bytes=43208
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73440|ms=2
+Lifting from prec O(7^32) to O(7^64)
+TRACE|row_setup|cache_bytes=50680|stack_bytes=50680
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=20496|selected_row_bytes=8328|kernel_bytes=5888|stack_checkpoint_bytes=82904|ms=3
+Lifting from prec O(7^1) to O(7^2)
+TRACE|row_setup|cache_bytes=40560|stack_bytes=39488
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=16776|selected_row_bytes=6328|kernel_bytes=4792|stack_checkpoint_bytes=67464|ms=2
+Lifting from prec O(7^2) to O(7^4)
+TRACE|row_setup|cache_bytes=42904|stack_bytes=42744
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17320|selected_row_bytes=7072|kernel_bytes=5216|stack_checkpoint_bytes=73184|ms=2
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+TRACE|row_setup|cache_bytes=43176|stack_bytes=43176
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73504|ms=2
+Lifting from prec O(7^8) to O(7^16)
+TRACE|row_setup|cache_bytes=43208|stack_bytes=43208
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73440|ms=2
+Lifting from prec O(7^16) to O(7^32)
+TRACE|row_setup|cache_bytes=43208|stack_bytes=43208
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73448|ms=2
+Lifting from prec O(7^32) to O(7^64)
+TRACE|row_setup|cache_bytes=50680|stack_bytes=50680
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=20496|selected_row_bytes=8328|kernel_bytes=5888|stack_checkpoint_bytes=82944|ms=3
+Lifting from prec O(7^1) to O(7^2)
+TRACE|row_setup|cache_bytes=39208|stack_bytes=38248
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=16128|selected_row_bytes=6432|kernel_bytes=4936|stack_checkpoint_bytes=67776|ms=2
+Lifting from prec O(7^2) to O(7^4)
+TRACE|row_setup|cache_bytes=42736|stack_bytes=42560
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17320|selected_row_bytes=7008|kernel_bytes=5144|stack_checkpoint_bytes=81344|ms=2
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+TRACE|row_setup|cache_bytes=43176|stack_bytes=43176
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=82280|ms=2
+Lifting from prec O(7^8) to O(7^16)
+TRACE|row_setup|cache_bytes=43208|stack_bytes=43208
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=82200|ms=2
+Lifting from prec O(7^16) to O(7^32)
+TRACE|row_setup|cache_bytes=43208|stack_bytes=43208
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=82280|ms=2
+Lifting from prec O(7^32) to O(7^64)
+TRACE|row_setup|cache_bytes=50680|stack_bytes=50680
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=20496|selected_row_bytes=8328|kernel_bytes=5888|stack_checkpoint_bytes=94328|ms=3
+Lifting from prec O(7^1) to O(7^2)
+TRACE|row_setup|cache_bytes=40304|stack_bytes=39488
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=16128|selected_row_bytes=6560|kernel_bytes=4912|stack_checkpoint_bytes=67624|ms=2
+Lifting from prec O(7^2) to O(7^4)
+TRACE|row_setup|cache_bytes=42816|stack_bytes=42672
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17328|selected_row_bytes=7048|kernel_bytes=5184|stack_checkpoint_bytes=72864|ms=2
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+TRACE|row_setup|cache_bytes=43176|stack_bytes=43176
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73448|ms=2
+Lifting from prec O(7^8) to O(7^16)
+TRACE|row_setup|cache_bytes=43208|stack_bytes=43208
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73568|ms=2
+Lifting from prec O(7^16) to O(7^32)
+TRACE|row_setup|cache_bytes=43208|stack_bytes=43208
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=17376|selected_row_bytes=7080|kernel_bytes=5216|stack_checkpoint_bytes=73560|ms=3
+Lifting from prec O(7^32) to O(7^64)
+TRACE|row_setup|cache_bytes=50680|stack_bytes=50680
+TRACE|row_kernel|rows=75|columns=13|blocks=5|rank=6|nullity=7|scanned=5|replayed=5|maximum_block_bytes=20496|selected_row_bytes=8328|kernel_bytes=5888|stack_checkpoint_bytes=82984|ms=3
+Main loop, touched 5/16
+Done with auts, now touched 5/16
+Computing 4 new points
+Main loop, touched 11/16
+Done with auts, now touched 11/16
+Computing 4 new points
+Evaluating 11 points
+Reducing lF from 10 to 5
+64 candidate polynomials
+16 identified polynomials
+1 faithful polynomials
+DATA|{"genus":2,"d0":6,"p":7,"a":2,"precision_exponent":64,"evaluation_points":32,"section_dimensions":[5, 11, 17],"torsion_count":16,"frobenius_fixed_count":8,"frobenius_rows":[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]],"polynomial_coefficients_ascending":["-73511771484375/1996081395841995112285583", "-3574898578125/7141615011957048702274", "-353144842235625/185681990310883266259124", "18240305285973389875/15968651166735960898284664", "-117708223840534629725/15968651166735960898284664", "-1478297616415075018305/15968651166735960898284664", "14204321587617442386981/31937302333471921796569328", "-71549027188916129215189/63874604666943843593138656", "-273831550860782057408835/63874604666943843593138656", "253844576108252193071245/3992162791683990224571166", "-5617068878402203625542667/31937302333471921796569328", "1118646121494627391573731/1485455922487066130072992", "-507775153744025261805/220034946302335376992", "4139788205877022525/1188436994958946408", "-509624730154629/176038660192408", "1"],"factor_degrees":[1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2],"timing_ms":{"init":10,"basis":729,"lift_four_points":881,"span_and_evaluate":564,"polynomial_and_checks":7}}
+PASS|100_lifttors_control
+
+RESOURCE|wall_seconds=2.868

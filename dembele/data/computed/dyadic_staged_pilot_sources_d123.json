@@ -1,0 +1,150 @@
+{
+  "milestone": "D123",
+  "date": "2026-09-27",
+  "report": "dembele/certificates/dyadic-staged-pilot-d123.md",
+  "final_review_driver": "dembele/pari/495_dyadic_staged_review.py",
+  "independent_arithmetic_drivers": [
+    "dembele/pari/491_dyadic_staged_pilot_independent.py",
+    "dembele/pari/494_dyadic_weighted_independent.py"
+  ],
+  "prior_review": "dembele/data/computed/dyadic_precision400_review_d122.json",
+  "inherited_D122_source_hashes_to_preserve": 1884,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Production polynomial multiplication in 476--479. Attribution and installed header/library hashes are preserved from the interim ledger. No additional web source is invoked for the new mathematical review."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited carry-free polynomial arithmetic supplies the older backend for all production final original residuals. Source 486 imports no production arithmetic."
+    }
+  ],
+  "new_external_theorem_invoked": false,
+  "inherited_mathematical_inputs": [
+    "D120/D121: the positive k-th original child column is divisible by pi^k; fixed-mass contraction and integral low inverse.",
+    "D121: refined transport parameters at P=10552 and the CM truncation/kernel-error proof.",
+    "D121/D122: actual P=400 harmonic and CM banks, P=400 r=32 factor, exact masses and original branches.",
+    "D122: independent integer quotient arithmetic in source 486; all curve comparison bounds remain unchanged."
+  ],
+  "new_deductions": [
+    "For fixed masses, T maps I_P={e:e_0=0, v_pi(e_k)>=max(0,P-k)} to pi^P in every output row.",
+    "If Tz-z belongs to I_P, then y=Tz has uniform original residual zero modulo pi^P.",
+    "Moment k, field coordinate i needs max(0,ceil((P-k-i)/8)) binary digits in weighted storage.",
+    "After eliminating r low moments, a high residual of valuation u needs only k<P-u; the next band ends at P-u-r-1.",
+    "Stop the weighted correction stage when u+r+1>=P, then reconstruct; this does not label weighted centers uniformly accurate."
+  ],
+  "actual_results": {
+    "harmonic_columns_at_P800": 1,
+    "harmonic_basis_column": 0,
+    "full_sixteen_column_bank_precision_pi": 400,
+    "low_state_count": 174,
+    "low_moment_cutoff": 799,
+    "original_full_residual_scalar_checks": 1113600,
+    "old_low_scalar_overlaps": 556800,
+    "old_extended_scalar_overlaps": 1113600,
+    "eliminated_positive_moments": 32,
+    "uniform_correction_steps": 13,
+    "CM_charts": 17,
+    "extended_target_states": 9,
+    "extended_state_cutoff": 2398,
+    "CM_moment_cutoff": 1599,
+    "CM_scalar_coefficients": 217600,
+    "coarse_error_beta": [
+      1632,
+      1648,
+      1632,
+      1664
+    ],
+    "weighted_compact_input_bytes": 7464600,
+    "uniform_input_bytes": 14476800,
+    "weighted_input_byte_ratio": 0.515625,
+    "shrinking_correction_steps": 12,
+    "shrinking_active_moment_counts": [
+      400,
+      367,
+      334,
+      301,
+      268,
+      235,
+      202,
+      169,
+      136,
+      103,
+      70,
+      37,
+      33
+    ],
+    "shrinking_correction_binary_bytes": 103751328,
+    "uniform_correction_binary_bytes": 940992000,
+    "shrinking_total_checkpoint_bytes": 129596592,
+    "all_intermediate_weighted_uniform_overlaps_checked": true,
+    "weighted_residual_and_full_reconstruction_checked": true
+  },
+  "independent_verification": {
+    "actual_column_recurrence_scalar_checks": 160,
+    "high_seed_recurrence_scalar_checks": 24,
+    "high_seed_degrees": [
+      400,
+      599,
+      799
+    ],
+    "coarse_values_checked": 68,
+    "complete_disjoint_sweeps_checked": 16,
+    "child_column_divisibility_checks": 348,
+    "weighted_state_scalar_checks": 14476800,
+    "weighted_residual_scalar_checks": 3695760,
+    "weighted_input_recurrence_scalar_checks": 96,
+    "all_exact_masses_checked": 174,
+    "production_arithmetic_not_imported": true,
+    "geometric_proofs_machine_formalized": false
+  },
+  "timings": {
+    "uniform_state_coordinator_wall_seconds": 538.5950104170479,
+    "uniform_state_sum_phase_seconds": 895.7328705405816,
+    "uniform_correction_sum_phase_seconds": 577.7211878732778,
+    "shrinking_coordinator_wall_seconds": 513.9665535420645,
+    "shrinking_correction_sum_phase_seconds": 409.0520987068303,
+    "shrinking_reconstruction_seconds": 101.38498854194768,
+    "shrinking_stage_uses_existing_uniform_seed": true,
+    "elapsed_speedup_claimed": false,
+    "comparison_caveat": "The uniform coordinator uses three chunk workers; shrinking sweeps are serial and import a saved seed. Summed phase durations are neither elapsed nor measured CPU time."
+  },
+  "bounded_input_jobs": {
+    "factor": 1,
+    "uniform_state": 126,
+    "CM": 4,
+    "independent_arithmetic": 2,
+    "weighted_reconstruction": 1,
+    "shrinking_state": 14,
+    "total": 148,
+    "passed": 148,
+    "failed": 0,
+    "maximum_recorded_phase_seconds": 116.92178379208781,
+    "sum_recorded_phase_seconds": 1683.724247374339,
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "wrapper": "dembele/pari/run_dyadic_capped.py",
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "BLAS_threads": 1
+  },
+  "decision": "Retain weighted Schur correction and original-operator reconstruction; combine them with resumable chunks before costing a larger column.",
+  "next_bounded_task": "Use a new source, 496 next unused, to combine weighted layout and shrinking bands with state chunks, then measure one actual P=1600 column from verified P=800 with r=32, including factor, seed, correction, original residual and CM costs and peak memory.",
+  "limits": {
+    "new_full_P800_bank": false,
+    "P1600_job_run": false,
+    "complete_target_size_solve_costed": false,
+    "quadric_bounds_changed": false,
+    "positive_exact_quadric_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "preceding_exact_zero_hypotheses_preserved": true,
+    "all_resource_pauses_preserved": true,
+    "all_prior_frozen_files_preserved": true,
+    "correspondence_sent": false
+  }
+}

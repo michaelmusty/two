@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/390_cm_real_structure.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.297285292064771,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_real_structure_d107_attempt02.log",
+    "sha256": "476199e158f061a8ed089c59fe518d3c0927bec80837c97a538c7cf6e8d6a36a"
+  },
+  "private_process_group": 44417,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/390_cm_real_structure.py",
+    "sha256": "514ee94b4d996683130ece2290df0fa181d1319ff31c5e054f60ace1efab6aba"
+  },
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d107-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

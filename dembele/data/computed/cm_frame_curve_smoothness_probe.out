@@ -1,0 +1,18 @@
+START_GROEBNER
+Time: 0.010
+GROEBNER_SIZE 105
+DIMENSION_AFFINE_CONE 2 [ 15, 16 ]
+HILBERT_POLYNOMIAL 30*$.1 - 15
+2
+DEGREE 30
+ARITHMETIC_GENUS 16
+START_SMOOTH
+
+IsNonsingular(
+X: X
+)
+In file "/Applications/Magma/package/Geometry/Sch/singularity.m", line 257, column 43:
+>>                 J := JacobianSubrankScheme(X);
+                                             ^
+Runtime error in 'JacobianSubrankScheme': Codimension is too large (number of minors of Jacobian matrix is greater than 2^30)
+

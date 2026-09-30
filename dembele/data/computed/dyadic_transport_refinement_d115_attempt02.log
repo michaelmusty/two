@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/425_dyadic_transport_refinement.py", line 38, in <module>
+    if __name__=='__main__':main()
+  File "/Users/musty/two/dembele/pari/425_dyadic_transport_refinement.py", line 25, in main
+    for child in row['children']:refine(child)
+  File "/Users/musty/two/dembele/pari/425_dyadic_transport_refinement.py", line 20, in refine
+    assert overlap>=row['normalized_error_pi'], {'overlap':overlap,'old_bound':row['normalized_error_pi'],
+AssertionError: {'overlap': 1000000000, 'old_bound': 1000000176, 'new_bound': 1000000348, 'root_overlap': 180, 'old_reconstructed_overlap': 1000000000}

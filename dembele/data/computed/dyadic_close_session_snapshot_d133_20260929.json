@@ -1,0 +1,66 @@
+{
+  "status": "observed",
+  "kind": "session_close_snapshot_not_a_mathematical_certificate",
+  "observation_started_UTC": "2026-09-29T11:34:55.379815+00:00",
+  "observation_finished_UTC": "2026-09-29T11:34:55.848642+00:00",
+  "observations_are_sequential_not_an_atomic_global_snapshot": true,
+  "production_session_id": 37950,
+  "continuation_session_id": 32689,
+  "session_ids_may_not_be_reusable_in_a_new_session": true,
+  "production_command": "python3 dembele/pari/553_dyadic_staged_archiving_coordinator.py --config dyadic_staged_P6400_col00_config_d133 --workers 3",
+  "continuation_command": "python3 dembele/pari/run_d133_completion.py",
+  "reported_receipt_status_counts": {
+    "pass": 2493
+  },
+  "receipt_count": 2493,
+  "nonpassing_receipt_paths": [],
+  "maximum_recorded_job_seconds": 28.544547957833856,
+  "last_committed_sweep_key": "sweep_finish_008",
+  "current_checkpoint_at_observation": {
+    "epoch": 18,
+    "tag": "ready008",
+    "phase": "ready",
+    "authority": {
+      "bits": 367,
+      "count": 2936,
+      "u": 3464
+    }
+  },
+  "checkpoint_is_historical_after_progress": true,
+  "coordinator_locks": {
+    "dyadic_staged_P6400_col00_d133.lock": "held_at_observation",
+    "dyadic_precision6400_completion_d133.lock": "held_at_observation"
+  },
+  "production_completed": false,
+  "D133_review_completion_exists": false,
+  "D134_review_completion_exists": false,
+  "stable_evidence": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col00_d133_sweep_finish_008.json",
+      "sha256": "3f774b24085341a017cd51687a49034934f0016731eed37b4a2d526db21713d1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col00_d133_sweep_finish_008_attempt01.job.json",
+      "sha256": "0b6238125da5b754667a264681580ae0ae411dc75677ac39e4fd5c04524f7195"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col00_pause_d133.json",
+      "sha256": "a50ac263e686c3b4fd6fb245bf9ccc15ecec23472df98e24fabe144259830ef4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_continuation_controls_d133.json",
+      "sha256": "c723034c61a200ef1c0d807ad8e56d2f267db309df9b723407e3e890b358d2eb"
+    }
+  ],
+  "certified_precisions_at_observation": {
+    "full_bank": 800,
+    "column_0": 3200,
+    "column_1": 1600
+  },
+  "D134_replay_and_review_executed": false,
+  "positive_exact_zero_proved": false,
+  "field_polynomial_constructed": false,
+  "process_survival_after_closing_session_verified": false,
+  "restart_requirement": "Inspect current completion records, coordinator locks, receipts and in-flight work; never start duplicate coordinators or infer that a free coordinator lock proves no orphan worker remains.",
+  "next_unused_source": 560
+}

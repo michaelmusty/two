@@ -1,0 +1,136 @@
+{
+  "status": "pass",
+  "milestone": "D86",
+  "stage": "adjoint_functions",
+  "precision_digits": 128,
+  "execution_host": "chatelet.mit.edu",
+  "per_job_wall_limit_seconds": 1800,
+  "per_job_memory_limit_bytes": 8000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_128_attempt_review.json",
+      "sha256": "089d355a0ba900ec0118239ea3b2bfe7f2ac7d62974c4533525cc1e8ef9289b2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_128.json",
+      "sha256": "28803c7a962cb737b302fbf05f4c599798e471ebb570bae7ed398d6444134620"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/d86_precision128_driver_989211112dd0d6ea.py",
+      "sha256": "989211112dd0d6ea83ca6476dfa8c020eaa36ac211bb331889ae779468ed6372"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/129_cm_frame_normalization_check.py",
+      "sha256": "7925d6af13a244e11f22981c4746c98492becec5f00822bd63c31e6d25cb7120"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/158_cm_frame_B3_fiber_data.py",
+      "sha256": "f9b980ac0724975639133c8e9a28b73b89acc0ad2bb0bdf5f4489d4fad30c4f6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/172_cm_frame_cover_third.py",
+      "sha256": "de310bfbfcb96e194905539b417ea9eed0d7dec6fcdae38be795d95638136a17"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/189_cm_frame_cubic_lift_third.py",
+      "sha256": "9bbb3e4428e23914a07b4b03b1f5f3794cc2ebcdba855ab8b1e32ab6261dd3c0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/201_cm_frame_cubic_precision.py",
+      "sha256": "f0e07e7b36002bbf3547b264b0909007ebf2dc0bf4111f4a772b8c6316dad608"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/219_cm_frame_cubic_pointed_jets.py",
+      "sha256": "2258b135c740e375e8624902149f5c4f9f0b4061fc1dc5155bd6127e8ff75d07"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/221_cm_frame_cubic_pointed_function.py",
+      "sha256": "7d9ad5cc7920fccc466987c675f45f39aca4bb42890753d4d14db2360df0842c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/241_cm_frame_cubic_pointed_direct_function.py",
+      "sha256": "02f0172e8bbf83951fbc8008991f29f8b0347b7af20dd0e7d4917755ab12f533"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/253_cm_frame_cubic_adjoint_lift.py",
+      "sha256": "740c2cabdb61878f593427305d07c677e85e0eb46a68e1beee699372bf72cebd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/262_cm_frame_cubic_staged_functions.py",
+      "sha256": "dae208ef113e557653337cee73ab98d5f227623c8b5043e5bd2d989eb813c5a2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/264_cm_frame_cubic_class_checks.py",
+      "sha256": "09ac98359528457cd42873b54f217624c221c870a1ad346127fa2c0f5110460b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/265_cm_frame_cubic_pointed64_check.py",
+      "sha256": "510c692a7ad47253a54a2b453953e4978477a108357e4efa7b19e14609f137a4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/266_cm_frame_cubic_pointed64_functions.py",
+      "sha256": "98e35060ee0e2688df0e177f674d7beb2a566340f10545ec5ad1afdc3f196722"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/267_cm_frame_cubic_adjoint64_functions.py",
+      "sha256": "7c65b6aaeac565c377359967acbb67082ee479ad7d869fb0e0dbcd00c06bc461"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/268_cm_frame_cubic_adjoint64_check.py",
+      "sha256": "1c8322e21df8c560499929e9f376f0292488a40972a917bf56f92f7f6900c2c2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/269_cm_frame_cubic_adjoint64_move.py",
+      "sha256": "28b24c205179dc6ee8dd221dfbe923f1712c8d953d97168c1fc35d53cb650133"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/282_cm_frame_cubic_precision128.py",
+      "sha256": "b0c0f60842341ff58b02d788897f36b5c09d82a4e550f0afb3b053802ca94431"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/299_cm_frame_chatelet_transport.py",
+      "sha256": "1e5353eab110f9263c2b5d22e265471102fe265410e5b5b5f13fb824c5a9e3f0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/304_cm_frame_chatelet_resume.py",
+      "sha256": "204abe74d83fd269dc4363cd14e9d10ed05f01650f37ed3555b4fa9b5a4b62a5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/305_cm_frame_chatelet_resilient_resume.py",
+      "sha256": "c9be2d7f836421fed25d3aee804f25cf0b75817978f22274720ab671f18ec74e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/d85_128_262_cm_frame_cubic_staged_functions.py",
+      "sha256": "46942fc0ebed33cda9925b88c44b5f661d6734dff1b2eed0d22fa50ad2b47a5e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/d85_128_264_cm_frame_cubic_class_checks.py",
+      "sha256": "3b209c2f28f855141eeb91bc5f127732d7b691a23895366bfd96f7a43dc4b626"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/d85_128_265_cm_frame_cubic_pointed64_check.py",
+      "sha256": "035e055229047b1dcfd3c217ac6a21fcb220aee59c73a2622ba16217257c4acf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/d85_128_266_cm_frame_cubic_pointed64_functions.py",
+      "sha256": "7fec2daacb2d25ad0f3a3fdacb323758c60bf91907d8a544c3f4b3179db44ed9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/d85_128_267_cm_frame_cubic_adjoint64_functions.py",
+      "sha256": "b4d2eb368cb9b3958acbc2ec7d8dfac31d7114567411185c96a02aa8aa0424d7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/d85_128_268_cm_frame_cubic_adjoint64_check.py",
+      "sha256": "d380d0d1d1f39c295f8e7d0d543f407760b6f8fe2b42d3b34dda526912db49de"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/d85_128_269_cm_frame_cubic_adjoint64_move.py",
+      "sha256": "3486e45855cdf85d26082e5ad6a18bde333e796350750a60cb0c548cb37f0c40"
+    }
+  ],
+  "previous_certificates_unmodified": true
+}

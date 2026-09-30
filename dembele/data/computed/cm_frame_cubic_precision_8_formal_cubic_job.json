@@ -1,0 +1,68 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_formal_cubic_run.m"
+  ],
+  "status": "timeout",
+  "exit_code": null,
+  "wall_seconds": 180.04516345798038,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_formal_cubic.out",
+    "sha256": "9f650d20fa97082ec5665bff164d4e7ea5351d3688fd62bf01f294a68cbea503"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/201_cm_frame_cubic_precision.py",
+      "sha256": "f0e07e7b36002bbf3547b264b0909007ebf2dc0bf4111f4a772b8c6316dad608"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/203_cm_frame_cubic_precision_function.m",
+      "sha256": "b490822e0d185c433da4b5c124bab74061837e9d1f7016c4822ee4de114e0dcf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_formal_cubic_run.m",
+      "sha256": "1efeea06d79ecb13e3908bd89ee2b0b24757887608f24e629e9fe42c483aac94"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/197_cm_frame_cubic_precision_arithmetic.m",
+      "sha256": "f5f36bfd89016f72825b46a1b0c4d4b0cadde97c442bd3c85a78c2d676a6a443"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/199_cm_frame_cubic_precision_model.m",
+      "sha256": "4154f0364ae5660cd231b33774bb1b6ccfa25b23e597f90d37473b478b8e56cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/214_cm_frame_cubic_formal_function.py",
+      "sha256": "b427991ff731dd0414dd5843899afb8f4573550c7d964c3771983a1efcf44172"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/202_cm_frame_cubic_gauge_arithmetic.m",
+      "sha256": "395dbba782655f1a16efea0ae2a5fede912b51e39190a08e2fa9fde05f65dbd5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_sections.json",
+      "sha256": "a698d80932e76843fe835eb01b41938a5c844f1daf0ab4b4ce4fa14c4261d0ad"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_formal_third.json",
+      "sha256": "e97aa1117256a038e1b3eeb652bb66bac215336d9cfb844fe53dc8e9b26b4a06"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_4.json",
+      "sha256": "7a2666c344207775f4c310b06a55b30933029f6fea7e7789fd7f497a7168a5cb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_gauge.json",
+      "sha256": "7e2cc88419d513dccc4d3de4fffcc6e5f4afcdcca8a278e16a6f7dceb73e4d70"
+    }
+  ]
+}

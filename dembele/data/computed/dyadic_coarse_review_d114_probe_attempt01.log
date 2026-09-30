@@ -1,0 +1,17 @@
+MOMENT_REVIEW|130848 state entries and 26112 CM entries; all residuals and transfers exact modulo pi^16
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/416_dyadic_coarse_review.py", line 280, in <module>
+    if __name__=='__main__':main()
+  File "/Users/musty/two/dembele/pari/416_dyadic_coarse_review.py", line 267, in main
+    result=computations();p=result['Poisson']
+  File "/Users/musty/two/dembele/pari/416_dyadic_coarse_review.py", line 237, in computations
+    return {'moments':moments_check(moments),'Poisson':poisson_checks(moments,coarse)}
+  File "/Users/musty/two/dembele/pari/416_dyadic_coarse_review.py", line 191, in poisson_checks
+    vs=[ring.val(tuple(x)) for x in answer.T]
+  File "/Users/musty/two/dembele/pari/416_dyadic_coarse_review.py", line 191, in <listcomp>
+    vs=[ring.val(tuple(x)) for x in answer.T]
+  File "/Users/musty/two/dembele/pari/416_dyadic_coarse_review.py", line 125, in val
+    def val(self,x):return min((16*((c&-c).bit_length()-1)+i for i,c in enumerate(x) if c),default=self.precision)
+  File "/Users/musty/two/dembele/pari/416_dyadic_coarse_review.py", line 125, in <genexpr>
+    def val(self,x):return min((16*((c&-c).bit_length()-1)+i for i,c in enumerate(x) if c),default=self.precision)
+AttributeError: 'numpy.int64' object has no attribute 'bit_length'

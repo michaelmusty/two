@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/232_cm_frame_cubic_pointed_recognition.py",
+    "--digits",
+    "8",
+    "--worker"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 8.892193958978169,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_8_recognition.out",
+    "sha256": "5cd64f9313df4ff736816641e5e3b52bf4c5ae82754e91484dab04b7e5cf8225"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/232_cm_frame_cubic_pointed_recognition.py",
+      "sha256": "af282cbfa3ecff7f82dcc0f89a6bbb61cbe6c5add5b82570956de5ae004047b0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ]
+}

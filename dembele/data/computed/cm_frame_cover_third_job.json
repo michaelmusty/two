@@ -1,0 +1,56 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/173_cm_frame_cover_third.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 47.89662620902527,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_third.out",
+    "sha256": "76172b9bbbbd95d71ef2c2cc5ec4ae4775fecc12cdb53a737d66a430c036d77e"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/172_cm_frame_cover_third.py",
+      "sha256": "de310bfbfcb96e194905539b417ea9eed0d7dec6fcdae38be795d95638136a17"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/173_cm_frame_cover_third.m",
+      "sha256": "3b0d749a601088471c42c9beb28f9af8ac919b122f8251eba61bef41d550fa22"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_third_input.m",
+      "sha256": "ca4b6cfaa95901793fdab32fd82be3f2844016e6469449487a7b03e303327265"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_class_check_job.json",
+      "sha256": "8fb211fc571f1d0c686698af7647d494d7aeeadeb0fec77fb8c831bee14daf37"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/levelraise_p2k_charpolys.m",
+      "sha256": "0c1adf7af27a39868a25618f2d901b4fdd4b55dbc62c4051c458bf0497529979"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_verification.json",
+      "sha256": "4c02416725d60c1dff1103ee47ae71d7343c058b26ea369e12ddfa46d772e3a4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+      "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.m",
+      "sha256": "99ccb18d550b2814ea27fe4bb86a0b19dc685b202c1f4f12caf4e96b1bffc318"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "plan": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_target_auth_plan_d130.json",
+    "sha256": "c00330c6182b81bf71707c81847daf22f559c5c879fb52412f4505f644da162e"
+  },
+  "coordinator": {
+    "path": "/Users/musty/two/dembele/pari/run_d130_batch.py",
+    "sha256": "11b5bacea12af1ff2f98caa8b3cedbc56f8d6146b1d2597a9eddddf083cf774a"
+  },
+  "worker_limit": 1,
+  "completed_jobs": 3,
+  "jobs": [
+    {
+      "stem": "dyadic_stream_auth_manifest_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_stream_auth_manifest_d130_attempt01.job.json",
+        "sha256": "4612880ad266efe9c2572fed46eaedae58fab2191b91d7a751ca239f5a4734b4"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_stream_auth_manifest_d130.json",
+        "sha256": "f8cb33b704dc04ad6479123b0369f9cf6b90424d202d82c969c41fd7f3ed7fc6"
+      },
+      "seconds": 0.4543054162058979,
+      "peak_rss_bytes": 40255488,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_stream_auth_rows_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_stream_auth_rows_d130_attempt01.job.json",
+        "sha256": "962372f06fb7f15d48082c6d37ac07cb4b811f165313921956a07836770496dd"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_stream_auth_rows_d130.json",
+        "sha256": "b7675950fac77f92c5c285eba5db0afa57e40f2d4cfcfd47feae3d914cb2799f"
+      },
+      "seconds": 0.18672779109328985,
+      "peak_rss_bytes": 21725184,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_stream_auth_target_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_stream_auth_target_d130_attempt01.job.json",
+        "sha256": "9474dac123918a27c7ab66928a6f69b4a9b88ea266d3fda30928fabc5c09f646"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_stream_auth_target_d130.json",
+        "sha256": "8eda60ec1f5f6c58bc44f792ea76a2996f7ce56c8863755082fe9016a3e671cc"
+      },
+      "seconds": 1.0093434168957174,
+      "peak_rss_bytes": 38207488,
+      "resumed": false
+    }
+  ],
+  "wall_seconds": 1.7607394999358803
+}

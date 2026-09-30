@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/Users/musty/.pyenv/versions/3.10.12/bin/python3",
+    "/Users/musty/two/dembele/pari/377_cm_tangent_exactness_review.py",
+    "--check"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 1.943583625019528,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_review_d101_finalcheck.log",
+    "sha256": "a6e1254b751f97aed5c450579691c1f2f2f2f64e0db18bb9cfaed6835c643fdd"
+  },
+  "private_process_group": 52933,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/377_cm_tangent_exactness_review.py",
+    "sha256": "7870fd8da2b6f9afde8b47fd66e93ee07a41ee2aaaf447d29209f39f34f1076d"
+  }
+}

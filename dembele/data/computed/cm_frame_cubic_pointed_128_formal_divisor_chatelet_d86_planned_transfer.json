@@ -1,0 +1,76 @@
+{
+  "status": "prepared_only",
+  "destination": "chatelet.mit.edu",
+  "remote_directory": "two_remote_magma/dembele_d86_128_20260922",
+  "job": "cm_frame_cubic_pointed_128_formal_divisor_chatelet_d86",
+  "file_count": 12,
+  "total_bytes": 12626184,
+  "files": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.m",
+      "sha256": "2774798b08662abb33e26022abcd7ffdc914f7535f19ff6bda20885f766c6e63",
+      "bytes": 755461
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_structure.m",
+      "sha256": "1c37e71d16c0c89afbac5a51ee04f236dfbd0b606c1390ac630721517791dc09",
+      "bytes": 484970
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.m",
+      "sha256": "99ccb18d550b2814ea27fe4bb86a0b19dc685b202c1f4f12caf4e96b1bffc318",
+      "bytes": 2517444
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_sections.m",
+      "sha256": "55e88dd9f86ff1300e3a9e6bca964ef8e6ae399b487a4af7f6e978d45ab3139b",
+      "bytes": 369554
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic.m",
+      "sha256": "4c72863126e983fb4b05a78d1a6d6d5ced4f7cc10a2214f1c37f8eb855404f39",
+      "bytes": 146424
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_128_formal_divisor_chatelet_d86_run.m",
+      "sha256": "68b9aa912c82d52feb7f1eb339399380b3ae9ae5f34cff56351ee872c066570a",
+      "bytes": 968928
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_128_sections.m",
+      "sha256": "7035288a7c7e157d465b16e5b53c9b3a1e5ddaa4537c451e5a852c3a4d3c2de3",
+      "bytes": 7361000
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+      "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5",
+      "bytes": 3434
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/283_cm_frame_precision_aware_arithmetic.m",
+      "sha256": "aa8b7eb170a311589f8c0850de37fe78730c4b3157cf7a29c40c82381d3b0a38",
+      "bytes": 8324
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/d85_128_199_cm_frame_cubic_precision_model.m",
+      "sha256": "530d3124994b37bb73833c84657de1253a7da8e9de37359a2a991c30bf98d385",
+      "bytes": 3415
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/d85_128_208_cm_frame_cubic_formal_divisor.m",
+      "sha256": "64e238d689c48e63c74c19c56df469a1fdf080d6edfa7de7b268d9be3e8b2146",
+      "bytes": 4204
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/298_cm_frame_remote_worker.py",
+      "sha256": "47516819a9bfbebbf4fcdc99ad9ea98677bf9c646767ad032bf1a4d41ff2badf",
+      "bytes": 3026
+    }
+  ],
+  "payload_scope": "Magma mathematical inputs and scripts, plus the standalone bounded job worker",
+  "credentials_included": false,
+  "unrelated_project_files_included": false,
+  "credential_marker_scan_passed": true,
+  "per_job_wall_limit_seconds": 1800,
+  "per_job_memory_limit_bytes": 8000000000
+}

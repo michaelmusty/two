@@ -1,0 +1,201 @@
+{
+  "status": "pass: arithmetic identities and interval partial sums; no full lift",
+  "exact": {
+    "dual_equals_beta_inverse_order": true,
+    "pilot_classes": 34,
+    "unit_duplicate_witnesses": 96,
+    "primitive_classes": 29,
+    "Hecke_bucket_counts": {
+      "known": 9,
+      "a31_b20": 4,
+      "a31_b10": 12,
+      "a31_b21": 4
+    },
+    "explicit_missing_old_shell_class_checked": true,
+    "dual_corruption_rejected": true
+  },
+  "interval_output": {
+    "scalar_kernels": 42,
+    "primitive_class_terms": 29,
+    "largest_bucket_component_radius_upper_bound": "1e-47",
+    "scalar_quadrature_error_upper_bound": "6.550e-44",
+    "node_enclosures": "hash-bound Arb run; not numerically recomputed by this standard-Python checker"
+  },
+  "jobs": [
+    {
+      "path": "dembele/data/computed/nelson_unfolding_d91_attempt01.job.json",
+      "status": "failed",
+      "wall_seconds": 6.226251791929826
+    },
+    {
+      "path": "dembele/data/computed/nelson_unfolding_d91_attempt02.job.json",
+      "status": "pass",
+      "wall_seconds": 3.870284833945334
+    },
+    {
+      "path": "dembele/data/computed/nelson_primitive_d91_attempt01.job.json",
+      "status": "failed",
+      "wall_seconds": 3.436194916954264
+    },
+    {
+      "path": "dembele/data/computed/nelson_primitive_d91_attempt02.job.json",
+      "status": "pass",
+      "wall_seconds": 3.331591041991487
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt01.job.json",
+      "status": "failed",
+      "wall_seconds": 3.0132847919594496
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt02.job.json",
+      "status": "failed",
+      "wall_seconds": 4.5351092090131715
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt03.job.json",
+      "status": "pass",
+      "wall_seconds": 6.144014333025552
+    }
+  ],
+  "sources": [
+    {
+      "path": "dembele/data/computed/cm_orbit.json",
+      "sha256": "6c70d443b112c49c0a448e63f88b9b7c2ded7fc8f5392db14356ae3c1bfd4e67"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_lattice_d90.json",
+      "sha256": "24f8e464cb5cf6bff4a71828959bb9e3e328ae2a233bae836302aac97682a0af"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_shell_d90.json",
+      "sha256": "ea1b8e6ed549244b8b740c4549e258349fc82be63c970d6ec979e4de942409ca"
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt01.job.json",
+      "sha256": "09f5a66e679416782375e7926e43bdf401bf94564a9fc0358f1a7ee37474c53d"
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt01.log",
+      "sha256": "4902c462a5e61e44f2a2138236969fab4717d467922cf9def89720f74c51ffb7"
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt02.job.json",
+      "sha256": "a49fde68feda78587aa1ec2d2713761b86153726b49866a25bbe99f9985e67c8"
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt02.log",
+      "sha256": "1a364d9f34874fa837a8ae93edf2c608dce4be2bd385d5afb79a6f7c3cb235c0"
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt03.job.json",
+      "sha256": "23c43bfb9f1be11e2991fc24c45c025757fc6debc9c2f5b6ccf4277576cf6147"
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_d91_attempt03.log",
+      "sha256": "0a857e57017cfa617f37b1a4d7de7fdae732d43a5c8984e10e17b57f0700e7b8"
+    },
+    {
+      "path": "dembele/data/computed/nelson_interval_sum_d91.json",
+      "sha256": "ca867818ba3858cb8772df6afa8c3049e8242201024582505be29ae2cfd848f9"
+    },
+    {
+      "path": "dembele/data/computed/nelson_primitive_classes_d91.json",
+      "sha256": "86941c8138ec5abd4b25129ad0c3d5cdbb0c9b7029aa829dd9dc8d60fed53072"
+    },
+    {
+      "path": "dembele/data/computed/nelson_primitive_d91_attempt01.job.json",
+      "sha256": "a78e4e6b9eb11a389667f239992cb3855029bdb76ecfc096609a50f67ac82c4f"
+    },
+    {
+      "path": "dembele/data/computed/nelson_primitive_d91_attempt01.log",
+      "sha256": "a9371e8856d103885d4259feefe7a5720ea3476533968e6861d4b2a39ec8c1f8"
+    },
+    {
+      "path": "dembele/data/computed/nelson_primitive_d91_attempt02.job.json",
+      "sha256": "b34cd5a9d044a69b75d3825f696791d477d08d146dd881fe1c584e0b19a9c5be"
+    },
+    {
+      "path": "dembele/data/computed/nelson_primitive_d91_attempt02.log",
+      "sha256": "86e754490af9d8fb10861e4f7d3061094b395bb760bb71a16628b9e7b03e35b6"
+    },
+    {
+      "path": "dembele/data/computed/nelson_unfolding_d91_attempt01.job.json",
+      "sha256": "9854e9fd03cd38de52d09e3daae93b677b37eb098662ec78fc6af50a3e3ae498"
+    },
+    {
+      "path": "dembele/data/computed/nelson_unfolding_d91_attempt01.log",
+      "sha256": "7074505fa762a52de9a4caaac10de370e1b5d1b932c064765356544b12dbefe1"
+    },
+    {
+      "path": "dembele/data/computed/nelson_unfolding_d91_attempt02.job.json",
+      "sha256": "0bb6e10a4d391e041c00a86bb859234a4adeaffcd95694aa5a146653d9c81a12"
+    },
+    {
+      "path": "dembele/data/computed/nelson_unfolding_d91_attempt02.log",
+      "sha256": "480fc1c428d447b8395813f3b29a511004e80480fbeabf1d453fd053daa39e30"
+    },
+    {
+      "path": "dembele/data/computed/nelson_unfolding_data_d91.json",
+      "sha256": "8c1625765d3592b5e9d86542cb98d0e0150b49a66048367946618ba13b915222"
+    },
+    {
+      "path": "dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "dembele/pari/320_nelson_local_kernel.py",
+      "sha256": "c609baa62ebff55e00283385fe2d7f85b0cebde412e2a5a6f2cbe97cd7a93114"
+    },
+    {
+      "path": "dembele/pari/321_nelson_cm_lattice.py",
+      "sha256": "f8421364564b193f64df30502f3099af4d2316e5b9519cf0617cde75ec2de78d"
+    },
+    {
+      "path": "dembele/pari/324_nelson_cm_shell.py",
+      "sha256": "4f068bc2a448a389e7ce830d0cf803ff8e4ddcf9f933d66107bfd0aa91dedda9"
+    },
+    {
+      "path": "dembele/pari/325_nelson_d90_audit.py",
+      "sha256": "b185173b4e1ba43113dc4effc0cc9250f349eec2cc9f3bc87cdc6daf5fcdfeb0"
+    },
+    {
+      "path": "dembele/pari/327_nelson_unfolding_data.py",
+      "sha256": "f6891cda8fd2778263f8e24e4d12dcec6f6a72444fc9c9d8bbfe952b705c0f95"
+    },
+    {
+      "path": "dembele/pari/328_nelson_unfolding_data.py",
+      "sha256": "0c1f2e293139b87a584e64b5651efe2572cd7aaeb73b2449d52898fdce75fea3"
+    },
+    {
+      "path": "dembele/pari/329_nelson_primitive_classes.py",
+      "sha256": "f23339b1b88b0177b8d4967f1ee7f5ceb21330c6dca34d806ba18a2cd6742cef"
+    },
+    {
+      "path": "dembele/pari/330_nelson_primitive_classes.py",
+      "sha256": "8028b74f7ea0727e7b3535c858b69ebcb97fc95ffa9cee4c0d1aedc2fd102046"
+    },
+    {
+      "path": "dembele/pari/331_nelson_interval_sum.py",
+      "sha256": "1435c2d18e72a6214ca238ab80cded0c0e4505eb90ae28a4d73f855c111011e3"
+    },
+    {
+      "path": "dembele/pari/332_nelson_interval_sum.py",
+      "sha256": "f55297d3a12bad7cd1af85995aa5cf455841bffd77f73ff45c61de7bb14b77f7"
+    },
+    {
+      "path": "dembele/pari/333_nelson_interval_sum.py",
+      "sha256": "5db3901a0fe91117aea146c9e9a101c9a3a11a8dd468e73793b5f169a82c0639"
+    },
+    {
+      "path": "dembele/pari/334_nelson_unfolding_audit.py",
+      "sha256": "bff793989e9f20277a5beb479fa6c68b8681643bcf6fee5e818a290da980e1db"
+    }
+  ],
+  "global_Hilbert_theta_lift_evaluated": false,
+  "Shimura_derivative_computed": false
+}

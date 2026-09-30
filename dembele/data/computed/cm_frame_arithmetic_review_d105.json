@@ -1,0 +1,2472 @@
+{
+  "status": "pass",
+  "milestone": "D105",
+  "marked_graph_reconstruction": {
+    "input": "fresh D99 Brandt entries and stabilizers",
+    "algebraic_quotient_edges": 73,
+    "tail_retractions": [
+      {
+        "from": 1,
+        "to": 2,
+        "marks_moved": []
+      },
+      {
+        "from": 5,
+        "to": 4,
+        "marks_moved": [
+          5
+        ]
+      },
+      {
+        "from": 4,
+        "to": 2,
+        "marks_moved": [
+          5
+        ]
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "marks_moved": [
+          5
+        ]
+      },
+      {
+        "from": 3,
+        "to": 6,
+        "marks_moved": [
+          5
+        ]
+      },
+      {
+        "from": 35,
+        "to": 23,
+        "marks_moved": []
+      },
+      {
+        "from": 36,
+        "to": 24,
+        "marks_moved": []
+      },
+      {
+        "from": 37,
+        "to": 25,
+        "marks_moved": []
+      },
+      {
+        "from": 38,
+        "to": 26,
+        "marks_moved": []
+      }
+    ],
+    "marks": [
+      {
+        "diagonal_class": 5,
+        "core_vertex": 6,
+        "stable_edge": [
+          9,
+          10
+        ],
+        "distance_from_first_end": "6",
+        "unit_vertex": 35,
+        "unit_vertex_name": "e9_10_6"
+      },
+      {
+        "diagonal_class": 51,
+        "core_vertex": 51,
+        "stable_edge": [
+          39,
+          45
+        ],
+        "distance_from_first_end": "1",
+        "unit_vertex": 53,
+        "unit_vertex_name": "e39_45_1"
+      },
+      {
+        "diagonal_class": 52,
+        "core_vertex": 52,
+        "stable_edge": [
+          40,
+          46
+        ],
+        "distance_from_first_end": "1",
+        "unit_vertex": 55,
+        "unit_vertex_name": "e40_46_1"
+      },
+      {
+        "diagonal_class": 53,
+        "core_vertex": 53,
+        "stable_edge": [
+          41,
+          47
+        ],
+        "distance_from_first_end": "1",
+        "unit_vertex": 58,
+        "unit_vertex_name": "e41_47_1"
+      },
+      {
+        "diagonal_class": 54,
+        "core_vertex": 54,
+        "stable_edge": [
+          42,
+          48
+        ],
+        "distance_from_first_end": "1",
+        "unit_vertex": 60,
+        "unit_vertex_name": "e42_48_1"
+      },
+      {
+        "diagonal_class": 55,
+        "core_vertex": 55,
+        "stable_edge": [
+          39,
+          49
+        ],
+        "distance_from_first_end": "1",
+        "unit_vertex": 54,
+        "unit_vertex_name": "e39_49_1"
+      },
+      {
+        "diagonal_class": 56,
+        "core_vertex": 56,
+        "stable_edge": [
+          40,
+          50
+        ],
+        "distance_from_first_end": "1",
+        "unit_vertex": 56,
+        "unit_vertex_name": "e40_50_1"
+      },
+      {
+        "diagonal_class": 57,
+        "core_vertex": 57,
+        "stable_edge": [
+          41,
+          43
+        ],
+        "distance_from_first_end": "1",
+        "unit_vertex": 57,
+        "unit_vertex_name": "e41_43_1"
+      },
+      {
+        "diagonal_class": 58,
+        "core_vertex": 58,
+        "stable_edge": [
+          42,
+          44
+        ],
+        "distance_from_first_end": "1",
+        "unit_vertex": 59,
+        "unit_vertex_name": "e42_44_1"
+      }
+    ],
+    "stable_vertices": 30,
+    "stable_edges": 45,
+    "unit_vertices": 61,
+    "unit_edges": 76,
+    "all_marks_are_midpoints": true
+  },
+  "independent_noneffectivity_witness_checks": [
+    {
+      "distinguished_vertex": 35,
+      "root_coefficient": -3,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    },
+    {
+      "distinguished_vertex": 53,
+      "root_coefficient": -2,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    },
+    {
+      "distinguished_vertex": 54,
+      "root_coefficient": -2,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    },
+    {
+      "distinguished_vertex": 55,
+      "root_coefficient": -2,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    },
+    {
+      "distinguished_vertex": 56,
+      "root_coefficient": -2,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    },
+    {
+      "distinguished_vertex": 57,
+      "root_coefficient": -2,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    },
+    {
+      "distinguished_vertex": 58,
+      "root_coefficient": -2,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    },
+    {
+      "distinguished_vertex": 59,
+      "root_coefficient": -2,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    },
+    {
+      "distinguished_vertex": 60,
+      "root_coefficient": -2,
+      "potential_identity": true,
+      "all_vertices_burn": true,
+      "minimum_positive_burning_margin": 1
+    }
+  ],
+  "corruption_controls": {
+    "altered_potential_rejected": true,
+    "altered_burning_order_rejected": true,
+    "altered_distinguished_branch_allocation_rejected": true
+  },
+  "auxiliary_CM_field": {
+    "splitting_group_order_from_proved_D59_run": 272,
+    "CM_class_number_from_proved_D59_run": 17,
+    "CM_Eisenstein_at_2": true,
+    "resolvent_evaluates_to_zero_exactly": true,
+    "gamma_degree_certificate_prime": 101,
+    "gamma_power_basis_determinant_mod_prime": 5,
+    "CM_field_degree": 16,
+    "resolvent_degree": 16,
+    "root_field_integral_order_discriminant": "604462909807314587353088",
+    "integral_order_arithmetic_replayed": true,
+    "common_field_degree_via_companion_class_field_proof": 272,
+    "numerical_orientation_used": false,
+    "F_equivariant_point_root_matching_proved": false
+  },
+  "tangent_atlas_and_recognition_budget": {
+    "candidate_only_common_clearing_integer": "268558456580618584589256039901289886905255617952711542378058837950662250587356839086049191888897604619171984128247582734535730845139499512948159954334465951990106932226573583912522569404754176850163452905834195201730166548729792651319700314689518278036724031777820196084711945483367377",
+    "candidate_only_coordinate_absolute_bounds": [
+      "268558456580618584589256039901289886905255617952711542378058837950662250587356839086049191888897604619171984128247582734535730845139499512948159954334465951990106932226573583912522569404754176850163452905834195201730166548729792651319700314689518278036724031777820196084711945483367377",
+      "112096838899168954525032395631542791467616388234984634268558467665900287534604582382323860937146921749496655443809537859596731280312964534056974502346664134268376164510737191258177564415722873584794297930991160366612951771279594161853501143512853230726656602928831845492775817288448433664143276",
+      "115786095648515187029175107296008541550734633663598813039113271268992916272040101217321411839667839673031485822225925564323841031587116223074482556686740807186489856477757002129842077653710202362894717432903556603587178835733662294583168358656023687240479411461990336502453187840857941304798281",
+      "267199384556584999033783938796837175452370996927605345166134014993899941569357192700190951254953007777871080831024156210564255002651465454835091673037985313026875787024649732116329277466417443402794918315071756111507280399466503004279032261183967520899658985498773542200985687389393551431308167",
+      "390308347353342121622828717272131504455321200089726896672966757434354651841646722738742976144992040242083881441193549502154615565699051066249096623506576073957375965358768296907030399611596952435268290395330950320347106160301774045207888697497797751841236147811659373911936698554620630021140598",
+      "173547351519596515122260136916026462212956760186497059512100688568345380973379659999885066649059385892050059541482913225557476794441095941329197990849865057098826864507584247172983130810136437564968523418218867377392594144314890769112061056930536766944340223403836505056016721375044206238441853",
+      "81416040692364621082546506569059809746826163410684419808366727482404363489396494398108724860192205809998274983825948927252007780596838745317756039252625543068804927518877394897723860076182702675681272828418063589495838468538560813711996135340287666816768457882551533969575335131191755846373806",
+      "309424926573137981154489057958578039118487968454375056964630993235789415089382537478772425152680322579747249583086182508660654927781996509877549946138856057411321478190482471018575415472474700403251772893296449539144455500644806473572880162894525384683997382793289735115736296915712923608276308",
+      "53128950438935630169239321778736770575892272257657828156674144640439183366470586539330972950721289288776192700013890664407111392498866542510000278175327441160046761648463612657223449966647738721726429786499165816070069578727832244634432014875222885266074636420672724689506896819393765712912072",
+      "144855858179862985170128303872062210050094983173090357484672057071778181570236078460723264313071244908441412725725667297914751801950667322364150129920681835051800229563323408764386495803249715446828423871063780053269285010886967913821761566308348278175431954629272267042467200114172560242928836",
+      "19558945066392419881590413596592786290669105893990693477269074872115217817386827799183296055593813441504357920377514284412058964339587570225544645981965058401454223465550617089623306673189743912679783631655281705691527892636091509708129727700970336111232167294108956799552515943415981969383611",
+      "302361125073898945232186725903356278748151593589186302365313074996197834502014128898745291883921512560554682601523516056153168746872472937025275279284387935792519443234950635887194878838366082440003417709132765776393890098704918745636021843053064658313239851750682605142311586254488557656655904",
+      "118714082500999088913905108102554906746356750414988123579184493013194112498198059753719096698103125982719554820706001703976783778887411651261648402552442222640092409212601033087894826668920320699870442098571587849860550113499202676146448544411099398117794813932451727026810552576527591361138703",
+      "256516306793023417510786646363423924404814843493537927161041960165835782852072027881862337126022160665927973468798171656456723951905268076884658289504498980149854118904001322659870390391768769400490592556677132256669485349228923532273849934980575757125572742456196005183820822667909204981604969",
+      "519969000934709067100790005587464721406683161130082461480776758158677495473660293483593687637088109815545954231508507213311208751554982129961405179349300404997399757302908769668661029135407840660699163247620999091073617425311819570534099903921132959039060786921389910646254581010925146487431167"
+    ],
+    "candidate_strict_power_of_two_exponent": 976,
+    "candidate_projective_height_upper": 677,
+    "actual_projective_height_upper_via_D103_D104_and_companion_proof": 10504,
+    "number_of_charts": 15,
+    "all_candidate_pivots_nonzero": true,
+    "specific_actual_G12_nonzero_proved": false,
+    "common_field_degree_bound": 272,
+    "difference_height_upper": "111817/10",
+    "sufficient_single_embedding_decimal_error_exponent": 1320873,
+    "sufficient_all_embeddings_decimal_error_exponent": 4857,
+    "thresholds_are_sufficient_not_minimal": true,
+    "requires_consistent_choice_of_bijection_and_common_nonzero_chart": true,
+    "actual_errors_certified": false
+  },
+  "previous_source_hashes_checked": {
+    "D99": 479,
+    "D104": 53
+  },
+  "sources": [
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/bin/gp-2.17",
+      "sha256": "939b7d06d0419f528f8a079d1315b115d582143add8330c697e9621fdfc5c4b3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/HilbertSeries/Formulas.m",
+      "sha256": "057c68e51498868e9544fe4d395a9191a6e7d7d680858b9edf6bd3d5abc9b476"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Mestre/Qsqrt3.m",
+      "sha256": "5d5df83f44c586012c733a52aaff66b0c17c4c4c0316c7c351d43685f1212409"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/definite.m",
+      "sha256": "dcdb6b766d195255b86636a4cb83dd07bfb607c5807844f7678fc3f36a66821f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/diamond.m",
+      "sha256": "913118cde96cbe1ecf33b4ecf11b03eb8aff37be125203e15e900a0a65a9302d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/finitefield.m",
+      "sha256": "5146c012c6fcedeb2b85d01ddedfe015d4fa0a9828778c570a44078c1e5bfc20"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/hackobj.m",
+      "sha256": "ec7eab2e7fdf8dee57d80b337427a70c6ff8bac4b58f913f3f394a7ef9a62b3d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/hecke.m",
+      "sha256": "97abe984cd4273e65f7616feb10aa07c6daf16eed70b3301e231bb7104396c3b"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/hecke_field.m",
+      "sha256": "d7c7c2d6c556d7805fd31607deeb40754757df58da32a4948880cb6d31e28ee6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/ideal_datum.m",
+      "sha256": "a702868310e13b53b08f016bf61331eea5488ae854e85bc56ebc758133cf6632"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/level.m",
+      "sha256": "3f3ae4f88af95102fa96868ddefe0d302a9021edf579d5907583ba1f3fc333ab"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/precompute.m",
+      "sha256": "ab414a6ab8ea0fdb65ceaeb9f22f76ce467e80fb6ff3fe34b51de399654577ab"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/weight_rep.m",
+      "sha256": "bdb8acae6e518ec245cfbb645a435211e1d128a1e5e4b8277c2ccd96448d4638"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Basis.m",
+      "sha256": "eca37b6e82c986f47737bb151cec49c7402b3ab0af4fd73250535beea8789f5f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/CanonicalRing.m",
+      "sha256": "c845de226aee9616eb4a2bfe638c1691702433c52b889e2fba27ed371833ac3c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/CanonicalRingsScript.m",
+      "sha256": "913ae64985f601b5bf107e25d960202b2216fa79c6c3b9a0bbee3c4da99d6eb3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/ChangeOfPresentation.m",
+      "sha256": "1a5073166bf47ba1e6b7758d0da88c0ca4fcab1cfb510ffe0440a9fb6a00f83e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/HilbertSeries.m",
+      "sha256": "15f9bae542ec2283046b58946ee564030333805250f2c4e6b644026e87f7e835"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/IO.m",
+      "sha256": "e64f8bcd239b995a9d9a2cd0a8f0b4d8489a6b9b91018bb08d873a7d39aeec98"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/IntersectionRing.m",
+      "sha256": "8f271a959ca5b63636fd31c78487d4d234d48172a11c5b513f16ae405bd4c29b"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/experiment.m",
+      "sha256": "6050056223e2a95a5b55e16c7dbbc773301b062fb253482918b8ac36342595f5"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/testChern.m",
+      "sha256": "e4ce83ff208551c77d3c405fa596d70480a2cf41157770fec1e3681a1903abc4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Components.m",
+      "sha256": "2300cd8e2ff836d5bbad825a8a9b2dba352e819ea42e13e5535b59119c7ba6bd"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CongruenceSubgroup.m",
+      "sha256": "fbc6c0327783c47b325bf0912717d256d08792b5adc5bfbce3ac6712fdaf9739"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/BaseChange.m",
+      "sha256": "bd23ec6c1f9f3aa2cd7758cdb55110594f25dffe28272a9017a3eb00ea7e02d6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/CuspFormFromEigs.m",
+      "sha256": "887c6f4214d0b55ddf1a319213e94dafebf2f25a2392d052ee1bb50ef4a7b577"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/DedekindZetaExact.m",
+      "sha256": "76ca83d7f41df05204e7573bec7ea1e98dd130b3c0fcc56ed75d247e477904e7"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/Dihedral.m",
+      "sha256": "2f4a18561730ace7ff3b6305a44d3549edf364327fa9aa08abfde5454b57ce14"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/EisensteinSeries.m",
+      "sha256": "b97fb7a34da55ffac2be45c87d5ff7142c8e167e6b7792679a85033aa0be74ab"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/EllipticCurve.m",
+      "sha256": "42ed1e0b723a5a2d215bc2e4146c2c50caab7c23b80b1475b0088d1687977644"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/HeckeStability.m",
+      "sha256": "ac8ea5bcd165cfa985faf408b03530c4be8e7042d5d520c0b2a410564edb9d9e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/Igusa.m",
+      "sha256": "fd297d35b33422bc9806a6e33e44550894eacd5a0e2ee7a79b05454bd5aebb71"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/Newforms.m",
+      "sha256": "d7d67f6e3cb522266c967085e62957428be7348b3649d9c5d64fe820a732b29e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/Recognize.m",
+      "sha256": "f1860ac39f03cb2e7bc9c2d2da301c971ef918e39122b2d1a412a61b78ffb768"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/Siegel.m",
+      "sha256": "21d9dfc62fc4d044abeb65438d661558e5de8450f1c7cf8f7a26135a85b8866d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/ThetaSeries.m",
+      "sha256": "5e1a420abed2db4c9cd71c2ff676d40f756f4d4d56767a8f6a843337e0883f1e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Creation/TraceForm.m",
+      "sha256": "71f64acae1f277fbd84dd1ddc5a0a76058af10aef5c0445fe054de9498b3b517"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CuspResolution.m",
+      "sha256": "7d2872119183f8a928b6be755d580fe5bf6fbff7477c76a907a4572f53d45da0"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Cusps.m",
+      "sha256": "c632276f05cbb7c19d152208023370aaa54140876b3a9b127dc0239013eb39a9"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Elements.m",
+      "sha256": "db75f7845ed7aa49c50df0a261a71842cf4d306fa5297c1fe55ab6021906a4b2"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/EllipticPoints.m",
+      "sha256": "419189762d7846f939642793cc4e0b8b05050682fb0fadda961a8ac61772edd9"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Export.m",
+      "sha256": "2ddcc1cc3ac2313cbf37bbc901eb4edab23bf7c6cb4d4d71c57aa3c3a9c1fb8e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/FldExt.m",
+      "sha256": "ca5e82e5451c84c0023eeae97dbb2469a13a63b33c023c4f7c78387353ee01c4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Formatting.m",
+      "sha256": "3cd898e7158995f02599fc1a16fe0e71ae8f03b64d4568623c13dbc2aa4a73d7"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/GradedPoly.m",
+      "sha256": "834955e13837a93ed392ba91105e79c25403bc38725ea4936355070bc35189b2"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/GradedRing.m",
+      "sha256": "9d9fefbe26e1560c0e77a83bb06d3e8b2aa271361c6d21ce0e4627729e1298df"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/HJ-CFrac.m",
+      "sha256": "5bba1d8133712c2d11d66f937282121070dea95f24df5a427ba426b8260ddfcf"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/HMFGrossenchar.m",
+      "sha256": "fe5ecbc913afd6c97b7d49ccff4efed65159f4944fb0f32bc6570b6eefd4c748"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/HZCuspIntersection.m",
+      "sha256": "bc3693b71086883f4106ed1c33058190635de517beb7088ef612d6c9d3a34fb5"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/HZDivisors.m",
+      "sha256": "e32ccf76d564265b4d0d8f43d8885e074dc309fa171935483317086bf8626565"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Hecke.m",
+      "sha256": "c2ba95d6ef17f8944f02effd6bc374b50bc3e4e3868dec2cc4c1de6c89079c19"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/IdlCoeffEltCoeffConversion.m",
+      "sha256": "c48cee9880e07ef331973824af65e1731f16eb13193e4e8e5eef6a62134f8406"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Labels.m",
+      "sha256": "ce93e3540b9598664072e1d1a6f821b87143f2d37f5b674d58ba9e466b63f093"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/LinearAlgebra.m",
+      "sha256": "23d253e6cdbd1671de20ddb0b4d8c30ff27eb3b98bfee1629f67267b086ccde7"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/PositiveUnitReps.m",
+      "sha256": "921e6dc19e53708646648f2fd7861bbb7a6aa8bdb40585ab5e6fa9baa3e58a0c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/RationalFunctionsTools.m",
+      "sha256": "4ba2c8d3296ca31115eea41e52134150804dbd982b3cd221a1ad5f2c9198436e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Restriction.m",
+      "sha256": "9fd6ca80a5860fe79ae7ac2016402fc1495d8d80f1ee5ce09858411e34b74406"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/SaveAndLoad.m",
+      "sha256": "4e080f76951753ff129bcb5b0d68e0c2108555dae570041cb7acb544b269350d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Space.m",
+      "sha256": "dfc41a42a3c1c479059fad79ca0e8aff1bb343c57efa09c9f14dedc00ea1898e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/SurfaceInvariants.m",
+      "sha256": "f91988e5c57881396cad10c78a552b913445b49b4e63bd51b5231666e725b69d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Trace/Precomputations.m",
+      "sha256": "6d2097f83f7807913f78c4f5b9fa7a81c031047f5bb188b0fe95bcfcc90ea8e6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Trace/Trace.m",
+      "sha256": "e3d96393bb94db7027802b0c5337f1b7f2eede5ce4e2cef436b999981bf3a384"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Trace/Utils.m",
+      "sha256": "b5af448b30440d62be267bc6367204d69192efa91cfe4cb44003015773d85ed9"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/UnitChar.m",
+      "sha256": "17c2c783b7b790ad6b034a77b1029c273782149001984140b7e59546dcb2cada"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Utils.m",
+      "sha256": "b5125c602a34475415bd765ce152270954c0d9dffa2f7396684bfe1eb8f33541"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/VDGTable.m",
+      "sha256": "2b3ae63a8cf025207637ea94e551d1fc2b6820b7ff75218371600a67b0536c8a"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Verbose.m",
+      "sha256": "8903a964b3e65c3edf8cacdb127ab0c981a41f71297f07ef8d4bf44659b47420"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug143.m",
+      "sha256": "1859a659612c9e6718503405ede61f267157e5479e0bcdd7a0250d0c0fa42916"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug144.m",
+      "sha256": "441f7058aaed96e8a0d125be2ed55e168113da210e0b3b0ed237a89cf32b86d1"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug247.m",
+      "sha256": "196068a199e6b02ab8e84add3cf705a33e6b6070f29186b4090f1ef929ba846a"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug310.m",
+      "sha256": "156cec6e6cf7a185883232e5d25d8bd7240cf894cf31f409692052e9fb03a47b"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug377.m",
+      "sha256": "1f526cbf4fd5718bea68cbd830112c84cac4d3b43457598d418d2dab807c8e87"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug422.m",
+      "sha256": "f1ed1031af6e64b083dccf6e2b591d71c43f44889319273c15939e2efedfcf4d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug443.m",
+      "sha256": "5adba54eab05404246ff0a94ffa3a457290a9cedbab0198a40b8378b8eec64b0"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug58.m",
+      "sha256": "f6a9bfedb67c0877909eee08310762853687d0c79123fde59cb351d9eb6beab0"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Bug87.m",
+      "sha256": "e93c35fc80f079b6d341c08f2b9b2d5fc34f63901294506e0fd4d794dfa761b0"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/ChangeOfPresentation.m",
+      "sha256": "04232208b1a0a53d0c3f48d04709aa4061bc8d36eaba31444f5bdabcbf71aaac"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Chow_ring.m",
+      "sha256": "5869a0c0ad44eb242665e6c4014857df7a887e01a36131645586f95333edf35e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/HJContinuedFraction.m",
+      "sha256": "92bd4d0d1f3268158743bdd53abeab4e434e312fe799845ef2fbd0d58d66fcf0"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/HMF_modp.m",
+      "sha256": "45c0200b5711bd14e182c00f4ec679951b6e7865b83447cd75af9dd327baca32"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/HZCuspIntersection.m",
+      "sha256": "65f9045161cd641afdc81ae749e993f4fff12463cbcf20312c209743614d7310"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/HZDivisors.m",
+      "sha256": "c166ce1575e9284b0f0ab163986078520581aaae827962811c2762166a3b255f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/HilbertSeriesSurface.m",
+      "sha256": "46fa6f8f2a6d7cb5ce23a2253ccfa532d9120ac62c65cb31623da60ae58a8378"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Igusa.m",
+      "sha256": "65f349092131cabda82d9a2b3b1c3e37825b1a3ca9414123bdd9e29c546fec59"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Kodaira_poss.m",
+      "sha256": "db6ac0992194b5e4af628dbca6c336c27263263452cf454b20e1fbdfed3dc44b"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/LMFDBField.m",
+      "sha256": "e853f0c7b33a816630047e43d3adba9ffea342f5e52bc1f7ffe108a9cb9f3072"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Prestel.m",
+      "sha256": "aaeeefd9aa22ca69b496dbba243312121e3c39426cfcfa91158b6b85866862bc"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/SurfaceInvariants.m",
+      "sha256": "4220ca54b531ca690b7c77465f52171a4d776e7c9fa2ecb2a5317de4b301dd8e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt13.m",
+      "sha256": "b6161443a00b769175dbc7cd36e7e0ccb32c8c48504930bc97e32e133c9d6961"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt13_level_2.m",
+      "sha256": "194e617e19d02801dabd0d4116afdaea1d0de595be81c264b1f4e6caeed77cbb"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt13_level_pp.m",
+      "sha256": "a24cdfe32bff48e9cbee7409100c67923f644bcaec717952a987be09ee9120f1"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt17.m",
+      "sha256": "3b0d4ea72149dc19ec15f2c07b1f4760b0f373ae7c6adf3b2d4b2268fb512d4d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt2.m",
+      "sha256": "1f93b1915703d06a81c97dfc14a11c7335bb424199076195a0c765793df8c71c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt29.m",
+      "sha256": "18ee2889517c91557d65ed3b34a8ba2dd2684a9119051015eee8dbc342d4a70b"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt2_level_2.m",
+      "sha256": "5b85416a28f1c708176de76dfdacc6b5a9176bd20562593ee88eab5de4a3ee5c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt2_level_3.m",
+      "sha256": "90a264b9ef1e6d98d1105836eeeb09d03dd9f257d37d08f680210780ed7c2c9a"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt2_level_pp.m",
+      "sha256": "7b3a14a9663ede2376df484fb2ca4541d38460afe9a4d0ee5d86251a41d918a6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt37.m",
+      "sha256": "0e9f7b72cd48d62675a179c9a243c172027947ebcdbd4d1032e1c6cf95511d9e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt5.m",
+      "sha256": "3f6bd3ec33907084ae6f49cc6f88bb0399d093f6ae8e291cd439dd2999c35846"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt5_level_2.m",
+      "sha256": "52486dc3acafee241816df66d62f8e3991f6f90ee2ed038864aba78d3e5df9dc"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt5_level_3.m",
+      "sha256": "00544cfafff752bc4b7ed03f5f095301183f67aa92775d4d194695233c7cd7a3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Surface_Qsqrt5_level_pp.m",
+      "sha256": "c12adfa409b0443af8c92d516f5fc9187bc7e2e00deb5fa662e7160a8be5db90"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Theta_Qsqrt13.m",
+      "sha256": "073530d999f5440c0dcf634a1270bb2a3f77008971eb468d905f8eb0657f65f5"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/Theta_Qsqrt2.m",
+      "sha256": "a5dae408c5586bf5b847cc2168d46bd8aa128278d4d60166dd59ecb8d23bcc71"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/_cubic_parit_nonpar.m",
+      "sha256": "770ecff6c081e1d18e0623b24ba424958d5ebf10f05ace09d9d27427f7f1c950"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/_dihedral_basis.m",
+      "sha256": "ccaa74561db86b2cc3b209622b09d8fb3478c400f9c1a59145d7f940793b869f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/_hmf2.m",
+      "sha256": "780d1c8c258209f3125c07cb9c63f36f8cc95cebb6a9170c23824ff9477abbee"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/_partial_wt_one.m",
+      "sha256": "85358c8214bd7ea2362f6b919fe7370b52511657ec079343839c3ee1f46a35c1"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/_puiseux.m",
+      "sha256": "90cd8a5afb6529f04c7e5ce53bc1f6934c688444e2d324c14d82535e4ee45111"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/_save_and_load_basis.m",
+      "sha256": "53f3cb839bd883a182ceeb0ad2b27ea4aee4ea8aaa05ee750358b1e75c80b4b8"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/algebraically_independent_soundness.m",
+      "sha256": "c91ac138c6c6b572a848097300d24d29ffb9d7f6784bc9c57f44138f62b3fb35"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/arithmetic_genus.m",
+      "sha256": "1b0324a157e192ac3f3c2ba6742285ea67a2fb1b6e42b855a59986f4cf5e2ba9"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/auts_representing_embeddings.m",
+      "sha256": "751fd44676cf716a306e7050ae636c1a1a84074747da55d75b9f99ef19ccd1d0"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/base-change.m",
+      "sha256": "f49f39c86a4cba6807607d57b668447ae0ebb2351f975be18378b99bd870a987"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/basis_Qsqrt5_lvl7_wt2.m",
+      "sha256": "72644659be6ad5c7da1005823302d5b23b4c757c9c7dc2a1ece7f358394236f2"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/canonical_ring_evaluate.m",
+      "sha256": "08d5b7ce4d66551019d118b420a4b74768a5b54533c9041c0bb06e3867d527cd"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/canonical_ring_makescheme_zero_relation.m",
+      "sha256": "4cc251881f2bae6368850150ee6d2df2645899e2fd6c6e88b7e5a0cd3ebbc4f3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/canonical_ring_ordering.m",
+      "sha256": "0a58e39b36087785f96a04d0c8a2d70e0fbf774f8f0ca9356ba566141cd6b092"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/canonicalring_Qsqrt5.m",
+      "sha256": "404b9a88b36df872c5ea4e20ca2b5404790c397fa8a306e7b43cd487a3b980be"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/change_of_presentation_D5_D8.m",
+      "sha256": "00968e1ef94ca495d0ebc30eefdded68f88776180cee81971ea2031d257cabdb"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/character_subspace.m",
+      "sha256": "f9cb101a2f3cd7e4f48dfb47b2a186bf049a81b8b0a9888d8e4047149a1bf849"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/chern_numbers.m",
+      "sha256": "ea715c8b3113e71e7946de1c8a03ef4efcc415a0b6df2e687ebf5c1bc45665ee"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cm-field.m",
+      "sha256": "50eae1ecd4612caedd2e505c5bbf395136b8b89fa36d9bda3afcc1976a1fdc67"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/comp_coefficient_field.m",
+      "sha256": "3449d6ac27cb65c6fb1b4cd16bd7c25b322a82167840924162817b20a77208b1"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/component_eq_scalar_reverse.m",
+      "sha256": "1fd67863fe5453f3ba968cc4144e8f5bebfcfb85cd629b4bdc5683f20b72a96f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cubic_dimension_battery.m",
+      "sha256": "62f2d5973e7c407eef75bb9650d32d7c4c1d477972a7c6bf3d5acf18816a869d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cubic_eisenstein_fix.m",
+      "sha256": "a0ac44eee1eade9fb5ba80ec073fae7b8ea258ac21b816737186bf4dcd63c5ba"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cubic_mult.m",
+      "sha256": "65ea9417cfa7dbe0b25865312053b81bf35d46fc5692fc0cc6b260193e451acc"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cubic_par_wt_neb.m",
+      "sha256": "463eafe0554066f1bddf400a06bfeef29f311ca5d9aaf6f230652699517f02b2"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cubic_par_wt_res.m",
+      "sha256": "e26a7a58a1c6f04afff8f89004542838b987dfb907e4629ccf093b5490c3aaa5"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cubic_trace_dimension.m",
+      "sha256": "5721cf661538d194f62a973c79f38433336c545e65f6aa51d600bb6017eaa18e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cusp_resolution.m",
+      "sha256": "3be53e75f5e57b3a659f2e0172cf436abc5e74143277e8b2fd2745442e034aa2"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cuspbasis_galois.m",
+      "sha256": "9df5b132521a539affaaa40e1bee708189f4358d4e6835e88260514cc708db42"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cusps.m",
+      "sha256": "a61b158797a0bf3f63b9bfba63e682d5e56580eb1379a44085474345b1cc1a03"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cusps_lowlevel.m",
+      "sha256": "61d6579ae45ac4eb62a16e6c8d811c64a99e86847f29dda6a1edccac36af545c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/cyclic_cubic_threefold_regression.m",
+      "sha256": "35e71ad12873b3b2e81b575e2c442fb715419310091be3bc5415f0d265ecb7c1"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/dedekin_zeta.m",
+      "sha256": "dc75a72cb26d32d6e0de0759d49fc00b5448a0b9abbdb3f34baf5878367e773a"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/dihedral.m",
+      "sha256": "765ef09156e6eecdf29b5b7082a74f11123d4cbcba20c19234326507d5706b44"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/dimensions.m",
+      "sha256": "e2209bb4e2396bac02d734504291c56436d5486ef404c03d937c192c55b6431d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/e2_Qsqrt13.m",
+      "sha256": "117e69b450c5b3699ebfba4d562e608413ba0e77be968eaec466648814619bf6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/e2_Qsqrt3.m",
+      "sha256": "bdc48a6851fb24517d7129ed146f6a6555c9d33d7f440e12184bdc104d9ca527"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/eigenbasis_fourier.m",
+      "sha256": "a67d7eb1fcc9568dda12aba004e361f3dd079d95b0704226756734e111b2fad7"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/eis_mult.m",
+      "sha256": "8bfaf70d645d357b3538fc6dd687515f95c84acdb798e05ed1da693b7ef4e3af"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/eisenstein_dim_trivial.m",
+      "sha256": "7829c69638cd19448802a6bf73ca29c735180395468de9806406473badebe908"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/eisenstein_series_L-value.m",
+      "sha256": "ce369791d27b8975969e988d53c441785e64a36b822fe354f89d742792754a8b"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/eisenstein_wt1_D5.m",
+      "sha256": "b4471271e2e8e205a95e11e5c5988d7020ec37b88ab525635e129543c82e47ec"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/eisenstein_wt1_D60.m",
+      "sha256": "a9a1712a0031c0ff1ae050698af07b9c198fa9e676f732093310f5377ab1d019"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/elliptic_points.m",
+      "sha256": "ddac1533209a30cba2363bf7f3fc36badd7faf7987ee8e1211122b085d74fd4d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/elt_idl_coeff_conversion.m",
+      "sha256": "4dda713429dc425835e0359266d9d850135ed9641ac6c1822689b5423d225c54"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/extend_mult_fourier.m",
+      "sha256": "707dab0eec88b1d42fc15299399975d67e2002da99df66e92620a094e0c380bb"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/fun_domain_reps.m",
+      "sha256": "3dc408891a9232d00876a56056457a25422b1531331e66c8db0cb977e1b3f6be"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/graded_isomorphism.m",
+      "sha256": "3ab346ada2abcb4f6e9677594ce05bf363c3f1c8d44f5eea31ba9a090d3ad485"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/graded_isomorphism_negative.m",
+      "sha256": "7a8a84624f0101f819319a3b23bf32e9cbf5ce94c2127aeb4e0f1132837c5684"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/graded_ring.m",
+      "sha256": "0d13593d32b33401f0ce004e734b426aa9b5eec1edec2cac350f07c283b92328"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/grossenchar.m",
+      "sha256": "41e6afa85bfa66b889fecf7519042f87f09eb853088fdece33b41980c29587df"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hecke_char_label.m",
+      "sha256": "c5b18773f9e873ff872bf719b6938ae577ad383740ebfe64b3d33587f98f8b87"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hecke_matrix.m",
+      "sha256": "260298ecb713daf62941bf6594210857117c5befa5e8704ab114a9236cd0eae8"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hecke_op_test.m",
+      "sha256": "f51312bc584a10a4e1731e511e65f28a9706334f2674bd8b4be94e244683191e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hecke_operator_fourier.m",
+      "sha256": "b6f1471d1988cf6878ebc6b1451a0b3ca5a302545b031404136bd5a3f5190a36"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hecke_stab_24.m",
+      "sha256": "26e0d73392949ab0096f6b5f9c636995636f27418b20bbd4ba7d9e164bae8806"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hecke_stab_33chi.m",
+      "sha256": "364c103788572a7c6f3295c510e14e291226616e7361945d53d79953571774b5"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hecke_stab_kernel.m",
+      "sha256": "4231e4ea4055e47a042d19cf847a149d435bb87c1eb7bc9f5746ccbfad94bb27"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hilbert_series.m",
+      "sha256": "8b62f0cd06551870a204fb58fbb3455c4be8abb57567c48fdac7122a560c6db8"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hilbert_series_vasquez.m",
+      "sha256": "d66ea446d97d754aa051ce56bef505c79de3daa504032f63b9fcbc2cc149d4ab"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hilbert_series_vdg.m",
+      "sha256": "23a03c406c25eb23c72c841e93821183ad85fe49f275f01c526cdfc1acfd4f1c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hmf1.m",
+      "sha256": "8c1c5596847d57f9ad7e56f445b1767a12ede9e3fd193168428484b95b4d8570"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hmf3.m",
+      "sha256": "72f5054cfe32d3e2f4d2e58880f589dfbbccc382a5742c7ff84bf1caac4df954"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/hmv_explicit_vs_search.m",
+      "sha256": "de2b4cb3d8965ccdfac7d6b2573ed33f30a623e0a3619fa0041a90f9f80d5e0d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/io_canonical_ring.m",
+      "sha256": "31df87df1502560fa591372a9aeac8470b1736867302038f08f15eee0a8af60f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/k-chi-compatibility.m",
+      "sha256": "94dc82c4ab86805b173a096da515c62e8516216928076abfa2994a509820f4c7"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/narrow_class_reps.m",
+      "sha256": "2e64623224de09738fa70ca966c90feb42e4d864dc2e2de126087d80725dd8db"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/nonparallel_weight.m",
+      "sha256": "372313638ff7d975ca15d571a47cdca2c5a9c4b99936d9bd10ea642d599ab166"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/nonparitious-cm.m",
+      "sha256": "c2736638a0abd9b03637fdfe33f5c08cae014af46c4985d7ddeff0418b305793"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/nonparitious_cubic.m",
+      "sha256": "d916ce40efff4c79e61dd2781cd7162919780109168ddeeee70bba99d05c0317"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/oldforms.m",
+      "sha256": "90b4af83c10b68c010551b4b16aaf5d17442564b35587accbbe13ff45378734e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/p1.m",
+      "sha256": "255bc96721743a8e1dd29652c8b374dfe4c96909f098bcfff391054d111934d3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/pos_elts_of_trace.m",
+      "sha256": "fd96b591f43dd067cfe3b0c6fe334f19d3240e851eff8f915abc26594fa389e4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/probabilistic_dihedrality.m",
+      "sha256": "431a3ef3bf56e6da3785def338c9820c624f8add707f5f650aecd1c8790894eb"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/restriction_Qsqrt5.m",
+      "sha256": "932356f71d34e6fee2b301ae2daecaae2280df4da0567d155896a0dd877a2e45"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/search_graded_isomorphism_roundtrip.m",
+      "sha256": "3665b8a15d57bf3fbe9f3fb53573b6f9d5c2572534779b0c77899e81b4ad67b3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/squaring_wt1.m",
+      "sha256": "08f01a4548046390c97bf055d04263de02122ebf48a9798846d6a4cbd8a59d9f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/strong_coercion.m",
+      "sha256": "92d97ac388097092ab4cbfe88ce0949af27ace71ab29ca57385e42bc023ced63"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/subring_of_canonical.m",
+      "sha256": "984601d411fe98bf8be989c727a03372c69b87925dfc991d9f8c7f6735075e8a"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/surface_invariants_vs_ring.m",
+      "sha256": "0a50afd8fb1d72b83a4d87ae41bd9a409cc731a9c89124fcd7bd67bffcadacaf"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/swap_Qsqrt17_lvl3.m",
+      "sha256": "3a4581dc4accad546dd331f1b94b2dcebced17a9e7e061de09f2f53a43a316f5"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/symmetric_powers.m",
+      "sha256": "b97a8986cb805d503725e034fa7b4d88744c41719b230774e787e2a82cb153d4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/test_CandidateAlgIndependentElements.m",
+      "sha256": "a7420ac0df249349e56aeda68ade580a984c4b446fb2f95326d8e02c76382408"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/traces.m",
+      "sha256": "afa87824f116c97852ff3a64d642a04ea705b03b7d991eae698adbdaacef530c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/trivial.m",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/unit_character.m",
+      "sha256": "0358de4ece768f2c9f4df24f57742670c0f8df80ceced1d35e06f3cd55ea2cbb"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/verification_canonical_rings.m",
+      "sha256": "cb1d613cfa4ac5cfa5138b106be0339733c4e0301183c1d2f560b145fbca7815"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/verify_graded_isomorphism.m",
+      "sha256": "04b901a101acbcb268d12efa0a611501ce7fa4b1fd221fa5b79fbdfd52df8ec4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Tests/wt1lvl23.m",
+      "sha256": "d04278beef735923aaeec09d92e70b531f861fd63f5b6c32cb8994363df7eb51"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.12.1-1.1-gl-0.m",
+      "sha256": "6a2111010443229a9670575e582ba1caf6a875b8f8904174daeb192417f0e637"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.13.1-1.1-gl-0.m",
+      "sha256": "d94093d5db45afb8a15461d1fb41d9df68310c80d0badc3c0d96f341f7999a60"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.13.1-3.1-gl-0.m",
+      "sha256": "d29de895fdde7d92c596ceefe67687bfe231985ba0ade9acabe0ff70d5214d21"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.13.1-4.1-gl-0.m",
+      "sha256": "87fbee532fbd694c46c4d7ffb18c8192a1e64801ace5ee6ef797a64634070249"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.17.1-1.1-gl-0.m",
+      "sha256": "eb593c9360b0cddcd397610ab81c767c6553d2d3fdbeeecdd113bddb25612b33"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.21.1-1.1-gl-0.m",
+      "sha256": "de7d3cd63616e713b49ccfc4d7100115088e47933c61d202ec3e38e7a7fa6cd7"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.24.1-1.1-gl-0.m",
+      "sha256": "2551928b334e82d6101cea8ed6136d40d88142b82a65c7809978c2ef5f072bd6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.28.1-1.1-gl-0.m",
+      "sha256": "705c8e5e516784e237cfb6982b18bba6b4f84babc74d84a04981966f9c3fe885"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.29.1-1.1-gl-0.m",
+      "sha256": "16973b74c6eb91074f6b54f0df947f2946c4ef3a51a9b8e7abbe7ce59ac759fa"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.37.1-1.1-gl-0.m",
+      "sha256": "4bcab2e8502231151fb130467f46b7d694de09a327d7910441e1370f6a953298"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.41.1-1.1-gl-0.m",
+      "sha256": "9a89ec56caffef81a092ff8e93ba408bcac912b8ecc5be7347bb0c7926838783"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.5.1-1.1-gl-0.m",
+      "sha256": "e91a158054f7d7dcc1d18c8b8417fa11866fe270f60a6748c6cd2ef08364d0cb"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.5.1-31.2-gl-0.m",
+      "sha256": "196adc8461da7334aa8a2f0919718b36a92050be84419801dfc9f5ce2d082a77"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.5.1-4.1-gl-0.m",
+      "sha256": "152d69fdf1da15b6b33db24255fca68c855bdc1725e89e3b84dcce86c3714323"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.5.1-5.1-gl-0.m",
+      "sha256": "ca1e6ddbf0bfd4106fb0918ebd07c44441cc3dd5089b323e783de4aebb0073f5"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.8.1-1.1-gl-0.m",
+      "sha256": "88d4fd63bf6cc0897921947e195a636551f471da8bfda64a64029b367e8d4059"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/CanonicalRingEquations/2.2.8.1-2.1-gl-0.m",
+      "sha256": "bb12fb5c161437faea9cd2819534da3fdc2b306a949f0afc74f68c0d10ab049f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/IsIsomorphic.m",
+      "sha256": "0d074c7558f6040c38932b84cfcb7f1793639a21e51b114bf09f270f3da3a23c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/LiteratureEquations/2.2.13.1-1.1-vdGZagier.m",
+      "sha256": "359655999270900849141920c7a3839e9b3dbe23b16ef9de5d4043780fa6f597"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/LiteratureEquations/2.2.5.1-1.1-Hirzebruch.m",
+      "sha256": "c3e114b8cacc852eb894b6393a5222220e70437c786605da3118d0587189e3d5"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/Verification/LiteratureEquations/2.2.8.1-1.1-Hirzebruch.m",
+      "sha256": "22c9c99983b66e7e2b589d3e196b9c2396dd89b6f8680bcfe112fd4c9b1e23ef"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/Gamma-cusp-example.m",
+      "sha256": "4d9e371bbf8812f5637797b353595025e0e5ed9a5fef43495f375ce55a30737b"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/IgusaBroken.m",
+      "sha256": "7f4e0a9807d2bbc7dce5443e98f3f32e68af3850b6c194d9ac4f8c955ad3e1a6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/Q12.m",
+      "sha256": "925fe951c05a452a32f120e8f13928774a0c9401d36ed2876cac962193d7ce71"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/Q21.m",
+      "sha256": "e4d213464e203919738b92eb13e408eb509a92e3de687e7a81191aa257254a6e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/can_ring_example.m",
+      "sha256": "7af43634edc1dd40586b9d9d19a15c48fbe63e6fbec8a7b80c129448ca386912"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/compute_cusps.m",
+      "sha256": "b6b0d0a0d136ad4e5c7c9af2e7f9d689f5f8321dabf8b3aecba87a40d4c93a37"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/cusp-debugging.m",
+      "sha256": "3c6f1fff968f6717ecbc71a346882a65ebef606c4e3302ebd9ef72dbb201a863"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/cusp-example.m",
+      "sha256": "0e22d73d5f37e715da9f33d73800fa1f8b12bca6623c0d38df3aec1edf5c8928"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/cusps-modular-curve.m",
+      "sha256": "5c6e285f5354098a518a0352f5137c81ca11a2542431deb0641d1286e730dd02"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/demoHMFdays.m",
+      "sha256": "796f611e17314deb2dba85ed8d58914242441f2dfb3212aa7dd53e4b324ef0ec"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/elliptic_fibers_X0p31_Qsqrt5.m",
+      "sha256": "c875c8d956fd742a0c8122c9ace90a5a386453ab518e239b88273947bcc96d38"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/elliptic_fibers_exact_X0p31_Qsqrt5.m",
+      "sha256": "c51d770c2c4aa685000afd111f43554fc5a7e7af62db2cdfd1abe73d13dc30c1"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/elliptic_fibration_X0p31_Qsqrt5.m",
+      "sha256": "52b742cf6ad561e0c6d70e6c213e67802cfe8e30e90ea5477d1af9e43ad66106"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/hecke_stability_example.m",
+      "sha256": "7dd8c0769e5d150d2b5a8118a3841c704572eacd65107e8fa610f0ebfd41e42e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/hj-frac-example.m",
+      "sha256": "0691c6c4e2ee93331019be845f2a0e35b828c63007bb1e448c962f57df86d57f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/igusa_test.m",
+      "sha256": "239dc92e70540bec82dbdcf9fc23ea5a63bd43d0881f48124aaf4b8977acba62"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/pickle.m",
+      "sha256": "9ad4715e050ef0cb116de1a8b8316efea2c6e273f73feb789611612f59632b27"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/plurigenera_P3_X0p31_Qsqrt5.m",
+      "sha256": "2aa7b2c35b56ab946fd4d9eaea1e97becf81b1d707d89e9c9fc809c91d82d9f4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/plurigenera_P3_partial_X0p31_Qsqrt5.m",
+      "sha256": "af91a50c20f3d47913343d169f4a4180ff828deceb7c12f28b3d1e806e1d08cc"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/plurigenera_X0p31_Qsqrt5.m",
+      "sha256": "ebfa7ddbf985f5bf5b8129dd813c43631280f3410ec7b28564505f83dba17317"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/save_test.m",
+      "sha256": "cfe65cffa6f031a165e54464403b6b6ae8ea54f5258ba5be07bfb13b050a4af6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/sqrt5demo.m",
+      "sha256": "300a52ee0ed726417b05d41fe0fc1d48a2300eb3467f3a79e32c42be705d164d"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/test_EllipticCurves.m",
+      "sha256": "11779dc4f9872a8c8f8e6c1b807bc4e02a639fb3a52a562609e53a6f5a0ced58"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/test_eisenstein.m",
+      "sha256": "232e8f304a04480accde1b44ec636ffe77aa40619d340a800fe1c6147d6fcac3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/tests.m",
+      "sha256": "aab36c687fa8e2bcba489a06c446905e985d38a7373e4e146cf917c185e03864"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/tests_trace.m",
+      "sha256": "ff8743fae10ea29689492ed9afdab76d30de6adaaf79815e6bfadff742294148"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/WorkInProgress/usage.m",
+      "sha256": "533c20a2ae8e01f29d1d5c81897db59b6ef5df72df33235eb5394d099b9f51e4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/config.m",
+      "sha256": "597066470d043511ca37f24d654358741aa9d0ca8a1c88d98706e013b0b9ab7a"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/X0p31_plurigenera.m",
+      "sha256": "668abd7ff017fb78c8705cf29d7fd543a9a0bbeb1764887a2634ab93f6ed70bd"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/canonical_ring_Qsqrt13.m",
+      "sha256": "3f584a85536853984dd962bf43a07aa9923de827cf9557855793a6c93e638979"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/canonical_ring_Qsqrt2.m",
+      "sha256": "f9784fbf4db75c132aa8d95eb73f7b037a52b157b9f5a556d75fb294cd614aa4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/canonical_ring_Qsqrt5.m",
+      "sha256": "4c28bdfa2cfe682a4a03f64a2c09efd76dd43a8ab2bf37e7529f2491b5f78cb3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/cyclic_cubic_threefold.m",
+      "sha256": "de73452f70d8dca35bd1c3b6b8eaf300b69de38d4c89583115448c115827352f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/d49_level2_defect_bridge.m",
+      "sha256": "5a1911477fc752315fb18d237d85d136e3e37ebc3c405727c9e700f6627b039a"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/graded_isomorphism_D5_D8_D13.m",
+      "sha256": "fea1ace3203bb2a3b26eebdd973be97ec8e7eacb3b64d340b567f146c5e9c339"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/graded_isomorphism_D8_disc_negative.m",
+      "sha256": "74bbdba314bd0682e33584872ac4cebe81846f6bcfd28b59beedca126e54f521"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/igusa_invariants.m",
+      "sha256": "f97aad9c83f6d2f44850b070d544ad4f790ea9800b73b295d63e76f28eafa1c7"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/modular_curve_X0_11.m",
+      "sha256": "e62fa20a4df974c7ac92d1996b98b2320d8c3a2abd2667cc16f1d8dac7b4c327"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/numerical_surface_invariants.m",
+      "sha256": "1154d67be6b3d6b07158e1dbb1d4869754552f0e5c90a204ab8bbd6e9d073ca6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/GradedRing_Qsqrt12.m",
+      "sha256": "75634ed00121d4843e70b91c619994905e57015478c5bcda64543aae994a134e"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/GradedRing_Qsqrt21.m",
+      "sha256": "f8c004f874f3d26dfb2a4a8e18b8e255989004b70301f0a0ed38044684f6d6de"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/Surface_Qsqrt12.m",
+      "sha256": "a3caa3e6fd7087da0a6cc7a4c04478eb3d048abcbd053deecb33d8ca249a09bb"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/Surface_Qsqrt21.m",
+      "sha256": "8e056a82b856b07adbc97c05e31c82cd7623b944a1de5f8941ab85efe7190e25"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/Surface_Qsqrt24.m",
+      "sha256": "5e11609edab103545e1e394021a084b696222ce4ae6262b60e47fd759da5c445"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/Surface_Qsqrt28.m",
+      "sha256": "9bbc1c0e5ecf0705c5d83f8797860570e7ccd769befe4c44cf3786c2d45957fc"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/Surface_Qsqrt33.m",
+      "sha256": "0e74812c87e26368113b140557e059949df0cce303180107e5695b34be3239a2"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/Surface_Qsqrt41.m",
+      "sha256": "3f0c62986d541ad62ef18f422b6bc770644bfdbe5bc01265a982abef554f65be"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/X0p31_elliptic_fibres.m",
+      "sha256": "8b533040fc3f52e522b04417512a524c86c13c7640db9a2ece0c9f316dd33740"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/examples/slow/cyclic_cubic_threefold_certify.m",
+      "sha256": "5c93ae4764b27aa5cd52fd0dbc68d34605ea6cc0c1c8ac48d3719b85539ec3a4"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/figures/figure1.m",
+      "sha256": "67d768216e20ca2f34de3aca0f94c60c8e104956724ac7f43bb3bd72787590c7"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/run_tests.m",
+      "sha256": "9840f68ea81917f942d4268d883824aaab4ffa560030a37ee7cdd33ccaa6cdc3"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/compute_gen_weight_data.m",
+      "sha256": "5801a6347c486c8f3f9efcf138f2fd6ab16c33d3409e15a8cf4346a6fa5721e6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/counts_and_timings.m",
+      "sha256": "4eefdb68753df16dc99b68e67146984f1392ddc6204c6f7d537eec079de88500"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/generate_box.m",
+      "sha256": "b201fa2fa9e20438963c0f1be4291563637ec862571bc67f6400d7edfaa78941"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/generate_cusps.m",
+      "sha256": "7bf872eb4df8bd7cc8e47c9e08b528e0d821dc1a8e29a2def5a41162d960b67a"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/generate_ellipticpts.m",
+      "sha256": "a7a3b2b28569416a58b352e498dfc4c45a19fdadd040bb9e7084eb4da666e1be"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/generate_hs.m",
+      "sha256": "33049e2ce214c2f7055fa764831462a39988759de3edaa90c387ef4cf049e3f6"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/generate_inv.m",
+      "sha256": "2eac07ab32b49327b26747877e08b61419fca694b8d375108a89565e675f112c"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/generate_kposs.m",
+      "sha256": "7ff933c4f4345fc6786a9a042ffe78af6e8f6528fbc64ae2be88a7c1fe2b6c7f"
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/scripts/generate_lmfdb_tables.m",
+      "sha256": "a3d702fe25ff10e8d9f8d4494688139f9678cbb68624684ba9978efe9fb6e7a9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-arithmetic-d105.md",
+      "sha256": "145547211ff8f699907747a05a72767e981406014a778f712b165e12d42382b6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-verification.md",
+      "sha256": "f04f008409582f840dcdff4e6fab47fd27d7a08c44f9d41e759567442c4f8313"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-intrinsic-height-d104.md",
+      "sha256": "454495a0bfd60eeca0ca9cad8549b8372c74fb930872a9e6773bab77e4255a7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-residue-lattice-d102.md",
+      "sha256": "c1f765330d02567a904444252b3dfb7fc2ac8e0746678a2a2efbc0ff19d68080"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-tangent-exactness-d101.md",
+      "sha256": "c21398dcff62037781960c013f44d6db975f43e077b5e8b1d80dc9d07d97c767"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-tangent-local-arithmetic-d89.md",
+      "sha256": "3ecfc088aa12ddc1c1f460df326385a0a90fbbce4f40428e8da8d0e430a75e4b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/curve-identification-audit.md",
+      "sha256": "31f963149f8ab14092348dcc6706d252ff08a50df79b4dada3a762acfc744e2e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/d88-cm-expansion-identification-review.md",
+      "sha256": "da5b7ed2495737040efe79e4d96946510e9e3ec61427f3fcf966908e0441d665"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-audit.md",
+      "sha256": "18366f3d800429ab4d4c519fa815c8c78c1790b7b1ba53a167961c307a6767d4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-review-d99.md",
+      "sha256": "8d3d3b53be8f0ef102c5b539645e1362e09d19540e7ffaa86ee724df7b0233fa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/marked-descent.md",
+      "sha256": "131944c1260cfe7a15026534c024f5ab900c549d8ea3ffd6a73521a98ad96463"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-completed-majorant-d96.md",
+      "sha256": "5839f537877fd986c676de49a681896ec8e84b50121a5d742bd3bcee0b4965e4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-global-identification-d95.md",
+      "sha256": "c48f69eb681cc83d5f0d53153188127464a25dfeb428c5f0e7fd4d5d51a9fe6b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-norm-one-control-d92.md",
+      "sha256": "926cb80afdc0ea5d16673ab0b7e8f2e5e1ee02ec29634093bab8c4fd558c1fa8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-signed-orbit-d97.md",
+      "sha256": "b7084708616b2ce5f60614330b56164d5ad193b285fff165da0d08139f7a08c1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-spectral-ideal-d98.md",
+      "sha256": "b8d21717aa3b795b5ac584190075e1ee461c4fbe20e2661c609be1a90003cf26"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-test-vector-and-contour-d94.md",
+      "sha256": "9e3814d35db49355cca3eaf30e1ede8a48892f6af84e8f860e664e9010da9868"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-totally-real-kernel-d90.md",
+      "sha256": "48f3e72c10e607eb55ce20eef2a0cbe57e50c6ae26fb8e6aa86381b735abd341"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103.json",
+      "sha256": "468bd2ac0e620e8ee1d2e25189f102987c27de3a813971ef188bc40dd757995b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt01.job.json",
+      "sha256": "769984dd85542377fad852624d2e6697fc64f896a6e5f2de728590d4e6eda8cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt01.log",
+      "sha256": "f996ff5ac967ce438b9c36b5af27c27ff491894c1e0d92f13bdb51ded0e7b497"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt02.job.json",
+      "sha256": "809e2271e2f7b8544195e55afbfc4a90c4e55297cfce046e689d28662587636b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103_attempt02.log",
+      "sha256": "0802545e92c7e670b24fae2a0d8d197c573ba2a0931c724538fab495440ee7e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_review_d103.json",
+      "sha256": "55f03bc32ac45c0e4056ba1d60df4f78348a0c177454bd97f8daaa30692a28fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_sources_d103.json",
+      "sha256": "40aefb56e3064b3ec3db50b02fa68d1950eb20aece722f878250a8eb4b922799"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_audit.json",
+      "sha256": "03968cdf38f3b8ab5a0acfcf6bdd2a672908b8b7d17260dfcb501168dbcce281"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_field_recognition.json",
+      "sha256": "b9585a6b40f6c21f4ffadd62caad290cd731cf2f432c54d1f61790d85c6e0ce8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_arithmetic_sources_d105.json",
+      "sha256": "62ef6a1f1cac19e83491a8c78e512733a2bc9ecf9f998b19887f6dad403bb1f6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_specialization_d105.json",
+      "sha256": "d65616d9de827ca16977c59f42e90fb7af3ecb06c430249afa485feabb2f8248"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_specialization_d105_attempt01.job.json",
+      "sha256": "80852f38dc7d1cad9ca18dd9f8bb73961dc5f56cc7a5bf43ef4d19c25214951b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_specialization_d105_attempt01.log",
+      "sha256": "eddee69a90b5941cfc8a2c23a4b89b03808c5339adcdabaec8c44851dfc663c7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_specialization_probe_d105.json",
+      "sha256": "bd7d7d4b8f13d05e2a6c07c7d294ec77ec752cbdb9b7ece8b8c2ee84a2054f98"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_specialization_probe_d105_attempt01.job.json",
+      "sha256": "11cd304d7d8c70ebb67afe7ef827033e562c68f4c22d483f823c387b5ea79c84"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_specialization_probe_d105_attempt01.log",
+      "sha256": "01e53718088f145e352661c80cc55a6e85deef30de90fac779b36aa3ab073d0a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_d104.json",
+      "sha256": "b862afd83cb47ba6a6c3c9d6aee30440ea7671477ea2848a8b7ef6730a3fdf68"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_d104_attempt01.job.json",
+      "sha256": "3a118c4c69b1d7713c45d263017f90342466a3dbae04473b618ed1001e73c9d7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_d104_attempt01.log",
+      "sha256": "70349f1730dd0a79c3df5804c62e28ea2be1564bebc8a8611046a43f51189dc6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_sources_d104.json",
+      "sha256": "115bb526caf82c6b216bff43f5a738a13b80008bf025ff174639f6ed3652bebd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_orbit.json",
+      "sha256": "6c70d443b112c49c0a448e63f88b9b7c2ded7fc8f5392db14356ae3c1bfd4e67"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102.json",
+      "sha256": "5191728d51fbdaa909740824ee45b84ef27ce151b9ae581c2d9d00329a6704fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102_attempt01.job.json",
+      "sha256": "1b743cbd20ac2f99d2b0d5ebba006a39cba6a3f38c32fae5036928cf82f88f11"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102_attempt01.log",
+      "sha256": "39866bc4e6aa49581225169b3cffff3e2761216e78002422865cd4cdbb8b016c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_review_d102.json",
+      "sha256": "409a074448c0da9c2744bbafe05f869874f91f901e4e0f3f69cdc4809c730a29"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_sources_d102.json",
+      "sha256": "91020404ef347963f88500d08bafaae9f9388227b4508448ad1d0bb12520766d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_root_action.out",
+      "sha256": "0cca80404d5a50fca1c328f02bca0fae6ee08742ff9f23c9bfddab0a2401f0df"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_candidate_height_d101_attempt01.job.json",
+      "sha256": "519763cc648b34284850b231c7f97492583c6fd60921b6e4093d80581756a643"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_candidate_height_d101_attempt01.log",
+      "sha256": "1b513b5473bdcda49019d9602012f21cb7a7a27dcc933acf07082c8913d156af"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_candidate_height_d101_input.m",
+      "sha256": "b4902037c530ba34373c3f07e3f5c3d01af0b2f584036862c62b93f035290f30"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101.json",
+      "sha256": "c04fc59567791143ca5f5f479677ab14351a73bc4b31ce7a74fb35aac5d9d3a4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101_parser_failed.py",
+      "sha256": "67b56db232bb9ba0043b8e4083c40e4f7e3d48cc5e0fcfbb0edd90d38b844465"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101_parser_failure.json",
+      "sha256": "6662136cad281beb6aa9f600242e2d84abaa0a3fe40b449a92fa534546313dcf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101_recheck.job.json",
+      "sha256": "88512696696934f460e826ddc2edf8f0b6474318fce7136fbb977635de667c25"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_d101_recheck.log",
+      "sha256": "33e6189c22acc406eba0457c9bb35caed3373f95dd29032fe16a3e5910c09b06"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_review_d101.json",
+      "sha256": "d3ee4571f4ef9676edf4ef99bbcf9e44084fcfae6f94eb3344f088b8f654d52d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_tangent_exactness_sources_d101.json",
+      "sha256": "6947bbd2759b800843fb093895a758a0c79ed66529ed8a4282f575e777e856db"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/d88_candidate_cm_jet_rank.json",
+      "sha256": "1268cc028ddcfa0a121ade1298263f2934ee0780aede31e4a320dc2f27831102"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/f16_steinberg.out",
+      "sha256": "020f5d9d415afc8c5ab4d974ad5de9198119e7bc0f3fba89928ddb950d2a75c9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_candidate_review_d99.job.json",
+      "sha256": "6500c05d053226143c01d0c6fbd690ae498f9f2f2d1eeeb9266350d97996c4be"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_candidate_review_d99.log",
+      "sha256": "824ef1710870d18bebee6e2e98da7b8d0f506c5b959ea21f1fb5cff992253e07"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_fresh_brandt_d99.json",
+      "sha256": "5bf4e53d770c35fa3321330660d74a3c0837b39b3195ad0019daef18b25a306b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_fresh_brandt_d99_attempt01.job.json",
+      "sha256": "91097ef694aab3846895bf217b2ddb0519254ae0917e3e5c54fe032886e35a85"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_fresh_brandt_d99_attempt01.log",
+      "sha256": "acae54b5661f00aa48f6d2f6c4282d4074646d358f2ae73d33f332b7f9427cba"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_fresh_brandt_d99_attempt02.job.json",
+      "sha256": "fa317057e9986f4ca0f5356454b94e62a56d1874a7b3f64f06d863ccbccb465a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_fresh_brandt_d99_attempt02.log",
+      "sha256": "874dff4b5f9158b9e824f12a65c216784cb8bfed7578e1f54c4b5de0499ac484"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_graph_review_d99.job.json",
+      "sha256": "dfd66a9414a563672ca8d666efa2ad304121317b60908f04305d203ac5c1d7c5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_graph_review_d99.json",
+      "sha256": "66316e083be6ff816eadc85155a5525bee4a1799ea7d627cb05f8e522041201e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_graph_review_d99.log",
+      "sha256": "a1608fd13f06d92024e41e21264e8569d6c9026e15222af7199bbd3dd5f4983f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_order_review_d99.job.json",
+      "sha256": "6b9461f7f343d7759d706d7874caa46cd45b700cadf44d92c2e1265e065896c2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_order_review_d99.json",
+      "sha256": "be3bd92c6acf1429a2bfc0b3f160f83880dfbd410eb3527f1c9f3381bda36a15"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_order_review_d99.log",
+      "sha256": "82d805563d036542b2abfb8e062c604035eea2248350fc3213345c5595b152df"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_review_d99.json",
+      "sha256": "bc424f5be06efd69af38a4696ba3cae7096574d720cb069e7c6447a8c170856e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_sources_d99.json",
+      "sha256": "e7a436056ca56dc64ce89219abe4dd1155c0cf6799fe5d9b3872503d33d09d13"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_all_ideal_bounds_d93.json",
+      "sha256": "7092753d2672a4bda316fe83be011c8b3e62f05506c76574b5bacc2df232a0e6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_all_ideal_bounds_d93_attempt01.job.json",
+      "sha256": "1c109f6a50ff25fd7789b53d7156c14fed9f6b973b421caf16e95d1ec7e1fb21"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_all_ideal_bounds_d93_attempt01.log",
+      "sha256": "069f9a38ac92a288baea178312e219491a4d7a6f507746279b9d6d49250507ea"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_all_ideal_bounds_d93_exact_d93.json",
+      "sha256": "9d2213e9114a0259ee93e68c806a1cecc64fddaa3d11a22a9b99c14c4b1f41a1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_cm_lattice_d90.json",
+      "sha256": "24f8e464cb5cf6bff4a71828959bb9e3e328ae2a233bae836302aac97682a0af"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_completed_ideal_majorant_d96.json",
+      "sha256": "958b7be981720f8e44aa7cb35ab06f58367f6e90a2185326add5817a67329cea"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_completed_ideal_majorant_d96_attempt01.job.json",
+      "sha256": "c5d1d1d09b5b9b79a69a920bc9f629a98d60a0f59bdd645fb3dc10076cddfe52"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_completed_ideal_majorant_d96_attempt01.log",
+      "sha256": "10f254a091b070df4e5c555f80e5e405c2bb5cba9b33872ab651a5d676f72ae0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_completed_majorant_d96.json",
+      "sha256": "4b8ca1bb8355d4d2a078a82fb66f17b86d6f89ac8faeceeadcc25c9d5dbfebcd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_completed_scalar_blocks_d96.json",
+      "sha256": "23e87a0cdbe9d2a1c831683de45109272421ba8ba4961007bfcfadbc62c1c744"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_completed_scalar_blocks_d96_attempt01.job.json",
+      "sha256": "5c1f7751c97e9fc937994f5e8343f2f9cc4b4f15108952d3e31195edd0703888"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_completed_scalar_blocks_d96_attempt01.log",
+      "sha256": "adb82da2a55fbb246d69bcb3db84dc7e15a500572de56290fd1fd9282ef7393d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_contour_weight_bounds_d94.json",
+      "sha256": "1ae00694fa62444aabb1ac05f2ec77f9ded3d04bc6fc670c55a407c0f53a204e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_contour_weight_d94_attempt01.job.json",
+      "sha256": "dc724b43a0f0e4c46b348d27b911ed24b178f2f8a3d1bd18724cfb577ac622e1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_contour_weight_d94_attempt01.log",
+      "sha256": "25cb7eee344bdea9758837a08b3478309e55fe1c8567806bb669929533bdf0fd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_d93_audit_attempt01.job.json",
+      "sha256": "d67095921b8c5dcf0bf421ae1b5a61000a6052ff721e76c37d7688f859e8ddab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_d93_audit_attempt01.log",
+      "sha256": "7a5060597a75a640be1245837fef5624cb6243ffc363cb8151ae3bce6b7b48b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_d93_audit_attempt02.job.json",
+      "sha256": "a92c1fded4fed64cdbd27b3ab8be19bafa3e1e48e2c52db6f798ea9abe4b0c5d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_d93_audit_attempt02.log",
+      "sha256": "df231be390143c782f8c8be369e4e41111a4d1590b0e3ce4026d40b6712dd3e3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_d93_audit_final_attempt01.job.json",
+      "sha256": "eba4c9a647d5dd1b37c8af9a41c1c4cb992426abf67b05d83ff32a2268a199bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_d93_audit_final_attempt01.log",
+      "sha256": "b87fb305bfb58bd57f88d7ef5e201ac09de2a1297c01daf08eccf01b3b596aeb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_d93_audit_final_attempt02.job.json",
+      "sha256": "8915bcd9ee02417876f9268f92941a74dec5929ce326e7466d393197af168eaa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_d93_audit_final_attempt02.log",
+      "sha256": "6802c20ef033fc11677702383a9194710e4a29f532975d155f2630df6d6584b9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_all_ideals_attempt01.job.json",
+      "sha256": "c79b4c67914e7002df24f74321f0bf889967366dd525b13d723f3e2d5127c0ef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_all_ideals_attempt01.log",
+      "sha256": "6e4b09d636b41c4995d6da6358caa7d638803c68b97f8415e0ab3e72ccc78afd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_d91_attempt01.job.json",
+      "sha256": "cfd77d076a621dc40c90f7ee8178901625ae915f1226d5beb411ad44355308f4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_d91_attempt01.log",
+      "sha256": "1d1e6bb09754548f3024e7e7e6e25f7e4c54a60889b2f011c359843ae4d95649"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_norm_one_attempt01.job.json",
+      "sha256": "bf0847c009750448410f8e7f1b259cb47137af7be3c9173fae4e324065f24af9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_norm_one_attempt01.log",
+      "sha256": "75c8b41db307a73863742f32bed9cdb5731b117375522a03658dce6d3dd032cb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_norm_one_tail_attempt01.job.json",
+      "sha256": "93d8e78ebd92c8915efd35005f45caf628794eec0640b35364cdf899b5d37953"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_norm_one_tail_attempt01.log",
+      "sha256": "63e433d7c18c01ef591a5443b176726b75ffcbedff6366bcbb3fa4b01ca05562"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_prime31_attempt01.job.json",
+      "sha256": "93ada24137931d249826bb4bc8f8969c85f33edff38c243a815cb2ab8646562e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_endpoint_prime31_attempt01.log",
+      "sha256": "88e42c21622e582ac685adb332b681197363d383ecd2e5b97d73beb3b93b0849"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_global_comparison_d95_attempt01.job.json",
+      "sha256": "f7cb5b2e67495a92d27c481e9b168924b421bf27e1c325281eff26837d359b15"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_global_comparison_d95_attempt01.log",
+      "sha256": "fe5372358d7313273b97e1e3f6e0aad0a6145c99288ef0293f86d083d659a4e4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_global_comparison_data_d95.json",
+      "sha256": "f8fcd7dc6af671f27226425340cbc79222f55877bbb3f9bf6f922cd8d6da86aa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_global_identification_d95.json",
+      "sha256": "12548021c02e0bb2266a6c6c5149438ca492e98a2e8acda308d76daf756292d2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_interval_sum_d91.json",
+      "sha256": "ca867818ba3858cb8772df6afa8c3049e8242201024582505be29ae2cfd848f9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_interval_sum_d91_exact_d93.json",
+      "sha256": "e7fec8fcb481f8807f873b3c55dad0fca0371bc7bedee1d593d2b230a2eb1a2c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_kernel_d90.json",
+      "sha256": "69843dbcee2927598ec9d04317a4249ed26db75e5f1cd32ac7e6a31b7a8ebf57"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_kernel_review_d94.json",
+      "sha256": "d5524d62e8993064dc9643ad45071dfc418d9f2b4730494a8c99b253977f8ebe"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T1600.json",
+      "sha256": "6ea93db0560251f5c5e7160b76fa9b141f2b2bd41c528b46a9b2e1d7f029cff9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T1600_attempt01.job.json",
+      "sha256": "60b7e35865bd37295b445d34e4afd2452640f1871a62f648a324ce14b718afbe"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T1600_attempt01.log",
+      "sha256": "677b57505a0d3e451fc312bcc84e9d1c15e41b9bf5cbea6415cb9b5fecd749c7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T25600.json",
+      "sha256": "941505bc1dd20ae2a8dfc3889476f11bd40d53e0d8f0417b553d4610a337b377"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T25600_attempt01.job.json",
+      "sha256": "99185f14a4ef49210da06d58f6e365ca0a99f3fca3d3fef0f9c77b9edb9ae8f0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T25600_attempt01.log",
+      "sha256": "4b57091e4140c2936116591ff8168f15c8aba2930fc611057becf19898c9a2a4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T400.json",
+      "sha256": "ffa036e303cb80202b8aea7c6d61d2a8d2538de67f0371416d21a3481ecc1fbc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T400_attempt01.job.json",
+      "sha256": "882d859f736ba7e4b958b1e8f017fcc711a130152f7e2f8f8d17c053d13b2e08"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T400_attempt01.log",
+      "sha256": "e96fbf4b745e482fab0ab6ea685996e3981ab5965f07300e1550b6d3b798b891"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T6400.json",
+      "sha256": "7eed2ce8f4775a180b83d72b5fca701f1810f04b221e3a00eaa0937b4f8110e6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T6400_attempt01.job.json",
+      "sha256": "d86e661bf03fb2e08dac4c724f332c9cc25a6cda9281d3ae491a0d55df209c67"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T6400_attempt01.log",
+      "sha256": "13f604aabebe071a9296a0fa722d716070f9c3a8ad1bb0e6ca255dc363f9556d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92.json",
+      "sha256": "ae7055d84a7b4ea9017923304bbd0b46aa4022171a8a2d33b1691c1bace434b2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T1600.json",
+      "sha256": "6f8b99e6e2dd7e0600abfa6b4da4970b1e26e85cd5ed5b511d1eb9442acba180"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T1600_attempt01.job.json",
+      "sha256": "3e5dcf96f052c70bbd4b80b737f8e035366d4dff7186beea5a901190fff5fd4d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T1600_attempt01.log",
+      "sha256": "3b9fea83adaf38a7b9da60a58734da6865fed01e39cd6e29f53ec30c14c7bcf6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T25600.json",
+      "sha256": "2d7a7e096da81ee86eab617019bf3ec94fe34e6c2433607fcabd8defd42d032d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T25600_attempt01.job.json",
+      "sha256": "8e6ae85ea4a1f150739361bf09703075ae45bd0c56529872ba2bb47c4d2f783f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T25600_attempt01.log",
+      "sha256": "2229bc24176a2675cdc0db2b49fba2054f91f260520b33660d859f453d509777"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T400.json",
+      "sha256": "4882fe29701074c414ced5d1e62dc29978858f1cad73948de9c7df49efff631f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T400_attempt01.job.json",
+      "sha256": "4b1bf974a1069bd85f4e0bc8ec29c6e41353c661d3b8373006f7962e97d24d44"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T400_attempt01.log",
+      "sha256": "0862c28bd2fee1cf8093ef5f10275b9b98f2ce3daf930e0a30b3682e8c2a9bfe"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T400_attempt02.job.json",
+      "sha256": "b19fcea1239518cb1a0d13a42d455b8321f51b33c74a8bf21382bc7c9778cc6e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T400_attempt02.log",
+      "sha256": "1e3f41b293b28cb8c0a258f2b00a13c0bfc360cb50e6a39809691ce453d4809f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T6400.json",
+      "sha256": "eb979f888e2e4c1c43591319119a290fed1a48fe6adb6e244ecb0e08fcc66e44"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T6400_attempt01.job.json",
+      "sha256": "42942c07ac713714da303bab948fe0c913815ab6509e21044a1e144f03060b6c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_d92_T6400_attempt01.log",
+      "sha256": "98b4df272daeb4a47b61d42ed6de0c1e57681783dd3a20cb7d0f3a92b8eba88f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_packing_tail_d92.json",
+      "sha256": "62f5a6214671373aef739b9707cd6b70656555e3d7eaa21ec66957e476bceb97"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_packing_tail_d92_attempt01.job.json",
+      "sha256": "e73b636c80ce5b81a6fd619f1cf361d7cb6e8869b626817290118864626b519a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_packing_tail_d92_attempt01.log",
+      "sha256": "9f836ae8bc6c06e5af98d297ec76c00c00300e7002d52ba4be43bc32ca10a768"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_packing_tail_d92_exact_d93.json",
+      "sha256": "8e1f1af109ae5fd5146da2d015d6a6d6593ccc4cf3832aa7b16d9765f6c7c8e6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_sum_d92_T25600.json",
+      "sha256": "5903b4bbe694427d52348be022ad5fba38585c63994698a28319f388dae3b151"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_sum_d92_T25600_attempt01.job.json",
+      "sha256": "51816004d5c530d73bf3ffe9b33acada1befdc700f54550c30a7dbd304e7c575"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_sum_d92_T25600_attempt01.log",
+      "sha256": "bb6b5b6bc29b5892f093a2cb1be758dde7afde960dbf2ec847df874a9ff90515"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_sum_d92_T25600_exact_d93.json",
+      "sha256": "40d2c038a0b9d70fb0230d1fc9ce890b817df035429eb79f42c50cc5d0a1706c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_sum_d92_T6400.json",
+      "sha256": "5fcde375d896390867cf36e3d33acda8ce926ce5f3230ccc5743f289cfd59a90"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_sum_d92_T6400_attempt01.job.json",
+      "sha256": "7d3e6090c037b39347df2cab3ded339545f799d624a9e4c20f1ed0be6a2e30d9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_sum_d92_T6400_attempt01.log",
+      "sha256": "6b646ec019e330b4cc3e173eb586a66213b731808b1fd7e29c8e6bfd99ee7cd4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_test_vector_d94.json",
+      "sha256": "3e40a2d6136f09c795b0ee0e56efb3e386ee76ef77de3bd0ba3598aeb775fa20"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_b27_d93_T25600.json",
+      "sha256": "e7a1670e2b1db99d5933e39e76d6940af29e12e04c6d04d87eb17bdc66d33d56"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_b27_d93_T6400.json",
+      "sha256": "4280dc2952f196ffa27c76ee3b5172648a0761f7b2433299b0116bbe56bf4a20"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_cosets_d93_T25600.json",
+      "sha256": "ce65ebec7e7761598b514303bd3115d9e60c2e644c32925a5a57d9a4a219b4ff"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_cosets_d93_T25600_attempt01.job.json",
+      "sha256": "a50a6eedb039f64259603c2477d23ee07d274f2652f7a628ba733acb7d7481d1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_cosets_d93_T25600_attempt01.log",
+      "sha256": "3bb0fc73ecf6f344250b6c74c62d77975f6f8ead27c456de6b073007689d5625"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_cosets_d93_T6400.json",
+      "sha256": "4168207beeb9fdba18d6c76f9ead6259b15baae84263071e0a71b049facbc296"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_cosets_d93_T6400_attempt01.job.json",
+      "sha256": "a936146200e47a7c6f0b1f23c9de807ab01c58115331ffab4323c9ebb43ef3d0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_cosets_d93_T6400_attempt01.log",
+      "sha256": "69d74981e92d9fd5158831c18d7cbafa66f98ef77258e72d30e4a5f20aed8163"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_coverage_d93_T25600.json",
+      "sha256": "dfadaa6eb333e7ab20259a2f2b0ab36329ca725a21bce87a9e3786db50d8aa5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_coverage_d93_T25600_attempt01.job.json",
+      "sha256": "9751ee6dcdc80fb68b2e9b4ed5541550847a32df84dec037a9bcc8237149baf0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_coverage_d93_T25600_attempt01.log",
+      "sha256": "559b6eab9238eee54053452ca99076c58f2f1df787fd3d759e2bb71eaf3922ac"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_coverage_d93_T6400.json",
+      "sha256": "0cb69bafa2d0489a868bbfaf5a9efda43569251ad8052dcff3a2708a3d6c309c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_coverage_d93_T6400_attempt01.job.json",
+      "sha256": "cf64b63903f405d1eab45b6716a9bb968f00ad2ac8d262273e0ac643e5ab34a5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_coverage_d93_T6400_attempt01.log",
+      "sha256": "c931159054ac2a4937e0ce37d8aa752dfbfed7228329f51deb842a1eefb576cf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_d93.json",
+      "sha256": "c9dfa622e72cd7fdc296e8672f4700efe506253956af819c71b467e12e39cf2c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_exact_d93.json",
+      "sha256": "4b25020bacdb9c53da1a0cd697c55835efb440d783f23a916f2e4078e9d215e8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_search_d93_T25600_attempt01.job.json",
+      "sha256": "8105dcc8c95ee5f0fb3011a5e3efb488d16d5f8e45681268bcba9ec45cec20f6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_search_d93_T25600_attempt01.log",
+      "sha256": "7c27013b7fa4d9742a128fddc01a5f7e3bc400487dff6be1cd69ec8cfda388d9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_search_d93_T6400_attempt01.job.json",
+      "sha256": "808d4ef4b6ca0b48a7b8bd3c053a0ce96a92e7438e0e7cb3d74e03321c65bef7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_search_d93_T6400_attempt01.log",
+      "sha256": "d45ddf089e23815c73ffc9d8cd58a24255ddfbae9dcb41f301c3159425bf8b7e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_sum_d93.json",
+      "sha256": "723c249b6bd20a260bcb9c122ed183eff1f7697ad6e5c94b7c86f1ed3a95cc9f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_sum_d93_attempt01.job.json",
+      "sha256": "14ea3a2b1df6224b2ff54087da06a09aa8f4f703a343f05ded8d6823a36dd80c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_sum_d93_attempt01.log",
+      "sha256": "d3bdf3843d6be6d922880fe26dcbd8cf7f8ccf49507466d506659b77e4c3d8ff"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_sum_d93_exact_d93.json",
+      "sha256": "d3e46f1707fc783d74e8d7990559e1632a271960ddd07a71a36a3e60509ab70b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_primitive_classes_d91.json",
+      "sha256": "86941c8138ec5abd4b25129ad0c3d5cdbb0c9b7029aa829dd9dc8d60fed53072"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_orbit_blocks_d97.json",
+      "sha256": "88522e61ae17041dca47d89c47dde9a9ebb2a02d0e8507f35bccf15df4b4a0c7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_orbit_blocks_d97_attempt01.job.json",
+      "sha256": "ae5b71d0cbff4bd6b23f0dfbad5dec7e89ed751a6b8f7e4db527a972b6fee32f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_orbit_blocks_d97_attempt01.log",
+      "sha256": "fc367d553ef58951d57e453a08ac47543a6e38e8ff293ea1de14d14ac87bf151"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_orbit_d97.json",
+      "sha256": "e7a33e9e1119e9a70a98eb26272c343281f3d337dacda0544f9d12730f634633"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_tail_transfer_d97.json",
+      "sha256": "99852eca72f5b292927c8ad5148873e976bff663342ae31cb844c942d04a876a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_tail_transfer_d97_attempt01.job.json",
+      "sha256": "8e3122711c212f7a7c88079607131d853b99852dbfae3493844b27622c124c2e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_tail_transfer_d97_attempt01.log",
+      "sha256": "51e1203ed3fc4f349b75c4fbeabfa1f40a4ec2f3f27cacbb71973d139c9bf9af"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_tail_transfer_d97_attempt02.job.json",
+      "sha256": "611ef5229f870cd65d4eb7ddaacc614cac080a50f5e590db360cc35c52a7ca68"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_tail_transfer_d97_attempt02.log",
+      "sha256": "1c78c20c10accdfd0f817b5d5b9db391fb135e6479c267a1547b6ffdf7f08c95"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_tail_transfer_d97_attempt03.job.json",
+      "sha256": "88533acacc9d4e767829833f33409f0fc03d73a4144fb6463e371fff2e9247f9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_signed_tail_transfer_d97_attempt03.log",
+      "sha256": "3b192e2e362bd6121abce99ab4f6b72888403e2ee038dc382208d2c508036e8a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_spectral_ideal_bound_d98.json",
+      "sha256": "03897bd676cfd8bb69ad08af0ff4543593ce811083b12946f28962e441c7ffa3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_spectral_ideal_bound_d98_attempt01.job.json",
+      "sha256": "12c12acb329740068bf895f9aecc8b42d9d99d337a1c9d0207656c5ab180c259"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_spectral_ideal_bound_d98_attempt01.log",
+      "sha256": "0614292f8025e06c1b7704a6cc0682bea8995d0f0e7969a79a4f6bbb2cd7ba69"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_spectral_ideal_d98.json",
+      "sha256": "eba34556909261d178d76c66c81c15d4dcd0ffa4167d2ce0d25de9fd32861e66"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_test_vector_d94_attempt01.job.json",
+      "sha256": "8123907c8d8b5fc194af401e125b1e5bcf96f3d97f75bfbc14feca633d51f887"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_test_vector_d94_attempt01.log",
+      "sha256": "de5c55808f8bd309aac298dd4bd5ae0fad016846924db2c8686de43c2a787f42"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/nelson_unit_cutoff_d91.json",
+      "sha256": "b7cd967286e41b22735a5e4855f425e37f8d2e2c8c063a40b15d1c7cdb36f4d5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/normalizer_domain.bin",
+      "sha256": "83a00e9829339ac9d1fd1923db9f77cbdd2ad3f72fd3aa0044c724097c119dd0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/117_cm_frame_smoothness.m",
+      "sha256": "d8e261ed48931b908352e0a145615c18a58cac5621a1a61a27c97775d378c860"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/370_hyperellipticity_fresh_brandt.m",
+      "sha256": "631b7cc737345efb179fc6186d5ece1d9d0d2a2f806a138287c634814411f614"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/371_hyperellipticity_fresh_brandt.m",
+      "sha256": "35798447f567f32b75d1bbccb03b61b3f9a982024cd13db60a16a28082838033"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/375_cm_tangent_candidate_height.m",
+      "sha256": "034fed9d4b055691cbe0b7eaa217b8ee2a0390aebc40a414168350d5d231beab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/60_f16_steinberg.m",
+      "sha256": "eddaafbfbedb968a5d14c34ce8063a42744465384e326351c612bd28990ba5fc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/96_cm_root_action.m",
+      "sha256": "0dc24db53e6c0e1696163cd88e6a2c5fff514f546b033d9efd1af519066c306e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/320_nelson_local_kernel.py",
+      "sha256": "c609baa62ebff55e00283385fe2d7f85b0cebde412e2a5a6f2cbe97cd7a93114"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/321_nelson_cm_lattice.py",
+      "sha256": "f8421364564b193f64df30502f3099af4d2316e5b9519cf0617cde75ec2de78d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/325_nelson_d90_audit.py",
+      "sha256": "b185173b4e1ba43113dc4effc0cc9250f349eec2cc9f3bc87cdc6daf5fcdfeb0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/333_nelson_interval_sum.py",
+      "sha256": "5db3901a0fe91117aea146c9e9a101c9a3a11a8dd468e73793b5f169a82c0639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/334_nelson_unfolding_audit.py",
+      "sha256": "bff793989e9f20277a5beb479fa6c68b8681643bcf6fee5e818a290da980e1db"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/338_nelson_norm_one_search.py",
+      "sha256": "b30830d473979af7f6e201d12d56a0253f23a8f54ceb4d2a2deb19355cb5d741"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/339_nelson_norm_one_search.py",
+      "sha256": "be34d5c6c70d1ee2081bd1d14878609a1720b8f6e719ff9483625b3263500f11"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/340_nelson_norm_one_coverage.py",
+      "sha256": "c56220f8c3a5d6d6c81ad1ef5035292d9c6ac0ab6f5aeb063cd9c9012aa60ab6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/341_nelson_norm_one_sum.py",
+      "sha256": "c6418714b982275bc5904ca2ce8d3d45658a13c594de6ece10a626042c7b0019"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/342_nelson_norm_one_packing_tail.py",
+      "sha256": "c0c2abbb210b981a4ecc81608a2022c8777309feb70dd3c574ead0f046485621"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/343_nelson_norm_one_audit.py",
+      "sha256": "70a946081552dd070b9a759c053f98f541f1aa0815450ed8b8444957ca874641"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/344_nelson_prime31_search.py",
+      "sha256": "f0178469a39ad786b71f5297ad2aebac0a08ef0a5f32f345927750349f710c36"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/345_nelson_prime31_coverage.py",
+      "sha256": "b4da675b317c2055e8f988d4fbea2f6a11b4e74ff5c72ba5ca237fb4f348c199"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/346_nelson_prime31_cosets.py",
+      "sha256": "b660bc59d4f2d1ab5330111e6b8dd2452f34c478bedc5a41683d9a81d5bdb292"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/347_nelson_prime31_sum.py",
+      "sha256": "808c841388a3db48db2b74c31c35ae4d8cbe948f7b62271ffacf97b3b2796505"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/348_nelson_all_ideal_bounds.py",
+      "sha256": "bce90be5a6ca3082144233e6fcece8af8f4a7aeaf9f2d815315433d9a2f89d3f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/349_nelson_prime31_audit.py",
+      "sha256": "fdc7f17b4cff0c4b8a79b5c00e8edeb3d3b5e7772c27a36b192e79110773ca99"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/350_nelson_prime31_audit_refined.py",
+      "sha256": "2e2e1d30f9748b43b98c9ea7d1bbac6031fca1287681db1a23e367711ee38d5e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/351_nelson_exact_endpoint_replay.py",
+      "sha256": "0fa69f20e49f5bf0104f30a80318eea4128832ed92055f00348333c6b3e21575"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/352_nelson_prime31_exact_audit.py",
+      "sha256": "6bd5470744184c1a10db12e59ea8a37ad36a6e6f5518a275ab2b6e1bed0abcdd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/353_nelson_prime31_final_audit.py",
+      "sha256": "970798ec46e9231312f368289dd9a0986162bdaa68ccf5014d62aedd6c067922"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/354_nelson_prime31_certified_audit.py",
+      "sha256": "e479f3cccb4560b16c07f16d55dd5cf3671dbcfeb77902191caf31b76b4bb786"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/355_nelson_contour_weight_bounds.py",
+      "sha256": "4b5b434ea32a7cfe8e0dd329340e55d0104e57dba253547cbd6d00caf29546b1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/356_nelson_norm_one_test_vector.py",
+      "sha256": "6b527e6f01522e1f583d3cf4131bbcd003c04fa94cc8c78f9e61b2dac37a2850"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/357_nelson_kernel_review_audit.py",
+      "sha256": "ad18d4fb10423a2c8f065f91d1f61196865e2147eba87ba9d9f7d7aceb2bbdf5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/358_nelson_global_comparison.py",
+      "sha256": "4ffa29d72bbeb861c6cf4e3bf7a8bc5a3753fa600a4e9b9919c4dfd201f2942e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/359_nelson_global_identification_audit.py",
+      "sha256": "36f3ba53ca6af90ad5e786413eaa67a55345477d97aaa839514dd2164a36e8f5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/360_nelson_completed_scalar_blocks.py",
+      "sha256": "816b5dd7e01f107ce4d43da49d378e4179b7d71fd1f7fa353125810ef61e4ffc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/361_nelson_completed_ideal_majorant.py",
+      "sha256": "e8a5b96b0e6e88e87abe29c0e30a0961bc671fb9a95f3cb48d0fd21565bc7379"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/362_nelson_completed_majorant_audit.py",
+      "sha256": "98da7b1357aa9ed6c87c1df5bc407a2b67dc160401f9ccc9be879f40c20fe551"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/363_nelson_signed_orbit_blocks.py",
+      "sha256": "450d3051c5027a42524ad1b9fdce3258676bcc31f6afa56d9506d931a9a8caca"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/364_nelson_signed_tail_transfer.py",
+      "sha256": "2eddd19940becd5b6331a8257b2dad025d7edfd1e5e67509a485803b91b66967"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/365_nelson_signed_tail_transfer.py",
+      "sha256": "21c74ea26fe80a74b6138d5203fbf18e74fab4149dfd3bd08356df34a2286723"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/366_nelson_signed_tail_transfer.py",
+      "sha256": "115fce444355b7e89bbfc795184690751e20db69400c61af5fc946327c93fee9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/367_nelson_signed_orbit_audit.py",
+      "sha256": "fd5928181c81eeef992af5413eebe0e655606f619095362a2bf9b4164736e5fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/368_nelson_spectral_ideal_bound.py",
+      "sha256": "ee85f12b28a170141dbfb7ebb997d0b871649e27fc299b8e5621ff3ffa978eb6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/369_nelson_spectral_ideal_audit.py",
+      "sha256": "ad882df29513fbb7b38808602570798ac07390090bea939c21c62df1bb7c8b7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/372_hyperellipticity_graph_review.py",
+      "sha256": "978047a37049b5951d8b3b6b19dc987fa297f75047ef65e4a08bc465103ba468"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/373_hyperellipticity_order_review.py",
+      "sha256": "ff19ac463ff4714d85a4f92b1fc79ac0a79b2596a4c12c8272aba7871b2d06a8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/374_hyperellipticity_review_audit.py",
+      "sha256": "642f4dcd041068f02ca3d075b31ffd9de43177df34a6b862a8c94594ad487ad8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/376_cm_tangent_exactness.py",
+      "sha256": "fc95f5e5caeb574d2564ad4b02a997c16965f2be9996a6cb4cce384c23a6b090"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/377_cm_tangent_exactness_review.py",
+      "sha256": "7870fd8da2b6f9afde8b47fd66e93ee07a41ee2aaaf447d29209f39f34f1076d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/378_cm_residue_lattice.py",
+      "sha256": "0dbe7a49954986f15fd6d03d9d53f9a8733fc9ebd7d4aac5acbd53ecf8b9b45a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/379_cm_residue_lattice_review.py",
+      "sha256": "b1d4c2c6bbbe33708154ffd23827b18b3bdf580b71277e59abc9d1651a249300"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py",
+      "sha256": "2a32027c8b1c1a5db09ea4d0b15c9110135231eaf653dffeac953e556204a544"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/380_cm_adjugate_height_attempt01.py",
+      "sha256": "3c29822fe0ef49a2d2f968eaa258a44135ad3fcac8e0c16b5924df836c43c04f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/381_cm_adjugate_height_review.py",
+      "sha256": "a674c8a07e0cd9b36a5b54db3efe9e31b3625b233931f041720fc0ad39b0f176"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/382_cm_intrinsic_height.py",
+      "sha256": "e668ffc4b4a8a5bf3b1eddce6065b07e7427333457d1887e10ad1a07c3f0ee86"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/383_cm_intrinsic_height_review.py",
+      "sha256": "2e543dfb91073a93ad75c91460a9461bcc00a2224b3a6258068c35ee53056f72"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/384_cm_frame_specialization_probe.py",
+      "sha256": "f81fa8153d425147db6c6867187d22effdb2ffd99c21a05333eff456441575bc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/385_cm_frame_specialization.py",
+      "sha256": "f9442f4af2bd0bbac795aa514fb4396270268911ad7a9f6fe5624911b2a3603a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/386_cm_frame_arithmetic_review.py",
+      "sha256": "730cbc1b050e5c07e87c9502258d1bceb3b7811f8260ce9121723cff1394f6eb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/94_cm_arithmetic.py",
+      "sha256": "6e064d9db096eb83357f056dd540fcbd87e614d886530b2aefe63f157f9b69a0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/96_cm_orbit.py",
+      "sha256": "d5da76d6f0d130ba24ea1b0c69fcd8782ecefa8bd6c34b5980281c78a00a323b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/99_curve_identification.py",
+      "sha256": "e30269377370abaccc3924ce6f08fe1dc7d3b9c011de207c6da1a96bbc3f1273"
+    },
+    {
+      "path": "/Users/musty/two/dembele/vendor/rickards-fdom/benchmarks.gp",
+      "sha256": "4b942f705d08d2d30ba37a0c72d42fd844298841805095a2b09b7ebc71a3f9bd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/vendor/rickards-fdom/eichler.gp",
+      "sha256": "bc5d9eedfaa48c6e72964a6ab71020f4858250e46b6e67f787d75174a0632de3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/vendor/rickards-fdom/example.gp",
+      "sha256": "f7e5b747d5c3507b05bb12d2a0bf992bc884dfeef23e12482908e8d121638f77"
+    },
+    {
+      "path": "/Users/musty/two/dembele/vendor/rickards-fdom/fdom.gp",
+      "sha256": "d8cad681c39d79913f7078af4e71b3176775b6b90d225e1eda46e7ae64844c6d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/vendor/rickards-fdom/guide_timings.gp",
+      "sha256": "b1a925199404e5c2054b3936dea1ff0b5781b57bc09544943862c78c6490eac6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/vendor/rickards-fdom/libfdom-2-17-1.so",
+      "sha256": "6201f4e8de4d8d1dc32c3aaebc184933c58ae68307523a828245d6b5e90192f5"
+    }
+  ],
+  "actual_CM_frame_full_rank_and_all_cofactors_nonzero_via_companion_proof": true,
+  "finite_tangent_atlas_available_over_H": true,
+  "saved_arithmetic_point_root_orientation_certified": false,
+  "candidate_identification_proved": false,
+  "independent_Shimura_tangent_obtained": false,
+  "spectral_pilot_gate_passed": false,
+  "scope": "Exact finite witnesses and source preservation; geometric lemmas and cited theorems are not machine-verified."
+}

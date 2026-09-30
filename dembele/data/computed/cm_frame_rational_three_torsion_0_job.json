@@ -1,0 +1,54 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_rational_three_torsion_0_run.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 51.42782008391805,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_rational_three_torsion_0.out",
+    "sha256": "0443903b436efb0d4c7e511ea118f6d2903209d56a1b0462b801ce7fcebfc60c"
+  },
+  "private_process_group": 97093,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/277_cm_frame_rational_three_torsion.py",
+      "sha256": "1aeb062bf91365e4efa9ef28c0cb27164f23ee64be487c37ef0d9c8b59334d33"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/276_cm_frame_rational_three_torsion.m",
+      "sha256": "cefd94d59177a516fc6745925bdb4d9cf6ed2c1f48e7ea8d63f568dbd32c3901"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_rational_three_torsion_0_run.m",
+      "sha256": "0d4ba21d38cc63b4af982ce196f585f6e09131be23218d928ff88c3c86bea565"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_third.json",
+      "sha256": "b33de9451b301f1f51387e033f00e89e4b23b693879b2916cea3e1322372cef6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+      "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.m",
+      "sha256": "99ccb18d550b2814ea27fe4bb86a0b19dc685b202c1f4f12caf4e96b1bffc318"
+    }
+  ],
+  "memory_limit_bytes": 2000000000
+}

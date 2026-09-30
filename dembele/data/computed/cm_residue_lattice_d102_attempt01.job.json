@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/Users/musty/.pyenv/versions/3.10.12/bin/python3",
+    "/Users/musty/two/dembele/pari/378_cm_residue_lattice.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.5577580420067534,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102_attempt01.log",
+    "sha256": "39866bc4e6aa49581225169b3cffff3e2761216e78002422865cd4cdbb8b016c"
+  },
+  "private_process_group": 87325,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/378_cm_residue_lattice.py",
+    "sha256": "0dbe7a49954986f15fd6d03d9d53f9a8733fc9ebd7d4aac5acbd53ecf8b9b45a"
+  }
+}

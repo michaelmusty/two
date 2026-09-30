@@ -1,0 +1,7 @@
+ACTUAL_LOW_SOLVE|{"operation": "low_solve", "modulus_bits": 17, "seconds": 10.258637875085697}
+ACTUAL_ACTION|states=1/174; bits=17; seconds=0.236
+ACTUAL_ACTION|states=61/174; bits=17; seconds=3.706
+ACTUAL_ACTION|states=121/174; bits=17; seconds=6.820
+ACTUAL_PRECISION_GAIN|{"before_pi": 266, "after_pi": 299}
+ACTUAL_PHASE_RESULT|{"status": "pass", "milestone": "D121", "phase": "step", "working_precision_pi": 400, "eliminated_positive_moments": 32, "harmonic_basis_column": 8, "residual_lower_bound_pi": 299, "correction_history": [{"before_pi": 200, "after_pi": 233}, {"before_pi": 233, "after_pi": 266}, {"before_pi": 266, "after_pi": 299}], "certificate": {}, "actual_moment_precision_increased": false, "full_sixteen_column_bank_refined": false, "timings": [{"operation": "low_solve", "modulus_bits": 17, "seconds": 10.258637875085697}, {"operation": "original_transport", "input_valuation_pi": 266, "modulus_bits": 17, "input_count": 136, "output_count": 400, "seconds": 10.010186415864155}], "wall_seconds": 21.426346249878407}
+PASS|478_DYADIC_COMPILED_LIFT

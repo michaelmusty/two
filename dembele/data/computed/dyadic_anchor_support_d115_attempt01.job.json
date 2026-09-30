@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/419_dyadic_anchor_support.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.5576013340614736,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_anchor_support_d115_attempt01.log",
+    "sha256": "0a7aefca053fe1920a16950aa5737f2253bdac7180f9cad4ed0001265ede600d"
+  },
+  "private_process_group": 12721,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/419_dyadic_anchor_support.py",
+    "sha256": "d43c55028b98f828f80188f810d0ec2dc565133062e48c3237e436856d7c01b9"
+  }
+}

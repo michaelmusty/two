@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "milestone": "D120",
+  "controls": {
+    "arbitrary_precision_product_bits": [
+      3,
+      25,
+      129,
+      1536
+    ],
+    "independent_recurrence_controls": 12,
+    "integer_arithmetic_has_no_fixed_width_overflow": true
+  },
+  "frozen_working_precision_pi": 200,
+  "basis_columns_checked": [
+    0
+  ],
+  "state_equations_checked": 174,
+  "child_actions_checked": 348,
+  "distinct_child_maps_checked": 165,
+  "CM_charts_checked": 17,
+  "state_coefficients_checked": 278400,
+  "CM_coefficients_checked": 54400,
+  "state_sweep_wall_seconds": 40.6752629999537,
+  "CM_charts_wall_seconds": 7.550619791029021,
+  "median_child_wall_seconds": 0.12468379200436175,
+  "maximum_packed_product_bytes": 95640,
+  "polynomial_products": 279224,
+  "dense_operator_table_allocated": false,
+  "actual_moment_precision_increased": false,
+  "full_precision_solver_implemented": false,
+  "candidate_identification_proved": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+      "sha256": "d1a595cfd6accde0f0b57419bdc16cbf7da1c65b15842f9ba58c8a91381c7cf2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_d115.json",
+      "sha256": "bc043dfe632db80984eef2578841611325767cb4afb214bebfa354354f8fb699"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_moment_transports_refined_d115.json",
+      "sha256": "8fb8aff2c346a3205434e6ee280cb0e9cbd450425754383ab353fb6196a11944"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/271_cm_frame_cubic_dual_height.py",
+    "--train",
+    "60",
+    "--root-index",
+    "0",
+    "--worker"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 5.811147375032306,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_dual_height_64_60_0.out",
+    "sha256": "979d55cc1b4c8f95d011244f3738085a34038fbe7bf08f9f8900a52ce1f7baac"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/271_cm_frame_cubic_dual_height.py",
+      "sha256": "1d3836ab18a554bef23970ce5c592aac873a1782dd9e656defc009f5939c011f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ]
+}

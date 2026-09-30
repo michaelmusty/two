@@ -1,0 +1,142 @@
+{
+  "status": "pass",
+  "milestone": "D124",
+  "phase": "controls",
+  "certificates": {
+    "independent_small_products_checked": 172,
+    "bits_checked": [
+      1,
+      3,
+      25,
+      50,
+      100,
+      200,
+      1319,
+      1536
+    ],
+    "actual_original_equation_scalar_checks": 33320,
+    "unprofiled_actual_timings": [
+      {
+        "working_P": 800,
+        "input_valuation_pi": 0,
+        "input_count": 800,
+        "output_count": 800,
+        "backend": "fast.Ring",
+        "seconds": 2.7146282081957906
+      },
+      {
+        "working_P": 800,
+        "input_valuation_pi": 0,
+        "input_count": 800,
+        "output_count": 800,
+        "backend": "__main__.Ring",
+        "seconds": 1.8609001659788191
+      },
+      {
+        "working_P": 800,
+        "input_valuation_pi": 0,
+        "input_count": 800,
+        "output_count": 800,
+        "backend": "prepared.Ring",
+        "seconds": 3.149731625104323
+      },
+      {
+        "working_P": 1600,
+        "input_valuation_pi": 800,
+        "input_count": 800,
+        "output_count": 33,
+        "backend": "fast.Ring",
+        "seconds": 1.7261335840448737
+      },
+      {
+        "working_P": 1600,
+        "input_valuation_pi": 800,
+        "input_count": 800,
+        "output_count": 33,
+        "backend": "__main__.Ring",
+        "seconds": 0.9568391251377761
+      },
+      {
+        "working_P": 1600,
+        "input_valuation_pi": 800,
+        "input_count": 800,
+        "output_count": 33,
+        "backend": "prepared.Ring",
+        "seconds": 1.8521544171962887
+      }
+    ]
+  },
+  "wall_seconds": 15.726127791916952,
+  "peak_rss_bytes": 341475328,
+  "production_P1600_lift_not_modified": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_adaptive_polynomial_build_source_d124.c",
+      "sha256": "81031afa3eb55f2241b47ed073904bad4c9c32abccb5de5703913ca767b711f7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_adaptive_polynomial_kernel_d124.dylib",
+      "sha256": "727987c1ae8610bfa0b0734ac494bbce62db1956f093eab465e872bff1dc97f6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_verified_d123.json",
+      "sha256": "efc79580fad5a179b26d05edc31bc61b7cc2002682aed0d2f59869c92f7ece59"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_verified_d123_residual.bin",
+      "sha256": "7d335e029a7c9b9ad77612f03028c3f18fc1ea6b71f688d58d2c91ab81858fdf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_verified_d123_state.bin",
+      "sha256": "3d040e445c9c5c57ebd8f5f69ed224f01736a88dd4bb20c5168bb2b3a5ddb022"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124.json",
+      "sha256": "d526be706de9d6666db5c785b7ce82bcb043f9f066e6c443b66f77782a1bdc7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124_correction.bin",
+      "sha256": "2aefc174e43d9aaf4661007beedd53f0a4b7f3b9426f3f33a4ce39348e1fec0e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124_state.bin",
+      "sha256": "808fe967961baf7f65083bf9d2be1980cbd06e5b708b0b9a362951078a605f03"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/476_dyadic_polynomial_kernel.c",
+      "sha256": "1a0f8069f25d4c4f130c686a119fd5144663734627baa1e4aca18d8cac3763bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "sha256": "86c45479d6866a0120b0daefcf915e2a13f5cbc763ed3bd368437d11fb3b6ec8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/502_dyadic_small_polynomial_kernel.c",
+      "sha256": "81031afa3eb55f2241b47ed073904bad4c9c32abccb5de5703913ca767b711f7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/503_dyadic_adaptive_kernel_control.py",
+      "sha256": "409109db2cb676795cdf0b7ba988659fbb4c7e85d87e716d6a735db666e67c0e"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/flint/3.6.0/lib/libflint.24.0.dylib",
+      "sha256": "9dcc2966abb20d94641a704c848d07f57549169c11265e97fc41593ddb0fe445"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/gmp/6.3.0/lib/libgmp.10.dylib",
+      "sha256": "bc6145edbeca608b4fecd4440dbbd7b27cacd55cbfd2b552b8bc333febe43b35"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/flint/3.6.0/include/flint/fmpz_mod_poly.h",
+      "sha256": "1426e8ad6bdc590d77f285e16811d21c86363f86381db2142bc38d3828681a9f"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/gmp/6.3.0/include/gmp.h",
+      "sha256": "920496a9867a23dec3410e19da39ac446743694d539651bd78015240b0704e4b"
+    }
+  ]
+}

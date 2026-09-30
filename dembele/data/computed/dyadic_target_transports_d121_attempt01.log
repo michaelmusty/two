@@ -1,0 +1,8 @@
+TARGET_ROOT|{"work_precision_pi": 10824, "errors_pi": [352, 696, 1384, 2760, 5512, 10816]}
+TARGET_TRANSPORTS|1/399; seconds=0.061
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/471_dyadic_target_transports.py", line 139, in <module>
+    out.write_text(json.dumps(build(),indent=2)+'\n')
+  File "/Users/musty/two/dembele/pari/471_dyadic_target_transports.py", line 108, in build
+    assert overlap >= row['normalized_error_pi']
+AssertionError

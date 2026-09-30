@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/395_dyadic_poisson_jet_interface.py"
+  ],
+  "status": "failed",
+  "exit_code": 1,
+  "wall_seconds": 4.105348624987528,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_poisson_jet_interface_d108_attempt01.log",
+    "sha256": "698204d231db632f88836ee8ee0aab3bd3a977a4b331671864779d628998744b"
+  },
+  "private_process_group": 92128,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/395_dyadic_poisson_jet_interface.py",
+    "sha256": "7b39cbc62e921d71a38bf036de8c1aa08edf7ece7aeabafaa744c02af67c1a1e"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "phase": "target",
+  "certificates": {
+    "input_kind": "logical_repetition_of_synthetic_target_row",
+    "row_payload": {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_compact_target_row_d130_uniform_row.bin",
+      "sha256": "e093905e14443ee30952b2d07d1a8dfe63e61c27d7637ded0f11904bdd726ebe"
+    },
+    "logical_target_uniform_bytes": 2423583360,
+    "logical_sha256": "12fa30ffddb7a170a95fb3d65702234fcfbfccb85884ae10fd82a310d4b62cb4",
+    "maximum_hash_block_bytes": 1048576,
+    "retained_synthetic_row_bytes": 13928640,
+    "stream_hash_seconds": 0.932030500145629,
+    "full_target_file_created": false,
+    "disk_IO_throughput_measured": false,
+    "whole_target_payload_materialized": false
+  },
+  "wall_seconds": 0.9441179169807583,
+  "peak_rss_bytes": 38207488,
+  "actual_harmonic_precision_increased": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_compact_target_row_d130.json",
+      "sha256": "ddaa078439a54dd6c5a4141e0761e20bc71c5adc5847b3956ccb9b35ba4658bd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_compact_target_row_d130_uniform_row.bin",
+      "sha256": "e093905e14443ee30952b2d07d1a8dfe63e61c27d7637ded0f11904bdd726ebe"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/537_dyadic_streaming_authentication_control.py",
+      "sha256": "e309b831f2e5723e819e2dab47024fba26e50f145fafc4f5c363a18bcf8a84ca"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_third_085_run.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 106.90509591600858,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_third_085.out",
+    "sha256": "e298be308d231c74a40a124c9b3a81bd2d90454a6d4e6947cb742b3a616932c1"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/201_cm_frame_cubic_precision.py",
+      "sha256": "f0e07e7b36002bbf3547b264b0909007ebf2dc0bf4111f4a772b8c6316dad608"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/200_cm_frame_cubic_precision_third.m",
+      "sha256": "f7ab1846d443b598a74d309661a3f73960ce1f68ce0537d4fb0a3ea5ff1ce47e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_third_085_run.m",
+      "sha256": "2d989fab1582f130abd042d036cbaf08fe49a7e9f3056dd63a473b494cdb8c8e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/197_cm_frame_cubic_precision_arithmetic.m",
+      "sha256": "f5f36bfd89016f72825b46a1b0c4d4b0cadde97c442bd3c85a78c2d676a6a443"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/199_cm_frame_cubic_precision_model.m",
+      "sha256": "4154f0364ae5660cd231b33774bb1b6ccfa25b23e597f90d37473b478b8e56cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_sections.json",
+      "sha256": "a698d80932e76843fe835eb01b41938a5c844f1daf0ab4b4ce4fa14c4261d0ad"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_third.json",
+      "sha256": "b33de9451b301f1f51387e033f00e89e4b23b693879b2916cea3e1322372cef6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_precision_8_third_073_job.json",
+      "sha256": "2d29bd7de22649bfa19c2d966b5ce2cdc69da000d3a8d0d8e01066b2e87bb984"
+    }
+  ]
+}

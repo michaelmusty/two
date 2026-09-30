@@ -1,0 +1,273 @@
+{
+  "status": "pass",
+  "milestone": "D104",
+  "field": {
+    "CM_degree": 16,
+    "polynomial": [
+      2,
+      0,
+      64,
+      0,
+      336,
+      0,
+      672,
+      0,
+      660,
+      0,
+      352,
+      0,
+      104,
+      0,
+      16,
+      0,
+      1
+    ],
+    "cyclotomic_generator": "zeta_64-zeta_64^(-1)",
+    "cyclotomic_stabilizer": [
+      1,
+      31
+    ],
+    "cyclic_generator": 5,
+    "complex_conjugation_is_eighth_power": true,
+    "Eisenstein_at_2": true,
+    "polynomial_discriminant": 604462909807314587353088,
+    "maximal_order_reason": "Eisenstein uniformizer gives the full local order at 2; the polynomial discriminant has no other prime factor.",
+    "base_discriminant": 2147483648,
+    "relative_discriminant_norm": 131072,
+    "quaternion_discriminant_norm": 2,
+    "character_conductors": [
+      1,
+      64,
+      32,
+      64,
+      16,
+      64,
+      32,
+      64,
+      8,
+      64,
+      32,
+      64,
+      16,
+      64,
+      32,
+      64
+    ],
+    "odd_character_indices": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "L0_power_coordinates": [
+      "1",
+      "1",
+      "1",
+      "-1",
+      "-1",
+      "-1",
+      "1",
+      "-1"
+    ],
+    "L0_inverse_coordinates": [
+      "3/34",
+      "4/17",
+      "-7/34",
+      "2/17",
+      "5/34",
+      "1/17",
+      "-3/17",
+      "1/34"
+    ],
+    "L0_norm": 2176,
+    "log_gamma_trace_coefficients": {
+      "1": "12/17",
+      "3": "8/17",
+      "5": "-4/17",
+      "7": "24/17",
+      "9": "28/17",
+      "11": "16/17",
+      "13": "32/17",
+      "15": "20/17",
+      "17": "20/17",
+      "19": "32/17",
+      "21": "16/17",
+      "23": "28/17",
+      "25": "24/17",
+      "27": "-4/17",
+      "29": "8/17",
+      "31": "12/17",
+      "33": "-12/17",
+      "35": "-8/17",
+      "37": "4/17",
+      "39": "-24/17",
+      "41": "-28/17",
+      "43": "-16/17",
+      "45": "-32/17",
+      "47": "-20/17",
+      "49": "-20/17",
+      "51": "-32/17",
+      "53": "-16/17",
+      "55": "-28/17",
+      "57": "-24/17",
+      "59": "4/17",
+      "61": "-8/17",
+      "63": "-12/17"
+    },
+    "coefficient_absolute_sum": "576/17",
+    "CM_class_number_used": false
+  },
+  "height_formula_controls": {
+    "CM_type_count": 256,
+    "unordered_nearby_pairs": 1024,
+    "nearby_height_identity": "average_CM_height=4*h_nearby-(1/4)*log(d_F)",
+    "Hodge_height_formula": "h_L(Q)=-(1/8)*Lprime_over_L(0,chi_M/F)+(1/16)*log(2)",
+    "main_theorem_and_nearby_derivation_agree": true,
+    "d_Sigma_omission_rejected": true,
+    "omission_changes_height_by": "(17/16)*log(2)",
+    "excluded_Yuan_Zhang_CM_point_theorems_used": false,
+    "CM_Faltings_metric": "norm squared = abs(integral alpha wedge conjugate(alpha))/(2*pi)^8",
+    "Hodge_metric": "norm(d_tau)=2*Im(tau)",
+    "D103_curve_Faltings_metric_is_kept_separate": true
+  },
+  "analytic_bound": {
+    "method": "Finite Gamma products with log-convexity remainder; dyadic rational log intervals",
+    "Gamma_product_n": 64,
+    "log_series_terms": 32,
+    "log_interval_bits": 80,
+    "log_gamma_formula": "R=-8*log(64)+sum_a c_a*log(Gamma(a/64))",
+    "finite_product_partial_interval": [
+      "-16749455340700775793983451/1284483683340543498125312",
+      "-66997821362803103175924413/5137934733362173992501248"
+    ],
+    "positive_error_weight": "76/17",
+    "negative_error_weight": "-212/17",
+    "error_log_interval": [
+      "18743411415449893204955/1208925819614629174706176",
+      "4685852853862473301239/302231454903657293676544"
+    ],
+    "Lprime_over_L_interval": [
+      "-8498902770977743439474559/642241841670271749062656",
+      "-66641696545909555205030249/5137934733362173992501248"
+    ],
+    "Hodge_height_interval": [
+      "547378952264600462742680411/328827822935179135520079872",
+      "139543789309974900307202553/82206955733794783880019968"
+    ],
+    "Hodge_height_upper": "17/10",
+    "coarse_fibre_height_upper_from_interval": "168034549104622942512079425/41103477866897391940009984",
+    "coarse_fibre_height_upper": "41/10",
+    "tangent_height_upper": "105033/10",
+    "rounded_tangent_height_upper": 10504,
+    "floating_point_values_used_for_certification": false
+  },
+  "ramification_controls": {
+    "smooth_simple_branch": [
+      {
+        "u_coefficients": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ramification_derivative": 2
+      },
+      {
+        "u_coefficients": [
+          0,
+          0,
+          1,
+          3,
+          -2
+        ],
+        "ramification_derivative": 2
+      },
+      {
+        "u_coefficients": [
+          0,
+          0,
+          1,
+          -7,
+          5
+        ],
+        "ramification_derivative": 2
+      }
+    ],
+    "branch_swapping_nodes": [
+      {
+        "t": 2,
+        "differential_at_section": 0,
+        "ramification_derivative": 4,
+        "integral_at_2": true
+      },
+      {
+        "t": 4,
+        "differential_at_section": 0,
+        "ramification_derivative": 8,
+        "integral_at_2": true
+      },
+      {
+        "t": 16,
+        "differential_at_section": 0,
+        "ramification_derivative": 32,
+        "integral_at_2": true
+      },
+      {
+        "t": 256,
+        "differential_at_section": 0,
+        "ramification_derivative": 512,
+        "integral_at_2": true
+      }
+    ],
+    "wild_branch_preserving_node": {
+      "xy": 4,
+      "target_ts": 16,
+      "point": [
+        2,
+        2
+      ],
+      "ramification_derivative": -2
+    },
+    "unramified_chart_rejected": true,
+    "higher_ramification_chart_rejected": true,
+    "finite_place_construction_divides_by_2": false,
+    "archimedean_operator_norm": 2,
+    "comparison": "H_CM_disk <= 2*H_S_disk+log(2) <= 2*h_L(Q)+log(2)",
+    "controls_are_not_explicit_models_of_the_actual_bad_fibre": true
+  },
+  "coarse_CM_fibre_height_numerically_bounded": true,
+  "tangent_height_bound_conditional_on_D103_arithmetic_frame_hypotheses": true,
+  "remaining_hypotheses": [
+    "Intended arithmetic CM field labels",
+    "All evaluation cofactors nonzero",
+    "Chosen Gaussian denominator nonzero"
+  ],
+  "independent_Shimura_tangent_obtained": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/382_cm_intrinsic_height.py",
+      "sha256": "e668ffc4b4a8a5bf3b1eddce6065b07e7427333457d1887e10ad1a07c3f0ee86"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_audit.json",
+      "sha256": "03968cdf38f3b8ab5a0acfcf6bdd2a672908b8b7d17260dfcb501168dbcce281"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_adjugate_height_d103.json",
+      "sha256": "468bd2ac0e620e8ee1d2e25189f102987c27de3a813971ef188bc40dd757995b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/marked-descent.md",
+      "sha256": "131944c1260cfe7a15026534c024f5ab900c549d8ea3ffd6a73521a98ad96463"
+    }
+  ]
+}

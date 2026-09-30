@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/456_cm_cartier_principal_parts.py", line 141, in <module>
+    result=build();out=DATA/'cm_cartier_principal_parts_d119.json';assert not out.exists()
+  File "/Users/musty/two/dembele/pari/456_cm_cartier_principal_parts.py", line 74, in build
+    geometry=graph_data();raw=read('dyadic_precision200_d115')
+  File "/Users/musty/two/dembele/pari/456_cm_cartier_principal_parts.py", line 65, in graph_data
+    assert len(live)==50 and len(ordinary)==65
+AssertionError

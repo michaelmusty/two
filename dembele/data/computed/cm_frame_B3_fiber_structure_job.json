@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/160_cm_frame_B3_fiber_structure.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 5.818914709030651,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_structure.out",
+    "sha256": "d9c8cae41d6bf7475b6b1e6fca175e5567b12e3411e561fc835ea539715007d9"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/160_cm_frame_B3_fiber_structure.py",
+      "sha256": "07f4d5c8b3231d93de03485b7dd970f812e872c93e264432295ac7ecdb4c17a2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d77-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_isomorphism_run.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 5.088810625020415,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_isomorphism.out",
+    "sha256": "1e63c6c28e21e741b2a816082392eac8d02ac3fc853559c274927b2dd879ff94"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/201_cm_frame_cubic_precision.py",
+      "sha256": "f0e07e7b36002bbf3547b264b0909007ebf2dc0bf4111f4a772b8c6316dad608"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/256_cm_frame_cubic_adjoint_isomorphism.m",
+      "sha256": "91f9d5f249d80c3193acbac7522fb6c4574d546fffaf2d3f5304eb6e2858531a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_isomorphism_run.m",
+      "sha256": "7100cb76603e98b64f7cad5bf22a730a6f9c9302f4fa180a17c6517fbcb838ff"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/257_cm_frame_cubic_adjoint_isomorphism.py",
+      "sha256": "d7cee7ab23265ff9ede534e5b23e7064089e3c5771bee3e478005748f6ba2779"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+      "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_1_check.json",
+      "sha256": "8d7319a2460f7e42ac0c1d89e85a56ce275d03e18d7216bab0e6ef6e39a5ca3b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_isomorphism.json",
+      "sha256": "fa347a9119b1e671ade80554366d280078a9e776986ec44f94a9004fc5dd2720"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "status": "pass: finite calculation and scalar-kernel prototype",
+  "finite_pairing": {
+    "discriminant_group_order": 4,
+    "discriminant_representatives": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "1/2",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "1/2",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "1/2",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "1/2",
+        "1/2",
+        "0",
+        "1/2",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "1/2",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2"
+      ]
+    ],
+    "quadratic_values_mod_1": [
+      "0",
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "Fourier_numerator_matrix": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "Fourier_denominator": 2,
+    "normalized_Gauss_sum": -1,
+    "pilot_vectors_in_CM_direct_sum": 30,
+    "pilot_vectors_outside_CM_direct_sum": 0,
+    "dropping_CM_glue_changes_enumerated_shell": false
+  },
+  "Mellin_kernel": {
+    "definition": "J_d,k(z) = integral_(c) (2s-1) Gamma(s)^d Gamma(s+1)^(d-1) Gamma(s+k) z^-s ds/(2*pi*i)",
+    "working_decimal_digits": 50,
+    "imaginary_cutoff": 40,
+    "rational_Bessel_calibration": [
+      {
+        "k": 2,
+        "z": "0.2",
+        "relative_error": "3.0736794e-48",
+        "value": "-0.584691695397544549427966065428"
+      },
+      {
+        "k": 3,
+        "z": "5",
+        "relative_error": "1.4217772e-47",
+        "value": "0.626008365879653702029603072647"
+      },
+      {
+        "k": 8,
+        "z": "30",
+        "relative_error": "8.0145617e-44",
+        "value": "778.941498122264381239423399555"
+      }
+    ],
+    "octic_shift_values": [
+      {
+        "k": 3,
+        "z": "1",
+        "value": "0.559178361782228823471195437407",
+        "contour_change_relative_error": "0.0"
+      },
+      {
+        "k": 4,
+        "z": "1",
+        "value": "2.16473151139653380232798377671",
+        "contour_change_relative_error": "0.0"
+      },
+      {
+        "k": 5,
+        "z": "1",
+        "value": "10.5097517108447454240269544665",
+        "contour_change_relative_error": "0.0"
+      },
+      {
+        "k": 6,
+        "z": "1",
+        "value": "61.3991777025978677769473951944",
+        "contour_change_relative_error": "0.0"
+      },
+      {
+        "k": 7,
+        "z": "1",
+        "value": "419.447845543417523514661727181",
+        "contour_change_relative_error": "3.2625165e-51"
+      },
+      {
+        "k": 8,
+        "z": "1",
+        "value": "3281.11313343502822014738287643",
+        "contour_change_relative_error": "0.0"
+      }
+    ],
+    "naive_eight_split_factors_rejected": true,
+    "interval_error_bound_proved": false,
+    "global_unfolding_normalization_proved": false
+  },
+  "sources": [
+    {
+      "path": "dembele/pari/323_nelson_finite_and_mellin.py",
+      "sha256": "bfa73d7c44c6ac3e71818d429d7f280dc8e452c32b81d6fe8b2cce3e79d73fa6"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_lattice_d90.json",
+      "sha256": "24f8e464cb5cf6bff4a71828959bb9e3e328ae2a233bae836302aac97682a0af"
+    }
+  ],
+  "Shimura_tangent_computed": false,
+  "global_Hilbert_theta_lift_evaluated": false
+}

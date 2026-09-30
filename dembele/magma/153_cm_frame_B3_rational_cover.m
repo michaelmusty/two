@@ -1,0 +1,85 @@
+// D76: exact rational even-divisor certificate using the split six-space.
+SetQuitOnError(true); SetColumns(0); SetSeed(76);
+started:=Cputime();
+load "dembele/data/computed/cm_frame_B3_veronese.m";
+load "dembele/data/computed/cm_frame_B3_transfer.m";
+load "dembele/data/computed/cm_frame_B3_numerator.m";
+load "dembele/data/computed/cm_frame_B3_moving_128.m";
+function Quadric(row,mon)
+    return &+[row[j]*mon[j]:j in [1..#mon]];
+end function;
+k:=GF(31);
+load "dembele/data/computed/cm_frame_curve_candidate.m";
+load "dembele/data/computed/cm_frame_marks.m";
+IC:=Ideal(C_candidate); GC:=GroebnerBasis(IC);
+mon:=[R.(p[1])*R.(p[2]):p in pairs];
+pt:=Eltseq(P32_candidate);
+IP:=ideal<R|[R.i-pt[i]/pt[1]*R.1:i in [2..16]]>;
+IB2:=D17_ideal meet IP;
+IB3twice:=Saturation(IC+ideal<R|[a*b:a,b in B3_linear_forms]>);
+IA:=IB2 meet IB3twice;
+n:=Quadric(B3_new_numerator,mon);
+IT:=Saturation(ColonIdeal(IC+ideal<R|n>,IA));
+assert Degree(Scheme(P,IT)) eq 24 and IsReduced(Scheme(P,IT));
+assert Dimension(IT+IA) eq 0;
+assert Saturation(IC+ideal<R|n>) eq (IA meet IT);
+chosen_r:=0;
+for j in [1..#B3_numerator_candidates] do
+    r:=Quadric(B3_numerator_candidates[j],mon);
+    if Dimension(IT+ideal<R|r>) eq 0 then chosen_r:=j; break; end if;
+end for;
+assert chosen_r gt 0;
+ds:=[Quadric(row,mon):row in veronese_section_rows];
+f,d,e,a,b,c:=Explode(ds);
+assert Saturation(IC+ideal<R|f,a>) eq IT;
+IE:=Saturation(ColonIdeal(IC+ideal<R|f,d>,IT));
+assert Degree(Scheme(P,IE)) eq 18 and IsReduced(Scheme(P,IE));
+assert Dimension(IE+IT) eq 0 and Dimension(IE+IA) eq 0;
+egs:=[g:g in Basis(IE)|TotalDegree(g) eq 2];
+assert Saturation(IC+ideal<R|egs>) eq IE;
+IE2:=Saturation(IC+ideal<R|[u*v:u,v in egs]>);
+assert Degree(Scheme(P,IE2)) eq 36;
+assert Saturation(IC+ideal<R|f>) eq (IT meet IE2);
+printf "RATIONAL_COVER_E_QUADRICS|%o\n",[[Integers()!MonomialCoefficient(g,m):m in mon]:g in egs];
+printf "SECOND_NUMERATOR_INDEX|%o\n",chosen_r;
+print "PASS|RATIONAL_COVER_DIVISOR_GEOMETRY_MOD31";
+
+// Membership in H0(2K-T) over Q, with witnesses integral at 31.
+// r is a unit on the entire reduced T, by the preceding finite-field test.
+k:=Rationals();
+load "dembele/data/computed/cm_frame_curve_candidate.m";
+IC:=Ideal(C_candidate); GC:=GroebnerBasis(IC);
+mon:=[R.(p[1])*R.(p[2]):p in pairs];
+ds:=[Quadric(row,mon):row in veronese_section_rows];
+f,d,e,a,b,c:=Explode(ds);
+relations:=[f*a-d^2,f*b-d*e,f*c-e^2,d*b-e*a,d*c-e*b,a*c-b^2];
+assert &and[NormalForm(rel,IC) eq 0:rel in relations];
+assert Rank(Matrix(k,rows cat veronese_section_rows)) eq 97;
+n:=Quadric(B3_new_numerator,mon);
+r:=Quadric(B3_numerator_candidates[chosen_r],mon);
+products:=[NormalForm(n*mon[j],IC):j in moving_chart];
+targets:=[NormalForm(r*q,IC):q in ds];
+quartics:=Setseq(Seqset(&cat[Monomials(q):q in products cat targets])); Sort(~quartics);
+assert #quartics eq 105;
+M:=Matrix(k,[[MonomialCoefficient(q,m):m in quartics]:q in products]);
+assert Rank(M) eq 45;
+echelon:=EchelonForm(M);
+pivots:=[Min([j:j in [1..105]|echelon[i,j] ne 0]):i in [1..45]];
+small:=Submatrix(M,[1..45],pivots);
+witnesses:=[];
+for target in targets do
+    vals:=Vector(k,[MonomialCoefficient(target,m):m in quartics]);
+    sol:=Solution(small,Vector(k,[vals[j]:j in pivots]));
+    assert sol*M eq vals;
+    assert &and[Denominator(x) mod 31 ne 0:x in Eltseq(sol)];
+    full:=[k!0:j in [1..136]];
+    for j in [1..45] do full[moving_chart[j]]:=sol[j]; end for;
+    Append(~witnesses,full);
+end for;
+printf "SECOND_NUMERATOR|%o\n",B3_numerator_candidates[chosen_r];
+printf "RATIONAL_T_MEMBERSHIP_WITNESSES|%o\n",[[Sprint(x):x in row]:row in witnesses];
+print "RATIONAL_ODD_BRANCH_DEGREE|18";
+print "RATIONAL_DOUBLE_COVER_GENUS|40";
+printf "CPU_SECONDS|%o\n",Cputime(started);
+print "PASS|153_CM_FRAME_B3_RATIONAL_COVER";
+quit;

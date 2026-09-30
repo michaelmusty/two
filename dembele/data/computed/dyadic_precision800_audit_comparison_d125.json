@@ -1,0 +1,159 @@
+{
+  "status": "pass",
+  "milestone": "D125",
+  "working_precision_pi": 800,
+  "production_arithmetic_not_imported": true,
+  "certificates": {
+    "all_bank_assembled_coarse_values_checked": 1088,
+    "frame_relation_certified_error_beta": 1301,
+    "change_column_error_bounds_beta": [
+      1337,
+      1336,
+      1337,
+      1336,
+      1336,
+      1340,
+      1336,
+      1339,
+      1337,
+      1337,
+      1338,
+      1336,
+      1339,
+      1336,
+      1336,
+      1336
+    ],
+    "inherited_inverse_norm_preserved_by_overlap_beta": 799,
+    "all_actual_jet_values_checked": 1088,
+    "independent_quadric_coefficients_checked": 6188,
+    "positive_coefficients_checked": 4641,
+    "certified_mismatch_count": 0,
+    "degree16_section_lower_beta": [
+      4994,
+      4945,
+      4928
+    ],
+    "anchor_section_lower_beta": [
+      4776,
+      4448,
+      4184
+    ],
+    "sufficient_nonanchor_beta": [
+      25255,
+      25369,
+      25476
+    ],
+    "W_Gaussian": {
+      "valuation_beta": 1024,
+      "error_beta": 2025
+    },
+    "W_Gaussian_inverted": false,
+    "positive_exact_vanishing_proved": false,
+    "method": "integer quotient absolute-error balls, frame residual bounds, gradients and polar forms"
+  },
+  "wall_seconds": 19.351706499932334,
+  "peak_rss_bytes": 49496064,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_height_budget_d118.json",
+      "sha256": "23246bb6effb1f20fcee619d0413424f099bf7f0e8ff61ea0c9eb8f1c5b5f8a6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_frame_beta21168_d122.json",
+      "sha256": "b41cbb135838e3d0fc43614f19a8bc455a4e354964bb8b3a02ce9fea6edcaa54"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col01_d125.json",
+      "sha256": "d4184fc1228b8ae9fd69170a83946982f2075b3f16dac885940930d43ec29205"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col02_d125.json",
+      "sha256": "f8d6589872283cf992fdce337627c8782e20d70a30c84efa10581f393fc69998"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col03_d125.json",
+      "sha256": "ebe25ff81428b617621a23b303d58ce2fc92a20d469059f214daf4f0da68e810"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col04_d125.json",
+      "sha256": "1bd3991fd2ee0d0a12e9a12cd2143b46c7d81e6196ec7a7d5c4c4fb638b921cc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col05_d125.json",
+      "sha256": "21ca4987e6b39a9d7d0b42e2973b16b14e9b55c9874af8461120a6dba9d0f21a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col06_d125.json",
+      "sha256": "1a4a3b658977c37a29df63144aa6c9d53596900927eebcf46663ce47c9bf4a33"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col07_d125.json",
+      "sha256": "da320acf55655d9f73150360bec0d3cee2e4048c05d6fb70ffedbf4f7dc88bf6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col08_d125.json",
+      "sha256": "76d83b7f20258a3d2ff94469f6592a2413caf713d5861b8058244c09d8ca69b1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col09_d125.json",
+      "sha256": "2f3d596856835dae7b945a9babab90f5562b932aa12b327570e755b02f5bfd28"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col10_d125.json",
+      "sha256": "a4fe95c062d5a727ddc5dd5a88c7593a1a42b2bb8688fc759bf5a571b27282d9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col11_d125.json",
+      "sha256": "f5a6f385e333ddfa459c8d24c03846444061af03ceff54dc0eb18e414e88b2f5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col12_d125.json",
+      "sha256": "713a8920103fd88006d61550ff690172660d3186a903ce0fd6a9c81ce7ec0ca7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col13_d125.json",
+      "sha256": "bff965cf18271e555a581747bf5255688537fbf0c86fe14a0428e57a443be352"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col14_d125.json",
+      "sha256": "f731e25d610a01043cb971d98a5fc75b902a26634be4a21893e8d3cd87b08d63"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_direct_CM_P800_col15_d125.json",
+      "sha256": "4be8243294ee7179ac69cef2347ca5ab5f89ed3b7baa8e5be2254053b9acde0c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_integral_quadrics800_d125.json",
+      "sha256": "1903d7b40e57b304e8403dc66c69fff109e62767da16d60b7e47ef250e747380"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision400_d122.json",
+      "sha256": "bb5d1ca8df99c41e1bae5d686aac0d7d72121b4c09f64a782fc0650be2eabbe3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_d125.json",
+      "sha256": "b467a331a9777083b8ec6d20d781efae809addf145f06339855d2b2e3fc3ffd4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision_design_d120.json",
+      "sha256": "73ef4ac68166c782b0b8be54a5d959d70e5bad35f04a795fcdd32c37fd940ec1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_residue_frame800_d125.json",
+      "sha256": "75e439b0492f45fd62df9d64cf8de1a7b5eeb4961356a2d6439ba9089f6a039f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_CM_P800_col00_d123.json",
+      "sha256": "3efc3e43daff33f381aa82005924af41a303d1a2a1c1c21e4ce27b56bc43836c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/512_dyadic_precision800_comparison_audit.py",
+      "sha256": "8ef354c9134757925d419246442c5273944913d51944ab622cba95b1b451caeb"
+    }
+  ]
+}

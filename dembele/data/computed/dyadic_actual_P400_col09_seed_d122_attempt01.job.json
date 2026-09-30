@@ -1,0 +1,36 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/478_dyadic_compiled_lift.py",
+    "--phase",
+    "seed",
+    "--column",
+    "9",
+    "--output",
+    "dyadic_actual_P400_col09_seed_d122"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 60.52373999985866,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_actual_P400_col09_seed_d122_attempt01.log",
+    "sha256": "b820e6d7705e602b0dbaa300c0f409adbb074e5916369b8f416626df9e85998a"
+  },
+  "private_process_group": 16979,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/478_dyadic_compiled_lift.py",
+    "sha256": "cbf79125f89cbfd9c636a7ff975557970e1c573607b710fca7c74c14852803a1"
+  }
+}

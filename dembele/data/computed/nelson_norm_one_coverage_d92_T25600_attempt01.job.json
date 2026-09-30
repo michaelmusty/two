@@ -1,0 +1,36 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/340_nelson_norm_one_coverage.py",
+    "--bound",
+    "25600"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 81.43335149995983,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_norm_one_coverage_d92_T25600_attempt01.log",
+    "sha256": "4b57091e4140c2936116591ff8168f15c8aba2930fc611057becf19898c9a2a4"
+  },
+  "private_process_group": 41412,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/340_nelson_norm_one_coverage.py",
+      "sha256": "c56220f8c3a5d6d6c81ad1ef5035292d9c6ac0ab6f5aeb063cd9c9012aa60ab6"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d92-sage"
+  }
+}

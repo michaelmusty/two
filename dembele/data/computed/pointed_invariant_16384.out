@@ -1,0 +1,167 @@
+{
+  "status": "numerical pointed invariant; recognition is tentative",
+  "formula": "J=A3^2/A2^3=1/(144*G2)",
+  "current": {
+    "source": {
+      "path": "dembele/data/computed/acb_refinement_16384.acb",
+      "sha256": "b59c5123d90bf50fb6a4b7f9025ec9541633a60075e247c610735699b6c3ef55",
+      "radius": 0.99991,
+      "precision": "native checkpoint at 50 working decimal digits"
+    },
+    "gauge": {
+      "source_jets_used": 32,
+      "orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "weight_one_witness": [
+        [
+          16,
+          14,
+          -1
+        ],
+        [
+          16,
+          13,
+          1
+        ]
+      ],
+      "rational_scale_factor": 12,
+      "scale": [
+        "-0.806332487247697812912719633003",
+        "-0.651268821073940159906500551429"
+      ],
+      "short_formal_consistency_error": "6.394839956e-80",
+      "highest_line_formal_error": "1.086664891e-81",
+      "basis_change_condition": 849.4579260076551,
+      "field_claim": "conditional on the exact differential space, F-rational point, flag and nonzero scale"
+    },
+    "G2": [
+      "-1.55572886120495951291041372126687322255195323336219184966026",
+      "-1.19574651094879277806007273399e-21"
+    ],
+    "J": [
+      "-0.00446378840016232658179889552046732158293255504210361051510042",
+      "3.43090594910844096525242360619e-24"
+    ]
+  },
+  "comparison": {
+    "source": {
+      "path": "dembele/data/computed/acb_refinement_12288.acb",
+      "sha256": "3874c1b1538ae18d7e2ea140c178e4189046122fa1aa3af0a8ea71862483ae4a",
+      "radius": 0.99991,
+      "precision": "native checkpoint at 50 working decimal digits"
+    },
+    "gauge": {
+      "source_jets_used": 32,
+      "orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "weight_one_witness": [
+        [
+          16,
+          14,
+          -1
+        ],
+        [
+          16,
+          13,
+          1
+        ]
+      ],
+      "rational_scale_factor": 12,
+      "scale": [
+        "-0.806332487247698199899922472749",
+        "-0.651268821073940747411503872428"
+      ],
+      "short_formal_consistency_error": "4.495713238e-80",
+      "highest_line_formal_error": "2.635549486e-82",
+      "basis_change_condition": 849.4579260076508,
+      "field_claim": "conditional on the exact differential space, F-rational point, flag and nonzero scale"
+    },
+    "G2": [
+      "-1.55572886120495694182956470409562055011300489112914760285535",
+      "8.84723755528454811206624926224e-16"
+    ],
+    "J": [
+      "-0.00446378840016233395889470952578836881373317483959264902855144",
+      "-2.53850123614547362682147068516e-18"
+    ]
+  },
+  "independent_absolute_difference": "7.80163755846531779541290895505e-18",
+  "empirical_absolute_tolerance": "0.00000000000000000001",
+  "guaranteed_input_digits": null,
+  "field_basis": "cosine integral basis as in script 87",
+  "recognition": [
+    {
+      "field_degree": 1,
+      "height": 1000,
+      "candidate": null
+    },
+    {
+      "field_degree": 2,
+      "height": 100,
+      "candidate": null
+    },
+    {
+      "field_degree": 4,
+      "height": 8,
+      "candidate": null
+    },
+    {
+      "field_degree": 8,
+      "height": 4,
+      "candidate": null
+    },
+    {
+      "field_degree": 8,
+      "height": 8,
+      "candidate": null
+    },
+    {
+      "field_degree": 8,
+      "height": 16,
+      "candidate": null
+    },
+    {
+      "field_degree": 8,
+      "height": 32,
+      "candidate": null
+    },
+    {
+      "field_degree": 8,
+      "height": 64,
+      "candidate": null
+    }
+  ],
+  "wall_seconds": 1.4943480000365525
+}

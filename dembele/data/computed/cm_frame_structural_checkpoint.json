@@ -1,0 +1,243 @@
+{
+  "status": "pass",
+  "milestone": "D84",
+  "date": "2026-09-22",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_audit_64.json",
+      "sha256": "d7cd4cd7a57cad26feecb55ea3ed9fb76a595a74d819c55f6eb83235d576eed0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_package_64.json",
+      "sha256": "28c1f49e92f8ef7a495856f93addfda55d467148bc2f479e41d0f07aae7a80e5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_third_ambiguity_0.json",
+      "sha256": "06a959944048c601890d83d4172e8bbfb9274d0b4551ded1b34e02f98b28843f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_third_ambiguity_0_2.json",
+      "sha256": "ac4cf5e2b83d08704a4a4e4df1291b45234cbc757b69f428f33b757642e5cfb0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_recognition_calibration_check.json",
+      "sha256": "d2011198d83ee930f347639f9fe0248cb98d8f16af4fda4867b830e21f51303b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_rational_three_torsion_1_job.json",
+      "sha256": "fbf5fa86426d54abb2ac6ff7903b8fe376c033f2888650065e46412923f211c5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/local_s3_cover.out",
+      "sha256": "df9d1089ae9d7920d206ce8aa1d58fb15da2ab3b1fd1c73c51b17cbbd56952b6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/genus64_cosets.gp",
+      "sha256": "e6c510e62d5ba4d6dfe64baebdfc77615fb5c9d870fc5b71f6f9300d9088fef0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/66_local_s3_cover.gp",
+      "sha256": "66374384429f0254211391f5967f254da25f884a52dd05536f676d6c72d83481"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/281_cm_frame_structural_checkpoint.py",
+      "sha256": "e6c326dc6aa02fa29d51a7f95eb74af8a798d71077c9513da4e1abec66b053cc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_0.json",
+      "sha256": "beeb4cab4b1d6ea414b7913e9b2241c61c52d7d370615e490d09fb32dd08e439"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_1.json",
+      "sha256": "8135ff92475b835c58b2435f7d486e40dd8af93477df96fea0f54604f8e40501"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_2.json",
+      "sha256": "c6c6aeae1aab73ee47555af977fdce767a0e974ece50635ca939a320b194262b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_3.json",
+      "sha256": "db47d879faa51e1149932547fe5a3fd9e77492ed57c99c7281294b080d6b0974"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_4.json",
+      "sha256": "222d9abf96773f9b5c207eb8207c3da7666c24e97562077f6e49c6ea9eec4a4f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_5.json",
+      "sha256": "a92880bf7447901af06ca79e91e96a4c70168ee28b176c4bffc27c4900ea950b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_6.json",
+      "sha256": "b9c796a39d95197e2c72ef39e5bff8a6830f9f368bb07fce4ac6ac47379d5edf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_7.json",
+      "sha256": "59e969f2f86e6ad71a3f369356b976111d34819e6b5f73e76c4a1c69fda93ae3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_8.json",
+      "sha256": "3c9e8fc1660f776187af75a644171c31d46c42703bdb219c1ba91ce62580ac00"
+    }
+  ],
+  "distinct_files_verified": 1666,
+  "linked_json_records_verified": 593,
+  "frozen_D78_sha256": "a81750ea1fe8abfbbf27ac338154ef863ecea72dc95ada066656f8d981429931",
+  "compatible_three_torsion_rank_lower_bound": 2,
+  "compatible_thirds_tested": 9,
+  "cover_comparisons": [
+    {
+      "case": 0,
+      "label": [
+        0,
+        0
+      ],
+      "counts": [
+        68,
+        2818
+      ],
+      "matches": true
+    },
+    {
+      "case": 1,
+      "label": [
+        1,
+        0
+      ],
+      "counts": [
+        59,
+        1495
+      ],
+      "matches": false
+    },
+    {
+      "case": 2,
+      "label": [
+        2,
+        0
+      ],
+      "counts": [
+        50,
+        1540
+      ],
+      "matches": false
+    },
+    {
+      "case": 3,
+      "label": [
+        0,
+        1
+      ],
+      "counts": [
+        59,
+        1543
+      ],
+      "matches": false
+    },
+    {
+      "case": 4,
+      "label": [
+        1,
+        1
+      ],
+      "counts": [
+        44,
+        1504
+      ],
+      "matches": false
+    },
+    {
+      "case": 5,
+      "label": [
+        2,
+        1
+      ],
+      "counts": [
+        38,
+        1474
+      ],
+      "matches": false
+    },
+    {
+      "case": 6,
+      "label": [
+        0,
+        2
+      ],
+      "counts": [
+        59,
+        1525
+      ],
+      "matches": false
+    },
+    {
+      "case": 7,
+      "label": [
+        1,
+        2
+      ],
+      "counts": [
+        38,
+        1456
+      ],
+      "matches": false
+    },
+    {
+      "case": 8,
+      "label": [
+        2,
+        2
+      ],
+      "counts": [
+        53,
+        1567
+      ],
+      "matches": false
+    }
+  ],
+  "unique_matching_case_in_tested_subgroup": 0,
+  "torsion_subgroup_complete": false,
+  "direct_Fuchsian_monodromy_comparison_completed": false,
+  "recognition_calibration": [
+    {
+      "digits": 64,
+      "training_digits": 48,
+      "validation_digits": 16,
+      "example_height_recovered": 10000000,
+      "example_height_failed": 100000000,
+      "independent_seeds": 3,
+      "root_mod31": 4
+    },
+    {
+      "digits": 64,
+      "training_digits": 60,
+      "validation_digits": 4,
+      "example_height_recovered": 1000000000,
+      "example_height_failed": 10000000000,
+      "independent_seeds": 3,
+      "root_mod31": 4
+    },
+    {
+      "digits": 128,
+      "training_digits": 112,
+      "validation_digits": 16,
+      "example_height_recovered": 1000000000000000000,
+      "example_height_failed": 10000000000000000000,
+      "independent_seeds": 3,
+      "root_mod31": 4
+    }
+  ],
+  "synthetic_calibration_cases": 67,
+  "exact_synthetic_recoveries": 34,
+  "empirical_thresholds_are_uniform_guarantees": false,
+  "target_height_bound_claimed": false,
+  "actual_curve_precision_digits": 64,
+  "arithmetic_identification_certified": false,
+  "characteristic_zero_cubic_constructed": false,
+  "target_field_constructed": false,
+  "recommendation": "One bounded 128-digit reconstruction experiment; retain the separate identification obligations.",
+  "unsuccessful_diagnostic": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_rational_three_torsion_1_job.json",
+    "reason": "Random support did not reach degree 120; no class accepted."
+  }
+}

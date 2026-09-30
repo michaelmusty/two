@@ -1,0 +1,1387 @@
+{
+  "milestone": "D128",
+  "date": "2026-09-28",
+  "report": "dembele/certificates/dyadic-selective-scaling-d128.md",
+  "final_review_driver": "dembele/pari/527_dyadic_selective_scaling_review.py",
+  "prior_review": "dembele/data/computed/dyadic_rolling_review_d127.json",
+  "inherited_D127_source_hashes_to_preserve": 9599,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Production polynomial multiplication in 476--479. Attribution and installed header/library hashes are preserved from the interim ledger. No additional web source is invoked for the new mathematical review."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited carry-free polynomial arithmetic supplies the older backend for all production final original residuals. Source 486 imports no production arithmetic."
+    }
+  ],
+  "new_external_theorem_invoked": false,
+  "inherited_mathematical_inputs": [
+    "The D125 fixed-mass original-residual certificate is independent of seed and iteration history.",
+    "Original contracting transports, weighted error lattice, integral low inverse, direct CM and truncation estimates retain their prior proofs and hashes.",
+    "All D125 finite quadric enclosures and exact-zero prerequisites remain unchanged.",
+    "An existing factor modulo 2^m solves the original low system modulo 2^(2m) with two lower-precision solves and exact division of the higher-precision residual by 2^m; every final original sparse equation is checked."
+  ],
+  "bounded_input_jobs": {
+    "passed": 13,
+    "failed": 0,
+    "maximum_workers": 3,
+    "BLAS_threads": 1,
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "sum_wall_seconds": 450.4137099997606,
+    "maximum_wall_seconds": 64.20968391699716
+  },
+  "serial_controls": {
+    "dyadic_selective_serial_assembly_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "working_precision_pi": 1600,
+      "harmonic_basis_column": 0,
+      "certificates": {
+        "phase": "assembly",
+        "streamed_outputs": {
+          "seed_assembly": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_seed_assembled_d124_state.bin",
+              "sha256": "1c024cf5e36df425850107405b2ae96b99d8c1ef47d73f5f8979d9e3025872d2"
+            },
+            "serialized_sha256": "1c024cf5e36df425850107405b2ae96b99d8c1ef47d73f5f8979d9e3025872d2",
+            "states": 174,
+            "bytes_compared_directly": 28831800,
+            "maximum_serialized_row_bytes": 165700
+          },
+          "seed_low_assembly": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_seed_low_d124_state.bin",
+              "sha256": "757e3ff2c62403d2669499d6a68891873b62b497c439dba04951632faec02880"
+            },
+            "serialized_sha256": "757e3ff2c62403d2669499d6a68891873b62b497c439dba04951632faec02880",
+            "states": 174,
+            "bytes_compared_directly": 28831800,
+            "maximum_serialized_row_bytes": 165700
+          },
+          "seed_residual": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_seed_d124_residual.bin",
+              "sha256": "c9f55c3c32a86d73cbb7bb7e1ab5463f84308125e180ca6dc212a9048d0ee616"
+            },
+            "serialized_sha256": "c9f55c3c32a86d73cbb7bb7e1ab5463f84308125e180ca6dc212a9048d0ee616",
+            "states": 174,
+            "bytes_compared_directly": 14476800,
+            "maximum_serialized_row_bytes": 83200
+          },
+          "step01_residual": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_d124_residual.bin",
+              "sha256": "329400d7079beb88e4615ef06f97222b623637ab95a2a5a2a36837a1a373c710"
+            },
+            "serialized_sha256": "329400d7079beb88e4615ef06f97222b623637ab95a2a5a2a36837a1a373c710",
+            "states": 174,
+            "bytes_compared_directly": 12811968,
+            "maximum_serialized_row_bytes": 73632
+          },
+          "step12_residual": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step12_d124_residual.bin",
+              "sha256": "439738ff0d3e7e3e22ca6f93d2a0789d789305419cd04337d7f95cdbe79ca3cf"
+            },
+            "serialized_sha256": "439738ff0d3e7e3e22ca6f93d2a0789d789305419cd04337d7f95cdbe79ca3cf",
+            "states": 174,
+            "bytes_compared_directly": 3936576,
+            "maximum_serialized_row_bytes": 22624
+          },
+          "step24_residual": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step24_d124_residual.bin",
+              "sha256": "2d882e4b78b51a71e4201d967f273a3a18e3d12efeee32c5eacd69e43a11fe8b"
+            },
+            "serialized_sha256": "2d882e4b78b51a71e4201d967f273a3a18e3d12efeee32c5eacd69e43a11fe8b",
+            "states": 174,
+            "bytes_compared_directly": 45936,
+            "maximum_serialized_row_bytes": 264
+          },
+          "uniform_reconstruction": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_reconstructed_d124_state.bin",
+              "sha256": "83f41da461c039c02c59f0e9f2b22e2d92706c760d763fcd5011de86fb8b8a30"
+            },
+            "serialized_sha256": "83f41da461c039c02c59f0e9f2b22e2d92706c760d763fcd5011de86fb8b8a30",
+            "states": 174,
+            "bytes_compared_directly": 55680000,
+            "maximum_serialized_row_bytes": 320000
+          },
+          "original_residual": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_verified_d124_residual.bin",
+              "sha256": "1c64516383c44d8345dbe76bf5852b28778f7816a712fa8f4e3f90fa9fe2a887"
+            },
+            "serialized_sha256": "1c64516383c44d8345dbe76bf5852b28778f7816a712fa8f4e3f90fa9fe2a887",
+            "states": 174,
+            "bytes_compared_directly": 55680000,
+            "maximum_serialized_row_bytes": 320000
+          }
+        },
+        "scalar_checks": {
+          "seed_old_low_scalars": 1113600,
+          "weighted_projection_scalars": 2227200,
+          "old_extended_scalars": 2227200,
+          "original_residual_scalars": 2227200,
+          "exact_masses": 174
+        },
+        "maximum_long_state_rows_retained": 8,
+        "complete_long_bank_decoded": false,
+        "long_bank_memory_bound_independent_of_state_count": true,
+        "fixed_low_bank_shape": [
+          174,
+          32,
+          1,
+          8
+        ],
+        "full_original_maps_not_recomputed": true,
+        "new_binary_written": false,
+        "incremental_serialization_and_byte_comparison_only": true
+      },
+      "actual_harmonic_precision_increased": false,
+      "wall_seconds": 22.52530812495388,
+      "peak_rss_bytes": 365510656
+    },
+    "dyadic_selective_serial_prepare_step01_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "working_precision_pi": 1600,
+      "harmonic_basis_column": 0,
+      "certificates": {
+        "phase": "prepare",
+        "step": 1,
+        "before_pi": 800,
+        "input_count": 800,
+        "working_modulus_bits": 100,
+        "streamed_outputs": {
+          "state": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124_state.bin",
+              "sha256": "808fe967961baf7f65083bf9d2be1980cbd06e5b708b0b9a362951078a605f03"
+            },
+            "serialized_sha256": "808fe967961baf7f65083bf9d2be1980cbd06e5b708b0b9a362951078a605f03",
+            "states": 174,
+            "bytes_compared_directly": 28831800,
+            "maximum_serialized_row_bytes": 165700
+          },
+          "correction": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step01_prepared_d124_correction.bin",
+              "sha256": "2aefc174e43d9aaf4661007beedd53f0a4b7f3b9426f3f33a4ce39348e1fec0e"
+            },
+            "serialized_sha256": "2aefc174e43d9aaf4661007beedd53f0a4b7f3b9426f3f33a4ce39348e1fec0e",
+            "states": 174,
+            "bytes_compared_directly": 14476800,
+            "maximum_serialized_row_bytes": 83200
+          }
+        },
+        "weighted_state_scalars_compared": 2227200,
+        "correction_scalars_compared": 1113600,
+        "original_low_sparse_scalar_checks": 44544,
+        "complete_long_bank_decoded": false,
+        "maximum_prepared_maps_held": 1,
+        "maximum_decoded_factor_blocks_held": 1,
+        "maximum_long_state_rows_retained": 8,
+        "fixed_low_bank_shape": [
+          174,
+          32,
+          1,
+          8
+        ],
+        "low_rhs_solve_and_residual_seconds": 45.46609687502496,
+        "new_binary_written": false,
+        "incremental_serialization_and_byte_comparison_only": true
+      },
+      "actual_harmonic_precision_increased": false,
+      "wall_seconds": 48.34779200004414,
+      "peak_rss_bytes": 246841344
+    },
+    "dyadic_selective_serial_prepare_step12_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "working_precision_pi": 1600,
+      "harmonic_basis_column": 0,
+      "certificates": {
+        "phase": "prepare",
+        "step": 12,
+        "before_pi": 1163,
+        "input_count": 437,
+        "working_modulus_bits": 55,
+        "streamed_outputs": {
+          "state": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step12_prepared_d124_state.bin",
+              "sha256": "5f8c06ff77a6bd232422d8f0fff6e2f992ded084d3c3c933be6b60227a7adba5"
+            },
+            "serialized_sha256": "5f8c06ff77a6bd232422d8f0fff6e2f992ded084d3c3c933be6b60227a7adba5",
+            "states": 174,
+            "bytes_compared_directly": 28831800,
+            "maximum_serialized_row_bytes": 165700
+          },
+          "correction": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step12_prepared_d124_correction.bin",
+              "sha256": "45da59f3a28b26e3961eca135f82664ce0b3ad0e1c286deee8be45aa14614d43"
+            },
+            "serialized_sha256": "45da59f3a28b26e3961eca135f82664ce0b3ad0e1c286deee8be45aa14614d43",
+            "states": 174,
+            "bytes_compared_directly": 4258128,
+            "maximum_serialized_row_bytes": 24472
+          }
+        },
+        "weighted_state_scalars_compared": 2227200,
+        "correction_scalars_compared": 608304,
+        "original_low_sparse_scalar_checks": 44544,
+        "complete_long_bank_decoded": false,
+        "maximum_prepared_maps_held": 1,
+        "maximum_decoded_factor_blocks_held": 1,
+        "maximum_long_state_rows_retained": 8,
+        "fixed_low_bank_shape": [
+          174,
+          32,
+          1,
+          8
+        ],
+        "low_rhs_solve_and_residual_seconds": 29.434027374954894,
+        "new_binary_written": false,
+        "incremental_serialization_and_byte_comparison_only": true
+      },
+      "actual_harmonic_precision_increased": false,
+      "wall_seconds": 31.680773874977604,
+      "peak_rss_bytes": 184729600
+    },
+    "dyadic_selective_serial_prepare_step24_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "working_precision_pi": 1600,
+      "harmonic_basis_column": 0,
+      "certificates": {
+        "phase": "prepare",
+        "step": 24,
+        "before_pi": 1559,
+        "input_count": 41,
+        "working_modulus_bits": 6,
+        "streamed_outputs": {
+          "state": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step24_prepared_d124_state.bin",
+              "sha256": "450485835b72c33e0f972826fc1abbf2bd87f4b928f6eb7adaece2f8f97833ea"
+            },
+            "serialized_sha256": "450485835b72c33e0f972826fc1abbf2bd87f4b928f6eb7adaece2f8f97833ea",
+            "states": 174,
+            "bytes_compared_directly": 28831800,
+            "maximum_serialized_row_bytes": 165700
+          },
+          "correction": {
+            "reference": {
+              "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P1600_col00_step24_prepared_d124_correction.bin",
+              "sha256": "84a0022c46358b7a933a94ee53c03b9f360fa6df9413c010aae2df886291e548"
+            },
+            "serialized_sha256": "84a0022c46358b7a933a94ee53c03b9f360fa6df9413c010aae2df886291e548",
+            "states": 174,
+            "bytes_compared_directly": 57072,
+            "maximum_serialized_row_bytes": 328
+          }
+        },
+        "weighted_state_scalars_compared": 2227200,
+        "correction_scalars_compared": 57072,
+        "original_low_sparse_scalar_checks": 44544,
+        "complete_long_bank_decoded": false,
+        "maximum_prepared_maps_held": 1,
+        "maximum_decoded_factor_blocks_held": 1,
+        "maximum_long_state_rows_retained": 8,
+        "fixed_low_bank_shape": [
+          174,
+          32,
+          1,
+          8
+        ],
+        "low_rhs_solve_and_residual_seconds": 10.29541924991645,
+        "new_binary_written": false,
+        "incremental_serialization_and_byte_comparison_only": true
+      },
+      "actual_harmonic_precision_increased": false,
+      "wall_seconds": 11.847891666926444,
+      "peak_rss_bytes": 148029440
+    }
+  },
+  "transport_controls": {
+    "dyadic_P3200_transport_extend_e000_005_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "extend",
+        "working_precision_pi": 3200,
+        "first_state": 0,
+        "last_state": 5,
+        "input_moment_count": 1600,
+        "output_moment_count": 3200,
+        "input_kind": "actual_P1600_canonical_lift_with_exact_masses",
+        "known_positive_low_inputs_zeroed": false,
+        "complete_backend_scalar_comparisons": 153600,
+        "old_P1600_actual_scalar_overlaps": 76800,
+        "answers_sha256": "39534025793f50553ed977007c5aad43f6452329c8eaeee2914de4503e8873f9",
+        "state_timings": [
+          {
+            "state": 0,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2230342091061175,
+            "apply_seconds": 2.0572734167799354,
+            "total_seconds": 2.287332208128646
+          },
+          {
+            "state": 0,
+            "backend": "GMP",
+            "prepare_seconds": 0.4954422910232097,
+            "apply_seconds": 2.758012667298317,
+            "total_seconds": 3.2602698339615017
+          },
+          {
+            "state": 1,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.21812420920468867,
+            "apply_seconds": 2.0203293319791555,
+            "total_seconds": 2.245210458058864
+          },
+          {
+            "state": 1,
+            "backend": "GMP",
+            "prepare_seconds": 0.46681699994951487,
+            "apply_seconds": 2.681602458935231,
+            "total_seconds": 3.155343916034326
+          },
+          {
+            "state": 2,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.21161220781505108,
+            "apply_seconds": 1.9299452921841294,
+            "total_seconds": 2.148599124979228
+          },
+          {
+            "state": 2,
+            "backend": "GMP",
+            "prepare_seconds": 0.4415237079374492,
+            "apply_seconds": 2.573613499989733,
+            "total_seconds": 3.021999957971275
+          },
+          {
+            "state": 3,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.1998787911143154,
+            "apply_seconds": 1.9547316669486463,
+            "total_seconds": 2.161485082935542
+          },
+          {
+            "state": 3,
+            "backend": "GMP",
+            "prepare_seconds": 0.38182254205457866,
+            "apply_seconds": 2.6188512488733977,
+            "total_seconds": 3.0076981249731034
+          },
+          {
+            "state": 4,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.24719525105319917,
+            "apply_seconds": 2.157821332802996,
+            "total_seconds": 2.411777792032808
+          },
+          {
+            "state": 4,
+            "backend": "GMP",
+            "prepare_seconds": 0.6259620420169085,
+            "apply_seconds": 2.806500001111999,
+            "total_seconds": 3.4396326660644263
+          },
+          {
+            "state": 5,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.21127641620114446,
+            "apply_seconds": 2.0083164169918746,
+            "total_seconds": 2.226435041986406
+          },
+          {
+            "state": 5,
+            "backend": "GMP",
+            "prepare_seconds": 0.4447326250374317,
+            "apply_seconds": 2.6799042092170566,
+            "total_seconds": 3.131739083910361
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 32.70203729113564,
+      "peak_rss_bytes": 394133504
+    },
+    "dyadic_P3200_transport_extend_e083_088_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "extend",
+        "working_precision_pi": 3200,
+        "first_state": 83,
+        "last_state": 88,
+        "input_moment_count": 1600,
+        "output_moment_count": 3200,
+        "input_kind": "actual_P1600_canonical_lift_with_exact_masses",
+        "known_positive_low_inputs_zeroed": false,
+        "complete_backend_scalar_comparisons": 153600,
+        "old_P1600_actual_scalar_overlaps": 76800,
+        "answers_sha256": "34e5c62322b02788f4f9fad839beff85ed4cb6e4375528abc90d661eaf52f222",
+        "state_timings": [
+          {
+            "state": 83,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.1628314999397844,
+            "apply_seconds": 1.253589374711737,
+            "total_seconds": 1.4236689580138773
+          },
+          {
+            "state": 83,
+            "backend": "GMP",
+            "prepare_seconds": 0.22911191801540554,
+            "apply_seconds": 1.9093305841088295,
+            "total_seconds": 2.1451961249113083
+          },
+          {
+            "state": 84,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16517620906233788,
+            "apply_seconds": 1.3824779577553272,
+            "total_seconds": 1.5544928750023246
+          },
+          {
+            "state": 84,
+            "backend": "GMP",
+            "prepare_seconds": 0.22372554219327867,
+            "apply_seconds": 2.0563534589018673,
+            "total_seconds": 2.2869888751301914
+          },
+          {
+            "state": 85,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16848141723312438,
+            "apply_seconds": 1.2797265828121454,
+            "total_seconds": 1.455328666837886
+          },
+          {
+            "state": 85,
+            "backend": "GMP",
+            "prepare_seconds": 0.23119783285073936,
+            "apply_seconds": 1.8916198338847607,
+            "total_seconds": 2.129742291988805
+          },
+          {
+            "state": 86,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.20489837508648634,
+            "apply_seconds": 1.5428247500676662,
+            "total_seconds": 1.7547117080539465
+          },
+          {
+            "state": 86,
+            "backend": "GMP",
+            "prepare_seconds": 0.39555816585198045,
+            "apply_seconds": 2.077875040937215,
+            "total_seconds": 2.480315500171855
+          },
+          {
+            "state": 87,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.1716342919971794,
+            "apply_seconds": 1.3535882509313524,
+            "total_seconds": 1.531822333810851
+          },
+          {
+            "state": 87,
+            "backend": "GMP",
+            "prepare_seconds": 0.24059766717255116,
+            "apply_seconds": 1.9590199578087777,
+            "total_seconds": 2.2064146248158067
+          },
+          {
+            "state": 88,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16597833414562047,
+            "apply_seconds": 1.286931165959686,
+            "total_seconds": 1.459870666032657
+          },
+          {
+            "state": 88,
+            "backend": "GMP",
+            "prepare_seconds": 0.2304462909232825,
+            "apply_seconds": 1.8916024160571396,
+            "total_seconds": 2.129003542009741
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 22.748408416984603,
+      "peak_rss_bytes": 309264384
+    },
+    "dyadic_P3200_transport_extend_e168_173_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "extend",
+        "working_precision_pi": 3200,
+        "first_state": 168,
+        "last_state": 173,
+        "input_moment_count": 1600,
+        "output_moment_count": 3200,
+        "input_kind": "actual_P1600_canonical_lift_with_exact_masses",
+        "known_positive_low_inputs_zeroed": false,
+        "complete_backend_scalar_comparisons": 153600,
+        "old_P1600_actual_scalar_overlaps": 76800,
+        "answers_sha256": "7f21b25081618ec3f12c1bc2616ac3ed564b703dee4442d50cec89e4b542490a",
+        "state_timings": [
+          {
+            "state": 168,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16187579184770584,
+            "apply_seconds": 1.3762976666912436,
+            "total_seconds": 1.5458087078295648
+          },
+          {
+            "state": 168,
+            "backend": "GMP",
+            "prepare_seconds": 0.2247166249435395,
+            "apply_seconds": 2.080505957826972,
+            "total_seconds": 2.3121940831188112
+          },
+          {
+            "state": 169,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2507897079922259,
+            "apply_seconds": 2.119176167063415,
+            "total_seconds": 2.3770403328817338
+          },
+          {
+            "state": 169,
+            "backend": "GMP",
+            "prepare_seconds": 0.6256614590529352,
+            "apply_seconds": 2.858881666790694,
+            "total_seconds": 3.491676124976948
+          },
+          {
+            "state": 170,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.23081550002098083,
+            "apply_seconds": 2.1573340012691915,
+            "total_seconds": 2.3953883331269026
+          },
+          {
+            "state": 170,
+            "backend": "GMP",
+            "prepare_seconds": 0.5193679579533637,
+            "apply_seconds": 2.8114292081445456,
+            "total_seconds": 3.337657874915749
+          },
+          {
+            "state": 171,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.17254554107785225,
+            "apply_seconds": 1.3522426660638303,
+            "total_seconds": 1.5318670831620693
+          },
+          {
+            "state": 171,
+            "backend": "GMP",
+            "prepare_seconds": 0.24158054194413126,
+            "apply_seconds": 1.990778791019693,
+            "total_seconds": 2.2393971658311784
+          },
+          {
+            "state": 172,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2516982911620289,
+            "apply_seconds": 2.207385583780706,
+            "total_seconds": 2.466118625132367
+          },
+          {
+            "state": 172,
+            "backend": "GMP",
+            "prepare_seconds": 0.621848959242925,
+            "apply_seconds": 2.828911084216088,
+            "total_seconds": 3.4578975420445204
+          },
+          {
+            "state": 173,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.23308779089711607,
+            "apply_seconds": 2.1322078758385032,
+            "total_seconds": 2.3726811250671744
+          },
+          {
+            "state": 173,
+            "backend": "GMP",
+            "prepare_seconds": 0.5571217508986592,
+            "apply_seconds": 2.792725207982585,
+            "total_seconds": 3.3570460001938045
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 31.082252207910642,
+      "peak_rss_bytes": 370130944
+    },
+    "dyadic_P3200_transport_full_e000_005_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "full",
+        "working_precision_pi": 3200,
+        "first_state": 0,
+        "last_state": 5,
+        "input_moment_count": 3200,
+        "output_moment_count": 3200,
+        "input_kind": "deterministic_dense_synthetic",
+        "known_positive_low_inputs_zeroed": false,
+        "complete_backend_scalar_comparisons": 153600,
+        "old_P1600_actual_scalar_overlaps": 0,
+        "answers_sha256": "9b0e172a0986a45c22050de33c8124a1f16607d5ceca49bf7ad44ee30401c981",
+        "state_timings": [
+          {
+            "state": 0,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.3182650830131024,
+            "apply_seconds": 4.2584980831015855,
+            "total_seconds": 4.6259610410779715
+          },
+          {
+            "state": 0,
+            "backend": "GMP",
+            "prepare_seconds": 0.679916333174333,
+            "apply_seconds": 5.599884832976386,
+            "total_seconds": 6.3301187918987125
+          },
+          {
+            "state": 1,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.30577516718767583,
+            "apply_seconds": 4.107246458064765,
+            "total_seconds": 4.46168224979192
+          },
+          {
+            "state": 1,
+            "backend": "GMP",
+            "prepare_seconds": 0.6435767919756472,
+            "apply_seconds": 5.413438875228167,
+            "total_seconds": 6.105346207972616
+          },
+          {
+            "state": 2,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.3068095841445029,
+            "apply_seconds": 4.052198166958988,
+            "total_seconds": 4.407466500066221
+          },
+          {
+            "state": 2,
+            "backend": "GMP",
+            "prepare_seconds": 0.6230027501005679,
+            "apply_seconds": 5.216663458151743,
+            "total_seconds": 5.888457458931953
+          },
+          {
+            "state": 3,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2853264161385596,
+            "apply_seconds": 3.9738699172157794,
+            "total_seconds": 4.307574416976422
+          },
+          {
+            "state": 3,
+            "backend": "GMP",
+            "prepare_seconds": 0.5281732089351863,
+            "apply_seconds": 5.22498704213649,
+            "total_seconds": 5.801350582856685
+          },
+          {
+            "state": 4,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.34811437502503395,
+            "apply_seconds": 4.433502417057753,
+            "total_seconds": 4.830224875127897
+          },
+          {
+            "state": 4,
+            "backend": "GMP",
+            "prepare_seconds": 0.871453583939001,
+            "apply_seconds": 5.801992541877553,
+            "total_seconds": 6.723352750064805
+          },
+          {
+            "state": 5,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.30309899896383286,
+            "apply_seconds": 4.121053458889946,
+            "total_seconds": 4.472303458023816
+          },
+          {
+            "state": 5,
+            "backend": "GMP",
+            "prepare_seconds": 0.6096457911189646,
+            "apply_seconds": 5.435543542262167,
+            "total_seconds": 6.093485875055194
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 64.09411870897748,
+      "peak_rss_bytes": 420642816
+    },
+    "dyadic_P3200_transport_full_e083_088_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "full",
+        "working_precision_pi": 3200,
+        "first_state": 83,
+        "last_state": 88,
+        "input_moment_count": 3200,
+        "output_moment_count": 3200,
+        "input_kind": "deterministic_dense_synthetic",
+        "known_positive_low_inputs_zeroed": false,
+        "complete_backend_scalar_comparisons": 153600,
+        "old_P1600_actual_scalar_overlaps": 0,
+        "answers_sha256": "4b9d719969dcc7eb88bde39da942b93b5eb90ff9b21fa9e2d3a7008d350b7de4",
+        "state_timings": [
+          {
+            "state": 83,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2491351249627769,
+            "apply_seconds": 2.623542875982821,
+            "total_seconds": 2.9216642919927835
+          },
+          {
+            "state": 83,
+            "backend": "GMP",
+            "prepare_seconds": 0.36143766692839563,
+            "apply_seconds": 3.8652593749575317,
+            "total_seconds": 4.275167209096253
+          },
+          {
+            "state": 84,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2500859168358147,
+            "apply_seconds": 2.898652167059481,
+            "total_seconds": 3.198134792037308
+          },
+          {
+            "state": 84,
+            "backend": "GMP",
+            "prepare_seconds": 0.3451470418367535,
+            "apply_seconds": 4.241926874965429,
+            "total_seconds": 4.634829875081778
+          },
+          {
+            "state": 85,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.25091537507250905,
+            "apply_seconds": 2.704263708088547,
+            "total_seconds": 3.0029581249691546
+          },
+          {
+            "state": 85,
+            "backend": "GMP",
+            "prepare_seconds": 0.3604129170998931,
+            "apply_seconds": 3.8495719169732183,
+            "total_seconds": 4.258061041822657
+          },
+          {
+            "state": 86,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2902411250397563,
+            "apply_seconds": 3.532601834041998,
+            "total_seconds": 3.871250333962962
+          },
+          {
+            "state": 86,
+            "backend": "GMP",
+            "prepare_seconds": 0.550697750877589,
+            "apply_seconds": 4.226150458212942,
+            "total_seconds": 4.825363541021943
+          },
+          {
+            "state": 87,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.25519574992358685,
+            "apply_seconds": 2.8228619159199297,
+            "total_seconds": 3.1262723330873996
+          },
+          {
+            "state": 87,
+            "backend": "GMP",
+            "prepare_seconds": 0.3660043759737164,
+            "apply_seconds": 3.9132919579278678,
+            "total_seconds": 4.326492249965668
+          },
+          {
+            "state": 88,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.24791112402454019,
+            "apply_seconds": 2.627158749848604,
+            "total_seconds": 2.9229521660599858
+          },
+          {
+            "state": 88,
+            "backend": "GMP",
+            "prepare_seconds": 0.3530821248423308,
+            "apply_seconds": 3.7839632090181112,
+            "total_seconds": 4.184173042187467
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 45.60002970811911,
+      "peak_rss_bytes": 300761088
+    },
+    "dyadic_P3200_transport_full_e168_173_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "full",
+        "working_precision_pi": 3200,
+        "first_state": 168,
+        "last_state": 173,
+        "input_moment_count": 3200,
+        "output_moment_count": 3200,
+        "input_kind": "deterministic_dense_synthetic",
+        "known_positive_low_inputs_zeroed": false,
+        "complete_backend_scalar_comparisons": 153600,
+        "old_P1600_actual_scalar_overlaps": 0,
+        "answers_sha256": "c5060f8993c7d69adf0e042d4a03f7be4ff9a202af71d51c5c52ca82b52a72b7",
+        "state_timings": [
+          {
+            "state": 168,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.24815287487581372,
+            "apply_seconds": 2.87567041721195,
+            "total_seconds": 3.1727758748456836
+          },
+          {
+            "state": 168,
+            "backend": "GMP",
+            "prepare_seconds": 0.352991167223081,
+            "apply_seconds": 4.261319332988933,
+            "total_seconds": 4.664497625082731
+          },
+          {
+            "state": 169,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.35738570895045996,
+            "apply_seconds": 4.495695166988298,
+            "total_seconds": 4.902444583131
+          },
+          {
+            "state": 169,
+            "backend": "GMP",
+            "prepare_seconds": 0.8709673329722136,
+            "apply_seconds": 5.912884165998548,
+            "total_seconds": 6.832566292025149
+          },
+          {
+            "state": 170,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.32310045789927244,
+            "apply_seconds": 4.350234958808869,
+            "total_seconds": 4.721861124970019
+          },
+          {
+            "state": 170,
+            "backend": "GMP",
+            "prepare_seconds": 0.7132219162303954,
+            "apply_seconds": 5.678976209135726,
+            "total_seconds": 6.440445499960333
+          },
+          {
+            "state": 171,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2542816661298275,
+            "apply_seconds": 2.8000383749604225,
+            "total_seconds": 3.1028777498286217
+          },
+          {
+            "state": 171,
+            "backend": "GMP",
+            "prepare_seconds": 0.36822550115175545,
+            "apply_seconds": 3.9527135002426803,
+            "total_seconds": 4.369382458971813
+          },
+          {
+            "state": 172,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.33997437404468656,
+            "apply_seconds": 4.492940750904381,
+            "total_seconds": 4.882010292029008
+          },
+          {
+            "state": 172,
+            "backend": "GMP",
+            "prepare_seconds": 0.8006666251458228,
+            "apply_seconds": 5.788832999998704,
+            "total_seconds": 6.638693999964744
+          },
+          {
+            "state": 173,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.33559004100970924,
+            "apply_seconds": 4.392431166721508,
+            "total_seconds": 4.775534624932334
+          },
+          {
+            "state": 173,
+            "backend": "GMP",
+            "prepare_seconds": 0.7889933751430362,
+            "apply_seconds": 5.66023520892486,
+            "total_seconds": 6.497771375114098
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 61.04825391690247,
+      "peak_rss_bytes": 391888896
+    },
+    "dyadic_P3200_transport_rhs_e000_005_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "rhs",
+        "working_precision_pi": 3200,
+        "first_state": 0,
+        "last_state": 5,
+        "input_moment_count": 3200,
+        "output_moment_count": 33,
+        "input_kind": "deterministic_dense_synthetic",
+        "known_positive_low_inputs_zeroed": true,
+        "complete_backend_scalar_comparisons": 1584,
+        "old_P1600_actual_scalar_overlaps": 0,
+        "answers_sha256": "44d17dad0200d7d9874a555d79414547a469bcfc5198fca7a683c8654805302b",
+        "state_timings": [
+          {
+            "state": 0,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.20033200015313923,
+            "apply_seconds": 1.6551343330647796,
+            "total_seconds": 1.9049451670143753
+          },
+          {
+            "state": 0,
+            "backend": "GMP",
+            "prepare_seconds": 0.43940849998034537,
+            "apply_seconds": 2.4807343748398125,
+            "total_seconds": 2.9696361660026014
+          },
+          {
+            "state": 1,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.19563562492839992,
+            "apply_seconds": 1.646496499888599,
+            "total_seconds": 1.8914097920060158
+          },
+          {
+            "state": 1,
+            "backend": "GMP",
+            "prepare_seconds": 0.42615595762617886,
+            "apply_seconds": 2.4910857079084963,
+            "total_seconds": 2.9664314589463174
+          },
+          {
+            "state": 2,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.19568183296360075,
+            "apply_seconds": 1.6489837486296892,
+            "total_seconds": 1.8940959160681814
+          },
+          {
+            "state": 2,
+            "backend": "GMP",
+            "prepare_seconds": 0.41287945793010294,
+            "apply_seconds": 2.50192983308807,
+            "total_seconds": 2.964086625026539
+          },
+          {
+            "state": 3,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.1806419170461595,
+            "apply_seconds": 1.5936062082182616,
+            "total_seconds": 1.8250981660094112
+          },
+          {
+            "state": 3,
+            "backend": "GMP",
+            "prepare_seconds": 0.3362200411502272,
+            "apply_seconds": 2.391775708878413,
+            "total_seconds": 2.7780617920216173
+          },
+          {
+            "state": 4,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.21780324983410537,
+            "apply_seconds": 1.6519237500615418,
+            "total_seconds": 1.9202571660280228
+          },
+          {
+            "state": 4,
+            "backend": "GMP",
+            "prepare_seconds": 0.5425309168640524,
+            "apply_seconds": 2.537825832841918,
+            "total_seconds": 3.128998124971986
+          },
+          {
+            "state": 5,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.27064374973997474,
+            "apply_seconds": 1.728788958862424,
+            "total_seconds": 2.062930125044659
+          },
+          {
+            "state": 5,
+            "backend": "GMP",
+            "prepare_seconds": 0.4031182490289211,
+            "apply_seconds": 2.4256457090377808,
+            "total_seconds": 2.8779961250256747
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 29.203561124857515,
+      "peak_rss_bytes": 59817984
+    },
+    "dyadic_P3200_transport_rhs_e083_088_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "rhs",
+        "working_precision_pi": 3200,
+        "first_state": 83,
+        "last_state": 88,
+        "input_moment_count": 3200,
+        "output_moment_count": 33,
+        "input_kind": "deterministic_dense_synthetic",
+        "known_positive_low_inputs_zeroed": true,
+        "complete_backend_scalar_comparisons": 1584,
+        "old_P1600_actual_scalar_overlaps": 0,
+        "answers_sha256": "59b9efaa265d5462dae2c5273d84c149ea9288687984bebb6639d93c95f823e7",
+        "state_timings": [
+          {
+            "state": 83,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16453774995170534,
+            "apply_seconds": 1.1078071249648929,
+            "total_seconds": 1.3223144160583615
+          },
+          {
+            "state": 83,
+            "backend": "GMP",
+            "prepare_seconds": 0.2564236249309033,
+            "apply_seconds": 1.6397580418270081,
+            "total_seconds": 1.9456884998362511
+          },
+          {
+            "state": 84,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16179266734980047,
+            "apply_seconds": 1.1560933759901673,
+            "total_seconds": 1.3672425409313291
+          },
+          {
+            "state": 84,
+            "backend": "GMP",
+            "prepare_seconds": 0.24070308404043317,
+            "apply_seconds": 1.7235988341271877,
+            "total_seconds": 2.013530750060454
+          },
+          {
+            "state": 85,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16279695904813707,
+            "apply_seconds": 1.1440281667746603,
+            "total_seconds": 1.3566879578866065
+          },
+          {
+            "state": 85,
+            "backend": "GMP",
+            "prepare_seconds": 0.25631733308546245,
+            "apply_seconds": 1.6670102500356734,
+            "total_seconds": 1.9728507502004504
+          },
+          {
+            "state": 86,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.18076662509702146,
+            "apply_seconds": 1.2838914168532938,
+            "total_seconds": 1.5161772081628442
+          },
+          {
+            "state": 86,
+            "backend": "GMP",
+            "prepare_seconds": 0.3473594996612519,
+            "apply_seconds": 1.9058195420075208,
+            "total_seconds": 2.302406709175557
+          },
+          {
+            "state": 87,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16958020790480077,
+            "apply_seconds": 1.1611545830965042,
+            "total_seconds": 1.381770082982257
+          },
+          {
+            "state": 87,
+            "backend": "GMP",
+            "prepare_seconds": 0.2662177502643317,
+            "apply_seconds": 1.733703332953155,
+            "total_seconds": 2.049154333071783
+          },
+          {
+            "state": 88,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16387345804832876,
+            "apply_seconds": 1.1127262501977384,
+            "total_seconds": 1.326458957977593
+          },
+          {
+            "state": 88,
+            "backend": "GMP",
+            "prepare_seconds": 0.2554256671573967,
+            "apply_seconds": 1.6406865827739239,
+            "total_seconds": 1.9455485839862376
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 20.519036332843825,
+      "peak_rss_bytes": 52428800
+    },
+    "dyadic_P3200_transport_rhs_e168_173_d128": {
+      "status": "pass",
+      "milestone": "D128",
+      "certificates": {
+        "phase": "rhs",
+        "working_precision_pi": 3200,
+        "first_state": 168,
+        "last_state": 173,
+        "input_moment_count": 3200,
+        "output_moment_count": 33,
+        "input_kind": "deterministic_dense_synthetic",
+        "known_positive_low_inputs_zeroed": true,
+        "complete_backend_scalar_comparisons": 1584,
+        "old_P1600_actual_scalar_overlaps": 0,
+        "answers_sha256": "bda7a21f029ec104fab7accc82d43775001c5e36e8b89caba06cd836c609348b",
+        "state_timings": [
+          {
+            "state": 168,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.15795862511731684,
+            "apply_seconds": 1.1300880832131952,
+            "total_seconds": 1.337000833125785
+          },
+          {
+            "state": 168,
+            "backend": "GMP",
+            "prepare_seconds": 0.23783400002866983,
+            "apply_seconds": 1.6934637499507517,
+            "total_seconds": 1.978827124927193
+          },
+          {
+            "state": 169,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.2118392081465572,
+            "apply_seconds": 1.6043178751133382,
+            "total_seconds": 1.8639420419931412
+          },
+          {
+            "state": 169,
+            "backend": "GMP",
+            "prepare_seconds": 0.5336545419413596,
+            "apply_seconds": 2.4605679160449654,
+            "total_seconds": 3.0424252909142524
+          },
+          {
+            "state": 170,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.19110350077971816,
+            "apply_seconds": 1.6124330421444029,
+            "total_seconds": 1.8520692079328
+          },
+          {
+            "state": 170,
+            "backend": "GMP",
+            "prepare_seconds": 0.4367123751435429,
+            "apply_seconds": 2.4432196668349206,
+            "total_seconds": 2.928367333021015
+          },
+          {
+            "state": 171,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.16490841703489423,
+            "apply_seconds": 1.1246846669819206,
+            "total_seconds": 1.339920167112723
+          },
+          {
+            "state": 171,
+            "backend": "GMP",
+            "prepare_seconds": 0.26342433388344944,
+            "apply_seconds": 1.666503209155053,
+            "total_seconds": 1.9771980419754982
+          },
+          {
+            "state": 172,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.20271483366377652,
+            "apply_seconds": 1.6185477499384433,
+            "total_seconds": 1.8698922090698034
+          },
+          {
+            "state": 172,
+            "backend": "GMP",
+            "prepare_seconds": 0.4825976670254022,
+            "apply_seconds": 2.44985150010325,
+            "total_seconds": 2.9799362919293344
+          },
+          {
+            "state": 173,
+            "backend": "ADAPTIVE",
+            "prepare_seconds": 0.20581908291205764,
+            "apply_seconds": 1.6044642087072134,
+            "total_seconds": 1.8586781669873744
+          },
+          {
+            "state": 173,
+            "backend": "GMP",
+            "prepare_seconds": 0.5182905830442905,
+            "apply_seconds": 2.440078916028142,
+            "total_seconds": 3.007227750029415
+          }
+        ],
+        "decoded_input_state_cache_capacity": 1,
+        "maximum_prepared_plans_held": 1,
+        "complete_original_state_coverage": false,
+        "complete_larger_solve_costed": false,
+        "actual_harmonic_precision_increased": false
+      },
+      "wall_seconds": 26.058064417215064,
+      "peak_rss_bytes": 63029248
+    }
+  },
+  "prospective_P3200_inventory": {
+    "conservative_simultaneous_slots": {
+      "old_seed_input": 111360000,
+      "seed_extension_chunks": 222720000,
+      "two_complete_checkpoints": 338047200,
+      "new_prepared_weighted_state": 113343600,
+      "prepared_correction": 55680000,
+      "one_active_operator_sweep": 222720000,
+      "assembled_uniform_state": 222720000,
+      "final_full_residual": 222720000,
+      "scratch_metadata_allowance": 1048576
+    },
+    "conservative_scratch_bytes": 1510359376,
+    "proposed_scratch_limit_bytes": 2147483648,
+    "final_state_payload_bytes": 558829536,
+    "direct_CM_payload_bytes": 43520000,
+    "hard_cap_not_yet_enforced_at_P3200": true
+  },
+  "certificate_boundaries": [
+    "Fourteen outputs are encoded one state at a time and compared directly with retained D124 bytes; no new binary file writer or refinement is executed.",
+    "Assembly consumes prior verified original-map chunks and retains their arithmetic certification; it does not recompute those maps.",
+    "Preparation controls rebuild all sparse low equations and compare complete new weighted states/corrections against known answers.",
+    "The P=3200 extension inputs come from actual P=1600 moments with exact masses; full and low-RHS inputs are synthetic.",
+    "Only eighteen of 174 states are sampled in each mode; no full P=3200 coverage, actual harmonic refinement or complete runtime bound is inferred.",
+    "The new byte inventory is prospective and is not an enforced cap or RAM bound.",
+    "Finite implementation controls preserve rather than replace the prior independent mathematical audit."
+  ],
+  "preserved_global_status": {
+    "full_bank_precision_pi": 800,
+    "actual_columns_at_precision_1600": [
+      0,
+      1
+    ],
+    "section_lower_bounds": [
+      4994,
+      4945,
+      4928
+    ],
+    "anchor_lower_bounds": [
+      4776,
+      4448,
+      4184
+    ],
+    "sufficient_nonanchor_bounds": [
+      25255,
+      25369,
+      25476
+    ],
+    "gaps": [
+      20261,
+      20424,
+      20548
+    ],
+    "quadric_balls_containing_zero": 6188,
+    "W_Gaussian_valuation": 1024,
+    "W_Gaussian_error": 2025,
+    "W_Gaussian_relative_precision": 1001,
+    "W_Gaussian_inverted": false,
+    "positive_exact_quadric_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false
+  },
+  "next_execution": {
+    "first_unused_source": 528,
+    "decision": "Implement one actual column-0 P=1600-to-P=3200 rolling refinement, integrating streamed serial phases, six-state chunks, separately chunked correction RHS, and existing-factor residual lifting. Enforce the new 2 GiB scratch inventory with row writes; retain full original GMP reconstruction/verification, old overlaps, exact masses, chart-chunked CM as needed, independent audit and fixed review.",
+    "larger_full_bank_costed": false,
+    "complete_P10552_solve_costed": false
+  },
+  "freeze": "Passing sources 525--527 and artifacts; report and ledger at first passing review; preserve all prior freezes.",
+  "downstream_gates": [
+    "D99 nonhyperellipticity and D108 spectral rejection",
+    "Original residual kernels and preceding exact-zero prerequisites",
+    "Marked X40/Y64 covers",
+    "Genus-64 section and degree-51 torsion backend",
+    "Global F256 action",
+    "Final invariant and original-kernel/ramification checks"
+  ],
+  "correspondence_sent": false
+}

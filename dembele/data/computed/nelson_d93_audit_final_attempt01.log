@@ -1,0 +1,11 @@
+EXACT_PRIME_CUTOFF_PASS 6400 170
+EXACT_PRIME_CUTOFF_PASS 25600 586
+EXACT_COSETS_PASS 32 586
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/352_nelson_prime31_exact_audit.py", line 191, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/352_nelson_prime31_exact_audit.py", line 180, in main
+    result = compute()
+  File "/Users/musty/two/dembele/pari/352_nelson_prime31_exact_audit.py", line 85, in compute
+    assert prior.prev.overlap((lo, hi), previous)
+AssertionError

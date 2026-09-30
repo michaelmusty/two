@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/438_dyadic_integral_frame.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.532143708085641,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_integral_frame_d116_attempt01.log",
+    "sha256": "6ec393d2cc3e22588f43233561dad462598d652ea5514a9a9ec0d9d0ebe5269b"
+  },
+  "private_process_group": 94205,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/438_dyadic_integral_frame.py",
+    "sha256": "f875643f07eb82b7885a52328db5853cbc015dbea903886fc6664e2def5b5676"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/398_definite_dyadic_certificate.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 6.149749625008553,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/definite_dyadic_certificate_d109_attempt01.log",
+    "sha256": "10b4cd7ce32dc4ffa3e4765f3b6c38552bf79fa8bd6b7bd2ba07f2ef4b41d98b"
+  },
+  "private_process_group": 10623,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/398_definite_dyadic_certificate.py",
+    "sha256": "6029ac28d70e7250643f8d8628f1813f3985a3b3b9817eec7ac6ad962131c471"
+  }
+}

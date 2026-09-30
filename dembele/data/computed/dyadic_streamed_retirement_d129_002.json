@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "barrier": 2,
+  "coordinator": {
+    "path": "/Users/musty/two/dembele/pari/529_dyadic_streamed_pilot.py",
+    "sha256": "0b0ca17d4cba6cbb1055e1cf7eea5a95b0e0b8b771a274a417a31cbbd0acc941"
+  },
+  "anchor_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_streamed_P3200_col00_input_d129_attempt01.job.json",
+    "sha256": "eaf5f1dfb2549ac73fa1ef412634b2a59ef748997ad7128859dbbefe0163cc2e"
+  },
+  "keep": [
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_streamed_scratch_col00_d129/dyadic_streamed_P3200_col00_input_d129_input.bin",
+        "sha256": "eef63ffbcc8c1201feea599e8a2f55be17dbdb02ea3b423b4f3283fd6e45dee9"
+      },
+      "bytes": 111360000
+    }
+  ],
+  "retire": [],
+  "before_scratch_bytes": 111360493,
+  "final_retirement": false,
+  "retired_payload_hashes_are_history_not_retained_sources": true
+}

@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "milestone": "D74",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/130_cm_frame_precision_doubling.py",
+      "sha256": "fc748fa7849e599a94cb75a9f74a2e4320a6ee22fd00c3bc41f3f4a4ac07409f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/124_cm_frame_resolvent_lift.py",
+      "sha256": "e610b697b81e56aad6b3fc42a4ed5986084024d67703cdb0bc91acc0ac522be4"
+    }
+  ],
+  "stages": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_doubling_16.json",
+      "sha256": "738058504709bd4f5476e1703744bbd2a9cafe2160ad7f7a9ad1629032639c83"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_doubling_32.json",
+      "sha256": "4ae9f11d977b956a645201d8ed3d8b310fb627e5dd099ef5edb536f377bbdbe9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_doubling_64.json",
+      "sha256": "6d79ef426a1c8ebfb9a7778dc31a3759e3eea9ddb68e30bc09749cf0b420a2dc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_doubling_128.json",
+      "sha256": "c56e937dea39bf59c4732af4c3a36caba95c8e161ccfd823f74d910363332626"
+    }
+  ],
+  "control_4_to_8_exact_agreement": true,
+  "control_sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_lift_4.json",
+      "sha256": "c65295010e56e7cc35dda84ddf4544fca912d6e0063b702306be33df11441bd3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_lift_8.json",
+      "sha256": "1ee25a6ceb5a959d8a2df404c8b55f4b376d26b7c0edecc45ed9a310d244c816"
+    }
+  ],
+  "control_wall_seconds": 5.592696125037037,
+  "final_precision_digits": 128,
+  "wall_seconds": 49.19415941706393
+}

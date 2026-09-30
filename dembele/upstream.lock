@@ -3,6 +3,22 @@
   "magma": {
     "version": "V2.29-8"
   },
+  "lifttors": {
+    "repository": "https://github.com/nmascot/LiftTors",
+    "commit": "fd6403caf7147b21b67dcb17dbedccea762d6262",
+    "default_branch": "master",
+    "license": null,
+    "license_note": "No explicit license file found in the pinned checkout",
+    "build_recipe": "pari/build_lifttors.py",
+    "row_build_recipe": "pari/build_lifttors_rows.py",
+    "row_compiled_adaptation": "D65 separate build: pari/lifttors_rows.py and pari/lifttors_rows.c generate equation blocks and replay every equation; original and D63 lifts retained",
+    "reduction_build_recipe": "pari/build_lifttors_reduction.py",
+    "reduction_compiled_adaptation": "D66 separate build: verified D65 inputs plus PicRed reduction of each auxiliary embedding matrix; original PicRed and all three lifting paths retained",
+    "profile_build_recipe": "pari/build_lifttors_profile.py",
+    "profile_compiled_adaptation": "D67 separate diagnostic build: copies of D66 arithmetic with allocation/timing hooks; original C tokens recovered after removing hooks; no arithmetic or reclamation change",
+    "compiled_adaptation": "pari/lifttors_bounded.c batches validation; pari/lifttors_lift.py and pari/lifttors_streamed.c stream lifting products and batch the kernel; originals retained for comparison",
+    "status": "D67: all three diagnostic controls pass, including genus-16/a=51 under unchanged 2 GB/900 s limits; allocation audit selects two cleanup changes not yet implemented; D63-D66 artifacts preserved; genus-64/a=51 and target arithmetic sections remain open"
+  },
   "hilbertmodularforms": {
     "repository": "https://github.com/edgarcosta/hilbertmodularforms",
     "commit": "f5ce65826697ee1ba7ed6e77a3fda0ef779f633b",

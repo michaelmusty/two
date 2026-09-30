@@ -1,0 +1,4493 @@
+{
+  "status": "pass",
+  "milestone": "D69",
+  "date": "2026-09-18",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/117_cm_frame_verification.py",
+      "sha256": "6ce7c9034cded6fdb7a9d6788af924d054bbd72e84f30975593ebab7f1b1063b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/117_cm_frame_smoothness.m",
+      "sha256": "d8e261ed48931b908352e0a145615c18a58cac5621a1a61a27c97775d378c860"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/118_cm_frame_point_counts.m",
+      "sha256": "a632fad506711b13b31045373ea4c9cf85c35485ea564d4603b459dcc2e558fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_check.json",
+      "sha256": "3b6a033d43d1c7a2d74add5017391ccc4e224630928150512371c732b47989c1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/levelraise_p2k_charpolys.m",
+      "sha256": "0c1adf7af27a39868a25618f2d901b4fdd4b55dbc62c4051c458bf0497529979"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/f16_steinberg.out",
+      "sha256": "020f5d9d415afc8c5ab4d974ad5de9198119e7bc0f3fba89928ddb950d2a75c9"
+    }
+  ],
+  "timeout_seconds_per_job": 180,
+  "memory_limit_bytes_per_job": 2000000000,
+  "jobs": [
+    {
+      "name": "smoothness",
+      "script": {
+        "path": "/Users/musty/two/dembele/magma/117_cm_frame_smoothness.m",
+        "sha256": "d8e261ed48931b908352e0a145615c18a58cac5621a1a61a27c97775d378c860"
+      },
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_smoothness.out",
+        "sha256": "60fa241e24ffb24827d139e81770cc571fbab1c27327612b165eec292eef2df1"
+      },
+      "command": [
+        "/Applications/Magma/magma",
+        "-bn",
+        "-l",
+        "2000000000",
+        "/Users/musty/two/dembele/magma/117_cm_frame_smoothness.m"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "wall_seconds": 4.654661666951142
+    },
+    {
+      "name": "points31_degree1",
+      "script": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_points31_degree1.m",
+        "sha256": "aa6d65ec9e23b96d946572988f04ffc18f2b05ab85a5d0bc37205f8ca9786208"
+      },
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_points31_degree1.out",
+        "sha256": "2ccd66d851949a593683cd512e7a6b9910d271b6e6bde8c8f16500f2bfe0aa72"
+      },
+      "command": [
+        "/Applications/Magma/magma",
+        "-bn",
+        "-l",
+        "2000000000",
+        "/Users/musty/two/dembele/data/computed/cm_frame_points31_degree1.m"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "wall_seconds": 5.140406499966048
+    },
+    {
+      "name": "points31_degree2",
+      "script": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_points31_degree2.m",
+        "sha256": "455ed72a915fb181fdacd4e04dd00a55d492378f5a8a0406a3880855978e4e46"
+      },
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_points31_degree2.out",
+        "sha256": "dbfd3b4399c463e77ca5940dd59fbb8924f5e35277439899c9fe4fca7eab3fcb"
+      },
+      "command": [
+        "/Applications/Magma/magma",
+        "-bn",
+        "-l",
+        "2000000000",
+        "/Users/musty/two/dembele/data/computed/cm_frame_points31_degree2.m"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "wall_seconds": 82.17058283300139
+    }
+  ],
+  "Shimura_identification_certified": false,
+  "target_field_polynomial_obtained": false,
+  "proof": "dembele/certificates/cm-frame-verification.md",
+  "smoothness": {
+    "method": "finite free degree-30 projection and squarefree trace discriminants on both charts",
+    "free_basis_degrees": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3
+    ],
+    "discriminant_modulus": 31,
+    "discriminant_coefficients_ascending": [
+      1,
+      26,
+      2,
+      5,
+      24,
+      27,
+      18,
+      1,
+      30,
+      2,
+      12,
+      7,
+      9,
+      20,
+      30,
+      17,
+      18,
+      22,
+      13,
+      13,
+      6,
+      28,
+      9,
+      9,
+      27,
+      10,
+      10,
+      25,
+      25,
+      10,
+      12,
+      4,
+      2,
+      21,
+      20,
+      5,
+      23,
+      11,
+      13,
+      5,
+      10,
+      20,
+      15,
+      19,
+      20,
+      30,
+      29,
+      24,
+      7,
+      21,
+      30,
+      21,
+      25,
+      11,
+      3,
+      22,
+      17,
+      23,
+      24,
+      10,
+      11,
+      10,
+      28,
+      4,
+      26,
+      14,
+      0,
+      4,
+      29,
+      28,
+      23,
+      19,
+      14,
+      19,
+      1,
+      19,
+      24,
+      20,
+      18,
+      8,
+      25,
+      7,
+      4,
+      28,
+      30,
+      19,
+      0,
+      30,
+      21,
+      19,
+      16
+    ],
+    "discriminant_factor_degrees": [
+      3,
+      9,
+      25,
+      53
+    ],
+    "infinity_trace_determinant": 16,
+    "rational_point_mod31": [
+      0,
+      17,
+      29,
+      28,
+      7,
+      14,
+      2,
+      2,
+      0,
+      8,
+      8,
+      13,
+      0,
+      7,
+      0,
+      1
+    ],
+    "smooth_over_F31": true,
+    "smooth_over_Q": true,
+    "geometrically_integral_over_Q_and_F31": true,
+    "genus": 16,
+    "canonical_embedding": true
+  },
+  "point_counts": [
+    {
+      "extension_degree": 1,
+      "field_cardinality": 31,
+      "curve_point_count": 50,
+      "Hecke_prediction": 50,
+      "base_fiber_orbits": [
+        {
+          "base_value_power_coordinates": [
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            1
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            2
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            3
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            4
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            5
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            6
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            7
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            8
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            9
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            10
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            11
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            12
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            13
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            14
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            15
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            16
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            18
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            19
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            20
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            21
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            22
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            23
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            24
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            25
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            26
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            27
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            28
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            29
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            30
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        }
+      ],
+      "infinity_point_count": 2
+    },
+    {
+      "extension_degree": 2,
+      "field_cardinality": 961,
+      "curve_point_count": 1400,
+      "Hecke_prediction": 1400,
+      "base_fiber_orbits": [
+        {
+          "base_value_power_coordinates": [
+            0,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 6
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 6
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 6
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 6
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 6
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 6
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 6
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            26
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            29
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            16
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            25
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            17
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            13
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            20
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            8
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            5,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            1,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            24
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            15,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            30
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            3,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            30,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            10
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            14,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 4
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            28
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            9,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            1
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            28,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            12,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            11,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            22
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            27,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            29,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            3
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            22,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            20,
+            19
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            2,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            4
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            19,
+            2
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            25,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            9
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            4,
+            11
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            6,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            12
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            26,
+            6
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            13,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            27
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            18,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            5
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            16,
+            18
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            8,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            23,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 1
+        },
+        {
+          "base_value_power_coordinates": [
+            24,
+            15
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 2
+        },
+        {
+          "base_value_power_coordinates": [
+            17,
+            23
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 5
+        },
+        {
+          "base_value_power_coordinates": [
+            7,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 8
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            7
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        },
+        {
+          "base_value_power_coordinates": [
+            10,
+            14
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            21,
+            0
+          ],
+          "frobenius_orbit_size": 1,
+          "point_count": 0
+        },
+        {
+          "base_value_power_coordinates": [
+            0,
+            21
+          ],
+          "frobenius_orbit_size": 2,
+          "point_count": 3
+        }
+      ],
+      "infinity_point_count": 6
+    }
+  ],
+  "point_count_scope": "two counts at the single split prime 31; not a full Euler factor or an identification proof",
+  "Hecke_trace_polynomial_coefficients_ascending": [
+    3979719271,
+    -24729534398,
+    -11693425400,
+    18759157300,
+    73947590,
+    -3055757324,
+    149756902,
+    234446850,
+    -10646075,
+    -10133940,
+    219902,
+    252834,
+    1925,
+    -3350,
+    -115,
+    18,
+    1
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "milestone": "D119",
+  "date": "2026-09-26",
+  "report": "dembele/certificates/cm-cartier-frame-d119.md",
+  "final_review": "dembele/pari/457_cm_cartier_frame_review.py",
+  "prior_review": "dembele/data/computed/cm_finite_height_review_d118.json",
+  "D118_source_hashes_to_preserve": 911,
+  "external_sources": [
+    {
+      "author": "Akira Kurihara",
+      "title": "On some examples of equations defining Shimura curves and the Mumford uniformization",
+      "url": "https://repository.dl.itc.u-tokyo.ac.jp/record/39680/files/jfs250303.pdf",
+      "location": "Proposition 3-2 and Lemma 3-3, pages 286--288",
+      "role": "Integral quotient model and smooth quotient of an inverted node, including residue characteristic 2.",
+      "access": "New network request failed; cached primary scan pages 285, 287 and 288 inspected visually. D99 had inspected the proposition as well."
+    },
+    {
+      "author": "The Stacks Project Authors",
+      "url": "https://stacks.math.columbia.edu/tag/0CDF",
+      "location": "Lemma 55.14.4",
+      "role": "Contracting an exceptional rational tail on a regular nodal model gives a smooth point.",
+      "access": "Primary text inspected."
+    },
+    {
+      "author": "The Stacks Project Authors",
+      "url": "https://stacks.math.columbia.edu/tag/0C9Y",
+      "location": "Lemmas 55.10.1 and 55.10.2",
+      "role": "Unique minimal regular model and contraction from a regular proper model.",
+      "access": "Primary text inspected."
+    },
+    {
+      "author": "The Stacks Project Authors",
+      "url": "https://stacks.math.columbia.edu/tag/0E7B",
+      "location": "Lemma 109.23.4",
+      "role": "Stabilization by contracting rational tails and bridges preserves the structure sheaf and has vanishing higher direct image.",
+      "access": "Primary text inspected."
+    },
+    {
+      "author": "The Stacks Project Authors",
+      "url": "https://stacks.math.columbia.edu/tag/0B9D",
+      "location": "Lemma 44.3.1",
+      "role": "Finite flat divisors on the smooth locus of a relative curve are relative Cartier divisors.",
+      "access": "Primary text inspected."
+    },
+    {
+      "author": "The Stacks Project Authors",
+      "url": "https://stacks.math.columbia.edu/tag/0E6N",
+      "location": "Section 109.19, especially Lemma 109.19.3",
+      "role": "Relative duality, invertibility of the dualizing sheaf and base change for Gorenstein families.",
+      "access": "Primary text inspected."
+    }
+  ],
+  "inherited_inputs": [
+    "D99/D110/D111: actual integral uniformization model, edge stabilizers, Brandt labels and stable paths.",
+    "D102: principal-parts sequence, codifferent target and exact residue-index formula.",
+    "D112: exact signed CM embeddings and coordinates, distinctness of all seventeen points, anchor identification.",
+    "D115/D116: frozen actual leading harmonic coefficients, integral harmonic lattice and stable canonical fibres.",
+    "D117/D118: uniform complex row bound, corrected CM height and tropical Faltings lower bound."
+  ],
+  "new_deductions": [
+    "Construct the minimal regular semistable model and locate the actual CM sections; distinct pairs and the anchor are disjoint.",
+    "Each ordinary pair has equation t^2+4*(2+b)=0 and intersection length 33; the degree-17 divisor is finite flat Cartier.",
+    "The actual horizontal algebra has normalization index 264 and discriminant valuation 528, in v_beta.",
+    "The integral principal-parts restriction map has Smith valuations [0 x 9, 2 x 7], hence cohomology torsion length 14.",
+    "The primitive principal part has value valuations [2, 0 x 16] and norm valuation 2.",
+    "The actual dyadic residue map has index valuation 16 and cokernel (R/(beta^2))^8.",
+    "The normalized dyadic residue-index contribution is log(2), with torsion and principal-part parts 7/8 and 1/8 times log(2).",
+    "Separating the sections changes the model-dependent index to 808; it is not an invariant that can be transferred between models.",
+    "A determinant identity gives an explicit lower bound for the intrinsic pencil line; the inverse residue map and resulting quadric bound still require a complete metric comparison."
+  ],
+  "finite_verification": {
+    "drivers": "456--457",
+    "input_job_attempts": 2,
+    "input_jobs_passed": 1,
+    "input_jobs_failed": 1,
+    "failure": "Initial expected graph-pruning count was 50 instead of 49; original source, log and receipt preserved.",
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "independent_methods": [
+      "Reconstruct the 272 principal-parts restriction entries with independent integer quotient arithmetic.",
+      "Check all 17 maximal-minor valuations and the rectangular Smith factors by common-factor extraction and unit Schur complements.",
+      "Verify the primitive kernel and compose the full residue map using the finite algebra multiplication.",
+      "Compute the residue-map Smith factors directly, rather than inferring the annihilator from its determinant.",
+      "Cross-check marked component locations using the independent D99 stable paths."
+    ]
+  },
+  "next_bounded_task": "Derive the full quadratic-section height budget in the intrinsic residue frame using the proved pencil-line lower bound, actual codifferent, dyadic beta^2 clearing and consistent archimedean norms; compare degree minus measured zeros with D118 before adopting it.",
+  "limitations": {
+    "geometric_model_proofs_machine_verified": false,
+    "actual_dyadic_Cartier_divisor_and_residue_index_proved": true,
+    "non_dyadic_residue_indices_computed": false,
+    "global_scaling_of_pencil_generator_fixed": false,
+    "global_replacement_quadric_height_bound_proved": false,
+    "current_sufficient_quadric_bounds_changed": false,
+    "actual_moment_precision_increased": false,
+    "positive_quadric_jet_exact_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "correspondence_sent": false
+  }
+}

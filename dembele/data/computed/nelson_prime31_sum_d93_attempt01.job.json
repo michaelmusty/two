@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/347_nelson_prime31_sum.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 10.090552540961653,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_sum_d93_attempt01.log",
+    "sha256": "d3bdf3843d6be6d922880fe26dcbd8cf7f8ccf49507466d506659b77e4c3d8ff"
+  },
+  "private_process_group": 78048,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/347_nelson_prime31_sum.py",
+      "sha256": "808c841388a3db48db2b74c31c35ae4d8cbe948f7b62271ffacf97b3b2796505"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d93-sage"
+  }
+}

@@ -1,0 +1,8 @@
+SPARSE_LOW|r=8; states=1/174; seconds=0.003
+SPARSE_LOW|r=8; states=31/174; seconds=0.031
+SPARSE_LOW|r=8; states=61/174; seconds=0.061
+SPARSE_LOW|r=8; states=91/174; seconds=0.094
+SPARSE_LOW|r=8; states=121/174; seconds=0.130
+SPARSE_LOW|r=8; states=151/174; seconds=0.200
+SPARSE_LOW_RESULT|{"status": "pass", "milestone": "D121", "eliminated_positive_moments": 8, "working_precision_pi": 200, "low_block_dimension": 1392, "coefficient_table_seconds": 0.09283241699449718, "factorization": {"factor_seconds": 0.2789323329925537, "block_updates": 2246, "diagonal_inverse_blocks": 174, "lower_blocks": 506, "upper_blocks": 546}, "sixteen_column_rhs_seconds": 0.5094408330041915, "sixteen_column_triangular_solve_seconds": 0.0777847501449287, "actual_harmonic_columns_checked": 16, "actual_low_scalar_coefficients_checked": 178176, "unrelated_rhs_original_residual_checked": true, "unrelated_rhs_scalar_equations_checked": 22272, "factor_payload_bytes": 5021696, "guaranteed_Schur_correction_gain_pi": 9, "wall_seconds": 3.3342854999937117, "actual_moment_precision_increased": false, "full_Schur_iteration_validated_for_this_r": false}
+PASS|467_DYADIC_SPARSE_LOW_BLOCKS

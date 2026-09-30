@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/441_cm_integral_quadrics.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.07774099998641759,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_integral_quadrics_d116_attempt01.log",
+    "sha256": "1182d91bb4fbf146c23ba0e4a76cf8cb35538bfec0e79252e2c2943875a29a9c"
+  },
+  "private_process_group": 26972,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/441_cm_integral_quadrics.py",
+    "sha256": "09dcfdd891b77cfd633eab1f8a14a03aead45d1376cebd617cbe787755388eb7"
+  }
+}

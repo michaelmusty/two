@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/361_nelson_completed_ideal_majorant.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 11.942234708112665,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_completed_ideal_majorant_d96_attempt01.log",
+    "sha256": "10f254a091b070df4e5c555f80e5e405c2bb5cba9b33872ab651a5d676f72ae0"
+  },
+  "private_process_group": 22352,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/361_nelson_completed_ideal_majorant.py",
+      "sha256": "e8a5b96b0e6e88e87abe29c0e30a0961bc671fb9a95f3cb48d0fd21565bc7379"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d96-sage"
+  }
+}

@@ -1,0 +1,12 @@
+SetColumns(0); SetSeed(71); SetQuitOnError(true);
+k:=GF(31);
+load "dembele/data/computed/cm_frame_curve_candidate.m";
+load "dembele/data/computed/cm_frame_marks.m";
+started:=Cputime();
+F:=FunctionField(C_candidate);
+print "SCHEME_FIELD",Cputime(started);
+AF,phi:=AlgorithmicFunctionField(F);
+print "ALGORITHMIC_FIELD",Cputime(started),Degree(AF);
+print "GENUS",Genus(AF),Cputime(started);
+print "POINT_DIVISOR",Divisor(P32_candidate),Cputime(started);
+print "PASS|FUNCTIONFIELD_PROBE";quit;

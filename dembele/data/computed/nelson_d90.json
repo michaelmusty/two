@@ -1,0 +1,124 @@
+{
+  "status": "pass: D90 local evaluator components",
+  "independent_replay": {
+    "dual_Gram_and_finite_Fourier_replayed": true,
+    "CM_lattice_glue_index_replayed": 65536,
+    "second_shell_vectors_replayed": 9910,
+    "mixed_vectors_replayed": 9360,
+    "Fourier_sign_corruption_rejected": true,
+    "missing_derivative_constant_rejected": true,
+    "enumeration_completeness": "PARI qfminim; independent replay validates every saved vector and classification",
+    "numerical_Mellin_values": "hash-bound calibration, no interval certificate"
+  },
+  "jobs": {
+    "count": 6,
+    "successful": 3,
+    "retained_failed": 3,
+    "maximum_wall_seconds": 9.644184584030882
+  },
+  "sources": [
+    {
+      "path": "dembele/data/computed/cm_orbit.json",
+      "sha256": "6c70d443b112c49c0a448e63f88b9b7c2ded7fc8f5392db14356ae3c1bfd4e67"
+    },
+    {
+      "path": "dembele/data/computed/f16_steinberg.out",
+      "sha256": "020f5d9d415afc8c5ab4d974ad5de9198119e7bc0f3fba89928ddb950d2a75c9"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_lattice_d90.json",
+      "sha256": "24f8e464cb5cf6bff4a71828959bb9e3e328ae2a233bae836302aac97682a0af"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_lattice_d90_attempt03.job.json",
+      "sha256": "251cba0f7dd7822a50104be062470dd9a013c4c8a6d209216aece53176176710"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_lattice_d90_attempt03.log",
+      "sha256": "5e20591f5f2b347d76aee84bf2e0f48bcbef0bfbc7bba59b4e7a34260828a911"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_shell_d90.json",
+      "sha256": "ea1b8e6ed549244b8b740c4549e258349fc82be63c970d6ec979e4de942409ca"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_shell_d90_attempt06.job.json",
+      "sha256": "1c12d8fb5704612dda56c2d462b89aa683a3602553bc327af58cf29f0d262d1d"
+    },
+    {
+      "path": "dembele/data/computed/nelson_cm_shell_d90_attempt06.log",
+      "sha256": "963d9deae7884c91cd832f34af1bafd603272ee49cccfd1fc024021276f83f42"
+    },
+    {
+      "path": "dembele/data/computed/nelson_finite_mellin_d90.json",
+      "sha256": "07c7f1f81348b24e265b3c7bdf5d6e0867beb56bea8ca70edbd70fc88c165883"
+    },
+    {
+      "path": "dembele/data/computed/nelson_finite_mellin_d90_attempt04.job.json",
+      "sha256": "3e1f0c92a25515db0eb3fb1843063544aafc8470677363d55830aea96a146f8e"
+    },
+    {
+      "path": "dembele/data/computed/nelson_finite_mellin_d90_attempt04.log",
+      "sha256": "ab837352d966e6cb95782e4a8372f0d1d18c7dbe3f6484838da514a9181e3ca6"
+    },
+    {
+      "path": "dembele/data/computed/nelson_finite_mellin_d90_attempt05.job.json",
+      "sha256": "e524fad8a8acb551f5c920a74c35e9dce7c4887b8e3ffc6858b1f65b9397561a"
+    },
+    {
+      "path": "dembele/data/computed/nelson_finite_mellin_d90_attempt05.log",
+      "sha256": "a84fdee09f131c0c11a821e922e26336db32960a41c695e32e6e1fe919f94049"
+    },
+    {
+      "path": "dembele/data/computed/nelson_local_kernel_d90_attempt01.job.json",
+      "sha256": "8072ec28b0d48798213fdc01a58a4abd82aeec8d31464626274254bd02bfa4f2"
+    },
+    {
+      "path": "dembele/data/computed/nelson_local_kernel_d90_attempt01.log",
+      "sha256": "187c3baea1f974f6539e0226b7c8bb24d763504ad464ff68f332f7887fc501d4"
+    },
+    {
+      "path": "dembele/data/computed/nelson_local_kernel_d90_attempt02.job.json",
+      "sha256": "343d432098d181c392065d5a25675ebb534a615e5931fc94d58230e739b16501"
+    },
+    {
+      "path": "dembele/data/computed/nelson_local_kernel_d90_attempt02.log",
+      "sha256": "c4131f4ce7b03a5a28947fe64ddf767ad04984c285dbb1ca519abab12e2824d3"
+    },
+    {
+      "path": "dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "dembele/pari/320_nelson_local_kernel.py",
+      "sha256": "c609baa62ebff55e00283385fe2d7f85b0cebde412e2a5a6f2cbe97cd7a93114"
+    },
+    {
+      "path": "dembele/pari/321_nelson_cm_lattice.py",
+      "sha256": "f8421364564b193f64df30502f3099af4d2316e5b9519cf0617cde75ec2de78d"
+    },
+    {
+      "path": "dembele/pari/322_nelson_finite_and_mellin.py",
+      "sha256": "9dc34f3b38efbf9e0104f69d1f76b92c6463d1f886714eeadfa401abb51487ed"
+    },
+    {
+      "path": "dembele/pari/323_nelson_finite_and_mellin.py",
+      "sha256": "bfa73d7c44c6ac3e71818d429d7f280dc8e452c32b81d6fe8b2cce3e79d73fa6"
+    },
+    {
+      "path": "dembele/pari/324_nelson_cm_shell.py",
+      "sha256": "4f068bc2a448a389e7ce830d0cf803ff8e4ddcf9f933d66107bfd0aa91dedda9"
+    },
+    {
+      "path": "dembele/pari/325_nelson_d90_audit.py",
+      "sha256": "b185173b4e1ba43113dc4effc0cc9250f349eec2cc9f3bc87cdc6daf5fcdfeb0"
+    }
+  ],
+  "Shimura_tangent_computed": false,
+  "global_Hilbert_theta_lift_evaluated": false,
+  "next": "justify the Hilbert cusp/unit unfolding and evaluate one Hecke eigenform with a truncation bound"
+}

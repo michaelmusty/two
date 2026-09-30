@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/364_nelson_signed_tail_transfer.py", line 141, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/364_nelson_signed_tail_transfer.py", line 65, in main
+    assert h.upper() < RB(3)/8
+           ^^^^^^^^^^^^^^^^^^^
+  File "sage/structure/element.pyx", line 1098, in sage.structure.element.Element.__richcmp__ (build/cythonized/sage/structure/element.c:18270)
+  File "sage/structure/coerce.pyx", line 2054, in sage.structure.coerce.CoercionModel.richcmp (build/cythonized/sage/structure/coerce.c:26565)
+TypeError: unsupported operand parent(s) for <: 'Real Field with 320 bits of precision and rounding RNDU' and 'Real ball field with 320 bits of precision'

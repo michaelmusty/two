@@ -1,0 +1,92 @@
+{
+  "status": "pass",
+  "milestone": "D115",
+  "precision_pi": 200,
+  "all_operator_identities_verified": true,
+  "all_state_residuals_and_CM_transfers_verified": true,
+  "independent_coarse_kernel_expansion": true,
+  "anchor_certified_valuations_beta": [
+    [
+      296,
+      308,
+      308,
+      314,
+      314,
+      314,
+      314,
+      318,
+      326,
+      326,
+      326,
+      326,
+      322,
+      322,
+      322,
+      322
+    ],
+    [
+      328,
+      340,
+      340,
+      346,
+      346,
+      346,
+      346,
+      350,
+      358,
+      358,
+      358,
+      358,
+      354,
+      354,
+      354,
+      354
+    ],
+    [
+      296,
+      308,
+      308,
+      314,
+      314,
+      314,
+      314,
+      318,
+      326,
+      326,
+      326,
+      326,
+      322,
+      322,
+      322,
+      322
+    ]
+  ],
+  "D114_source_hashes_checked_unchanged": 713,
+  "same_branch_and_all_refined_centers_verified": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/428_dyadic_refined_review.py",
+      "sha256": "17b6a444bb531bd48266d9ba426537e47ab2379079581aa1e52ebfa88fbad037"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/416_dyadic_coarse_review.py",
+      "sha256": "637631136972eee10103067ca897c333f7eac0ead4fe0e3c7ce89e970f4eb0fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_d115.json",
+      "sha256": "bc043dfe632db80984eef2578841611325767cb4afb214bebfa354354f8fb699"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_operators200_d115.npz",
+      "sha256": "9f3b13ab9e0525becd1a144c70b5bcea4e49401e05ba6f90f44066a3c95edc41"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_moment_transports_refined_d115.json",
+      "sha256": "8fb8aff2c346a3205434e6ee280cb0e9cbd450425754383ab353fb6196a11944"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_coarse_review_d114.json",
+      "sha256": "eab1dd69baad9f7ff29b660b7f626a8237b73d302741b90364c3a21327067788"
+    }
+  ]
+}

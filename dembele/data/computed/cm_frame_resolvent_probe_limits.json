@@ -1,0 +1,35 @@
+{
+  "milestone": "D71",
+  "checks": [
+    {
+      "status": "timeout during generic FunctionField(C_candidate); no result",
+      "timeout_seconds": 90,
+      "memory_limit_bytes": 2000000000,
+      "files": [
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_generic_probe.m",
+          "sha256": "f78d806be8cf5ddd8737d0ab33370505f12d7f050ec348470048d604ccb5c830"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_generic_probe.out",
+          "sha256": "87f8ca1049ca76ab5343917c2b11feead5bef50d2020c7036b466f1c0889afdd"
+        }
+      ]
+    },
+    {
+      "status": "timeout during Reduction(D17-17*P32,P32); explicit function field, genus 16 and marked places completed",
+      "timeout_seconds": 150,
+      "memory_limit_bytes": 2000000000,
+      "files": [
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_functionfield_probe.m",
+          "sha256": "2681084fbbca7db90415d492e786a12bde1c1dfb3ad3b7052419e5217af53766"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_functionfield_probe.out",
+          "sha256": "6bc75e6d47d1aeec7b5929fb5dd53aa1444759fd6d57858b952bf3ecc55e30f3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+// D82: normalized local coefficients, avoiding the large global monomial chart.
+SetQuitOnError(true); SetColumns(0); started:=Cputime();
+load "dembele/magma/199_cm_frame_cubic_precision_model.m";
+load "dembele/magma/227_cm_frame_cubic_pointed_class_chart.m";
+j1:=chartj1; j2:=chartj2;
+j3:=[j1[p[1]]*j2[p[2]]:p in makdisi_product3_pairs];
+j4:=[j1[p[1]]*j3[p[2]]:p in kummer_product4_pairs];
+q:=&+[pointed_cubic_q_coefficients[i]*j1[i]:i in [1..81]];
+u:=&+[pointed_cubic_u_coefficients[i]*j4[i]:i in [1..441]];
+f:=&+[pointed_cubic_f_coefficients[i]*j2[i]:i in [1..201]];
+c:=ZZ!pointed_cubic_norm_scalar; lambda:=ZZ!pointed_cubic_scaling_scalar;
+h:=lambda^3*c*u*q^-1; a:=lambda^2*c*f;
+assert &and[Coefficient(h,j) eq 0:j in [0..239]] and Coefficient(h,240) eq 1;
+assert &and[Coefficient(a,j) eq 0:j in [0..159]] and Coefficient(a,160) eq 1;
+root:=ZZ!11; known:=1;
+while known lt precision_digits do root-:=(root^2+3)*(2*root)^-1; known*:=2; end while;
+alpha:=Coefficient(a,162); beta:=Coefficient(h,241)*root^-1;
+gamma:=Coefficient(h,242); delta:=Coefficient(h,243)*root^-1;
+assert 2*gamma+3*beta^2 eq 3*alpha;
+bseries:=&+[pointed_cubic_trace_septic_coefficients[i]*ChartMon(pointed_septic_monomials[i],chartxs):i in [1..195]]*chartell^-1;
+assert Coefficient(bseries,242) eq 2*gamma;
+printf "LOCAL_NORMALIZED_COEFFICIENTS|%o\n",[Integers()!x:x in [alpha,beta,gamma,delta]];
+printf "LOCAL_A_COEFFICIENTS|%o\n",[Integers()!Coefficient(a,2*j):j in [81..121]];
+printf "CPU_SECONDS|%o\n",Cputime(started);
+print "PASS|237_CM_FRAME_CUBIC_POINTED_LOCAL_INVARIANTS";quit;

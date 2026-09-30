@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "milestone": "D85",
+  "date": "2026-09-22",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/296_cm_frame_descent_review.py",
+      "sha256": "0ce0060db38ffd49d0ba18ee8a9bb53a5984d5545104196d7275a00bef577c06"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_structural_checkpoint.json",
+      "sha256": "1c997bd3777eab96044c6dea0b762a53eda135bcc1ff3687510f0c0cd5f7a23f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_descent_review_job.json",
+      "sha256": "1f95e0c78d242455369ef878a75c5f7be10035da8058e94fcd8b784f0e27eaf0"
+    }
+  ],
+  "prym_dimension_from_genera": 24,
+  "geometric_antiinvariant_three_torsion_rank": 48,
+  "geometric_third_torsor_degree": 79766443076872509863361,
+  "degree_scope": "Theoretical count from the 24-dimensional Prym in characteristic zero; not an enumeration or a coefficient-field degree.",
+  "local_rationality_counterexample": {
+    "polynomial": [
+      -5,
+      0,
+      1
+    ],
+    "root_mod_31": 6,
+    "precision_digits": 128,
+    "root": 73434752752330321988562873555253243109565580525578499946394497800625534890483890394700516155144411459857262883849761876150309450213844971203182752891385460594586733783611341153852332975136411,
+    "root_equation_verified": true,
+    "has_root_in_F": false
+  },
+  "reflection_subgroup_order": 2,
+  "reflection_normalizer_order": 2,
+  "reflection_conjugates": 3,
+  "geometric_automorphisms_over_fixed_base_for_S3_cubic": 1,
+  "global_Galois_action_on_selected_third_computed": false,
+  "field_of_moduli_of_candidate_cover_established": false,
+  "arithmetic_identification_certified": false,
+  "references": [
+    "https://stacks.math.columbia.edu/tag/0BF9",
+    "https://jvoight.github.io/articles/birch-descent-021420.pdf",
+    "https://arxiv.org/pdf/1906.06772"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/375_cm_tangent_candidate_height.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 8.809811458922923,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_tangent_candidate_height_d101_attempt01.log",
+    "sha256": "1b513b5473bdcda49019d9602012f21cb7a7a27dcc933acf07082c8913d156af"
+  },
+  "private_process_group": 47823,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "memory_limit_bytes": 2000000000,
+  "driver": {
+    "path": "/Users/musty/two/dembele/magma/375_cm_tangent_candidate_height.m",
+    "sha256": "034fed9d4b055691cbe0b7eaa217b8ee2a0390aebc40a414168350d5d231beab"
+  },
+  "input": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_tangent_candidate_height_d101_input.m",
+    "sha256": "b4902037c530ba34373c3f07e3f5c3d01af0b2f584036862c62b93f035290f30"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "milestone": "D122",
+  "phase": "roots",
+  "certificates": {
+    "root_residuals_and_original_branches_checked": 17,
+    "eta_values_cross_multiplied": 272,
+    "eta_error_beta": 21168,
+    "minimum_independent_eta_bound_beta": 21168,
+    "trace_centered_sums_checked": 16,
+    "production_Hensel_division_not_reused": true
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_field_recognition.json",
+      "sha256": "b9585a6b40f6c21f4ffadd62caad290cd731cf2f432c54d1f61790d85c6e0ce8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_frame_beta21168_d122.json",
+      "sha256": "b41cbb135838e3d0fc43614f19a8bc455a4e354964bb8b3a02ce9fea6edcaa54"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_cm_matching_review_d112.json",
+      "sha256": "2a64812de8db236cd68fc5007d31904413840b251007bfb3971aff862a9a4a6f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_cm_root_proposals_d112.json",
+      "sha256": "064b58529c39447f3466cf5ca2d8ee362f89727f72685c5e99d8ecec6cc2d08b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    }
+  ]
+}

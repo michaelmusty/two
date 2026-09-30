@@ -1,0 +1,1757 @@
+{
+  "status": "bounded recognition candidates only; no exact curve model",
+  "source": "dembele/data/computed/precise_quadrics_12288.json",
+  "source_sha256": "55359feed0ee39e4aeb00780de57feaa6bdfe11c8d18aa598a382f603cd73a57",
+  "comparison": "dembele/data/computed/precise_quadrics_8192.json",
+  "field_bases": "Q; Q(sqrt(2)); Q(2 cos(pi/8)); F=Q(2 cos(7 pi/16))",
+  "field_basis_kind": "cosine",
+  "coordinate_values": "ratios of equal-weight entries",
+  "scale_invariant_anchors": {
+    "-28": {
+      "row": 2,
+      "column": 11
+    },
+    "-27": {
+      "row": 2,
+      "column": 0
+    },
+    "-26": {
+      "row": 2,
+      "column": 1
+    },
+    "-25": {
+      "row": 2,
+      "column": 25
+    },
+    "-24": {
+      "row": 21,
+      "column": 11
+    },
+    "-23": {
+      "row": 2,
+      "column": 28
+    },
+    "-22": {
+      "row": 2,
+      "column": 29
+    },
+    "-21": {
+      "row": 20,
+      "column": 3
+    },
+    "-20": {
+      "row": 21,
+      "column": 27
+    },
+    "-19": {
+      "row": 26,
+      "column": 27
+    },
+    "-18": {
+      "row": 24,
+      "column": 1
+    },
+    "-17": {
+      "row": 16,
+      "column": 12
+    },
+    "-16": {
+      "row": 16,
+      "column": 25
+    },
+    "-15": {
+      "row": 19,
+      "column": 29
+    },
+    "-14": {
+      "row": 19,
+      "column": 17
+    },
+    "-13": {
+      "row": 9,
+      "column": 49
+    },
+    "-12": {
+      "row": 21,
+      "column": 22
+    },
+    "-11": {
+      "row": 6,
+      "column": 37
+    },
+    "-10": {
+      "row": 7,
+      "column": 40
+    },
+    "-9": {
+      "row": 16,
+      "column": 33
+    },
+    "-8": {
+      "row": 26,
+      "column": 71
+    },
+    "-7": {
+      "row": 7,
+      "column": 49
+    },
+    "-6": {
+      "row": 15,
+      "column": 7
+    },
+    "-5": {
+      "row": 10,
+      "column": 34
+    },
+    "-4": {
+      "row": 15,
+      "column": 22
+    },
+    "-3": {
+      "row": 26,
+      "column": 85
+    },
+    "-2": {
+      "row": 43,
+      "column": 78
+    },
+    "-1": {
+      "row": 20,
+      "column": 89
+    },
+    "1": {
+      "row": 35,
+      "column": 7
+    },
+    "2": {
+      "row": 8,
+      "column": 85
+    },
+    "3": {
+      "row": 34,
+      "column": 53
+    },
+    "4": {
+      "row": 17,
+      "column": 9
+    },
+    "5": {
+      "row": 7,
+      "column": 86
+    },
+    "6": {
+      "row": 7,
+      "column": 82
+    },
+    "7": {
+      "row": 17,
+      "column": 38
+    },
+    "8": {
+      "row": 7,
+      "column": 88
+    },
+    "9": {
+      "row": 36,
+      "column": 48
+    },
+    "10": {
+      "row": 42,
+      "column": 67
+    },
+    "11": {
+      "row": 34,
+      "column": 81
+    },
+    "12": {
+      "row": 35,
+      "column": 81
+    },
+    "13": {
+      "row": 35,
+      "column": 84
+    },
+    "14": {
+      "row": 5,
+      "column": 88
+    },
+    "15": {
+      "row": 42,
+      "column": 82
+    },
+    "16": {
+      "row": 17,
+      "column": 88
+    },
+    "17": {
+      "row": 41,
+      "column": 89
+    },
+    "18": {
+      "row": 35,
+      "column": 90
+    }
+  },
+  "field_degree_height_bounds": [
+    [
+      1,
+      1000
+    ],
+    [
+      2,
+      100
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      8,
+      4
+    ]
+  ],
+  "empirical_absolute_tolerance": "0.0000000000001",
+  "guaranteed_input_digits": null,
+  "near_integer_entries_omitted": 1156,
+  "eligible_entries": 2938,
+  "attempts": [
+    {
+      "row": 20,
+      "column": 8,
+      "pivot_monomial": 133,
+      "free_monomial": 13,
+      "value": [
+        "0.006762152822634538233954710502372644250164",
+        "7.5106918183783090261e-17"
+      ],
+      "independent_bank_relative_difference": "6.790008768814939e-13",
+      "candidate": null
+    },
+    {
+      "row": 0,
+      "column": 49,
+      "pivot_monomial": 11,
+      "free_monomial": 71,
+      "value": [
+        "0.08211977162042764563637459952897728833079",
+        "-1.9453206969393207516e-17"
+      ],
+      "independent_bank_relative_difference": "1.126769599778948e-12",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 67,
+      "pivot_monomial": 133,
+      "free_monomial": 96,
+      "value": [
+        "-0.004129031634748949809028742008626815046491",
+        "9.1725651585704720309e-18"
+      ],
+      "independent_bank_relative_difference": "1.260859180351652e-12",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 77,
+      "pivot_monomial": 133,
+      "free_monomial": 109,
+      "value": [
+        "-0.0006203134806516567937358245452526307347842",
+        "-7.730401419324316672e-18"
+      ],
+      "independent_bank_relative_difference": "2.139868973149254e-12",
+      "candidate": null
+    },
+    {
+      "row": 32,
+      "column": 8,
+      "pivot_monomial": 66,
+      "free_monomial": 13,
+      "value": [
+        "-0.08370643315370540005812495505525516432646",
+        "-2.2399465720755140616e-17"
+      ],
+      "independent_bank_relative_difference": "2.461696494384003e-12",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 49,
+      "pivot_monomial": 133,
+      "free_monomial": 71,
+      "value": [
+        "0.001076917345245351826224329441451152263561",
+        "1.8944857542978891945e-18"
+      ],
+      "independent_bank_relative_difference": "2.576673169550857e-12",
+      "candidate": null
+    },
+    {
+      "row": 23,
+      "column": 82,
+      "pivot_monomial": 123,
+      "free_monomial": 114,
+      "value": [
+        "-0.4021203370839274446498535216266433005196",
+        "6.4640584009315828915e-18"
+      ],
+      "independent_bank_relative_difference": "2.913608664605348e-12",
+      "candidate": null
+    },
+    {
+      "row": 43,
+      "column": 55,
+      "pivot_monomial": 99,
+      "free_monomial": 79,
+      "value": [
+        "-0.1770461057554933184980181349557548411938",
+        "1.0359904336534487645e-16"
+      ],
+      "independent_bank_relative_difference": "2.995767311872195e-12",
+      "candidate": null
+    },
+    {
+      "row": 17,
+      "column": 39,
+      "pivot_monomial": 70,
+      "free_monomial": 57,
+      "value": [
+        "0.01382533442673014714279808104789940584946",
+        "2.6877290701889795007e-17"
+      ],
+      "independent_bank_relative_difference": "3.18696160632865e-12",
+      "candidate": null
+    },
+    {
+      "row": 19,
+      "column": 14,
+      "pivot_monomial": 118,
+      "free_monomial": 20,
+      "value": [
+        "-0.02608656117157187290375745965861160053381",
+        "4.9287087795603782852e-18"
+      ],
+      "independent_bank_relative_difference": "3.452764701952246e-12",
+      "candidate": null
+    },
+    {
+      "row": 41,
+      "column": 6,
+      "pivot_monomial": 37,
+      "free_monomial": 10,
+      "value": [
+        "-0.3751772051094831005628678833959686456214",
+        "6.8521642917961173936e-17"
+      ],
+      "independent_bank_relative_difference": "3.558032092269846e-12",
+      "candidate": null
+    },
+    {
+      "row": 10,
+      "column": 64,
+      "pivot_monomial": 87,
+      "free_monomial": 93,
+      "value": [
+        "-2.978831269521457553864047198726415636097",
+        "7.6841372928725367118e-16"
+      ],
+      "independent_bank_relative_difference": "3.840714772000487e-12",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 86,
+      "pivot_monomial": 133,
+      "free_monomial": 122,
+      "value": [
+        "0.009411194660450788566402961326310334290268",
+        "2.0291893022661868446e-17"
+      ],
+      "independent_bank_relative_difference": "4.030246068017798e-12",
+      "candidate": null
+    },
+    {
+      "row": 35,
+      "column": 49,
+      "pivot_monomial": 38,
+      "free_monomial": 71,
+      "value": [
+        "-1.082119771620427725240199099167462955142",
+        "-9.2156330807459520974e-17"
+      ],
+      "independent_bank_relative_difference": "4.29235438562182e-12",
+      "candidate": null
+    },
+    {
+      "row": 11,
+      "column": 47,
+      "pivot_monomial": 44,
+      "free_monomial": 67,
+      "value": [
+        "-0.7335856976669193503971969877146148496064",
+        "1.049082707251806023e-16"
+      ],
+      "independent_bank_relative_difference": "4.44596068484452e-12",
+      "candidate": null
+    },
+    {
+      "row": 36,
+      "column": 2,
+      "pivot_monomial": 36,
+      "free_monomial": 6,
+      "value": [
+        "0.04734285834195474797822695614713433623546",
+        "-7.4344893978819409369e-17"
+      ],
+      "independent_bank_relative_difference": "4.587691431064723e-12",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 10,
+      "pivot_monomial": 108,
+      "free_monomial": 15,
+      "value": [
+        "0.02729178375936591717270111853498807990185",
+        "-2.7351652047514551547e-17"
+      ],
+      "independent_bank_relative_difference": "4.795662796612211e-12",
+      "candidate": null
+    },
+    {
+      "row": 6,
+      "column": 82,
+      "pivot_monomial": 129,
+      "free_monomial": 114,
+      "value": [
+        "0.02154017829918272816920971923611393781347",
+        "4.4303119327089085082e-18"
+      ],
+      "independent_bank_relative_difference": "5.563484715482717e-12",
+      "candidate": null
+    },
+    {
+      "row": 35,
+      "column": 40,
+      "pivot_monomial": 38,
+      "free_monomial": 58,
+      "value": [
+        "0.2691838778742620037855365146096656188582",
+        "4.4785079632922669277e-18"
+      ],
+      "independent_bank_relative_difference": "5.779423982108221e-12",
+      "candidate": null
+    },
+    {
+      "row": 14,
+      "column": 85,
+      "pivot_monomial": 120,
+      "free_monomial": 121,
+      "value": [
+        "0.01597728254362928004818910033750060953968",
+        "1.112680296713865425e-17"
+      ],
+      "independent_bank_relative_difference": "6.064401394988529e-12",
+      "candidate": null
+    },
+    {
+      "row": 11,
+      "column": 45,
+      "pivot_monomial": 44,
+      "free_monomial": 64,
+      "value": [
+        "0.1389165711259155757486080816740006239926",
+        "3.1851038092488511416e-17"
+      ],
+      "independent_bank_relative_difference": "6.205803525444424e-12",
+      "candidate": null
+    },
+    {
+      "row": 9,
+      "column": 18,
+      "pivot_monomial": 126,
+      "free_monomial": 24,
+      "value": [
+        "0.02097439625278424004898503535887500144407",
+        "3.8002301601759768107e-17"
+      ],
+      "independent_bank_relative_difference": "6.332426893577931e-12",
+      "candidate": null
+    },
+    {
+      "row": 32,
+      "column": 64,
+      "pivot_monomial": 66,
+      "free_monomial": 93,
+      "value": [
+        "-1.154150925769432693489847326586794050891",
+        "-4.0870085601644621405e-16"
+      ],
+      "independent_bank_relative_difference": "7.021506818147564e-12",
+      "candidate": null
+    },
+    {
+      "row": 0,
+      "column": 37,
+      "pivot_monomial": 11,
+      "free_monomial": 55,
+      "value": [
+        "0.05437784652594227553550910191884090855616",
+        "-1.515938951284917661e-18"
+      ],
+      "independent_bank_relative_difference": "7.077868272789415e-12",
+      "candidate": null
+    },
+    {
+      "row": 5,
+      "column": 54,
+      "pivot_monomial": 81,
+      "free_monomial": 77,
+      "value": [
+        "0.3772576850466575206537267500992035528683",
+        "-5.4875883750685321899e-16"
+      ],
+      "independent_bank_relative_difference": "7.187045925297161e-12",
+      "candidate": null
+    },
+    {
+      "row": 12,
+      "column": 81,
+      "pivot_monomial": 107,
+      "free_monomial": 113,
+      "value": [
+        "-0.08232374094001553160734145675945898768634",
+        "-8.9271998237486895934e-18"
+      ],
+      "independent_bank_relative_difference": "7.467106875167933e-12",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 90,
+      "pivot_monomial": 133,
+      "free_monomial": 134,
+      "value": [
+        "0.05363678525334041424376056011128489431043",
+        "2.5601247870144646069e-17"
+      ],
+      "independent_bank_relative_difference": "7.82673928833499e-12",
+      "candidate": null
+    },
+    {
+      "row": 9,
+      "column": 82,
+      "pivot_monomial": 126,
+      "free_monomial": 114,
+      "value": [
+        "-0.01138498066697127125843518716160081356881",
+        "5.8418219378095213746e-17"
+      ],
+      "independent_bank_relative_difference": "8.123667955717202e-12",
+      "candidate": null
+    },
+    {
+      "row": 41,
+      "column": 30,
+      "pivot_monomial": 37,
+      "free_monomial": 48,
+      "value": [
+        "-5.852079197407591527351553528826901217369",
+        "-5.9156283137664699023e-15"
+      ],
+      "independent_bank_relative_difference": "8.377251950583757e-12",
+      "candidate": null
+    },
+    {
+      "row": 7,
+      "column": 36,
+      "pivot_monomial": 78,
+      "free_monomial": 54,
+      "value": [
+        "-0.201824244213069727808747281000200508835",
+        "1.5336731747437554874e-16"
+      ],
+      "independent_bank_relative_difference": "8.708909033320299e-12",
+      "candidate": null
+    },
+    {
+      "row": 19,
+      "column": 78,
+      "pivot_monomial": 118,
+      "free_monomial": 110,
+      "value": [
+        "0.1245943237500207612697986631893021926869",
+        "-3.7952108346107384033e-17"
+      ],
+      "independent_bank_relative_difference": "8.914483570134611e-12",
+      "candidate": null
+    },
+    {
+      "row": 10,
+      "column": 39,
+      "pivot_monomial": 87,
+      "free_monomial": 57,
+      "value": [
+        "-0.4106335006134212984253222101310107195218",
+        "-1.3733067778558670508e-16"
+      ],
+      "independent_bank_relative_difference": "1.015734086456697e-11",
+      "candidate": null
+    },
+    {
+      "row": 17,
+      "column": 15,
+      "pivot_monomial": 70,
+      "free_monomial": 21,
+      "value": [
+        "0.1125201402764558297528496522695143824626",
+        "-9.9358548980818179577e-17"
+      ],
+      "independent_bank_relative_difference": "1.073429095110715e-11",
+      "candidate": null
+    },
+    {
+      "row": 9,
+      "column": 10,
+      "pivot_monomial": 126,
+      "free_monomial": 15,
+      "value": [
+        "-0.003380446423291641182411753361697864523749",
+        "6.8446715822251867861e-17"
+      ],
+      "independent_bank_relative_difference": "1.141544179340202e-11",
+      "candidate": null
+    },
+    {
+      "row": 7,
+      "column": 19,
+      "pivot_monomial": 78,
+      "free_monomial": 25,
+      "value": [
+        "3.989557092638058381841539994729642139731",
+        "-8.4397009080500969135e-15"
+      ],
+      "independent_bank_relative_difference": "1.240645513200582e-11",
+      "candidate": null
+    },
+    {
+      "row": 42,
+      "column": 29,
+      "pivot_monomial": 59,
+      "free_monomial": 47,
+      "value": [
+        "-3.479444624711597777104514893822171213683",
+        "-8.3911444484005508434e-16"
+      ],
+      "independent_bank_relative_difference": "1.263609852494162e-11",
+      "candidate": null
+    },
+    {
+      "row": 41,
+      "column": 18,
+      "pivot_monomial": 37,
+      "free_monomial": 24,
+      "value": [
+        "-0.6910621006413271012640268153732796151874",
+        "-2.2518462115623613316e-16"
+      ],
+      "independent_bank_relative_difference": "1.277830430488074e-11",
+      "candidate": null
+    },
+    {
+      "row": 34,
+      "column": 5,
+      "pivot_monomial": 39,
+      "free_monomial": 9,
+      "value": [
+        "0.1013492079306364020692747866780330559029",
+        "-2.4060045446714344386e-17"
+      ],
+      "independent_bank_relative_difference": "1.308708275813679e-11",
+      "candidate": null
+    },
+    {
+      "row": 32,
+      "column": 47,
+      "pivot_monomial": 66,
+      "free_monomial": 67,
+      "value": [
+        "0.3983912543580027969892958938693208456079",
+        "6.0009014798453425305e-16"
+      ],
+      "independent_bank_relative_difference": "1.380175412607304e-11",
+      "candidate": null
+    },
+    {
+      "row": 8,
+      "column": 60,
+      "pivot_monomial": 115,
+      "free_monomial": 86,
+      "value": [
+        "0.01226006278209116336673586928436921201063",
+        "4.7550867050539458195e-17"
+      ],
+      "independent_bank_relative_difference": "1.385808830059759e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 39,
+      "pivot_monomial": 108,
+      "free_monomial": 57,
+      "value": [
+        "0.07171448711478223287555837733023760179829",
+        "1.0791338487739900539e-16"
+      ],
+      "independent_bank_relative_difference": "1.410611387979619e-11",
+      "candidate": null
+    },
+    {
+      "row": 19,
+      "column": 68,
+      "pivot_monomial": 118,
+      "free_monomial": 97,
+      "value": [
+        "-0.02734407170967301182574112671940320342118",
+        "8.9910416111531501804e-17"
+      ],
+      "independent_bank_relative_difference": "1.425731261063423e-11",
+      "candidate": null
+    },
+    {
+      "row": 10,
+      "column": 10,
+      "pivot_monomial": 87,
+      "free_monomial": 15,
+      "value": [
+        "-0.04872588867910844014870524675996050164325",
+        "5.5912915751700770341e-19"
+      ],
+      "independent_bank_relative_difference": "1.427363244723312e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 46,
+      "pivot_monomial": 108,
+      "free_monomial": 65,
+      "value": [
+        "-0.07100270707534121594665547309479568142491",
+        "3.7788434549925345381e-19"
+      ],
+      "independent_bank_relative_difference": "1.442750473420876e-11",
+      "candidate": null
+    },
+    {
+      "row": 44,
+      "column": 22,
+      "pivot_monomial": 76,
+      "free_monomial": 28,
+      "value": [
+        "0.7551960110752226796630743439934402338388",
+        "-1.8874943255490154245e-15"
+      ],
+      "independent_bank_relative_difference": "1.451743596962913e-11",
+      "candidate": null
+    },
+    {
+      "row": 42,
+      "column": 2,
+      "pivot_monomial": 59,
+      "free_monomial": 6,
+      "value": [
+        "-0.04734285834195475685372808231848697068524",
+        "4.602635861975667997e-17"
+      ],
+      "independent_bank_relative_difference": "1.508573030361388e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 48,
+      "pivot_monomial": 108,
+      "free_monomial": 68,
+      "value": [
+        "0.4908485658333356556567897850486145705115",
+        "-1.2353704183458252588e-16"
+      ],
+      "independent_bank_relative_difference": "1.550972221049115e-11",
+      "candidate": null
+    },
+    {
+      "row": 16,
+      "column": 19,
+      "pivot_monomial": 90,
+      "free_monomial": 25,
+      "value": [
+        "0.03980329800570220466693247416034628062508",
+        "2.1607526191432738933e-15"
+      ],
+      "independent_bank_relative_difference": "1.56654925590601e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 4,
+      "pivot_monomial": 133,
+      "free_monomial": 8,
+      "value": [
+        "-0.01917265819156774292868218309517487212266",
+        "-1.2732800806798150836e-17"
+      ],
+      "independent_bank_relative_difference": "1.570619363350341e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 50,
+      "pivot_monomial": 133,
+      "free_monomial": 72,
+      "value": [
+        "0.006858930287281924220084731232720736562388",
+        "6.5063858682537777194e-17"
+      ],
+      "independent_bank_relative_difference": "1.602934646334134e-11",
+      "candidate": null
+    },
+    {
+      "row": 32,
+      "column": 82,
+      "pivot_monomial": 66,
+      "free_monomial": 114,
+      "value": [
+        "0.06873731509374143623382007773467737025533",
+        "6.7035641118406104311e-17"
+      ],
+      "independent_bank_relative_difference": "1.635764468444929e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 57,
+      "pivot_monomial": 133,
+      "free_monomial": 83,
+      "value": [
+        "-0.006336829483675791756024130733356841618033",
+        "3.7856883359858150494e-17"
+      ],
+      "independent_bank_relative_difference": "1.660116929839981e-11",
+      "candidate": null
+    },
+    {
+      "row": 5,
+      "column": 32,
+      "pivot_monomial": 81,
+      "free_monomial": 50,
+      "value": [
+        "40.79768307034709883770296290543649443474",
+        "-1.6531989271308842737e-14"
+      ],
+      "independent_bank_relative_difference": "1.685980980126998e-11",
+      "candidate": null
+    },
+    {
+      "row": 4,
+      "column": 78,
+      "pivot_monomial": 80,
+      "free_monomial": 110,
+      "value": [
+        "-1.310407573535149324567054114118580473737",
+        "-6.195397117072724879e-17"
+      ],
+      "independent_bank_relative_difference": "1.701747307558392e-11",
+      "candidate": null
+    },
+    {
+      "row": 24,
+      "column": 52,
+      "pivot_monomial": 117,
+      "free_monomial": 74,
+      "value": [
+        "-0.01914471423592314961473006194622523007212",
+        "3.9596151455208403483e-16"
+      ],
+      "independent_bank_relative_difference": "1.709418289219509e-11",
+      "candidate": null
+    },
+    {
+      "row": 24,
+      "column": 77,
+      "pivot_monomial": 117,
+      "free_monomial": 109,
+      "value": [
+        "0.003845457627312966911552699125991886629496",
+        "-2.7699795512780206496e-17"
+      ],
+      "independent_bank_relative_difference": "1.71392348761226e-11",
+      "candidate": null
+    },
+    {
+      "row": 28,
+      "column": 71,
+      "pivot_monomial": 69,
+      "free_monomial": 101,
+      "value": [
+        "5.593552065156747393527343067725906778477",
+        "-2.4663365991557235647e-15"
+      ],
+      "independent_bank_relative_difference": "1.71514506193729e-11",
+      "candidate": null
+    },
+    {
+      "row": 36,
+      "column": 14,
+      "pivot_monomial": 36,
+      "free_monomial": 20,
+      "value": [
+        "-0.06922169561377569321969404044986672265185",
+        "-8.6480476172544278398e-17"
+      ],
+      "independent_bank_relative_difference": "1.722920752956415e-11",
+      "candidate": null
+    },
+    {
+      "row": 7,
+      "column": 24,
+      "pivot_monomial": 78,
+      "free_monomial": 30,
+      "value": [
+        "0.8556184564945165232348638656793346092064",
+        "-2.8857966577289612984e-16"
+      ],
+      "independent_bank_relative_difference": "1.786220318454939e-11",
+      "candidate": null
+    },
+    {
+      "row": 0,
+      "column": 77,
+      "pivot_monomial": 11,
+      "free_monomial": 109,
+      "value": [
+        "0.03247750596692273436900754047380676768306",
+        "-5.8398577012023959802e-17"
+      ],
+      "independent_bank_relative_difference": "1.815096814454656e-11",
+      "candidate": null
+    },
+    {
+      "row": 8,
+      "column": 8,
+      "pivot_monomial": 115,
+      "free_monomial": 13,
+      "value": [
+        "-0.05829189834938518990379027442159866555578",
+        "2.1473690650039686438e-16"
+      ],
+      "independent_bank_relative_difference": "1.828812917099056e-11",
+      "candidate": null
+    },
+    {
+      "row": 18,
+      "column": 64,
+      "pivot_monomial": 88,
+      "free_monomial": 93,
+      "value": [
+        "0.1536985356179925215727491941369885124327",
+        "2.2366603026799145256e-16"
+      ],
+      "independent_bank_relative_difference": "1.851395768102286e-11",
+      "candidate": null
+    },
+    {
+      "row": 5,
+      "column": 5,
+      "pivot_monomial": 81,
+      "free_monomial": 9,
+      "value": [
+        "-0.101349207930636505774166641375126565648",
+        "-3.2215693958368412496e-17"
+      ],
+      "independent_bank_relative_difference": "1.901137459527902e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 21,
+      "pivot_monomial": 108,
+      "free_monomial": 27,
+      "value": [
+        "0.08349294128997245771707482450761534479451",
+        "-7.2188973323687917446e-16"
+      ],
+      "independent_bank_relative_difference": "1.90198980846256e-11",
+      "candidate": null
+    },
+    {
+      "row": 36,
+      "column": 56,
+      "pivot_monomial": 36,
+      "free_monomial": 82,
+      "value": [
+        "0.2373539199749502039127328015909003853053",
+        "-3.7333523937177106943e-16"
+      ],
+      "independent_bank_relative_difference": "1.938332538700311e-11",
+      "candidate": null
+    },
+    {
+      "row": 34,
+      "column": 33,
+      "pivot_monomial": 39,
+      "free_monomial": 51,
+      "value": [
+        "-1.373696534663100701796193720343174999964",
+        "-7.4523321282870702489e-17"
+      ],
+      "independent_bank_relative_difference": "1.949042000427318e-11",
+      "candidate": null
+    },
+    {
+      "row": 32,
+      "column": 49,
+      "pivot_monomial": 66,
+      "free_monomial": 71,
+      "value": [
+        "-0.02871541607018407713289231384318386626842",
+        "1.7749134811945700015e-17"
+      ],
+      "independent_bank_relative_difference": "1.969744175992505e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 38,
+      "pivot_monomial": 108,
+      "free_monomial": 56,
+      "value": [
+        "-19.7997626461908882254202594744390875104",
+        "-3.0236215930378616392e-15"
+      ],
+      "independent_bank_relative_difference": "1.985750250723635e-11",
+      "candidate": null
+    },
+    {
+      "row": 12,
+      "column": 68,
+      "pivot_monomial": 107,
+      "free_monomial": 97,
+      "value": [
+        "-0.02365857227485950281236239409131506333139",
+        "4.4369949335914335551e-17"
+      ],
+      "independent_bank_relative_difference": "1.986340762393722e-11",
+      "candidate": null
+    },
+    {
+      "row": 17,
+      "column": 41,
+      "pivot_monomial": 70,
+      "free_monomial": 60,
+      "value": [
+        "-0.3905946466089966304475937503299729286967",
+        "1.9041085190192475797e-16"
+      ],
+      "independent_bank_relative_difference": "1.986597688853472e-11",
+      "candidate": null
+    },
+    {
+      "row": 28,
+      "column": 54,
+      "pivot_monomial": 69,
+      "free_monomial": 77,
+      "value": [
+        "1.482966215888112201143535444021885481313",
+        "-2.7413669031365990177e-16"
+      ],
+      "independent_bank_relative_difference": "2.015335636527833e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 23,
+      "pivot_monomial": 108,
+      "free_monomial": 29,
+      "value": [
+        "-0.2973010925943286446332397036133883276899",
+        "1.0274791156537076937e-16"
+      ],
+      "independent_bank_relative_difference": "2.038934571255145e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 52,
+      "pivot_monomial": 133,
+      "free_monomial": 74,
+      "value": [
+        "-0.01232908878199939548432508073490116128596",
+        "3.2216016668629466217e-17"
+      ],
+      "independent_bank_relative_difference": "2.056749323707051e-11",
+      "candidate": null
+    },
+    {
+      "row": 41,
+      "column": 5,
+      "pivot_monomial": 37,
+      "free_monomial": 9,
+      "value": [
+        "-5.525542158401320989206012168622155493977",
+        "-2.5994393096614953046e-15"
+      ],
+      "independent_bank_relative_difference": "2.084844019228189e-11",
+      "candidate": null
+    },
+    {
+      "row": 17,
+      "column": 47,
+      "pivot_monomial": 70,
+      "free_monomial": 67,
+      "value": [
+        "0.1238169382863708882744989450078171904796",
+        "-3.151928937228048182e-16"
+      ],
+      "independent_bank_relative_difference": "2.120459058895737e-11",
+      "candidate": null
+    },
+    {
+      "row": 9,
+      "column": 83,
+      "pivot_monomial": 126,
+      "free_monomial": 116,
+      "value": [
+        "0.1087531921823078998477367083229913105312",
+        "6.2649111033466800424e-17"
+      ],
+      "independent_bank_relative_difference": "2.127594042492815e-11",
+      "candidate": null
+    },
+    {
+      "row": 0,
+      "column": 10,
+      "pivot_monomial": 11,
+      "free_monomial": 15,
+      "value": [
+        "0.02117386334291640452661735219000635645376",
+        "-2.2769394835826840313e-16"
+      ],
+      "independent_bank_relative_difference": "2.175559107848036e-11",
+      "candidate": null
+    },
+    {
+      "row": 8,
+      "column": 48,
+      "pivot_monomial": 115,
+      "free_monomial": 68,
+      "value": [
+        "-1.127818527357173591811668461224001289422",
+        "1.560808884117744923e-15"
+      ],
+      "independent_bank_relative_difference": "2.19427481958613e-11",
+      "candidate": null
+    },
+    {
+      "row": 4,
+      "column": 47,
+      "pivot_monomial": 80,
+      "free_monomial": 67,
+      "value": [
+        "0.01504952629390945623600300878970949850965",
+        "1.1199194767330611188e-17"
+      ],
+      "independent_bank_relative_difference": "2.211870580886887e-11",
+      "candidate": null
+    },
+    {
+      "row": 4,
+      "column": 49,
+      "pivot_monomial": 80,
+      "free_monomial": 71,
+      "value": [
+        "-0.1220757646590104907006907664184810546594",
+        "1.233907795696881547e-16"
+      ],
+      "independent_bank_relative_difference": "2.229765854648179e-11",
+      "candidate": null
+    },
+    {
+      "row": 43,
+      "column": 85,
+      "pivot_monomial": 99,
+      "free_monomial": 121,
+      "value": [
+        "-0.9772913319596832463311827107866783964943",
+        "7.5387043422390448933e-17"
+      ],
+      "independent_bank_relative_difference": "2.240137273766696e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 83,
+      "pivot_monomial": 133,
+      "free_monomial": 116,
+      "value": [
+        "-0.02711105205527819374256175773899758876718",
+        "7.7138341349093532067e-17"
+      ],
+      "independent_bank_relative_difference": "2.242386336543952e-11",
+      "candidate": null
+    },
+    {
+      "row": 11,
+      "column": 22,
+      "pivot_monomial": 44,
+      "free_monomial": 28,
+      "value": [
+        "-0.06061803326830055187957687991895046845469",
+        "6.1357880172441264369e-17"
+      ],
+      "independent_bank_relative_difference": "2.247206181119467e-11",
+      "candidate": null
+    },
+    {
+      "row": 8,
+      "column": 83,
+      "pivot_monomial": 115,
+      "free_monomial": 116,
+      "value": [
+        "-3.307075464410577118806886609464837555549",
+        "-4.2964029173228421184e-15"
+      ],
+      "independent_bank_relative_difference": "2.277530082639271e-11",
+      "candidate": null
+    },
+    {
+      "row": 24,
+      "column": 24,
+      "pivot_monomial": 117,
+      "free_monomial": 30,
+      "value": [
+        "0.8655639401181845640188584576485855009531",
+        "-4.1042807239950087158e-15"
+      ],
+      "independent_bank_relative_difference": "2.306590809244921e-11",
+      "candidate": null
+    },
+    {
+      "row": 43,
+      "column": 77,
+      "pivot_monomial": 99,
+      "free_monomial": 109,
+      "value": [
+        "0.04751666258661763666160704514723918092716",
+        "3.1364261306173177989e-17"
+      ],
+      "independent_bank_relative_difference": "2.387188084282157e-11",
+      "candidate": null
+    },
+    {
+      "row": 28,
+      "column": 47,
+      "pivot_monomial": 69,
+      "free_monomial": 67,
+      "value": [
+        "-0.4080072056559511492883024209501561631425",
+        "1.107633754962987919e-15"
+      ],
+      "independent_bank_relative_difference": "2.398271389605696e-11",
+      "candidate": null
+    },
+    {
+      "row": 18,
+      "column": 54,
+      "pivot_monomial": 88,
+      "free_monomial": 77,
+      "value": [
+        "-0.08073717186179917416904591445963378805905",
+        "2.1184552592203905588e-16"
+      ],
+      "independent_bank_relative_difference": "2.426728356768918e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 82,
+      "pivot_monomial": 133,
+      "free_monomial": 114,
+      "value": [
+        "0.05795197874410719351594999214700771876093",
+        "7.0384405293790537589e-17"
+      ],
+      "independent_bank_relative_difference": "2.451984477991658e-11",
+      "candidate": null
+    },
+    {
+      "row": 42,
+      "column": 81,
+      "pivot_monomial": 59,
+      "free_monomial": 113,
+      "value": [
+        "-0.281830602221910053896926467928699971235",
+        "-1.3786001048073421806e-18"
+      ],
+      "independent_bank_relative_difference": "2.554088769330546e-11",
+      "candidate": null
+    },
+    {
+      "row": 4,
+      "column": 54,
+      "pivot_monomial": 80,
+      "free_monomial": 77,
+      "value": [
+        "0.01292163299629430530757990515838162560409",
+        "9.5615038637186044737e-17"
+      ],
+      "independent_bank_relative_difference": "2.573310401258062e-11",
+      "candidate": null
+    },
+    {
+      "row": 2,
+      "column": 89,
+      "pivot_monomial": 135,
+      "free_monomial": 131,
+      "value": [
+        "-0.01542616120061721434647030753664437051944",
+        "-1.4260794815001758107e-17"
+      ],
+      "independent_bank_relative_difference": "2.583247171070561e-11",
+      "candidate": null
+    },
+    {
+      "row": 32,
+      "column": 48,
+      "pivot_monomial": 66,
+      "free_monomial": 68,
+      "value": [
+        "3.586208086946802989777450922041957663104",
+        "2.6882921348881663292e-16"
+      ],
+      "independent_bank_relative_difference": "2.597226729502688e-11",
+      "candidate": null
+    },
+    {
+      "row": 5,
+      "column": 33,
+      "pivot_monomial": 81,
+      "free_monomial": 51,
+      "value": [
+        "0.3736965346631000364571030408183703304703",
+        "-2.7033705739886160095e-16"
+      ],
+      "independent_bank_relative_difference": "2.64745375920234e-11",
+      "candidate": null
+    },
+    {
+      "row": 4,
+      "column": 50,
+      "pivot_monomial": 80,
+      "free_monomial": 72,
+      "value": [
+        "0.1916668236079192384065590475502676550399",
+        "-2.9814890046078038081e-15"
+      ],
+      "independent_bank_relative_difference": "2.658589386975292e-11",
+      "candidate": null
+    },
+    {
+      "row": 44,
+      "column": 8,
+      "pivot_monomial": 76,
+      "free_monomial": 13,
+      "value": [
+        "0.1049937422039356548618141591205755425248",
+        "1.2296188163484574925e-16"
+      ],
+      "independent_bank_relative_difference": "2.674682144361889e-11",
+      "candidate": null
+    },
+    {
+      "row": 42,
+      "column": 24,
+      "pivot_monomial": 59,
+      "free_monomial": 30,
+      "value": [
+        "-0.334446398916172340289658805019923106457",
+        "3.6339042391274592734e-16"
+      ],
+      "independent_bank_relative_difference": "2.674895035351728e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 70,
+      "pivot_monomial": 108,
+      "free_monomial": 100,
+      "value": [
+        "-5.997638713428380899580031101733565627749",
+        "3.2781767646411558798e-15"
+      ],
+      "independent_bank_relative_difference": "2.715313452683908e-11",
+      "candidate": null
+    },
+    {
+      "row": 18,
+      "column": 77,
+      "pivot_monomial": 88,
+      "free_monomial": 109,
+      "value": [
+        "-0.6213958514251044288615203366566395751502",
+        "-2.1166066160031041427e-17"
+      ],
+      "independent_bank_relative_difference": "2.721360805498012e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 1,
+      "pivot_monomial": 133,
+      "free_monomial": 4,
+      "value": [
+        "0.0006622999786716621299535190400296192056771",
+        "-6.3243133437954998536e-18"
+      ],
+      "independent_bank_relative_difference": "2.732303828184764e-11",
+      "candidate": null
+    },
+    {
+      "row": 16,
+      "column": 24,
+      "pivot_monomial": 90,
+      "free_monomial": 30,
+      "value": [
+        "0.06469116456799567614457384911734606902617",
+        "1.4158514430371571761e-15"
+      ],
+      "independent_bank_relative_difference": "2.74898220006638e-11",
+      "candidate": null
+    },
+    {
+      "row": 11,
+      "column": 54,
+      "pivot_monomial": 44,
+      "free_monomial": 77,
+      "value": [
+        "-0.8076757085426784233419746460460409985315",
+        "-9.3709348831730173894e-18"
+      ],
+      "independent_bank_relative_difference": "2.753073166875133e-11",
+      "candidate": null
+    },
+    {
+      "row": 43,
+      "column": 7,
+      "pivot_monomial": 99,
+      "free_monomial": 12,
+      "value": [
+        "0.184271465026479763905986203234989588601",
+        "9.4915223893453792193e-17"
+      ],
+      "independent_bank_relative_difference": "2.773432817760095e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 36,
+      "pivot_monomial": 108,
+      "free_monomial": 54,
+      "value": [
+        "0.08332332042154014485837971088405546784626",
+        "-1.0246882629901970004e-16"
+      ],
+      "independent_bank_relative_difference": "2.77954474898511e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 45,
+      "pivot_monomial": 133,
+      "free_monomial": 64,
+      "value": [
+        "0.01675418381294828553142060662136046211309",
+        "-3.9877780582624901884e-17"
+      ],
+      "independent_bank_relative_difference": "2.785175805090021e-11",
+      "candidate": null
+    },
+    {
+      "row": 0,
+      "column": 58,
+      "pivot_monomial": 11,
+      "free_monomial": 84,
+      "value": [
+        "-0.05863868616983227672642098791268563700727",
+        "8.5579617059986859998e-18"
+      ],
+      "independent_bank_relative_difference": "2.790435071240865e-11",
+      "candidate": null
+    },
+    {
+      "row": 21,
+      "column": 30,
+      "pivot_monomial": 125,
+      "free_monomial": 48,
+      "value": [
+        "0.106656386846145223021603839426389137824",
+        "3.8067853461977812854e-16"
+      ],
+      "independent_bank_relative_difference": "2.839490843328232e-11",
+      "candidate": null
+    },
+    {
+      "row": 28,
+      "column": 24,
+      "pivot_monomial": 69,
+      "free_monomial": 30,
+      "value": [
+        "0.2092186469483470151786925046327027842548",
+        "9.8841077148674675531e-18"
+      ],
+      "independent_bank_relative_difference": "2.850342568849917e-11",
+      "candidate": null
+    },
+    {
+      "row": 28,
+      "column": 64,
+      "pivot_monomial": 69,
+      "free_monomial": 93,
+      "value": [
+        "-0.245256886666351934245623352554194132714",
+        "2.7272923127319628333e-17"
+      ],
+      "independent_bank_relative_difference": "2.854489273441703e-11",
+      "candidate": null
+    },
+    {
+      "row": 9,
+      "column": 85,
+      "pivot_monomial": 126,
+      "free_monomial": 121,
+      "value": [
+        "-1.652014225054066014845554752444203527294",
+        "1.2743969618956103466e-15"
+      ],
+      "independent_bank_relative_difference": "2.869759037978173e-11",
+      "candidate": null
+    },
+    {
+      "row": 9,
+      "column": 79,
+      "pivot_monomial": 126,
+      "free_monomial": 111,
+      "value": [
+        "-0.08279701519491124767064756514513455379475",
+        "-3.627891636844272947e-17"
+      ],
+      "independent_bank_relative_difference": "2.873991111980475e-11",
+      "candidate": null
+    },
+    {
+      "row": 24,
+      "column": 22,
+      "pivot_monomial": 117,
+      "free_monomial": 28,
+      "value": [
+        "0.2274269230035378466942164290366628007112",
+        "-6.4228899376408592533e-16"
+      ],
+      "independent_bank_relative_difference": "2.905027290232304e-11",
+      "candidate": null
+    },
+    {
+      "row": 28,
+      "column": 37,
+      "pivot_monomial": 69,
+      "free_monomial": 55,
+      "value": [
+        "0.07038265649481695853257288796076465727506",
+        "6.1539115635116592584e-19"
+      ],
+      "independent_bank_relative_difference": "2.910136539869233e-11",
+      "candidate": null
+    },
+    {
+      "row": 42,
+      "column": 14,
+      "pivot_monomial": 59,
+      "free_monomial": 20,
+      "value": [
+        "0.06922169561377568398747309280273574172883",
+        "9.6035773154469133251e-17"
+      ],
+      "independent_bank_relative_difference": "2.912971785156786e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 39,
+      "pivot_monomial": 133,
+      "free_monomial": 57,
+      "value": [
+        "0.01704539781782714757201695151723297988103",
+        "3.6526370543351209837e-18"
+      ],
+      "independent_bank_relative_difference": "2.922025250992355e-11",
+      "candidate": null
+    },
+    {
+      "row": 6,
+      "column": 40,
+      "pivot_monomial": 129,
+      "free_monomial": 58,
+      "value": [
+        "0.1297109969606135863102781520844257125524",
+        "6.7013783037578001124e-16"
+      ],
+      "independent_bank_relative_difference": "2.980621131609242e-11",
+      "candidate": null
+    },
+    {
+      "row": 16,
+      "column": 39,
+      "pivot_monomial": 90,
+      "free_monomial": 57,
+      "value": [
+        "0.04491132624725709461640553675970985542051",
+        "-2.7337665619675565215e-16"
+      ],
+      "independent_bank_relative_difference": "2.983902085781609e-11",
+      "candidate": null
+    },
+    {
+      "row": 8,
+      "column": 68,
+      "pivot_monomial": 115,
+      "free_monomial": 97,
+      "value": [
+        "0.06572422458657085581615847400597067633243",
+        "2.6725461317247041134e-17"
+      ],
+      "independent_bank_relative_difference": "2.98447283628073e-11",
+      "candidate": null
+    },
+    {
+      "row": 15,
+      "column": 37,
+      "pivot_monomial": 108,
+      "free_monomial": 55,
+      "value": [
+        "0.5265565509193358957291133090560397823863",
+        "-3.5489965513251172992e-16"
+      ],
+      "independent_bank_relative_difference": "3.019514101094874e-11",
+      "candidate": null
+    },
+    {
+      "row": 10,
+      "column": 36,
+      "pivot_monomial": 87,
+      "free_monomial": 54,
+      "value": [
+        "0.1633250542007612970687971511686034743145",
+        "1.1352458851192784153e-16"
+      ],
+      "independent_bank_relative_difference": "3.036397258841435e-11",
+      "candidate": null
+    },
+    {
+      "row": 11,
+      "column": 23,
+      "pivot_monomial": 44,
+      "free_monomial": 29,
+      "value": [
+        "-3.213521492448737525944391120533105733337",
+        "2.423021122498889673e-15"
+      ],
+      "independent_bank_relative_difference": "3.050471972816369e-11",
+      "candidate": null
+    },
+    {
+      "row": 8,
+      "column": 47,
+      "pivot_monomial": 115,
+      "free_monomial": 67,
+      "value": [
+        "-0.08459355187768840081914695569593632025489",
+        "2.9528255559941913173e-17"
+      ],
+      "independent_bank_relative_difference": "3.083006809175619e-11",
+      "candidate": null
+    },
+    {
+      "row": 8,
+      "column": 74,
+      "pivot_monomial": 115,
+      "free_monomial": 104,
+      "value": [
+        "-0.06611491238410899777818825824963489842534",
+        "2.6910357132251923476e-16"
+      ],
+      "independent_bank_relative_difference": "3.092468916893929e-11",
+      "candidate": null
+    },
+    {
+      "row": 34,
+      "column": 24,
+      "pivot_monomial": 39,
+      "free_monomial": 30,
+      "value": [
+        "0.1946684063082505099372761168592334776351",
+        "1.4874126492101711942e-16"
+      ],
+      "independent_bank_relative_difference": "3.193420164623037e-11",
+      "candidate": null
+    },
+    {
+      "row": 34,
+      "column": 52,
+      "pivot_monomial": 39,
+      "free_monomial": 74,
+      "value": [
+        "-0.3244493833687965611964847834228149094421",
+        "4.8182939617151463094e-16"
+      ],
+      "independent_bank_relative_difference": "3.197625840238825e-11",
+      "candidate": null
+    },
+    {
+      "row": 19,
+      "column": 38,
+      "pivot_monomial": 118,
+      "free_monomial": 56,
+      "value": [
+        "-60.34708053650694668659515069952829328334",
+        "1.8004695191041411221e-13"
+      ],
+      "independent_bank_relative_difference": "3.22051155621137e-11",
+      "candidate": null
+    },
+    {
+      "row": 41,
+      "column": 15,
+      "pivot_monomial": 37,
+      "free_monomial": 21,
+      "value": [
+        "-0.1125201402764560157260284803318889870181",
+        "-1.3992188521785367319e-16"
+      ],
+      "independent_bank_relative_difference": "3.30844408021879e-11",
+      "candidate": null
+    },
+    {
+      "row": 20,
+      "column": 88,
+      "pivot_monomial": 133,
+      "free_monomial": 128,
+      "value": [
+        "-0.07756292499083788047774960743222035273535",
+        "2.8828484629765497829e-16"
+      ],
+      "independent_bank_relative_difference": "3.308499312708248e-11",
+      "candidate": null
+    }
+  ],
+  "candidates": [],
+  "wall_seconds": 6.955970082955901
+}

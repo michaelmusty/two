@@ -1,0 +1,93 @@
+{
+  "status": "pass",
+  "milestone": "D131",
+  "completion_kind": "Weighted certificate replay and recoverable arithmetic controls; no actual precision increase",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_journal_review_d131.json",
+    "sha256": "3711f91d5b75200da5e9a2cb9c9dc8186f473af31cf5e591a7c79fe912819575"
+  },
+  "fixed_review_source_count": 16567,
+  "inherited_D130_hash_count": 16142,
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_journal_review_d131_attempt01.job.json",
+      "sha256": "84a1e1cf9ca0f41e337e23455141dbe3d6bbd9bb1ef30aea69b501e9161831f5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_journal_review_d131_recheck01.job.json",
+      "sha256": "05bc3c9c796eaa10431a401039516c311e42524d77043d0d6f03a4c28db14833"
+    }
+  ],
+  "passing_input_jobs": 54,
+  "passing_review_jobs": 2,
+  "failed_bounded_jobs": 0,
+  "total_passing_jobs": 56,
+  "intentional_interrupted_child_processes": 22,
+  "intentional_interruptions_are_failed_bounded_jobs": false,
+  "all_batch_coordinators_completed": true,
+  "batch_summaries": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_replay_plan_d131_completed.json",
+      "sha256": "ae516288f5f97154b756b36388a5b09a894af96c60b2a90ef5768367e40653ac"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_audit_plan_d131_completed.json",
+      "sha256": "a3fd00d86cc8b0ffad455a08fb9e8f4e0dd9c2721177b92a5df7b0336ed1a36f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_plan_d131_completed.json",
+      "sha256": "3ae64594fdb7e2f182dcfa12f8897dbbba3e6c5dfa9f83682ddd236cc92c78ef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_journal_arithmetic_plan_d131_completed.json",
+      "sha256": "8062448a0e85c2633301b0bb3b693769603b6efe583e3bfda8637a9da974252b"
+    }
+  ],
+  "running_mathematical_workers": 0,
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "README.md",
+    "CLAUDE.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "documentation_updated": true,
+  "documentation_updates_pending": false,
+  "next_unused_source": 547,
+  "next_task": "Complete the resumable staged driver with low-RHS chunks, multi-digit factor stages, authenticated low answers, one working store, complete file lifetimes and separate concurrent-RAM budget; select the first actual higher-precision column after integration gates pass.",
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 3200,
+    "1": 1600
+  },
+  "actual_harmonic_precision_increased": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_target_run_admitted": false,
+  "unchanged_limits": {
+    "maximum_mathematical_workers": 3,
+    "private_process_group_timeout_seconds": 180,
+    "working_store_bytes": 2147483648,
+    "BLAS_threads": 1
+  },
+  "resource_scope": {
+    "per_store_cap_enforced": true,
+    "aggregate_concurrent_store_cap_certified": false,
+    "full_target_lifetimes_certified": false,
+    "concurrent_RAM_certified": false,
+    "power_loss_durability_certified": false
+  },
+  "frozen_report_sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-weighted-journal-d131.md",
+      "sha256": "1ab37f55144cc3ef1a76cfbdac77312ec626197eedb9125a7f39c251effd7af8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_journal_sources_d131.json",
+      "sha256": "767e5fbb06cc5f98c9a89ba0c21742f65f6962496176cd0fd41a80e681550d59"
+    }
+  ],
+  "mutable_entry_documents_are_frozen_hash_sources": false
+}

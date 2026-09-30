@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/320_nelson_local_kernel.py", line 11, in <module>
+    from sage.all import (AA, QQ, ZZ, NumberField, PolynomialRing,
+  File "/private/var/tmp/sage-10.6-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/all.py", line 215, in <module>
+    sage.misc.lazy_import.save_cache_file()
+  File "sage/misc/lazy_import.pyx", line 1156, in sage.misc.lazy_import.save_cache_file (build/cythonized/sage/misc/lazy_import.c:11405)
+  File "/private/var/tmp/sage-10.6-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/misc/temporary_file.py", line 347, in __enter__
+    fd, name = tempfile.mkstemp(dir=self.tmpdir)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.6-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/tempfile.py", line 357, in mkstemp
+    return _mkstemp_inner(dir, prefix, suffix, flags, output_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.6-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/tempfile.py", line 256, in _mkstemp_inner
+    fd = _os.open(file, flags, 0o600)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted: '/Users/musty/.sage/cache/tmprytwcsku'

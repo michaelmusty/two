@@ -1,0 +1,10 @@
+{"stage": "full polynomial products formed", "seconds": 6.124826750019565}
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/308_cm_frame_double_cover_paths.py", line 200, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/308_cm_frame_double_cover_paths.py", line 192, in main
+    make_cache(args.bank)
+  File "/Users/musty/two/dembele/pari/308_cm_frame_double_cover_paths.py", line 96, in make_cache
+    assert maximum < mp.mpf("1e-42"), "convolution differs from independent substitution"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: convolution differs from independent substitution

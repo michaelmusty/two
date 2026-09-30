@@ -1,0 +1,183 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "phase": "inventory",
+  "certificates": {
+    "layouts": [
+      {
+        "P": 3200,
+        "seed": 1600,
+        "uniform_bytes": 222720000,
+        "weighted_bytes": 113343600,
+        "largest_scaled_residual_bytes": 55680000,
+        "terminal_scaled_residual_bytes": 45936,
+        "corrections": 48,
+        "terminal_residual_lower_pi": 3184,
+        "current_four_payload_retention_bytes": 558829536,
+        "prospective_uniform_plus_CM_retention_bytes_per_column": 266240000,
+        "CM_bytes_per_column": 43520000,
+        "inherited_conservative_scratch_slots": {
+          "old_seed_input_at_target_width": 111360000,
+          "seed_extension_chunks": 222720000,
+          "two_complete_checkpoints": 338047200,
+          "new_prepared_weighted_state": 113343600,
+          "prepared_correction": 55680000,
+          "one_active_operator_sweep": 222720000,
+          "assembled_uniform_state": 222720000,
+          "final_full_residual": 222720000,
+          "metadata_allowance": 1048576
+        },
+        "inherited_conservative_scratch_total_bytes": 1510359376,
+        "fits_D129_2GiB_scratch_limit": true
+      },
+      {
+        "P": 6400,
+        "seed": 3200,
+        "uniform_bytes": 890880000,
+        "weighted_bytes": 449407200,
+        "largest_scaled_residual_bytes": 222720000,
+        "terminal_scaled_residual_bytes": 45936,
+        "corrections": 96,
+        "terminal_residual_lower_pi": 6368,
+        "current_four_payload_retention_bytes": 2231213136,
+        "prospective_uniform_plus_CM_retention_bytes_per_column": 1064960000,
+        "CM_bytes_per_column": 174080000,
+        "inherited_conservative_scratch_slots": {
+          "old_seed_input_at_target_width": 445440000,
+          "seed_extension_chunks": 890880000,
+          "two_complete_checkpoints": 1344254400,
+          "new_prepared_weighted_state": 449407200,
+          "prepared_correction": 222720000,
+          "one_active_operator_sweep": 890880000,
+          "assembled_uniform_state": 890880000,
+          "final_full_residual": 890880000,
+          "metadata_allowance": 1048576
+        },
+        "inherited_conservative_scratch_total_bytes": 6026390176,
+        "fits_D129_2GiB_scratch_limit": false
+      },
+      {
+        "P": 10552,
+        "seed": 6400,
+        "uniform_bytes": 2423583360,
+        "weighted_bytes": 1217418840,
+        "largest_scaled_residual_bytes": 375672960,
+        "terminal_scaled_residual_bytes": 45936,
+        "corrections": 125,
+        "terminal_residual_lower_pi": 10525,
+        "current_four_payload_retention_bytes": 6064631496,
+        "prospective_uniform_plus_CM_retention_bytes_per_column": 2897157120,
+        "CM_bytes_per_column": 473573760,
+        "inherited_conservative_scratch_slots": {
+          "old_seed_input_at_target_width": 1469952000,
+          "seed_extension_chunks": 2423583360,
+          "two_complete_checkpoints": 3186183600,
+          "new_prepared_weighted_state": 1217418840,
+          "prepared_correction": 375672960,
+          "one_active_operator_sweep": 2423583360,
+          "assembled_uniform_state": 2423583360,
+          "final_full_residual": 2423583360,
+          "metadata_allowance": 1048576
+        },
+        "inherited_conservative_scratch_total_bytes": 15944609416,
+        "fits_D129_2GiB_scratch_limit": false
+      },
+      {
+        "P": 10552,
+        "seed": 3200,
+        "uniform_bytes": 2423583360,
+        "weighted_bytes": 1217418840,
+        "largest_scaled_residual_bytes": 1176908160,
+        "terminal_scaled_residual_bytes": 45936,
+        "corrections": 222,
+        "terminal_residual_lower_pi": 10526,
+        "current_four_payload_retention_bytes": 6064631496,
+        "prospective_uniform_plus_CM_retention_bytes_per_column": 2897157120,
+        "CM_bytes_per_column": 473573760,
+        "inherited_conservative_scratch_slots": {
+          "old_seed_input_at_target_width": 734976000,
+          "seed_extension_chunks": 2423583360,
+          "two_complete_checkpoints": 4788654000,
+          "new_prepared_weighted_state": 1217418840,
+          "prepared_correction": 1176908160,
+          "one_active_operator_sweep": 2423583360,
+          "assembled_uniform_state": 2423583360,
+          "final_full_residual": 2423583360,
+          "metadata_allowance": 1048576
+        },
+        "inherited_conservative_scratch_total_bytes": 17613339016,
+        "fits_D129_2GiB_scratch_limit": false
+      },
+      {
+        "P": 10552,
+        "seed": 800,
+        "uniform_bytes": 2423583360,
+        "weighted_bytes": 1217418840,
+        "largest_scaled_residual_bytes": 2076941952,
+        "terminal_scaled_residual_bytes": 45936,
+        "corrections": 295,
+        "terminal_residual_lower_pi": 10535,
+        "current_four_payload_retention_bytes": 6064631496,
+        "prospective_uniform_plus_CM_retention_bytes_per_column": 2897157120,
+        "CM_bytes_per_column": 473573760,
+        "inherited_conservative_scratch_slots": {
+          "old_seed_input_at_target_width": 183744000,
+          "seed_extension_chunks": 2423583360,
+          "two_complete_checkpoints": 6588721584,
+          "new_prepared_weighted_state": 1217418840,
+          "prepared_correction": 2076941952,
+          "one_active_operator_sweep": 2423583360,
+          "assembled_uniform_state": 2423583360,
+          "final_full_residual": 2423583360,
+          "metadata_allowance": 1048576
+        },
+        "inherited_conservative_scratch_total_bytes": 19762208392,
+        "fits_D129_2GiB_scratch_limit": false
+      }
+    ],
+    "target_16_column_uniform_plus_CM_bytes": 46354513920,
+    "target_16_column_existing_four_payload_plus_CM_bytes": 104611284096,
+    "target_uniform_alone_exceeds_D129_scratch_limit": true,
+    "compact_final_retention_controlled_separately": true,
+    "integrated_target_scratch_protocol_implemented": false,
+    "new_scratch_limit_or_production_run_authorized_by_this_certificate": false,
+    "all_frozen_old_payloads_preserved": true
+  },
+  "wall_seconds": 0.07333899987861514,
+  "peak_rss_bytes": 33865728,
+  "actual_harmonic_precision_increased": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/470_dyadic_block_kernel_control.py",
+      "sha256": "0e494893f96abd8eec2623419f46c7bbf633102a2c84761c1494f87080bb8517"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/472_dyadic_multiprecision_low_factor.py",
+      "sha256": "ace66e349eaf0554a48e839ebb881e4095f284cdfcbab10ce00964b7503d8283"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/489_dyadic_staged_lift.py",
+      "sha256": "fd2ffcdb9115e6ceeaf98f7f933acdb0db5d0e5c579fcaf899b99ecb70beea45"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "sha256": "86c45479d6866a0120b0daefcf915e2a13f5cbc763ed3bd368437d11fb3b6ec8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/514_dyadic_selective_state_control.py",
+      "sha256": "005f1a2d643b0fed2dabaec600691ee95a9cc23555fc29eda4405236c2840207"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/516_dyadic_factor_and_map_controls.py",
+      "sha256": "350fcbd334b0a5898cd5a1c5ac4db51506666deb9abee352f9c01f085aafe87a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/533_dyadic_target_operation_controls.py",
+      "sha256": "04655a4027764b86362014e1a7f94423f308404da19bb2b39d254932082bfa30"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/536_dyadic_compact_retention_control.py",
+      "sha256": "bf262380ca2099e9c4245fce205f2b957dab721ac785a91d002f115ebb32fcef"
+    }
+  ]
+}

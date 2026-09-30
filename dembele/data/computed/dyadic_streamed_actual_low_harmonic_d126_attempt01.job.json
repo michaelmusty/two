@@ -1,0 +1,36 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/517_dyadic_streamed_actual_low_control.py",
+    "--phase",
+    "harmonic"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 77.02158316620626,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_streamed_actual_low_harmonic_d126_attempt01.log",
+    "sha256": "f08deb83ea93301f1ae2e96068d4c716d373754c0d21d3c3a4f636a9e13061d0"
+  },
+  "private_process_group": 54355,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/517_dyadic_streamed_actual_low_control.py",
+    "sha256": "4745976488bcef26049d4235c44797bc1d9d9b795760aee2e462662e6ef42906"
+  }
+}

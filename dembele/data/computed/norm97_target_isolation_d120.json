@@ -1,0 +1,215 @@
+{
+  "status": "pass",
+  "milestone": "D120",
+  "prime_norm": 97,
+  "input_full_level_p2_squared_trace_multiplicities": [
+    4,
+    4
+  ],
+  "input_level_one_trace_multiplicities": [
+    1,
+    1
+  ],
+  "derived_level_p_new_trace_multiplicities": [
+    0,
+    0
+  ],
+  "derived_level_p2_squared_new_trace_multiplicities": [
+    1,
+    1
+  ],
+  "independent_banked_level_p_new_polynomial_mod2": "t^40",
+  "old_Y16_target_trace_multiplicities": [
+    0,
+    0
+  ],
+  "T31_to_T97_target_factor_indices_one_based": [
+    2,
+    1
+  ],
+  "targets": [
+    {
+      "trace_polynomial_coefficients": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "torsion_polynomial_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "irreducible_factor_coefficients": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "factor_degrees": [
+        8,
+        8
+      ],
+      "factor_root_orders": [
+        51,
+        51
+      ],
+      "differential_target_multiplicity_in_Y64": 1,
+      "torsion_factor_coprime_to_full_Y64_cofactor": true,
+      "kernel_dimension_over_F2_on_JY2": 16,
+      "all_nonzero_target_vectors_have_Frobenius_orbit_length": 51,
+      "nonzero_vector_orbits": 1285
+    },
+    {
+      "trace_polynomial_coefficients": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "torsion_polynomial_coefficients": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "irreducible_factor_coefficients": [
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "factor_degrees": [
+        16
+      ],
+      "factor_root_orders": [
+        257
+      ],
+      "differential_target_multiplicity_in_Y64": 1,
+      "torsion_factor_coprime_to_full_Y64_cofactor": true,
+      "kernel_dimension_over_F2_on_JY2": 16,
+      "all_nonzero_target_vectors_have_Frobenius_orbit_length": 257,
+      "nonzero_vector_orbits": 255
+    }
+  ],
+  "target_torsion_rational_over_residue_extension_degrees": [
+    51,
+    257
+  ],
+  "preferred_T97_factor_index_one_based": 1,
+  "preferred_original_T31_factor_index_one_based": 2,
+  "nonzero_vectors_per_target": 65535,
+  "Frobenius_orbits_for_preferred_target": 1285,
+  "projective_lines_over_F256_per_target": 257,
+  "new_Hecke_computation_performed": false,
+  "full_norm97_Euler_polynomial_computed": false,
+  "Frobenius_kernel_isolation_is_local_not_a_global_Hecke_scalar_action": true,
+  "canonical_Y64_identification_still_required_for_any_candidate": true,
+  "genus64_extension51_torsion_backend_validated": false,
+  "target_field_polynomial_constructed": false,
+  "input_scope": "Uses frozen exact Hecke logs and D51; does not independently regenerate their matrices.",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/460_norm97_target_isolation.py",
+      "sha256": "0046db8d29218435eaae44eccaea65ba23d62a375bc51e0adeea06364127c175"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/levelraise_p2k.out",
+      "sha256": "9c6b6d74fbcfa85f7a79c0c14b13658709e631ceb896857534424c11c63d44bc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/f16_steinberg.out",
+      "sha256": "020f5d9d415afc8c5ab4d974ad5de9198119e7bc0f3fba89928ddb950d2a75c9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/curve_first_frobenius.out",
+      "sha256": "d841daae8777ee73f2e956ce3fc9b5506bb197cd787d2ef783b2d521ed462ba1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/58_levelraise_p2k.m",
+      "sha256": "8615422af1e0b7f569fd1c433c497c69a5e51fd863f1689470b8740a543d5ba0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/60_f16_steinberg.m",
+      "sha256": "eddaafbfbedb968a5d14c34ce8063a42744465384e326351c612bd28990ba5fc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/64_curve_first_frobenius.m",
+      "sha256": "30d9711aa636f4908b12fcf34e7bde7ad20920f9b267b87885ce5317a05acce6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/target-realization.md",
+      "sha256": "93d1a5955ff62f9886fbc0f639ad6b8b1f7551fcd7656b8a3f010c645f0dfac0"
+    }
+  ]
+}

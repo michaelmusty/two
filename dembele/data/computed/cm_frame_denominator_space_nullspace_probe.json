@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/135_cm_frame_denominator_space_reduction.py"
+  ],
+  "status": "timeout",
+  "exit_code": null,
+  "wall_seconds": 300.0109144169837,
+  "timeout_seconds": 300,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_denominator_space_nullspace_probe.out",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/135_cm_frame_denominator_space_nullspace_probe.py",
+      "sha256": "ee1ad9f2a0454c2eaa7fd1696b8d7a7c04521fb03842b9a8f6487e177521ff20"
+    }
+  ],
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d74-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "original_executed_source_path": "/Users/musty/two/dembele/pari/135_cm_frame_denominator_space_reduction.py",
+  "phase": "generic right kernel of a 108-by-136 rational spanning matrix; stopped before integer lattice reduction"
+}

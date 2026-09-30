@@ -1,0 +1,43 @@
+// D82: verify the idempotent certificate and the corrected class directly.
+SetQuitOnError(true); SetColumns(0); SetSeed(82212); started:=Cputime();
+load "dembele/magma/199_cm_frame_cubic_precision_model.m";
+g:=RMultiply(RBaseRow(formal_g_coefficients),RG2);
+h:=RMultiply(RBaseRow(formal_h_coefficients),RG1);
+B:=RRows(RG3,formal_quotient_basis_indices);
+assert #formal_quotient_basis_indices eq 240 and #Seqset(formal_quotient_basis_indices) eq 240;
+K3:=RJoin(B,RScaleRows(RG1,g));
+K4:=RJoin(RScaleRows(B,h),RScaleRows(RG2,g));
+h3:=RScaleRows(RScaleRows(h,h),h);
+K6:=RJoin(RScaleRows(B,h3),RScaleRows(RG4,g));
+assert [Rank(RReduce(M)):M in [*K3,K4,K6*]] eq [321,441,681];
+one:=RCols(RCoordinates(K3,h3),[1..240]);
+e:=RBaseRow(formal_idempotent_coefficients);
+// Computing a full multiplication matrix independently checks every basis product.
+eProducts:=RScaleRows(B,RMultiply(e,B));
+eCoords:=RCoordinates(K6,eProducts); Me:=RCols(eCoords,[1..240]);
+assert RMultiply(Me,Me) eq Me and RMultiply(one,Me) eq e;
+assert Me[2] eq 0 and Rank(RReduce(Me)) eq 120;
+Md:=RSubtract(RId(240),Me);
+assert RMultiply(Md,Md) eq Md and Rank(RReduce(Md)) eq 120;
+fcoords:=RCols(RCoordinates(K3,RScaleRows(RG2,h)),[1..240]);
+conditions:=RMultiply(fcoords,Md);
+C:=RBase(Matrix(ZZ,formal_divisor_coordinates));
+assert C eq RNormalize(C) and Nrows(C[1]) eq 81;
+assert RIsZero(RMultiply(C,conditions));
+assert C eq RNormalize(RKernelRelaxed(conditions));
+assert [[x mod previous_cubic_modulus:x in row]:row in BaseCoefficients(C)] eq previous_cubic_descended_divisor_coordinates;
+print "PASS|INDEPENDENT_IDEMPOTENT_DIVISOR_LIFT";
+candidate:=RMultiply(RDecode(precision_third_coordinates),RV2);
+delta:=RChord(RNegClass(RWP,RV2),RWM,RV1,RV2,RV3);
+assert REqual(delta,RMultiply(RDecode(precision_third_delta_coordinates),RV2),RV2);
+minusA:=RNegClass(candidate,RV2);
+triple:=RChord(RChord(candidate,candidate,RV1,RV2,RV3),minusA,RV1,RV2,RV3);
+assert REqual(triple,RNegClass(delta,RV2),RV2);
+assert REqual(candidate,RFrob(candidate,makdisi_evaluation_frobenius),RV2);
+assert REqual(minusA,RTau(candidate,makdisi_evaluation_involution),RV2);
+if comparison_available then
+    assert REqual(candidate,RMultiply(RDecode(comparison_third_coordinates),RV2),RV2);
+    print "PASS|FORMAL_AND_GLOBAL_SCALAR_CLASSES_AGREE";
+end if;
+printf "CPU_SECONDS|%o\n",Cputime(started);
+print "PASS|212_CM_FRAME_CUBIC_FORMAL_CHECK";quit;

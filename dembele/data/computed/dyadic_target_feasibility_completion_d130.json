@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "completion_kind": "Feasibility controls and specification; no actual precision increase",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_target_feasibility_review_d130.json",
+    "sha256": "c004a70398cfe39511752f3706e73f66d569a5be7601eb260b3ff4411a6c1f5b"
+  },
+  "fixed_review_source_count": 16142,
+  "inherited_D129_hash_count": 15600,
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_feasibility_review_d130_attempt01.job.json",
+      "sha256": "45a614ff7e3ddfca5e656531e4b21357afa4d96d89e463c6b06517583b70f1b7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_feasibility_review_d130_recheck01.job.json",
+      "sha256": "eb90d6c5dfb0c5300ee6cad9baf9b0a8f79102234bff40a96cf2ce178aafe459"
+    }
+  ],
+  "passing_input_jobs": 137,
+  "passing_review_jobs": 2,
+  "retained_resolved_failed_input_attempts": 1,
+  "total_passing_jobs": 139,
+  "all_batch_coordinators_completed": true,
+  "running_mathematical_workers": 0,
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "README.md",
+    "CLAUDE.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "documentation_updates_pending": false,
+  "next_unused_source": 541,
+  "next_task": "Implement weighted-only fixed-point/CM replay against D129, then a row-journal generation protocol with exact storage inventory and interruption/corruption controls.",
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 3200,
+    "1": 1600
+  },
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_target_run_admitted": false,
+  "unchanged_limits": {
+    "maximum_mathematical_workers": 3,
+    "private_process_group_timeout_seconds": 180,
+    "scratch_bytes": 2147483648,
+    "BLAS_threads": 1
+  },
+  "frozen_report_sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-target-feasibility-d130.md",
+      "sha256": "96640e551d856014764f80575a44e90116eee36b372e6735544556c09d5c14d5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/arithmetic-construction-d130.md",
+      "sha256": "1754714ba1111cb1023e09813d4fa97aead6c0014f08b6becf9e7f23b0e7e154"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_feasibility_sources_d130.json",
+      "sha256": "b5e75477abbcf4dcb4a41860e7c25efdc2b35fea5e13b5f9d2f17507eef6ef76"
+    }
+  ]
+}

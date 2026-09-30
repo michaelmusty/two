@@ -1,0 +1,115 @@
+{
+  "milestone": "D122",
+  "date": "2026-09-27",
+  "checkpoint_kind": "progress handoff; independent mathematical review pending",
+  "report": "dembele/certificates/dyadic-precision400-progress-d122.md",
+  "provenance_checkpoint_driver": "dembele/pari/485_dyadic_precision400_checkpoint.py",
+  "prior_review": "dembele/data/computed/dyadic_schur_review_d121.json",
+  "D121_source_hashes_to_preserve": 1079,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_arbitrary_integer_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Source 476 uses fmpz_mod_poly_mullow for fifteen scalar polynomial products, followed by the integer Newton interpolation used in D121.",
+      "access": "Installed public polynomial header inspected and hashed with the library in source 477. The linked fmpz documentation attribution is inherited from D121; no new polynomial web documentation is claimed to have been read."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 manual, Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited D120/D121 carry-free polynomial products and binary import/export. The older GMP polynomial backend checks final original residuals independently of the compiled polynomial multiplication used during the new lifts."
+    }
+  ],
+  "inherited_inputs": [
+    "D121 integral Schur gain r+1, sparse low factor, refined actual transport parameters, interpolation controls and audited P=400 column 0.",
+    "D112 certified CM root labels and fixed trace-centered rational residue basis.",
+    "D115 full P=200 state/CM bank and exact harmonic masses.",
+    "D116 four-coefficient quadratic-section interface and D118 arithmetic height budget.",
+    "D120 conditional sufficient P=10552 target and norm-97 cofactor separation."
+  ],
+  "completed_computations": [
+    "476--477 compile and control the FLINT polynomial kernel against GMP, synthetic transports and five actual P=400 original state equations.",
+    "478 completes columns 1--15 by capped seed, seven correction and final verification phases; final full residuals use the older GMP polynomial backend.",
+    "479 completes all seventeen CM charts and four coarse coefficients for columns 1--15; column 0 remains the audited D121 input.",
+    "480 controls arbitrary-integer beta arithmetic and valuation balls.",
+    "481 refines all seventeen algebraic CM roots on their original certified Hensel branches and exports eta with beta-error 21168.",
+    "482 consolidates all sixteen actual P=400 columns and all 1088 coarse values."
+  ],
+  "finite_verification": {
+    "completed_sources": "476--482",
+    "input_job_attempts": 155,
+    "input_jobs_passed": 155,
+    "input_jobs_failed": 0,
+    "sum_recorded_job_seconds": 3586.9085620001424,
+    "maximum_recorded_job_seconds": 62.70327758300118,
+    "sum_is_elapsed_wall_time": false,
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "persistent_wrapper": "dembele/pari/run_dyadic_capped.py",
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "BLAS_threads": 1,
+    "independent_mathematical_review_complete": false,
+    "source_485_scope": "Preserve every D121 hash, validate completed D122 receipts and embedded source hashes, and bind a fixed completion inventory; not an independent mathematical audit."
+  },
+  "actual_bank": {
+    "artifact": "dembele/data/computed/dyadic_precision400_d122.json",
+    "harmonic_columns": 16,
+    "working_precision_pi": 400,
+    "all_state_moment_cutoff": 399,
+    "CM_chart_moment_cutoff": 799,
+    "only_nine_required_CM_target_states_extended_through": 1198,
+    "complete_original_residual_scalar_checks": 8908800,
+    "CM_moment_scalar_coefficients": 1740800,
+    "coarse_values": 1088,
+    "coarse_error_beta": [832, 848, 832, 864],
+    "coarse_arithmetic_precision_beta": 864,
+    "algebraic_CM_frame_error_beta": 21168
+  },
+  "synthetic_target_transport": {
+    "working_precision_pi": 10552,
+    "prepare_seconds": 1.9009268751833588,
+    "apply_seconds": 23.57414145907387,
+    "assessment": "Modest improvement; this does not establish the cost or feasibility of a complete target-size solve."
+  },
+  "unrun_drafts": [
+    "dembele/pari/483_dyadic_precision400_residue_frame.py",
+    "dembele/pari/484_dyadic_precision400_quadrics.py"
+  ],
+  "draft_scope_constraints": [
+    "483 clamps imported eta error to its beta working precision 1024; do not overstate a reduced center's precision.",
+    "484 checks each integer coefficient's valuation is below the working precision before using the integer-scaling shortcut.",
+    "483 reports the Gaussian without inverting W's unresolved value; 484 records certified mismatches instead of assuming agreement."
+  ],
+  "next_bounded_tasks": [
+    "Run 483 through the persistent capped wrapper with a fresh receipt stem; inspect its successful receipt and output before running 484.",
+    "Run 484 through the same wrapper, evaluate the actual quadric verdict and updated anchor-dependent height thresholds.",
+    "Implement independent D122 mathematical review in a new source (486 is next unused), preserving D121 and completed D122 provenance.",
+    "Reassess further moment precision only after the quadric comparison and independent review."
+  ],
+  "limitations": {
+    "P400_residue_frame_computed": false,
+    "P400_quadric_verdict_computed": false,
+    "last_accepted_section_bounds_source": "D118",
+    "last_accepted_full_bank_section_lower_bounds": [3794, 3745, 3728],
+    "last_accepted_anchor_lower_bounds": [3576, 3248, 2984],
+    "last_accepted_sufficient_nonanchor_bounds": [25330, 25444, 25551],
+    "higher_intrinsic_jets_require_preceding_exact_zeros": true,
+    "large_target_precision_solver_ready": false,
+    "positive_quadric_jet_exact_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "new_Hecke_computation_performed": false,
+    "correspondence_sent": false
+  },
+  "resume_state": {
+    "all_batch_workers_finished": true,
+    "jobs_running": false,
+    "pause_flag_present": false,
+    "new_approval_required_for_recorded_next_tasks": false,
+    "successful_sources_and_outputs_frozen": true,
+    "draft_sources_483_484_frozen": false,
+    "resource_pauses_and_downstream_requirements_preserved": true
+  }
+}

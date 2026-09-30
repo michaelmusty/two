@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 89.3843265241012,
+  "timeout_seconds": 1800,
+  "memory_limit_bytes": 8000000000,
+  "maximum_resident_bytes": 1184993280,
+  "timeout_terminates_process_group": true,
+  "private_process_group": 486528,
+  "input_hashes_verified": true,
+  "output_bytes": 832,
+  "output_sha256": "a7e7da2d91ee845cfd06adcc77532076dc66cc7be7b61687ed556edb9c914f8a",
+  "command": [
+    "/usr/local/bin/magma",
+    "-bn",
+    "-l",
+    "8000000000",
+    "dembele/data/computed/cm_frame_cubic_pointed_128_newton_symmetries_check_run.m"
+  ]
+}

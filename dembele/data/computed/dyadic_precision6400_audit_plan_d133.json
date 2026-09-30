@@ -1,0 +1,309 @@
+{
+  "status": "pass",
+  "milestone": "D133",
+  "kind": "bounded_job_plan",
+  "requires_completed_and_sealed_actual_column": true,
+  "maximum_workers": 3,
+  "jobs": [
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_states_e000_028_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "0",
+        "--last",
+        "28"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_states_e029_057_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "29",
+        "--last",
+        "57"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_states_e058_086_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "58",
+        "--last",
+        "86"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_states_e087_115_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "87",
+        "--last",
+        "115"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_states_e116_144_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "116",
+        "--last",
+        "144"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_states_e145_173_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "145",
+        "--last",
+        "173"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_ordinary_state_e000_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-state",
+        "--state",
+        "0"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_ordinary_state_e083_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-state",
+        "--state",
+        "83"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_ordinary_state_e173_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-state",
+        "--state",
+        "173"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_cm_c00_02_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "0",
+        "--last",
+        "2"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_cm_c03_05_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "3",
+        "--last",
+        "5"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_cm_c06_08_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "6",
+        "--last",
+        "8"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_cm_c09_11_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "9",
+        "--last",
+        "11"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_cm_c12_14_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "12",
+        "--last",
+        "14"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_cm_c15_16_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "15",
+        "--last",
+        "16"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_ordinary_cm_c00_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-cm",
+        "--chart",
+        "0"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_ordinary_cm_c08_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-cm",
+        "--chart",
+        "8"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_ordinary_cm_c16_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-cm",
+        "--chart",
+        "16"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_horner_c00_o0_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "0",
+        "--order",
+        "0"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_horner_c00_o3_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "0",
+        "--order",
+        "3"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_horner_c08_o0_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "8",
+        "--order",
+        "0"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_horner_c08_o3_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "8",
+        "--order",
+        "3"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_horner_c16_o0_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "16",
+        "--order",
+        "0"
+      ]
+    },
+    {
+      "driver": "dembele/pari/556_dyadic_precision6400_independent.py",
+      "stem": "dyadic_precision6400_horner_c16_o3_d133",
+      "marker": "PASS|556_DYADIC_PRECISION6400_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "16",
+        "--order",
+        "3"
+      ]
+    }
+  ]
+}

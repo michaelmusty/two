@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "milestone": "D85",
+  "precision_digits": 128,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/295_cm_frame_block_arithmetic_check.py",
+      "sha256": "930e523c6d06ae67ea25d23e74c5ec62a8fd70aa559d41f7b9300b61c285e212"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_block_arithmetic_check_v2_job.json",
+      "sha256": "02078dab377f20b7f9090d8a8b7163a867fee29b2b49cac8c762d6f95877cb00"
+    }
+  ],
+  "matrix_sizes": [
+    1,
+    4,
+    9,
+    16,
+    32
+  ],
+  "native_inverse_equality_verified": true,
+  "native_pointwise_scaling_verified": true,
+  "native_block_product_verified": true,
+  "highest_digit_inverse_corruption_rejected": true
+}

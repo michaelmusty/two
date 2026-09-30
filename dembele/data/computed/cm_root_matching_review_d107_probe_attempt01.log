@@ -1,0 +1,200 @@
+{
+  "real_structure": {
+    "integer_normalizer_matrix_replayed": true,
+    "positive_unit_and_inverse_integral": true,
+    "point_fixing_negative_normalizer_anticommutes_with_beta": true,
+    "split_b_root_uniquely_certified": true,
+    "all_F_roots_in_minus2_plus2": true,
+    "Rickards_lower_left_strictly_negative": true,
+    "real_reference_point_index": 8,
+    "CM_beta_imaginary_sign": -1,
+    "conjugation_point_permutation": [
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0,
+      8,
+      16,
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9
+    ],
+    "class_zero_reference_proved_without_numeric_function_values": true
+  },
+  "complex_root_and_norm_certificate": {
+    "root_disks_certified": 17,
+    "CM_beta_disk_certified": true,
+    "disk_radius_decimal_exponent": 1080,
+    "linear_Rouche_term_exceeds_twice_remainder": true,
+    "all_root_disks_disjoint": true,
+    "saved_root_centers_match_within_10_minus70": true,
+    "unique_real_root_index": 2,
+    "resolvent_difference_absolute_bound": "10^-1000",
+    "all_conjugate_difference_bound_without_resolvent_root_bound": 275090,
+    "two_conjugate_embeddings_norm_bound_strictly_below_one": true,
+    "one_embedding_D105_resolvent_norm_bound_also_passes": true,
+    "algebraic_resolvent_equality_via_integral_norm_proof": true,
+    "wrong_beta_sign_rejected": true,
+    "inverse_cycle_rejected": true,
+    "certified_cycle_proposal_zero_based": [
+      15,
+      14,
+      4,
+      2,
+      7,
+      16,
+      9,
+      12,
+      3,
+      11,
+      5,
+      8,
+      10,
+      0,
+      13,
+      6,
+      1
+    ],
+    "cycle_starting_at_real_root": [
+      2,
+      4,
+      7,
+      12,
+      10,
+      5,
+      16,
+      1,
+      14,
+      13,
+      0,
+      15,
+      6,
+      9,
+      11,
+      8,
+      3
+    ]
+  },
+  "root_cycle_and_local_comparison": {
+    "ordered_pair_cubic_monomials": 272,
+    "rank_mod31": 271,
+    "only_rational_relation_via_reduction_and_Newton_identity": "sum_{i!=j} r_i^2*r_j=0",
+    "directed_cycle_sums_distinct_via_companion_proof": true,
+    "independent_padic_lift_precision": 8,
+    "padic_kappa_residue": "235040037749",
+    "padic_kappa_is_scalar": true,
+    "matches_D59_padic_kappa": true,
+    "CM_beta_roots_with_resolvent_values_mod31_power": [
+      [
+        "3",
+        "426620649581",
+        "852716091889"
+      ],
+      [
+        "5",
+        "26292899834",
+        "556715854432"
+      ],
+      [
+        "7",
+        "530836833365",
+        "244687265205"
+      ],
+      [
+        "8",
+        "840053972603",
+        "191299378744"
+      ],
+      [
+        "9",
+        "151383573024",
+        "701998476622"
+      ],
+      [
+        "10",
+        "609161833981",
+        "668626131649"
+      ],
+      [
+        "12",
+        "772946450272",
+        "280511361443"
+      ],
+      [
+        "15",
+        "351072502376",
+        "664832366589"
+      ],
+      [
+        "16",
+        "501818535065",
+        "564243032289"
+      ],
+      [
+        "19",
+        "79944587169",
+        "235040037749"
+      ],
+      [
+        "21",
+        "243729203460",
+        "778701511106"
+      ],
+      [
+        "22",
+        "701507464417",
+        "88273427122"
+      ],
+      [
+        "23",
+        "12837064838",
+        "791584549123"
+      ],
+      [
+        "24",
+        "322054204076",
+        "71826315408"
+      ],
+      [
+        "26",
+        "826598137607",
+        "801880306021"
+      ],
+      [
+        "28",
+        "426270387860",
+        "183083231578"
+      ]
+    ],
+    "unique_matching_beta_mod31": 19,
+    "prime_ideal_class_in_saved_generator": 3
+  },
+  "point_to_root_index_zero_based": [
+    13,
+    10,
+    15,
+    3,
+    4,
+    16,
+    9,
+    14,
+    2,
+    1,
+    8,
+    5,
+    11,
+    12,
+    6,
+    7,
+    0
+  ]
+}
+PASS|D107_CM_ROOT_MATCHING_PROBE

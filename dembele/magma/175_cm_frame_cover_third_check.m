@@ -1,0 +1,28 @@
+// D78: check the saved third without the proposed order or scalar chain.
+SetQuitOnError(true); SetColumns(0); SetSeed(782);
+started:=Cputime();
+load "dembele/magma/170_cm_frame_cover_class_arithmetic.m";
+load "dembele/data/computed/cm_frame_cover_third_check_input.m";
+D:=ChordClass(NegClass(WP),WM);
+savedD:=Dec(third_check_delta_rows,k);
+assert EqualClass(D,savedD);
+assert not ZeroClass(D);
+candidate:=Dec(third_check_candidate_rows,k);
+minusA:=NegClass(candidate);
+twiceA:=ChordClass(minusA,minusA);
+threeA:=AddClass(twiceA,candidate);
+assert EqualClass(threeA,NegClass(D));
+residual:=AddClass(threeA,D);
+ok,h:=ZeroClass(residual); assert ok;
+assert h ne 0;
+assert RowSpace(ScaleRows(V1,h)) subset RowSpace(residual);
+assert Rank(ScaleRows(V1,h)) eq 81;
+assert EqualClass(FrobeniusClass(candidate),candidate);
+assert EqualClass(DeckClass(candidate),minusA);
+print "PASS|SAVED_THIRD_RELATION_WITHOUT_ORDER_ASSUMPTION";
+print "THREE_DIVISION_VERIFIED|true";
+print "THIRD_FROBENIUS_FIXED|true";
+print "THIRD_ANTIINVARIANT|true";
+printf "CPU_SECONDS|%o\n",Cputime(started);
+print "PASS|175_CM_FRAME_COVER_THIRD_CHECK";
+quit;

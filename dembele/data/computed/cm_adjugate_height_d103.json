@@ -1,0 +1,167 @@
+{
+  "status": "pass",
+  "milestone": "D103",
+  "frame_controls": {
+    "ranks": [
+      {
+        "g": 2,
+        "deleted_rows": [
+          2,
+          0
+        ],
+        "integral_adjugate": true,
+        "full_trace_zero_system_checked": true,
+        "common_determinant_cancels_in_Gaussian_ratios": true,
+        "rank_only_negative_control_rejected": true
+      },
+      {
+        "g": 3,
+        "deleted_rows": [
+          3,
+          0
+        ],
+        "integral_adjugate": true,
+        "full_trace_zero_system_checked": true,
+        "common_determinant_cancels_in_Gaussian_ratios": true,
+        "rank_only_negative_control_rejected": true
+      },
+      {
+        "g": 16,
+        "deleted_rows": [
+          16,
+          0
+        ],
+        "integral_adjugate": true,
+        "full_trace_zero_system_checked": true,
+        "common_determinant_cancels_in_Gaussian_ratios": true,
+        "rank_only_negative_control_rejected": true
+      }
+    ],
+    "growing_index_controls": [
+      {
+        "n": 1,
+        "inverse_denominator": 5,
+        "adjugate_integral": true
+      },
+      {
+        "n": 2,
+        "inverse_denominator": 25,
+        "adjugate_integral": true
+      },
+      {
+        "n": 4,
+        "inverse_denominator": 625,
+        "adjugate_integral": true
+      },
+      {
+        "n": 8,
+        "inverse_denominator": 390625,
+        "adjugate_integral": true
+      },
+      {
+        "n": 16,
+        "inverse_denominator": 152587890625,
+        "adjugate_integral": true
+      }
+    ],
+    "controls_are_not_actual_Shimura_evaluation_matrices": true
+  },
+  "nodal_Gaussian_controls": {
+    "node_relation_annihilated": true,
+    "Gaussian_gluing_identity_over_Z": true,
+    "no_inversion_of_2_or_residue_characteristic": true,
+    "nonzero_characteristic_two_control": true
+  },
+  "field_vector_bound": {
+    "root_radius": 4,
+    "Rouche_left": 9482730572,
+    "Rouche_right": 17179869184,
+    "integral_vectors": "V_ij=sigma_i(17*eta_j)",
+    "basis_integrality_bound_to_D102": true,
+    "row_bounds": [
+      "70",
+      "208901298648823269574993630/11563101439788991",
+      "215840924106374594296426438/11563101439788991",
+      "147787312882224863703105534/11563101439788991",
+      "100577910871824637477265934/11563101439788991",
+      "103577366876862955106957952/11563101439788991",
+      "46642019993052643228648820/11563101439788991",
+      "27147839237031045850744980/11563101439788991",
+      "79719590198054156475646678/11563101439788991",
+      "136776233300303135983366774/11563101439788991",
+      "52247780945438747868198052/11563101439788991",
+      "21856590407298616451667778/11563101439788991",
+      "165185214797063846270434060/11563101439788991",
+      "67907876985724763322219390/11563101439788991",
+      "89912292671749734460793638/11563101439788991",
+      "89009196771801225824556962/11563101439788991"
+    ],
+    "maximum_bound": "215840924106374594296426438/11563101439788991",
+    "maximum_bound_ceiling": 18666352210,
+    "uniform_bound": 34359738368,
+    "power_of_two_exponent": 35,
+    "actual_arithmetic_CM_label_is_still_a_hypothesis": true
+  },
+  "constants": {
+    "F_degree": 8,
+    "g": 16,
+    "norm_pi": 2,
+    "noncentral_CM_projection_norm_lower_bound": "1/65536",
+    "disk_radius": "1/1024",
+    "sinh_hyperbolic_radius": "2048/1048575",
+    "required_sinh_upper_bound": "1/256",
+    "strict_disjointness_verified": true,
+    "evaluation_operator_bound": 1048576,
+    "Gaussian_operator_bound": 1152921504606846976,
+    "T_height": "255*H_CM_disk - 16*h_Fal(C)",
+    "before_Faltings_lower_bound": "513*H_CM_disk - 32*h_Fal(C) + 10342*log(2)",
+    "Faltings_lower_bound": "h_Fal(C) >= -16*log(2*pi)",
+    "constant_upper_log2_coefficient": 11878,
+    "exp_0_7_positive_Taylor_lower_bound": "24162857/12000000",
+    "constant_rational_upper_bound": "41573/5",
+    "final_height_coefficient": 513,
+    "final_additive_constant": 8400
+  },
+  "theorem": "h(v_j) <= 513*H_CM_disk + 8400, under the stated arithmetic frame and chart hypotheses",
+  "remaining_hypotheses": [
+    "Arithmetic identification and labels of the degree-17 CM residue field",
+    "All 17 signed canonical evaluation minors nonzero",
+    "Chosen Gaussian denominator at the actual CM point nonzero"
+  ],
+  "remaining_numeric_input": "Upper bound on the stable coarse-canonical CM fibre height in disk metric",
+  "separate_residue_index_bound_needed_for_this_height_inequality": false,
+  "evaluation_minor_lower_bound_needed_for_this_height_inequality": false,
+  "H_CM_disk_numerically_bounded": false,
+  "independent_Shimura_tangent_obtained": false,
+  "spectral_pilot_gate_passed": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/380_cm_adjugate_height.py",
+      "sha256": "2a32027c8b1c1a5db09ea4d0b15c9110135231eaf653dffeac953e556204a544"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_audit.json",
+      "sha256": "03968cdf38f3b8ab5a0acfcf6bdd2a672908b8b7d17260dfcb501168dbcce281"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_field_recognition.json",
+      "sha256": "b9585a6b40f6c21f4ffadd62caad290cd731cf2f432c54d1f61790d85c6e0ce8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102.json",
+      "sha256": "5191728d51fbdaa909740824ee45b84ef27ce151b9ae581c2d9d00329a6704fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-totally-real-kernel-d90.md",
+      "sha256": "48f3e72c10e607eb55ce20eef2a0cbe57e50c6ae26fb8e6aa86381b735abd341"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-norm-one-control-d92.md",
+      "sha256": "926cb80afdc0ea5d16673ab0b7e8f2e5e1ee02ec29634093bab8c4fd558c1fa8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/marked-descent.md",
+      "sha256": "131944c1260cfe7a15026534c024f5ab900c549d8ea3ffd6a73521a98ad96463"
+    }
+  ]
+}

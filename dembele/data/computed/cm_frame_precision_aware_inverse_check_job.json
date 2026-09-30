@@ -1,0 +1,50 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_precision_aware_inverse_check_run.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.34973820799496025,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_precision_aware_inverse_check.out",
+    "sha256": "cae853b10a03c136145b1937b96a4204237f7e80245d7c078f4254386eda1a97"
+  },
+  "private_process_group": 19937,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_precision_aware_inverse_check_run.m",
+      "sha256": "0b0c2ff82c0b1a41a3f9ea149b82dbfc829f1eb9d9c393c2ea2542e3aa93413c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/d85_precision128_driver_b0c0f60842341ff5.py",
+      "sha256": "b0c0f60842341ff58b02d788897f36b5c09d82a4e550f0afb3b053802ca94431"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/283_cm_frame_precision_aware_arithmetic.m",
+      "sha256": "aa8b7eb170a311589f8c0850de37fe78730c4b3157cf7a29c40c82381d3b0a38"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/284_cm_frame_precision_inverse_check.m",
+      "sha256": "53b1234a2bcd3a48f19b38dbed6f99985b41e3baddfac0caa116e60b12e2c4b4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/284_cm_frame_precision_inverse_check.py",
+      "sha256": "7026ceb8c3ac3a53cfc67530aa1f5c57ee08eeb749d63ca2d45a96f08db2a7a7"
+    }
+  ],
+  "memory_limit_bytes": 2000000000
+}

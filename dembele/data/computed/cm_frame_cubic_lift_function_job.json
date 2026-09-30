@@ -1,0 +1,56 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/191_cm_frame_cubic_lift_function.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 24.635096000041813,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_function.out",
+    "sha256": "a8a129cb91c87bad105fe4d89e0c1912af71fb3626eb9e5ee8ffb9bb6cf65811"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/192_cm_frame_cubic_lift_data.py",
+      "sha256": "bb35824a4b0040eaa66f0d1cbaf495f323abd8e0d2afdd78a729706e86379fb7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/191_cm_frame_cubic_lift_function.m",
+      "sha256": "b6203238e89284017e553edaaa820b3af2788c28c5c8f5b4abb26a9f0c2291b2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_third.json",
+      "sha256": "4ad1ef53e335f9826329e733d3e4879defb1155d01b39811affb7f1d894f783f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_lift_sections.json",
+      "sha256": "bc6afe3e13f657d9232930ed5f69489a7eb1333424231721a33d0e7075eeee4d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_check.json",
+      "sha256": "d6178b6a2e9f42a97a62c851a92bbb9d40420c1d700bafd944e3dadd45f71cf7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/170_cm_frame_cover_class_arithmetic.m",
+      "sha256": "31beb7f80b175fe838874adb345c92f6c4e2b9db62fb8c2ce1bceaed09a53ba5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/186_cm_frame_cubic_lift_arithmetic.m",
+      "sha256": "86fabe1c35c3759512439c01b3d57616cff1bf18926d0b6e1505cc3588828320"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/187_cm_frame_cubic_lift_model.m",
+      "sha256": "68b8018fdac5c5ab37c95154c9528b8447512aa8e9874722c8ffca74459419c7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ]
+}

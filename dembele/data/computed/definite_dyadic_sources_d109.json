@@ -1,0 +1,59 @@
+{
+  "milestone": "D109",
+  "review_date": "2026-09-25",
+  "scope": "Exact definite order, certified integral dyadic splitting, and one norm-one unit transporting adjacent edges while fixing the base vertex.",
+  "sources": [
+    {
+      "title": "Magma Handbook, Hilbert Symbols and Embeddings",
+      "url": "https://magma.maths.usyd.edu.au/magma/handbook/text/1074",
+      "locations": ["pMatrixRing(O,p)", "Precision parameter"],
+      "use": "Propose a local integral splitting for a p-maximal order in an algebra split at p. Ramification of F_p over Q_2 is allowed. Independent Hensel and lattice checks certify the final embedding rather than trusting finite-precision equalities."
+    },
+    {
+      "title": "Marc Masdeu and Eloi Torrents, Fundamental domains for quaternionic S-arithmetic groups over totally real fields",
+      "url": "https://arxiv.org/pdf/2510.09356",
+      "locations": ["Section 2.1", "Section 2.2", "Section 3"],
+      "use": "Norm-one S-arithmetic group, integral splitting, column-lattice tree action and exact arithmetic equivalence witnesses. No execution or performance claim for the full fundamental-domain algorithm."
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/hackobj.m",
+      "locations": ["quaternion_algebra", "QuaternionOrder(M)"],
+      "use": "The actual level-one definite HMF construction chooses (-1,-1)_F and a maximal order. Read only."
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/precompute.m",
+      "locations": ["Subideals_of_order", "get_rids", "get_tps_for_rids"],
+      "use": "Existing pMatrixRing usage and ideal/transport interface inspected. No new ideal-class enumeration requested."
+    },
+    {
+      "path": "/Users/musty/hilbertmodularforms/ModFrmHil/definite.m",
+      "locations": ["InternalHMFRawDataDefinite", "InternalHMFRawStabOrdersDefinite"],
+      "use": "Interface scope: the level-one SplittingMap is not used as the desired dyadic splitting. Stabilizer-order output is not a matrix or a transporter."
+    },
+    {
+      "path": "dembele/magma/371_hyperellipticity_fresh_brandt.m",
+      "use": "D99 field, seed, definite order construction and saved 58-class Brandt data. No claim to identify an exported ideal-class ordering from the local order alone."
+    },
+    {
+      "path": "dembele/certificates/shimura-evaluator-d108.md",
+      "use": "Prior feasibility gate and conditional moment-to-jet evaluator; all 606 bound sources preserved."
+    }
+  ],
+  "project_deductions": [
+    "Exact closure of the 32-dimensional integer lattice and trace discriminant 2^124 certify the order.",
+    "The rational Hensel residual has valuation 188 and derivative valuation 8, specifying an exact root with error valuation 180.",
+    "Quaternion identities, order-image errors of at least 176, and residue rank four prove the integral local splitting.",
+    "The exact norm-one unit (1-i-j-k)/2 reduces to [1,1;1,0] and induces neighbor permutation [2,0,1].",
+    "An integral lattice transition with determinant one proves the edge transport; wrong-root and wrong-target controls are rejected."
+  ],
+  "excluded_inferences": [
+    "No full arithmetic group or Shimura normalizer quotient has been constructed.",
+    "No full tree fundamental domain, cross-vertex side-pairing, new class census or Hecke bank.",
+    "No invariant harmonic cocycle, actual moments, dyadic CM/frame matching or Shimura tangent/jet.",
+    "No candidate identification or target field polynomial."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

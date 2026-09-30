@@ -1,0 +1,31 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/357_nelson_kernel_review_audit.py",
+    "--check"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 1.1837588750058785,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_review_recheck_d94_attempt01.log",
+    "sha256": "f55255b53183a0018a429237b1a86f0d52a75d28b8b2554e4d1c54433bfd46f1"
+  },
+  "private_process_group": 60259,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/357_nelson_kernel_review_audit.py",
+      "sha256": "ad18d4fb10423a2c8f065f91d1f61196865e2147eba87ba9d9f7d7aceb2bbdf5"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "status": "pass",
+  "script_source": {
+    "path": "/Users/musty/two/dembele/pari/116_cm_frame_curve_check.py",
+    "sha256": "14057a8b1892fb569c2399c4217663f040903b0d855402d248d99ad584237ed5"
+  },
+  "helper_source": {
+    "path": "/Users/musty/two/dembele/pari/114_cm_projective_frame.py",
+    "sha256": "faad30e90b588d9b88b0c6893aa653468d35ed313628d350368b8205d9f0beca"
+  },
+  "nonsplit_exact_control": {
+    "curve": "y^2=x^5-x^2-x",
+    "divisor": "(x^3-x-1,y-1)",
+    "residue_field_degree": 3,
+    "exact_residue_identity": true,
+    "projective_change_defined_over_Q": true,
+    "projective_change": [
+      [
+        "1",
+        "2/9"
+      ],
+      [
+        "2/3",
+        "1"
+      ]
+    ]
+  },
+  "candidate": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+    "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+  },
+  "magma_model": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+    "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+  },
+  "magma_job": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_basic.m",
+    "sha256": "30bcc5cb279ca3f71e69d94000c37b4669d36efc1e00988ac667d7116a417609"
+  },
+  "magma_log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_basic.out",
+    "sha256": "bf5a28eed974452876a7f12dd30c4eeb3b8d27cbbaa685cae44267bff6f2313b"
+  },
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/data/computed/cm_frame_curve_basic.m"
+  ],
+  "timeout_seconds": 180,
+  "quadric_rank": 91,
+  "maximum_absolute_coefficient": 1514,
+  "rational_point_search": {
+    "height_cap": 1000000000000,
+    "lattice_scales": [
+      100000000000000,
+      10000000000000000,
+      1000000000000000000,
+      100000000000000000000
+    ],
+    "distinct_LLL_vectors_examined": 64,
+    "accepted_directions": [],
+    "best_interval_fit_regardless_of_height": {
+      "height": 3310032844768591087,
+      "maximum_interval_residual": "0.0000003724984216483286838867874",
+      "lattice_scale": 100000000000000000000
+    },
+    "status": "bounded LLL search, not exhaustive height exclusion; intervals are empirical"
+  },
+  "exact_rational_points_found": [],
+  "smoothness_certified_by_this_script": false,
+  "Shimura_identification_certified": false,
+  "wall_seconds": 5.412755959085189
+}

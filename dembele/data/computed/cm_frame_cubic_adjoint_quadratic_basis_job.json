@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/255_cm_frame_cubic_adjoint_quadratic_space.py",
+    "--worker"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 5.132511124946177,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_quadratic_basis.out",
+    "sha256": "69379a8e54b07a6958801d3a565d918991337d8dcfc5aa10a69d9497018d6825"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/255_cm_frame_cubic_adjoint_quadratic_space.py",
+      "sha256": "c0013faad208235a8713d7d4cb084795fa1f023727ad91fe04ff96bca8e91d69"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "milestone": "D131",
+  "phase": "inventory",
+  "certificates": {
+    "staged_target_from_P6400": true,
+    "capacity_bytes": 2147483648,
+    "reserved_workspace_bytes": 67108864,
+    "prospective_layout_bytes_excluding_metadata": {
+      "prepare": 1678512064,
+      "sweep": 2035873624,
+      "initialize": 1660200664,
+      "final_weighted_plus_CM": 1758101464
+    },
+    "largest_reserved_occupancy_with_metadata": 2035873922,
+    "oversized_reservation_rejections": 1,
+    "rejected_file_not_created": true,
+    "large_capacity_files_logically_reserved_but_not_filled_with_target_data": true,
+    "low_factor_integration_and_all_stage_lifetimes_verified": false,
+    "full_target_refinement_or_concurrent_RAM_certificate": false
+  },
+  "actual_harmonic_precision_increased": false,
+  "wall_seconds": 0.022259667050093412,
+  "peak_rss_bytes": 20676608,
+  "maximum_child_process_peak_rss_bytes": 0,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_capacity_d131/.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_capacity_d131/CURRENT.json",
+      "sha256": "473c8bbae129e0eb8aa57fa1ec56d83fd6fedde52d7afbfb00880d1bafc7c6e8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_capacity_d131/OWNER.json",
+      "sha256": "ddabfcbd93cd9cb65862da4745ff959535d640831f696b6daa8cecfcd22a9b00"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_capacity_d131/SEALED.json",
+      "sha256": "ff6bec2e04a9d28e36bf459de20906654a98998704381b9ac96e8713626a6413"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_capacity_d131/aux_initial.bin",
+      "sha256": "22adaf058a2cb668b15cb4c1f30e7cc720bbe38c146544169db35fbf630389c4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_capacity_d131/state.bin",
+      "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/543_dyadic_row_journal.py",
+      "sha256": "e3b2c7c5dd8015f54b7c71499bed5556120d8a439104b99f7a731236e31fa2f2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/544_dyadic_row_journal_controls.py",
+      "sha256": "533ea494c82aefdbda8006034d01a1fd5e0e6a991239b209882319d74e9b46fa"
+    }
+  ]
+}

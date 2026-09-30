@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/408_dyadic_cm_class_witnesses.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 5.768245082930662,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_cm_class_witnesses_d112_attempt01.log",
+    "sha256": "bd5b1de7ff3d58c72dc6f2b7a9a4028edf7da08541045a6d5ca4ad791fcdb1f4"
+  },
+  "private_process_group": 77479,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/408_dyadic_cm_class_witnesses.py",
+    "sha256": "062c2001e7bd6bcb0a92f19c57f6f6de3e54927ce15dbd48ff67c010ee2867a9"
+  }
+}

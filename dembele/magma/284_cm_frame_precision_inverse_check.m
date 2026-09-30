@@ -1,0 +1,16 @@
+// D85: compare the precision-aware inverse with Magma's native Galois-ring inverse.
+SetQuitOnError(true); SetColumns(0); SetSeed(85284); started:=Cputime();
+precision_digits:=128;
+load "dembele/magma/283_cm_frame_precision_aware_arithmetic.m";
+UZ<t>:=PolynomialRing(Integers()); AG<b>:=GaloisRing(31,128,t^2+29*t+3);
+for size in [1,4,9,16,32] do
+    repeat A:=RandomMatrix(AG,size,size); until Rank(RReduce(RFromNative(A))) eq size;
+    pair:=RFromNative(A); inverse:=RInverse(pair);
+    assert inverse eq RFromNative(A^-1);
+    assert RMultiply(pair,inverse) eq RId(size);
+    bad:=inverse; bad[1][1,1]+:=31^127;
+    assert RMultiply(pair,bad) ne RId(size);
+    printf "NATIVE_INVERSE_AGREEMENT|%o|%o\n",size,Cputime(started);
+end for;
+print "PASS|284_PRECISION_AWARE_INVERSE";
+quit;

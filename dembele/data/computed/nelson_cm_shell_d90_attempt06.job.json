@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/324_nelson_cm_shell.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 3.3340777918929234,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_cm_shell_d90_attempt06.log",
+    "sha256": "963d9deae7884c91cd832f34af1bafd603272ee49cccfd1fc024021276f83f42"
+  },
+  "private_process_group": 49102,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/324_nelson_cm_shell.py",
+      "sha256": "4f068bc2a448a389e7ce830d0cf803ff8e4ddcf9f933d66107bfd0aa91dedda9"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d90-sage"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "comparison of the same CM-normalized functions; empirical, not a certified error bound",
+  "sources": [
+    {
+      "path": "dembele/data/computed/cm_pointed_maps_16384.json",
+      "sha256": "781a5c628be5b8c2d9964ad416da965fc5e5ec9f1a93d3bb4e210b253a606a53"
+    },
+    {
+      "path": "dembele/data/computed/cm_pointed_maps_flag_16384.json",
+      "sha256": "f3a8a72796b4f322b13609b45a5873fedc6aa32bcfb3c2208f84cd2233aa4e11"
+    }
+  ],
+  "arithmetic_vs_flag_basis": {
+    "normalized_x_values": {
+      "maximum_absolute_difference": "1.939378245762428097917106e-17",
+      "relative_euclidean_difference": "1.420330232258282332893311e-17"
+    },
+    "normalized_y_values": {
+      "maximum_absolute_difference": "5.341099009322287396192796e-17",
+      "relative_euclidean_difference": "1.167281562127368334066938e-17"
+    },
+    "x_cm_value_polynomial_ascending": {
+      "maximum_absolute_difference": "3.364012513002790276104383e-16",
+      "relative_euclidean_difference": "6.909993528544702052884876e-17"
+    },
+    "global_uniformizer_series": {
+      "maximum_absolute_difference": "693209182249526.7714505557",
+      "relative_euclidean_difference": "1.272376211652040413682574e-16"
+    }
+  },
+  "limitations": [
+    "Both current bases use the same underlying native checkpoint.",
+    "Large uniformizer Taylor coefficients are not an arithmetic height estimate."
+  ]
+}

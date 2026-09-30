@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "milestone": "D86",
+  "date": "2026-09-23",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/298_cm_frame_remote_worker.py",
+      "sha256": "47516819a9bfbebbf4fcdc99ad9ea98677bf9c646767ad032bf1a4d41ff2badf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/299_cm_frame_chatelet_transport.py",
+      "sha256": "1e5353eab110f9263c2b5d22e265471102fe265410e5b5b5f13fb824c5a9e3f0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/300_cm_frame_cubic_precision128_chatelet.py",
+      "sha256": "989211112dd0d6ea83ca6476dfa8c020eaa36ac211bb331889ae779468ed6372"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/304_cm_frame_chatelet_resume.py",
+      "sha256": "204abe74d83fd269dc4363cd14e9d10ed05f01650f37ed3555b4fa9b5a4b62a5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/305_cm_frame_chatelet_resilient_resume.py",
+      "sha256": "c9be2d7f836421fed25d3aee804f25cf0b75817978f22274720ab671f18ec74e"
+    }
+  ],
+  "initial_interruption_record": "cm_frame_cubic128_upload_interruption_d86.json",
+  "additional_prelaunch_errors": [
+    "TLS handshake timeout during sequential pointed upload",
+    "RemoteDisconnected during adjoint input upload"
+  ],
+  "resume_adapter": "305_cm_frame_chatelet_resilient_resume.py",
+  "original_mathematical_sources_unchanged": true,
+  "retry_scope": "Only idempotent transfer/status operations; guarded launch unchanged",
+  "maximum_attempts_per_operation": 6,
+  "maximum_backoff_seconds": 40,
+  "completed_jobs_reused": true,
+  "pointed_and_adjoint_function_stages_completed": true
+}

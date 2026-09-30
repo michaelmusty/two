@@ -1,0 +1,11 @@
+CM_REVIEW|17 exact coordinates and principal class witnesses; sigma class multiplier 10
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/410_dyadic_cm_matching_review.py", line 304, in <module>
+    if __name__=="__main__":main()
+  File "/Users/musty/two/dembele/pari/410_dyadic_cm_matching_review.py", line 291, in main
+    result=computations();data=result["roots_and_frame"]
+  File "/Users/musty/two/dembele/pari/410_dyadic_cm_matching_review.py", line 255, in computations
+    roots=root_checks(cm,witness,proposal,sigma,alpha)
+  File "/Users/musty/two/dembele/pari/410_dyadic_cm_matching_review.py", line 231, in root_checks
+    assert all(mval(mf(row[0]))==16 for row in values[:1])  # eta_1 at the rational anchor has v_beta=16.
+AssertionError

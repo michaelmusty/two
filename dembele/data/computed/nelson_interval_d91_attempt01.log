@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/331_nelson_interval_sum.py", line 32, in <module>
+    ROOT8 = (CB.gen()*PI/4).exp()
+             ^^^^^^^^
+  File "sage/rings/complex_arb.pyx", line 478, in sage.rings.complex_arb.ComplexBallField.gen (build/cythonized/sage/rings/complex_arb.c:13961)
+TypeError: gen() takes exactly 2 positional arguments (1 given)

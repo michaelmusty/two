@@ -1,0 +1,48 @@
+{
+  "command": [
+    "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/bin/gp",
+    "-fq",
+    "-s",
+    "2000000000",
+    "/Users/musty/two/dembele/pari/169_cm_frame_cover_class.gp"
+  ],
+  "status": "timeout",
+  "exit_code": null,
+  "wall_seconds": 180.06689079198986,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_class.out",
+    "sha256": "67b945f59083847b8339ddabaf34bdaee0fa6fee9337e18a0644e46dc4af549f"
+  },
+  "pari_stack_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/169_cm_frame_cover_class.gp",
+      "sha256": "e5d8b8ff3245944a4649f3ffdbf6ee40f2f642eaf5e88b3438b1306189e7ec2b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/.build/lifttors_reduction/install.gp",
+      "sha256": "c060243e8b830bd4b1c7935933d931d39eede70644f004f17cf59f233c15f49f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/.build/lifttors_reduction/liblifttors_reduction.so",
+      "sha256": "8224081920bd0b666eca2c95565aaec8fd33bd91a0639d8d77538243ae9d902f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/vendor/LiftTors/pic.c",
+      "sha256": "90308fc74d05582a5dc36cfd6624c59b8312306625ff6e14f2ebe226b79eaf06"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.gp",
+      "sha256": "7e5e823af5ebcf6a97aac50ed4508741a22eb47f6454744985b3a66c4c6f0c26"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cover_makdisi.json",
+      "sha256": "ef5b7ee22e932a8ac3b79a0f035bbdcb825a9824504447a6f31261f195790d14"
+    }
+  ]
+}

@@ -263,16 +263,22 @@ if do97 then
         if #sv eq 0 then
             printf "R60|VERDICT|class %o|image contains SL2(F16): irreducible (ray class groups mod p2^k are 2-groups), not dihedral (every quadratic class unramified outside 2 has an inert prime with abar != 0), trace field F16 => Dickson\n", Index(classes, c);
         else
-            // fallback: class numbers of the surviving quadratic extensions (GRH); dihedral needs an odd-order (15) character
+            // At p31 the characteristic roots have order 17 (script 62).
+            // A dihedral inducing character must therefore have order divisible
+            // by 17. At primes above 2 in a quadratic extension of F, residue
+            // degrees are <= 2, so local ray factors have no 17-part.
             bad := [];
             for mask in sv do
                 bits := Intseq(mask, 2, #gens);
                 dd := &*[ gens[i]^bits[i] : i in [1..#gens] ];
                 Mf := ext<F | Polynomial([-dd, 0, 1])>;
-                h := ClassNumber(AbsoluteField(Mf));
-                if h mod 3 eq 0 or h mod 5 eq 0 then Append(~bad, <mask, h>); end if;
+                Af := AbsoluteField(Mf);
+                assert &and[ InertiaDegree(pp[1]) le 2 : pp in Factorization(2*Integers(Af)) ];
+                h := ClassNumber(Af);
+                printf "R60|quadratic survivor %o: class number (GRH) %o\n", mask, h;
+                if h mod 17 eq 0 then Append(~bad, <mask, h>); end if;
             end for;
-            printf "R60|class %o: survivors' class numbers checked; those divisible by 3 or 5: %o\n", Index(classes, c), bad;
+            printf "R60|class %o: survivors' class numbers checked; those divisible by 17: %o\n", Index(classes, c), bad;
             printf "R60|VERDICT|class %o|%o\n", Index(classes, c), #bad eq 0 select "image contains SL2(F16) (dihedral excluded via class numbers, GRH)" else "dihedral NOT excluded for the listed classes";
         end if;
     end for;

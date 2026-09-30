@@ -1,0 +1,36 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/373_hyperellipticity_order_review.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 6.4688272919738665,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_order_review_d99.log",
+    "sha256": "82d805563d036542b2abfb8e062c604035eea2248350fc3213345c5595b152df"
+  },
+  "private_process_group": 13157,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/373_hyperellipticity_order_review.py",
+      "sha256": "ff19ac463ff4714d85a4f92b1fc79ac0a79b2596a4c12c8272aba7871b2d06a8"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d99-order-chb48u90",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,16 @@
+Loading "dembele/magma/292_cm_frame_block_arithmetic_check.m"
+Loading "dembele/magma/289_cm_frame_block_arithmetic.m"
+NATIVE_INVERSE_AGREEMENT|1|0.010
+NATIVE_INVERSE_AGREEMENT|4|0.010
+NATIVE_INVERSE_AGREEMENT|9|0.020
+NATIVE_INVERSE_AGREEMENT|16|0.070
+NATIVE_INVERSE_AGREEMENT|32|0.240
+
+RMultiply(
+A: < [310878599098580681494699700208172203492951382227975942035...,
+B: < [398518097997161772467649419123305783026763887218467171239...
+)
+In file "dembele/magma/289_cm_frame_block_arithmetic.m", line 32, column 26:
+>>     return <VerticalJoin([M:M in rows0]),VerticalJoin([M:M in rows1])>;
+                            ^
+Runtime error in sequence construction: No valid universe containing all elements

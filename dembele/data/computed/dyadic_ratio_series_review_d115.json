@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "milestone": "D115",
+  "actual_ratio_orders": [
+    1,
+    2
+  ],
+  "CM_indices_with_certified_G12_pivot": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "comparison_entries_by_order": [
+    256,
+    256
+  ],
+  "minimum_difference_error_beta": [
+    101,
+    70
+  ],
+  "mismatch_count": 0,
+  "formal_series_division_and_reversion_checks": true,
+  "projective_residue_frame_checks": 17,
+  "global_G12_nonvanishing_by_D106_and_CM_transitivity": true,
+  "W_G12_numerically_resolved": false,
+  "candidate_identification_proved": false,
+  "target_field_polynomial_constructed": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/430_dyadic_ratio_series_review.py",
+      "sha256": "47d1955a67f677b9e88bfb173b002c456f7f0ca4503097e0eb91a88272659b52"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/427_dyadic_second_order_comparison.py",
+      "sha256": "8934938f5443b6c30785c66519b2efe89574a3759c46854c342fc3e830eef80e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_comparison200_d115.json",
+      "sha256": "fcfab32a97a88bf11bf4cebb8d3fa494e435a6141cdc8c7b09d679c6f5d6f0d6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_d115.json",
+      "sha256": "bc043dfe632db80984eef2578841611325767cb4afb214bebfa354354f8fb699"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_review_d115.json",
+      "sha256": "52b50bb302db9b5b0139ead8d8f70b258fa7dae66e8c29b152f3ab490b4e8fce"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_cm_matching_review_d112.json",
+      "sha256": "2a64812de8db236cd68fc5007d31904413840b251007bfb3971aff862a9a4a6f"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "milestone": "D83",
+  "date": "2026-09-22",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/270_cm_frame_cubic_recognition_height.py",
+      "sha256": "198dbfc4a4c3271240e291d0b69ec015b8c04529c9a019547f7ec063a5e83e06"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_joint_64_48_0.json",
+      "sha256": "1f28affcbcc4db862fb03798a3c5970b8e64bb41f08ec77b90f7cdf6af632d9f"
+    }
+  ],
+  "precision_digits": 64,
+  "training_digits": 48,
+  "root_mod31": 4,
+  "lattice_rank": 200,
+  "exact_orthogonalization_verified": true,
+  "minimum_squared_orthogonal_length": [
+    148157147579388574820480446792232934314634339696235611739635981478382244939108577021373434154820450402807730943294739092477399457162114620666881,
+    275975787458316320760151669878404290757049270157202814493405712150676398034801271902132448600274667792139227871540304801874444285
+  ],
+  "excluded_integral_coefficient_height_through": 1638365,
+  "scope": "All nonzero integral homogeneous representatives in the 25 fixed A2 coordinates and the degree-eight power basis of F, including arbitrary common F-valued scaling.",
+  "coefficient_field_excluded": false,
+  "exact_curve_equation_certified": false,
+  "proof": "dembele/certificates/cm-frame-cubic-64.md",
+  "api_reference": "https://doc.sagemath.org/html/en/reference/matrices/sage/matrix/matrix2.html#sage.matrix.matrix2.Matrix.gram_schmidt"
+}

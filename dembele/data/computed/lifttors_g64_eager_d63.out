@@ -1,0 +1,16 @@
+STAGE|initialized|genus=64|points=646|ms=7537
+  *** PicIsZero_val: Warning: increasing stack size to 1024000000.
+STAGE|doubling_checked|ms=31414
+TRACE|eager_v0|count=1|stack_bytes=36601096
+TRACE|eager_v0|count=16|stack_bytes=570789312
+  *** PicLiftTors_original: Warning: increasing stack size to 2000011264.
+TRACE|eager_v0|count=32|stack_bytes=1140582520
+TRACE|eager_v0|count=48|stack_bytes=1710353704
+  ***   at top-level: bench_original=1;read("../../pari/101_lifttors
+  ***                                  ^-----------------------------
+  ***   in function read: ..._INT"&&bench_original==1,PicLiftTors_original(
+  ***                                                 ^---------------------
+  *** PicLiftTors_original: the PARI stack overflows !
+  current stack size: 2000011264 (1907.359 Mbytes)
+  [hint] you can increase 'parisizemax' using default()
+

@@ -1,0 +1,114 @@
+{
+  "milestone": "D118",
+  "date": "2026-09-26",
+  "report": "dembele/certificates/cm-finite-height-d118.md",
+  "final_review": "dembele/pari/455_cm_finite_height_review.py",
+  "prior_review": "dembele/data/computed/cm_disk_exactness_review_d117.json",
+  "D117_source_hashes_to_preserve": 891,
+  "external_sources": [
+    {
+      "authors": "Xinyi Yuan and Shou-Wu Zhang",
+      "title": "On the averaged Colmez conjecture",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v187-n2-p04-p.pdf",
+      "location": "Theorems 4.5 and 4.7, pages 564 and 567; the metric in Theorem 4.7(3)",
+      "role": "At sufficiently small level maximal at the dyadic place, the arithmetic Hodge line is the relative dualizing line and is compatible with level pullback. The structural results have no common-CM/quaternion-ramification exclusion.",
+      "excluded_results": "Theorems 1.6 and 1.7 are not applied to common finite ramification.",
+      "access": "Primary journal PDF and relevant theorem text inspected."
+    },
+    {
+      "authors": "Qing Liu and Dino Lorenzini",
+      "title": "Models of curves and finite covers",
+      "url": "https://www.math.u-bordeaux.fr/~qliu/articles/modcove.pdf",
+      "location": "Proposition 4.4(a), Remark 4.5, Corollary 4.7",
+      "role": "Extension of generic curve morphisms to stable models; not an assertion for arbitrary minimal regular models.",
+      "access": "Author-hosted primary PDF inspected."
+    },
+    {
+      "author": "Jan Nekovar",
+      "title": "Level Raising and Anticyclotomic Selmer Groups for Hilbert Modular Forms of Weight Two",
+      "url": "https://doi.org/10.4153/CJM-2011-077-6",
+      "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2A11114CBB9FC75C2DBF56F766BFE7BF/S0008414X00009196a.pdf/level-raising-and-anticyclotomic-selmer-groups-for-hilbert-modular-forms-of-weight-two.pdf",
+      "location": "Section 1.5.3.1--1.5.3.7",
+      "role": "Drinfeld quotient node charts and edge-stabilizer thicknesses. At the auxiliary torsion-free level the logarithmic node differential is an integral generator.",
+      "access": "Primary publisher PDF and local-model statements inspected."
+    },
+    {
+      "authors": "Robin de Jong and Farbod Shokrieh",
+      "title": "Faltings height and Neron-Tate height of a theta divisor",
+      "url": "https://arxiv.org/pdf/1810.02637",
+      "version": "v3, 1 February 2022",
+      "location": "Theorems A/B, equation (1.11), sections 12.1 and 13.2",
+      "role": "Nonnegative theta-height/local terms and the dyadic tropical contribution give a stronger Faltings lower bound. Their 2^(-g) top-form metric agrees with D103's determinant L2 metric.",
+      "access": "Primary paper inspected, including its explicit normalization warning."
+    },
+    {
+      "authors": "Robin de Jong and Farbod Shokrieh",
+      "title": "Tropical moments of tropical Jacobians",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7D168E767FECB100AF1FCF3EA6EF81F9/S0008414X22000220a.pdf/tropical-moments-of-tropical-jacobians.pdf",
+      "location": "Theorems 11.2 and 11.4",
+      "role": "Effective-resistance formula for tau and I(Jac(G))=length(G)/8-tau(G)/2.",
+      "access": "Primary publisher PDF inspected."
+    },
+    {
+      "author": "Ariyan Javanpeykar",
+      "title": "Polynomial bounds for Arakelov invariants of Belyi curves",
+      "url": "https://msp.org/ant/2014/8-1/ant-v8-n1-p04-s.pdf",
+      "location": "D103's metric convention and Lemma 2.4.4",
+      "role": "The inherited weaker universal Faltings bound remains valid; D118 improves it using the principal polarization and the known dyadic graph.",
+      "access": "Primary publisher PDF reopened for comparison."
+    }
+  ],
+  "inherited_mathematical_inputs": [
+    "D99: the actual stable reduction graph, positive thicknesses, and nonhyperellipticity.",
+    "D102: principal-parts/residue-index theorem and its still-unverified actual divisor/model hypotheses.",
+    "D104: integral ramification derivative, Hodge/stable comparison, and saved CM Hodge-height interval.",
+    "D105--D106: Hilbert class field, CM orbit, rational descent and residue frame.",
+    "D110--D112: actual dyadic uniformization, exact CM coordinate matrices, trivial norm-one stabilizers at all seventeen CM points.",
+    "D115--D116: frozen P=200 actual leading coefficients, stable integral harmonic basis, fibre exponents 296/33, and actual section valuation bounds.",
+    "D116--D117: integral quadric tensor and successive nodal jets, uniform disk of radius squared 3/5 and exact-zero criterion."
+  ],
+  "new_deductions": [
+    "Compute the two finite CM height corrections together via the composite derivative W_C -> L(Q)^2 on a small-level model.",
+    "The integral Hodge generator dz/z=2dw/(1-w^2) gives exact contents m_i-16, hence 280 at W and 17 at each other CM point.",
+    "Galois averaging yields exact combined dyadic correction (69/34)*log(2), and H_CM <=2*h_L-(35/34)*log(2)<8/3.",
+    "The known length-76 graph has tau=67889/27075 and tropical moment 223268/27075.",
+    "The Faltings lower bound is -16*log(pi)-8*log(2)+(55817/54150)*log(2).",
+    "Final sufficient section-valuation thresholds are 25330/25444/25551; the fixed-input radius-one limits are 22310/22412/22506.",
+    "Known common vertical content already included in the measured zero degree cannot be counted again as a height improvement."
+  ],
+  "finite_verification": {
+    "drivers": "451--455",
+    "input_jobs_before_final_audit": 4,
+    "input_jobs_passed": 4,
+    "input_jobs_failed": 0,
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "independent_final_review_probe": "cm_finite_height_review_d118_probe01.job.json",
+    "independent_methods": [
+      "Revalue all 272 leading coefficient vectors in the degree-16 Eisenstein basis.",
+      "Direct coordinate differentiation for the composite local derivative.",
+      "Verify the graph Laplacian inverse by exact matrix multiplication.",
+      "Integrate squared resistance derivatives by exact Simpson quadrature at every basepoint.",
+      "Use a separate rational logarithm series to check both intermediate and final budgets."
+    ],
+    "actual_integral_quadric_jet_lower_beta": [3794, 3745, 3728],
+    "sufficient_integral_quadric_jet_lower_beta": [25330, 25444, 25551]
+  },
+  "next_bounded_research_task": "Test a lower-degree integral CM residue-frame construction through D102's principal-parts sequence, first constructing and checking an actual finite flat Cartier CM divisor and its intersection/principal-part/cohomology data. No smaller bound from this route is yet proved.",
+  "limitations": {
+    "uniformization_and_geometric_proofs_machine_verified": false,
+    "combined_dyadic_fibre_correction_fully_computed": true,
+    "Hodge_and_ramification_summands_separately_computed": false,
+    "non_dyadic_CM_fibre_corrections_computed": false,
+    "auxiliary_small_level_computed": false,
+    "Faltings_lower_bound_37_proved": false,
+    "actual_moment_precision_increased": false,
+    "higher_intrinsic_jets_require_previous_exact_zeros": true,
+    "positive_quadric_jet_exact_vanishing_proved": false,
+    "horizontal_CM_residue_map_index_computed": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "correspondence_sent": false
+  }
+}

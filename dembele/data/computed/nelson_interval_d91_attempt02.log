@@ -1,0 +1,16 @@
+Euler calibration passed; arguments: 7
+Quadrature node 0 / 512 elapsed 0.2
+Quadrature node 128 / 512 elapsed 0.53
+Quadrature node 256 / 512 elapsed 0.88
+Quadrature node 384 / 512 elapsed 1.24
+Quadrature node 512 / 512 elapsed 1.61
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/332_nelson_interval_sum.py", line 212, in <module>
+    if __name__=="__main__": main()
+                             ^^^^^^
+  File "/Users/musty/two/dembele/pari/332_nelson_interval_sum.py", line 178, in main
+    assert rigorous.rad() < RB("1e-30")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "sage/structure/element.pyx", line 1098, in sage.structure.element.Element.__richcmp__ (build/cythonized/sage/structure/element.c:18270)
+  File "sage/structure/coerce.pyx", line 2054, in sage.structure.coerce.CoercionModel.richcmp (build/cythonized/sage/structure/coerce.c:26565)
+TypeError: unsupported operand parent(s) for <: 'Real Field with 30 bits of precision' and 'Real ball field with 320 bits of precision'

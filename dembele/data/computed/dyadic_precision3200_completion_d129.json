@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "milestone": "D129",
+  "input_jobs_passed": 1934,
+  "total_bounded_receipts_passed": 1936,
+  "fixed_manifest_sources": 15600,
+  "reviews": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_precision3200_review_d129_attempt01.job.json",
+        "sha256": "2f880e0d16df64bf0da949bc734c297fcff7d53948a7cabfba6778abe781e547"
+      },
+      "wall_seconds": 13.332750833127648
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_precision3200_review_d129_recheck01.job.json",
+        "sha256": "f683adee3c9a9a21d6492131453a609cae58ad6fabb842c26a11ef0f0491ed58"
+      },
+      "wall_seconds": 9.53103766683489
+    }
+  ],
+  "entrypoint_documentation_update_pending": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/run_d129_finish.py",
+      "sha256": "f30125976f9305f39b357b3d78025853343ffaf59ab1ee538c5fb1db0872a53b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision3200_review_d129.json",
+      "sha256": "db62ac6d3df76705089849b74ba98b90fec10815ed08bd3aaf8b1e05a978fc01"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-precision3200-d129.md",
+      "sha256": "ef9cd7e53bb17c226b2dcda70c92dccd5cc022f66dd0867edd170ab3b3cef829"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision3200_sources_d129.json",
+      "sha256": "6850d689024df499098866adbc70d64987977a71142fcb2c8ded4284731fcc7c"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+Loading "dembele/data/computed/cm_frame_curve_candidate.m"
+Loading "dembele/data/computed/cm_frame_marks.m"
+Loading "dembele/data/computed/cm_frame_B3_rational_model.m"
+Loading "dembele/data/computed/cm_frame_B3_veronese.m"
+Loading "dembele/data/computed/cm_frame_B3_fiber.m"
+Loading "dembele/data/computed/cm_frame_B3_fiber_structure.m"
+Loading "dembele/data/computed/cm_frame_cover_sections.m"
+Loading "dembele/data/computed/cm_frame_cover_makdisi.m"
+Loading "dembele/data/computed/cm_frame_cubic.m"
+PASS|LIFT_ODD_SUPPORTS_18_AND_21
+
+In file "/Users/musty/two/dembele/magma/184_cm_frame_cubic_lift_sections.m", line 84, column 26:
+>>         A<bb>:=GaloisRing(31,2,UQ![Integers()!c:c in Coefficients(hh)]);
+                            ^
+Runtime error in 'GaloisRing': Polynomial degree must be > 1
+

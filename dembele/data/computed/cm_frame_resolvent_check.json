@@ -1,0 +1,92 @@
+{
+  "status": "pass",
+  "milestone": "D71",
+  "date": "2026-09-18",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/122_cm_frame_resolvent_check.py",
+      "sha256": "706b1337447fe8a7c10fafbf625df863fb2b8ccc7992feedd92112bf4e052339"
+    },
+    {
+      "path": "/Users/musty/two/dembele/magma/122_cm_frame_resolvent_check.m",
+      "sha256": "0d930bf3850d36eb75ad6ade18a50900fb714157f6d7cce05de58e74f31c7254"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.json",
+      "sha256": "3fee683efa052d555ac3d900b5465be029f4a3ba72a1c4f536197d45b2f24683"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.m",
+      "sha256": "fb0a63bffbfbd7f2d097bf20226c4bc3f5f1211a66dd007847c524a1f97e4348"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+      "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.json",
+      "sha256": "f76bd016488082ad5a5bd9079560835b3573a7b6199154adbf4ce2b20ef22282"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_verification.json",
+      "sha256": "4c02416725d60c1dff1103ee47ae71d7343c058b26ea369e12ddfa46d772e3a4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks_check.json",
+      "sha256": "0f68c176fca871651ce7dcc1c15a7524c10bf8b7bf42faed70719dc3e443e965"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/levelraise_p2k_charpolys.m",
+      "sha256": "0c1adf7af27a39868a25618f2d901b4fdd4b55dbc62c4051c458bf0497529979"
+    }
+  ],
+  "job": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/magma/122_cm_frame_resolvent_check.m"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "wall_seconds": 10.897229208960198,
+    "timeout_seconds": 120,
+    "memory_limit_bytes": 2000000000,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent_check.out",
+      "sha256": "34350f91b912f01c248c9a757727064e01ee924fc1233cf4add493c3796a4942"
+    }
+  },
+  "field_characteristic": 31,
+  "equation": "z^2 = q_num/q_den; coefficients in cm_frame_resolvent.m",
+  "divisor_identity": "div(q_num/q_den) = D17 + 15*P32 - 2*E; deg(E)=16",
+  "branch_divisor": "D17 + P32",
+  "branch_degree": 18,
+  "half_line_bundle": "O(E - 7*P32)",
+  "half_line_bundle_degree": 9,
+  "geometrically_connected": true,
+  "smooth_projective_cover_genus": 40,
+  "point_counts_over_F31": [
+    45,
+    55
+  ],
+  "constant_twist_nonsquare": 3,
+  "norm_one_Hecke_expected_points_over_F31": 45,
+  "twist_scalars_matching_that_count": [
+    1
+  ],
+  "rational_ramified_points": 1,
+  "heuristic_Jacobian_order_used_only_for_discovery": 1640801490553691915934375,
+  "Jacobian_order_certified": false,
+  "half_class_uniqueness_certified": false,
+  "cover_lifted_to_characteristic_zero": false,
+  "saved_sign_monodromy_matched": false,
+  "Shimura_identification_certified": false,
+  "genus64_cover_constructed": false,
+  "target_field_polynomial_obtained": false
+}

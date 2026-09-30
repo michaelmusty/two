@@ -1,0 +1,34 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/508_dyadic_precision800_balls.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.12822799989953637,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_balls_d125_attempt01.log",
+    "sha256": "41b0379ac4ee4947959db2e3b4563dced04dad85e0a9680c0885cc8611b531fe"
+  },
+  "private_process_group": 28722,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/508_dyadic_precision800_balls.py",
+    "sha256": "ff80f10562cea03a18f3cb370d3a75c55d09e6dc0a67ad66a345771caec239a1"
+  }
+}

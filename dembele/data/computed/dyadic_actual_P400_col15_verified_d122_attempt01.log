@@ -1,0 +1,5 @@
+ACTUAL_ACTION|states=1/174; bits=50; seconds=0.368
+ACTUAL_ACTION|states=61/174; bits=50; seconds=13.640
+ACTUAL_ACTION|states=121/174; bits=50; seconds=26.683
+ACTUAL_PHASE_RESULT|{"status": "pass", "milestone": "D121", "phase": "verify", "working_precision_pi": 400, "eliminated_positive_moments": 32, "harmonic_basis_column": 15, "residual_lower_bound_pi": 400, "correction_history": [{"before_pi": 200, "after_pi": 233}, {"before_pi": 233, "after_pi": 266}, {"before_pi": 266, "after_pi": 299}, {"before_pi": 299, "after_pi": 332}, {"before_pi": 332, "after_pi": 365}, {"before_pi": 365, "after_pi": 398}, {"before_pi": 398, "after_pi": 400}], "certificate": {"original_full_residual_zero": true, "scalar_coefficients_checked": 556800, "all_P200_seed_coefficients_agree": true, "actual_new_precision_pi": 400}, "actual_moment_precision_increased": true, "full_sixteen_column_bank_refined": false, "timings": [{"operation": "original_transport", "input_valuation_pi": 0, "modulus_bits": 50, "input_count": 400, "output_count": 400, "seconds": 38.94365229201503}], "wall_seconds": 41.50346012506634}
+PASS|478_DYADIC_COMPILED_LIFT

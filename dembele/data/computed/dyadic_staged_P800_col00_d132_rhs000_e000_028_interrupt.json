@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "milestone": "D132",
+  "spec": {
+    "phase": "rhs",
+    "key": "rhs000_e000_028",
+    "first": 0,
+    "last": 28,
+    "step": 0
+  },
+  "fault": "job_committed",
+  "intentional_child_exit": 73,
+  "child_inherits_capped_parent_process_group": true,
+  "parent_process_group": 39151,
+  "external_phase_metadata_absent": true,
+  "durable_boundary_record": "done_rhs000_e000_028.json",
+  "wall_seconds": 12.02920841705054,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/548_dyadic_resumable_staged_driver.py",
+      "sha256": "1c1b53cdf52a8f8f5db1d478535acacb1961e7a9cb0bcac2992aa13f67d1c412"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/550_dyadic_staged_interrupt_control.py",
+      "sha256": "43ed87ab01e0b805feb282a544c161166a4f92e4cdf0aca8ad2fe265495cb638"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_config_d132.json",
+      "sha256": "9804112134fa59a0a1dcd335c190b65a8ec769076f58dd5461db792dc1c7c993"
+    }
+  ]
+}

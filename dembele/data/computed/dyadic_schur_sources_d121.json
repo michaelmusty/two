@@ -1,0 +1,69 @@
+{
+  "milestone": "D121",
+  "date": "2026-09-27",
+  "report": "dembele/certificates/dyadic-schur-lift-d121.md",
+  "final_review": "dembele/pari/474_dyadic_schur_review.py",
+  "prior_review": "dembele/data/computed/construction_reassessment_review_d120.json",
+  "D120_source_hashes_to_preserve": 961,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public arbitrary-integer and modular-matrix interfaces",
+      "url": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Installed FLINT matrices perform the fifteen modular products used by the new exact interpolation kernel.",
+      "access": "Primary fmpz documentation inspected; modular-matrix website returned 403. Installed public fmpz_mod_mat.h, fmpz_mod.h, fmpz.h and flint.h inspected and hashed, with the library."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 manual, Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Carry-free polynomial products and public integer binary import/export. Inherited D120 source attribution and library/header hashes."
+    }
+  ],
+  "inherited_inputs": [
+    "D120 conditional P=10552 precision design and norm-97 cofactor separation.",
+    "D115 actual P=200 state and CM moment bank and exact harmonic masses.",
+    "D109 splitting equation and exact transport matrix constants/slopes.",
+    "D116 four coarse coefficients and integral quadratic-section interface."
+  ],
+  "new_deductions": [
+    "An integral low-moment solve gives a Schur iteration gaining r+1 pi-digits.",
+    "Directed block LU needs 2246 updates on the fixed 174-state graph.",
+    "Finite-difference interpolation with eleven guard bits gives exact arbitrary-precision field-valued matrix products.",
+    "All 399 actual transport maps are refined on the same Hensel branch to P=10552.",
+    "One actual harmonic column, all its 17 CM charts and four coarse coefficients are refined to P=400."
+  ],
+  "finite_verification": {
+    "drivers": "464--475",
+    "input_job_attempts": 24,
+    "input_jobs_passed": 21,
+    "input_jobs_failed": 3,
+    "failures": [
+      "Two target-transport checks mishandled the old infinite-valuation sentinel; finite-modulus overlap comparison corrected.",
+      "One dependent lift stage was launched before its predecessor artifact existed; rerun after predecessor completed."
+    ],
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "independent_methods": [
+      "Cross-multiply every normalized transport instead of repeating pi-division and inversion.",
+      "Check all fifteen ordinary integer interpolation monomials.",
+      "Direct recurrence checks selected original actual moment equations.",
+      "Alternate binomial coefficients and Horner evaluation reproduce all 68 actual coarse values.",
+      "Verify every inherited hash and every new input receipt and failed source snapshot."
+    ]
+  },
+  "next_bounded_task": "Compile and independently validate a faster polynomial transport backend, then complete all sixteen actual P=400 columns and recompute residue-frame quadrics before a target-size lift.",
+  "limitations": {
+    "actual_harmonic_columns_refined": 1,
+    "actual_column_precision_pi": 400,
+    "full_sixteen_column_bank_precision_pi": 200,
+    "actual_transport_parameter_precision_pi": 10552,
+    "large_target_precision_solver_ready": false,
+    "positive_quadric_jet_exact_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "new_Hecke_computation_performed": false,
+    "correspondence_sent": false
+  }
+}

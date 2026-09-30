@@ -1,0 +1,32 @@
+{
+  "method": "x=H15/H14; h=H14/x^14; test span(h*x^i), i=0..15",
+  "precision_note": "100-digit arithmetic on double-precision input; not new input accuracy",
+  "positive_control": {
+    "first_unfitted_jet_max_defect": 0.0,
+    "first_unfitted_jet_input_scale": 0.5,
+    "jets_16_through_24_max_defect": 0.0,
+    "coefficients_35_through_44_max": 0.0,
+    "status": "hyperelliptic ansatz passes local diagnostic; not an exact model"
+  },
+  "changed_chart_and_basis_control": {
+    "first_unfitted_jet_max_defect": 2.8749665301738853e-90,
+    "first_unfitted_jet_input_scale": 1.2,
+    "jets_16_through_24_max_defect": 1.4698720089094061e-87,
+    "coefficients_35_through_44_max": 3.945343788241924e-69,
+    "status": "hyperelliptic ansatz passes local diagnostic; not an exact model"
+  },
+  "target": {
+    "8192": {
+      "first_unfitted_jet_max_defect": 745.5897317355675,
+      "first_unfitted_jet_input_scale": 2.3918382798808766,
+      "jets_16_through_24_max_defect": 1355438926.3094413,
+      "status": "rejected: reconstructed hyperelliptic differential space fails unused jets"
+    },
+    "10240": {
+      "first_unfitted_jet_max_defect": 745.5897317440061,
+      "first_unfitted_jet_input_scale": 2.391838279695831,
+      "jets_16_through_24_max_defect": 1355438925.3142438,
+      "status": "rejected: reconstructed hyperelliptic differential space fails unused jets"
+    }
+  }
+}

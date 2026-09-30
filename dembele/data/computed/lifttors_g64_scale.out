@@ -1,0 +1,49 @@
+STAGE|initialized|genus=64|points=646|ms=7537
+  *** PicIsZero_val: Warning: increasing stack size to 1024000000.
+STAGE|doubling_checked|ms=30507
+Lifting from prec O(97^1) to O(97^2)
+TRACE|lift_column|index=1|stack_bytes=194901848
+TRACE|lift_column|index=16|stack_bytes=222772424
+TRACE|lift_column|index=32|stack_bytes=252503576
+TRACE|lift_column|index=48|stack_bytes=282226168
+TRACE|lift_column|index=64|stack_bytes=311952728
+TRACE|lift_column|index=80|stack_bytes=341679480
+TRACE|lift_column|index=96|stack_bytes=371406776
+TRACE|lift_column|index=112|stack_bytes=401131544
+TRACE|lift_column|index=128|stack_bytes=430861664
+TRACE|lift_column|index=144|stack_bytes=460676552
+TRACE|lift_column|index=160|stack_bytes=490499848
+TRACE|lift_column|index=176|stack_bytes=520322696
+TRACE|lift_column|index=192|stack_bytes=550145216
+TRACE|lift_column|index=208|stack_bytes=579966952
+TRACE|lift_column|index=224|stack_bytes=609789712
+TRACE|lift_column|index=240|stack_bytes=639612088
+TRACE|lift_column|index=256|stack_bytes=669440088
+TRACE|lift_system|rows=21252|columns=259|stack_bytes=673338832
+TRACE|lift_kernel_basis|rank=129|nullity=130|rows=21252
+  *** PicLiftTors: Warning: increasing stack size to 2000011264.
+Lifting from prec O(97^2) to O(97^4)
+TRACE|lift_column|index=1|stack_bytes=118945440
+TRACE|lift_column|index=16|stack_bytes=146996288
+TRACE|lift_column|index=32|stack_bytes=176917464
+TRACE|lift_column|index=48|stack_bytes=206838720
+TRACE|lift_column|index=64|stack_bytes=236759248
+TRACE|lift_column|index=80|stack_bytes=266680096
+TRACE|lift_column|index=96|stack_bytes=296600768
+TRACE|lift_column|index=112|stack_bytes=326521808
+TRACE|lift_column|index=128|stack_bytes=356442568
+TRACE|lift_column|index=144|stack_bytes=386364448
+TRACE|lift_column|index=160|stack_bytes=416286312
+TRACE|lift_column|index=176|stack_bytes=446208248
+TRACE|lift_column|index=192|stack_bytes=476130208
+TRACE|lift_column|index=208|stack_bytes=506051984
+TRACE|lift_column|index=224|stack_bytes=535974160
+TRACE|lift_column|index=240|stack_bytes=565896272
+TRACE|lift_column|index=256|stack_bytes=595817936
+TRACE|lift_system|rows=21252|columns=259|stack_bytes=599728216
+TRACE|lift_kernel_basis|rank=129|nullity=130|rows=21252
+STAGE|lift_completed|ms=613521
+DATA|{"genus":64,"d0":129,"p":97,"a":2,"precision_exponent":4,"evaluation_points":646,"section_dimensions":[66, 195, 324],"jacobian_size_bytes":90719008,"timing_ms":{"init":7537,"double_and_zero_check":30507,"lift_one_point":613521,"lift_checks":39461}}
+PASS|101_lifttors_scale
+
+RESOURCE|wall_seconds=784.161

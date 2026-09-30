@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/425_dyadic_transport_refinement.py", line 35, in <module>
+    if __name__=='__main__':main()
+  File "/Users/musty/two/dembele/pari/425_dyadic_transport_refinement.py", line 22, in main
+    for child in row['children']:refine(child)
+  File "/Users/musty/two/dembele/pari/425_dyadic_transport_refinement.py", line 19, in refine
+    assert t.r.mval(t.r.madd(t.r.fm(out['normalized_center']),t.r.mscale(t.r.fm(row['normalized_center']),t.r.neg(t.O))))>=row['normalized_error_pi']
+AssertionError

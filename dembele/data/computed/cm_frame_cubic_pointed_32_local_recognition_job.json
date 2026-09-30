@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/239_cm_frame_cubic_pointed_local_recognition.py",
+    "--digits",
+    "32",
+    "--worker"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 6.259977124980651,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_pointed_32_local_recognition.out",
+    "sha256": "5c8d9d3957316a5bae08b909fe988f6bed035d407cfd8b7d06c1faca433f8455"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/239_cm_frame_cubic_pointed_local_recognition.py",
+      "sha256": "f9c59d728cf3a9a1a4eaa0ee8ed31dcb4cfd20ecf7e7899cb56202059fd90d16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ]
+}

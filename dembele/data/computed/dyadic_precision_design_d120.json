@@ -1,0 +1,158 @@
+{
+  "status": "pass",
+  "milestone": "D120",
+  "precision_design": {
+    "nonanchor_evaluation_Smith_beta": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35
+    ],
+    "nonanchor_inverse_entry_lower_beta": -35,
+    "frame_relation_entry_beta": -35,
+    "raw_four_jet_error_beta_assumption": "E=2*P+32",
+    "normalized_leading_nonanchor_error_beta": "E-33",
+    "normalized_leading_anchor_error_beta": "E-296",
+    "inverse_matrix_error_beta": "E-103",
+    "frame_relation_error_beta": "E-331",
+    "reciprocal_frame_relation_error_beta": "E-261",
+    "frame_change_error_beta": "E-296",
+    "frame_change_entry_lower_beta": 0,
+    "quadric_coarse_error_beta": "E-296",
+    "conditional_nonanchor_intrinsic_jet_lower_beta": "2*P+3310-33*n",
+    "conditional_anchor_intrinsic_jet_lower_beta": "2*P+2784-296*n",
+    "additional_required_eta_error_beta_at_least": "E",
+    "additional_required_beta_ring_precision_at_least": "2*P+64",
+    "additional_required_all_transport_errors_pi_at_least": "P",
+    "rows": [
+      {
+        "order": 1,
+        "strict_working_precision_pi_interval": [
+          "40875538940026881458859291206927791096818667147081860583082238874/3926737221399023933166000688927876734241321269250212509925675",
+          "16350215576010752583543716482771116438727504529378623794311197464/1570694888559609573266400275571150693696528507700085003969909"
+        ],
+        "minimum_integer_P_for_this_propagation_bound": 10410,
+        "sufficient_P_rounded_to_multiple_of_eight": 10416,
+        "conditional_nonanchor_integral_jet_beta": 24109,
+        "conditional_anchor_integral_jet_beta": 23320
+      },
+      {
+        "order": 2,
+        "strict_working_precision_pi_interval": [
+          "41144530220679660340203032761965633120958046833147385027839060214/3926737221399023933166000688927876734241321269250212509925675",
+          "16457812088271864136081213104786253248383238232968380088529973040/1570694888559609573266400275571150693696528507700085003969909"
+        ],
+        "minimum_integer_P_for_this_propagation_bound": 10479,
+        "sufficient_P_rounded_to_multiple_of_eight": 10480,
+        "conditional_nonanchor_integral_jet_beta": 24204,
+        "conditional_anchor_integral_jet_beta": 23152
+      },
+      {
+        "order": 3,
+        "strict_working_precision_pi_interval": [
+          "4600642595100611822410202631014324814893696489695044330742614086/436304135711002659240666743214208526026813474361134723325075",
+          "2366044763194600365810961353093081333373902762286383853099230384/224384984079944224752342896510164384813789786814297857709987"
+        ],
+        "minimum_integer_P_for_this_propagation_bound": 10545,
+        "sufficient_P_rounded_to_multiple_of_eight": 10552,
+        "conditional_nonanchor_integral_jet_beta": 24315,
+        "conditional_anchor_integral_jet_beta": 23000
+      }
+    ],
+    "sufficient_common_P_under_stated_hypotheses": 10552,
+    "coefficient_modulus_bits": 1319,
+    "one_harmonic_column_low_moment_packed_payload_bytes": 2423583360,
+    "sixteen_harmonic_columns_low_moment_packed_payload_bytes": 38777333760,
+    "old_dense_child_operator_packed_payload_bytes": 72750331368000,
+    "essential_hypotheses": [
+      "Refine transports, CM roots and eta values to the stated precision on the certified branches.",
+      "Solve and independently verify all moments and all four coarse coefficients.",
+      "Future quadric enclosures must contain zero through their proved errors.",
+      "Establish successive exact vanishing in order before interpreting higher jets intrinsically."
+    ],
+    "precision_bound_is_conditional_not_a_prediction_of_candidate_equality": true
+  },
+  "synthetic_benchmarks": [
+    {
+      "synthetic_P": 200,
+      "coefficient_modulus_bits": 25,
+      "single_action_wall_seconds": 0.1533928329590708,
+      "maximum_packed_product_bytes": 47640,
+      "polynomial_products": 718
+    },
+    {
+      "synthetic_P": 400,
+      "coefficient_modulus_bits": 50,
+      "single_action_wall_seconds": 0.7790422081016004,
+      "maximum_packed_product_bytes": 167370,
+      "polynomial_products": 1350
+    },
+    {
+      "synthetic_P": 800,
+      "coefficient_modulus_bits": 100,
+      "single_action_wall_seconds": 6.000612583942711,
+      "maximum_packed_product_bytes": 646785,
+      "polynomial_products": 2586
+    },
+    {
+      "synthetic_P": 1600,
+      "coefficient_modulus_bits": 200,
+      "single_action_wall_seconds": 51.12634820793755,
+      "maximum_packed_product_bytes": 2493660,
+      "polynomial_products": 5026
+    }
+  ],
+  "illustrative_seconds_for_348_times_16_last_synthetic_actions": 284671.5068217963,
+  "decision": "Keep the D118 section certificate; develop preconditioned or compressed iteration before any large precision run.",
+  "memory_bottleneck_addressed_by_prototype": "No quadratic-size child or chart operator table.",
+  "remaining_cost_bottleneck": "174 states, 16 columns and many precision-gain iterations; the prototype alone is insufficient.",
+  "large_precision_run_ready": false,
+  "actual_moment_precision_increased": false,
+  "candidate_identification_proved": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/461_dyadic_precision_design.py",
+      "sha256": "e9c7a300f07bfb2ac92d4b1645588a3be93725186b5bb1ab927a52c278ea0d1d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+      "sha256": "d1a595cfd6accde0f0b57419bdc16cbf7da1c65b15842f9ba58c8a91381c7cf2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/457_cm_cartier_frame_review.py",
+      "sha256": "4cec30a4f7589891128224311674e7c4211def535fa180605d3e96eefaf68469"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/447_cm_disk_vanishing_budget.py",
+      "sha256": "20214cdbff53e5a7ba74b1c00260192e4fad5c2834ca3e4aa49a9d7166321d40"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_d115.json",
+      "sha256": "bc043dfe632db80984eef2578841611325767cb4afb214bebfa354354f8fb699"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_comparison200_d115.json",
+      "sha256": "fcfab32a97a88bf11bf4cebb8d3fa494e435a6141cdc8c7b09d679c6f5d6f0d6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_height_budget_d118.json",
+      "sha256": "23246bb6effb1f20fcee619d0413424f099bf7f0e8ff61ea0c9eb8f1c5b5f8a6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_mobius_transform_d120.json",
+      "sha256": "ed0ca3b1eb04f1819fa7902648f5792183716609d895927cbbad8a5f3c291755"
+    }
+  ]
+}

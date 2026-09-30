@@ -1,0 +1,34 @@
+{
+  "status": "pass: rational (1,1) derivative calibration",
+  "identity": "delta1 delta2 [phase2 W2(4*pi*sqrt(A))] at Y=0 = W2-A*dW2/dA = 4*pi*sqrt(A)*W3",
+  "tests": [
+    {
+      "absolute_X": "0.7",
+      "direct_derivative": "0.00128814895253800249475527430727832011700081907",
+      "Mellin_relative_error": "7.0766234e-61",
+      "direct_over_literal_arxiv_v1_display": "0.7"
+    },
+    {
+      "absolute_X": "1.3",
+      "direct_derivative": "0.00000172723868251928265917754020824580427953546673",
+      "Mellin_relative_error": "9.4489009e-61",
+      "direct_over_literal_arxiv_v1_display": "1.3"
+    },
+    {
+      "absolute_X": "2.0",
+      "direct_derivative": "0.000000000493896284820303001728413712519252531248691819",
+      "Mellin_relative_error": "1.4668147e-60",
+      "direct_over_literal_arxiv_v1_display": "2.0"
+    }
+  ],
+  "numerical_calibration_not_interval_proof": true,
+  "arxiv_v1_display_11_scale_discrepancy": true,
+  "published_2015_display_checked": false,
+  "implementation_uses_direct_Gaussian_derivatives": true,
+  "sources": [
+    {
+      "path": "dembele/pari/335_nelson_derivative_calibration.py",
+      "sha256": "ebd82311981b5c082531e47039ef752e203a8d5978bbb6ba69f65046f8cb4324"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/333_nelson_interval_sum.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 6.144014333025552,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_interval_d91_attempt03.log",
+    "sha256": "0a857e57017cfa617f37b1a4d7de7fdae732d43a5c8984e10e17b57f0700e7b8"
+  },
+  "private_process_group": 81193,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/333_nelson_interval_sum.py",
+      "sha256": "5db3901a0fe91117aea146c9e9a101c9a3a11a8dd468e73793b5f169a82c0639"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d91-sage"
+  }
+}

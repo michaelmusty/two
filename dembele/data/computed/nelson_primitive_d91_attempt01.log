@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/329_nelson_primitive_classes.py", line 101, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/Users/musty/two/dembele/pari/329_nelson_primitive_classes.py", line 50, in main
+    key = (tuple(tuple(c/pivot) for c in cs), int(nn))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/329_nelson_primitive_classes.py", line 50, in <genexpr>
+    key = (tuple(tuple(c/pivot) for c in cs), int(nn))
+                       ~^~~~~~
+  File "sage/structure/element.pyx", line 1728, in sage.structure.element.Element.__truediv__ (build/cythonized/sage/structure/element.c:21225)
+  File "sage/rings/number_field/number_field_element.pyx", line 2651, in sage.rings.number_field.number_field_element.NumberFieldElement._div_ (build/cythonized/sage/rings/number_field/number_field_element.cpp:33688)
+  File "sage/rings/number_field/number_field_element.pyx", line 2801, in sage.rings.number_field.number_field_element.NumberFieldElement.__invert__ (build/cythonized/sage/rings/number_field/number_field_element.cpp:34898)
+ZeroDivisionError: number field element division by zero

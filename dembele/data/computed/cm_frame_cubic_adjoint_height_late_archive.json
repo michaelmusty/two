@@ -1,0 +1,20 @@
+{
+  "status": "late_completion_archived_not_certified",
+  "original_timeout_job": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_height_64_48_0_job.json",
+    "sha256": "522e348f08e3b719bb4dc12a16cc1453cb2fdee7f3344c2013c199bff0391904"
+  },
+  "late_log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_height_64_48_0_late.out",
+    "sha256": "891ae9bb1db22bd8e781c304881f4cd5257d010441c0209e826b624832e54c56"
+  },
+  "late_worker_record": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_height_64_48_0_late.json",
+    "sha256": "fbfd3f5b9ddcc675cf3354b70ec5538b6c000d8b4e7c6021d7b9c26dd15988a7"
+  },
+  "restored_log_at_timeout": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_height_64_48_0.out",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "explanation": "The old timeout runner killed the Sage launcher but not its Python child. Late output is retained separately and excluded from the bounded mathematical certificates. The empty original timeout log is restored exactly to its recorded SHA256."
+}

@@ -1,0 +1,81 @@
+{
+  "status": "pass",
+  "milestone": "D115",
+  "field_degree": 17,
+  "dyadic_local_degrees": [
+    1,
+    16
+  ],
+  "normalizations": {
+    "v_beta_2": 16,
+    "v_pi_2": 8
+  },
+  "log2_lower": "3508595171842993185134796784736611366655501408312351140098685578379184556173245757359910454882815130815005200896/5061832854904846645955900741673035877578026003792249877488563088418276175757042525151232593509677298791370051125",
+  "log2_upper": "42103142062115918221617561416839336399866016899748213681184226970503191837707222979818147583109816019560407766877/60741994258858159751470808900076430530936312045506998529862757061019314109084510301814791122116127585496440613500",
+  "thresholds": [
+    {
+      "order": 1,
+      "difference_height_upper": "111817/10",
+      "rational_anchor_only": {
+        "sufficient_beta_error": 4387846,
+        "sufficient_integer_pi_error": 2193923
+      },
+      "degree16_place_only": {
+        "sufficient_beta_error": 274241,
+        "sufficient_integer_pi_error": 137121
+      },
+      "both_places_uniform_beta_error": {
+        "sufficient_beta_error": 258109,
+        "sufficient_integer_pi_error": 129055
+      }
+    },
+    {
+      "order": 2,
+      "difference_height_upper": "334657/10",
+      "rational_anchor_only": {
+        "sufficient_beta_error": 13132378,
+        "sufficient_integer_pi_error": 6566189
+      },
+      "degree16_place_only": {
+        "sufficient_beta_error": 820774,
+        "sufficient_integer_pi_error": 410387
+      },
+      "both_places_uniform_beta_error": {
+        "sufficient_beta_error": 772493,
+        "sufficient_integer_pi_error": 386247
+      }
+    },
+    {
+      "order": 3,
+      "difference_height_upper": "557517/10",
+      "rational_anchor_only": {
+        "sufficient_beta_error": 21877695,
+        "sufficient_integer_pi_error": 10938848
+      },
+      "degree16_place_only": {
+        "sufficient_beta_error": 1367356,
+        "sufficient_integer_pi_error": 683678
+      },
+      "both_places_uniform_beta_error": {
+        "sufficient_beta_error": 1286924,
+        "sufficient_integer_pi_error": 643462
+      }
+    }
+  ],
+  "thresholds_are_sufficient_not_necessary": true,
+  "finite_precision_matching_below_threshold_proves_equality": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/423_dyadic_exactness_budget.py",
+      "sha256": "ac68af6eb33f79958ec0aa6d0ac025f7f8a7078c66a9b436bb5236d8dbbb3294"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_ratio_jet_review_d106.json",
+      "sha256": "d3e1eb42d9e769a4405d89ca0c114700a2f91cce00f05c0cb613715039292bad"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_cm_matching_review_d112.json",
+      "sha256": "2a64812de8db236cd68fc5007d31904413840b251007bfb3971aff862a9a4a6f"
+    }
+  ]
+}

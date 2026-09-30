@@ -1,0 +1,69 @@
+{
+  "status": "pass",
+  "milestone": "D132",
+  "execution_status": "controls_complete_pending_fixed_review",
+  "source_numbers": [
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555
+  ],
+  "prior_fixed_review": "dyadic_weighted_journal_review_d131.json",
+  "prior_hash_count": 16567,
+  "report": "dembele/certificates/dyadic-staged-integration-d132.md",
+  "passing_input_jobs": 471,
+  "failed_bounded_jobs": 0,
+  "sum_input_wall_seconds": 1628.2585265843663,
+  "maximum_input_wall_seconds": 24.607133124955,
+  "input_categories": {
+    "548_dyadic_resumable_staged_driver.py": 453,
+    "550_dyadic_staged_interrupt_control.py": 7,
+    "551_dyadic_staged_metadata_archive.py": 7,
+    "552_dyadic_staged_target_controls.py": 4
+  },
+  "P800_complete_phases": 432,
+  "P800_corrections": 12,
+  "P800_uniform_and_weighted_scalars_each": 1113600,
+  "CM_scalar_comparisons": 217600,
+  "CM_coarse_values": 68,
+  "intentional_child_interruptions": 8,
+  "target_low_bits": 1319,
+  "target_low_digits": 7,
+  "target_low_scalar_equations_per_digit": 44544,
+  "target_low_final_bytes": 7349760,
+  "metadata_archives_controlled": 7,
+  "scratch_bound_bytes": {
+    "P800_from400": 100749888,
+    "P6400_from3200": 973167872,
+    "P10552_from6400": 2046552040
+  },
+  "scratch_scope": "One working store with per-sweep duplicate-metadata archival, exact payloads, conservative metadata and crash-state allowances, and 64 MiB reserve.",
+  "RAM_policy": {
+    "per_successful_job_measured_peak_bytes": 2147483648,
+    "maximum_workers": 3,
+    "sum_admission_bytes": 6442450944,
+    "OS_hard_RAM_limit": false,
+    "interrupted_child_RSS_separately_recorded": false
+  },
+  "reference_roles": [
+    "Inherited D121 operator coefficient bound and fixed-mass contraction; D130 weighted deduction and target low reference; D123 actual P800 and D129 CM reference.",
+    "Independent quotient arithmetic from source486; FLINT/GMP and prior factor attribution inherited. No new external theorem or fresh external-source verification."
+  ],
+  "actual_harmonic_precision_increased": false,
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 3200,
+    "1": 1600
+  },
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "next_execution": "One actual P6400 column0 using source554 and source553 after both fixed reviews pass; planned initialization pause/resume, 96 corrections, final weighted/CM certificate and independent review.",
+  "next_config": "dyadic_staged_P6400_col00_config_d133.json",
+  "full_bank_launch_admitted": false,
+  "freeze": "547--555, completed controls, sealed P800/low1319 stores, reports, ledger/review and all prior freezes; mutable entry documents are not frozen hash sources."
+}

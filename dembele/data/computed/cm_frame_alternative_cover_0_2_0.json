@@ -1,0 +1,78 @@
+{
+  "status": "pass",
+  "milestone": "D84",
+  "case": 0,
+  "third_label": [
+    0,
+    0
+  ],
+  "counts": [
+    {
+      "extension_degree": 1,
+      "point_count": 68,
+      "Hecke_expected": 68,
+      "fiber_distribution": [
+        9,
+        27,
+        1,
+        13
+      ],
+      "independently_verified": true
+    },
+    {
+      "extension_degree": 2,
+      "point_count": 2818,
+      "Hecke_expected": 2818,
+      "fiber_distribution": [
+        219,
+        362,
+        1,
+        818
+      ],
+      "independently_verified": true
+    }
+  ],
+  "matches_both_Hecke_counts": true,
+  "genus": 64,
+  "cover_independently_verified": true,
+  "arithmetic_identification_certified": false,
+  "complete_third_enumeration": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/d84_alternative_driver_1181d4787ee10e50.py",
+      "sha256": "1181d4787ee10e50b63fb81be183a7c91134fd15d94b01852b1c9b70c482fc78"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_third_ambiguity_0_2.json",
+      "sha256": "ac4cf5e2b83d08704a4a4e4df1291b45234cbc757b69f428f33b757642e5cfb0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_0_construct_job.json",
+      "sha256": "0988c7cae673f8eba4fb3ba4164ca55eca8c952f83a823106e46fa49e248fa08"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_0_verify_job.json",
+      "sha256": "7a2fa546c1ddf5b54467466f352e205403c0f00ebb19d5ce38766e8148ed9904"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_0_data.m",
+      "sha256": "ff5604429d32fea082864321da0f61d0965c31ef512d58b45eaaeb1ee33bb651"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_0_count_1_job.json",
+      "sha256": "f53b619aa95b576aea968c487ba37be51914ef44d97e7b05a87b5898eeec9da0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_0_count_check_1_job.json",
+      "sha256": "1debcb8412aa03a7101e640d7e3515524c7ebefc0f7f8d0c948bd9053ad7072b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_0_count_2_job.json",
+      "sha256": "2ae6ad138b9ab368bc6e4c541381c54b6d6e2763650a0609e75b13330db7cbb3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_alternative_cover_0_2_0_count_check_2_job.json",
+      "sha256": "5bc748661294d1d0486aaed98d7eadd15964f527be7bc36ad27f878059f26fe1"
+    }
+  ]
+}

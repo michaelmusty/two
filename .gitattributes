@@ -1,0 +1,14 @@
+# Certificates bind exact bytes, including source and small metadata files.
+* -text
+# Large research artifacts are fetched with git lfs pull.
+dembele/data/computed/**/*.bin filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/**/*.npz filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/**/*.acb filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/**/*.dylib filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/dyadic_moment_extension_d114.json filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/dyadic_precision104_d115.json filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/dyadic_precision136_d115.json filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/dyadic_precision152_d115.json filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/dyadic_precision200_d115.json filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/dyadic_precision56_d115.json filter=lfs diff=lfs merge=lfs -text
+dembele/data/computed/dyadic_precision72_d115.json filter=lfs diff=lfs merge=lfs -text

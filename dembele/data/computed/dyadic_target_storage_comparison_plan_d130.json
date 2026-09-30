@@ -1,0 +1,150 @@
+{
+  "milestone": "D130",
+  "kind": "bounded_job_plan",
+  "jobs": [
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_zero_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "zero"
+      ]
+    },
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_target_row_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "target-row"
+      ]
+    },
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_inventory_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "inventory"
+      ]
+    },
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_projection_e000_028_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "projection",
+        "--first",
+        "0",
+        "--last",
+        "28"
+      ]
+    },
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_projection_e029_057_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "projection",
+        "--first",
+        "29",
+        "--last",
+        "57"
+      ]
+    },
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_projection_e058_086_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "projection",
+        "--first",
+        "58",
+        "--last",
+        "86"
+      ]
+    },
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_projection_e087_115_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "projection",
+        "--first",
+        "87",
+        "--last",
+        "115"
+      ]
+    },
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_projection_e116_144_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "projection",
+        "--first",
+        "116",
+        "--last",
+        "144"
+      ]
+    },
+    {
+      "driver": "dembele/pari/536_dyadic_compact_retention_control.py",
+      "stem": "dyadic_compact_projection_e145_173_d130",
+      "marker": "PASS|536_DYADIC_COMPACT_RETENTION_CONTROL",
+      "args": [
+        "--phase",
+        "projection",
+        "--first",
+        "145",
+        "--last",
+        "173"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_synthetic_quadrics_c00_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "quadrics",
+        "--chart",
+        "0",
+        "--previous",
+        "dyadic_target_synthetic_frame_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_synthetic_quadrics_c08_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "quadrics",
+        "--chart",
+        "8",
+        "--previous",
+        "dyadic_target_synthetic_frame_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/535_dyadic_target_CM_comparison_controls.py",
+      "stem": "dyadic_target_synthetic_quadrics_c16_d130",
+      "marker": "PASS|535_DYADIC_TARGET_CM_COMPARISON_CONTROLS",
+      "args": [
+        "--phase",
+        "quadrics",
+        "--chart",
+        "16",
+        "--previous",
+        "dyadic_target_synthetic_frame_d130"
+      ]
+    }
+  ]
+}

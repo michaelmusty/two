@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/248_cm_frame_cubic_quartic_space_lattice.py",
+    "--train",
+    "128",
+    "--valid",
+    "256",
+    "--worker"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 130.42425920907408,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_quartic_lattice_128_256.out",
+    "sha256": "050d9cdfe8f0ad4d30b8b26f5d646e403db4ee1a0d7e5e403a7a4bc9ab813e41"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/248_cm_frame_cubic_quartic_space_lattice.py",
+      "sha256": "23587889680b004a139b5c50693923f5d8e0086f694da194d4f6938f5ffd4dcb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ]
+}

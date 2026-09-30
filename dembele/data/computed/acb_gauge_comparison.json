@@ -1,0 +1,18 @@
+{
+  "status": "native checkpoint round trip and cross-bank numerical comparison; not an error bound",
+  "native_report": "acb_refinement_8192.json",
+  "checkpoint_vs_saved_jets_relative_difference": "1.282385285304576e-50",
+  "comparisons": {
+    "cm_differentials_8192_refined": {
+      "normalized_jets_relative_difference_first64": "6.723542882219622e-12",
+      "normalized_jets_max_absolute_difference_first64": "1.453772124784758e-8",
+      "alpha_relative_difference": "1.217416224316235e-13"
+    },
+    "cm_differentials_10240_refined": {
+      "normalized_jets_relative_difference_first64": "4.852821864246489e-10",
+      "normalized_jets_max_absolute_difference_first64": "1.083664753824115e-6",
+      "alpha_relative_difference": "1.146114571004379e-11"
+    }
+  },
+  "method": "D46 normalization on first 64 coefficients at 70 working digits; double banks retain double source accuracy"
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/539_dyadic_target_schedule_budget.py", line 285, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/539_dyadic_target_schedule_budget.py", line 253, in main
+    'map_census': census(), 'storage_inventory': inv,
+  File "/Users/musty/two/dembele/pari/539_dyadic_target_schedule_budget.py", line 232, in census
+    pars = tuple(tuple(v & mask for v in row) for row in c['normalized_center'][:3])
+  File "/Users/musty/two/dembele/pari/539_dyadic_target_schedule_budget.py", line 232, in <genexpr>
+    pars = tuple(tuple(v & mask for v in row) for row in c['normalized_center'][:3])
+  File "/Users/musty/two/dembele/pari/539_dyadic_target_schedule_budget.py", line 232, in <genexpr>
+    pars = tuple(tuple(v & mask for v in row) for row in c['normalized_center'][:3])
+TypeError: unsupported operand type(s) for &: 'str' and 'int'

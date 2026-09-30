@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/460_norm97_target_isolation.py", line 147, in <module>
+    out.write_text(json.dumps(build(), indent=2)+'\n')
+  File "/Users/musty/two/dembele/pari/460_norm97_target_isolation.py", line 102, in build
+    assert len(factors) == 2 and mul(*factors) == psi
+AssertionError

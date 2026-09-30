@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "milestone": "D132",
+  "request": {
+    "config": "dyadic_staged_P800_col00_config_d132",
+    "phase": "coarse",
+    "key": "coarse_c03_o3",
+    "step": null,
+    "digit": null,
+    "first": null,
+    "last": null,
+    "chart": 3,
+    "order": 3
+  },
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P800_col00_config_d132.json",
+    "sha256": "9804112134fa59a0a1dcd335c190b65a8ec769076f58dd5461db792dc1c7c993"
+  },
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/548_dyadic_resumable_staged_driver.py",
+    "sha256": "1c1b53cdf52a8f8f5db1d478535acacb1961e7a9cb0bcac2992aa13f67d1c412"
+  },
+  "certificates": {
+    "chart": 3,
+    "order": 3,
+    "coarse_value_beta": [
+      2943419312769015055432574349824,
+      16057835232461247022902410616864,
+      92736739976902492291163401216,
+      18535596016728120843107906695328,
+      15265422594330616456564186420736,
+      3491911510870556787559813434304,
+      10234289039544898952018264109568,
+      16886651084832550626138922895072,
+      3819306615043719576652473470976,
+      15851664913652663160230742800544,
+      11557262137901796770503708504320,
+      2223929575005450359881841305984,
+      10677027491087304164270833707264,
+      12377065170849645603621640914944,
+      15602157618421995270156400230656,
+      3269030989811439248967174407776
+    ],
+    "error_beta": 1664,
+    "old_overlap_checked": true
+  },
+  "wall_seconds": 0.18136245803907514,
+  "peak_rss_bytes": 38043648,
+  "maximum_observed_store_bytes": 79664407,
+  "historical_payload_hashes_are_not_retained_source_claims": true,
+  "working_precision_pi": 800,
+  "harmonic_basis_column": 0
+}

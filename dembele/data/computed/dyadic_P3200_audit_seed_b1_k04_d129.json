@@ -1,0 +1,58 @@
+{
+  "status": "pass",
+  "milestone": "D129",
+  "phase": "seed-block",
+  "working_precision_pi": 3200,
+  "harmonic_basis_column": 0,
+  "certificates": {
+    "branch": 1,
+    "block": 4,
+    "state": 0,
+    "target_child": 4,
+    "first_input_degree": 1600,
+    "last_degree": 2000,
+    "recurrence_steps": 400,
+    "coefficient_count": 1600,
+    "modulus_pi": 1600,
+    "known_old_moment_contribution": null
+  },
+  "checkpoint_files": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P3200_audit_seed_b1_k04_d129_power.bin",
+      "sha256": "31c7eb893c44a844080416ef4186c4e16353f8e3e61deaf30f4a70297be5cef3"
+    }
+  ],
+  "full_sixteen_column_bank_precision_pi": 800,
+  "production_arithmetic_not_imported": true,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "target_field_polynomial_constructed": false,
+  "wall_seconds": 31.695071707945317,
+  "peak_rss_bytes": 36241408,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P3200_audit_seed_b1_k03_d129.json",
+      "sha256": "83d48237026d25a59ff68e4513bf4c2ee91217c285ad67ebb21fd766714b77f7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P3200_audit_seed_b1_k03_d129_power.bin",
+      "sha256": "1119db2934b8c0ab84819ef7e02d72fb55d4e26a938f9ed6f108ab23b8f895fc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/491_dyadic_staged_pilot_independent.py",
+      "sha256": "1264a6696bdc5745bca69e6cbca2d1e0bbabba2ce12be2b25498b3d1ac9b6fb0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/531_dyadic_precision3200_independent.py",
+      "sha256": "31ad0cc31837d839649691f794b1e26a629114c201b6bb102a6a5599e8494636"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/336_nelson_unit_cutoff.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 3.6589603750035167,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_unit_cutoff_d91_attempt01.log",
+    "sha256": "f9f838033dd2db88e40bf7c109ffee5acd899d2ef0f768d65b58dd8f2e56f36b"
+  },
+  "private_process_group": 90784,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/336_nelson_unit_cutoff.py",
+      "sha256": "15c0ed1cdee10a8588d6c25cb6df03978c2fc935836c6f260124cdbfcc98e669"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d91-sage"
+  }
+}

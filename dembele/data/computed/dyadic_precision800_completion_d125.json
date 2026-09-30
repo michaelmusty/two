@@ -1,0 +1,147 @@
+{
+  "status": "pass",
+  "milestone": "D125",
+  "arithmetic_and_audits_complete": true,
+  "final_report_and_fixed_provenance_review_pending": true,
+  "new_completion_jobs": 19,
+  "coordinator_wall_seconds_including_wait_for_bank": 4549.9657539159525,
+  "comparison_certificates": {
+    "all_bank_assembled_coarse_values_checked": 1088,
+    "frame_relation_certified_error_beta": 1301,
+    "change_column_error_bounds_beta": [
+      1337,
+      1336,
+      1337,
+      1336,
+      1336,
+      1340,
+      1336,
+      1339,
+      1337,
+      1337,
+      1338,
+      1336,
+      1339,
+      1336,
+      1336,
+      1336
+    ],
+    "inherited_inverse_norm_preserved_by_overlap_beta": 799,
+    "all_actual_jet_values_checked": 1088,
+    "independent_quadric_coefficients_checked": 6188,
+    "positive_coefficients_checked": 4641,
+    "certified_mismatch_count": 0,
+    "degree16_section_lower_beta": [
+      4994,
+      4945,
+      4928
+    ],
+    "anchor_section_lower_beta": [
+      4776,
+      4448,
+      4184
+    ],
+    "sufficient_nonanchor_beta": [
+      25255,
+      25369,
+      25476
+    ],
+    "W_Gaussian": {
+      "valuation_beta": 1024,
+      "error_beta": 2025
+    },
+    "W_Gaussian_inverted": false,
+    "positive_exact_vanishing_proved": false,
+    "method": "integer quotient absolute-error balls, frame residual bounds, gradients and polar forms"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_precision800_completion.py",
+      "sha256": "4d84a5ac11cb73ad5db78b97a8839792aadfd37be7fd0c6f7843d745b8adfa95"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_comparison_d125.json",
+      "sha256": "f003ab953b3a306cef46edf45476793efe1a65a3e1826a9d69e6cdd5585d9092"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_d125_attempt01.job.json",
+      "sha256": "0a2f0b8087fbcd4b8a857b723710c04b3465441af0d88d40827a3fa4ab5fae55"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_residue_frame800_d125_attempt01.job.json",
+      "sha256": "08c868e2f3ff9feb0ad8c3903f4c252cb5105c105a6ba2e54be9b82785efb1af"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_integral_quadrics800_d125_attempt01.job.json",
+      "sha256": "acb6244350fe79dd90f2f0ac6ddb8460fd8aa93f06b8ed291532ad398b7965c0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col01_d125_attempt01.job.json",
+      "sha256": "b88cece82faf8293752b54bb7592c2316f7efacaef7fd6e33cd6d1722c329fb4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col02_d125_attempt01.job.json",
+      "sha256": "24e7d922be1ba57ec66437c0724f06ee34075dd10e60e37b978c7dd21b453ab0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col03_d125_attempt01.job.json",
+      "sha256": "ac4e6c66a2f267991f17d40e3568523590d9aab564579fd1e48e91f96344f1e6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col05_d125_attempt01.job.json",
+      "sha256": "4123ee7b9114e7f475495ad67f2e47146f89c94af335c7991e72056526603ab8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col06_d125_attempt01.job.json",
+      "sha256": "93527528ca3cb7a646c6ba3994ade4d2b3ab8e5825ded88890f8f2debbdc9a68"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col04_d125_attempt01.job.json",
+      "sha256": "387632e0caee2b9634dcbd77ca1634befaa740ed250e39707b271620ef6c1c7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col08_d125_attempt01.job.json",
+      "sha256": "76b58207fde21f12b55b8cc5d12aaf5e6149d84a35c50b9b8fd762d3e8e5fbce"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col07_d125_attempt01.job.json",
+      "sha256": "9f6161eebf17c37432347d937132564cd46cb7774770e75fcdfbf1bf3ad1cb54"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col09_d125_attempt01.job.json",
+      "sha256": "b27c1b42e8a38c0aba12156cc3d3f6581616f92c44b6c1dfcd7df42d1c1afd65"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col12_d125_attempt01.job.json",
+      "sha256": "71ca19dd5d461a7da5bd916727435cb3570d4cc8de9ad6d322639ae641438d5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col10_d125_attempt01.job.json",
+      "sha256": "57a4af3771255d6bd915947b872c83c721455517458a82965c47aa6dbd99e394"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col11_d125_attempt01.job.json",
+      "sha256": "8acbb409756ce7b2ade2d0660cedbe968b2d2fc88517edf7a55f23b33ba4a662"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col15_d125_attempt01.job.json",
+      "sha256": "6357b580f46b2b4bed6ec46b18ac0e790fa635a52656bcb5b3d0f4e54d9e1063"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col13_d125_attempt01.job.json",
+      "sha256": "0b77d34d60b18e9ebd79c5f62e8476873a59a84b935f4a624913f92fd6b5cb20"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_col14_d125_attempt01.job.json",
+      "sha256": "b68d115dda22037da9ca1529ac5c409c99c25a0dbd9411bdea15485433e1243e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision800_audit_comparison_d125_attempt01.job.json",
+      "sha256": "52dd0459cedfff84d02917d4c9db4e4f0b7338ce4d23e7e45e3a72596f63811c"
+    }
+  ]
+}

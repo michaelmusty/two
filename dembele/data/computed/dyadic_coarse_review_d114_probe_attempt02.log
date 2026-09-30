@@ -1,0 +1,29 @@
+MOMENT_REVIEW|130848 state entries and 26112 CM entries; all residuals and transfers exact modulo pi^16
+POISSON_REVIEW|independent rational kernels; refined errors [64, 80, 64]; nonzero [256, 256, 256]
+ANCHOR_BOUND|all polynomial A moments divisible by pi^16; coarse beta-valuations >= [65, 81, 65]
+{
+  "moments": {
+    "state_entries": 130848,
+    "CM_moment_entries": 26112,
+    "moment_precision_pi": 16,
+    "higher_rows_verified": 31,
+    "column_16_vanishes": true,
+    "D113_overlap_checked": true
+  },
+  "refined_errors_beta": [
+    64,
+    80,
+    64
+  ],
+  "refined_nonzero_counts": [
+    256,
+    256,
+    256
+  ],
+  "anchor_lower_bounds_beta": [
+    65,
+    81,
+    65
+  ]
+}
+PASS|D114_COARSE_PROBE

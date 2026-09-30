@@ -1,0 +1,185 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "plan": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_plan_d130.json",
+    "sha256": "98c5b829e985e9bbfa14d24352db5ece1d4d540fc525536239cd56ed2591f7a3"
+  },
+  "coordinator": {
+    "path": "/Users/musty/two/dembele/pari/run_d130_batch.py",
+    "sha256": "11b5bacea12af1ff2f98caa8b3cedbc56f8d6146b1d2597a9eddddf083cf774a"
+  },
+  "worker_limit": 3,
+  "completed_jobs": 12,
+  "jobs": [
+    {
+      "stem": "dyadic_target_audit_full0_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_full0_d130_attempt01.job.json",
+        "sha256": "ebabeb786c3bdf61823bf07504bf419a22ee396ba9eabce0558f30d74e168478"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_full0_d130.json",
+        "sha256": "4dcb739b3f3ed7ef81143c57c9bd935fd21c88fc1444944259efff9400b97a18"
+      },
+      "seconds": 3.431647500023246,
+      "peak_rss_bytes": 101203968,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_full83_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_full83_d130_attempt01.job.json",
+        "sha256": "d0299facd3944d34d12ca2b8cdea322fe7a9bb4e4a7ebb386b33d5aa19fc097d"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_full83_d130.json",
+        "sha256": "489623f33c437083db7ff7da8524aa3060597c5031d3049e79a9940fcebb2b1a"
+      },
+      "seconds": 0.345447416882962,
+      "peak_rss_bytes": 92160000,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_rhs0_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_rhs0_d130_attempt01.job.json",
+        "sha256": "fa1d1e15a52db179b4287ff08ea18325de92e4248d89f63d008f78b5b677b8ee"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_rhs0_d130.json",
+        "sha256": "7099b3c2dfc2e1b7442d9d47cf07f260e3a02915c7122f6c2c245e46ac43c44c"
+      },
+      "seconds": 3.353070375043899,
+      "peak_rss_bytes": 63995904,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_extend0_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_extend0_d130_attempt01.job.json",
+        "sha256": "f07f80b4951b719d9b13ff0cc8e71ad81bce5dad38bdcbba804d2ecb4d584c4e"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_extend0_d130.json",
+        "sha256": "5847194d1e115ba32e24e5c90533b3344e452d8fe2672c54865d8dbcd810c0ac"
+      },
+      "seconds": 1.7581848339177668,
+      "peak_rss_bytes": 73646080,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_correction0_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_correction0_d130_attempt01.job.json",
+        "sha256": "e8c81de849b33d7559cb812466f049f46c54102d7f4bf9600db28325e0d955d8"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_correction0_d130.json",
+        "sha256": "a5d7e178a74c74a77400d18507600b47eba91076f07ad04e6c8829c988d46e50"
+      },
+      "seconds": 2.8281076250132173,
+      "peak_rss_bytes": 90013696,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_cm0_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_cm0_d130_attempt01.job.json",
+        "sha256": "d75e2a4ffd5a84c3672ebd260c5e58039c42f13d810264613e9c9622f55dd7d8"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_cm0_d130.json",
+        "sha256": "2cd319f6ec50988f713d15e72c7b8509f109b7a89307dc5057a3f249e0f79bbd"
+      },
+      "seconds": 16.218758416827768,
+      "peak_rss_bytes": 124583936,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_aggregate_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_aggregate_d130_attempt01.job.json",
+        "sha256": "7394d99b847989f8da88ed066c03ab37cb6f57e8e947b3b6aa758690471372c1"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_aggregate_d130.json",
+        "sha256": "d1eb7e4150634d6b5e06bfdc9761f895db1152c662828ba7ebb23908fbd70455"
+      },
+      "seconds": 1.1598712920676917,
+      "peak_rss_bytes": 85147648,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_low_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_low_d130_attempt01.job.json",
+        "sha256": "0f9a26b63a9e2b428263fc0d1ffdac27cfb29d028c27f5d28329ef84529e989f"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_low_d130.json",
+        "sha256": "a8f1597496fc9f9e75ddbe1f2a0d12d00cb101f01213461e723be381ba131f7b"
+      },
+      "seconds": 8.082639750093222,
+      "peak_rss_bytes": 79020032,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_bridge_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_bridge_d130_attempt01.job.json",
+        "sha256": "723e762669277593ad81afc63777df386f957299549dd2640f99407c65c572bd"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_bridge_d130.json",
+        "sha256": "5fdb6a74f3ed8ad75f1e00a09f9ca2e8e93f092102218fbefec140e99e07b0aa"
+      },
+      "seconds": 0.03966179210692644,
+      "peak_rss_bytes": 20561920,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_quadrics_c00_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_quadrics_c00_d130_attempt01.job.json",
+        "sha256": "46bdaa8292d490ae5a81467065d66d93ea28beeefa5c7271d79248e14c8998b7"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_quadrics_c00_d130.json",
+        "sha256": "2123c1ed0087ff11681522b3865c5cc814e0050092e7434785e85ef822b66c46"
+      },
+      "seconds": 1.1611858748365194,
+      "peak_rss_bytes": 47382528,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_quadrics_c08_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_quadrics_c08_d130_attempt01.job.json",
+        "sha256": "a07441771a89f2d60b8a9f772ff6d87cdbe15b3eb1dfa3bf196a9938e36d4778"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_quadrics_c08_d130.json",
+        "sha256": "800041bb78d85cfa618b51d2f3f0bb8fb67759f7603591c50da2763d4a34b19d"
+      },
+      "seconds": 1.4782979171723127,
+      "peak_rss_bytes": 47398912,
+      "resumed": false
+    },
+    {
+      "stem": "dyadic_target_audit_quadrics_c16_d130",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_quadrics_c16_d130_attempt01.job.json",
+        "sha256": "042ed2301c7e5b84e705d8c9d1d6649d6bca46b6dedf1c62c5ed7631447298a6"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_target_audit_quadrics_c16_d130.json",
+        "sha256": "6e4f89eeca179099d7ad5cd6cd9ee028ed7472e540d47dd9cb25e337fe94d5c5"
+      },
+      "seconds": 1.4893515419680625,
+      "peak_rss_bytes": 47480832,
+      "resumed": false
+    }
+  ],
+  "wall_seconds": 19.648378791986033
+}

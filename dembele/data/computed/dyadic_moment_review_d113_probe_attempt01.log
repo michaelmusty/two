@@ -1,0 +1,29 @@
+TRANSPORT_REVIEW|348 contracting maps and 51 CM maps independently reconstructed
+MOMENT_REVIEW|33408 state moments; residual zero; 2043 certified nonzero CM entries
+DIRECT_CHECK|32 independently reduced leaf balls; degrees 1..3 agree modulo pi^3
+{
+  "transports": {
+    "states": 174,
+    "strict_contractions": 348,
+    "CM_ball_isomorphisms": 51,
+    "minimum_transition_error_pi": 159,
+    "minimum_CM_chart_error_pi": 165
+  },
+  "moments": {
+    "state_moment_entries": 33408,
+    "state_positive_nonzero_residues": 20192,
+    "fixed_point_residual_zero": true,
+    "contraction_precision_gain_pi": 1,
+    "state_moment_error_pi": 12,
+    "CM_positive_moment_errors_pi": [
+      11,
+      10,
+      9
+    ],
+    "CM_certified_nonzero_positive_entries": 2043,
+    "anchor_certified_nonzero_positive_entries": 0,
+    "altered_positive_moment_rejected": true,
+    "ramification_eight_verified": true
+  }
+}
+PASS|D113_MOMENT_PROBE

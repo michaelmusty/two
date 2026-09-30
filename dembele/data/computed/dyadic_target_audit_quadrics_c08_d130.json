@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "phase": "quadrics",
+  "certificates": {
+    "chart": 8,
+    "synthetic_quadric_coefficient_comparisons": 364,
+    "method": "independent_integer_quotient_with_absolute_errors",
+    "actual_candidate_mismatch_claimed": false
+  },
+  "production_arithmetic_not_imported": true,
+  "wall_seconds": 1.4336240410339087,
+  "peak_rss_bytes": 47398912,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_synthetic_frame_d130.json",
+      "sha256": "bd32c9da04fb495d598d70257a68abd532d1284ccf489b38272bbf30965a188d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_synthetic_quadrics_c08_d130.json",
+      "sha256": "62484782fc4af553550269985e39e227bc74bd9531ab2fd8a949e334e33092d6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/538_dyadic_target_independent_review.py",
+      "sha256": "102e03b9c71a7f5ef1322b235a110ab3639aa7a0f1a234a67dc9948c6c07e271"
+    }
+  ]
+}

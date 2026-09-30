@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/132_cm_frame_denominator_recognition.py"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 5.003185083041899,
+  "timeout_seconds": 240,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/132_cm_frame_denominator_recognition.py",
+      "sha256": "fd1678252e54e1fb8c7b42f42a11ef1efea09a12aab8cb86f8e2b6302c252b05"
+    }
+  ],
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_denominator_recognition.out",
+    "sha256": "efee74ca95ffda6a0ef74448efd5375491c103bb09834e1ab5f46f61092d57fc"
+  },
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d74-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

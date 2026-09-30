@@ -1,0 +1,149 @@
+  ***   Warning: new maximum stack size = 1073741824 (1024.000 Mbytes).
+T = all of J[2]
+Working with q=7^2
+ Generating a new batch of 2 points in parallel
+ Batch of points generated.
+ Picking point 1 from batch; its order is 2^3
+  Computing pairings...
+  Looking for relations...
+  Good, no relation
+ Applying Frobenius
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [1, 1]~
+ It actually holds.
+ Dividing relation [1, 1] gives point of order 2^2
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [1, 1]~
+ It actually holds.
+ Dividing relation [1, 1] gives point of order 2^1
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [1, 1]~
+ Good, it does not actually hold.
+  Changing linear tests so that we don't get a false positive again.
+ Applying Frobenius
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [0, 1, 1]~
+ It actually holds.
+ Giving up this point
+ Picking point 2 from batch; its order is 2^3
+  Computing pairings...
+  Looking for relations...
+  Good, no relation
+ Applying Frobenius
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [0, 0, 1, 1]~
+ It actually holds.
+ Dividing relation [0, 0, 1, 1] gives point of order 2^2
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [0, 0, 1, 1]~
+ It actually holds.
+ Dividing relation [0, 0, 1, 1] gives point of order 2^0
+ Generating a new batch of 1 points in parallel
+ Batch of points generated.
+ Picking point 1 from batch; its order is 2^3
+  Computing pairings...
+  Looking for relations...
+ Found pseudo-relation: [1, 1, 0, 1]~
+ Good, it does not actually hold.
+  Changing linear tests so that we don't get a false positive again.
+Guessing last column of matFrob from charpoly
+Unable to guess last column from charpoly
+ Aut #1 claimed to act as -1
+The matrix of Frob_7 is
+
+[0 1 0 0]
+
+[1 0 0 0]
+
+[0 0 1 0]
+
+[0 0 0 1]
+
+It has order 2
+The matrix of Aut #1 (possibly on a different basis) is
+
+[1 0 0 0]
+
+[0 1 0 0]
+
+[0 0 1 0]
+
+[0 0 0 1]
+
+Time getting basis of T over F_7: cpu 721 ms, real 741 ms
+
+--> Lifting 3 points 7-adically, target O(7^32)
+Lifting from prec O(7^1) to O(7^2)
+Lifting from prec O(7^2) to O(7^4)
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+Lifting from prec O(7^8) to O(7^16)
+Lifting from prec O(7^16) to O(7^32)
+Lifting from prec O(7^1) to O(7^2)
+Lifting from prec O(7^2) to O(7^4)
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+Sum of Ktors is zero!
+Sum of Ktors is zero!
+Lifting from prec O(7^8) to O(7^16)
+Lifting from prec O(7^16) to O(7^32)
+Lifting from prec O(7^1) to O(7^2)
+Lifting from prec O(7^2) to O(7^4)
+Genericity 1 failed in PicChart
+Lifting from prec O(7^4) to O(7^8)
+Lifting from prec O(7^8) to O(7^16)
+Lifting from prec O(7^16) to O(7^32)
+Time lifting: cpu 537 ms, real 539 ms
+
+--> All of T
+Main loop, touched 5/16
+Done with auts, now touched 5/16
+Computing 4 new points
+Main loop, touched 11/16
+Done with auts, now touched 11/16
+Computing 4 new points
+Evaluating 11 points
+Time span and eval: cpu 441 ms, real 447 ms
+
+--> Expansion and identification
+Reducing lF from 10 to 5
+64 candidate polynomials
+14 identified polynomials
+0 faithful polynomials
+Time polynomials: cpu 3 ms, real 3 ms
+  ***   user warning: Could not identify any squarefree polynomial. Increasing p-adic accuracy: O(7^64).
+
+--> Lifting 3 points 7-adically, target O(7^64)
+Lifting from prec O(7^32) to O(7^64)
+Genericity 1 failed in PicChart
+Lifting from prec O(7^32) to O(7^64)
+Genericity 1 failed in PicChart
+Lifting from prec O(7^32) to O(7^64)
+Genericity 1 failed in PicChart
+Time lifting: cpu 200 ms, real 201 ms
+
+--> All of T
+Main loop, touched 5/16
+Done with auts, now touched 5/16
+Computing 4 new points
+Main loop, touched 11/16
+Done with auts, now touched 11/16
+Computing 4 new points
+Evaluating 11 points
+Time span and eval: cpu 523 ms, real 524 ms
+
+--> Expansion and identification
+Reducing lF from 10 to 5
+64 candidate polynomials
+16 identified polynomials
+1 faithful polynomials
+Time polynomials: cpu 4 ms, real 4 ms
+RESULT|x^15 - 509624730154629/176038660192408*x^14 + 4139788205877022525/1188436994958946408*x^13 - 507775153744025261805/220034946302335376992*x^12 + 1118646121494627391573731/1485455922487066130072992*x^11 - 5617068878402203625542667/31937302333471921796569328*x^10 + 253844576108252193071245/3992162791683990224571166*x^9 - 273831550860782057408835/63874604666943843593138656*x^8 - 71549027188916129215189/63874604666943843593138656*x^7 + 14204321587617442386981/31937302333471921796569328*x^6 - 1478297616415075018305/15968651166735960898284664*x^5 - 117708223840534629725/15968651166735960898284664*x^4 + 18240305285973389875/15968651166735960898284664*x^3 - 353144842235625/185681990310883266259124*x^2 - 3574898578125/7141615011957048702274*x - 73511771484375/1996081395841995112285583
+FACTORS|[8*x + 1, 1; 13*x - 1, 1; 43*x - 54, 1; 43*x - 2, 1; 43*x + 7, 1; 89*x - 50, 1; 157*x - 35, 1; 157*x^2 - 176*x + 125, 1; 1849*x^2 - 258*x + 90, 1; 5252*x^2 + 1088*x + 545, 1; 362609*x^2 + 12554*x + 290, 1]
+PASS|q8_probe

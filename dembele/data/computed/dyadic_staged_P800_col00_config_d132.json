@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "milestone": "D132",
+  "namespace": "dyadic_rowjournal_P800_col00_d132",
+  "output_prefix": "dyadic_staged_P800_col00_d132",
+  "precision_pi": 800,
+  "seed_precision_pi": 400,
+  "column": 0,
+  "seed": "dyadic_actual_P400_col0_verified_d121",
+  "reference": "dyadic_staged_P800_col00_verified_d123",
+  "CM_reference": "dyadic_CM_P3200_col00_d129",
+  "digit_bits": 50,
+  "state_chunk": 29,
+  "rhs_chunk": 29,
+  "CM_chunk": 3,
+  "purpose": "Complete known-column integration and resume control; force two seed low-solve digits; no new mathematical precision."
+}

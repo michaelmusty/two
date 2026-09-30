@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/138_cm_frame_joint_field_recognition.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 31.38003483309876,
+  "timeout_seconds": 300,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_field_recognition.out",
+    "sha256": "fca61a0766798b016fa0c8b0b700d3555830bbd94b63b55b5e987a303afe6fbe"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/138_cm_frame_joint_field_recognition.py",
+      "sha256": "76cf896241089c913331819c8eb7cf26ecb7d423f1ff871b61b6b0874b6cbce6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d75-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

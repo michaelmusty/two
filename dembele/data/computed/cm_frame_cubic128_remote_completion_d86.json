@@ -1,0 +1,522 @@
+{
+  "status": "pass",
+  "milestone": "D86",
+  "checked_at_utc": "2026-09-23T10:28:59.419831+00:00",
+  "execution_host": "chatelet.mit.edu",
+  "campaign_directory": "two_remote_magma/dembele_d86_128_20260922",
+  "remote_job_count": 21,
+  "all_remote_jobs_completed": true,
+  "remote_statuses_equal_saved_local_records": true,
+  "jobs": {
+    "cm_frame_cubic_adjoint_128_f_coefficients": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 160.00781532586552,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 1865781248,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 497965,
+      "input_hashes_verified": true,
+      "output_bytes": 2947300,
+      "output_sha256": "0dccd194b02f40a2d97f66732b430017b892cd287f00b382e4ab12fcce065429",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_adjoint_128_f_coefficients_run.m"
+      ]
+    },
+    "cm_frame_cubic_adjoint_128_function_checkpoint": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 248.88914678804576,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2184327168,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 488192,
+      "input_hashes_verified": true,
+      "output_bytes": 2812740,
+      "output_sha256": "2eb007c750559bf7a52df6e83b6b90e754159b4f7634f02c9d4b29c3b744eaa7",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_adjoint_128_function_checkpoint_run.m"
+      ]
+    },
+    "cm_frame_cubic_adjoint_128_functions_check": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 202.35946464398876,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2178949120,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 501297,
+      "input_hashes_verified": true,
+      "output_bytes": 1189,
+      "output_sha256": "addceab04ccd33a7ac57f19c734de1abff45c03ece9a5ee4ba3ae31ab51fc50b",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_adjoint_128_functions_check_run.m"
+      ]
+    },
+    "cm_frame_cubic_adjoint_128_move_check": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 287.4410215730313,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2185023488,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 502250,
+      "input_hashes_verified": true,
+      "output_bytes": 1288,
+      "output_sha256": "fa434831b5e711bdd7e97b4709f17da8e24bd0b8ba22887a139ac36d3272eb4c",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_adjoint_128_move_check_run.m"
+      ]
+    },
+    "cm_frame_cubic_adjoint_128_norm_control": {
+      "status": "pass",
+      "exit_code": 1,
+      "wall_seconds": 128.45240336703137,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2088701952,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 502294,
+      "input_hashes_verified": true,
+      "output_bytes": 1241,
+      "output_sha256": "df17457b7a2b868296a3381e808f8cb4d5196289b8ca39c0504fdd611aa4837f",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_adjoint_128_norm_control_run.m"
+      ]
+    },
+    "cm_frame_cubic_adjoint_128_trace_control": {
+      "status": "pass",
+      "exit_code": 1,
+      "wall_seconds": 202.6578488748055,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2178322432,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 502641,
+      "input_hashes_verified": true,
+      "output_bytes": 1291,
+      "output_sha256": "73d3ae2582ed2863297281c85cd02e03c62bc1aad73c59b89cbd44f0733ecbcd",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_adjoint_128_trace_control_run.m"
+      ]
+    },
+    "cm_frame_cubic_adjoint_128_u_checkpoint": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 197.9150272810366,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2147655680,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 488938,
+      "input_hashes_verified": true,
+      "output_bytes": 2897545,
+      "output_sha256": "2caf9d349531ac3523e1650b349458e9657d3069d7bbd5542e23d01b07195503",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_adjoint_128_u_checkpoint_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_direct_functions_check": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 206.97033088305034,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2133131264,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 499008,
+      "input_hashes_verified": true,
+      "output_bytes": 1210,
+      "output_sha256": "6a4e5f3b093d4ee37e00171e86589cb5dc470dd224442323dfaf420ab6cf8d4f",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_direct_functions_check_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_direct_geometry_check": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 66.57108099316247,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 878985216,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 499052,
+      "input_hashes_verified": true,
+      "output_bytes": 1347,
+      "output_sha256": "b7d1b084cdbe4585f3d4da05e23fdde4f54fc07799e9dd1a2c1f9c1524a8590f",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_direct_geometry_check_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_direct_norm_control": {
+      "status": "pass",
+      "exit_code": 1,
+      "wall_seconds": 202.2671219331678,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2142334976,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 499596,
+      "input_hashes_verified": true,
+      "output_bytes": 1172,
+      "output_sha256": "a2227cddea5389023f137535d03e6846679f5261878b84bbc05ffabf327cac9e",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_direct_norm_control_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_direct_septic_control": {
+      "status": "pass",
+      "exit_code": 1,
+      "wall_seconds": 214.63595850300044,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2141642752,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 499645,
+      "input_hashes_verified": true,
+      "output_bytes": 1238,
+      "output_sha256": "f553ade5a881ec13f62258d2c1470666f784ddbee904bc8d07db739bff06d0dd",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_direct_septic_control_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_f_checkpoint": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 154.86985759297386,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 1852178432,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 494054,
+      "input_hashes_verified": true,
+      "output_bytes": 2009929,
+      "output_sha256": "a378f0c267b4e2c63e97363f12c9e0d7e6afe19f37dbf4cb4c95fb4e07f7c01e",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_f_checkpoint_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_formal_divisor_chatelet_d86": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 188.03614066005684,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2246602752,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 485163,
+      "input_hashes_verified": true,
+      "output_bytes": 1955638,
+      "output_sha256": "cfe1f5f31f0584b288b38bfdac0e6a75a7fa0f39b102f83b0eba1f6d30794fdb",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_formal_divisor_chatelet_d86_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_function_finish": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 54.30133053404279,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 1023193088,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 495100,
+      "input_hashes_verified": true,
+      "output_bytes": 2143383,
+      "output_sha256": "5e0c36db821a5e02d4f4a9af36c1590c76b31ad807825a500637c1bdb39e8690",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_function_finish_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_newton_classes": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 256.17238004901446,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 1264381952,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 485481,
+      "input_hashes_verified": true,
+      "output_bytes": 2843874,
+      "output_sha256": "c6c7790efe9b51065484d4e6a9305136990f7f980f5582af50196021efd5955b",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_newton_classes_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_newton_divisor": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 187.40762176713906,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2250620928,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 486340,
+      "input_hashes_verified": true,
+      "output_bytes": 1966935,
+      "output_sha256": "aa9738f6f5cd7be85305e981751232aa599b7401b418a3cf8cb441b23462d244",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_newton_divisor_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_newton_normalize_a": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 158.18645050912164,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 1766006784,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 485971,
+      "input_hashes_verified": true,
+      "output_bytes": 1957585,
+      "output_sha256": "3901f00da514b171890cf539cccbc2079fed2aa5ae4d48127e06135ceb82f3a2",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_newton_normalize_a_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_newton_normalize_b": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 152.6529191650916,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 1767043072,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 486128,
+      "input_hashes_verified": true,
+      "output_bytes": 1957570,
+      "output_sha256": "1efc06d545151cdec587f45e9b5266d6a874a21de03ed1b0902ea9db0192cd90",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_newton_normalize_b_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_newton_relation_check": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 299.7093787409831,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 1289744384,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 486566,
+      "input_hashes_verified": true,
+      "output_bytes": 949184,
+      "output_sha256": "418f6bd0e6cd95a921434066af510ba4c875f47d93097f0bcae36726b7f5f40d",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_newton_relation_check_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_newton_symmetries_check": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 89.3843265241012,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 1184993280,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 486528,
+      "input_hashes_verified": true,
+      "output_bytes": 832,
+      "output_sha256": "a7e7da2d91ee845cfd06adcc77532076dc66cc7be7b61687ed556edb9c914f8a",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_newton_symmetries_check_run.m"
+      ]
+    },
+    "cm_frame_cubic_pointed_128_u_checkpoint": {
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 199.81747930892743,
+      "timeout_seconds": 1800,
+      "memory_limit_bytes": 8000000000,
+      "maximum_resident_bytes": 2146426880,
+      "timeout_terminates_process_group": true,
+      "private_process_group": 488901,
+      "input_hashes_verified": true,
+      "output_bytes": 1989435,
+      "output_sha256": "0611138855ab8268367cb17ee44245e87f9794156028389fadd350af098e299e",
+      "command": [
+        "/usr/local/bin/magma",
+        "-bn",
+        "-l",
+        "8000000000",
+        "dembele/data/computed/cm_frame_cubic_pointed_128_u_checkpoint_run.m"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/299_cm_frame_chatelet_transport.py",
+      "sha256": "1e5353eab110f9263c2b5d22e265471102fe265410e5b5b5f13fb824c5a9e3f0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_adjoint_128_f_coefficients/remote_status.json",
+      "sha256": "039184c258c7a1105dc1ee8ae366c32a1aa84ea6953a7340194267d8cf1e5627"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_adjoint_128_function_checkpoint/remote_status.json",
+      "sha256": "2056dab6c49982bb282451a5a720097be679a67032c6059b28fe70a9984c2925"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_adjoint_128_functions_check/remote_status.json",
+      "sha256": "b7dfbd6b2e5ae59e9bce95d73756ab69b02045a379d2638c126308cdb072eff4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_adjoint_128_move_check/remote_status.json",
+      "sha256": "268f724920aadd0044a2b72df3b701e9d4f97076dd416d97814948f9e9a29c46"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_adjoint_128_norm_control/remote_status.json",
+      "sha256": "aa44d0a361aa356876b017e479589e47f6760f05689c7d2b63fe6a699f38679d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_adjoint_128_trace_control/remote_status.json",
+      "sha256": "b8fd2d93ec00280e4f36aab805dabc8538c758572b756d702852967a7404af59"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_adjoint_128_u_checkpoint/remote_status.json",
+      "sha256": "260ac18baff3b291485bcd5e52800e0e3ad08d2afaa7a6aadb10fee748af0e56"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_direct_functions_check/remote_status.json",
+      "sha256": "28d5c723fe006650c6e39aee8808f3124f9ff9ec8db95c75e7ceb86c41b1bc0f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_direct_geometry_check/remote_status.json",
+      "sha256": "d89604e9e261a336563c1a6fea65d02622d086ba82685ac05b856cad1619974f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_direct_norm_control/remote_status.json",
+      "sha256": "94cbe24fccb14f11c26a805ee839c44b146d9477e62c88d9ab02d5d7fec35e52"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_direct_septic_control/remote_status.json",
+      "sha256": "8a4b37b488781c4e3c21743c4d8e912c815f3b72cc1d3053110176887e9593e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_f_checkpoint/remote_status.json",
+      "sha256": "5f8ad13914bff5185ca60f15d8ed5d200e021e39abc6228c906de0c6c303205f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_formal_divisor_chatelet_d86/remote_status.json",
+      "sha256": "48685308ea92394cf9e4610a460743c532320e461af1ba35542b64241e0997ba"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_function_finish/remote_status.json",
+      "sha256": "fd7e919aa9ecc07b60e8b9ea303dece45e7c7164822ed64f8a833e4743a6d986"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_newton_classes/remote_status.json",
+      "sha256": "432a131f653b5aa08dc9cb53807b15a90286e6fe428ed3003c7587a2a9f39a09"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_newton_divisor/remote_status.json",
+      "sha256": "da0dc5a6d57e1139fa7c8ccba7ac352b75c93292d7b1576139541592402b2bfa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_newton_normalize_a/remote_status.json",
+      "sha256": "ac0ebe248e65f4a6466d5d6653ddad1822a4bc7abfc08cabda826c412013e5b4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_newton_normalize_b/remote_status.json",
+      "sha256": "7389c897c689ade78c12a29a57727a720b92d5fe2141d7fdec652a83c64eba52"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_newton_relation_check/remote_status.json",
+      "sha256": "749ae1f6e00b3dd596e9022c7d9f96a4ea7eed5aecdc6ca58ddabab4bf2ccc9e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_newton_symmetries_check/remote_status.json",
+      "sha256": "875f2e4968a6efd4dfce7da61f31773f349e206c54a6b4c09aafa8dce5a0385d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/chatelet_d86_128/cm_frame_cubic_pointed_128_u_checkpoint/remote_status.json",
+      "sha256": "25b12fa1c9fe6ae197fb713fdc29f44deea6e7ae5f1eab8021695ed51f2d344f"
+    }
+  ]
+}

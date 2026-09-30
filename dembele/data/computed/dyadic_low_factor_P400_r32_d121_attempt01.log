@@ -1,0 +1,11 @@
+MP_LOW_COEFFICIENTS|P=400; r=32; maps=165; seconds=3.292
+MP_LOW_FACTOR|P=400; states=1/174; updates=0; seconds=3.328
+MP_LOW_FACTOR|P=400; states=26/174; updates=43; seconds=4.477
+MP_LOW_FACTOR|P=400; states=51/174; updates=118; seconds=6.051
+MP_LOW_FACTOR|P=400; states=76/174; updates=218; seconds=7.919
+MP_LOW_FACTOR|P=400; states=101/174; updates=318; seconds=9.856
+MP_LOW_FACTOR|P=400; states=126/174; updates=560; seconds=13.420
+MP_LOW_FACTOR|P=400; states=151/174; updates=1208; seconds=21.835
+MP_LOW_FACTOR|P=400; states=174/174; updates=2246; seconds=34.003
+MP_LOW_RESULT|{"status": "pass", "milestone": "D121", "working_precision_pi": 400, "eliminated_positive_moments": 32, "modulus_bits": 50, "binary_coefficient_width_bytes": 7, "binary_payload_bytes": 70303744, "block_updates": 2246, "all_P200_factor_coefficients_agree": true, "diagonal_inverse_products_checked": 174, "unrelated_rhs_columns": 2, "original_sparse_residual_checked": true, "original_scalar_equations_checked": 89088, "coefficient_seconds": 3.2918086668942124, "factor_seconds": 30.710973666980863, "solve_and_residual_seconds": 3.9250881660263985, "wall_seconds": 39.058871834073216, "actual_moment_precision_increased": false}
+PASS|472_DYADIC_MULTIPRECISION_LOW_FACTOR

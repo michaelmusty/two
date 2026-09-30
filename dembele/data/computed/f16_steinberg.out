@@ -121,3 +121,16 @@ R60|class 2: a(p31) = w^3 (min poly zz^4 + zz^3 + zz^2 + zz + 1), U = 1, F2-orbi
 R60|F^x/(F^x)^2 unramified outside 2: 9 generators (incl. -1 and pi)
 R60|Legendre functionals at the 8 primes above 31: rank 8 of 9
 R60|quadratic classes not excluded by the primes above 31 (needs abar != 0 there, true for all systems): 1
+R60|T_p97 built [8805.560 s]; commutes with T_p31: true
+R60|new charpoly(T_p97) mod 2: [
+<zz, 40>
+]
+R60|every system has abar != 0 at all 8 primes above 97: false
+R60|(T_p31, U, T_p97) residual systems: 8 spaces; distinct up to Frobenius: 2
+R60|class 1: a(p31) = w, U = 1, a(p97) = 0 (min poly deg 1), total dim 20 ; Legendre rank 8 ; dihedral survivors 1
+R60|class 1: survivors' class numbers checked; those divisible by 3 or 5: []
+R60|VERDICT|class 1|image contains SL2(F16) (dihedral excluded via class numbers, GRH)
+R60|class 2: a(p31) = w^3, U = 1, a(p97) = 0 (min poly deg 1), total dim 20 ; Legendre rank 8 ; dihedral survivors 1
+R60|class 2: survivors' class numbers checked; those divisible by 3 or 5: []
+R60|VERDICT|class 2|image contains SL2(F16) (dihedral excluded via class numbers, GRH)
+PASS|60_f16_steinberg

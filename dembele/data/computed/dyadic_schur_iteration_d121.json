@@ -1,0 +1,148 @@
+{
+  "status": "pass",
+  "milestone": "D121",
+  "eliminated_positive_moments": 1,
+  "working_precision_pi": 200,
+  "seed_precision_pi": 184,
+  "harmonic_basis_column": 0,
+  "state_equations_checked": 174,
+  "recovered_scalar_coefficients": 278400,
+  "successive_Schur_correction_gains": [
+    {
+      "before_pi": 184,
+      "after_pi": 186
+    },
+    {
+      "before_pi": 186,
+      "after_pi": 188
+    },
+    {
+      "before_pi": 188,
+      "after_pi": 190
+    },
+    {
+      "before_pi": 190,
+      "after_pi": 192
+    },
+    {
+      "before_pi": 192,
+      "after_pi": 194
+    },
+    {
+      "before_pi": 194,
+      "after_pi": 196
+    },
+    {
+      "before_pi": 196,
+      "after_pi": 198
+    },
+    {
+      "before_pi": 198,
+      "after_pi": 200
+    }
+  ],
+  "expected_minimum_gain_per_step": 2,
+  "original_operator_final_residual_zero": true,
+  "exact_overlap_with_entire_frozen_column": true,
+  "first_full_action": {
+    "gain_pi": 0,
+    "coefficient_shift_bits": 0,
+    "input_cutoff_count": 200,
+    "active_modulus_bits": 25,
+    "wall_seconds": 20.80360837490298
+  },
+  "correction_actions": [
+    {
+      "gain_pi": 184,
+      "coefficient_shift_bits": 23,
+      "input_cutoff_count": 16,
+      "active_modulus_bits": 2,
+      "wall_seconds": 3.321169374976307
+    },
+    {
+      "gain_pi": 186,
+      "coefficient_shift_bits": 23,
+      "input_cutoff_count": 16,
+      "active_modulus_bits": 2,
+      "wall_seconds": 3.354544624919072
+    },
+    {
+      "gain_pi": 188,
+      "coefficient_shift_bits": 23,
+      "input_cutoff_count": 16,
+      "active_modulus_bits": 2,
+      "wall_seconds": 3.327454750193283
+    },
+    {
+      "gain_pi": 190,
+      "coefficient_shift_bits": 23,
+      "input_cutoff_count": 16,
+      "active_modulus_bits": 2,
+      "wall_seconds": 3.322922999970615
+    },
+    {
+      "gain_pi": 192,
+      "coefficient_shift_bits": 24,
+      "input_cutoff_count": 8,
+      "active_modulus_bits": 1,
+      "wall_seconds": 2.8203058750368655
+    },
+    {
+      "gain_pi": 194,
+      "coefficient_shift_bits": 24,
+      "input_cutoff_count": 8,
+      "active_modulus_bits": 1,
+      "wall_seconds": 2.819092292105779
+    },
+    {
+      "gain_pi": 196,
+      "coefficient_shift_bits": 24,
+      "input_cutoff_count": 8,
+      "active_modulus_bits": 1,
+      "wall_seconds": 2.8246362081263214
+    },
+    {
+      "gain_pi": 198,
+      "coefficient_shift_bits": 24,
+      "input_cutoff_count": 8,
+      "active_modulus_bits": 1,
+      "wall_seconds": 2.815336541039869
+    }
+  ],
+  "final_full_action": {
+    "gain_pi": 0,
+    "coefficient_shift_bits": 0,
+    "input_cutoff_count": 200,
+    "active_modulus_bits": 25,
+    "wall_seconds": 20.788808000041172
+  },
+  "wall_seconds": 68.6918177921325,
+  "no_dense_high_moment_operator_table_used": true,
+  "actual_moment_precision_increased": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/465_dyadic_schur_iteration.py",
+      "sha256": "707db54454e4acff2cc9a7521003325bd0f219488d105f03320da8a7aa4f2633"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/464_dyadic_low_moment_block.py",
+      "sha256": "e83603701872d36ecdfad5ee385ce4ba1020dfe932f439977cf3e769e9eecc65"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/463_dyadic_gmp_transport.py",
+      "sha256": "0de66136b95feb0cfdca2a782c85611ef2d81c83a16dc296ab1542eaf06b1b1d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_low_moment_block_d121.npz",
+      "sha256": "b34740787b2307ec0a85e98a73869872018077c6d1a06106cee93a65879443c7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision200_d115.json",
+      "sha256": "bc043dfe632db80984eef2578841611325767cb4afb214bebfa354354f8fb699"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_low_moment_block_d121.json",
+      "sha256": "50a110cc9a711dcf8ae661e559035ce1aec4d67c8d9a8274fc0842248fcfe06b"
+    }
+  ]
+}

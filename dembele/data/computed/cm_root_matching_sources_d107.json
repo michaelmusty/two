@@ -1,0 +1,84 @@
+{
+  "milestone": "D107",
+  "review_date": "2026-09-25",
+  "scope": "Certify D59 saved CM point-to-root correspondence using D106 marked rigidity, exact normalizers, rational root disks, field norms and a finite monomial-rank certificate; no actual differential evaluation.",
+  "sources": [
+    {
+      "title": "John Voight, Computing CM points on Shimura curves arising from cocompact arithmetic triangle groups",
+      "url": "https://jvoight.github.io/articles/shimcm-fixed-errata.pdf",
+      "locations": [
+        "Theorem 5.1 and Algorithm 5.2, printed page 8"
+      ],
+      "use": "Explicit ideal/Artin action convention: iota(a)O=xi O gives z -> xi^(-1)z. Only underlying reciprocity is used; not triangle parametrization or the paper's separate Q-descent assertions."
+    },
+    {
+      "title": "John Voight, Shimura curve computations",
+      "url": "https://jvoight.github.io/articles/shimura-clay-proceedings-071707.pdf",
+      "locations": [
+        "Section 4.3",
+        "Section 4.5"
+      ],
+      "use": "Canonical CM reciprocity over general totally real F and the F-defined normalizer quotient. Reuses D59 exact CM class labels."
+    },
+    {
+      "title": "Terence Tao, Math 246A Notes 4: singularities of holomorphic functions",
+      "url": "https://terrytao.wordpress.com/2016/10/11/math-246a-notes-4-singularities-of-holomorphic-functions/",
+      "locations": [
+        "Theorem 37 (Rouche's theorem)"
+      ],
+      "use": "Classical root count. Project-specific integer bounds compare the linear term at each rational center with its Taylor remainder."
+    },
+    {
+      "title": "Don Blasius and Lucio Guerberoff, Complex conjugation and Shimura varieties",
+      "url": "https://msp.org/ant/2017/11-10/ant-v11-n10-p02-s.pdf",
+      "locations": [
+        "Section 2.2",
+        "Discussion after Lemma 2.2.4, printed page 2297"
+      ],
+      "use": "Context for canonical complex conjugation. The project identifies its explicit antiholomorphic map by D106 marked rigidity instead; the CM-reflex-field descent theorem is not applied."
+    },
+    {
+      "title": "SageMath, ideals of number fields",
+      "url": "https://doc.sagemath.org/html/en/reference/number_fields/sage/rings/number_field/number_field_ideal.html",
+      "locations": [
+        "gens_reduced(proof=True)"
+      ],
+      "use": "Produces a principal generator witness. Independent rational checks verify the resulting unit, inverse, normalizer and anticommutator rather than trusting principalization alone."
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "dembele/vendor/rickards-fdom/fdom.c",
+      "location": "afuch_make_m2rmats, lines 2709-2740",
+      "use": "Actual saved matrix embedding, including both off-diagonal signs; necessary for the sign of the CM complex embedding."
+    },
+    {
+      "path": "dembele/certificates/cm-rational-frame-jets-d106.md",
+      "use": "Aut(C_Qbar,D)=1, compatible Q-descent and unique residue-field isomorphism."
+    },
+    {
+      "path": "dembele/certificates/cm-frame-arithmetic-d105.md",
+      "use": "Concrete CM class field H of degree 272, full affine group, gamma generating the degree-16 CM subfield, and exact resolvent."
+    },
+    {
+      "path": "dembele/certificates/cm-orbit-recognition.md",
+      "use": "Saved exact CM ideal labels, order and elliptic embeddings. Its approximate orientation/root-order checks are superseded, not treated as certified input."
+    }
+  ],
+  "project_deductions": [
+    "Any antiholomorphic D-marked automorphism equals canonical conjugation by D106 rigidity.",
+    "An exact positive order unit U makes U^(-1)I anticommute with the reference beta; this fixes point8 and proves it is the unique real CM point.",
+    "Rational Sturm/square intervals prove the Rickards lower-left coefficient negative, selecting beta=-i*sqrt(2+b).",
+    "Eighteen rational Rouche disks and an integer norm bound prove kappa_f=gamma exactly.",
+    "Rank271 of the 272 ordered-pair root monomials makes distinct directed 17-cycle sums distinct; the stabilizer of gamma then proves the proposed cycle is Galois.",
+    "Independent Hensel lifts modulo31^8 identify arithmetic Frobenius at beta=19, whose saved ideal class is3, giving the exact old lookup."
+  ],
+  "excluded_inferences": [
+    "No trust in D59 complex GaloisGroupConjugation root-index comparison.",
+    "No actual Shimura tangent, higher jet, G12 nonvanishing, or numerical differential-bank error bound.",
+    "No candidate identification, downstream branch marking identification, cubic section reconstruction or target field polynomial.",
+    "Root refinement is not a restart of spectral or cubic precision work."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

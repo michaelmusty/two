@@ -1,0 +1,31 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+    "--target"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 56.73557387501933,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_prepared_target_d121_attempt01.log",
+    "sha256": "3f6edc33c1885549eceff0c0f991f915602c4dfce0cda0bd8aa8aea31c1809ec"
+  },
+  "private_process_group": 63940,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+    "sha256": "86d272475bbc0390f28b198462d63eac33262de9b7b9575d634895eebb985542"
+  }
+}

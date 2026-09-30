@@ -1,0 +1,47 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-bn",
+    "-l",
+    "2000000000",
+    "/Users/musty/two/dembele/magma/143_cm_frame_B3_transfer.m"
+  ],
+  "status": "timeout",
+  "exit_code": null,
+  "wall_seconds": 180.02525508299004,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_ideal_probe.out",
+    "sha256": "b8440255f7744b00048d9bb5a00f81164c7b29fa279a2f082421c7888fa77e63"
+  },
+  "memory_limit_bytes": 2000000000,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/magma/143_cm_frame_B3_rational_ideal_probe.m",
+      "sha256": "36e7c4a2619315fd8d9d26308dcf0c832d1e353c378205e76e37b15e0a58ce83"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+      "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+      "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.m",
+      "sha256": "fb0a63bffbfbd7f2d097bf20226c4bc3f5f1211a66dd007847c524a1f97e4348"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_numerator.m",
+      "sha256": "78124e9fd2d9c3a9fb9d1d8af1b6fd5dffa78af5da7b6ed9c8ab49890d1820d9"
+    }
+  ],
+  "original_executed_source_path": "/Users/musty/two/dembele/magma/143_cm_frame_B3_transfer.m",
+  "reached_phase": "Finite-field square transfer passed; later rational ideal construction did not complete.",
+  "disposition": "Archived without increasing the 180 second / 2 GB limits. Replace rational ideal arithmetic by integral-at-31 linear membership and good-reduction certification."
+}

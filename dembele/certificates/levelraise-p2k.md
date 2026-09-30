@@ -1,5 +1,12 @@
 # Level raising at the prime above 2, conductor `𝔭^k` (k ≥ 2): the supercuspidal family
 
+> **Scope correction, 2026-09-14 (D42):** the closure below applies to the
+> existing Mumford/toric-period pipeline, not to all constructions using this
+> carrier. `review-2026-09-14.md` develops a curve-first Jacobian route at an
+> odd good prime, with a conditional genus-64 quotient. Finite T31/T97 matches
+> alone are not a full residual-identity proof; script 63 investigates an
+> all-Hecke sign-type comparison. The historical calculations below are retained.
+
 **Date:** 2026-09-08. **Decision:** D39. **Script:** `dembele/magma/58_levelraise_p2k.m`.
 **Output:** `dembele/data/computed/levelraise_p2k.out`. **Predecessor:** D36
 (`57_levelraise_p2.m`, conductor `𝔭¹`, Steinberg: closed).

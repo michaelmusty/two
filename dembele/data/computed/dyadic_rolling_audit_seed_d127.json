@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "milestone": "D127",
+  "phase": "seed",
+  "working_precision_pi": 1600,
+  "harmonic_basis_column": 1,
+  "full_sixteen_column_bank_precision_pi": 800,
+  "production_arithmetic_not_imported": true,
+  "certificates": {
+    "independent_high_seed_degrees": [
+      800,
+      1199,
+      1599
+    ],
+    "independent_high_seed_scalar_checks": 24,
+    "production_old_extended_scalar_overlaps": 2227200,
+    "retired_seed_extension_payloads_replayed": false
+  },
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "target_field_polynomial_constructed": false,
+  "wall_seconds": 65.78939908393659,
+  "peak_rss_bytes": 348536832,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_P1600_col01_verified_d127.json",
+      "sha256": "60ac4cf6aba7af09ef027a59f87919a242732d30b8c883304952d2222fe41b5e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_reconstructed_d127_state.bin",
+      "sha256": "75e8306f0a5bb1b16cf530003ff0594f248cfe8eef63140e336e0fc05d337182"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_scratch_col01_d127/dyadic_rolling_P1600_col01_verified_d127_residual.bin",
+      "sha256": "1c64516383c44d8345dbe76bf5852b28778f7816a712fa8f4e3f90fa9fe2a887"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P800_col01_reconstructed_d125_state.bin",
+      "sha256": "73272e1759167f98a7676f4b6e2aefcc3562ed38efbef1c6502a9fd0513868b9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P800_col01_verified_d125.json",
+      "sha256": "f909f7903431e2858ee2c62f4c7b02fb86052b284ad23c8ebea26ffdf0cab240"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P800_col01_verified_d125_residual.bin",
+      "sha256": "7d335e029a7c9b9ad77612f03028c3f18fc1ea6b71f688d58d2c91ab81858fdf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/491_dyadic_staged_pilot_independent.py",
+      "sha256": "1264a6696bdc5745bca69e6cbca2d1e0bbabba2ce12be2b25498b3d1ac9b6fb0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/522_dyadic_rolling_independent.py",
+      "sha256": "b590d0566cf8082c7dbbb50e17752b951803729115b5847e70a8bb8756fb6eb6"
+    }
+  ]
+}

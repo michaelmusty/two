@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "milestone": "D130",
+  "execution_status": "complete",
+  "purpose": "Target-size controls, complete phase budget scenarios, compact retention, streaming authentication, and arithmetic construction specification",
+  "bounded_input_jobs": {
+    "passed": 137,
+    "failed_attempts_retained_and_resolved": 1,
+    "sum_passing_wall_seconds": 1290.622871296946,
+    "maximum_passing_wall_seconds": 35.823929167119786,
+    "maximum_single_process_input_peak_rss_bytes": 1781727232
+  },
+  "source_numbers": [
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540
+  ],
+  "coordinator": "dembele/pari/run_d130_batch.py",
+  "reports": [
+    "dembele/certificates/dyadic-target-feasibility-d130.md",
+    "dembele/certificates/arithmetic-construction-d130.md"
+  ],
+  "prior_fixed_review": "dyadic_precision3200_review_d129.json",
+  "prior_hash_count": 15600,
+  "complete_phase_inventory": true,
+  "runtime_model_is_empirical_not_a_bound": true,
+  "actual_harmonic_precision_increased": false,
+  "complete_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 3200,
+    "1": 1600
+  },
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "resource_gates": {
+    "current_2GiB_scratch_protocol_admits_target": false,
+    "integrated_weighted_only_protocol_implemented": false,
+    "aggregate_RAM_bound_proved": false,
+    "full_bank_run_admitted": false
+  },
+  "new_deduction": "Weighted error lattice is annihilated by the original operator; Q T(w)=w implies T(T(w))=T(w) modulo pi^P. Production replay remains next.",
+  "downstream_obstruction": "Unit 1+b is globally nonsquare, locally square at b=27 mod31, and its quadratic extension is unramified at finite primes away from2; arithmetic twist must be independently identified.",
+  "external_reference_roles": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/03PK",
+      "role": "Primary theory: invertible-n Kummer sequence and scalar trivialization; checked2026-09-28. The explicit unit witness is our deduction."
+    }
+  ],
+  "decision": "Next implement weighted-only certificate replay and row-journal controls; staged refinement preferred only after resource gates. Keep marked arithmetic cover and Y section construction explicit.",
+  "freeze": "All successful533--540 sources, bound reports and outputs, all prior freezes. Retain failed539 attempt snapshot/receipt/log. Mutable entry documents are not ledger sources."
+}

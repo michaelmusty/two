@@ -1,0 +1,105 @@
+{
+  "milestone": "D116",
+  "date": "2026-09-26",
+  "report": "dembele/certificates/cm-compound-height-d116.md",
+  "final_review": "dembele/pari/445_cm_arithmetic_identification_review.py",
+  "prior_review": "dembele/data/computed/dyadic_strategy_review_d115.json",
+  "D115_source_hashes_to_preserve": 814,
+  "external_sources": [
+    {
+      "author": "A. C. Aitken",
+      "title": "On the Evaluation of Determinants, the Formation of their Adjugates, and the Practical Solution of Simultaneous Linear Equations",
+      "url": "https://doi.org/10.1017/S001309150000794X",
+      "role": "Classical complementary-minor and adjugate identities. D116 supplies the integral polynomial argument and its application to the CM frame.",
+      "access": "Primary publisher PDF inspected during this milestone."
+    },
+    {
+      "author": "Jan Nekovar",
+      "title": "Level Raising and Anticyclotomic Selmer Groups for Hilbert Modular Forms of Weight Two",
+      "url": "https://doi.org/10.4153/CJM-2011-077-6",
+      "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2A11114CBB9FC75C2DBF56F766BFE7BF/S0008414X00009196a.pdf/level-raising-and-anticyclotomic-selmer-groups-for-hilbert-modular-forms-of-weight-two.pdf",
+      "location": "Sections 1.5.3.1--1.5.3.7 and the distinction from the small-level hypothesis in 1.5.5(3).",
+      "role": "Integral nodal quotient, rational normalized components, removal of inverted edges and edge-stabilizer thicknesses. The weighted-residue lattice comparison is a D116 deduction.",
+      "access": "Primary publisher PDF inspected."
+    },
+    {
+      "author": "Akira Kurihara",
+      "url": "https://repository.dl.itc.u-tokyo.ac.jp/record/39680/files/jfs250303.pdf",
+      "location": "Section 3, scanned pages 284--288, Proposition 3-2 and Lemma 3-3.",
+      "role": "D99's verified integral quotient input, including inverted edges in residue characteristic two.",
+      "access": "Reuse of D99's direct scanned-page reading. Refetch in D116 returned HTTP 429; no fresh inspection is claimed."
+    },
+    {
+      "author": "The Stacks Project",
+      "title": "The relative dualizing sheaf",
+      "url": "https://stacks.math.columbia.edu/tag/0E6N",
+      "role": "Invertibility and base change for the dualizing sheaf of a nodal family. D116 proves the needed residue and conditional divided-jet statements locally.",
+      "access": "Primary reference inspected."
+    },
+    {
+      "author": "J. S. Milne",
+      "title": "Class Field Theory",
+      "url": "https://www.jmilne.org/math/CourseNotes/CFT.pdf",
+      "role": "Hilbert class field reciprocity: a principal prime splits completely. Together with D105 and Norm(beta)=2, this gives the seventeen dyadic primes used in finite-zero averaging.",
+      "access": "Author course notes inspected."
+    },
+    {
+      "author": "Raymond van Bommel, Edgar Costa, Bjorn Poonen and Padmavathi Srinivasan",
+      "title": "Curve equations from expansions of 1-forms at a nonrational point",
+      "url": "https://arxiv.org/pdf/2506.14026",
+      "version": "v1, 16 June 2025",
+      "location": "Lemma 4.1 and Corollary 4.2; D88's specialization to the candidate.",
+      "role": "Exact order-four vanishing at the degree-17 divisor implies a quadratic relation, since 68>60. The paper does not turn finite numerical agreement into exact arithmetic coefficients.",
+      "access": "Primary paper inspected."
+    },
+    {
+      "author": "Cameron Franc and Marc Masdeu",
+      "title": "Computing fundamental domains for the Bruhat--Tits tree for GL2(Qp), p-adic automorphic forms, and the canonical embedding of Shimura curves",
+      "url": "https://arxiv.org/pdf/1201.0356",
+      "role": "Moment/Poisson framework from D108--D115. D116's third coefficient uses the direct ramified-field kernel and error proof; no Qp precision theorem is imported unchanged.",
+      "access": "Primary paper consulted during the milestone."
+    }
+  ],
+  "inherited_mathematical_inputs": [
+    "D88: exact J4 identification criterion and D69 candidate scheme certificate.",
+    "D99: actual integral reduction model and nonhyperellipticity.",
+    "D102: horizontal residue lattice problem, whose separate index remains uncomputed.",
+    "D103: stable integral adjugate construction, displacement disk and metric conventions.",
+    "D104: actual coarse-canonical CM height below 41/10 and its Hodge-model comparison.",
+    "D105--D106: arithmetic CM field, compatible rational descent and rational residue frame.",
+    "D108--D115: actual harmonic Poisson evaluator, arithmetic labels and frozen precision-200 bank."
+  ],
+  "new_deductions": [
+    "Integral compound cancellation and reduced Gaussian/Wronskian ratio-height bounds.",
+    "Saturation of the harmonic lattice and its unimodular stabilizer-weighted comparison with graph cycles.",
+    "Stable-model residue proof identifying the harmonic differentials as an integral basis.",
+    "Integral canonical fibre normalization, evaluation cofactor contents, and Galois averaging of finite common zeros.",
+    "Integral division Q(s)/Delta for quadrics through the entire frame and an explicit complementary-minor norm bound below 2^4855.",
+    "Successive divided jets at nodal sections are integral when the preceding jets vanish exactly.",
+    "Direct J4 section-vanishing thresholds 119806,120284,120758 with the certified anchor lower bounds.",
+    "Actual third coarse coefficients without a moment-precision increase; all 91 quadric residuals through order three have certified zero-containing enclosures."
+  ],
+  "finite_verification": {
+    "drivers": "432--445",
+    "probe_only_preliminary_reviews": [435, 440],
+    "input_jobs_before_final_audit": 13,
+    "input_jobs_passed": 13,
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "runner": "dembele/pari/272_cm_frame_bounded_jobs.py",
+    "independent_final_review_probe": "cm_arithmetic_identification_review_d116_probe01.job.json",
+    "actual_J3_rank_lower_bound": 33,
+    "actual_integral_quadric_jet_lower_beta": [3794, 3745, 3728],
+    "sufficient_integral_quadric_jet_lower_beta": [119806, 120284, 120758]
+  },
+  "limitations": {
+    "uniformization_and_geometric_proofs_machine_verified": false,
+    "candidate_centered_rank_45_trial_is_actual_precision": false,
+    "higher_intrinsic_jets_require_previous_exact_zeros": true,
+    "positive_quadric_jet_exact_vanishing_proved": false,
+    "horizontal_CM_residue_map_index_computed": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "correspondence_sent": false
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "milestone": "D113",
+  "review_date": "2026-09-25",
+  "scope": "Finite scalar moment recursion over ramified K, exact contracting transports, certified positive moments and transfer to all matched CM charts.",
+  "sources": [
+    {
+      "title": "Cameron Franc and Marc Masdeu, Computing fundamental domains for the Bruhat-Tits tree for GL2(Qp), p-adic automorphic forms, and the canonical embedding of Shimura curves",
+      "url": "https://arxiv.org/pdf/1201.0356",
+      "locations": ["Sections 4.1 and 4.2", "Section 6.1, especially Theorems 6.2 and 6.3"],
+      "use": "Harmonic measures, finite-chart moments, iterative moment lifting and Poisson evaluation as the methodological framework. The scalar contracting equations and precision bounds needed over our ramified K are proved directly from ball partitions and d=0; no Qp control theorem or constants are transferred."
+    },
+    {
+      "title": "Marc Masdeu and Eloi Torrents, Fundamental domains for quaternionic S-arithmetic groups over totally real fields",
+      "url": "https://arxiv.org/pdf/2510.09356",
+      "locations": ["Section 2.2", "Lemma 2.2"],
+      "use": "Column-lattice tree and edge representatives over completions of totally real fields. Existing D111 arithmetic is reused; no external implementation or expanded tree-domain search is run."
+    }
+  ],
+  "local_sources": [
+    {"path": "dembele/certificates/shimura-evaluator-d108.md", "use": "Conditional moment-to-Poisson and coarse differential coefficient formulas, including their dyadic division and tail bounds."},
+    {"path": "dembele/data/computed/definite_dyadic_certificate_d109.json", "use": "The exact splitting algebra and fixed Hensel branch, with root error 180."},
+    {"path": "dembele/data/computed/dyadic_quotient_export_d111.json", "use": "The existing 174 arithmetic transports, local directions and class indexing."},
+    {"path": "dembele/data/computed/dyadic_harmonic_certificate_d111.json", "use": "All local frames, sixteen integral scalar measures and their uniform denominator bound d=0."},
+    {"path": "dembele/pari/405_dyadic_edge_reducer.py", "use": "Certified CM chart reduction and independent depth-three leaf-ball masses."},
+    {"path": "dembele/data/computed/dyadic_cm_embeddings_d112.json", "use": "Exact coordinates S for all seventeen arithmetically matched CM points."},
+    {"path": "dembele/data/computed/dyadic_cm_matching_review_d112.json", "use": "The existing CM labels, rational residue frame, zeroth chart masses and 682 inherited source hashes."}
+  ],
+  "project_deductions": [
+    "Every canonical edge chart partitions into two children carried back to saved slots by the existing arithmetic transport. All 348 coordinate maps have denominator slope in pi*O_K and determinant valuation one.",
+    "Writing phi=b+delta*x/(1+c*x), with valuations of delta and c at least one, gives coefficient valuation at least k for x^k in every positive power phi^n.",
+    "Fixing degree-zero masses gives a strictly contracting positive-moment operator. Cutoff J, working precision P and N iterations certify error at least min(J+1,P,N). A zero residual uniquely certifies the moments modulo pi^P.",
+    "All 51 CM coordinate transports are ball isomorphisms. Their degree-n coefficient tails have valuation at least k-n, so transfer from the state bank gives error min(P,J+1-n).",
+    "The pi^12 pilot retains degrees 0 through 11, runs 12 iterations, and supplies 33408 moment entries. Its exact two-bit-plane quotient representation retains v_pi(2)=8.",
+    "Independent ordinary polynomial convolution and integer matrix arithmetic certify all moment residuals and CM transfers, separately from the pilot's bit-plane implementation.",
+    "Direct degree-three and lower Riemann sums on 32 independently reduced leaf balls agree modulo pi^3, with error proved using the integral measure bound.",
+    "Among 2448 positive-degree CM entries, 2043 are certified nonzero. The 144 anchor entries are all congruent to zero at their error bounds; no exact vanishing or normalization is inferred."
+  ],
+  "software": [
+    {"name": "Python standard library", "use": "Exact rational splitting arithmetic, integer quotient arithmetic, bounded process-group execution and source hashes."},
+    {"name": "NumPy", "version_observed": "2.2.6", "use": "Independent bounded integer convolution and matrix multiplication; no floating-point linear algebra or numerical tolerance."}
+  ],
+  "excluded_inferences": [
+    "The two-bit-plane implementation is restricted to precision at most 16; higher precision requires an extended quotient implementation using the full Eisenstein polynomial.",
+    "No final-scale runtime claim follows from this low-precision pilot or the mathematical contraction theorem.",
+    "No exact vanishing at W and no certified anchor normalization or Gaussian pivot.",
+    "No actual Shimura differential value or jet, harmonic-to-residue frame change, candidate identification or target field polynomial.",
+    "No new class census, level, Hecke bank or cubic-precision run.",
+    "No direct exponential Riemann refinement as the high-precision algorithm; only a fixed small independent validation sample is used.",
+    "No unchanged Qp overconvergent control theorem or inert-31 equality threshold is applied over K."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

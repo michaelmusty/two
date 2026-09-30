@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "milestone": "D124",
+  "phase": "coarse",
+  "working_precision_pi": 1600,
+  "full_sixteen_column_bank_precision_pi": 400,
+  "production_arithmetic_not_imported": true,
+  "certificates": {
+    "independent_coarse_values_checked": 68,
+    "coarse_error_beta": [
+      3232,
+      3248,
+      3232,
+      3264
+    ],
+    "old_CM_scalar_overlaps": 217600,
+    "new_CM_scalar_coefficients": 435200,
+    "old_coarse_values_checked": 68
+  },
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "target_field_polynomial_constructed": false,
+  "wall_seconds": 12.143133874982595,
+  "peak_rss_bytes": 102203392,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col00_d124.json",
+      "sha256": "f5c1257f379dbd2d2392100e5eadeb62e86f43dcde8a396cec3ce34d9f0c1170"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col00_d124_moments.bin",
+      "sha256": "513dadeeb681e3368c952b460674b111391df573659444016b858e646dcfb530"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_CM_P800_col00_d123.json",
+      "sha256": "3efc3e43daff33f381aa82005924af41a303d1a2a1c1c21e4ce27b56bc43836c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_CM_P800_col00_d123_moments.bin",
+      "sha256": "8c0ba2a51f2446c4e7105364f0cd49812b78b92059d8b1e721a20d61c249a247"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/491_dyadic_staged_pilot_independent.py",
+      "sha256": "1264a6696bdc5745bca69e6cbca2d1e0bbabba2ce12be2b25498b3d1ac9b6fb0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/499_dyadic_precision1600_independent.py",
+      "sha256": "c8a2c64c8d0cd007490addcbff2885ab1c531f6077f19fe06474ba4d73424c33"
+    }
+  ]
+}

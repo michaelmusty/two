@@ -1,0 +1,202 @@
+{
+  "status": "pass",
+  "milestone": "D76",
+  "date": "2026-09-18",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/148_cm_frame_B3_lift_check.py",
+      "sha256": "0367a9ddadceccec3bd43f894e4b1f3b7bf69415393af30303b8cb498c7e04f3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/129_cm_frame_normalization_check.py",
+      "sha256": "7925d6af13a244e11f22981c4746c98492becec5f00822bd63c31e6d25cb7120"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_check.json",
+      "sha256": "391e661ccb3eb235e5152ab61e0c4ee012fbb8394bfac8a431f08de8c124bd1e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_arithmetic_check.json",
+      "sha256": "14ec15561a8d8db19be4a93c60bc9deee7bf83ef330ea9321ac461540e6d9abb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_product_lift_64.json",
+      "sha256": "12e6a6f18af25edc3f3f1235cd15a790e03f85eff63bd64b994084b084536016"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_product_lift_128.json",
+      "sha256": "a163d41faa3c1349f4e726762c4334932c925e5e54270575f36e59630fa0cad5"
+    }
+  ],
+  "independent_checks": [
+    {
+      "command": [
+        "/Applications/Magma/magma",
+        "-bn",
+        "-l",
+        "2000000000",
+        "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_check_64.m"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 21.940064167021774,
+      "timeout_seconds": 180,
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_check_64.out",
+        "sha256": "be3682e71872a06a6e4346c742ada9c484f2685068a0bc1f75fcc50060cd8285"
+      },
+      "memory_limit_bytes": 2000000000,
+      "sources": [
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_check_64.m",
+          "sha256": "3d6c0924c80321b33aab9cf15bbe7c06f912e056b15b4f82a987881c6caf9fdf"
+        },
+        {
+          "path": "/Users/musty/two/dembele/magma/149_cm_frame_B3_lift_check.m",
+          "sha256": "fdb679e814f048b08266b93575f0409c6e69f90e3913d9776747e0fed6763938"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_product_lift_64.m",
+          "sha256": "ba0bb8e01aa3408ea7503d28ec8e01416bcff73ad82fae37dd3c8e7b5d597bb3"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_doubling_64.m",
+          "sha256": "4412a30ab6e5f2fb2b129cda54d47b4f863b8df16a4ef388dbab4ac9409c926f"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_transfer.m",
+          "sha256": "bfb14fc7fd0a43e233030ce8241f59154530f8c008a3fc4d93cda144ac248c2b"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+          "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+          "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.m",
+          "sha256": "fb0a63bffbfbd7f2d097bf20226c4bc3f5f1211a66dd007847c524a1f97e4348"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/Applications/Magma/magma",
+        "-bn",
+        "-l",
+        "2000000000",
+        "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_check_128.m"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 22.683818666962907,
+      "timeout_seconds": 180,
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_check_128.out",
+        "sha256": "5ce306dbb0f13124dd698b108f3b4c481ce051c0da1ed8d8b98f54db95c8befb"
+      },
+      "memory_limit_bytes": 2000000000,
+      "sources": [
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_check_128.m",
+          "sha256": "2d1e81ce69435bae078766e62929c285dd957fc0b4ffa5f320634a80e36dcee2"
+        },
+        {
+          "path": "/Users/musty/two/dembele/magma/149_cm_frame_B3_lift_check.m",
+          "sha256": "fdb679e814f048b08266b93575f0409c6e69f90e3913d9776747e0fed6763938"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_product_lift_128.m",
+          "sha256": "465cf9189a856ba29e5d241254117554714e61e6608031c8789e934aace47c10"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_doubling_128.m",
+          "sha256": "725ffbf79c6eee527715512ddd2af019c42f6ce6b208e99052bb1641eb581df5"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_transfer.m",
+          "sha256": "bfb14fc7fd0a43e233030ce8241f59154530f8c008a3fc4d93cda144ac248c2b"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+          "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+          "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+        },
+        {
+          "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.m",
+          "sha256": "fb0a63bffbfbd7f2d097bf20226c4bc3f5f1211a66dd007847c524a1f97e4348"
+        }
+      ]
+    }
+  ],
+  "compatible_reductions": true,
+  "product_space_dimension": 6,
+  "final_precision_digits": 128,
+  "number_field_cover_obtained": false,
+  "negative_control": {
+    "command": [
+      "/Applications/Magma/magma",
+      "-bn",
+      "-l",
+      "2000000000",
+      "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_negative_control.m"
+    ],
+    "status": "pass",
+    "exit_code": 1,
+    "wall_seconds": 18.406564874923788,
+    "timeout_seconds": 180,
+    "log": {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_negative_control.out",
+      "sha256": "2c110900d016fca825b9c2e80278ddca92b4b2201e4c88677327170778d6c572"
+    },
+    "memory_limit_bytes": 2000000000,
+    "sources": [
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_negative_control.m",
+        "sha256": "1c71c9d9cd510c6e98ea90020399e247d682e796329021110036f1ac82215131"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_lift_check_128.m",
+        "sha256": "2d1e81ce69435bae078766e62929c285dd957fc0b4ffa5f320634a80e36dcee2"
+      },
+      {
+        "path": "/Users/musty/two/dembele/magma/149_cm_frame_B3_lift_check.m",
+        "sha256": "fdb679e814f048b08266b93575f0409c6e69f90e3913d9776747e0fed6763938"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_product_lift_128.m",
+        "sha256": "465cf9189a856ba29e5d241254117554714e61e6608031c8789e934aace47c10"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_doubling_128.m",
+        "sha256": "725ffbf79c6eee527715512ddd2af019c42f6ce6b208e99052bb1641eb581df5"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_transfer.m",
+        "sha256": "bfb14fc7fd0a43e233030ce8241f59154530f8c008a3fc4d93cda144ac248c2b"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.m",
+        "sha256": "462897f4fe89febce2ce3c9c2670c78e74b7c6a3cf6ff4f30969fcddcbb2465c"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks.m",
+        "sha256": "cf8da3d4eb4bd26a9eef1701c29349ae1fb933a1b43185cc5ea68a10eb1494b7"
+      },
+      {
+        "path": "/Users/musty/two/dembele/data/computed/cm_frame_resolvent.m",
+        "sha256": "fb0a63bffbfbd7f2d097bf20226c4bc3f5f1211a66dd007847c524a1f97e4348"
+      }
+    ],
+    "mutation": "add 31^127 to denominator coefficient 92; all lower digits unchanged"
+  }
+}

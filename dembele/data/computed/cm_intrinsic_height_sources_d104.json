@@ -1,0 +1,72 @@
+{
+  "milestone": "D104",
+  "review_date": "2026-09-24",
+  "scope": "Primary inputs for a project-derived stable ramification/Hodge comparison, its CM-height specialization and rational analytic bounds.",
+  "sources": [
+    {
+      "title": "Qing Liu and Dino Lorenzini, Models of curves and finite covers",
+      "url": "https://www.math.u-bordeaux.fr/~qliu/articles/modcove.pdf",
+      "bibliography": "Compositio Mathematica 118 (1999), 61-102",
+      "locations": [
+        "Proposition 4.4(a), page 80",
+        "Remark 4.5, page 81",
+        "Corollary 4.7, page 82"
+      ],
+      "use": "Extension of generic finite maps between stable models, without requiring the extended morphism to remain finite. The differential and second ramification map are derived in the project report.",
+      "restriction": "Minimal regular models are not asserted functorial."
+    },
+    {
+      "title": "Xinyi Yuan and Shou-Wu Zhang, On the averaged Colmez conjecture",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v187-n2-p04-p.pdf",
+      "bibliography": "Annals of Mathematics 187 (2018), 533-638; DOI 10.4007/annals.2018.187.2.4",
+      "locations": [
+        "Theorem 1.1 and CM metric, pages 534-535",
+        "Shimura-point normalization, page 537",
+        "Corollary 2.6 and Theorem 2.7, pages 548-549",
+        "Theorem 4.5, page 564",
+        "Theorem 4.7, page 567"
+      ],
+      "use": "Averaged CM height, nearby-type identity, and the canonical arithmetic Hodge system with local dualizing normalization at sufficiently small levels.",
+      "normalization": "CM Faltings heights divide degree by [K:Q]; the paper's Shimura-point height divides by [K:F]. D104 uses absolute heights throughout.",
+      "excluded_results": "CM-point Theorems 1.6 and 1.7 exclude common finite ramification and are not applied. Their exclusion does not restrict structural Theorems 4.5 and 4.7."
+    },
+    {
+      "title": "Roy Zhao, Heights of Special Points on Quaternionic Shimura Varieties",
+      "url": "https://arxiv.org/pdf/2309.08886",
+      "version_reviewed": "v1, 16 September 2023",
+      "locations": [
+        "Theorem 1.1, pages 1-2",
+        "Section 2.1: CM Faltings norm",
+        "Sections 6-7: Hodge system, metrics and Kodaira-Spencer comparison",
+        "Theorem 7.4 and statement of Theorem 7.5, page 25",
+        "Last display in proof of Theorem 7.5, page 27"
+      ],
+      "use": "Theorem 7.4 applies at maximal level with common CM/quaternion ramification. Combining it with the published nearby and averaged identities yields h_L=-R/8+log(2)/16.",
+      "discrepancy": "The final proof display of 7.5 omits d_Sigma from log(d_B*d_Sigma), unlike 7.4 and the statements of 1.1/7.5. D104 retains the factor and derives its specialization from 7.4. No author confirmation is claimed.",
+      "normalization": "Absolute height; ||d_tau||=2*Im(tau). CM Faltings squared norm uses (2*pi)^(-8), separately from D103's curve metric."
+    },
+    {
+      "title": "NIST Digital Library of Mathematical Functions",
+      "urls": [
+        "https://dlmf.nist.gov/25.15.E3",
+        "https://dlmf.nist.gov/25.11.E13",
+        "https://dlmf.nist.gov/25.11.E18",
+        "https://dlmf.nist.gov/5.2.E1",
+        "https://dlmf.nist.gov/5.7.E3",
+        "https://dlmf.nist.gov/5.7.E4"
+      ],
+      "use": "Dirichlet L/Hurwitz identities, special Hurwitz values, the Gamma integral, and log-Gamma series. Project calculations supply explicit rational remainders for two independent enclosures."
+    }
+  ],
+  "project_deductions": [
+    "Integral differential on nodal models, then its derivative at simple ramification",
+    "Stable CM fibre height <= 2*absolute Hodge height+log(2), via auxiliary small levels",
+    "Exact conductor-64 character traces and h_L<17/10",
+    "H_CM_disk<41/10 and conditional tangent height<10504",
+    "Candidate-only height<683 and conditional one/all-embedding error thresholds"
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "intrinsic_height_gap_closed_using_cited_theorems": true,
+  "arithmetic_frame_and_chart_hypotheses_still_open": true,
+  "independent_Shimura_tangent_obtained": false
+}

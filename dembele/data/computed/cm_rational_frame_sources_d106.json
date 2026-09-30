@@ -1,0 +1,88 @@
+{
+  "milestone": "D106",
+  "review_date": "2026-09-24",
+  "scope": "CM-marked rigidity, compatible rational descent, canonical degree-17 residue frame, and finite higher-jet separation bounds; no independent Shimura evaluation.",
+  "sources": [
+    {
+      "title": "The Stacks Project, uniqueness of stable models",
+      "url": "https://stacks.math.columbia.edu/tag/0E97",
+      "locations": [
+        "Lemma 109.24.2"
+      ],
+      "use": "Extends each geometric generic automorphism after a finite extension of the DVR."
+    },
+    {
+      "title": "The Stacks Project, proper Deligne-Mumford stack of stable curves",
+      "url": "https://stacks.math.columbia.edu/tag/0E9C",
+      "locations": [
+        "Theorem 109.25.3",
+        "Proof references Lemmas 109.22.7 and 109.25.1"
+      ],
+      "use": "Its diagonal gives a finite unramified automorphism scheme, including residue characteristic 2."
+    },
+    {
+      "title": "The Stacks Project, sections of unramified separated morphisms",
+      "url": "https://stacks.math.columbia.edu/tag/024U",
+      "locations": [
+        "Theorem 41.6.2"
+      ],
+      "use": "Sections over a connected base agreeing at one point coincide; proves faithful stable specialization without a prime-to-2 restriction."
+    },
+    {
+      "title": "Lassina Dembélé, A hyperelliptic Shimura quotient of genus 16",
+      "url": "https://arxiv.org/pdf/1906.06772",
+      "locations": [
+        "Lemma 5.2, PDF page 15",
+        "Theorem 5.1 for signatures"
+      ],
+      "use": "Canonical Shimura descent and Atkin-Lehner compatibility as reviewed in D58. Reuses the exact invariant-prime/class-group inputs. Not a use of the hyperellipticity theorem.",
+      "excluded": [
+        "Lemma 5.7 admissibility/exponent refinement",
+        "Theorems 5.9 and 5.11"
+      ]
+    },
+    {
+      "title": "Jeroen Sijsling and John Voight, On explicit descent of marked curves and maps",
+      "url": "https://jvoight.github.io/articles/birch-descent-021420.pdf",
+      "version": "2020-02-14 author version",
+      "locations": [
+        "Theorem 1.3.2 (published Theorem 1.8)",
+        "Theorem 2.1.1",
+        "Section 2.2 and Corollary 2.2.3"
+      ],
+      "use": "Smooth-source-marked descent used in D58; uniqueness of marked comparison maps implies the Weil cocycle and compatible descent."
+    },
+    {
+      "title": "Raymond van Bommel, Edgar Costa, Bjorn Poonen and Padmavathi Srinivasan, Curve equations from expansions of 1-forms at a nonrational point",
+      "url": "https://arxiv.org/pdf/2506.14026",
+      "locations": [
+        "Lemma 4.1 and Corollary 4.2, as reviewed in D88"
+      ],
+      "use": "Exact degree/order relation criterion. J3 rank refinement is the project's D88 deduction, not an independently provided Shimura evaluator."
+    }
+  ],
+  "prior_exact_inputs": [
+    "D99 actual simple cubic stable graph and nonhyperellipticity",
+    "D105 H0(K-D)=0, all projective frame cofactors nonzero, H of degree 272 and Gaussian projective height bound",
+    "D58 geometric marked descent and exact arithmetic prerequisites",
+    "D59 proved CM class number and 31-adic Galois group, without numerical root matching",
+    "D103-D104 integral adjugate sections, disk norms and intrinsic CM fiber height",
+    "D101 first candidate tangent; D88 normalized candidate mod-31 jets and J3 rank"
+  ],
+  "project_deductions": [
+    "Aut(C_Qbar) embeds in the 64-element graph group; its D-preserving subgroup is trivial by odd orbit, Galois transitivity and projective-frame faithfulness.",
+    "The given F-model has unique compatible Q-descent as a D-marked curve, without D56 ordinarity/moments.",
+    "Degree-17 residue field is uniquely Q-isomorphic to saved root field; residue frame is rational up to one scalar.",
+    "Integral higher Gaussian expressions have lines omega^9*T^6 and omega^15*T^10; Taylor height bounds are 31518 and 52533.",
+    "Candidate-only exact jets and independent identities give sufficient prime31 comparison thresholds 3257,9746,16236."
+  ],
+  "excluded_inferences": [
+    "No unmarked automorphism group determination.",
+    "No explicit descent matrices or saved numerical CM-point/root matching certificate.",
+    "No proof of a particular nonzero actual G12 pivot.",
+    "No independent actual Shimura tangent or jet, candidate identification, downstream marking identification or target polynomial.",
+    "Finite graph and formal arithmetic audits do not machine-verify the geometric theorems."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

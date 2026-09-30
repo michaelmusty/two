@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/130_cm_frame_precision_doubling.py",
+    "--digits",
+    "128"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 52.19790725002531,
+  "timeout_seconds": 900,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/130_cm_frame_precision_doubling.py",
+      "sha256": "fc748fa7849e599a94cb75a9f74a2e4320a6ee22fd00c3bc41f3f4a4ac07409f"
+    }
+  ],
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_doubling.out",
+    "sha256": "1a18aaf8183c755641f0607c42f32d4aca9b01a8d85ab404b1cee520938af7f3"
+  },
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d74-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

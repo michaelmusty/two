@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/142_cm_frame_B3_numerator.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 21.87231350003276,
+  "timeout_seconds": 240,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_numerator.out",
+    "sha256": "1ed4a71c58147b65c81e8a6ae04f637658803c13051dbcea7e1d7b1cf1b205c9"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/142_cm_frame_B3_numerator.py",
+      "sha256": "f466e7206843b6fea15ef4599b25ec2f98027d7a1023631765c2beee654e0750"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d75-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

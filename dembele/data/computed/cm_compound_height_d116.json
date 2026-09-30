@@ -1,0 +1,118 @@
+{
+  "status": "pass",
+  "milestone": "D116",
+  "controls": {
+    "complementary_minor_identities_checked": 1946,
+    "matrix_determinants": [
+      187072,
+      0,
+      38913280,
+      0,
+      19352494080,
+      0,
+      17959114506240,
+      0
+    ],
+    "singular_and_nonunit_controls": true,
+    "Wronskian_identities_checked": 20,
+    "extra_determinant_cancellation_rejected": true
+  },
+  "height_budgets": {
+    "log2_lower": "3508595171842993185134796784736611366655501408312351140098685578379184556173245757359910454882815130815005200896/5061832854904846645955900741673035877578026003792249877488563088418276175757042525151232593509677298791370051125",
+    "log2_upper": "42103142062115918221617561416839336399866016899748213681184226970503191837707222979818147583109816019560407766877/60741994258858159751470808900076430530936312045506998529862757061019314109084510301814791122116127585496440613500",
+    "reduced_exterior_section_norm_exponents": [
+      5139,
+      4838,
+      4536
+    ],
+    "Gaussian_value_exponent": 4898,
+    "first_section_value_exponent": 5159,
+    "third_Wronskian_exponent": 4656,
+    "frame_determinant_exponent": 5440,
+    "second_ratio_numerator_denominator_exponents": [
+      20133,
+      20135
+    ],
+    "thresholds": [
+      {
+        "order": 1,
+        "coefficient_of_H_CM": 241,
+        "negative_coefficient_of_h_Fal": 15,
+        "section_norm_binary_exponent": 4898,
+        "actual_height_bound_alpha": "9881/10",
+        "actual_height_bound_beta_log2": 5618,
+        "actual_height_strict_integer_upper": 4883,
+        "candidate_height_upper": 677,
+        "difference_height_bound_alpha": "16651/10",
+        "difference_height_bound_beta_log2": 5619,
+        "rational_anchor_only": {
+          "sufficient_beta_error": 2181775,
+          "sufficient_integer_pi_error": 1090888
+        },
+        "degree16_place_only": {
+          "sufficient_beta_error": 136361,
+          "sufficient_integer_pi_error": 68181
+        },
+        "both_places_uniform_beta_error": {
+          "sufficient_beta_error": 128340,
+          "sufficient_integer_pi_error": 64170
+        }
+      },
+      {
+        "order": 2,
+        "coefficient_of_H_CM": 995,
+        "negative_coefficient_of_h_Fal": 62,
+        "section_norm_binary_exponent": 20135,
+        "actual_height_bound_alpha": "8159/2",
+        "actual_height_bound_beta_log2": 23111,
+        "actual_height_strict_integer_upper": 20099,
+        "candidate_height_upper": 1947,
+        "difference_height_bound_alpha": "12053/2",
+        "difference_height_bound_beta_log2": 23112,
+        "rational_anchor_only": {
+          "sufficient_beta_error": 8651342,
+          "sufficient_integer_pi_error": 4325671
+        },
+        "degree16_place_only": {
+          "sufficient_beta_error": 540709,
+          "sufficient_integer_pi_error": 270355
+        },
+        "both_places_uniform_beta_error": {
+          "sufficient_beta_error": 508903,
+          "sufficient_integer_pi_error": 254452
+        }
+      }
+    ],
+    "bounds_are_sufficient_not_necessary": true
+  },
+  "common_determinant_factors_removed_by_integral_polynomial_identities": true,
+  "actual_precision_increased": false,
+  "candidate_identification_proved": false,
+  "target_field_polynomial_constructed": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/433_cm_compound_height.py",
+      "sha256": "7de02311e0271a9cc6a43eaf242f063f63e3dd3c18ab16b723d3711464b4800a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-intrinsic-height-d104.md",
+      "sha256": "454495a0bfd60eeca0ca9cad8549b8372c74fb930872a9e6773bab77e4255a7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_ratio_jet_review_d106.json",
+      "sha256": "d3e1eb42d9e769a4405d89ca0c114700a2f91cce00f05c0cb613715039292bad"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_strategy_review_d115.json",
+      "sha256": "c8864de116aec575bbea3954f785762db7a685e233ac26680ad0cb91b206fc20"
+    }
+  ]
+}

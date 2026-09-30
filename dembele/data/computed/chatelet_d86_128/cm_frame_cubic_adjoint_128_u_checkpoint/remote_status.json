@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 197.9150272810366,
+  "timeout_seconds": 1800,
+  "memory_limit_bytes": 8000000000,
+  "maximum_resident_bytes": 2147655680,
+  "timeout_terminates_process_group": true,
+  "private_process_group": 488938,
+  "input_hashes_verified": true,
+  "output_bytes": 2897545,
+  "output_sha256": "2caf9d349531ac3523e1650b349458e9657d3069d7bbd5542e23d01b07195503",
+  "command": [
+    "/usr/local/bin/magma",
+    "-bn",
+    "-l",
+    "8000000000",
+    "dembele/data/computed/cm_frame_cubic_adjoint_128_u_checkpoint_run.m"
+  ]
+}

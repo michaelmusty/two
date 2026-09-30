@@ -1,0 +1,48 @@
+{
+  "milestone": "D114",
+  "review_date": "2026-09-25",
+  "scope": "Actual harmonic-basis coarse differential coefficients at all seventeen CM points; independent kernels, involution-refined errors and the anchor precision gate.",
+  "sources": [
+    {
+      "title": "Cameron Franc and Marc Masdeu, Computing fundamental domains for the Bruhat-Tits tree for GL2(Qp), p-adic automorphic forms, and the canonical embedding of Shimura curves",
+      "url": "https://arxiv.org/pdf/1201.0356",
+      "locations": ["Section 6.1", "Remark 6.5"],
+      "use": "Poisson evaluation and integration of locally analytic kernels from moments as the computational framework. The actual ramified-field convergence and error bounds used here are proved in D108/D113 and refined directly in D114; no Qp precision proposition or control theorem is transferred unchanged."
+    }
+  ],
+  "local_sources": [
+    {"path": "dembele/certificates/cm-rational-frame-jets-d106.md", "use": "The rational residue frame and Gaussian/ratio-jet requirements, which remain separate from the present harmonic-basis evaluation."},
+    {"path": "dembele/certificates/shimura-evaluator-d108.md", "use": "Ramified three-chart Poisson expansions, the exact coarse-coordinate formula, tail bounds and transformation law."},
+    {"path": "dembele/data/computed/dyadic_poisson_jet_interface_d108.json", "use": "The frozen coarse formula and the exact defining CM polynomial; its old synthetic data are not substituted for actual moments."},
+    {"path": "dembele/data/computed/dyadic_harmonic_certificate_d111.json", "use": "The sixteen actual G-invariant bounded measures with denominator bound d=0."},
+    {"path": "dembele/data/computed/dyadic_cm_embeddings_d112.json", "use": "Exact CM coordinates and embedded involutions acting as z -> beta^2/z."},
+    {"path": "dembele/data/computed/dyadic_moment_transports_d113.json", "use": "All existing contracting child maps and CM ball maps, with coefficient-error bounds at least 159 and 165."},
+    {"path": "dembele/pari/412_dyadic_moment_pilot.py", "use": "Frozen bit-plane ring arithmetic used only within its proved precision-at-most-16 range."},
+    {"path": "dembele/data/computed/dyadic_moment_review_d113.json", "use": "The finite contraction proof, previous moment bank and 696 inherited source hashes."}
+  ],
+  "project_deductions": [
+    "At precision P, child-map coefficients in moment columns k>=P vanish uniformly in the row degree. Solve only degrees 0 through P-1, then recover higher rows without a larger fixed system.",
+    "Precision 16 with state cutoff 46 and CM cutoff 31 gives 130848 state entries and 26112 CM entries; all earlier D113 state values agree after reduction.",
+    "Combining the D108 Taylor-to-coarse formula with chart moments gives integral kernel coefficients and avoids approximate division by beta.",
+    "Retaining exact binomial valuations improves the original three-chart errors to 24,32,24 pi-digits for coarse orders 0,1,2.",
+    "Independent expansion of K_j(t)=(1-((beta+t)/(beta-t))^(2j+2))/2 verifies all 288 coefficients. Temporary beta^96 precision pays explicitly for the division by 2 and retains beta^80 arithmetic accuracy.",
+    "The actual CM involution exchanges chart A with its complement and preserves K_j and the measure. Hence g_j=2 integral_A K_j dmu, giving stronger errors 32,40,32 pi-digits.",
+    "All 256 non-anchor entries at each of the three coarse orders are certified nonzero. The values remain in the harmonic basis and specified local coarse coordinate.",
+    "At W, moments 0 through 31 on A vanish modulo pi^16. Monic division by (X^2-X)^16 proves every polynomial moment is divisible by pi^16, so raising only the degree cutoff cannot resolve this anchor.",
+    "The anchor coarse coefficients have lower valuation bounds 32.5,40.5,32.5 in v_pi; these are not exact vanishing or nonvanishing certificates."
+  ],
+  "software": [
+    {"name": "Python standard library", "use": "Exact integer/rational arithmetic, binomial kernels, source hashes and bounded process groups."},
+    {"name": "NumPy", "use": "Bounded integer convolutions and matrix products; no floating-point solves or tolerance-based certificates."}
+  ],
+  "excluded_inferences": [
+    "These are actual coarse differential 2-jets in the harmonic basis, not rational-frame ratio jets or a candidate identification.",
+    "No harmonic-to-residue basis change, normalization, Gaussian pivot or target field polynomial.",
+    "No exact vanishing or certified nonzero coarse value at W.",
+    "The bit-plane shortcut is not valid at precision 24 without the additional Eisenstein terms; the next run needs new quotient arithmetic.",
+    "No new class census, level, Hecke bank, cubic-precision run or final-scale performance claim.",
+    "No unchanged Qp control theorem, Qp precision proposition or inert-31 equality threshold is used over the ramified field."
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

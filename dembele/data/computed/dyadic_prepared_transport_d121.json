@@ -1,0 +1,85 @@
+{
+  "status": "pass",
+  "milestone": "D121",
+  "arithmetic_controls": {
+    "arbitrary_precision_product_bits": [
+      3,
+      25,
+      129,
+      1536
+    ],
+    "independent_recurrence_controls": 12,
+    "integer_arithmetic_has_no_fixed_width_overflow": true
+  },
+  "independent_large_product_checked": true,
+  "synthetic_benchmarks": [
+    {
+      "synthetic_P": 200,
+      "modulus_bits": 25,
+      "prepare_seconds": 0.0072576249949634075,
+      "first_apply_seconds": 0.04532491718418896,
+      "reused_apply_seconds": 0.04147941689006984,
+      "first_total_seconds": 0.05258254217915237,
+      "maximum_packed_product_bytes": 47640,
+      "cached_polynomial_coefficient_count": 515
+    },
+    {
+      "synthetic_P": 400,
+      "modulus_bits": 50,
+      "prepare_seconds": 0.015464083990082145,
+      "first_apply_seconds": 0.10987124987877905,
+      "reused_apply_seconds": 0.10146858403459191,
+      "first_total_seconds": 0.1253353338688612,
+      "maximum_packed_product_bytes": 167370,
+      "cached_polynomial_coefficient_count": 1017
+    },
+    {
+      "synthetic_P": 800,
+      "modulus_bits": 100,
+      "prepare_seconds": 0.03676795796491206,
+      "first_apply_seconds": 0.2976949999574572,
+      "reused_apply_seconds": 0.28010116587392986,
+      "first_total_seconds": 0.33446295792236924,
+      "maximum_packed_product_bytes": 646785,
+      "cached_polynomial_coefficient_count": 2019
+    },
+    {
+      "synthetic_P": 1600,
+      "modulus_bits": 200,
+      "prepare_seconds": 0.1027927091345191,
+      "first_apply_seconds": 0.8375804999377578,
+      "reused_apply_seconds": 0.7861252499278635,
+      "first_total_seconds": 0.940373209072277,
+      "maximum_packed_product_bytes": 2493660,
+      "cached_polynomial_coefficient_count": 4021
+    }
+  ],
+  "reused_plan_linearity_control_passed": true,
+  "actual_moment_precision_increased": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "sha256": "86d272475bbc0390f28b198462d63eac33262de9b7b9575d634895eebb985542"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/463_dyadic_gmp_transport.py",
+      "sha256": "0de66136b95feb0cfdca2a782c85611ef2d81c83a16dc296ab1542eaf06b1b1d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+      "sha256": "d1a595cfd6accde0f0b57419bdc16cbf7da1c65b15842f9ba58c8a91381c7cf2"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/gmp/6.3.0/lib/libgmp.10.dylib",
+      "sha256": "bc6145edbeca608b4fecd4440dbbd7b27cacd55cbfd2b552b8bc333febe43b35"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/gmp/6.3.0/include/gmp.h",
+      "sha256": "920496a9867a23dec3410e19da39ac446743694d539651bd78015240b0704e4b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_gmp_target_cost_d120.json",
+      "sha256": "9a001d9e46420b39fb265257c755ce011afa9f75be597c635b9304f61c28b1ae"
+    }
+  ]
+}

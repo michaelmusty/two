@@ -1,0 +1,382 @@
+{
+  "genus4_a2_scale": {
+    "genus": 4,
+    "d0": 9,
+    "p": 97,
+    "a": 2,
+    "precision_exponent": 4,
+    "evaluation_points": 46,
+    "section_dimensions": [
+      6,
+      15,
+      24
+    ],
+    "jacobian_size_bytes": 489240,
+    "timing_ms": {
+      "init": 15,
+      "double_and_zero_check": 19,
+      "lift_one_point": 264,
+      "lift_checks": 25
+    },
+    "wall_seconds": 0.405,
+    "status": "PASS",
+    "lifting_system_stack_checkpoints": [
+      {
+        "rows": 132,
+        "columns": 19,
+        "stack_bytes_relative_to_lift_entry": 1273024
+      },
+      {
+        "rows": 132,
+        "columns": 19,
+        "stack_bytes_relative_to_lift_entry": 878048
+      }
+    ]
+  },
+  "genus4_a51_scale": {
+    "genus": 4,
+    "d0": 9,
+    "p": 97,
+    "a": 51,
+    "precision_exponent": 4,
+    "evaluation_points": 51,
+    "section_dimensions": [
+      6,
+      15,
+      24
+    ],
+    "jacobian_size_bytes": 8566200,
+    "timing_ms": {
+      "init": 214,
+      "double_and_zero_check": 547,
+      "lift_one_point": 8356,
+      "lift_checks": 712
+    },
+    "wall_seconds": 10.116,
+    "status": "PASS",
+    "lifting_system_stack_checkpoints": [
+      {
+        "rows": 162,
+        "columns": 19,
+        "stack_bytes_relative_to_lift_entry": 26815624
+      },
+      {
+        "rows": 162,
+        "columns": 19,
+        "stack_bytes_relative_to_lift_entry": 20127424
+      }
+    ]
+  },
+  "genus4_a2_rows": {
+    "genus": 4,
+    "p": 97,
+    "a": 2,
+    "precision_exponent": 4,
+    "evaluation_points": 46,
+    "frobenius_cycle_lengths": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "systems": [
+      {
+        "initial_precision": 1,
+        "derivative_precision": 1,
+        "rows": 132,
+        "columns": 19,
+        "rank": 9,
+        "kernel_dimension": 10,
+        "matrix_size_bytes": 220240,
+        "entry_payload_bytes": 199864,
+        "zero_entries_mod_p": 0,
+        "full_degree_entries_mod_p": 2480,
+        "degree_sum_mod_p": 2480,
+        "full_field_witness": true,
+        "compared_entries": 2508,
+        "maximum_row_block_bytes": 36952,
+        "selected_rows": 9,
+        "selected_row_bytes": 15296,
+        "row_formula_cache_bytes": 140040,
+        "timing_ms": 28
+      },
+      {
+        "initial_precision": 2,
+        "derivative_precision": 2,
+        "rows": 132,
+        "columns": 19,
+        "rank": 9,
+        "kernel_dimension": 10,
+        "matrix_size_bytes": 221016,
+        "entry_payload_bytes": 200640,
+        "zero_entries_mod_p": 0,
+        "full_degree_entries_mod_p": 2485,
+        "degree_sum_mod_p": 2485,
+        "full_field_witness": true,
+        "compared_entries": 2508,
+        "maximum_row_block_bytes": 37096,
+        "selected_rows": 9,
+        "selected_row_bytes": 15360,
+        "row_formula_cache_bytes": 140552,
+        "timing_ms": 28
+      }
+    ],
+    "wall_seconds": 0.133,
+    "status": "PASS"
+  },
+  "genus4_a51_rows": {
+    "genus": 4,
+    "p": 97,
+    "a": 51,
+    "precision_exponent": 4,
+    "evaluation_points": 51,
+    "frobenius_cycle_lengths": [
+      51
+    ],
+    "systems": [
+      {
+        "initial_precision": 1,
+        "derivative_precision": 1,
+        "rows": 162,
+        "columns": 19,
+        "rank": 9,
+        "kernel_dimension": 10,
+        "matrix_size_bytes": 5087208,
+        "entry_payload_bytes": 5062272,
+        "zero_entries_mod_p": 0,
+        "full_degree_entries_mod_p": 3046,
+        "degree_sum_mod_p": 153867,
+        "full_field_witness": true,
+        "compared_entries": 3078,
+        "maximum_row_block_bytes": 847712,
+        "selected_rows": 9,
+        "selected_row_bytes": 282632,
+        "row_formula_cache_bytes": 3022480,
+        "timing_ms": 637
+      },
+      {
+        "initial_precision": 2,
+        "derivative_precision": 2,
+        "rows": 162,
+        "columns": 19,
+        "rank": 9,
+        "kernel_dimension": 10,
+        "matrix_size_bytes": 5097368,
+        "entry_payload_bytes": 5072432,
+        "zero_entries_mod_p": 0,
+        "full_degree_entries_mod_p": 3047,
+        "degree_sum_mod_p": 153869,
+        "full_field_witness": true,
+        "compared_entries": 3078,
+        "maximum_row_block_bytes": 849832,
+        "selected_rows": 9,
+        "selected_row_bytes": 283472,
+        "row_formula_cache_bytes": 3027696,
+        "timing_ms": 726
+      }
+    ],
+    "wall_seconds": 1.651,
+    "status": "PASS"
+  },
+  "comparison": {
+    "lift_time_ratio": 31.651515151515152,
+    "jacobian_object_size_ratio": 17.509197939661515,
+    "point_counts_also_differ": true,
+    "is_genus64_runtime_forecast": false,
+    "equation_entries_compared": 11172
+  },
+  "storage_projection": {
+    "kind": "conditional extrapolation from genus-4/a=51 entry representations",
+    "is_measured_genus64_storage": false,
+    "is_peak_rss_or_stack_usage": false,
+    "is_proved_lower_bound": false,
+    "includes_other_objects_and_temporary_allocations": false,
+    "scenarios": [
+      {
+        "evaluation_points": 646,
+        "assumption": "D63 row count, also the minimum for d0=129",
+        "rows": 21252,
+        "columns": 259,
+        "field_entries": 5504268,
+        "measured_payload_bytes_per_entry": [
+          1644.662768031189,
+          1647.9636127355425
+        ],
+        "projected_matrix_tree_bytes": [
+          9096702941,
+          9114871675
+        ],
+        "single_row_block_entries": 83398,
+        "full_matrix_to_row_block_entry_ratio": 66
+      },
+      {
+        "evaluation_points": 663,
+        "assumption": "hypothetical thirteen full Frobenius orbits of length 51",
+        "rows": 22374,
+        "columns": 259,
+        "field_entries": 5794866,
+        "measured_payload_bytes_per_entry": [
+          1644.662768031189,
+          1647.9636127355425
+        ],
+        "projected_matrix_tree_bytes": [
+          9576963436,
+          9596091389
+        ],
+        "single_row_block_entries": 87801,
+        "full_matrix_to_row_block_entry_ratio": 66
+      }
+    ]
+  },
+  "backend": {
+    "repository": "https://github.com/nmascot/LiftTors",
+    "revision": "fd6403caf7147b21b67dcb17dbedccea762d6262",
+    "upstream_modified": false,
+    "compiled_adaptation": "exact batched DivSub_dimval; streamed PicLiftTors products; batched lifting kernel",
+    "adapter_sha256": "b2386845df3fc146c156fa33ce31ab5293b3db1c7d058fc876f8d547309451e2",
+    "lift_adapter_sha256": {
+      "lifttors_lift.py": "680cd96790ff7101cbaf907f290170f3f967e41dfc2177aadcd7e7ae559f41f0",
+      "lifttors_streamed.c": "f8b77d8e9dbd2f320f371117227ef81a23c7660a4583d5c17183f0d08f85d47e"
+    },
+    "pari_prefix": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "command": [
+      "cc",
+      "-O3",
+      "-Wall",
+      "-fno-strict-aliasing",
+      "-fPIC",
+      "-dynamiclib",
+      "-I/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/include",
+      "-I/Users/musty/two/dembele/vendor/LiftTors",
+      "/Users/musty/two/dembele/vendor/LiftTors/linalg.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/exp.c",
+      "/Users/musty/two/dembele/pari/.build/lifttors/pic_bounded.c",
+      "/Users/musty/two/dembele/pari/.build/lifttors/lift_streamed.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/freyruck.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/rr.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/torsspace.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/zeta.c",
+      "/Users/musty/two/dembele/pari/lifttors_bounded.c",
+      "/Users/musty/two/dembele/pari/lifttors_streamed.c",
+      "-L/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/lib",
+      "-Wl,-rpath,/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/lib",
+      "-lpari",
+      "-lm",
+      "-o",
+      "/Users/musty/two/dembele/pari/.build/lifttors/liblifttors.so"
+    ],
+    "source_sha256": {
+      "ExDavide2.gp": "970a72034d123cc83d9294380cbaf010a864eb84154503df86e1c2887cf23a96",
+      "ExDavide3.gp": "b236a7f6ad3d0d4eaf3e82f5789b0b0de101383196f7a3a5775b4d366d9fc07b",
+      "ExH2.gp": "1b62ff24f34bc65830558a19bd23195abdb6343d5e809e700d9c28dcde0d0341",
+      "ExHyper.gp": "aba8f29a6ff8cdeb9832d13cd44e3df77109e84abfef6d0396a4e193cd598c98",
+      "ExHyperAlg.gp": "c517067b5dd5aa02d31e6147ddcdd1ff07dc0ebc7e03dba3a216ad94b2aa9472",
+      "ExSmooth.gp": "f4534186c4a8aab8d9ff930ed8065b362e713a2a1c9d3ee5b19ed34cc103d27f",
+      "ExSmoothAlg.gp": "0f9205e8e8c795ce9f8ce7d9527a72a3aec42c4a0dfbbc066475b7b8fe998887",
+      "ExSuper.gp": "5161e036a4f0b42eb158c4b6052efbdad14fc19ddbc68eee9001764c40c57d74",
+      "ExSuperAlg.gp": "1e043ca94b08e7fa771296239f7202ce700e271991efe134ef3abeba70c02a78",
+      "ExSuperDbg.gp": "3f8a8a67603cbbe50a6270cd9352cb846ef153a89246137f2ed38fe40a28c0fe",
+      "GalRep.gp": "45aa8c6dc674ddd36d7c34374c4f24da86133418818069ea2c54e11477e18725",
+      "Hyper2RR.gp": "26c8f863996520e46d049f2eede8230436a42b11bc6aad5974e76a611417abfe",
+      "PtIsOnCurve.gp": "f1e27e016df4e2504b9de19e6b553b9de5f7fbb70ca2b07cf173fbe09478e658",
+      "Smooth2RR.gp": "53c2dd71331f1e30a982a02d32750d494dbda202306ad3add54da45d1aae64e8",
+      "Super2RR.gp": "cd12dab990726b9f6fb2726cb36cbb86962d7a5c781530e5548b8327e59f01e7",
+      "TorsGen.gp": "456daa37fefbf7cba15556e76a33a021fb12a0ac758eed2c8495e163c8881a92",
+      "TorsHensel.gp": "1e81ad6bcddb4a7e96b5794b13ffa9ed033dea57c54b71abce36e2c5c2825104",
+      "TorsSpace.gp": "019446c283ccfaeaaea4987e51ef6c8a92fdbb25c893953a7f2114b7516c3dd5",
+      "exp.c": "0386c0729caef7a138d640971b21a39b659868168d5dc36388ca8c871756c168",
+      "exp.h": "b1c22ff499b3a3ec769d98a654c634de0add64a4393b0e8c5ddce03b706a1bdf",
+      "freyruck.c": "443265842fd6c47a4cf6dc4fa492f34fd44dfcd2973457a667bc7797e0926fb7",
+      "freyruck.h": "c030b39548508f9dcc21728d6f8b946b45100c2aa4698cf78f212fffbd38123b",
+      "install.gp": "d493753e2f1d2d12b234e2479bb067f79c79449748d4e66a135667a6475216ca",
+      "lift.c": "5aaf51562a8b446bc1e988ab1966d34ad45a45125c9e6c434885c806d2d5a1dc",
+      "linalg.c": "7ba3b6bad57ca40f9787b8e98890fe810910f979e3ef0ff26fbd7a701533dcce",
+      "linalg.h": "586be6e04d2d5cda9745c4837be25fecae269987a2d30d38b71399601d75bbdb",
+      "pic.c": "90308fc74d05582a5dc36cfd6624c59b8312306625ff6e14f2ebe226b79eaf06",
+      "pic.h": "58fb8ebd696c5e97493ee855ab79d6ffd538fafe32923a440233fd4a91a91792",
+      "rr.c": "0ab3f64bf324ff74dd6e70d49974d57cf30a787fb0cc60cbfa28576be5281234",
+      "torsspace.c": "adc71a970fb9983b775108965decd80e78578ef2665ab3b6367608f47a9e5ba4",
+      "zeta.c": "2917f9234dc394004a1919a7b69a8967b49a2e81a318a9d66d6fcaf5c7be929b"
+    },
+    "library_sha256": "f6d9b701de6ee65caa1f877dcfeaadeecae1d6cd4498249770f4834a4976c057"
+  },
+  "pari_version": "2.17.1",
+  "execution_policy": {
+    "initial_pari_stack": "512M",
+    "maximum_pari_stack": "2G",
+    "per_process_timeout_seconds": 900,
+    "worker_threads": 1,
+    "random_seed": 20260916,
+    "peak_rss_measured": false
+  },
+  "scope": {
+    "genus4_degree51_known_torsion_lift_passed": true,
+    "degree51_equation_entries_use_full_residue_field": true,
+    "control_torsion_point_is_rational": true,
+    "control_has_target_residual_representation": false,
+    "row_formula_and_all_equations_verified": true,
+    "production_row_generation_integrated": false,
+    "d63_backend_and_source_digests_unchanged": true,
+    "genus64_degree51_run": false,
+    "target_arithmetic_sections_available": false,
+    "target_polynomial_obtained": false
+  },
+  "sources": [
+    {
+      "path": "dembele/pari/105_lifttors_extension.py",
+      "sha256": "f019a5ca18d70bc795600fc55dbf00f497993a267320d3a5b23d377cb3c15963"
+    },
+    {
+      "path": "dembele/pari/run_lifttors_controls.py",
+      "sha256": "c65b75694043c556f9da235f7392e4d49d87d2a08d652546bdcfa62645b2d28f"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_controls.json",
+      "sha256": "84739dcf95d346bb06c5be226d042bc021439939292f95112e8d90d7c87eb1b0"
+    },
+    {
+      "path": "dembele/pari/101_lifttors_scale.gp",
+      "sha256": "ecbaf0856a19bdb8055d08c9bd061d7d530a83d6199026a2a51eb9bd11f93708"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_g4_a2_scale.out",
+      "sha256": "b9f09651ac888706927e5ed7a35d81b77b4cf8db8e099e23bd20457354f4a9fe"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_g4_a51_scale.out",
+      "sha256": "e2e6b87c6c3afe6126c57100307c3e52b048d357757e8277593c8bd5f6e2f2c2"
+    },
+    {
+      "path": "dembele/pari/106_lifttors_row_system.gp",
+      "sha256": "37cab92bc39805ac3e29c090e7bae22b3af01904816c439f41124c7ab476aeff"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_g4_a2_rows.out",
+      "sha256": "c72876b5419958f84c41839bfe6fcc060debb3983cba58d0b67622a5bd63a7e6"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_g4_a51_rows.out",
+      "sha256": "2dec449418f4a3908bbce5e0b75f443d53b6445b3f65754fffe0361f6fefb256"
+    }
+  ]
+}

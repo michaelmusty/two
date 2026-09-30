@@ -1,0 +1,36 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/346_nelson_prime31_cosets.py",
+    "--bound",
+    "25600"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.271930415998213,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/nelson_prime31_cosets_d93_T25600_attempt01.log",
+    "sha256": "3bb0fc73ecf6f344250b6c74c62d77975f6f8ead27c456de6b073007689d5625"
+  },
+  "private_process_group": 69388,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/346_nelson_prime31_cosets.py",
+      "sha256": "b660bc59d4f2d1ab5330111e6b8dd2452f34c478bedc5a41683d9a81d5bdb292"
+    }
+  ],
+  "environment_overrides": {
+    "DOT_SAGE": "/private/tmp/dembele-d93-sage"
+  }
+}

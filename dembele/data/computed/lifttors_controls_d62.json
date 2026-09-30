@@ -1,0 +1,254 @@
+{
+  "q8": {
+    "genus": 2,
+    "d0": 6,
+    "p": 7,
+    "a": 2,
+    "precision_exponent": 64,
+    "evaluation_points": 32,
+    "section_dimensions": [
+      5,
+      11,
+      17
+    ],
+    "torsion_count": 16,
+    "frobenius_fixed_count": 8,
+    "frobenius_rows": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "polynomial_coefficients_ascending": [
+      "-73511771484375/1996081395841995112285583",
+      "-3574898578125/7141615011957048702274",
+      "-353144842235625/185681990310883266259124",
+      "18240305285973389875/15968651166735960898284664",
+      "-117708223840534629725/15968651166735960898284664",
+      "-1478297616415075018305/15968651166735960898284664",
+      "14204321587617442386981/31937302333471921796569328",
+      "-71549027188916129215189/63874604666943843593138656",
+      "-273831550860782057408835/63874604666943843593138656",
+      "253844576108252193071245/3992162791683990224571166",
+      "-5617068878402203625542667/31937302333471921796569328",
+      "1118646121494627391573731/1485455922487066130072992",
+      "-507775153744025261805/220034946302335376992",
+      "4139788205877022525/1188436994958946408",
+      "-509624730154629/176038660192408",
+      "1"
+    ],
+    "factor_degrees": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "timing_ms": {
+      "init": 18,
+      "basis": 731,
+      "lift_four_points": 875,
+      "span_and_evaluate": 567,
+      "polynomial_and_checks": 6
+    }
+  },
+  "validator": {
+    "comparison_count": 70,
+    "tamper_valuations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "genus16": {
+    "genus": 16,
+    "d0": 33,
+    "p": 97,
+    "a": 2,
+    "precision_exponent": 4,
+    "evaluation_points": 166,
+    "section_dimensions": [
+      18,
+      51,
+      84
+    ],
+    "jacobian_size_bytes": 6058784,
+    "timing_ms": {
+      "init": 186,
+      "double_and_zero_check": 665,
+      "lift_one_point": 10184,
+      "lift_checks": 829
+    }
+  },
+  "genus64": {
+    "status": "FAILED: PARI stack overflow in PicLiftTors",
+    "genus": 64,
+    "d0": 129,
+    "p": 97,
+    "a": 2,
+    "precision_exponent": 4,
+    "minimum_evaluation_points": 646,
+    "stack_limit_bytes": 2000011264,
+    "initialization_and_doubling_check_completed": true,
+    "lift_completed": false,
+    "timing_ms": null
+  },
+  "backend": {
+    "repository": "https://github.com/nmascot/LiftTors",
+    "revision": "fd6403caf7147b21b67dcb17dbedccea762d6262",
+    "upstream_modified": false,
+    "compiled_adaptation": "exact batched DivSub_dimval",
+    "adapter_sha256": "b2386845df3fc146c156fa33ce31ab5293b3db1c7d058fc876f8d547309451e2",
+    "pari_prefix": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "command": [
+      "cc",
+      "-O3",
+      "-Wall",
+      "-fno-strict-aliasing",
+      "-fPIC",
+      "-dynamiclib",
+      "-I/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/include",
+      "-I/Users/musty/two/dembele/vendor/LiftTors",
+      "/Users/musty/two/dembele/vendor/LiftTors/linalg.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/exp.c",
+      "/Users/musty/two/dembele/pari/.build/lifttors/pic_bounded.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/lift.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/freyruck.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/rr.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/torsspace.c",
+      "/Users/musty/two/dembele/vendor/LiftTors/zeta.c",
+      "/Users/musty/two/dembele/pari/lifttors_bounded.c",
+      "-L/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/lib",
+      "-Wl,-rpath,/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/lib",
+      "-lpari",
+      "-lm",
+      "-o",
+      "/Users/musty/two/dembele/pari/.build/lifttors/liblifttors.so"
+    ],
+    "source_sha256": {
+      "ExDavide2.gp": "970a72034d123cc83d9294380cbaf010a864eb84154503df86e1c2887cf23a96",
+      "ExDavide3.gp": "b236a7f6ad3d0d4eaf3e82f5789b0b0de101383196f7a3a5775b4d366d9fc07b",
+      "ExH2.gp": "1b62ff24f34bc65830558a19bd23195abdb6343d5e809e700d9c28dcde0d0341",
+      "ExHyper.gp": "aba8f29a6ff8cdeb9832d13cd44e3df77109e84abfef6d0396a4e193cd598c98",
+      "ExHyperAlg.gp": "c517067b5dd5aa02d31e6147ddcdd1ff07dc0ebc7e03dba3a216ad94b2aa9472",
+      "ExSmooth.gp": "f4534186c4a8aab8d9ff930ed8065b362e713a2a1c9d3ee5b19ed34cc103d27f",
+      "ExSmoothAlg.gp": "0f9205e8e8c795ce9f8ce7d9527a72a3aec42c4a0dfbbc066475b7b8fe998887",
+      "ExSuper.gp": "5161e036a4f0b42eb158c4b6052efbdad14fc19ddbc68eee9001764c40c57d74",
+      "ExSuperAlg.gp": "1e043ca94b08e7fa771296239f7202ce700e271991efe134ef3abeba70c02a78",
+      "ExSuperDbg.gp": "3f8a8a67603cbbe50a6270cd9352cb846ef153a89246137f2ed38fe40a28c0fe",
+      "GalRep.gp": "45aa8c6dc674ddd36d7c34374c4f24da86133418818069ea2c54e11477e18725",
+      "Hyper2RR.gp": "26c8f863996520e46d049f2eede8230436a42b11bc6aad5974e76a611417abfe",
+      "PtIsOnCurve.gp": "f1e27e016df4e2504b9de19e6b553b9de5f7fbb70ca2b07cf173fbe09478e658",
+      "Smooth2RR.gp": "53c2dd71331f1e30a982a02d32750d494dbda202306ad3add54da45d1aae64e8",
+      "Super2RR.gp": "cd12dab990726b9f6fb2726cb36cbb86962d7a5c781530e5548b8327e59f01e7",
+      "TorsGen.gp": "456daa37fefbf7cba15556e76a33a021fb12a0ac758eed2c8495e163c8881a92",
+      "TorsHensel.gp": "1e81ad6bcddb4a7e96b5794b13ffa9ed033dea57c54b71abce36e2c5c2825104",
+      "TorsSpace.gp": "019446c283ccfaeaaea4987e51ef6c8a92fdbb25c893953a7f2114b7516c3dd5",
+      "exp.c": "0386c0729caef7a138d640971b21a39b659868168d5dc36388ca8c871756c168",
+      "exp.h": "b1c22ff499b3a3ec769d98a654c634de0add64a4393b0e8c5ddce03b706a1bdf",
+      "freyruck.c": "443265842fd6c47a4cf6dc4fa492f34fd44dfcd2973457a667bc7797e0926fb7",
+      "freyruck.h": "c030b39548508f9dcc21728d6f8b946b45100c2aa4698cf78f212fffbd38123b",
+      "install.gp": "d493753e2f1d2d12b234e2479bb067f79c79449748d4e66a135667a6475216ca",
+      "lift.c": "5aaf51562a8b446bc1e988ab1966d34ad45a45125c9e6c434885c806d2d5a1dc",
+      "linalg.c": "7ba3b6bad57ca40f9787b8e98890fe810910f979e3ef0ff26fbd7a701533dcce",
+      "linalg.h": "586be6e04d2d5cda9745c4837be25fecae269987a2d30d38b71399601d75bbdb",
+      "pic.c": "90308fc74d05582a5dc36cfd6624c59b8312306625ff6e14f2ebe226b79eaf06",
+      "pic.h": "58fb8ebd696c5e97493ee855ab79d6ffd538fafe32923a440233fd4a91a91792",
+      "rr.c": "0ab3f64bf324ff74dd6e70d49974d57cf30a787fb0cc60cbfa28576be5281234",
+      "torsspace.c": "adc71a970fb9983b775108965decd80e78578ef2665ab3b6367608f47a9e5ba4",
+      "zeta.c": "2917f9234dc394004a1919a7b69a8967b49a2e81a318a9d66d6fcaf5c7be929b"
+    },
+    "library_sha256": "c6d5597a9b44a1f9beed9de8cf6d37d1557b217f72b71271992a1629716582ae"
+  },
+  "pari_version": "2.17.1",
+  "sources": [
+    {
+      "path": "dembele/pari/run_lifttors_controls.py",
+      "sha256": "a6e46fdc17604e4915001d10787a2f0df5ae6092974ccc966203622bc867daba"
+    },
+    {
+      "path": "dembele/pari/build_lifttors.py",
+      "sha256": "1e218813f35b88635123eb4c277280124e085743e1ff4eb503dc38d911e2a1c7"
+    },
+    {
+      "path": "dembele/pari/lifttors_bounded.c",
+      "sha256": "b2386845df3fc146c156fa33ce31ab5293b3db1c7d058fc876f8d547309451e2"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_q8_control.bin",
+      "sha256": "baefd1ff8f8754089eb75670dc57db42713268d66ec2d9435317c166abd80444"
+    },
+    {
+      "path": "dembele/pari/100_lifttors_control.gp",
+      "sha256": "f2b2e1cc0d58a7890a116ac89138a2d0fbaa3e8508e7db797f1fc920a980d532"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_q8_control.out",
+      "sha256": "e9329790fdb00be5c80c21c446ac031ff5e9ba04c41e4dcf20e13466fd97f513"
+    },
+    {
+      "path": "dembele/pari/102_lifttors_validation.gp",
+      "sha256": "28a4176d706f7da679a83d8537e5bc0702f401fd34703b4d581b74e18b606489"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_validation.out",
+      "sha256": "42385061be580f58bfa8eca01bfdfda1c6c65d5dcaf5e56ee286b3405fda8190"
+    },
+    {
+      "path": "dembele/pari/101_lifttors_scale.gp",
+      "sha256": "99aaf62b9a9036499d6b945547fd70d0bd021fa921f8720a79d2c4b2d4f072dc"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_g16_scale.out",
+      "sha256": "978bc718fef69063b79ca77ecc89d43cb72650a56f7e2653896b279a48dc92ec"
+    },
+    {
+      "path": "dembele/pari/101_lifttors_scale.gp",
+      "sha256": "99aaf62b9a9036499d6b945547fd70d0bd021fa921f8720a79d2c4b2d4f072dc"
+    },
+    {
+      "path": "dembele/data/computed/lifttors_g64_scale.out",
+      "sha256": "17c3df96880a6da6406af56d731d798828f0f53c3e4c1e6b2ab6842a6c199fbf"
+    }
+  ],
+  "scope": {
+    "known_q8_torsion_field_recovered": "Q(i)",
+    "generic_divisor_backend_exercised": true,
+    "padic_lifting_and_evaluation_exercised": true,
+    "genus64_control_is_target_Y": false,
+    "genus64_lift_succeeded": false,
+    "target_residue_degree_51_benchmarked": false,
+    "target_arithmetic_sections_available": false,
+    "target_polynomial_obtained": false
+  }
+}

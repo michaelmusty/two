@@ -1,0 +1,15 @@
+Loading "dembele/magma/170_cm_frame_cover_class_arithmetic.m"
+Loading "dembele/data/computed/cm_frame_cover_makdisi.m"
+Loading "dembele/data/computed/cm_frame_cover_sections.m"
+Loading "dembele/data/computed/cm_frame_cover_third_check_input.m"
+Loading "dembele/data/computed/cm_frame_B3_rational_model.m"
+Loading "dembele/data/computed/cm_frame_B3_fiber.m"
+Loading "dembele/data/computed/cm_frame_B3_fiber_structure.m"
+Loading "dembele/data/computed/cm_frame_cubic.m"
+Loading "dembele/data/computed/cm_frame_curve_candidate.m"
+
+In file "/Users/musty/two/dembele/magma/178_cm_frame_cubic_check.m", line 52, column 22:
+>> assert [Rank(M):M in [G1,G2,G3,G4]] eq [81,201,321,441];
+                        ^
+Runtime error in [ ... ]: No valid universe containing all elements
+

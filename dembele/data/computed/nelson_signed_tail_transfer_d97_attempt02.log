@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/365_nelson_signed_tail_transfer.py", line 145, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/365_nelson_signed_tail_transfer.py", line 87, in main
+    bound = polynomial+remainder+Q(analytic[label].upper().exact_rational())
+            ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "/private/var/tmp/sage-10.6-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/fractions.py", line 615, in forward
+    return monomorphic_operator(a, b)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.6-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/fractions.py", line 714, in _add
+    g = math.gcd(da, db)
+        ^^^^^^^^^^^^^^^^
+TypeError: 'builtin_function_or_method' object cannot be interpreted as an integer

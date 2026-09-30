@@ -1,0 +1,7 @@
+ACTUAL_LOW_SOLVE|{"operation": "low_solve", "modulus_bits": 5, "seconds": 5.365123625146225}
+ACTUAL_ACTION|states=1/174; bits=5; seconds=0.168
+ACTUAL_ACTION|states=61/174; bits=5; seconds=1.625
+ACTUAL_ACTION|states=121/174; bits=5; seconds=2.910
+ACTUAL_PRECISION_GAIN|{"before_pi": 365, "after_pi": 398}
+ACTUAL_PHASE_RESULT|{"status": "pass", "milestone": "D121", "phase": "step", "working_precision_pi": 400, "eliminated_positive_moments": 32, "harmonic_basis_column": 14, "residual_lower_bound_pi": 398, "correction_history": [{"before_pi": 200, "after_pi": 233}, {"before_pi": 233, "after_pi": 266}, {"before_pi": 266, "after_pi": 299}, {"before_pi": 299, "after_pi": 332}, {"before_pi": 332, "after_pi": 365}, {"before_pi": 365, "after_pi": 398}], "certificate": {}, "actual_moment_precision_increased": false, "full_sixteen_column_bank_refined": false, "timings": [{"operation": "low_solve", "modulus_bits": 5, "seconds": 5.365123625146225}, {"operation": "original_transport", "input_valuation_pi": 365, "modulus_bits": 5, "input_count": 40, "output_count": 400, "seconds": 4.259271624963731}], "wall_seconds": 10.539093666011468}
+PASS|478_DYADIC_COMPILED_LIFT

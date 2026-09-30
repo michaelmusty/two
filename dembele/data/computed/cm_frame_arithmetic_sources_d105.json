@@ -1,0 +1,101 @@
+{
+  "milestone": "D105",
+  "review_date": "2026-09-24",
+  "scope": "Actual CM divisor specialization and projective frame; auxiliary class field and projective tangent height, without certifying numerical orientation or F descent.",
+  "sources": [
+    {
+      "title": "Matthew Baker, Sam Payne and Joseph Rabinoff, On the structure of nonarchimedean analytic curves",
+      "url": "https://arxiv.org/pdf/1404.0279",
+      "locations": [
+        "Propositions 2.2, 2.5, 2.10 and Corollary 2.6",
+        "Proposition 4.3; section 4.9"
+      ],
+      "use": "Annulus units, skeleton action, zero-counting slope formula, and node tubes.",
+      "project_deduction": "An ends-interchanging involution has two simple generic fixed points in characteristic zero, including residue characteristic 2."
+    },
+    {
+      "title": "Akira Kurihara, On some examples of equations defining Shimura curves and the Mumford uniformization",
+      "url": "https://repository.dl.itc.u-tokyo.ac.jp/record/39680/files/jfs250303.pdf",
+      "locations": [
+        "Proposition 3-2, pages 284-288",
+        "Lemma 3-3, page 288"
+      ],
+      "use": "Integral quotient is smooth at an inverted node; reviewed scanned pages 287-288 again. Allows torsion at residue characteristic 2; invariants need not commute with reduction.",
+      "local_pdf_sha256": "6ed841261ef5e0a8a792d9bec2eeb2704d62711ba885775ea8403be94ce2f7e0",
+      "snapshot_provenance": "Same PDF recorded in D99; remote fetch failed, saved local scan inspected."
+    },
+    {
+      "title": "Matthew Baker, Specialization of linear systems from curves to graphs",
+      "url": "https://arxiv.org/pdf/math/0701075",
+      "locations": [
+        "Lemma 2.8 and Corollary 2.10",
+        "Lemmas 4.15 and 4.19, printed page 20"
+      ],
+      "use": "Specialization of rank and canonical divisor class on a totally degenerate curve. No restriction excluding residue characteristic 2."
+    },
+    {
+      "title": "John Voight, Shimura curve computations",
+      "url": "https://jvoight.github.io/articles/shimura-clay-proceedings-071707.pdf",
+      "locations": [
+        "Section 4.3",
+        "Section 4.5"
+      ],
+      "use": "Hilbert-class-field definition and reciprocity for maximal-order CM points over general totally real F; Atkin-Lehner quotients defined over F."
+    },
+    {
+      "title": "J. S. Milne, Class Field Theory",
+      "url": "https://www.jmilne.org/math/CourseNotes/CFT.pdf",
+      "locations": [
+        "I.1.8-1.11, printed pages 22-24",
+        "V.3.9, printed page 159"
+      ],
+      "use": "Local units and unramified abelian extensions; Hilbert class field and class group. Combined with D59 arithmetic to prove the common field has degree 272."
+    },
+    {
+      "title": "Ravi Vakil, Foundations of Algebraic Geometry, Class 46",
+      "url": "https://math.stanford.edu/~vakil/0708-216/216class46.pdf",
+      "locations": [
+        "Exercise 1.A, page 1"
+      ],
+      "use": "Canonical embedding for a nonhyperelliptic smooth curve. The report also gives the Riemann-Roch tangent-separation argument."
+    }
+  ],
+  "prior_exact_inputs": [
+    {
+      "milestone": "D99",
+      "use": "Actual order, arithmetic Brandt graph, its metric lengths and Atkin-Lehner action, and geometric nonhyperellipticity."
+    },
+    {
+      "milestone": "D59",
+      "use": "Proved class number 17, exact CM ideal classes, proved 31-adic splitting group and bounded integral resolvent. Numerical orientation is not used."
+    },
+    {
+      "milestone": "D102",
+      "use": "Verified degree-17 integral order of discriminant 2^79 and integral trace-centered vectors; maximality not required."
+    },
+    {
+      "milestone": "D103-D104",
+      "use": "Integral adjugate/Gaussian construction, uniform size bounds and stable CM fibre height below 41/10."
+    },
+    {
+      "milestone": "D101",
+      "use": "Exact candidate tangent, used only for the candidate-height and recognition-threshold diagnostic."
+    }
+  ],
+  "project_deductions": [
+    "Two branch points from each of the nine inverted annuli; test every possible removal of P32.",
+    "Nine integer-potential and burning-order certificates exclude H0(K-D).",
+    "CM transitivity makes every evaluation cofactor nonzero.",
+    "Splitting field equals the CM Hilbert class field by the degree-16 resolvent and unramified cyclic degree-17 argument.",
+    "Any fixed bijection yields an H-frame, with a fifteen-chart tangent atlas of projective height below 10504.",
+    "Candidate projective height below 677; sufficient errors 10^-1320873 at one embedding or 10^-4857 at every embedding of H."
+  ],
+  "excluded_inferences": [
+    "No certification of D59 numerical orientation",
+    "No chosen G12 nonvanishing or F-frame descent",
+    "No use of the disputed hyperellipticity premise or Dembele Theorem 6.1",
+    "No independent tangent evaluation, higher-jet equality, candidate identification or target field polynomial"
+  ],
+  "website_snapshot_hashes_claimed": false,
+  "geometric_proofs_machine_verified": false
+}

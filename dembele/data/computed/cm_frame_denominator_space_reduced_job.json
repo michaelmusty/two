@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/135_cm_frame_denominator_space_reduction.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 59.463068624958396,
+  "timeout_seconds": 300,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_denominator_space_reduced.out",
+    "sha256": "df97f888c0a8928ab6bbb3ede6453532b7a3c7a4c291cf33620f97183119c1b3"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/135_cm_frame_denominator_space_reduction.py",
+      "sha256": "22598ee7c80fc85e762b212cc323c3694c08a1a0dde18da4e0166b8b274453e3"
+    }
+  ],
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d74-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

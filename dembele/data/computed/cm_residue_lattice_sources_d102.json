@@ -1,0 +1,35 @@
+{
+  "milestone": "D102",
+  "review_date": "2026-09-24",
+  "scope": "Primary structural duality sources; the index formula, examples and matrix estimates are project deductions.",
+  "sources": [
+    {
+      "title": "The Stacks Project, The relative dualizing sheaf",
+      "url": "https://stacks.math.columbia.edu/tag/0E6N",
+      "locations": ["Lemma 109.19.1", "Definition 109.19.2 and its following representing property", "Lemma 109.19.3"],
+      "use": "Relative duality and invertibility/base change of the dualizing sheaf for Gorenstein curve families.",
+      "does_not_supply": "An actual integral model or computed canonical restriction lattice for the Shimura quotient."
+    },
+    {
+      "title": "The Stacks Project, Right adjoint of pushforward for effective Cartier divisors",
+      "url": "https://stacks.math.columbia.edu/tag/0B4A",
+      "locations": ["Lemma 48.14.1 and proof", "Lemma 48.14.2"],
+      "use": "The normal-module adjunction and exact sequence 0 -> O_X -> O_X(D) -> N -> 0.",
+      "does_not_supply": "A bound for the principal-part norm or H1 torsion on our marked arithmetic curve."
+    },
+    {
+      "title": "The Stacks Project, Dualizing modules for quasi-finite ring maps",
+      "url": "https://stacks.math.columbia.edu/tag/0BUK",
+      "locations": ["Definition 49.2.0.1 for a finite ring map"],
+      "use": "The finite dualizing module Hom_R(A,R), identified generically through the trace pairing.",
+      "does_not_supply": "Identification of the saved field order with the actual horizontal divisor's order."
+    }
+  ],
+  "saved_arithmetic_inputs": [
+    "dembele/data/computed/cm_arithmetic_audit.json: degree-17 polynomial attributed there to Elkies, Dembele Remark 6.2",
+    "dembele/data/computed/cm_field_recognition.json: saved reduced basis and trace centering"
+  ],
+  "new_exact_checks": "Irreducibility modulo 31, ring closure, trace matrix, trace-dual denominator and trace-zero lattice indices.",
+  "website_snapshot_hashes_claimed": false,
+  "effective_actual_Shimura_height_bound_found": false
+}

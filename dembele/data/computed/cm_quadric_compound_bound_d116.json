@@ -1,0 +1,112 @@
+{
+  "status": "pass",
+  "milestone": "D116",
+  "polynomial_controls": [
+    {
+      "genus": 3,
+      "adjacent_pair_polynomial_identities": 18,
+      "integral_complementary_minor_quotients": true
+    },
+    {
+      "genus": 4,
+      "adjacent_pair_polynomial_identities": 120,
+      "integral_complementary_minor_quotients": true
+    }
+  ],
+  "direct_quadric_budgets": {
+    "maximum_quadric_coefficient_l1_norm": 42550,
+    "tensor_norm_bound_integer": "1927613054434770231223143630635740195364755579330266839411189192006797585989222102410649284517669279688676331876108534153872271339313257472921535814162111661240802976386031370847162746712958933725402681989700497047741201296704513676279205223303152923172174858648779684086924489943774335791796016216894639373279038038808825052739139012839787724733024842605925755306287448366169154272925638966392759468590512707014062838640732372096333087332944285736045923621371351084375085765389462330429990889820224158249176416994047209986492230616323267627512088011294458007339464885390316208312378843348759677015442090983743624975511860717851317640880361741495497391496373545375179140449369076922697473755393816690528974456114026983143183488029426927658029701724946470617727207998597285969347098749711630621810023522712104201812759984029660627604112099329334134167718606204254334455359545740447373611856584124612729931671838948763467082029194610088019153006001343244489400827974437280364144025033342114138602341364908675937810898936509786456671981487661128198488628688063135318743055824038815091398744409110847823769856901263392745543225341285870364729861403729198740232865956510214037409518804543375280884591025961708516515967455520770898456262577779003415628520268902467893826009949529205838885895477629872870828790646896126938181731594439101412929827935447392577315237859057000382995245915211030525115186866021955670488544096296593662626768837778358591095266263355621376000",
+    "reduced_quadric_tensor_norm_binary_exponent": 4855,
+    "previous_pencil_bound_binary_exponent": 6389,
+    "reduced_quadric_tensor_degree_in_evaluations": 238,
+    "maximum_adjacent_pair_path_length": 2,
+    "thresholds": [
+      {
+        "vanishing_jet_order": 1,
+        "requires_previous_jets_exactly_zero": [
+          0
+        ],
+        "line_coefficient_of_H_CM": 241,
+        "line_negative_coefficient_of_h_Fal": 15,
+        "jet_functional_binary_exponent": 60,
+        "height_bound_alpha": "9881/10",
+        "height_bound_beta_log2": 5635,
+        "degree16_sufficient_lower_beta_without_anchor": 120029,
+        "certified_anchor_lower_beta": 3576,
+        "anchor_finite_contribution_coefficient_log2": "447/34",
+        "degree16_sufficient_lower_beta_with_anchor": 119806,
+        "degree16_achieved_lower_beta": 3794,
+        "valuation_gap": 116012,
+        "exact_vanishing_proved": false
+      },
+      {
+        "vanishing_jet_order": 2,
+        "requires_previous_jets_exactly_zero": [
+          0,
+          1
+        ],
+        "line_coefficient_of_H_CM": 242,
+        "line_negative_coefficient_of_h_Fal": 15,
+        "jet_functional_binary_exponent": 81,
+        "height_bound_alpha": "4961/5",
+        "height_bound_beta_log2": 5656,
+        "degree16_sufficient_lower_beta_without_anchor": 120487,
+        "certified_anchor_lower_beta": 3248,
+        "anchor_finite_contribution_coefficient_log2": "203/17",
+        "degree16_sufficient_lower_beta_with_anchor": 120284,
+        "degree16_achieved_lower_beta": 3745,
+        "valuation_gap": 116539,
+        "exact_vanishing_proved": false
+      },
+      {
+        "vanishing_jet_order": 3,
+        "requires_previous_jets_exactly_zero": [
+          0,
+          1,
+          2
+        ],
+        "line_coefficient_of_H_CM": 243,
+        "line_negative_coefficient_of_h_Fal": 15,
+        "jet_functional_binary_exponent": 102,
+        "height_bound_alpha": "9963/10",
+        "height_bound_beta_log2": 5677,
+        "degree16_sufficient_lower_beta_without_anchor": 120945,
+        "certified_anchor_lower_beta": 2984,
+        "anchor_finite_contribution_coefficient_log2": "373/34",
+        "degree16_sufficient_lower_beta_with_anchor": 120758,
+        "degree16_achieved_lower_beta": 3728,
+        "valuation_gap": 117030,
+        "exact_vanishing_proved": false
+      }
+    ],
+    "common_sufficient_lower_beta_with_anchor": 120758,
+    "thresholds_are_integral_section_valuations_not_ratio_error_digits": true
+  },
+  "complementary_minor_norm_proof_in_companion_report": true,
+  "third_actual_coarse_jet_computed": true,
+  "positive_quadric_jet_exact_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "target_field_polynomial_constructed": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/444_cm_quadric_compound_bound.py",
+      "sha256": "0fcf6d1837a60991863321e9e47691be25bdb200e913b03a82f5afd61785578b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/441_cm_integral_quadrics.py",
+      "sha256": "09dcfdd891b77cfd633eab1f8a14a03aead45d1376cebd617cbe787755388eb7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_integral_quadrics_d116.json",
+      "sha256": "b94c49f3eb31001ecca947cb8628d354148ef45d2439eb73a62f14d7092954df"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_integral_quadric_jets_d116.json",
+      "sha256": "72fdbfe1705e597f2d11c119226bd809e4bcb3b92c8a66661c762e7db5cf70e4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/433_cm_compound_height.py",
+      "sha256": "7de02311e0271a9cc6a43eaf242f063f63e3dd3c18ab16b723d3711464b4800a"
+    }
+  ]
+}

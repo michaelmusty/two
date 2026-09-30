@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/258_cm_frame_cubic_adjoint_recognition.py",
+    "--digits",
+    "8",
+    "--worker"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 6.1987947499146685,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_cubic_adjoint_8_recognition.out",
+    "sha256": "32c86e2eeeb1ed2320138fcbd86e762f226b9641e68d911305ca029d8d495969"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/258_cm_frame_cubic_adjoint_recognition.py",
+      "sha256": "a0d0197c96b5047d0ce0e35d7855bd0efba5c552d4bae698753bafe90c4d5dd5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ]
+}

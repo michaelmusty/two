@@ -1,0 +1,246 @@
+{
+  "milestone": "D124",
+  "date": "2026-09-28",
+  "started": "2026-09-27",
+  "report": "dembele/certificates/dyadic-precision1600-d124.md",
+  "final_review_driver": "dembele/pari/504_dyadic_precision1600_review.py",
+  "independent_arithmetic_driver": "dembele/pari/499_dyadic_precision1600_independent.py",
+  "prior_review": "dembele/data/computed/dyadic_staged_review_d123.json",
+  "inherited_D123_source_hashes_to_preserve": 2532,
+  "external_sources": [
+    {
+      "author": "FLINT development team",
+      "title": "FLINT 3.6.0 public modular-polynomial interface",
+      "installed_header": "/opt/homebrew/include/flint/fmpz_mod_poly.h",
+      "inherited_documentation": "https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/fmpz.rst",
+      "role": "Production polynomial multiplication in 476--479. Attribution and installed header/library hashes are preserved from the interim ledger. No additional web source is invoked for the new mathematical review."
+    },
+    {
+      "author": "GNU MP project",
+      "title": "GNU MP 6.3.0 Integer Import and Export",
+      "url": "https://gmplib.org/manual/Integer-Import-and-Export",
+      "role": "Inherited carry-free polynomial arithmetic supplies the older backend for all production final original residuals. Source 486 imports no production arithmetic."
+    }
+  ],
+  "new_external_theorem_invoked": false,
+  "inherited_mathematical_inputs": [
+    "D120/D121: the positive k-th original child column is divisible by pi^k; fixed-mass contraction and integral low inverse.",
+    "D121: refined transport parameters at P=10552 and the CM truncation/kernel-error proof.",
+    "D121/D122: actual P=400 harmonic and CM banks, P=400 r=32 factor, exact masses and original branches.",
+    "D122: independent integer quotient arithmetic in source 486; all curve comparison bounds remain unchanged.",
+    "For fixed masses, T maps I_P={e:e_0=0, v_pi(e_k)>=max(0,P-k)} to pi^P in every output row.",
+    "If Tz-z belongs to I_P, then y=Tz has uniform original residual zero modulo pi^P.",
+    "Moment k, field coordinate i needs max(0,ceil((P-k-i)/8)) binary digits in weighted storage.",
+    "After eliminating r low moments, a high residual of valuation u needs only k<P-u; the next band ends at P-u-r-1.",
+    "Stop the weighted correction stage when u+r+1>=P, then reconstruct; this does not label weighted centers uniformly accurate."
+  ],
+  "new_deductions": [
+    "Composing g=(Ax+B)/(1+Cx), C in pi O, with each original contracting child f preserves c and determinant divisibility by pi; the normalizing denominator 1+C*b is a unit.",
+    "Therefore direct CM moments can be calculated uniformly modulo pi^P from weighted state precision P-k, using P input moments without the 3P state extension. All 34 compositions are checked in separate integer quotient arithmetic.",
+    "The existing carry-free GMP packing proof applies to the new C small-product implementation; no new external theorem is used."
+  ],
+  "actual_results": {
+    "harmonic_columns_at_P1600": 1,
+    "harmonic_basis_column": 0,
+    "full_sixteen_column_bank_precision_pi": 400,
+    "state_scalar_coefficients": 2227200,
+    "old_low_scalar_overlaps": 1113600,
+    "old_extended_scalar_overlaps": 2227200,
+    "weighted_correction_steps": 24,
+    "final_weighted_residual_lower_pi": 1592,
+    "CM_moment_scalar_coefficients": 435200,
+    "old_CM_moment_scalar_overlaps": 217600,
+    "coarse_error_beta": [
+      3232,
+      3248,
+      3232,
+      3264
+    ],
+    "composed_CM_scalar_checks": {
+      "800": 217600,
+      "1600": 435200
+    }
+  },
+  "independent_verification": {
+    "states": {
+      "production_full_original_residual_scalar_checks": 2227200,
+      "old_P800_low_scalar_overlaps": 1113600,
+      "exact_masses_checked": 174,
+      "independent_original_recurrence_scalar_checks": 160,
+      "child_column_divisibility_checks": 348,
+      "complete_disjoint_sweeps_checked": 29
+    },
+    "seed": {
+      "independent_high_seed_degrees": [
+        800,
+        1199,
+        1599
+      ],
+      "independent_high_seed_scalar_checks": 24,
+      "all_old_precision_extended_seed_scalar_overlaps": 2227200
+    },
+    "coarse": {
+      "independent_coarse_values_checked": 68,
+      "coarse_error_beta": [
+        3232,
+        3248,
+        3232,
+        3264
+      ],
+      "old_CM_scalar_overlaps": 217600,
+      "new_CM_scalar_coefficients": 435200,
+      "old_coarse_values_checked": 68
+    },
+    "weighted": {
+      "all_weighted_state_scalar_checks": 55680000,
+      "all_scaled_residual_scalar_checks": 14094000,
+      "weighted_checkpoints_checked": 25,
+      "active_moment_counts": [
+        800,
+        767,
+        734,
+        701,
+        668,
+        635,
+        602,
+        569,
+        536,
+        503,
+        470,
+        437,
+        404,
+        371,
+        338,
+        305,
+        272,
+        239,
+        206,
+        173,
+        140,
+        107,
+        74,
+        41,
+        33
+      ],
+      "uniform_low_error_gain_verified": 33,
+      "final_weighted_reference_scalar_checks": 2227200,
+      "all_twenty_four_correction_gains_checked": true
+    }
+  },
+  "independent_review_scope": "Separate integer quotient arithmetic checks all recorded overlaps, exact masses and coarse values, weighted error bounds, divisibility and sampled original/high-seed recurrences; geometric arguments are not machine formalized.",
+  "pilot_measurements": {
+    "completed_phases": 228,
+    "sum_recorded_phase_seconds": 3084.405518159736,
+    "maximum_phase_seconds": 65.13108091591857,
+    "maximum_single_phase_peak_rss_bytes": 1127170048,
+    "coordinator_current_invocation_wall_seconds": 1713.775237834081,
+    "distinct_checkpoint_payload_bytes": 1451881056
+  },
+  "component_controls": {
+    "adaptive_products": {
+      "independent_small_products_checked": 172,
+      "bits_checked": [
+        1,
+        3,
+        25,
+        50,
+        100,
+        200,
+        1319,
+        1536
+      ],
+      "actual_original_equation_scalar_checks": 33320,
+      "unprofiled_actual_timings": [
+        {
+          "working_P": 800,
+          "input_valuation_pi": 0,
+          "input_count": 800,
+          "output_count": 800,
+          "backend": "fast.Ring",
+          "seconds": 2.7146282081957906
+        },
+        {
+          "working_P": 800,
+          "input_valuation_pi": 0,
+          "input_count": 800,
+          "output_count": 800,
+          "backend": "__main__.Ring",
+          "seconds": 1.8609001659788191
+        },
+        {
+          "working_P": 800,
+          "input_valuation_pi": 0,
+          "input_count": 800,
+          "output_count": 800,
+          "backend": "prepared.Ring",
+          "seconds": 3.149731625104323
+        },
+        {
+          "working_P": 1600,
+          "input_valuation_pi": 800,
+          "input_count": 800,
+          "output_count": 33,
+          "backend": "fast.Ring",
+          "seconds": 1.7261335840448737
+        },
+        {
+          "working_P": 1600,
+          "input_valuation_pi": 800,
+          "input_count": 800,
+          "output_count": 33,
+          "backend": "__main__.Ring",
+          "seconds": 0.9568391251377761
+        },
+        {
+          "working_P": 1600,
+          "input_valuation_pi": 800,
+          "input_count": 800,
+          "output_count": 33,
+          "backend": "prepared.Ring",
+          "seconds": 1.8521544171962887
+        }
+      ]
+    },
+    "synthetic_target": {
+      "synthetic_target_P": 10552,
+      "complete_scalar_comparisons": 84416,
+      "timings": [
+        {
+          "backend": "__main__.Ring",
+          "prepare_seconds": 1.5859715410042554,
+          "apply_seconds": 24.653425000142306
+        },
+        {
+          "backend": "prepared.Ring",
+          "prepare_seconds": 1.9485445420723408,
+          "apply_seconds": 29.426420333096758
+        }
+      ],
+      "actual_harmonic_precision_increased": false,
+      "complete_target_size_solve_costed": false
+    },
+    "complete_target_solve_costed": false
+  },
+  "bounded_input_jobs": {
+    "total": 242,
+    "passed": 242,
+    "failed": 0,
+    "maximum_recorded_phase_seconds": 88.33033870812505,
+    "sum_recorded_phase_seconds": 3551.7150943677407,
+    "timeout_seconds": 180,
+    "timeout_scope": "private process group",
+    "BLAS_threads": 1
+  },
+  "decision": "Accept the actual P1600 pilot and independently controlled direct weighted CM route; prioritize the complete P800 bank and quadric falsification before another isolated higher-precision column.",
+  "next_bounded_task": "Source 505 next unused: integrate the validated adaptive polynomial backend and the old P400 seed layout into resumable weighted chunks; refine columns 1..15 to P800, reuse column 0, compute direct CM, consolidate all 1088 coarse values and independently audit the new frame and quadrics.",
+  "limits": {
+    "quadric_bounds_changed": false,
+    "positive_exact_quadric_vanishing_proved": false,
+    "candidate_identification_proved": false,
+    "target_field_polynomial_constructed": false,
+    "complete_target_size_solve_costed": false,
+    "all_prior_frozen_files_preserved": true,
+    "all_resource_pauses_preserved": true,
+    "correspondence_sent": false
+  }
+}

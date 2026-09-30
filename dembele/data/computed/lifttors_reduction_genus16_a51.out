@@ -1,0 +1,15 @@
+STAGE|initialized|genus=16|points=204|ms=6436
+  *** PicIsZero_val: Warning: increasing stack size to 1024000000.
+STAGE|doubling_checked|ms=20620
+Lifting from prec O(97^1) to O(97^2)
+TRACE|row_setup|cache_bytes=22280904|stack_bytes=22168104
+TRACE|row_kernel|rows=2160|columns=67|blocks=18|rank=33|nullity=34|scanned=18|replayed=18|maximum_block_bytes=13280240|selected_row_bytes=3652536|kernel_bytes=974528|stack_checkpoint_bytes=47978040|ms=20011
+  *** PicLiftTors: Warning: increasing stack size to 2000011264.
+Lifting from prec O(97^2) to O(97^4)
+TRACE|row_setup|cache_bytes=22341016|stack_bytes=22339800
+TRACE|row_kernel|rows=2160|columns=67|blocks=18|rank=33|nullity=34|scanned=18|replayed=18|maximum_block_bytes=13315080|selected_row_bytes=3662416|kernel_bytes=1887344|stack_checkpoint_bytes=49157744|ms=20731
+STAGE|lift_completed|ms=364732
+DATA|{"genus":16,"d0":33,"p":97,"a":51,"precision_exponent":4,"evaluation_points":204,"section_dimensions":[18, 51, 84],"jacobian_size_bytes":120428336,"timing_ms":{"init":6436,"double_and_zero_check":20620,"lift_one_point":364732,"lift_checks":24995}}
+PASS|101_lifttors_scale
+
+RESOURCE|wall_seconds=440.569

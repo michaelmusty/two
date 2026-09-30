@@ -1,0 +1,27 @@
+// D76: exact relations among the six recognized rational sections.
+SetQuitOnError(true); SetColumns(0); SetSeed(76);
+started:=Cputime(); k:=Rationals();
+load "dembele/data/computed/cm_frame_curve_candidate.m";
+load "dembele/data/computed/cm_frame_marks.m";
+load "dembele/data/computed/cm_frame_B3_space_recognition.m";
+IC:=Ideal(C_candidate); GC:=GroebnerBasis(IC);
+mon:=[R.(p[1])*R.(p[2]):p in pairs];
+ds:=[&+[row[j]*mon[j]:j in [1..#mon]]:row in recognized_product_rows];
+assert #ds eq 6;
+assert Rank(Matrix(k,rows cat recognized_product_rows)) eq 97;
+indices:=[[i,j]:i,j in [1..6]|i le j];
+products:=[NormalForm(ds[ij[1]]*ds[ij[2]],IC):ij in indices];
+quartics:=Setseq(Seqset(&cat[Monomials(f):f in products])); Sort(~quartics);
+assert #quartics eq 105;
+M:=Matrix(k,[[MonomialCoefficient(f,m):m in quartics]:f in products]);
+relations:=BasisMatrix(Nullspace(M));
+assert Nrows(relations) eq 6 and Rank(M) eq 15;
+assert relations*M eq 0;
+point:=[Evaluate(d,P32_coordinates):d in ds];
+assert not &and[c eq 0:c in point];
+printf "PRODUCT_RANK|%o\n",Rank(M);
+printf "QUADRIC_RELATION_ROWS|%o\n",[[Sprint(c):c in Eltseq(v)]:v in Rows(relations)];
+printf "SURFACE_POINT|%o\n",[Sprint(c):c in point];
+printf "CPU_SECONDS|%o\n",Cputime(started);
+print "PASS|151_CM_FRAME_B3_EXACT_PRODUCT_RELATIONS";
+quit;

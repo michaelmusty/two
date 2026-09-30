@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/local/bin/sage",
+    "-python",
+    "/Users/musty/two/dembele/pari/139_cm_frame_joint_height_bounds.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.213880833005533,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_frame_joint_height_bounds.out",
+    "sha256": "6269900c1124aeb84d9d7c9fe3ece2b985ae80f1eb30e407ee79a0d69b274cf8"
+  },
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/139_cm_frame_joint_height_bounds.py",
+      "sha256": "2a9af7adcbdb0374f858e4c65cf07f2e2bc0434dacf8f69b7e76ea70292089cf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "environment": {
+    "DOT_SAGE": "/private/tmp/dembele-d75-sage",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

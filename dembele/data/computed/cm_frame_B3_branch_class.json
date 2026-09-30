@@ -1,0 +1,156 @@
+{
+  "status": "pass",
+  "milestone": "D77",
+  "date": "2026-09-19",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/163_cm_frame_B3_branch_class.py",
+      "sha256": "090e661b90a8ba6d74b81cad9d29a464cf6178f644664155664b3b9a025f1ac7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber.json",
+      "sha256": "0ba39d65c5b51119eee9819dd8e3ce09fa704dc6a0a42cdc48848b659187731d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_fiber_check.json",
+      "sha256": "4218d33b288750ca0c6599241eed0464643176d11a5c60e256130a31b7749565"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_marks_check.json",
+      "sha256": "0f68c176fca871651ce7dcc1c15a7524c10bf8b7bf42faed70719dc3e443e965"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_B3_rational_model.json",
+      "sha256": "7c9d9346f7edc3bf475a4d660b079612b30c3d33ff65f771209532ba417bedf9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/129_cm_frame_normalization_check.py",
+      "sha256": "7925d6af13a244e11f22981c4746c98492becec5f00822bd63c31e6d25cb7120"
+    }
+  ],
+  "linear_evaluation_rank": 9,
+  "minor_rows_one_based": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "minor_mod31": [
+    [
+      3,
+      24,
+      27,
+      10,
+      20,
+      22,
+      17,
+      23,
+      21
+    ],
+    [
+      29,
+      6,
+      18,
+      11,
+      28,
+      8,
+      26,
+      17,
+      3
+    ],
+    [
+      13,
+      29,
+      30,
+      21,
+      0,
+      26,
+      3,
+      13,
+      10
+    ],
+    [
+      26,
+      8,
+      17,
+      6,
+      30,
+      8,
+      6,
+      17,
+      12
+    ],
+    [
+      13,
+      22,
+      3,
+      28,
+      18,
+      25,
+      26,
+      5,
+      15
+    ],
+    [
+      24,
+      3,
+      11,
+      21,
+      11,
+      4,
+      10,
+      26,
+      2
+    ],
+    [
+      23,
+      16,
+      2,
+      12,
+      20,
+      16,
+      19,
+      13,
+      7
+    ],
+    [
+      2,
+      13,
+      11,
+      30,
+      8,
+      29,
+      18,
+      2,
+      17
+    ],
+    [
+      8,
+      11,
+      6,
+      23,
+      10,
+      15,
+      16,
+      17,
+      26
+    ]
+  ],
+  "minor_determinant_mod31": 17,
+  "h0_C_K_minus_B3": 7,
+  "h0_C_B3": 1,
+  "h0_C_B3_minus_L": 0,
+  "reason_for_odd_summand_vanishing": "degree zero, and L~B3 would contradict h0(2B3-B2)=0",
+  "double_cover_pushforward": "pi_* O_X = O_C + L^(-1)",
+  "h0_X_pullback_B3": 1,
+  "oriented_difference_principal": false,
+  "proof": "D+ and D- are disjoint and pi^*B3=D++D-; a function with their difference as divisor contradicts h0=1",
+  "next_divisor_equation": "div(h)=D+ - D- + 3*A, with A a degree-zero divisor",
+  "three_division_class_computed": false,
+  "cyclic_cubic_constructed": false
+}

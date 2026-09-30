@@ -1,0 +1,110 @@
+{
+  "status": "pass",
+  "milestone": "D122",
+  "small_product_controls": [
+    {
+      "bits": 3,
+      "lengths": [
+        1,
+        9,
+        11
+      ]
+    },
+    {
+      "bits": 25,
+      "lengths": [
+        1,
+        9,
+        11
+      ]
+    },
+    {
+      "bits": 50,
+      "lengths": [
+        1,
+        9,
+        11
+      ]
+    },
+    {
+      "bits": 1319,
+      "lengths": [
+        1,
+        9,
+        11
+      ]
+    },
+    {
+      "bits": 1536,
+      "lengths": [
+        1,
+        9,
+        11
+      ]
+    }
+  ],
+  "large_product_comparisons_with_GMP": [
+    {
+      "bits": 50,
+      "input_lengths": [
+        193,
+        257
+      ],
+      "output_length": 320,
+      "seconds": 0.002824957948178053
+    },
+    {
+      "bits": 1319,
+      "input_lengths": [
+        193,
+        257
+      ],
+      "output_length": 320,
+      "seconds": 0.03159262496046722
+    }
+  ],
+  "synthetic_transports": [
+    {
+      "synthetic_P": 10552,
+      "prepare_seconds": 1.9009268751833588,
+      "apply_seconds": 23.57414145907387,
+      "compiled_products": 1025
+    }
+  ],
+  "actual_P400_original_state_equations_checked": [],
+  "actual_new_moments_computed": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "sha256": "b91d15359aeebf56a9d71f6d46fb86ae0addf4c79ac63e8b34f55c9bcfefc62d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/476_dyadic_polynomial_kernel.c",
+      "sha256": "1a0f8069f25d4c4f130c686a119fd5144663734627baa1e4aca18d8cac3763bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py",
+      "sha256": "20f1083cc885512872db8049628260aef8213d5feed4809ac78858b6f343dce3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "sha256": "86d272475bbc0390f28b198462d63eac33262de9b7b9575d634895eebb985542"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_polynomial_kernel_d122.dylib",
+      "sha256": "8f165f930e9605338522757132cc795e0870e98dd8ca11ab77453611a8ae591b"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/flint/3.6.0/include/flint/fmpz_mod_poly.h",
+      "sha256": "1426e8ad6bdc590d77f285e16811d21c86363f86381db2142bc38d3828681a9f"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/flint/3.6.0/lib/libflint.24.0.dylib",
+      "sha256": "9dcc2966abb20d94641a704c848d07f57549169c11265e97fc41593ddb0fe445"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/gmp/6.3.0/lib/libgmp.10.dylib",
+      "sha256": "bc6145edbeca608b4fecd4440dbbd7b27cacd55cbfd2b552b8bc333febe43b35"
+    }
+  ]
+}

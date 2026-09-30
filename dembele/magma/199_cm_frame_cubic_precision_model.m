@@ -1,0 +1,57 @@
+// D82: reconstruct the evaluation model at the precision set by the wrapper.
+load "dembele/magma/197_cm_frame_cubic_precision_arithmetic.m";
+assert cubic_lift_modulus eq precision_modulus;
+load "dembele/data/computed/cm_frame_cover_sections.m";
+load "dembele/data/computed/cm_frame_cover_makdisi.m";
+load "dembele/data/computed/cm_frame_cubic.m";
+load "dembele/data/computed/cm_frame_B3_fiber.m";
+load "dembele/data/computed/cm_frame_B3_fiber_structure.m";
+UZ<tZ>:=PolynomialRing(Integers()); AG<bG>:=GaloisRing(31,precision_digits,tZ^2+29*tZ+3);
+liftpts:=[[AG!c:c in p]:p in cubic_lift_point_coordinates];
+ev1:=[];
+for pt in liftpts do
+    xs:=pt[1..16]; ell:=&+[branch_parameter_linear_form[i]*xs[i]:i in [1..16]];
+    v2:=[&*[xs[j]^e[j]:j in [1..16]]:e in sections_even_monomial_exponents];
+    v3:=[&*[xs[j]^e[j]:j in [1..16]]:e in sections_odd_monomial_exponents];
+    oo:=[&+[cubic_lift_odd_section_rows[i][j]*v3[j]:j in [1..75]]:i in [1..36]];
+    Append(~ev1,v2 cat [pt[17]*ell^-1*x:x in oo]);
+end for;
+ev2:=[[v[p[1]]*v[p[2]]:p in makdisi_product2_pairs]:v in ev1];
+ev3:=[[ev1[i][p[1]]*ev2[i][p[2]]:p in makdisi_product3_pairs]:i in [1..1135]];
+ev4:=[[ev1[i][p[1]]*ev3[i][p[2]]:p in kummer_product4_pairs]:i in [1..1024]];
+RG1:=RCols(RFromNative(Transpose(Matrix(AG,ev1))),[1..1024]);
+all2:=RFromNative(Transpose(Matrix(AG,ev2)));
+RG2:=RCols(all2,[1..1024]);
+RG3:=RCols(RFromNative(Transpose(Matrix(AG,ev3))),[1..1024]);
+RG4:=RFromNative(Transpose(Matrix(AG,ev4)));
+RV1:=RCols(RG1,[1..640]); RV2:=RCols(RG2,[1..640]); RV3:=RCols(RG3,[1..640]);
+function DecodeOld(rows,kk)
+    return Matrix(kk,[[kk!(c mod 31)+kk.1*(c div 31):c in row]:row in rows]);
+end function;
+assert RReduce(RV1) eq Transpose(DecodeOld(makdisi_v1_evaluations,kk));
+assert RReduce(RV2) eq Transpose(DecodeOld(makdisi_v2_evaluations,kk));
+assert RReduce(RV3) eq Transpose(DecodeOld(makdisi_v3_evaluations,kk));
+assert [Rank(RReduce(M)):M in [*RG1,RG2,RG3,RG4*]] eq [81,201,321,441];
+ii:=kummer_evaluation_indices;
+ff:=[Index(ii,sections_frobenius_permutation[i]):i in ii];
+tt:=[Index(ii,sections_involution_permutation[i]):i in ii];
+assert &and[RFrob(M,ff) eq M:M in [*RG1,RG2,RG3,RG4*]];
+
+UB<aB>:=PolynomialRing(ZZ);
+AB<ba>:=quo<UB|UB![ZZ!Numerator(c)/(ZZ!Denominator(c)):c in fiber_nonic_coefficients]>;
+bp1:=[AB!UB!row:row in cubic_lift_branch_plus_values];
+bm1:=[AB!UB!row:row in cubic_lift_branch_minus_values];
+bp2:=[bp1[p[1]]*bp1[p[2]]:p in makdisi_product2_pairs];
+bm2:=[bm1[p[1]]*bm1[p[2]]:p in makdisi_product2_pairs];
+RBplus:=RBase(Matrix(ZZ,[[Coefficient(UB!v,j):j in [0..8]]:v in bp2]));
+RBminus:=RBase(Matrix(ZZ,[[Coefficient(UB!v,j):j in [0..8]]:v in bm2]));
+aux:=RCols(all2,[1025..1135]);
+cp:=<HorizontalJoin(aux[1],RBplus[1]),HorizontalJoin(aux[2],RBplus[2])>;
+cm:=<HorizontalJoin(aux[1],RBminus[1]),HorizontalJoin(aux[2],RBminus[2])>;
+RKP:=RKernelRelaxed(cp); RKM:=RKernelRelaxed(cm);
+assert Nrows(RKP[1]) eq 81 and Nrows(RKM[1]) eq 81;
+assert RIsZero(RMultiply(RKP,cp)) and RIsZero(RMultiply(RKM,cm));
+RWP:=RMultiply(RKP,RV2); RWM:=RMultiply(RKM,RV2);
+assert RowSpace(RReduce(RWP)) eq RowSpace(Transpose(DecodeOld(makdisi_plus_evaluations,kk)));
+assert RowSpace(RReduce(RWM)) eq RowSpace(Transpose(DecodeOld(makdisi_minus_evaluations,kk)));
+printf "PASS|PRECISION_EVALUATION_MODEL_%o_DIGITS\n",precision_digits;

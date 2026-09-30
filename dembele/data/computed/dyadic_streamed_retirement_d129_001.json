@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "barrier": 1,
+  "coordinator": {
+    "path": "/Users/musty/two/dembele/pari/529_dyadic_streamed_pilot.py",
+    "sha256": "0b0ca17d4cba6cbb1055e1cf7eea5a95b0e0b8b771a274a417a31cbbd0acc941"
+  },
+  "anchor_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_streamed_writer_control_d129_attempt01.job.json",
+    "sha256": "1ae889b9b36a411aca963cef7bd1da15f9d3e1aaed9059ece97cfa0f1cab2218"
+  },
+  "keep": [],
+  "retire": [
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_streamed_scratch_col00_d129/dyadic_streamed_writer_control_d129_probe_a.bin",
+        "sha256": "a48b9387719d5bec916379bc5154be9e4a49e5f8dd1f75560c3db3a99dff6a42"
+      },
+      "bytes": 5376
+    },
+    {
+      "source": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_streamed_scratch_col00_d129/dyadic_streamed_writer_control_d129_probe_b.bin",
+        "sha256": "2e1fc106347291ecbbb437388d00b601c5dc438db783b600438f800e77ecd785"
+      },
+      "bytes": 6000
+    }
+  ],
+  "before_scratch_bytes": 11869,
+  "final_retirement": false,
+  "retired_payload_hashes_are_history_not_retained_sources": true
+}

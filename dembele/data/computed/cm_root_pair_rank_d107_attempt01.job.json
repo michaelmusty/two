@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-b",
+    "/Users/musty/two/dembele/magma/391_cm_root_pair_rank.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 1.0643903750460595,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_root_pair_rank_d107_attempt01.log",
+    "sha256": "9690cd38666cb14abdc37b29e283143ae9bb6f43c836f81454a4ba76a65c7c18"
+  },
+  "private_process_group": 44188,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "memory_limit_bytes": 2000000000,
+  "driver": {
+    "path": "/Users/musty/two/dembele/magma/391_cm_root_pair_rank.m",
+    "sha256": "33e9667defc92bfd5968fb9908ef2d5c642e5a70d4bb482de2231114f95fff26"
+  }
+}

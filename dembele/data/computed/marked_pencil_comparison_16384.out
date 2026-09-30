@@ -1,0 +1,450 @@
+{
+  "status": "empirical comparison, not an exact model or certified error bound",
+  "sources": {
+    "quotient": {
+      "path": "dembele/data/computed/marked_pencil_16384.json",
+      "sha256": "fd4b37e082637170af2a8c5856fad5864b9ae10bd3f8a31e6a0e27db17d060fd"
+    },
+    "direct_arithmetic": {
+      "path": "dembele/data/computed/marked_pencil_direct_audit_16384.json",
+      "sha256": "f550b6b53ed15da8484779a00b8b51d4665b490146eabd1e6d2c0ff52ee4138b"
+    },
+    "direct_flag": {
+      "path": "dembele/data/computed/marked_pencil_flag_16384.json",
+      "sha256": "729040ecede8f6af8063fbe5ad1f6671296ee7b31e60665c8fcbb2637f70bba2"
+    }
+  },
+  "shared_marking": [
+    0,
+    4,
+    3
+  ],
+  "coordinates": [
+    {
+      "point": 1,
+      "direct_arithmetic_value": [
+        "0.4524253658944293154321026142957216555806411791446550651",
+        "-1.931598030092153969977448081800832138412640960867096035e-22"
+      ],
+      "direct_flag_value": [
+        "0.4524253658944293154321368832867621245043525676655300544",
+        "-4.340283356394895280502899550926543925855455084181690913e-22"
+      ],
+      "arithmetic_flag_absolute_difference": "2.432940890329914553967845e-22",
+      "same_bank_fit_discrepancy_reduction_quotient_to_direct": "161.76946165634824517"
+    },
+    {
+      "point": 2,
+      "direct_arithmetic_value": [
+        "0.04150354539788466512188811136067385897662821131629188944",
+        "-2.999212118411210220447123901490823298742209665885257242e-22"
+      ],
+      "direct_flag_value": [
+        "0.04150354539788466512045347501669221229026627313500948118",
+        "-1.536915470964672734413612040983108998468172715033799866e-21"
+      ],
+      "arithmetic_flag_absolute_difference": "1.894290430894283505523429e-21",
+      "same_bank_fit_discrepancy_reduction_quotient_to_direct": "60.298872227523870447"
+    }
+  ],
+  "conditioning": {
+    "quotient": {
+      "baseline": "1.4134192328816196552e-17",
+      "best": "5.7633099809312821835e-18",
+      "best_marking": [
+        0,
+        4,
+        3
+      ],
+      "baseline_over_best": "2.4524435394905272087"
+    },
+    "direct_arithmetic": {
+      "baseline": "2.3275020120442875253e-19",
+      "best": "9.5579067535206343353e-20",
+      "best_marking": [
+        0,
+        4,
+        3
+      ],
+      "baseline_over_best": "2.435158735135135295"
+    },
+    "direct_flag": {
+      "baseline": "1.3054524434100420372e-19",
+      "best": "5.0245534117772929038e-20",
+      "best_marking": [
+        0,
+        4,
+        3
+      ],
+      "baseline_over_best": "2.5981462160400746022"
+    }
+  },
+  "all_thirty_expression_gauge_comparisons": [
+    {
+      "cross_ratio_orbit": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "absolute_difference": "8.986373432819716664186842e-19",
+      "smaller_empirical_tolerance": "1.0e-16",
+      "difference_over_smaller_tolerance": "0.0089863734328197166642",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "absolute_difference": "4.943945652726623871716499e-19",
+      "smaller_empirical_tolerance": "1.0e-17",
+      "difference_over_smaller_tolerance": "0.049439456527266238717",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "absolute_difference": "2.74867310579131237781983e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.027486731057913123778",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "absolute_difference": "2.432940890329914553967845e-22",
+      "smaller_empirical_tolerance": "1.0e-20",
+      "difference_over_smaller_tolerance": "0.02432940890329914554",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        1,
+        4,
+        2
+      ],
+      "absolute_difference": "5.043426266876671634438822e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.050434262668766716344",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        1,
+        4,
+        3
+      ],
+      "absolute_difference": "8.114185170980428725824086e-22",
+      "smaller_empirical_tolerance": "1.0e-20",
+      "difference_over_smaller_tolerance": "0.081141851709804287258",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "absolute_difference": "2.468121788216787799219023e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.024681217882167877992",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        2,
+        1,
+        4
+      ],
+      "absolute_difference": "4.160544681115054840544455e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.041605446811150548405",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "absolute_difference": "2.74867310579131237781983e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.027486731057913123778",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "absolute_difference": "1.894290430894283505523429e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.018942904308942835055",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        2,
+        4,
+        1
+      ],
+      "absolute_difference": "5.043426266876671634438822e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.050434262668766716344",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        2,
+        4,
+        3
+      ],
+      "absolute_difference": "2.061890244372136064493969e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.020618902443721360645",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "absolute_difference": "2.468121788216787799219023e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.024681217882167877992",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        3,
+        1,
+        4
+      ],
+      "absolute_difference": "1.18860530708687444749732e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.011886053070868744475",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "absolute_difference": "8.986373432819716664186842e-19",
+      "smaller_empirical_tolerance": "1.0e-16",
+      "difference_over_smaller_tolerance": "0.0089863734328197166642",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        3,
+        2,
+        4
+      ],
+      "absolute_difference": "1.099704926157693988475703e-18",
+      "smaller_empirical_tolerance": "1.0e-16",
+      "difference_over_smaller_tolerance": "0.010997049261576939885",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        3,
+        4,
+        1
+      ],
+      "absolute_difference": "8.114185170980428725824086e-22",
+      "smaller_empirical_tolerance": "1.0e-20",
+      "difference_over_smaller_tolerance": "0.081141851709804287258",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        3,
+        4,
+        2
+      ],
+      "absolute_difference": "2.061890244372136064493969e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.020618902443721360645",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        4,
+        1,
+        2
+      ],
+      "absolute_difference": "4.160544681115054840544455e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.041605446811150548405",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        4,
+        1,
+        3
+      ],
+      "absolute_difference": "1.18860530708687444749732e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.011886053070868744475",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        4,
+        2,
+        1
+      ],
+      "absolute_difference": "4.943945652726623871716499e-19",
+      "smaller_empirical_tolerance": "1.0e-17",
+      "difference_over_smaller_tolerance": "0.049439456527266238717",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        4,
+        2,
+        3
+      ],
+      "absolute_difference": "1.099704926157693988475703e-18",
+      "smaller_empirical_tolerance": "1.0e-16",
+      "difference_over_smaller_tolerance": "0.010997049261576939885",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        4,
+        3,
+        1
+      ],
+      "absolute_difference": "2.432940890329914553967845e-22",
+      "smaller_empirical_tolerance": "1.0e-20",
+      "difference_over_smaller_tolerance": "0.02432940890329914554",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        0,
+        4,
+        3,
+        2
+      ],
+      "absolute_difference": "1.894290430894283505523429e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.018942904308942835055",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "absolute_difference": "3.109280369542614921571192e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.031092803695426149216",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "absolute_difference": "1.014765062957617002875817e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.010147650629576170029",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "absolute_difference": "5.521131882923315716809841e-21",
+      "smaller_empirical_tolerance": "1.0e-18",
+      "difference_over_smaller_tolerance": "0.0055211318829233157168",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        1,
+        3,
+        4,
+        2
+      ],
+      "absolute_difference": "1.014765062957617002875817e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.010147650629576170029",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        1,
+        4,
+        2,
+        3
+      ],
+      "absolute_difference": "5.521131882923315716809841e-21",
+      "smaller_empirical_tolerance": "1.0e-18",
+      "difference_over_smaller_tolerance": "0.0055211318829233157168",
+      "within_both_empirical_tolerances": true
+    },
+    {
+      "cross_ratio_orbit": [
+        1,
+        4,
+        3,
+        2
+      ],
+      "absolute_difference": "3.109280369542614921571192e-21",
+      "smaller_empirical_tolerance": "1.0e-19",
+      "difference_over_smaller_tolerance": "0.031092803695426149216",
+      "within_both_empirical_tolerances": true
+    }
+  ],
+  "within_both_empirical_tolerances": true,
+  "maximum_difference_over_smaller_tolerance": "0.081141851709804287258",
+  "limitations": [
+    "Both bases use the same underlying current differential checkpoint.",
+    "Empirical tolerances are not certified geometric or truncation error bounds."
+  ]
+}

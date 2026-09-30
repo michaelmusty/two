@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/Applications/Magma/magma",
+    "-b",
+    "/Users/musty/two/dembele/magma/409_dyadic_cm_root_proposals.m"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 1.5425322919618338,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_cm_root_proposals_d112_attempt01.log",
+    "sha256": "4f21fbf44d85915bcd7034ae6df44f5922e9e87cb63cc141df7182b433fb395a"
+  },
+  "private_process_group": 77752,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "memory_limit_bytes": 2000000000,
+  "driver": {
+    "path": "/Users/musty/two/dembele/magma/409_dyadic_cm_root_proposals.m",
+    "sha256": "2fc95fe407e397efe85566670aa418a65149066a0144d666f746823114c9c5ef"
+  }
+}

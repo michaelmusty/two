@@ -1,0 +1,219 @@
+{
+  "status": "pass",
+  "milestone": "D108",
+  "F_polynomial_ascending": [
+    "2",
+    "0",
+    "-16",
+    "0",
+    "20",
+    "0",
+    "-8",
+    "0",
+    "1"
+  ],
+  "CM_polynomial_ascending": [
+    "2",
+    "0",
+    "64",
+    "0",
+    "336",
+    "0",
+    "672",
+    "0",
+    "660",
+    "0",
+    "352",
+    "0",
+    "104",
+    "0",
+    "16",
+    "0",
+    "1"
+  ],
+  "both_polynomials_Eisenstein_at_2": true,
+  "valuation_normalization": "v(pi)=1, v(2)=8, v(beta)=1/2",
+  "three_boundary_charts": [
+    "t=pi*x",
+    "t=1+pi*x",
+    "t=1/(pi*x), x=0 means infinity"
+  ],
+  "measure_bound_hypothesis": "v(mu(B))>=-d for every compact open ball",
+  "Taylor_error_lower_bound": "min((J-k)/2-d,P-(k+1)/2)",
+  "coarse_parameter": "w=(z-beta)/(z+beta); u=w^2",
+  "coarse_formula": "g_j=beta*sum_(k=0)^(2j+1) (2*beta)^k*binomial(2j+2,k+1)*f_k",
+  "coarse_error_lower_bound": "min((J+1)/2-d,P)",
+  "coarse_orders_checked": [
+    0,
+    1,
+    2
+  ],
+  "ordinary_Taylor_orders_checked": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "minimum_highest_moment_index_for_formula": 5,
+  "coarse_transformation_matrix": [
+    [
+      "2*beta",
+      "2*beta^2",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "4*beta",
+      "12*beta^2",
+      "16*beta^3",
+      "8*beta^4",
+      "0",
+      "0"
+    ],
+    [
+      "6*beta",
+      "30*beta^2",
+      "80*beta^3",
+      "120*beta^4",
+      "96*beta^5",
+      "32*beta^6"
+    ]
+  ],
+  "synthetic_measure_controls": [
+    {
+      "highest_moment_index": 7,
+      "measure_denominator_exponent": 0,
+      "input_moment_absolute_precision": 4,
+      "Taylor_tail_valuations": [
+        "7/2",
+        "3",
+        "5/2",
+        "2",
+        "3/2",
+        "1"
+      ],
+      "Taylor_with_moment_error_valuations": [
+        "15/2",
+        "7",
+        "13/2",
+        "6",
+        "11/2",
+        "5"
+      ],
+      "coarse_coefficient_error_valuations": [
+        "33/2",
+        "49/2",
+        "33/2"
+      ],
+      "proved_coarse_lower_bound": "4",
+      "wrong_infinity_sign_detected_at_requested_precision": false,
+      "omitted_infinity_chart_rejected": true
+    },
+    {
+      "highest_moment_index": 15,
+      "measure_denominator_exponent": 0,
+      "input_moment_absolute_precision": 8,
+      "Taylor_tail_valuations": [
+        "15/2",
+        "7",
+        "13/2",
+        "6",
+        "11/2",
+        "5"
+      ],
+      "Taylor_with_moment_error_valuations": [
+        "31/2",
+        "15",
+        "29/2",
+        "14",
+        "27/2",
+        "13"
+      ],
+      "coarse_coefficient_error_valuations": [
+        "49/2",
+        "65/2",
+        "49/2"
+      ],
+      "proved_coarse_lower_bound": "8",
+      "wrong_infinity_sign_detected_at_requested_precision": false,
+      "omitted_infinity_chart_rejected": true
+    },
+    {
+      "highest_moment_index": 15,
+      "measure_denominator_exponent": 3,
+      "input_moment_absolute_precision": 7,
+      "Taylor_tail_valuations": [
+        "9/2",
+        "4",
+        "7/2",
+        "3",
+        "5/2",
+        "2"
+      ],
+      "Taylor_with_moment_error_valuations": [
+        "9/2",
+        "4",
+        "7/2",
+        "3",
+        "5/2",
+        "2"
+      ],
+      "coarse_coefficient_error_valuations": [
+        "27/2",
+        "43/2",
+        "27/2"
+      ],
+      "proved_coarse_lower_bound": "5",
+      "wrong_infinity_sign_detected_at_requested_precision": false,
+      "omitted_infinity_chart_rejected": true
+    },
+    {
+      "highest_moment_index": 31,
+      "measure_denominator_exponent": 0,
+      "input_moment_absolute_precision": 16,
+      "Taylor_tail_valuations": [
+        "31/2",
+        "15",
+        "29/2",
+        "14",
+        "27/2",
+        "13"
+      ],
+      "Taylor_with_moment_error_valuations": [
+        "63/2",
+        "31",
+        "61/2",
+        "30",
+        "59/2",
+        "29"
+      ],
+      "coarse_coefficient_error_valuations": [
+        "81/2",
+        "97/2",
+        "81/2"
+      ],
+      "proved_coarse_lower_bound": "16",
+      "wrong_infinity_sign_detected_at_requested_precision": true,
+      "omitted_infinity_chart_rejected": true
+    }
+  ],
+  "actual_CM_coordinate_global_identification_proved": false,
+  "actual_Shimura_cocycle_computed": false,
+  "actual_moments_computed": false,
+  "actual_Shimura_jet_evaluated": false,
+  "scope": "Conditional certified local evaluator once actual bounded harmonic-measure moments and a matched dyadic CM embedding are supplied. Controls are synthetic, not Shimura data.",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/395_dyadic_poisson_jet_interface.py",
+      "sha256": "263eaac7002b14b0de84ca14e5b784d6536b88a09fcc546264bd6d753514c0f7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_orbit.json",
+      "sha256": "6c70d443b112c49c0a448e63f88b9b7c2ded7fc8f5392db14356ae3c1bfd4e67"
+    }
+  ]
+}

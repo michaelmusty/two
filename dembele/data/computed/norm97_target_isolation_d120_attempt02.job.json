@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/460_norm97_target_isolation.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 0.04588037496432662,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/norm97_target_isolation_d120_attempt02.log",
+    "sha256": "d3df778b7e6f008ae63427f1474882f869ab63c894829e0e5e0c8833c974ea51"
+  },
+  "private_process_group": 38906,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/460_norm97_target_isolation.py",
+    "sha256": "0046db8d29218435eaae44eccaea65ba23d62a375bc51e0adeea06364127c175"
+  }
+}

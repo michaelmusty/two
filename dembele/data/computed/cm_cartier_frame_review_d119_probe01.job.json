@@ -1,0 +1,31 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/457_cm_cartier_frame_review.py",
+    "--probe"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 2.641849583014846,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/cm_cartier_frame_review_d119_probe01.log",
+    "sha256": "f86fa54d17a97f6fc49f7b75ddd2ee68782348872b9d7be3fa7cae9a4a1b280e"
+  },
+  "private_process_group": 722,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/457_cm_cartier_frame_review.py",
+    "sha256": "4cec30a4f7589891128224311674e7c4211def535fa180605d3e96eefaf68469"
+  }
+}

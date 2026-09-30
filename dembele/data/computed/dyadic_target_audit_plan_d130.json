@@ -1,0 +1,132 @@
+{
+  "milestone": "D130",
+  "kind": "bounded_job_plan",
+  "jobs": [
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_full0_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "action",
+        "--input",
+        "dyadic_target_full_e000_b0_adaptive_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_full83_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "action",
+        "--input",
+        "dyadic_target_full_e083_b0_adaptive_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_rhs0_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "action",
+        "--input",
+        "dyadic_target_rhs_e000_b0_adaptive_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_extend0_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "action",
+        "--input",
+        "dyadic_target_extend3200_e000_b0_adaptive_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_correction0_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "action",
+        "--input",
+        "dyadic_target_correctionu800_e000_b0_adaptive_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_cm0_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "action",
+        "--input",
+        "dyadic_target_cm_e000_b0_adaptive_d130"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_aggregate_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "aggregate"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_low_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "low"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_bridge_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "bridge"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_quadrics_c00_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "quadrics",
+        "--chart",
+        "0"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_quadrics_c08_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "quadrics",
+        "--chart",
+        "8"
+      ]
+    },
+    {
+      "driver": "dembele/pari/538_dyadic_target_independent_review.py",
+      "stem": "dyadic_target_audit_quadrics_c16_d130",
+      "marker": "PASS|538_DYADIC_TARGET_INDEPENDENT_REVIEW",
+      "args": [
+        "--phase",
+        "quadrics",
+        "--chart",
+        "16"
+      ]
+    }
+  ]
+}

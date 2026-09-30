@@ -1,0 +1,11 @@
+EXACT_PRIME_CUTOFF_PASS 6400 170
+EXACT_PRIME_CUTOFF_PASS 25600 586
+EXACT_COSETS_PASS 32 586
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/353_nelson_prime31_final_audit.py", line 205, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/353_nelson_prime31_final_audit.py", line 194, in main
+    result = compute()
+  File "/Users/musty/two/dembele/pari/353_nelson_prime31_final_audit.py", line 102, in compute
+    assert max(abs(lo - previous[0]), abs(hi - previous[1])) < scale / 10**40
+AssertionError

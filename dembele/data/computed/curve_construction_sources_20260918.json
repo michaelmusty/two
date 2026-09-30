@@ -1,0 +1,128 @@
+{
+  "date": "2026-09-18",
+  "scope": "primary-source and read-only local-code review for constructing the target curve",
+  "local_code": {
+    "Belyi": {
+      "git_head": "d5ddfc31cca495c7c0288e9e80e29982f1710ff0",
+      "working_tree_changes_in_read_files": [
+        " M Code/recognition.m"
+      ],
+      "files": [
+        {
+          "path": "/Users/musty/Belyi/README.md",
+          "sha256": "8e4a7f10b246df541d401831955e1c2d40e4e2c6ffdc7a2e6825e07c138d7a65"
+        },
+        {
+          "path": "/Users/musty/Belyi/Code/belyi_main.m",
+          "sha256": "ce6462370fd5b7ddc4764b3c307ee121418c55daee4292b1e09e3a42ad39aab2"
+        },
+        {
+          "path": "/Users/musty/Belyi/Code/recognition.m",
+          "sha256": "210e9c55160020932e2d063fb827fe5a5a5befb1fe31132370bf3c6b6fff476c"
+        },
+        {
+          "path": "/Users/musty/Belyi/Cext/powser_arnoldi.c",
+          "sha256": "f304ff6a2e93f7c1ea31f69082623167ccdc70b9f8564eed1588932ec63d5a5b"
+        }
+      ]
+    },
+    "hilbertmodularforms": {
+      "git_head": "f5ce65826697ee1ba7ed6e77a3fda0ef779f633b",
+      "working_tree_changes_in_read_files": [],
+      "files": [
+        {
+          "path": "/Users/musty/hilbertmodularforms/README.md",
+          "sha256": "668a2283a258502495c7a5cfae9addd2dde841ef3c3a53e3c887ce2271f76721"
+        },
+        {
+          "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/CanonicalRing/CanonicalRing.m",
+          "sha256": "c845de226aee9616eb4a2bfe638c1691702433c52b889e2fba27ed371833ac3c"
+        },
+        {
+          "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/LinearAlgebra.m",
+          "sha256": "23d253e6cdbd1671de20ddb0b4d8c30ff27eb3b98bfee1629f67267b086ccde7"
+        },
+        {
+          "path": "/Users/musty/hilbertmodularforms/ModFrmHilD/Restriction.m",
+          "sha256": "9fd6ca80a5860fe79ae7ac2016402fc1495d8d80f1ee5ce09858411e34b74406"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "title": "The Mathieu group M23 is a Galois group over Q",
+      "url": "https://arxiv.org/pdf/2608.08538",
+      "sections": "2 and 3"
+    },
+    {
+      "title": "Numerical calculation of three-point branched covers of the projective line",
+      "url": "https://arxiv.org/pdf/1311.2081",
+      "sections": "5, General case"
+    },
+    {
+      "title": "A database of Belyi maps",
+      "url": "https://arxiv.org/pdf/1805.07751",
+      "sections": "3 and 4; prior D52 audit retained"
+    },
+    {
+      "title": "The constructive inverse Galois problem via Hilbert modular forms: realizing the transitive group 17T7",
+      "url": "https://arxiv.org/html/2411.07857v4",
+      "sections": "3 and 4.3, particularly Remarks 4.3.9 and 4.3.10"
+    },
+    {
+      "title": "Curve equations from expansions of 1-forms at a nonrational point",
+      "url": "https://arxiv.org/pdf/2506.14026",
+      "sections": "3 and 4, especially the input hypothesis and Corollary 4.2"
+    }
+  ],
+  "repositories": [
+    "https://github.com/shaowuz/m23isgalois",
+    "https://github.com/SamSchiavone/17T7",
+    "https://github.com/edgarcosta/EichlerShimuraHMF",
+    "https://github.com/edgarcosta/hilbertmodularforms"
+  ],
+  "new_construction_attribution": "The degree-(g+1) CM projective-frame/residue construction is a local adaptation, not an algorithm attributed to these papers.",
+  "execution_helpers": [
+    {
+      "path": "/Users/musty/two/dembele/pari/114_cm_projective_frame.py",
+      "sha256": "faad30e90b588d9b88b0c6893aa653468d35ed313628d350368b8205d9f0beca"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/115_cm_frame_quadric_search.py",
+      "sha256": "2fec6bf944ce93e2f82be32d2ec909520f63943fda76ec424ce24351993045d7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/116_cm_frame_curve_check.py",
+      "sha256": "14057a8b1892fb569c2399c4217663f040903b0d855402d248d99ad584237ed5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/92_cm_fibers.py",
+      "sha256": "a38a3b6c82b17e22d33b0815897763093e88689475d8a865ce127dd3e1b9685d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/97_cm_field_recognition.py",
+      "sha256": "d73b071c2f4937f02376bba99aad2a3e1a4732ec2fc8d313dd4270f300c147da"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/86_precise_quadrics.py",
+      "sha256": "a24533fd1ce2c499d107e93dcc937ac95080359570bf46a3f9f422878a48fb75"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/85_arithmetic_quadrics.py",
+      "sha256": "e81c8771c10bfcfebe66cfdbe2cf62268a6f9e38d41a255568cc6009c11e491d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/83_pointed_normalization.py",
+      "sha256": "372c7005f59acb4bee666266817af0aa9c87f1634e7f93b26fbed63c1fa46704"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/cm_acb.py",
+      "sha256": "6423c8c9c06e791522127a861b51c2dc544ff1953f6ed48d5444666a1c8d72a9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/cm_acb.c",
+      "sha256": "ac1826c0d0d842ba85d763f0afbad4fff18cd094343e30afb16990b6bbed4968"
+    }
+  ]
+}
