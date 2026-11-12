@@ -1,0 +1,211 @@
+{
+  "status": "pass",
+  "milestone": "D142",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141.json",
+    "sha256": "3b091f291bc873dd5e4ffebdddbea43d6dc551faed658c9b0150103abd61d8e5"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_routes_d142_attempt01.job.json",
+        "sha256": "324d395eaa7dd56c788be124152b0a57ae25157f6e32bf934b9b04c232179063"
+      },
+      "wall_seconds": 0.20180312497541308,
+      "conservative_peak_rss_bytes": 19546112
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142_attempt01.job.json",
+        "sha256": "e22b7e4873d8b4c5b23e42b52c05e1d213b4c1817b35b4f464ee87087423b4ed"
+      },
+      "wall_seconds": 5.189347542007454,
+      "conservative_peak_rss_bytes": 311967744
+    }
+  ],
+  "true_relation_space_height_upper_bound": 83240,
+  "true_relation_space_height_is_not_proved_above_623": true,
+  "height_bound_at_most_623_proved": false,
+  "Faltings_upper_bound": "30.039246",
+  "Faltings_lower_29_proved": false,
+  "RR_residual_320_138_would_suffice_under_comparison": true,
+  "corrected_global_RR_constant_certified": false,
+  "normalizer_finite_model_comparison_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "actual_curve_spectral_calculation_started": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Establish the finite Hodge-line comparison for the actual normalizer and the order-3/order-32 cotangent terms; assess the resulting analytic target before any numerical spectral work. The existing jet-height estimate does not reach 623; exact structural identification remains an alternative.",
+  "wall_seconds": 59.34674900001846,
+  "sources": [
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-compound-height-d116.md",
+      "sha256": "5e25d087596efeee0a676525d19f76acc1dc6e3cfe316d743457efe225cd5b5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-disk-and-exactness-d117.md",
+      "sha256": "a4d5cc5655faecb55eef85adbddcc58ac57b8fe4c428e603f3961371358ae031"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-arithmetic-d105.md",
+      "sha256": "145547211ff8f699907747a05a72767e981406014a778f712b165e12d42382b6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/construction-reassessment-d120.md",
+      "sha256": "065569ba19e1cc59baed54f475300e2102ca8878acc9168bc74b9ab7f9e71641"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-P1600-recognition-d140.md",
+      "sha256": "8fc9103b0d5c10b5cad2f9cc37b10155a1b1639a834e155ee4dc145ad77cdb92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-comparison-and-strategy-d115.md",
+      "sha256": "393aecfd4e3f07eb2b72a0dfa51844559c4fb0b7d6657f52213803b9890fc419"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-review-d99.md",
+      "sha256": "8d3d3b53be8f0ef102c5b539645e1362e09d19540e7ffaa86ee724df7b0233fa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142.json",
+      "sha256": "4c843dd5573f11b1172dcd4bfb2166c7658786086cc3afdd6385a5b37f415ce9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142_attempt01.job.json",
+      "sha256": "e22b7e4873d8b4c5b23e42b52c05e1d213b4c1817b35b4f464ee87087423b4ed"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142_attempt01.log",
+      "sha256": "8e37876126a789820fa6f135703597dfe178404d1fa220be68ca2abd675e03df"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142_worker.json",
+      "sha256": "cfef381b9bca12ea05b409de2b074674449051880da0a39e75a00c014e7e7b8f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_completion_d141.json",
+      "sha256": "7e61d4178c87c2205eab00176f8cd486cdaef5a354fc6d758bb87c9f94342eb3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141.json",
+      "sha256": "3b091f291bc873dd5e4ffebdddbea43d6dc551faed658c9b0150103abd61d8e5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141_attempt01.job.json",
+      "sha256": "b6a6aef899ecf63b307139428d16f917c7a50f8d34fac07e0617ce44f0b3a0df"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141_attempt01.log",
+      "sha256": "8fc32f4466655af20733fe3342b3c0d0cb65340e6beed69375466f551a9a0b8c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141_recheck01.job.json",
+      "sha256": "085af6f0ab21945e6e47efdb8317a16738a65b61403f8aa192909937408de32f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141_recheck01.log",
+      "sha256": "83bc61878d90443e3105dad654fd1a453885678051eafbc4859bc45150880b99"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_routes_d142.json",
+      "sha256": "1e28928d73b3e3cd973194347b321732af2e3a507ff84b57b227564ef77af55a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_routes_d142_attempt01.job.json",
+      "sha256": "324d395eaa7dd56c788be124152b0a57ae25157f6e32bf934b9b04c232179063"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_routes_d142_attempt01.log",
+      "sha256": "c4704b8b702c6b736427c2a839b4b9335e402606e46bb322b148acbf535232d7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_sources_d142.json",
+      "sha256": "eacea0da705f02e8aec1a8a8f5ba1d3d4b2c2a2b7832f0c885bad68c741ecbbb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_compound_height_d116.json",
+      "sha256": "9ed3d973dac1a2dc73e182549ebc5548261ac322913bd266041cd2feda850fcd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_finite_height_review_d118.json",
+      "sha256": "1d87209f22db7384b5eee38f74f3790dc3647f37ddba1eed6c96356c98a0cf5f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/447_cm_disk_vanishing_budget.py",
+      "sha256": "20214cdbff53e5a7ba74b1c00260192e4fad5c2834ca3e4aa49a9d7166321d40"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/597_P1600_proof_gap_review.py",
+      "sha256": "620cff0d53972e9076cee23dd7dbb255a0c47293bbdd9a7f03b9c06a2cc2b6b6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/598_P1600_two_height_routes.py",
+      "sha256": "8cd86fcaf826a9fcd8f0bfb9fbe7cd20cf1033b703260643185a0c46251d4988"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/599_P1600_height_routes_audit.py",
+      "sha256": "044811687c52d743fbfa71a61a14de18c34443237bcb97c9323d3cd1a260053e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/600_P1600_two_height_review.py",
+      "sha256": "b4f9619ab5e416c04e1c94e3cabcc94ea57edea966d0c63fb8ca227944e432cb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "peak_rss_bytes": 229294080
+}

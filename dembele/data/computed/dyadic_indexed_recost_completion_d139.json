@@ -1,0 +1,96 @@
+{
+  "status": "pass",
+  "milestone": "D139",
+  "completed_at": "2026-10-07T20:06:10.775815+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_indexed_recost_review_r2_d139.json",
+    "sha256": "20c85db6a4c3ff6b014a2716b657270bc3e9bd9c6194399fe63042a0abf04d18"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_indexed_recost_review_r2_d139_attempt01.job.json",
+      "sha256": "f76ce35b0bd5fa4b15151126d035027f0ff9bdeec34432a779a452d60c50f2c4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_indexed_recost_review_r2_d139_recheck01.job.json",
+      "sha256": "656799bec637e40a745aa6d81fe4ca2d5ece9858a6bd9161c76ed400841ea766"
+    }
+  ],
+  "successful_bounded_jobs": 6,
+  "preserved_failed_bounded_jobs": 1,
+  "failed_review_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_indexed_recost_review_d139_attempt01.job.json",
+    "sha256": "83a0ce20e33e8e8025c581cd09e9d3b33448ea68ed0a6c662d152552d66da966"
+  },
+  "failure_classification": "Reviewer-only KeyError parsing numbered prepare/sweep phases; corrected in source 582, with original receipt/log/source snapshot preserved.",
+  "reviewed_cost_model": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_indexed_bank_recost_r2_d139.json",
+    "sha256": "426c4547f6204be49063b62578669c896c928ff652d55cab871dc60061d2e17c"
+  },
+  "prior_fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_precision1600_review_d138.json",
+    "sha256": "303783e953a3ebe5fff18b4fadadb765adfb6f3f2fb6c74d9e6ed4df2fc912a5"
+  },
+  "direct_source_bindings": 1298,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "receipt_discovery_controls": {
+    "synthetic_cases": 8,
+    "actual_receipts": 13176
+  },
+  "archive_control": {
+    "exact_original_items": 422,
+    "measured_seconds": 0.680321957974229,
+    "both_interruption_points_pass": true
+  },
+  "reviewed_schedules": [
+    {
+      "name": "next_P3200_checkpoint",
+      "jobs": 188550,
+      "active_hours": [
+        38.700712248280574,
+        45.664468386340374
+      ],
+      "additional_bytes": [
+        5356803891,
+        7400122848
+      ],
+      "recommended_free_bytes": 18137541088
+    },
+    {
+      "name": "remaining_staged_conditional_target",
+      "jobs": 1068035,
+      "active_hours": [
+        498.67200691932936,
+        706.3587531022924
+      ],
+      "additional_bytes": [
+        55216401451,
+        66576571648
+      ],
+      "recommended_free_bytes": 77313989888
+    },
+    {
+      "name": "one_target_column_pilot",
+      "jobs": 31925,
+      "active_hours": [
+        20.403956835890373,
+        30.96615993295903
+      ],
+      "additional_bytes": [
+        2527017082,
+        2864694808
+      ],
+      "recommended_free_bytes": 13602113048
+    }
+  ],
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "indexed_receipt_coordinator_admitted": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "next_work": "User scope decision; recommend P3200 checkpoint, then stage-specific admission, column-1 CM adapter, independent audits, bounded provenance replay and initial-column timing validation."
+}

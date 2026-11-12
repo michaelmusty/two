@@ -1,0 +1,144 @@
+{
+  "status": "pass",
+  "milestone": "D149",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_review_d148.json",
+    "sha256": "006e795146f129a95805d3029bbef944b957fdd6166fb3e500af406860e02aaf"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D148_direct_bindings": 44,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_limits_d149_attempt01.job.json",
+        "sha256": "51b527848f852fb482d33550c40a1df455a5c0d0bdaed1946705070cf7430f39"
+      },
+      "wall_seconds": 5.692431374976877,
+      "conservative_peak_rss_bytes": 311836672
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_audit_d149_attempt01.job.json",
+        "sha256": "38ed719c922f210dc3ab1bf356450ecef93bb32fada887877f5c003ca5f16fd2"
+      },
+      "wall_seconds": 4.136910874978639,
+      "conservative_peak_rss_bytes": 301170688
+    }
+  ],
+  "primitive_forward_upper_equals_D148": true,
+  "best_current_proved_relation_height_upper": 15237,
+  "pencil_degree_only_required_strict_lower": 24,
+  "pencil_degree_actual_strict_upper": "-0.411",
+  "actual_CM_cotangent_height_strict_lower": "0.335",
+  "favorable_pencil_majorant_strict_lower": 5132,
+  "favorable_pencil_and_field_norm_majorant_strict_lower": 1162,
+  "diagnostic_floors_are_not_actual_relation_height_lower_bounds": true,
+  "universal_forward_cofactor_product_cancellation_disproved": true,
+  "CM_specific_exterior_cancellation_not_excluded": true,
+  "dyadic_index_pricing": {
+    "eta_embedding_index_beta": 632,
+    "dual_pairing_index_on_Z0_beta": 1416,
+    "dual_pairing_index_on_ZA_beta": 1152,
+    "primitive_forward_determinant_beta": 1168,
+    "primitive_relation_index_beta_range": [
+      2730,
+      18506
+    ],
+    "old_forward_determinant_beta": 4848,
+    "old_relation_index_beta_range": [
+      44590,
+      60366
+    ],
+    "additional_dyadic_saving_coefficient_log2": "986",
+    "log2_rational_interval": [
+      "346617686907988864/500063617986634845",
+      "6932353738160839627/10001272359732696900"
+    ],
+    "additional_dyadic_saving_strict_upper": 684,
+    "extra_saving_actually_proved": false,
+    "odd_prime_indices_bounded": false
+  },
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_curve_spectral_calculation_started": false,
+  "new_geodesic_census_started": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Audit the saved candidate-scheme, canonical-model and correspondence certificates for an exact automorphic identity or correspondence with a proved uniqueness implication that identifies the actual marked curve. Reuse established candidate checks; finite agreement and candidate height are insufficient. A new height approach must name additional actual-curve input beyond the closed normalization, pencil/field-norm and isolated dyadic-index repairs. Existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "completed_at": "2026-10-09T13:33:00.284158+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_review_d149.json",
+    "sha256": "d66c62f50094888d60523fd5e1f0cc6e231d79ea67c9d09e83fb1e6b87b08cde"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/P1600-primitive-frame-limits-d149.md",
+    "sha256": "4830255c9aa8455de232640c9bd92f1aea78dcd92939554709473f994ec1bdc2"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_sources_d149.json",
+    "sha256": "f080a5c259d747704e105ec35e20c81548e584304d6f2e0ef58cf8e14585e019"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_review_d149_attempt01.job.json",
+      "sha256": "342b728dcda80b05690de6fac05591619b75e2c34b6858536775c1b4434cc1e6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_review_d149_recheck01.job.json",
+      "sha256": "9aa520a68a16daa1eedf91fb4d85cb7cd50ad05ad19c17e239bf19d46ae13b96"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 59.851891083002556,
+      "seconds": 59.72167316597188,
+      "peak_rss_bytes": 207470592
+    },
+    {
+      "receipt_wall_seconds": 58.78385787503794,
+      "seconds": 58.66779541602591,
+      "peak_rss_bytes": 203816960
+    }
+  ],
+  "successful_bounded_jobs": 5,
+  "input_bounded_jobs": 2,
+  "review_bounded_jobs": 2,
+  "completion_bounded_jobs": 1,
+  "failed_bounded_jobs": 0,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_completion_d149_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 38,
+  "next_unused_source": 626,
+  "entry_document_hashes_intentionally_not_frozen": true
+}

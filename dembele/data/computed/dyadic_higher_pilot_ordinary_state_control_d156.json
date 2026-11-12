@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "milestone": "D137",
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col00_config_d133.json",
+    "sha256": "22475b09a4812ad26302c1a990bc0ca538d6dfd35fb85ddca96817631bad84bd"
+  },
+  "working_precision_pi": 6400,
+  "harmonic_basis_column": 0,
+  "phase": "ordinary-state",
+  "certificates": {
+    "state": 83,
+    "degrees": [
+      1,
+      2,
+      3
+    ],
+    "ordinary_original_scalar_checks": 24,
+    "complete_operator_independently_recomputed": false
+  },
+  "production_arithmetic_not_imported": true,
+  "execution_milestone": "D156",
+  "weighted_seed_supported": true,
+  "wall_seconds": 0.9346108339959756,
+  "peak_rss_bytes": 48087040,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P6400_col00_d132/CURRENT.json",
+      "sha256": "8e402386334e50c3b64b8396164203ec8fc9aff9fc4582cb8d46c7973810ac78"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P6400_col00_d132/SEALED.json",
+      "sha256": "c42ea4d6ad81ee3c7cf2e68daa0ba6259e16e6c088e83df5c5a39fa15ea677bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P6400_col00_d132/state.bin",
+      "sha256": "1299282042c11b4b398047fb07780c3486fd919c4a98ece7817280d7a933739d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col00_config_d133.json",
+      "sha256": "22475b09a4812ad26302c1a990bc0ca538d6dfd35fb85ddca96817631bad84bd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/646_dyadic_higher_pilot_independent.py",
+      "sha256": "d768d002ed8fed9bc9c4c825ed593ec582b9c76c2408faf27f7c7da9f267e904"
+    }
+  ]
+}

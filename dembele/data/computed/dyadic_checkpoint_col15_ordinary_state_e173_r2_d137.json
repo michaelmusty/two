@@ -1,0 +1,54 @@
+{
+  "status": "pass",
+  "milestone": "D137",
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col15_config_r2_d137.json",
+    "sha256": "320ad3a48cca0f29620b0e54751a30be63790ed6bca85fc25c1a8e24c641138b"
+  },
+  "working_precision_pi": 1600,
+  "harmonic_basis_column": 15,
+  "phase": "ordinary-state",
+  "certificates": {
+    "state": 173,
+    "degrees": [
+      1,
+      2,
+      3
+    ],
+    "ordinary_original_scalar_checks": 24,
+    "complete_operator_independently_recomputed": false
+  },
+  "production_arithmetic_not_imported": true,
+  "wall_seconds": 0.5608006250113249,
+  "peak_rss_bytes": 35815424,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col15_r2_d132/CURRENT.json",
+      "sha256": "2107388638f1caeb7066f4b3e36b99688f561435c6753f2fbad3e76dd3905b39"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col15_r2_d132/SEALED.json",
+      "sha256": "7f0ac3449208eef7fcfd76089530c0bd1bb561b9c27042aaf5a009c3ab33f6ca"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col15_r2_d132/state.bin",
+      "sha256": "9791eb6faf0823693d09149e516165e011a2484e405a3c05182f0486302b3f4c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col15_config_r2_d137.json",
+      "sha256": "320ad3a48cca0f29620b0e54751a30be63790ed6bca85fc25c1a8e24c641138b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/564_dyadic_checkpoint_independent.py",
+      "sha256": "3f98c8b88031b573ab0aa5179d7c4450d59aa11d7462d4bcd1911dfcef9b66f1"
+    }
+  ]
+}

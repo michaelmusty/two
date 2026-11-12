@@ -1,0 +1,147 @@
+{
+  "status": "pass",
+  "milestone": "D150",
+  "state_count": 174,
+  "strict_contracting_branches": 348,
+  "branch_shape_checked_from_centers_and_certified_errors": true,
+  "distinct_target_nonaffine_branch_count": 275,
+  "nonaffine_witness": {
+    "source": 0,
+    "child": 0,
+    "target": 5,
+    "center_slope_valuation_pi": 2,
+    "slope_error_pi": 176
+  },
+  "sample_coefficient_valuations_pi": [
+    1,
+    3,
+    23,
+    3199,
+    19999
+  ],
+  "coefficient_valuation_sample_degrees": [
+    1,
+    2,
+    12,
+    1600,
+    10000
+  ],
+  "anchor_A_start_edge": 14,
+  "reachable_cycle": {
+    "start": 14,
+    "prefix": [
+      {
+        "source": 14,
+        "child": 0,
+        "target": 12
+      },
+      {
+        "source": 12,
+        "child": 0,
+        "target": 9
+      },
+      {
+        "source": 9,
+        "child": 0,
+        "target": 3
+      }
+    ],
+    "cycle": [
+      {
+        "source": 3,
+        "child": 0,
+        "target": 1
+      },
+      {
+        "source": 1,
+        "child": 0,
+        "target": 5
+      },
+      {
+        "source": 5,
+        "child": 0,
+        "target": 10
+      },
+      {
+        "source": 10,
+        "child": 0,
+        "target": 3
+      }
+    ],
+    "cycle_determinant_valuation_pi": 4
+  },
+  "finite_residual_controls": [
+    {
+      "precision_binary": 1,
+      "exact_fixed_point": "-1",
+      "approximation": "1",
+      "residual": "-2"
+    },
+    {
+      "precision_binary": 4,
+      "exact_fixed_point": "-1",
+      "approximation": "15",
+      "residual": "-16"
+    },
+    {
+      "precision_binary": 32,
+      "exact_fixed_point": "-1",
+      "approximation": "4294967295",
+      "residual": "-4294967296"
+    },
+    {
+      "precision_binary": 160,
+      "exact_fixed_point": "-1",
+      "approximation": "1461501637330902918203684832716283019655932542975",
+      "residual": "-1461501637330902918203684832716283019655932542976"
+    }
+  ],
+  "equal_rank_controls": [
+    {
+      "precision_binary": 83,
+      "rows": 45,
+      "columns": 136,
+      "common_rank": 45,
+      "different_kernels": true,
+      "witness_column": 45,
+      "nonzero_residual": "9671406556917033397649408",
+      "control_is_an_actual_curve_claim": false
+    },
+    {
+      "precision_binary": 147,
+      "rows": 45,
+      "columns": 136,
+      "common_rank": 45,
+      "different_kernels": true,
+      "witness_column": 45,
+      "nonzero_residual": "178405961588244985132285746181186892047843328",
+      "control_is_an_actual_curve_claim": false
+    }
+  ],
+  "ordinary_polynomial_moment_truncation_is_not_exact": true,
+  "branchwise_finite_rational_closure_excluded_by_companion_proof": true,
+  "summed_transfer_cancellations_excluded": false,
+  "exact_candidate_transfer_identity_constructed": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "new_precision_bank_admitted": false,
+  "actual_harmonic_precision_increased": false,
+  "best_current_proved_relation_height_upper": 15237,
+  "sufficient_height_target": 623,
+  "wall_seconds": 0.24953129200730473,
+  "peak_rss_bytes": 28901376,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_moment_review_d113.json",
+      "sha256": "8b23bfa2c4c715054eb236fbbf97efa4d57e364c1d75a48af2d8633b408bf63f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_moment_transports_d113.json",
+      "sha256": "4c9e8772420261993282cf75d459a51394db9169daa02ddda518f4d43823e5db"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/626_structural_identification_audit.py",
+      "sha256": "ff1924862eb2e27bcb31277cf8512687eadb1e062ad07f16104683b4c6f772cc"
+    }
+  ]
+}

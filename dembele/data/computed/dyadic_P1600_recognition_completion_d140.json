@@ -1,0 +1,191 @@
+{
+  "status": "pass",
+  "milestone": "D140",
+  "completed_at": "2026-10-08T14:46:22.935164+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_review_d140.json",
+    "sha256": "10e74cdfafcf46db04ab5cee473646aa88869c074ac30ed651193f156fadd42a"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/dyadic-P1600-recognition-d140.md",
+    "sha256": "8fc9103b0d5c10b5cad2f9cc37b10155a1b1639a834e155ee4dc145ad77cdb92"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_review_d140_attempt01.job.json",
+      "sha256": "27b3cb282b67c3fef91bde89d1a971c24a1c2efe74e9b3cf239313a676689a5a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_review_d140_recheck01.job.json",
+      "sha256": "a896ea3820ae00b41c859ac100380c5b13088ef1bb50b6afda97fce874c224e6"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 64.20517695799936,
+      "seconds": 64.09453691600356,
+      "peak_rss_bytes": 193527808
+    },
+    {
+      "receipt_wall_seconds": 59.391286958998535,
+      "seconds": 59.321504749997985,
+      "peak_rss_bytes": 182714368
+    }
+  ],
+  "successful_bounded_jobs": 13,
+  "successful_input_jobs": 11,
+  "preserved_failed_bounded_jobs": 3,
+  "preserved_failed_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_lattice96_d140_attempt01.job.json",
+      "sha256": "22bcddc2560eae4d239a95cb2a406d53d60573c11e1ce1839ee42fdf14a16772"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_lattice96_r2_d140_attempt01.job.json",
+      "sha256": "5d9a0cb07bbbc32d94e86cb81b4181b4f7ba36425839b2add12c707af0cf4713"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognized_lattice_comparison_d140_attempt01.job.json",
+      "sha256": "8e033e7063d0b81b7349d34f130fedbe5dcdbe653be017350c0b3b14f5e1b60d"
+    }
+  ],
+  "failure_classification": "Two pre-arithmetic Sage launcher/PATH failures and one legacy candidate status-label adapter failure; original receipts, logs, source snapshots and partial inputs retained.",
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_relation_probe96_d140_attempt01.job.json",
+        "sha256": "23e0c0cbdfde71aed6d0e911a69d167972ca821ea3ba6da4e05d428843ad1ea3"
+      },
+      "wall_seconds": 0.34950704203220084,
+      "conservative_peak_rss_bytes": 32555008
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_lattice96_r3_d140_attempt01.job.json",
+        "sha256": "8361b2f2c61b86102dd41330064a811bd1060a27223268b9b9fabd26c7aebf18"
+      },
+      "wall_seconds": 11.922723083000164,
+      "conservative_peak_rss_bytes": 317521920
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_holdout96_d140_attempt01.job.json",
+        "sha256": "9d4e451f93e21de7ed0254376a21dd558e76390d6f927f9394af95403d7e1e45"
+      },
+      "wall_seconds": 8.386667041981127,
+      "conservative_peak_rss_bytes": 47611904
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_relation_height96_d140_attempt01.job.json",
+        "sha256": "7d77aaeb1101ae76cd5c60af44241b3bea6103b2a305836fe2d6e4e279893913"
+      },
+      "wall_seconds": 2.203030416974798,
+      "conservative_peak_rss_bytes": 25739264
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_certificates96_d140_attempt01.job.json",
+        "sha256": "e35b996b18825e7ce1f8f3ed5b784e99904264094f25582033b8a4eb2de1b083"
+      },
+      "wall_seconds": 6.538114083989058,
+      "conservative_peak_rss_bytes": 325844992
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_relation_probe160_d140_attempt01.job.json",
+        "sha256": "0e45d589ac5e2bfcf608cc088eaea184a8258cb6dd187eda5e23084b7fabf1c2"
+      },
+      "wall_seconds": 0.35260341700632125,
+      "conservative_peak_rss_bytes": 32342016
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_lattice160_r3_d140_attempt01.job.json",
+        "sha256": "fe3beb848032be9f76d29f1d9041133843b532efb079fafd8c5b3427599018ca"
+      },
+      "wall_seconds": 13.729834624973591,
+      "conservative_peak_rss_bytes": 298385408
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_holdout160_d140_attempt01.job.json",
+        "sha256": "6304f4005eebb055a98df0407ce79008a85774ca38eb890ca778da4b141ece66"
+      },
+      "wall_seconds": 8.332384291978087,
+      "conservative_peak_rss_bytes": 48939008
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_relation_height160_d140_attempt01.job.json",
+        "sha256": "867338475ffac188d7d371b2c56f2aeefb0371d7448e818fe3b13f60d3779900"
+      },
+      "wall_seconds": 2.7426092499517836,
+      "conservative_peak_rss_bytes": 28065792
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_certificates160_d140_attempt01.job.json",
+        "sha256": "de76141cacc69b9d7a3af727baff01365ae0fead2d6dce07cb37c7c2a5c3096b"
+      },
+      "wall_seconds": 7.466143665951677,
+      "conservative_peak_rss_bytes": 349995008
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognized_lattice_comparison_r2_d140_attempt01.job.json",
+        "sha256": "c9af7dca86daafb6d8aef15fc1bdedd7327a8ba6a69a28a38fd5d2a3e759af15"
+      },
+      "wall_seconds": 4.959198875003494,
+      "conservative_peak_rss_bytes": 350617600
+    }
+  ],
+  "direct_source_bindings": 80,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_indexed_recost_review_r2_d139.json",
+    "sha256": "20c85db6a4c3ff6b014a2716b657270bc3e9bd9c6194399fe63042a0abf04d18"
+  },
+  "catalogue_graph_is_transitive": true,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "recognition_complete": true,
+  "candidate_equations_used_in_discovery": false,
+  "joint_integer_lattice_recognition_runs": [
+    {
+      "training_2_bits": 96,
+      "available_2_bits": 180,
+      "congruence_2_bits": 83,
+      "recognized_independent_relations": 91,
+      "maximum_recognized_coefficient_height": 968,
+      "full_lattice_transform_determinant": -1,
+      "all_coefficients_checked": 6188,
+      "structurally_withheld_coefficients_checked": 5915,
+      "certified_mismatches": 0,
+      "exhaustive_coefficient_height_bound": 18234668645049602
+    },
+    {
+      "training_2_bits": 160,
+      "available_2_bits": 180,
+      "congruence_2_bits": 147,
+      "recognized_independent_relations": 91,
+      "maximum_recognized_coefficient_height": 981,
+      "full_lattice_transform_determinant": 1,
+      "all_coefficients_checked": 6188,
+      "structurally_withheld_coefficients_checked": 5915,
+      "certified_mismatches": 0,
+      "exhaustive_coefficient_height_bound": 223818092532287707686732450725941069
+    }
+  ],
+  "same_saturated_integer_lattice_as_candidate": true,
+  "true_canonical_ideal_has_91_integral_quadrics_below_height_bound_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "P3200_default_recommendation_superseded": true,
+  "next_work": "Assess a true-ideal coefficient-height bound in the fixed rational residue frame, or an exact structural identification of the recovered curve."
+}

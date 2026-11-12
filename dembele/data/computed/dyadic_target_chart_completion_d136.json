@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "milestone": "D136",
+  "completed_utc": "2026-10-06T17:43:45.495272+00:00",
+  "kind": "reviewed_integrated_target_chart_controls_and_CM_interface",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_target_chart_review_d136.json",
+    "sha256": "992a8f9cf179cbe5cee15faca6a93fea138f97951eaf8cfbb87c348e5e7f82c6"
+  },
+  "fixed_review_source_count": 94006,
+  "prior_hash_count": 93928,
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/dyadic-target-charts-d136.md",
+    "sha256": "a381a53f75924835b482484b27c205709b173454cab61dcaf536d89cfa062880"
+  },
+  "passing_input_jobs": 17,
+  "passing_review_jobs": 2,
+  "failed_input_jobs": 0,
+  "maximum_control_RSS_bytes": 1914568704,
+  "longest_control_seconds": 69.7487647079979,
+  "all_old_CM_overlap_scalars_checked": 1740800,
+  "published_P6400_CM_adapter": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P6400_col00_d136.json",
+    "sha256": "6e0fc0033950ea93b4c4c67b0cc48f0f37aff454fda4576c133f27df33594626"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_chart_review_d136_attempt01.job.json",
+      "sha256": "adefdea1375f5be77880c4af0675fbf3890003164bf5772a0ee018ed40e995a1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_chart_review_d136_recheck01.job.json",
+      "sha256": "b4df3387cf31733e985dae78d9aa19b08dcc9d8e8a60b14540b6a85c9cf47169"
+    }
+  ],
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 6400,
+    "1": 1600
+  },
+  "synthetic_target_inputs_not_new_arithmetic_precision": true,
+  "actual_harmonic_precision_increased": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_launch_admitted": false,
+  "resource_caps_changed": false,
+  "next_unused_source": 564,
+  "user_scope_storage_preference_pending": true,
+  "next_task": "Prepare lower-column CM adapters and bounded bank provenance review. Recommended next commitment is the full-bank P1600 checkpoint (15--18 active hours, about3--4GiB); full target scenarios22--31active days need additional disk capacity. Preserve the pending user scope/storage question."
+}

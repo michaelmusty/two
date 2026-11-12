@@ -1,0 +1,88 @@
+{
+  "status": "pass",
+  "milestone": "D143",
+  "scope": "Finite normalizer Hodge-model comparison and order-3/order-32 cotangent bounds; global RR and exact identification remain open.",
+  "external_sources": [
+    {
+      "title": "Yuan: Modular Heights of Quaternionic Shimura Curves",
+      "url": "https://arxiv.org/pdf/2205.13995v3",
+      "location": "Theorems 1.1/1.2; section 4.1; Proposition 4.1",
+      "role": "Maximal Hodge system, order-3 CM height with no common ramification, and equality of the coarse orbifold line away from 2. Normalizer quotient and dyadic comparison are derived in the report.",
+      "download_sha256": "7dbf684fa65122ba3a15364079b6c3b1c7fdc2893bf2114a55ca9b448090762c"
+    },
+    {
+      "title": "Yuan and Zhang: On the averaged Colmez conjecture",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v187-n2-p04-p.pdf",
+      "location": "Theorem 1.1, Corollary 2.6, Theorems 2.7, 4.5, 4.7",
+      "role": "Averaged CM identities and structural Hodge pullback/dualizing statements; relative Shimura-point heights are divided by 8.",
+      "download_sha256": "29dfd5f19dec401116f1eaf0305305acf5f2fc68aa3c90d4eb6e5222de50d507"
+    },
+    {
+      "title": "Zhao: Heights of Special Points on Quaternionic Shimura Varieties",
+      "url": "https://arxiv.org/pdf/2309.08886v1",
+      "location": "Ramification hypothesis in section 1.1; Theorem 7.4",
+      "role": "Order-32 CM height with common dyadic ramification. D104 normalization reconciliation retained; the inconsistent final proof display of Theorem 7.5 is not used. This theorem is not applied to E3.",
+      "download_sha256": "467040cae6529a324c582ca117580bf3d9a1691779845727b30946a582d66a28"
+    },
+    {
+      "title": "Liu and Lorenzini: Models of curves and finite covers",
+      "url": "https://www.math.u-bordeaux.fr/~qliu/articles/modcove.pdf",
+      "location": "Proposition 4.4(a)",
+      "role": "Stable extension of the generic small-level map; finite special-fibre extension is not assumed for the derivative inequality. Inherited D104 applicability."
+    },
+    {
+      "title": "Kurihara: On some examples of equations defining Shimura curves and the Mumford uniformization",
+      "url": "https://repository.dl.itc.u-tokyo.ac.jp/record/39680/files/jfs250303.pdf",
+      "location": "Proposition 3-2 and Lemma 3-3",
+      "role": "Inherited D99/D119 normal quotient and inverted-edge smooth-disk model. D143 computes the arithmetic Hodge multidegrees and marked-tail correction on that certified model."
+    },
+    {
+      "title": "Stacks Project: A formula for the different",
+      "url": "https://stacks.math.columbia.edu/tag/0BWB",
+      "location": "Section 49.12",
+      "role": "Generic-component monogenic derivative formula used by the diagnostic; the independent graph reconstruction instead uses multidegrees and the trivial-stabilizer normalization."
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-finite-model-cotangents-d143.md",
+      "sha256": "2121f8909125ccf94ce5b4f061b3f0a22bdf8a93b19e2cad9181fd16cdee3a76"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-intrinsic-height-d104.md",
+      "sha256": "454495a0bfd60eeca0ca9cad8549b8372c74fb930872a9e6773bab77e4255a7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-arithmetic-d105.md",
+      "sha256": "145547211ff8f699907747a05a72767e981406014a778f712b165e12d42382b6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-harmonic-d111.md",
+      "sha256": "73f600897ed2afc624bab4316acd65846e1ed9c63cf3a08be7603902fbab8398"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-cm-matching-d112.md",
+      "sha256": "17eaae2f3c36acbf805713d7fd271ed229d344f4b4f48b2cf27b31b0ef04e228"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    }
+  ],
+  "source_applicability_notes_are_mathematical_review_not_machine_verification": true,
+  "normalizer_finite_model_comparison_proved": true,
+  "elliptic_cotangent_bounds_proved": true,
+  "corrected_global_RR_constant_certified": false,
+  "full_intersection_upper_bound_proved": false,
+  "Faltings_lower_29_proved": false,
+  "height_bound_at_most_623_proved": false,
+  "candidate_identification_proved": false
+}

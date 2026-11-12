@@ -1,5 +1,18 @@
 # Transfer checkpoint — 2026-09-30
 
+**Resumed on 2026-10-05:** the user requested continuation on the original
+compatible host. Transfer integrity and all external dependency hashes
+passed before production resumed from correction 10. Production and its
+waiting continuation are recorded in the [resumption record](dembele/checkpoints/d133-resume-2026-10-05.json)
+with durable logs; see [HANDOFF.md](HANDOFF.md) for current operational
+instructions. Inspect live locks and receipts before any restart.
+
+The checkpoint below is historical. Its inventory remains the exact
+September 30 transfer baseline; resumed working-store files can now differ
+or have been retired by the reviewed journal protocol. Do not overwrite
+that inventory or treat it as a verifier for the advancing mutable store.
+Frozen source and certificate hashes must still match.
+
 D133 is deliberately paused after correction 9 and its receipt-verified
 metadata archive, before `low_begin_010`. The working journal is
 `ready009`, epoch 20, with `(u, count, bits) = (3497, 2903, 363)`.

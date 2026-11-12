@@ -1,0 +1,126 @@
+{
+  "status": "pass",
+  "milestone": "D143",
+  "arb_precision_bits": 224,
+  "independent_primitive_character_construction": true,
+  "independent_number_field_discriminants": true,
+  "E3_generator_minpoly": "x^16 + 8*x^14 + 116*x^12 + 776*x^10 + 5058*x^8 + 23400*x^6 + 84204*x^4 + 207752*x^2 + 277729",
+  "CM_fields": [
+    {
+      "elliptic_order": 3,
+      "field_discriminant": "30257271966902092038144",
+      "primitive_conductors": [
+        3,
+        24,
+        48,
+        48,
+        96,
+        96,
+        96,
+        96
+      ],
+      "L_log_derivative_interval": [
+        "-1815312878211222773804383839633142/185312996422621663012678049798671",
+        "-25156051594534289038067481147044789/2568010922579262557218474690081313"
+      ],
+      "Hodge_height_interval": [
+        "4413224727109545165484136776923807/6142218540913860400929773426664470",
+        "1814098732961561779554433382036412/2524818372424628449866934610631847"
+      ],
+      "cotangent_upper_interval": [
+        "16766416003055971050350090791594178/4247587898751776804734929301914487",
+        "11722938448998433358024056902915512/2969878087523404375941415181060697"
+      ],
+      "display_Hodge_height": 0.7185066271596598,
+      "display_cotangent_upper": 3.9472793507070345
+    },
+    {
+      "elliptic_order": 32,
+      "field_discriminant": "18446744073709551616",
+      "primitive_conductors": [
+        4,
+        8,
+        16,
+        16,
+        32,
+        32,
+        32,
+        32
+      ],
+      "L_log_derivative_interval": [
+        "-5974951539495431457768280344278375/1454922054283250343847517686591733",
+        "-8565881150952489733424108561280865/2085822674629158533229389300675219"
+      ],
+      "Hodge_height_interval": [
+        "3696212235794265290874732502449121/6639967584394394635593388385684197",
+        "2952288820618248163206083636554342/5303565060154801384383487305590349"
+      ],
+      "cotangent_upper_interval": [
+        "107913577134587789193146966739501709/1085965217275768902052155487477811",
+        "110838825681407975929962215168777811/1115402830763191972192974963142277"
+      ],
+      "display_Hodge_height": 0.5566611867927338,
+      "display_cotangent_upper": 99.37111743348252
+    }
+  ],
+  "changed_frame_jet_controls": [
+    {
+      "order": 2,
+      "changed_frame_coefficient": "6"
+    },
+    {
+      "order": 3,
+      "changed_frame_coefficient": "18"
+    },
+    {
+      "order": 32,
+      "changed_frame_coefficient": "789392510801080590501654036480000000"
+    }
+  ],
+  "total_cotangent_upper_interval": [
+    "33299994151271245573614485401456162/202006935918916233505198226466323",
+    "112680728406352325484545035451991289/683552332744474534981488569167947"
+  ],
+  "sufficient_remaining_target_interval": [
+    "64223296626166832132154516176042931/132449117895402781873520592187078",
+    "111073600068168418398608524118115892/229025674164074718065903369195819"
+  ],
+  "strict_upper_bounds": {
+    "H3": "987/250",
+    "H32": "24843/250",
+    "Psi": "82423/500",
+    "remaining_target": "60623/125"
+  },
+  "display_total_cotangent_upper": 164.8457960108734,
+  "display_remaining_target_upper": 484.9831813554447,
+  "E_model_computed": false,
+  "E_model_sign_proved": false,
+  "Faltings_lower_29_proved": false,
+  "candidate_identification_proved": false,
+  "peak_rss_bytes": 19939328,
+  "wall_seconds": 4.386232124990784,
+  "child_peak_rss_bytes": 292339712,
+  "conservative_peak_rss_bytes": 312279040,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/602_P1600_elliptic_height_audit.py",
+      "sha256": "49b25f5c19b4780ee848e30a5735c96d1032d81eb183d5fd9636b52999857bce"
+    },
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143_worker.json",
+      "sha256": "456fb3e9473067cd25f5d1424cbc3177c05d39af70a6e78cd5bd4f3cf6d65030"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143.json",
+      "sha256": "42f16ac5a41fccbbd0b6c64a2be05bd583358e5d216b210cf3a3b5b62ef79072"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142.json",
+      "sha256": "4c843dd5573f11b1172dcd4bfb2166c7658786086cc3afdd6385a5b37f415ce9"
+    }
+  ]
+}

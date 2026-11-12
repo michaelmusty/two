@@ -1,0 +1,34 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/628_structural_identification_review.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 65.81267162499717,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/structural_identification_review_d150_attempt01.log",
+    "sha256": "597069f0ce0e6288743b6d174ca1df3aee3773c3fb508e196c8f715d814836ec"
+  },
+  "private_process_group": 6244,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/628_structural_identification_review.py",
+    "sha256": "d970d6feb976ff95201c300738809f3aa3f8c010130c744f8f7812f93db2b18f"
+  }
+}

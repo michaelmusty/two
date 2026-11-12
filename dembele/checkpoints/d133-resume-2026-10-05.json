@@ -1,0 +1,49 @@
+{
+  "kind": "operational_resumption_not_a_mathematical_certificate",
+  "status": "running_at_observation",
+  "observed_UTC": "2026-10-05T16:18:17.935023+00:00",
+  "preflight": {
+    "path": "dembele/checkpoints/d133-resume-2026-10-05-preflight.json",
+    "sha256": "263e568d775e961753fb9f6304090407ac0f0b76fa1b98deb6d5bd03ee169d32"
+  },
+  "processes": [
+    {
+      "role": "production",
+      "pid": 59189,
+      "command": [
+        "python3",
+        "-u",
+        "dembele/pari/553_dyadic_staged_archiving_coordinator.py",
+        "--config",
+        "dyadic_staged_P6400_col00_config_d133",
+        "--workers",
+        "3"
+      ],
+      "log": "dembele/checkpoints/d133-resume-2026-10-05-production.log",
+      "started_UTC": "2026-10-05T16:18:17.726832+00:00"
+    },
+    {
+      "role": "continuation",
+      "pid": 59190,
+      "command": [
+        "python3",
+        "-u",
+        "dembele/pari/run_d133_completion.py"
+      ],
+      "log": "dembele/checkpoints/d133-resume-2026-10-05-continuation.log",
+      "started_UTC": "2026-10-05T16:18:17.829878+00:00"
+    }
+  ],
+  "production_and_continuation_locks_held": true,
+  "maximum_mathematical_workers": 3,
+  "per_job_timeout_seconds": 180,
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "processes_detached_with_new_sessions": true,
+  "survival_after_app_or_host_shutdown_not_claimed": true
+}

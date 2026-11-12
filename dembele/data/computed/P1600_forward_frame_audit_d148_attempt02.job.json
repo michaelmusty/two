@@ -1,0 +1,34 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/621_P1600_forward_frame_audit.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 3.784744208038319,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt02.log",
+    "sha256": "e5f0cdef170a8b72e1c1151a45f3492d63447da09df05837f8ffd0f83cabbfbb"
+  },
+  "private_process_group": 17130,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/621_P1600_forward_frame_audit.py",
+    "sha256": "7c860a1988bf714e73116ab35277c1db794f03fde057be893b6c6ac6fc31776f"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "status": "pass",
+  "milestone": "D149",
+  "scope": "Assess the primitive forward pencil budget and universal cofactor cancellation, and price possible additional dyadic frame content without increasing precision.",
+  "external_sources": [
+    {
+      "title": "Stacks Project, Lemma 44.3.1",
+      "url": "https://stacks.math.columbia.edu/tag/0B9D",
+      "role": "Finite locally free divisors in the smooth relative curve locus are relative Cartier divisors; used through D119 actual local models."
+    },
+    {
+      "title": "Stacks Project, Section 109.19",
+      "url": "https://stacks.math.columbia.edu/tag/0E6N",
+      "role": "Relative duality and the invertible relative dualizing sheaf for Gorenstein families; supports D119 principal-parts sequence, not the new numerical inequalities."
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-primitive-frame-limits-d149.md",
+      "sha256": "4830255c9aa8455de232640c9bd92f1aea78dcd92939554709473f994ec1bdc2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-residue-lattice-d102.md",
+      "sha256": "c1f765330d02567a904444252b3dfb7fc2ac8e0746678a2a2efbc0ff19d68080"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-compound-height-d116.md",
+      "sha256": "5e25d087596efeee0a676525d19f76acc1dc6e3cfe316d743457efe225cd5b5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/construction-reassessment-d120.md",
+      "sha256": "065569ba19e1cc59baed54f475300e2102ca8878acc9168bc74b9ab7f9e71641"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-joint-adjunction-RR-d144.md",
+      "sha256": "7f1e43faa2aabb16fb5443d23d64e878659a2ac79b4194cfb86326634b63a1bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-elliptic-intersections-d146.md",
+      "sha256": "0c53765a081be5211fc6bdc42f27ae6dc6784c81060ab6fbf922e16f573d2429"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-forward-frame-bound-d148.md",
+      "sha256": "df3af6bf1a25467ef33c2c9a850264c1009179091abcf4afb13a5f0a392c4e04"
+    }
+  ],
+  "new_geometric_and_metric_comparisons_are_companion_derivations": true,
+  "finite_checks_do_not_mechanically_verify_geometric_proofs": true,
+  "primitive_forward_upper_equals_D148": true,
+  "best_current_proved_relation_height_upper": 15237,
+  "favorable_pencil_and_field_norm_majorant_strict_lower": 1162,
+  "diagnostic_floor_is_not_an_actual_relation_height_lower_bound": true,
+  "dyadic_index_pricing": {
+    "eta_embedding_index_beta": 632,
+    "dual_pairing_index_on_Z0_beta": 1416,
+    "dual_pairing_index_on_ZA_beta": 1152,
+    "primitive_forward_determinant_beta": 1168,
+    "primitive_relation_index_beta_range": [
+      2730,
+      18506
+    ],
+    "old_forward_determinant_beta": 4848,
+    "old_relation_index_beta_range": [
+      44590,
+      60366
+    ],
+    "additional_dyadic_saving_coefficient_log2": "986",
+    "log2_rational_interval": [
+      "346617686907988864/500063617986634845",
+      "6932353738160839627/10001272359732696900"
+    ],
+    "additional_dyadic_saving_strict_upper": 684,
+    "extra_saving_actually_proved": false,
+    "odd_prime_indices_bounded": false
+  },
+  "CM_specific_exterior_cancellation_not_excluded": true,
+  "target_623_proved": false,
+  "target_623_disproved": false,
+  "candidate_identification_proved": false
+}

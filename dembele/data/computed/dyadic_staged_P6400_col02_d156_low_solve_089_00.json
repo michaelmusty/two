@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "milestone": "D132",
+  "request": {
+    "config": "dyadic_staged_P6400_col02_config_d156",
+    "phase": "low-solve",
+    "key": "low_solve_089_00",
+    "step": 89,
+    "digit": 0,
+    "first": null,
+    "last": null,
+    "chart": null,
+    "order": null
+  },
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_config_d156.json",
+    "sha256": "db255a0cf6dd07be16e3b539e78acb62c46b36507687887b436953984b2e2e67"
+  },
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/554_dyadic_resumable_staged_production.py",
+    "sha256": "9c4a9020be1f7efbe6c41ff6c57f5935aacf177c2b124b3c447eeef98b5fe3b9"
+  },
+  "certificates": {
+    "bits": 37,
+    "factor_bits": 37,
+    "factor_blocks": 1226,
+    "answer_sha256": "b644d836bafe80c45824f8a2007fb0a8dd9f10e4cedababca097d2bb23faa7f5"
+  },
+  "wall_seconds": 17.571126583963633,
+  "peak_rss_bytes": 53608448,
+  "maximum_observed_store_bytes": 543689639,
+  "historical_payload_hashes_are_not_retained_source_claims": true,
+  "working_precision_pi": 6400,
+  "harmonic_basis_column": 2
+}

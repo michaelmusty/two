@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "milestone": "D133",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_precision6400_review_d133.json",
+    "sha256": "592b88f6b8cb2a66386c0994133ba59a398d66a5c06fc4b86f06a57de0de806e"
+  },
+  "fixed_review_source_count": 93638,
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision6400_review_d133_attempt01.job.json",
+      "sha256": "c154e0abcaed5c4a4bd0a822cb3a93d643b09d717b286df8b89826e3563f5182"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision6400_review_d133_recheck01.job.json",
+      "sha256": "c93af55a3e6060ab97ebb955c28262296ad9aeca0688569707ead67f591b7b82"
+    }
+  ],
+  "passing_input_jobs": 24577,
+  "passing_review_jobs": 2,
+  "total_passing_jobs": 24579,
+  "failed_bounded_jobs": 0,
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 6400,
+    "1": 1600
+  },
+  "positive_exact_zero_proved": false,
+  "candidate_identification_proved": false,
+  "arithmetic_cover_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_launch_admitted": false,
+  "next_unused_source": 560,
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "README.md",
+    "CLAUDE.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "documentation_updated": true,
+  "frozen_report_sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-precision6400-d133.md",
+      "sha256": "7ef98f6f4eb9316b81158beefc040eb557d63c8f4ba2e09eeafb962f5f6f6302"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision6400_sources_d133.json",
+      "sha256": "4daf3ab42d03cb7e6a7e80bcdbf2eea2363af5f359a1a5bb41159e18dddabaaa"
+    }
+  ],
+  "completion_coordinator": {
+    "path": "/Users/musty/two/dembele/pari/run_d133_completion.py",
+    "sha256": "0a60a65ab8c0eb4ae1323c2c4b55217f4f431daa5fd6dcb21ff9f265b5c3171e"
+  },
+  "next_task": "Review conditional D134 cover criterion; retain global three-worker limit."
+}

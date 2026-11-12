@@ -1,0 +1,159 @@
+{
+  "status": "pass",
+  "milestone": "D138",
+  "working_precision_pi": 1600,
+  "production_arithmetic_not_imported": true,
+  "certificates": {
+    "all_bank_assembled_coarse_values_checked": 1088,
+    "frame_relation_certified_error_beta": 2901,
+    "change_column_error_bounds_beta": [
+      2937,
+      2936,
+      2937,
+      2936,
+      2936,
+      2940,
+      2936,
+      2939,
+      2937,
+      2937,
+      2938,
+      2936,
+      2939,
+      2936,
+      2936,
+      2936
+    ],
+    "inherited_inverse_norm_preserved_by_overlap_beta": 799,
+    "all_actual_jet_values_checked": 1088,
+    "independent_quadric_coefficients_checked": 6188,
+    "positive_coefficients_checked": 4641,
+    "certified_mismatch_count": 0,
+    "degree16_section_lower_beta": [
+      6594,
+      6545,
+      6528
+    ],
+    "anchor_section_lower_beta": [
+      6376,
+      6048,
+      5784
+    ],
+    "sufficient_nonanchor_beta": [
+      25155,
+      25269,
+      25376
+    ],
+    "W_Gaussian": {
+      "valuation_beta": 1024,
+      "error_beta": 3625
+    },
+    "W_Gaussian_inverted": false,
+    "positive_exact_vanishing_proved": false,
+    "method": "integer quotient absolute-error balls, frame residual bounds, gradients and polar forms"
+  },
+  "wall_seconds": 35.91217654198408,
+  "peak_rss_bytes": 55050240,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_height_budget_d118.json",
+      "sha256": "23246bb6effb1f20fcee619d0413424f099bf7f0e8ff61ea0c9eb8f1c5b5f8a6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col02_r2_d137.json",
+      "sha256": "846dbe82712a6d2f7b631dbeee2e7edc603ba670760207e4b8ad807f7c48ad8c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col03_r2_d137.json",
+      "sha256": "f43f9ba0be799538dc65f3f447ee419f67ca765b48ff1633ba8963455575b3a0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col04_r2_d137.json",
+      "sha256": "79ae5c9e504cffe5a790ef935700842e3b7f8a61ca82be3ea193f34436e9322f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col05_r2_d137.json",
+      "sha256": "b7e9f1049ce367b80507675d3e81285f317fb16bb5d2158eaf72fa477e216e9b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col06_r2_d137.json",
+      "sha256": "51f4e5f9920f367b08ba203679baa7e2d077bac0d71ddc9c824ac8b4ebf69b3e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col07_r2_d137.json",
+      "sha256": "15208759977e08f74d290e308cdf4a3e2742e22556810bce15b183bdda65c061"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col08_r2_d137.json",
+      "sha256": "b374ee9cfdceb99b6609028b4bf5b5a4627d946d035ac1e2b04dda6375cd5e10"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col09_r2_d137.json",
+      "sha256": "a6d1d4681b6bae21fc66cebab9677a072d9ec0ec2f26abd4ccd86ac713ab14e7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col10_r2_d137.json",
+      "sha256": "d8199c7a32df6574f669713796a94563d8ea741a748bc9abac66529e5d4ddf7f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col11_r2_d137.json",
+      "sha256": "c820839e51373ae28195fff7b321048d1c55cfbd3603117c18383d0cde1cb877"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col12_r2_d137.json",
+      "sha256": "901fa3f8a5201e2fb1a110ad185dc1cf9c5778887af53cce1ca8e23bc55deacf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col13_r2_d137.json",
+      "sha256": "9f80cd9c5103423b34d875f0e119d164af3399e03d73aa3472205289aa3a49ce"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col14_r2_d137.json",
+      "sha256": "a6332c97b9f729607d8ff0c5afd03ec93b87a9ab7944bb93ad46ddb760fb5878"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P1600_col15_r2_d137.json",
+      "sha256": "787019d5e76fe4a900d12bd0dbf81ae71c85f9fad4b90eb83c1d7481aca8f01d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P6400_col00_d136.json",
+      "sha256": "6e0fc0033950ea93b4c4c67b0cc48f0f37aff454fda4576c133f27df33594626"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_frame_beta21168_d122.json",
+      "sha256": "b41cbb135838e3d0fc43614f19a8bc455a4e354964bb8b3a02ce9fea6edcaa54"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_integral_quadrics1600_d138.json",
+      "sha256": "2a50ca1dac4a1dbb06caab63ed5178fc618b69ab159e34164e5934aa38bc15d2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision1600_bank_d138.json",
+      "sha256": "f43f2d8124c33e05a4d310191254efdc697935400db978435f466989c59246d7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision400_d122.json",
+      "sha256": "bb5d1ca8df99c41e1bae5d686aac0d7d72121b4c09f64a782fc0650be2eabbe3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision_design_d120.json",
+      "sha256": "73ef4ac68166c782b0b8be54a5d959d70e5bad35f04a795fcdd32c37fd940ec1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_residue_frame1600_d138.json",
+      "sha256": "a0c8926b310e8a3e8fc11a117f3a6c25a439c4f55ea90f243e5ef23b0323df05"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rolling_CM_P1600_col01_d127.json",
+      "sha256": "9868186a59dc510c2b43ad7ee270dc5a8803afce3dc6bb7ce1ecb07c3fb45ad4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/573_dyadic_precision1600_comparison_audit.py",
+      "sha256": "aa6602ff3fa7021accf63659a4050ebc3ba966a3dbfb6d63bd01851f5737345a"
+    }
+  ]
+}

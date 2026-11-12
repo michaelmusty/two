@@ -1,0 +1,2659 @@
+{
+  "status": "pass",
+  "milestone": "D156",
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_config_d156.json",
+    "sha256": "db255a0cf6dd07be16e3b539e78acb62c46b36507687887b436953984b2e2e67"
+  },
+  "seed_bridge": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_seed_bridge_d156.json",
+    "sha256": "0fe3db5f768731d8095db9d6332d27de2268e0c6da682666a223f352957c0060"
+  },
+  "audit_plan": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_audit_plan_d156.json",
+    "sha256": "73a75952530aa132b67a3b74eb63b8c7ce8de9aaf8d636a34012098ef913c496"
+  },
+  "inventory": {
+    "precision_pi": 6400,
+    "seed_precision_pi": 3200,
+    "correction_steps": 96,
+    "single_working_store": true,
+    "scratch_cap_bytes": 2147483648,
+    "weighted_bytes": 449407200,
+    "CM_bytes": 174080000,
+    "phase_inventory": [
+      {
+        "phase": "initial_row_pool",
+        "step": 0,
+        "payload_and_reserve_bytes": 516516238,
+        "metadata_bound_bytes": 9814016,
+        "total_bytes": 526330254
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 0,
+        "payload_and_reserve_bytes": 523197838,
+        "metadata_bound_bytes": 13983744,
+        "total_bytes": 537181582
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 0,
+        "payload_and_reserve_bytes": 525425038,
+        "metadata_bound_bytes": 13983744,
+        "total_bytes": 539408782
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 0,
+        "payload_and_reserve_bytes": 527652238,
+        "metadata_bound_bytes": 13983744,
+        "total_bytes": 541635982
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 0,
+        "payload_and_reserve_bytes": 529879438,
+        "metadata_bound_bytes": 13983744,
+        "total_bytes": 543863182
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 0,
+        "payload_and_reserve_bytes": 530590640,
+        "metadata_bound_bytes": 13983744,
+        "total_bytes": 544574384
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 0,
+        "payload_and_reserve_bytes": 739236238,
+        "metadata_bound_bytes": 13983744,
+        "total_bytes": 753219982
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 1,
+        "payload_and_reserve_bytes": 743690464,
+        "metadata_bound_bytes": 13508608,
+        "total_bytes": 757199072
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 1,
+        "payload_and_reserve_bytes": 745917664,
+        "metadata_bound_bytes": 13508608,
+        "total_bytes": 759426272
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 1,
+        "payload_and_reserve_bytes": 751416064,
+        "metadata_bound_bytes": 13508608,
+        "total_bytes": 764924672
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 1,
+        "payload_and_reserve_bytes": 959659264,
+        "metadata_bound_bytes": 13508608,
+        "total_bytes": 973167872
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 2,
+        "payload_and_reserve_bytes": 741393664,
+        "metadata_bound_bytes": 14508032,
+        "total_bytes": 755901696
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 2,
+        "payload_and_reserve_bytes": 743620864,
+        "metadata_bound_bytes": 14508032,
+        "total_bytes": 758128896
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 2,
+        "payload_and_reserve_bytes": 749092864,
+        "metadata_bound_bytes": 14508032,
+        "total_bytes": 763600896
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 2,
+        "payload_and_reserve_bytes": 950703136,
+        "metadata_bound_bytes": 14508032,
+        "total_bytes": 965211168
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 3,
+        "payload_and_reserve_bytes": 734689792,
+        "metadata_bound_bytes": 15507456,
+        "total_bytes": 750197248
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 3,
+        "payload_and_reserve_bytes": 736827904,
+        "metadata_bound_bytes": 15507456,
+        "total_bytes": 752335360
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 3,
+        "payload_and_reserve_bytes": 742267904,
+        "metadata_bound_bytes": 15507456,
+        "total_bytes": 757775360
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 3,
+        "payload_and_reserve_bytes": 941792944,
+        "metadata_bound_bytes": 15507456,
+        "total_bytes": 957300400
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 4,
+        "payload_and_reserve_bytes": 732438928,
+        "metadata_bound_bytes": 16506880,
+        "total_bytes": 748945808
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 4,
+        "payload_and_reserve_bytes": 734577040,
+        "metadata_bound_bytes": 16506880,
+        "total_bytes": 751083920
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 4,
+        "payload_and_reserve_bytes": 739991168,
+        "metadata_bound_bytes": 16506880,
+        "total_bytes": 756498048
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 4,
+        "payload_and_reserve_bytes": 933020560,
+        "metadata_bound_bytes": 16506880,
+        "total_bytes": 949527440
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 5,
+        "payload_and_reserve_bytes": 725872864,
+        "metadata_bound_bytes": 17506304,
+        "total_bytes": 743379168
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 5,
+        "payload_and_reserve_bytes": 727921888,
+        "metadata_bound_bytes": 17506304,
+        "total_bytes": 745428192
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 5,
+        "payload_and_reserve_bytes": 733305600,
+        "metadata_bound_bytes": 17506304,
+        "total_bytes": 750811904
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 5,
+        "payload_and_reserve_bytes": 924294112,
+        "metadata_bound_bytes": 17506304,
+        "total_bytes": 941800416
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 6,
+        "payload_and_reserve_bytes": 723667936,
+        "metadata_bound_bytes": 18505728,
+        "total_bytes": 742173664
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 6,
+        "payload_and_reserve_bytes": 725716960,
+        "metadata_bound_bytes": 18505728,
+        "total_bytes": 744222688
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 6,
+        "payload_and_reserve_bytes": 731075328,
+        "metadata_bound_bytes": 18505728,
+        "total_bytes": 749581056
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 6,
+        "payload_and_reserve_bytes": 915705472,
+        "metadata_bound_bytes": 18505728,
+        "total_bytes": 934211200
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 7,
+        "payload_and_reserve_bytes": 717239680,
+        "metadata_bound_bytes": 19505152,
+        "total_bytes": 736744832
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 7,
+        "payload_and_reserve_bytes": 719199616,
+        "metadata_bound_bytes": 19505152,
+        "total_bytes": 738704768
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 7,
+        "payload_and_reserve_bytes": 724529152,
+        "metadata_bound_bytes": 19505152,
+        "total_bytes": 744034304
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 7,
+        "payload_and_reserve_bytes": 907162768,
+        "metadata_bound_bytes": 19505152,
+        "total_bytes": 926667920
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 8,
+        "payload_and_reserve_bytes": 715080688,
+        "metadata_bound_bytes": 20504576,
+        "total_bytes": 735585264
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 8,
+        "payload_and_reserve_bytes": 717040624,
+        "metadata_bound_bytes": 20504576,
+        "total_bytes": 737545200
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 8,
+        "payload_and_reserve_bytes": 722345344,
+        "metadata_bound_bytes": 20504576,
+        "total_bytes": 742849920
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 8,
+        "payload_and_reserve_bytes": 898757872,
+        "metadata_bound_bytes": 20504576,
+        "total_bytes": 919262448
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 9,
+        "payload_and_reserve_bytes": 708790240,
+        "metadata_bound_bytes": 21504000,
+        "total_bytes": 730294240
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 9,
+        "payload_and_reserve_bytes": 710661088,
+        "metadata_bound_bytes": 21504000,
+        "total_bytes": 732165088
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 9,
+        "payload_and_reserve_bytes": 715938560,
+        "metadata_bound_bytes": 21504000,
+        "total_bytes": 737442560
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 9,
+        "payload_and_reserve_bytes": 890398912,
+        "metadata_bound_bytes": 21504000,
+        "total_bytes": 911902912
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 10,
+        "payload_and_reserve_bytes": 706677184,
+        "metadata_bound_bytes": 22503424,
+        "total_bytes": 729180608
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 10,
+        "payload_and_reserve_bytes": 708548032,
+        "metadata_bound_bytes": 22503424,
+        "total_bytes": 731051456
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 10,
+        "payload_and_reserve_bytes": 713801216,
+        "metadata_bound_bytes": 22503424,
+        "total_bytes": 736304640
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 10,
+        "payload_and_reserve_bytes": 882177760,
+        "metadata_bound_bytes": 22503424,
+        "total_bytes": 904681184
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 11,
+        "payload_and_reserve_bytes": 700524544,
+        "metadata_bound_bytes": 23502848,
+        "total_bytes": 724027392
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 11,
+        "payload_and_reserve_bytes": 702306304,
+        "metadata_bound_bytes": 23502848,
+        "total_bytes": 725809152
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 11,
+        "payload_and_reserve_bytes": 707533824,
+        "metadata_bound_bytes": 23502848,
+        "total_bytes": 731036672
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 11,
+        "payload_and_reserve_bytes": 874002544,
+        "metadata_bound_bytes": 23502848,
+        "total_bytes": 897505392
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 12,
+        "payload_and_reserve_bytes": 698457424,
+        "metadata_bound_bytes": 24502272,
+        "total_bytes": 722959696
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 12,
+        "payload_and_reserve_bytes": 700239184,
+        "metadata_bound_bytes": 24502272,
+        "total_bytes": 724741456
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 12,
+        "payload_and_reserve_bytes": 705442944,
+        "metadata_bound_bytes": 24502272,
+        "total_bytes": 729945216
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 12,
+        "payload_and_reserve_bytes": 865965136,
+        "metadata_bound_bytes": 24502272,
+        "total_bytes": 890467408
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 13,
+        "payload_and_reserve_bytes": 692442592,
+        "metadata_bound_bytes": 25501696,
+        "total_bytes": 717944288
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 13,
+        "payload_and_reserve_bytes": 694135264,
+        "metadata_bound_bytes": 25501696,
+        "total_bytes": 719636960
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 13,
+        "payload_and_reserve_bytes": 699314944,
+        "metadata_bound_bytes": 25501696,
+        "total_bytes": 724816640
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 13,
+        "payload_and_reserve_bytes": 857973664,
+        "metadata_bound_bytes": 25501696,
+        "total_bytes": 883475360
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 14,
+        "payload_and_reserve_bytes": 690421408,
+        "metadata_bound_bytes": 26501120,
+        "total_bytes": 716922528
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 14,
+        "payload_and_reserve_bytes": 692114080,
+        "metadata_bound_bytes": 26501120,
+        "total_bytes": 718615200
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 14,
+        "payload_and_reserve_bytes": 697270528,
+        "metadata_bound_bytes": 26501120,
+        "total_bytes": 723771648
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 14,
+        "payload_and_reserve_bytes": 850120000,
+        "metadata_bound_bytes": 26501120,
+        "total_bytes": 876621120
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 15,
+        "payload_and_reserve_bytes": 684544384,
+        "metadata_bound_bytes": 27500544,
+        "total_bytes": 712044928
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 15,
+        "payload_and_reserve_bytes": 686147968,
+        "metadata_bound_bytes": 27500544,
+        "total_bytes": 713648512
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 15,
+        "payload_and_reserve_bytes": 691281920,
+        "metadata_bound_bytes": 27500544,
+        "total_bytes": 718782464
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 15,
+        "payload_and_reserve_bytes": 842312272,
+        "metadata_bound_bytes": 27500544,
+        "total_bytes": 869812816
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 16,
+        "payload_and_reserve_bytes": 682569136,
+        "metadata_bound_bytes": 28499968,
+        "total_bytes": 711069104
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 16,
+        "payload_and_reserve_bytes": 684172720,
+        "metadata_bound_bytes": 28499968,
+        "total_bytes": 712672688
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 16,
+        "payload_and_reserve_bytes": 689283968,
+        "metadata_bound_bytes": 28499968,
+        "total_bytes": 717783936
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 16,
+        "payload_and_reserve_bytes": 834642352,
+        "metadata_bound_bytes": 28499968,
+        "total_bytes": 863142320
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 17,
+        "payload_and_reserve_bytes": 676829920,
+        "metadata_bound_bytes": 29499392,
+        "total_bytes": 706329312
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 17,
+        "payload_and_reserve_bytes": 678344416,
+        "metadata_bound_bytes": 29499392,
+        "total_bytes": 707843808
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 17,
+        "payload_and_reserve_bytes": 683434752,
+        "metadata_bound_bytes": 29499392,
+        "total_bytes": 712934144
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 17,
+        "payload_and_reserve_bytes": 827018368,
+        "metadata_bound_bytes": 29499392,
+        "total_bytes": 856517760
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 18,
+        "payload_and_reserve_bytes": 674900608,
+        "metadata_bound_bytes": 30498816,
+        "total_bytes": 705399424
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 18,
+        "payload_and_reserve_bytes": 676415104,
+        "metadata_bound_bytes": 30498816,
+        "total_bytes": 706913920
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 18,
+        "payload_and_reserve_bytes": 681483264,
+        "metadata_bound_bytes": 30498816,
+        "total_bytes": 711982080
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 18,
+        "payload_and_reserve_bytes": 819532192,
+        "metadata_bound_bytes": 30498816,
+        "total_bytes": 850031008
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 19,
+        "payload_and_reserve_bytes": 669299200,
+        "metadata_bound_bytes": 31498240,
+        "total_bytes": 700797440
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 19,
+        "payload_and_reserve_bytes": 670724608,
+        "metadata_bound_bytes": 31498240,
+        "total_bytes": 702222848
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 19,
+        "payload_and_reserve_bytes": 675773440,
+        "metadata_bound_bytes": 31498240,
+        "total_bytes": 707271680
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 19,
+        "payload_and_reserve_bytes": 812091952,
+        "metadata_bound_bytes": 31498240,
+        "total_bytes": 843590192
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 20,
+        "payload_and_reserve_bytes": 667415824,
+        "metadata_bound_bytes": 32497664,
+        "total_bytes": 699913488
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 20,
+        "payload_and_reserve_bytes": 668841232,
+        "metadata_bound_bytes": 32497664,
+        "total_bytes": 701338896
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 20,
+        "payload_and_reserve_bytes": 673868416,
+        "metadata_bound_bytes": 32497664,
+        "total_bytes": 706366080
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 20,
+        "payload_and_reserve_bytes": 804789520,
+        "metadata_bound_bytes": 32497664,
+        "total_bytes": 837287184
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 21,
+        "payload_and_reserve_bytes": 661952224,
+        "metadata_bound_bytes": 33497088,
+        "total_bytes": 695449312
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 21,
+        "payload_and_reserve_bytes": 663288544,
+        "metadata_bound_bytes": 33497088,
+        "total_bytes": 696785632
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 21,
+        "payload_and_reserve_bytes": 668297984,
+        "metadata_bound_bytes": 33497088,
+        "total_bytes": 701795072
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 21,
+        "payload_and_reserve_bytes": 797533024,
+        "metadata_bound_bytes": 33497088,
+        "total_bytes": 831030112
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 22,
+        "payload_and_reserve_bytes": 660114784,
+        "metadata_bound_bytes": 34496512,
+        "total_bytes": 694611296
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 22,
+        "payload_and_reserve_bytes": 661451104,
+        "metadata_bound_bytes": 34496512,
+        "total_bytes": 695947616
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 22,
+        "payload_and_reserve_bytes": 666439424,
+        "metadata_bound_bytes": 34496512,
+        "total_bytes": 700935936
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 22,
+        "payload_and_reserve_bytes": 790414336,
+        "metadata_bound_bytes": 34496512,
+        "total_bytes": 824910848
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 23,
+        "payload_and_reserve_bytes": 654788992,
+        "metadata_bound_bytes": 35495936,
+        "total_bytes": 690284928
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 23,
+        "payload_and_reserve_bytes": 656036224,
+        "metadata_bound_bytes": 35495936,
+        "total_bytes": 691532160
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 23,
+        "payload_and_reserve_bytes": 661008384,
+        "metadata_bound_bytes": 35495936,
+        "total_bytes": 696504320
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 23,
+        "payload_and_reserve_bytes": 783341584,
+        "metadata_bound_bytes": 35495936,
+        "total_bytes": 818837520
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 24,
+        "payload_and_reserve_bytes": 652997488,
+        "metadata_bound_bytes": 36495360,
+        "total_bytes": 689492848
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 24,
+        "payload_and_reserve_bytes": 654244720,
+        "metadata_bound_bytes": 36495360,
+        "total_bytes": 690740080
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 24,
+        "payload_and_reserve_bytes": 659196288,
+        "metadata_bound_bytes": 36495360,
+        "total_bytes": 695691648
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 24,
+        "payload_and_reserve_bytes": 776406640,
+        "metadata_bound_bytes": 36495360,
+        "total_bytes": 812902000
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 25,
+        "payload_and_reserve_bytes": 647809504,
+        "metadata_bound_bytes": 37494784,
+        "total_bytes": 685304288
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 25,
+        "payload_and_reserve_bytes": 648967648,
+        "metadata_bound_bytes": 37494784,
+        "total_bytes": 686462432
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 25,
+        "payload_and_reserve_bytes": 653904640,
+        "metadata_bound_bytes": 37494784,
+        "total_bytes": 691399424
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 25,
+        "payload_and_reserve_bytes": 769517632,
+        "metadata_bound_bytes": 37494784,
+        "total_bytes": 807012416
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 26,
+        "payload_and_reserve_bytes": 646063936,
+        "metadata_bound_bytes": 38494208,
+        "total_bytes": 684558144
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 26,
+        "payload_and_reserve_bytes": 647222080,
+        "metadata_bound_bytes": 38494208,
+        "total_bytes": 685716288
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 26,
+        "payload_and_reserve_bytes": 652139008,
+        "metadata_bound_bytes": 38494208,
+        "total_bytes": 690633216
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 26,
+        "payload_and_reserve_bytes": 762766432,
+        "metadata_bound_bytes": 38494208,
+        "total_bytes": 801260640
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 27,
+        "payload_and_reserve_bytes": 641013760,
+        "metadata_bound_bytes": 39493632,
+        "total_bytes": 680507392
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 27,
+        "payload_and_reserve_bytes": 642082816,
+        "metadata_bound_bytes": 39493632,
+        "total_bytes": 681576448
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 27,
+        "payload_and_reserve_bytes": 646986752,
+        "metadata_bound_bytes": 39493632,
+        "total_bytes": 686480384
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 27,
+        "payload_and_reserve_bytes": 756061168,
+        "metadata_bound_bytes": 39493632,
+        "total_bytes": 795554800
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 28,
+        "payload_and_reserve_bytes": 639314128,
+        "metadata_bound_bytes": 40493056,
+        "total_bytes": 679807184
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 28,
+        "payload_and_reserve_bytes": 640383184,
+        "metadata_bound_bytes": 40493056,
+        "total_bytes": 680876240
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 28,
+        "payload_and_reserve_bytes": 645267584,
+        "metadata_bound_bytes": 40493056,
+        "total_bytes": 685760640
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 28,
+        "payload_and_reserve_bytes": 749493712,
+        "metadata_bound_bytes": 40493056,
+        "total_bytes": 789986768
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 29,
+        "payload_and_reserve_bytes": 634401760,
+        "metadata_bound_bytes": 41492480,
+        "total_bytes": 675894240
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 29,
+        "payload_and_reserve_bytes": 635381728,
+        "metadata_bound_bytes": 41492480,
+        "total_bytes": 676874208
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 29,
+        "payload_and_reserve_bytes": 640254720,
+        "metadata_bound_bytes": 41492480,
+        "total_bytes": 681747200
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 29,
+        "payload_and_reserve_bytes": 742972192,
+        "metadata_bound_bytes": 41492480,
+        "total_bytes": 784464672
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 30,
+        "payload_and_reserve_bytes": 632748064,
+        "metadata_bound_bytes": 42491904,
+        "total_bytes": 675239968
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 30,
+        "payload_and_reserve_bytes": 633728032,
+        "metadata_bound_bytes": 42491904,
+        "total_bytes": 676219936
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 30,
+        "payload_and_reserve_bytes": 638582016,
+        "metadata_bound_bytes": 42491904,
+        "total_bytes": 681073920
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 30,
+        "payload_and_reserve_bytes": 736588480,
+        "metadata_bound_bytes": 42491904,
+        "total_bytes": 779080384
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 31,
+        "payload_and_reserve_bytes": 627973504,
+        "metadata_bound_bytes": 43491328,
+        "total_bytes": 671464832
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 31,
+        "payload_and_reserve_bytes": 628864384,
+        "metadata_bound_bytes": 43491328,
+        "total_bytes": 672355712
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 31,
+        "payload_and_reserve_bytes": 633708544,
+        "metadata_bound_bytes": 43491328,
+        "total_bytes": 677199872
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 31,
+        "payload_and_reserve_bytes": 730250704,
+        "metadata_bound_bytes": 43491328,
+        "total_bytes": 773742032
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 32,
+        "payload_and_reserve_bytes": 626365744,
+        "metadata_bound_bytes": 44490752,
+        "total_bytes": 670856496
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 32,
+        "payload_and_reserve_bytes": 627256624,
+        "metadata_bound_bytes": 44490752,
+        "total_bytes": 671747376
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 32,
+        "payload_and_reserve_bytes": 632082304,
+        "metadata_bound_bytes": 44490752,
+        "total_bytes": 676573056
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 32,
+        "payload_and_reserve_bytes": 724050736,
+        "metadata_bound_bytes": 44490752,
+        "total_bytes": 768541488
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 33,
+        "payload_and_reserve_bytes": 621728992,
+        "metadata_bound_bytes": 45490176,
+        "total_bytes": 667219168
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 33,
+        "payload_and_reserve_bytes": 622530784,
+        "metadata_bound_bytes": 45490176,
+        "total_bytes": 668020960
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 33,
+        "payload_and_reserve_bytes": 627348224,
+        "metadata_bound_bytes": 45490176,
+        "total_bytes": 672838400
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 33,
+        "payload_and_reserve_bytes": 714958192,
+        "metadata_bound_bytes": 45490176,
+        "total_bytes": 760448368
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 34,
+        "payload_and_reserve_bytes": 617184112,
+        "metadata_bound_bytes": 46489600,
+        "total_bytes": 663673712
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 34,
+        "payload_and_reserve_bytes": 617896816,
+        "metadata_bound_bytes": 46489600,
+        "total_bytes": 664386416
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 34,
+        "payload_and_reserve_bytes": 622707072,
+        "metadata_bound_bytes": 46489600,
+        "total_bytes": 669196672
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 34,
+        "payload_and_reserve_bytes": 708941968,
+        "metadata_bound_bytes": 46489600,
+        "total_bytes": 755431568
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 35,
+        "payload_and_reserve_bytes": 615668224,
+        "metadata_bound_bytes": 47489024,
+        "total_bytes": 663157248
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 35,
+        "payload_and_reserve_bytes": 616380928,
+        "metadata_bound_bytes": 47489024,
+        "total_bytes": 663869952
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 35,
+        "payload_and_reserve_bytes": 621173760,
+        "metadata_bound_bytes": 47489024,
+        "total_bytes": 668662784
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 35,
+        "payload_and_reserve_bytes": 703063552,
+        "metadata_bound_bytes": 47489024,
+        "total_bytes": 750552576
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 36,
+        "payload_and_reserve_bytes": 611261152,
+        "metadata_bound_bytes": 48488448,
+        "total_bytes": 659749600
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 36,
+        "payload_and_reserve_bytes": 611884768,
+        "metadata_bound_bytes": 48488448,
+        "total_bytes": 660373216
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 36,
+        "payload_and_reserve_bytes": 616672000,
+        "metadata_bound_bytes": 48488448,
+        "total_bytes": 665160448
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 36,
+        "payload_and_reserve_bytes": 697231072,
+        "metadata_bound_bytes": 48488448,
+        "total_bytes": 745719520
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 37,
+        "payload_and_reserve_bytes": 609791200,
+        "metadata_bound_bytes": 49487872,
+        "total_bytes": 659279072
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 37,
+        "payload_and_reserve_bytes": 610414816,
+        "metadata_bound_bytes": 49487872,
+        "total_bytes": 659902688
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 37,
+        "payload_and_reserve_bytes": 615185152,
+        "metadata_bound_bytes": 49487872,
+        "total_bytes": 664673024
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 37,
+        "payload_and_reserve_bytes": 691536400,
+        "metadata_bound_bytes": 49487872,
+        "total_bytes": 741024272
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 38,
+        "payload_and_reserve_bytes": 605521936,
+        "metadata_bound_bytes": 50487296,
+        "total_bytes": 656009232
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 38,
+        "payload_and_reserve_bytes": 606056464,
+        "metadata_bound_bytes": 50487296,
+        "total_bytes": 656543760
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 38,
+        "payload_and_reserve_bytes": 610822784,
+        "metadata_bound_bytes": 50487296,
+        "total_bytes": 661310080
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 38,
+        "payload_and_reserve_bytes": 685887664,
+        "metadata_bound_bytes": 50487296,
+        "total_bytes": 736374960
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 39,
+        "payload_and_reserve_bytes": 604097920,
+        "metadata_bound_bytes": 51486720,
+        "total_bytes": 655584640
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 39,
+        "payload_and_reserve_bytes": 604632448,
+        "metadata_bound_bytes": 51486720,
+        "total_bytes": 656119168
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 39,
+        "payload_and_reserve_bytes": 609382400,
+        "metadata_bound_bytes": 51486720,
+        "total_bytes": 660869120
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 39,
+        "payload_and_reserve_bytes": 680376736,
+        "metadata_bound_bytes": 51486720,
+        "total_bytes": 731863456
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 40,
+        "payload_and_reserve_bytes": 599966464,
+        "metadata_bound_bytes": 52486144,
+        "total_bytes": 652452608
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 40,
+        "payload_and_reserve_bytes": 600411904,
+        "metadata_bound_bytes": 52486144,
+        "total_bytes": 652898048
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 40,
+        "payload_and_reserve_bytes": 605159424,
+        "metadata_bound_bytes": 52486144,
+        "total_bytes": 657645568
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 40,
+        "payload_and_reserve_bytes": 674911744,
+        "metadata_bound_bytes": 52486144,
+        "total_bytes": 727397888
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 41,
+        "payload_and_reserve_bytes": 598588384,
+        "metadata_bound_bytes": 53485568,
+        "total_bytes": 652073952
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 41,
+        "payload_and_reserve_bytes": 599033824,
+        "metadata_bound_bytes": 53485568,
+        "total_bytes": 652519392
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 41,
+        "payload_and_reserve_bytes": 603765504,
+        "metadata_bound_bytes": 53485568,
+        "total_bytes": 657251072
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 41,
+        "payload_and_reserve_bytes": 669584560,
+        "metadata_bound_bytes": 53485568,
+        "total_bytes": 723070128
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 42,
+        "payload_and_reserve_bytes": 594594736,
+        "metadata_bound_bytes": 54484992,
+        "total_bytes": 649079728
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 42,
+        "payload_and_reserve_bytes": 594951088,
+        "metadata_bound_bytes": 54484992,
+        "total_bytes": 649436080
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 42,
+        "payload_and_reserve_bytes": 599681920,
+        "metadata_bound_bytes": 54484992,
+        "total_bytes": 654166912
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 42,
+        "payload_and_reserve_bytes": 664303312,
+        "metadata_bound_bytes": 54484992,
+        "total_bytes": 718788304
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 43,
+        "payload_and_reserve_bytes": 593262592,
+        "metadata_bound_bytes": 55484416,
+        "total_bytes": 648747008
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 43,
+        "payload_and_reserve_bytes": 593618944,
+        "metadata_bound_bytes": 55484416,
+        "total_bytes": 649103360
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 43,
+        "payload_and_reserve_bytes": 598334464,
+        "metadata_bound_bytes": 55484416,
+        "total_bytes": 653818880
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 43,
+        "payload_and_reserve_bytes": 659159872,
+        "metadata_bound_bytes": 55484416,
+        "total_bytes": 714644288
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 44,
+        "payload_and_reserve_bytes": 589406752,
+        "metadata_bound_bytes": 56483840,
+        "total_bytes": 645890592
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 44,
+        "payload_and_reserve_bytes": 589674016,
+        "metadata_bound_bytes": 56483840,
+        "total_bytes": 646157856
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 44,
+        "payload_and_reserve_bytes": 594390272,
+        "metadata_bound_bytes": 56483840,
+        "total_bytes": 650874112
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 44,
+        "payload_and_reserve_bytes": 654062368,
+        "metadata_bound_bytes": 56483840,
+        "total_bytes": 710546208
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 45,
+        "payload_and_reserve_bytes": 588120544,
+        "metadata_bound_bytes": 57483264,
+        "total_bytes": 645603808
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 45,
+        "payload_and_reserve_bytes": 588387808,
+        "metadata_bound_bytes": 57483264,
+        "total_bytes": 645871072
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 45,
+        "payload_and_reserve_bytes": 593089280,
+        "metadata_bound_bytes": 57483264,
+        "total_bytes": 650572544
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 45,
+        "payload_and_reserve_bytes": 649102672,
+        "metadata_bound_bytes": 57483264,
+        "total_bytes": 706585936
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 46,
+        "payload_and_reserve_bytes": 584402512,
+        "metadata_bound_bytes": 58482688,
+        "total_bytes": 642885200
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 46,
+        "payload_and_reserve_bytes": 584580688,
+        "metadata_bound_bytes": 58482688,
+        "total_bytes": 643063376
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 46,
+        "payload_and_reserve_bytes": 589284480,
+        "metadata_bound_bytes": 58482688,
+        "total_bytes": 647767168
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 46,
+        "payload_and_reserve_bytes": 644188912,
+        "metadata_bound_bytes": 58482688,
+        "total_bytes": 702671600
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 47,
+        "payload_and_reserve_bytes": 583162240,
+        "metadata_bound_bytes": 59482112,
+        "total_bytes": 642644352
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 47,
+        "payload_and_reserve_bytes": 583340416,
+        "metadata_bound_bytes": 59482112,
+        "total_bytes": 642822528
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 47,
+        "payload_and_reserve_bytes": 588029952,
+        "metadata_bound_bytes": 59482112,
+        "total_bytes": 647512064
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 47,
+        "payload_and_reserve_bytes": 639412960,
+        "metadata_bound_bytes": 59482112,
+        "total_bytes": 698895072
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 48,
+        "payload_and_reserve_bytes": 579582016,
+        "metadata_bound_bytes": 60481536,
+        "total_bytes": 640063552
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 48,
+        "payload_and_reserve_bytes": 579671104,
+        "metadata_bound_bytes": 60481536,
+        "total_bytes": 640152640
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 48,
+        "payload_and_reserve_bytes": 584364544,
+        "metadata_bound_bytes": 60481536,
+        "total_bytes": 644846080
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 48,
+        "payload_and_reserve_bytes": 634682944,
+        "metadata_bound_bytes": 60481536,
+        "total_bytes": 695164480
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 49,
+        "payload_and_reserve_bytes": 578387680,
+        "metadata_bound_bytes": 61480960,
+        "total_bytes": 639868640
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 49,
+        "payload_and_reserve_bytes": 578476768,
+        "metadata_bound_bytes": 61480960,
+        "total_bytes": 639957728
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 49,
+        "payload_and_reserve_bytes": 583156480,
+        "metadata_bound_bytes": 61480960,
+        "total_bytes": 644637440
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 49,
+        "payload_and_reserve_bytes": 630090736,
+        "metadata_bound_bytes": 61480960,
+        "total_bytes": 691571696
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 50,
+        "payload_and_reserve_bytes": 574945264,
+        "metadata_bound_bytes": 62423040,
+        "total_bytes": 637368304
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 50,
+        "payload_and_reserve_bytes": 579630464,
+        "metadata_bound_bytes": 62423040,
+        "total_bytes": 642053504
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 50,
+        "payload_and_reserve_bytes": 625544464,
+        "metadata_bound_bytes": 62423040,
+        "total_bytes": 687967504
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 51,
+        "payload_and_reserve_bytes": 573796864,
+        "metadata_bound_bytes": 63389696,
+        "total_bytes": 637186560
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 51,
+        "payload_and_reserve_bytes": 578468864,
+        "metadata_bound_bytes": 63389696,
+        "total_bytes": 641858560
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 51,
+        "payload_and_reserve_bytes": 621136000,
+        "metadata_bound_bytes": 63389696,
+        "total_bytes": 684525696
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 52,
+        "payload_and_reserve_bytes": 570403168,
+        "metadata_bound_bytes": 64356352,
+        "total_bytes": 634759520
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 52,
+        "payload_and_reserve_bytes": 575082240,
+        "metadata_bound_bytes": 64356352,
+        "total_bytes": 639438592
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 52,
+        "payload_and_reserve_bytes": 616773472,
+        "metadata_bound_bytes": 64356352,
+        "total_bytes": 681129824
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 53,
+        "payload_and_reserve_bytes": 569300704,
+        "metadata_bound_bytes": 65323008,
+        "total_bytes": 634623712
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 53,
+        "payload_and_reserve_bytes": 573967104,
+        "metadata_bound_bytes": 65323008,
+        "total_bytes": 639290112
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 53,
+        "payload_and_reserve_bytes": 612548752,
+        "metadata_bound_bytes": 65323008,
+        "total_bytes": 677871760
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 54,
+        "payload_and_reserve_bytes": 566044816,
+        "metadata_bound_bytes": 66289664,
+        "total_bytes": 632334480
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 54,
+        "payload_and_reserve_bytes": 570719872,
+        "metadata_bound_bytes": 66289664,
+        "total_bytes": 637009536
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 54,
+        "payload_and_reserve_bytes": 608369968,
+        "metadata_bound_bytes": 66289664,
+        "total_bytes": 674659632
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 55,
+        "payload_and_reserve_bytes": 564988288,
+        "metadata_bound_bytes": 67256320,
+        "total_bytes": 632244608
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 55,
+        "payload_and_reserve_bytes": 569651200,
+        "metadata_bound_bytes": 67256320,
+        "total_bytes": 636907520
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 55,
+        "payload_and_reserve_bytes": 604328992,
+        "metadata_bound_bytes": 67256320,
+        "total_bytes": 671585312
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 56,
+        "payload_and_reserve_bytes": 561870208,
+        "metadata_bound_bytes": 68222976,
+        "total_bytes": 630093184
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 56,
+        "payload_and_reserve_bytes": 566543360,
+        "metadata_bound_bytes": 68222976,
+        "total_bytes": 634766336
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 56,
+        "payload_and_reserve_bytes": 600333952,
+        "metadata_bound_bytes": 68222976,
+        "total_bytes": 668556928
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 57,
+        "payload_and_reserve_bytes": 560859616,
+        "metadata_bound_bytes": 69189632,
+        "total_bytes": 630049248
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 57,
+        "payload_and_reserve_bytes": 565521152,
+        "metadata_bound_bytes": 69189632,
+        "total_bytes": 634710784
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 57,
+        "payload_and_reserve_bytes": 596476720,
+        "metadata_bound_bytes": 69189632,
+        "total_bytes": 665666352
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 58,
+        "payload_and_reserve_bytes": 557879344,
+        "metadata_bound_bytes": 70156288,
+        "total_bytes": 628035632
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 58,
+        "payload_and_reserve_bytes": 562552704,
+        "metadata_bound_bytes": 70156288,
+        "total_bytes": 632708992
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 58,
+        "payload_and_reserve_bytes": 592665424,
+        "metadata_bound_bytes": 70156288,
+        "total_bytes": 662821712
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 59,
+        "payload_and_reserve_bytes": 556914688,
+        "metadata_bound_bytes": 71122944,
+        "total_bytes": 628037632
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 59,
+        "payload_and_reserve_bytes": 561576960,
+        "metadata_bound_bytes": 71122944,
+        "total_bytes": 632699904
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 59,
+        "payload_and_reserve_bytes": 588991936,
+        "metadata_bound_bytes": 71122944,
+        "total_bytes": 660114880
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 60,
+        "payload_and_reserve_bytes": 554072224,
+        "metadata_bound_bytes": 72089600,
+        "total_bytes": 626161824
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 60,
+        "payload_and_reserve_bytes": 558747904,
+        "metadata_bound_bytes": 72089600,
+        "total_bytes": 630837504
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 60,
+        "payload_and_reserve_bytes": 585364384,
+        "metadata_bound_bytes": 72089600,
+        "total_bytes": 657453984
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 61,
+        "payload_and_reserve_bytes": 553153504,
+        "metadata_bound_bytes": 73056256,
+        "total_bytes": 626209760
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 61,
+        "payload_and_reserve_bytes": 557818624,
+        "metadata_bound_bytes": 73056256,
+        "total_bytes": 630874880
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 61,
+        "payload_and_reserve_bytes": 581874640,
+        "metadata_bound_bytes": 73056256,
+        "total_bytes": 654930896
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 62,
+        "payload_and_reserve_bytes": 550448848,
+        "metadata_bound_bytes": 74022912,
+        "total_bytes": 624471760
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 62,
+        "payload_and_reserve_bytes": 555128960,
+        "metadata_bound_bytes": 74022912,
+        "total_bytes": 629151872
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 62,
+        "payload_and_reserve_bytes": 578430832,
+        "metadata_bound_bytes": 74022912,
+        "total_bytes": 652453744
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 63,
+        "payload_and_reserve_bytes": 549576064,
+        "metadata_bound_bytes": 74989568,
+        "total_bytes": 624565632
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 63,
+        "payload_and_reserve_bytes": 554246144,
+        "metadata_bound_bytes": 74989568,
+        "total_bytes": 629235712
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 63,
+        "payload_and_reserve_bytes": 575124832,
+        "metadata_bound_bytes": 74989568,
+        "total_bytes": 650114400
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 64,
+        "payload_and_reserve_bytes": 547009216,
+        "metadata_bound_bytes": 75956224,
+        "total_bytes": 622965440
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 64,
+        "payload_and_reserve_bytes": 551695872,
+        "metadata_bound_bytes": 75956224,
+        "total_bytes": 627652096
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 64,
+        "payload_and_reserve_bytes": 570350272,
+        "metadata_bound_bytes": 75956224,
+        "total_bytes": 646306496
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 65,
+        "payload_and_reserve_bytes": 544534240,
+        "metadata_bound_bytes": 76922880,
+        "total_bytes": 621457120
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 65,
+        "payload_and_reserve_bytes": 549238528,
+        "metadata_bound_bytes": 76922880,
+        "total_bytes": 626161408
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 65,
+        "payload_and_reserve_bytes": 567228016,
+        "metadata_bound_bytes": 76922880,
+        "total_bytes": 644150896
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 66,
+        "payload_and_reserve_bytes": 543753328,
+        "metadata_bound_bytes": 77889536,
+        "total_bytes": 621642864
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 66,
+        "payload_and_reserve_bytes": 548448640,
+        "metadata_bound_bytes": 77889536,
+        "total_bytes": 626338176
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 66,
+        "payload_and_reserve_bytes": 564243568,
+        "metadata_bound_bytes": 77889536,
+        "total_bytes": 642133104
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 67,
+        "payload_and_reserve_bytes": 541416160,
+        "metadata_bound_bytes": 78856192,
+        "total_bytes": 620272352
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 67,
+        "payload_and_reserve_bytes": 546130688,
+        "metadata_bound_bytes": 78856192,
+        "total_bytes": 624986880
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 67,
+        "payload_and_reserve_bytes": 561305056,
+        "metadata_bound_bytes": 78856192,
+        "total_bytes": 640161248
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 68,
+        "payload_and_reserve_bytes": 540681184,
+        "metadata_bound_bytes": 79822848,
+        "total_bytes": 620504032
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 68,
+        "payload_and_reserve_bytes": 545387264,
+        "metadata_bound_bytes": 79822848,
+        "total_bytes": 625210112
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 68,
+        "payload_and_reserve_bytes": 558504352,
+        "metadata_bound_bytes": 79822848,
+        "total_bytes": 638327200
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 69,
+        "payload_and_reserve_bytes": 538481824,
+        "metadata_bound_bytes": 80789504,
+        "total_bytes": 619271328
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 69,
+        "payload_and_reserve_bytes": 543208704,
+        "metadata_bound_bytes": 80789504,
+        "total_bytes": 623998208
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 69,
+        "payload_and_reserve_bytes": 555749584,
+        "metadata_bound_bytes": 80789504,
+        "total_bytes": 636539088
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 70,
+        "payload_and_reserve_bytes": 537792784,
+        "metadata_bound_bytes": 81756160,
+        "total_bytes": 619548944
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 70,
+        "payload_and_reserve_bytes": 542511744,
+        "metadata_bound_bytes": 81756160,
+        "total_bytes": 624267904
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 70,
+        "payload_and_reserve_bytes": 553132624,
+        "metadata_bound_bytes": 81756160,
+        "total_bytes": 634888784
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 71,
+        "payload_and_reserve_bytes": 535731232,
+        "metadata_bound_bytes": 82722816,
+        "total_bytes": 618454048
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 71,
+        "payload_and_reserve_bytes": 540472576,
+        "metadata_bound_bytes": 82722816,
+        "total_bytes": 623195392
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 71,
+        "payload_and_reserve_bytes": 550561600,
+        "metadata_bound_bytes": 82722816,
+        "total_bytes": 633284416
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 72,
+        "payload_and_reserve_bytes": 535088128,
+        "metadata_bound_bytes": 83689472,
+        "total_bytes": 618777600
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 72,
+        "payload_and_reserve_bytes": 539822080,
+        "metadata_bound_bytes": 83689472,
+        "total_bytes": 623511552
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 72,
+        "payload_and_reserve_bytes": 548128384,
+        "metadata_bound_bytes": 83689472,
+        "total_bytes": 631817856
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 73,
+        "payload_and_reserve_bytes": 533164384,
+        "metadata_bound_bytes": 84656128,
+        "total_bytes": 617820512
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 73,
+        "payload_and_reserve_bytes": 537922304,
+        "metadata_bound_bytes": 84656128,
+        "total_bytes": 622578432
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 73,
+        "payload_and_reserve_bytes": 545741104,
+        "metadata_bound_bytes": 84656128,
+        "total_bytes": 630397232
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 74,
+        "payload_and_reserve_bytes": 532567216,
+        "metadata_bound_bytes": 85622784,
+        "total_bytes": 618190000
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 74,
+        "payload_and_reserve_bytes": 537318272,
+        "metadata_bound_bytes": 85622784,
+        "total_bytes": 622941056
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 74,
+        "payload_and_reserve_bytes": 543491632,
+        "metadata_bound_bytes": 85622784,
+        "total_bytes": 629114416
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 75,
+        "payload_and_reserve_bytes": 530781280,
+        "metadata_bound_bytes": 86589440,
+        "total_bytes": 617370720
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 75,
+        "payload_and_reserve_bytes": 535557888,
+        "metadata_bound_bytes": 86589440,
+        "total_bytes": 622147328
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 75,
+        "payload_and_reserve_bytes": 541288096,
+        "metadata_bound_bytes": 86589440,
+        "total_bytes": 627877536
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 76,
+        "payload_and_reserve_bytes": 530230048,
+        "metadata_bound_bytes": 87556096,
+        "total_bytes": 617786144
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 76,
+        "payload_and_reserve_bytes": 535000320,
+        "metadata_bound_bytes": 87556096,
+        "total_bytes": 622556416
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 76,
+        "payload_and_reserve_bytes": 539222368,
+        "metadata_bound_bytes": 87556096,
+        "total_bytes": 626778464
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 77,
+        "payload_and_reserve_bytes": 528581920,
+        "metadata_bound_bytes": 88522752,
+        "total_bytes": 617104672
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 77,
+        "payload_and_reserve_bytes": 533379328,
+        "metadata_bound_bytes": 88522752,
+        "total_bytes": 621902080
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 77,
+        "payload_and_reserve_bytes": 537202576,
+        "metadata_bound_bytes": 88522752,
+        "total_bytes": 625725328
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 78,
+        "payload_and_reserve_bytes": 528076624,
+        "metadata_bound_bytes": 89489408,
+        "total_bytes": 617566032
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 78,
+        "payload_and_reserve_bytes": 532868224,
+        "metadata_bound_bytes": 89489408,
+        "total_bytes": 622357632
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 78,
+        "payload_and_reserve_bytes": 535320592,
+        "metadata_bound_bytes": 89489408,
+        "total_bytes": 624810000
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 79,
+        "payload_and_reserve_bytes": 526566304,
+        "metadata_bound_bytes": 90456064,
+        "total_bytes": 617022368
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 79,
+        "payload_and_reserve_bytes": 531386624,
+        "metadata_bound_bytes": 90456064,
+        "total_bytes": 621842688
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 79,
+        "payload_and_reserve_bytes": 533484544,
+        "metadata_bound_bytes": 90456064,
+        "total_bytes": 623940608
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 80,
+        "payload_and_reserve_bytes": 526106944,
+        "metadata_bound_bytes": 91422720,
+        "total_bytes": 617529664
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 80,
+        "payload_and_reserve_bytes": 530921984,
+        "metadata_bound_bytes": 91422720,
+        "total_bytes": 622344704
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 80,
+        "payload_and_reserve_bytes": 531786304,
+        "metadata_bound_bytes": 91422720,
+        "total_bytes": 623209024
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 81,
+        "payload_and_reserve_bytes": 524734432,
+        "metadata_bound_bytes": 92389376,
+        "total_bytes": 617123808
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 81,
+        "payload_and_reserve_bytes": 529579776,
+        "metadata_bound_bytes": 92389376,
+        "total_bytes": 621969152
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 81,
+        "payload_and_reserve_bytes": 530134000,
+        "metadata_bound_bytes": 92389376,
+        "total_bytes": 622523376
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 82,
+        "payload_and_reserve_bytes": 524321008,
+        "metadata_bound_bytes": 93356032,
+        "total_bytes": 617677040
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 82,
+        "payload_and_reserve_bytes": 529161600,
+        "metadata_bound_bytes": 93356032,
+        "total_bytes": 622517632
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 82,
+        "payload_and_reserve_bytes": 528619504,
+        "metadata_bound_bytes": 93356032,
+        "total_bytes": 621975536
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 83,
+        "payload_and_reserve_bytes": 523086304,
+        "metadata_bound_bytes": 94322688,
+        "total_bytes": 617408992
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 83,
+        "payload_and_reserve_bytes": 527958784,
+        "metadata_bound_bytes": 94322688,
+        "total_bytes": 622281472
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 83,
+        "payload_and_reserve_bytes": 527150944,
+        "metadata_bound_bytes": 94322688,
+        "total_bytes": 621473632
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 84,
+        "payload_and_reserve_bytes": 522718816,
+        "metadata_bound_bytes": 95289344,
+        "total_bytes": 618008160
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 84,
+        "payload_and_reserve_bytes": 527587072,
+        "metadata_bound_bytes": 95289344,
+        "total_bytes": 622876416
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 84,
+        "payload_and_reserve_bytes": 525820192,
+        "metadata_bound_bytes": 95289344,
+        "total_bytes": 621109536
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 85,
+        "payload_and_reserve_bytes": 521621920,
+        "metadata_bound_bytes": 96256000,
+        "total_bytes": 617877920
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 85,
+        "payload_and_reserve_bytes": 526523648,
+        "metadata_bound_bytes": 96256000,
+        "total_bytes": 622779648
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 85,
+        "payload_and_reserve_bytes": 524535376,
+        "metadata_bound_bytes": 96256000,
+        "total_bytes": 620791376
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 86,
+        "payload_and_reserve_bytes": 521300368,
+        "metadata_bound_bytes": 97222656,
+        "total_bytes": 618523024
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 86,
+        "payload_and_reserve_bytes": 526198400,
+        "metadata_bound_bytes": 97222656,
+        "total_bytes": 623421056
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 86,
+        "payload_and_reserve_bytes": 523388368,
+        "metadata_bound_bytes": 97222656,
+        "total_bytes": 620611024
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 87,
+        "payload_and_reserve_bytes": 520341280,
+        "metadata_bound_bytes": 98189312,
+        "total_bytes": 618530592
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 87,
+        "payload_and_reserve_bytes": 525274368,
+        "metadata_bound_bytes": 98189312,
+        "total_bytes": 623463680
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 87,
+        "payload_and_reserve_bytes": 522287296,
+        "metadata_bound_bytes": 98189312,
+        "total_bytes": 620476608
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 88,
+        "payload_and_reserve_bytes": 520065664,
+        "metadata_bound_bytes": 99155968,
+        "total_bytes": 619221632
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 88,
+        "payload_and_reserve_bytes": 524995584,
+        "metadata_bound_bytes": 99155968,
+        "total_bytes": 624151552
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 88,
+        "payload_and_reserve_bytes": 521324032,
+        "metadata_bound_bytes": 99155968,
+        "total_bytes": 620480000
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 89,
+        "payload_and_reserve_bytes": 519244384,
+        "metadata_bound_bytes": 100122624,
+        "total_bytes": 619367008
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 89,
+        "payload_and_reserve_bytes": 524210944,
+        "metadata_bound_bytes": 100122624,
+        "total_bytes": 624333568
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 89,
+        "payload_and_reserve_bytes": 520406704,
+        "metadata_bound_bytes": 100122624,
+        "total_bytes": 620529328
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 90,
+        "payload_and_reserve_bytes": 519014704,
+        "metadata_bound_bytes": 101089280,
+        "total_bytes": 620103984
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 90,
+        "payload_and_reserve_bytes": 523978624,
+        "metadata_bound_bytes": 101089280,
+        "total_bytes": 625067904
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 90,
+        "payload_and_reserve_bytes": 519627184,
+        "metadata_bound_bytes": 101089280,
+        "total_bytes": 620716464
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 91,
+        "payload_and_reserve_bytes": 518331232,
+        "metadata_bound_bytes": 102055936,
+        "total_bytes": 620387168
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 91,
+        "payload_and_reserve_bytes": 523333376,
+        "metadata_bound_bytes": 102055936,
+        "total_bytes": 625389312
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 91,
+        "payload_and_reserve_bytes": 518893600,
+        "metadata_bound_bytes": 102055936,
+        "total_bytes": 620949536
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 92,
+        "payload_and_reserve_bytes": 518147488,
+        "metadata_bound_bytes": 103022592,
+        "total_bytes": 621170080
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 92,
+        "payload_and_reserve_bytes": 523147520,
+        "metadata_bound_bytes": 103022592,
+        "total_bytes": 626170112
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 92,
+        "payload_and_reserve_bytes": 518297824,
+        "metadata_bound_bytes": 103022592,
+        "total_bytes": 621320416
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 93,
+        "payload_and_reserve_bytes": 517601824,
+        "metadata_bound_bytes": 103989248,
+        "total_bytes": 621591072
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 93,
+        "payload_and_reserve_bytes": 522641664,
+        "metadata_bound_bytes": 103989248,
+        "total_bytes": 626630912
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 93,
+        "payload_and_reserve_bytes": 517747984,
+        "metadata_bound_bytes": 103989248,
+        "total_bytes": 621737232
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 94,
+        "payload_and_reserve_bytes": 517464016,
+        "metadata_bound_bytes": 104955904,
+        "total_bytes": 622419920
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 94,
+        "payload_and_reserve_bytes": 522502272,
+        "metadata_bound_bytes": 104955904,
+        "total_bytes": 627458176
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 94,
+        "payload_and_reserve_bytes": 517335952,
+        "metadata_bound_bytes": 104955904,
+        "total_bytes": 622291856
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 95,
+        "payload_and_reserve_bytes": 517056160,
+        "metadata_bound_bytes": 105922560,
+        "total_bytes": 622978720
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 95,
+        "payload_and_reserve_bytes": 522135808,
+        "metadata_bound_bytes": 105922560,
+        "total_bytes": 628058368
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 95,
+        "payload_and_reserve_bytes": 516969856,
+        "metadata_bound_bytes": 105922560,
+        "total_bytes": 622892416
+      },
+      {
+        "phase": "low_residual_solve_verify",
+        "step": 96,
+        "payload_and_reserve_bytes": 516964288,
+        "metadata_bound_bytes": 106889216,
+        "total_bytes": 623853504
+      },
+      {
+        "phase": "journal_prepare",
+        "step": 96,
+        "payload_and_reserve_bytes": 522042880,
+        "metadata_bound_bytes": 106889216,
+        "total_bytes": 628932096
+      },
+      {
+        "phase": "operator_sweep",
+        "step": 96,
+        "payload_and_reserve_bytes": 516742960,
+        "metadata_bound_bytes": 106889216,
+        "total_bytes": 623632176
+      },
+      {
+        "phase": "weighted_verification_CM_publication",
+        "step": 96,
+        "payload_and_reserve_bytes": 690647568,
+        "metadata_bound_bytes": 106192896,
+        "total_bytes": 796840464
+      }
+    ],
+    "maximum_bound": {
+      "phase": "operator_sweep",
+      "step": 1,
+      "payload_and_reserve_bytes": 959659264,
+      "metadata_bound_bytes": 13508608,
+      "total_bytes": 973167872
+    },
+    "margin_bytes": 1174315776,
+    "external_phase_record_allowance_bytes": 725893120,
+    "requires_duplicate_job_record_archival_after_each_sweep": true,
+    "metadata_ceiling_violations_must_stop_before_next_phase": true,
+    "concurrent_RAM_budget_bytes": 6442450944,
+    "per_job_measured_RSS_admission_bytes": 2147483648,
+    "RAM_budget_is_admission_from_measured_peaks_not_OS_hard_limit": true
+  },
+  "direct_seed_native_bindings": 30,
+  "planning_scenario": {
+    "column": 2,
+    "seed": 3200,
+    "target": 6400,
+    "production_jobs": 24456,
+    "archive_jobs": 97,
+    "independent_audit_jobs": 24,
+    "column_review_jobs": 2,
+    "column_jobs": 24579,
+    "working_store_bound_bytes": 973167872,
+    "retained_allowance_bytes": 1254739040,
+    "active_extra_bytes": 349629168,
+    "recommended_free_bytes_including_10GiB_reserve": 12341786448,
+    "rounded_free_gate_bytes": 12884901888,
+    "timing_scenarios": [
+      {
+        "scenario": 0,
+        "column_cycle_seconds": 34364.67076231972,
+        "graph_review_seconds_allowance": 4052.730729878187,
+        "common_comparison_seconds_allowance": 424.3694602327887,
+        "total_active_hours": 10.78938082011964
+      },
+      {
+        "scenario": 1,
+        "column_cycle_seconds": 43133.740370552194,
+        "graph_review_seconds_allowance": 6079.096094817281,
+        "common_comparison_seconds_allowance": 424.3694602327887,
+        "total_active_hours": 13.78811275711174
+      }
+    ],
+    "retained_overhead_source": "D139 one-target-column graph allowance plus D152 common comparison allowance",
+    "timing_is_not_a_bound_or_deadline": true,
+    "does_not_measure_P10480_cost": true
+  },
+  "filesystem_observation": {
+    "observed_at": "2026-10-12T16:55:33.135158+00:00",
+    "free_bytes": 47923200000
+  },
+  "new_moments_evaluated": false,
+  "production_schedule_launched": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "wall_seconds": 0.326720374985598,
+  "peak_rss_bytes": 78479360,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_CM_P3200_col02_d153.json",
+      "sha256": "2db5c173511da2673622beef62d6fa2c0a2205c4f658f6cf9463dd1379aba061"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_adaptive_polynomial_kernel_d124.dylib",
+      "sha256": "727987c1ae8610bfa0b0734ac494bbce62db1956f093eab465e872bff1dc97f6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_block_kernel_d121.dylib",
+      "sha256": "4342eef9f6f6f6770c41a205b77c6982c62cd0ca3d95597c47c578e5d32c5e43"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_harmonic_certificate_d111.json",
+      "sha256": "d4c1a33d9d918767e55a856e6cf85b3d88a5135ae4396ae86977789bc35de84a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_audit_plan_d156.json",
+      "sha256": "73a75952530aa132b67a3b74eb63b8c7ce8de9aaf8d636a34012098ef913c496"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_seed_bridge_d156.json",
+      "sha256": "0fe3db5f768731d8095db9d6332d27de2268e0c6da682666a223f352957c0060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_col02_review_d153.json",
+      "sha256": "18a929925c8443ecce80505c40ed0741547547f4e057f92f3a406f80b56f3966"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_polynomial_kernel_d122.dylib",
+      "sha256": "8f165f930e9605338522757132cc795e0870e98dd8ca11ab77453611a8ae591b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision1600_review_d138.json",
+      "sha256": "303783e953a3ebe5fff18b4fadadb765adfb6f3f2fb6c74d9e6ed4df2fc912a5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision6400_audit_plan_d133.json",
+      "sha256": "76e448b0c6e717c411299e7b5f9831f86c9cbf82a9109e922225238266d2644a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P3200_col02_d153_d132/CM.bin",
+      "sha256": "e775b3ff533b740152d245bcea6c720ec4ba49d182215983b0074802e5940683"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P3200_col02_d153_d132/state.bin",
+      "sha256": "e745adb4d9dbdbe0683ba9ac34dcabdfee8112cd886f241fb48d4e8b3ab4a00b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P3200_col02_d153_seal.json",
+      "sha256": "517aba85ecc42fc3b5429b831a819d143955777fb6f6f4833f2c017ba380cfb8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_config_d156.json",
+      "sha256": "db255a0cf6dd07be16e3b539e78acb62c46b36507687887b436953984b2e2e67"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_storage_timing_plan_d156.json",
+      "sha256": "cfb66aefcc7f6ffc59dbb37a261686f3d98c10d2e0a22e51448b23d9e80b6f49"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/459_dyadic_mobius_transform.py",
+      "sha256": "d1a595cfd6accde0f0b57419bdc16cbf7da1c65b15842f9ba58c8a91381c7cf2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/463_dyadic_gmp_transport.py",
+      "sha256": "0de66136b95feb0cfdca2a782c85611ef2d81c83a16dc296ab1542eaf06b1b1d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/466_dyadic_prepared_transport.py",
+      "sha256": "86d272475bbc0390f28b198462d63eac33262de9b7b9575d634895eebb985542"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/469_dyadic_block_kernel.c",
+      "sha256": "f85ef368a6ab4ed5a33d69684d96976f9cebbb53058f47664dc8c8650dbe1543"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/470_dyadic_block_kernel_control.py",
+      "sha256": "0e494893f96abd8eec2623419f46c7bbf633102a2c84761c1494f87080bb8517"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/472_dyadic_multiprecision_low_factor.py",
+      "sha256": "ace66e349eaf0554a48e839ebb881e4095f284cdfcbab10ce00964b7503d8283"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/473_dyadic_actual_precision_lift.py",
+      "sha256": "20f1083cc885512872db8049628260aef8213d5feed4809ac78858b6f343dce3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/475_dyadic_actual_CM_column.py",
+      "sha256": "88237b6468f862b129d677792063a17326a6d9e3c67054bfeb98fe989f75abcf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/476_dyadic_polynomial_kernel.c",
+      "sha256": "1a0f8069f25d4c4f130c686a119fd5144663734627baa1e4aca18d8cac3763bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/477_dyadic_polynomial_kernel_control.py",
+      "sha256": "b91d15359aeebf56a9d71f6d46fb86ae0addf4c79ac63e8b34f55c9bcfefc62d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/489_dyadic_staged_lift.py",
+      "sha256": "fd2ffcdb9115e6ceeaf98f7f933acdb0db5d0e5c579fcaf899b99ecb70beea45"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/497_dyadic_weighted_chunks.py",
+      "sha256": "86c45479d6866a0120b0daefcf915e2a13f5cbc763ed3bd368437d11fb3b6ec8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/502_dyadic_small_polynomial_kernel.c",
+      "sha256": "81031afa3eb55f2241b47ed073904bad4c9c32abccb5de5703913ca767b711f7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/503_dyadic_adaptive_kernel_control.py",
+      "sha256": "409109db2cb676795cdf0b7ba988659fbb4c7e85d87e716d6a735db666e67c0e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/514_dyadic_selective_state_control.py",
+      "sha256": "005f1a2d643b0fed2dabaec600691ee95a9cc23555fc29eda4405236c2840207"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/516_dyadic_factor_and_map_controls.py",
+      "sha256": "350fcbd334b0a5898cd5a1c5ac4db51506666deb9abee352f9c01f085aafe87a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/519_dyadic_rolling_precision_chunks.py",
+      "sha256": "a1c252e6d81f1f2cea498711dfe58ad45d5ff623998a84042450b9ce64262a51"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/528_dyadic_streamed_precision3200.py",
+      "sha256": "f06cab0b85ac323560fb3f5b042a9d183b350a2a579b73a3fb6c73e93098250d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/541_dyadic_weighted_certificate.py",
+      "sha256": "75d4ca777b2a1b5748b897a4534bd08ca0e1dd40f87c2c7b23d1128ad1fa5119"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/547_dyadic_staged_store.py",
+      "sha256": "eb3726b97929b7683956b9c7981c8a679e1d8059d59662e53fcfa129e5b01be4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/554_dyadic_resumable_staged_production.py",
+      "sha256": "9c4a9020be1f7efbe6c41ff6c57f5935aacf177c2b124b3c447eeef98b5fe3b9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/567_dyadic_checkpoint_admission_revision.py",
+      "sha256": "224ad01fa7777004da412ecf7fb0cc9b2f8ea96806359d8933b52018b1296716"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/648_dyadic_higher_pilot_setup.py",
+      "sha256": "f457001e8da0c50d7bc7c8907871aa05bce7a4cd442e211651dd12ddd529420f"
+    }
+  ]
+}

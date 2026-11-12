@@ -1,0 +1,78 @@
+{
+  "status": "pass",
+  "milestone": "D147",
+  "scope": "Normalize the actual canonical multiplication determinant and rational residue-frame comparison; prove dyadic surjectivity; identify remaining quantitative obligation.",
+  "external_sources": [
+    {
+      "title": "Gerard Freixas i Montplet: Arithmetic Riemann-Roch and Hilbert-Samuel formulae for pointed stable curves",
+      "url": "https://arxiv.org/pdf/0803.2366v1",
+      "location": "Theorem 4.5 at k=0,n=0 and Lemma 4.6 at k=1,n=0, pp. 16--17",
+      "download_sha256": "00699147c57d623bf83e5bbb8fb9a85ab7d4084da86b361e1fdef537b4a507e6",
+      "role": "Algebraic stable-coarse-curve isomorphism det(G)=det(E)^13 tensor O(-Delta). No isometry for our L2/quotient metrics is inferred; its discrepancy A_2 remains unevaluated."
+    },
+    {
+      "title": "Lee-Peng Teo: Resolvent Trace Formula and Determinants of n Laplacians",
+      "url": "https://www.imath.kiev.ua/~sigma/2021/083/sigma21-083.pdf",
+      "location": "Sections 5--6, dimension formula and Theorem 6.2",
+      "download_sha256": "2018d77e4701bde0654cec346b98eea3f4fca9669ea2e452bd5e21dd1166450b",
+      "role": "The orbifold n=2 zero-mode space allows simple coarse poles at all elliptic points and has dimension 72. Direct substitution for the rank-45 ordinary bicanonical determinant is rejected. Local descent and the exact sequence are derived in the report."
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-multiplication-determinant-d147.md",
+      "sha256": "5e912c829a0753c154e99363d64a30a0fc02b3d2dc0b79bccdf7f15c3dec32ea"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-review-d99.md",
+      "sha256": "8d3d3b53be8f0ef102c5b539645e1362e09d19540e7ffaa86ee724df7b0233fa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-residue-lattice-d102.md",
+      "sha256": "c1f765330d02567a904444252b3dfb7fc2ac8e0746678a2a2efbc0ff19d68080"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-compound-height-d116.md",
+      "sha256": "5e25d087596efeee0a676525d19f76acc1dc6e3cfe316d743457efe225cd5b5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-elliptic-intersections-d146.md",
+      "sha256": "0c53765a081be5211fc6bdc42f27ae6dc6784c81060ab6fbf922e16f573d2429"
+    }
+  ],
+  "geometric_application_and_height_identity_are_companion_derivations": true,
+  "source_applicability_notes_are_mathematical_review_not_machine_verification": true,
+  "dyadic_surjectivity_proved": true,
+  "dyadic_multiplication_cokernel_length": 0,
+  "height_identity": "h_ext(I_2)=-4F-delta-60log(2)+R-t_mu, R=A_2+U_mu+Theta_frame",
+  "safe_sufficient_metric_residual_upper": "578",
+  "metric_residual_at_most_578_proved": false,
+  "Mumford_isometry_assumed": false,
+  "orbifold_n2_direct_substitution_valid": false,
+  "candidate_identification_proved": false,
+  "relation_height_at_most_623_proved": false
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "operational_resumption_not_a_mathematical_certificate",
+  "created_UTC": "2026-10-05T16:18:17.719494+00:00",
+  "status": "preflight_pass",
+  "transfer_integrity": {
+    "files": 28976,
+    "bytes": 12170078912,
+    "all_sha256_match": true,
+    "command": "python3 scripts/verify_transfer.py"
+  },
+  "external_dependencies": {
+    "checked": 289,
+    "all_sha256_match": true
+  },
+  "D132_sources": {
+    "checked_by_verified_inventory_coverage": 18589,
+    "all_hashes_preserved": true
+  },
+  "native_library_loads_passed": 5,
+  "all_coordinator_and_store_locks_free": true,
+  "orphan_process_check": {
+    "exit_code": 1,
+    "matching_processes": 0,
+    "outside_sandbox": true
+  },
+  "initial_journal": {
+    "epoch": 20,
+    "tag": "ready009",
+    "phase": "ready",
+    "authority": {
+      "bits": 363,
+      "count": 2903,
+      "u": 3497
+    }
+  },
+  "initial_passing_receipts": 2682,
+  "certified_precision": {
+    "full_bank": 800,
+    "column_0": 3200,
+    "column_1": 1600
+  },
+  "full_bank_launch_admitted": false,
+  "source_bindings": [
+    {
+      "path": "dembele/pari/553_dyadic_staged_archiving_coordinator.py",
+      "sha256": "7735c63e2dbc9dd3ebf7a1c9f93262ecfb7c9641864b0ef1b1c5f35fed0d348c"
+    },
+    {
+      "path": "dembele/pari/554_dyadic_resumable_staged_production.py",
+      "sha256": "9c4a9020be1f7efbe6c41ff6c57f5935aacf177c2b124b3c447eeef98b5fe3b9"
+    },
+    {
+      "path": "dembele/pari/run_d133_completion.py",
+      "sha256": "0a60a65ab8c0eb4ae1323c2c4b55217f4f431daa5fd6dcb21ff9f265b5c3171e"
+    },
+    {
+      "path": "dembele/checkpoints/d133-transfer-2026-09-30.json",
+      "sha256": "08eaed342c2e9ebc9663b1ff82fead66377e678b955697a19f47df1648ba75c4"
+    }
+  ]
+}

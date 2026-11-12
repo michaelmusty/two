@@ -1,0 +1,72 @@
+D137_COLUMN_BEGIN|{"column": 2, "at": "2026-10-06T20:28:16.094225+00:00", "free_bytes": 48742400000}
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/554_dyadic_resumable_staged_production.py",
+    "--config",
+    "dyadic_staged_P1600_col02_config_d137",
+    "--output",
+    "dyadic_staged_P1600_col02_d137_create",
+    "--phase",
+    "create",
+    "--key",
+    "create"
+  ],
+  "status": "failed",
+  "exit_code": 1,
+  "wall_seconds": 0.23801024997374043,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_d137_create_attempt01.log",
+    "sha256": "6a0c346ab0e1bcb4ff1e2d52aa933512aefa6a2b611acb430ed7ada15647ff3f"
+  },
+  "private_process_group": 4742,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/554_dyadic_resumable_staged_production.py",
+    "sha256": "9c4a9020be1f7efbe6c41ff6c57f5935aacf177c2b124b3c447eeef98b5fe3b9"
+  },
+  "failed_driver_snapshot": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_d137_create_attempt01_failed.py",
+    "sha256": "9c4a9020be1f7efbe6c41ff6c57f5935aacf177c2b124b3c447eeef98b5fe3b9"
+  }
+}
+
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/run_d137_production.py", line 197, in <module>
+    if __name__=='__main__':main()
+  File "/Users/musty/two/dembele/pari/run_d137_production.py", line 163, in main
+    rows=run_window(group,job,a.workers)
+  File "/Users/musty/two/dembele/pari/run_d137_production.py", line 78, in run_window
+    for future in finished:rows[pending.pop(future)]=future.result()
+  File "/Users/musty/.pyenv/versions/3.10.12/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/Users/musty/.pyenv/versions/3.10.12/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/musty/.pyenv/versions/3.10.12/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/musty/two/dembele/pari/run_d137_production.py", line 152, in job
+    if done.returncode:print(done.stdout+done.stderr,flush=True);raise RuntimeError(stem)
+RuntimeError: dyadic_staged_P1600_col02_d137_create
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/run_d137_bank.py", line 112, in <module>
+    if __name__=='__main__':main()
+  File "/Users/musty/two/dembele/pari/run_d137_bank.py", line 91, in main
+    production=coordinator('dembele/pari/run_d137_production.py',['--config',cp.stem,'--workers','3'],actual)
+  File "/Users/musty/two/dembele/pari/run_d137_bank.py", line 61, in coordinator
+    assert proc.returncode==0,driver
+AssertionError: dembele/pari/run_d137_production.py

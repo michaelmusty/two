@@ -1,0 +1,118 @@
+{
+  "status": "pass",
+  "milestone": "D143",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_review_d142.json",
+    "sha256": "49fa39830fc894cccf5db07bd45e884bb9933b6fb1f72f70fdd4134025db96b9"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143_attempt01.job.json",
+        "sha256": "1470d9adadb82994bb1ea8420439ba538fe5b215d883d928aa41d93100059ddd"
+      },
+      "wall_seconds": 5.4306071670143865,
+      "conservative_peak_rss_bytes": 323682304
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143_attempt01.job.json",
+        "sha256": "c2f2c8d65e1dfb90a2ff3c62de395a93f7461fd5dd31325c76fecd93e440de3a"
+      },
+      "wall_seconds": 4.432943833991885,
+      "conservative_peak_rss_bytes": 312279040
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_diagnostic_d143_attempt01.job.json",
+        "sha256": "ac128234d309292425972c98104408f689f448d9b2db605e7fd14d5f079fe65e"
+      },
+      "wall_seconds": 4.268012125045061,
+      "conservative_peak_rss_bytes": 324845568
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143_attempt01.job.json",
+        "sha256": "9aea5745f7dab3f844372f93bc4f3ec7df41e708feb7dbf723f7b27104abd36f"
+      },
+      "wall_seconds": 4.3817519579897635,
+      "conservative_peak_rss_bytes": 322764800
+    }
+  ],
+  "normalizer_finite_model_comparison_proved": true,
+  "E_model_coefficient_log2": "-12421/6144",
+  "elliptic_cotangent_bounds_proved": true,
+  "cotangent_strict_upper_bounds": {
+    "H3": "3.948",
+    "H32": "99.372",
+    "Psi": "164.846"
+  },
+  "good_reduction_away_from_2": true,
+  "delta_other": 0,
+  "sufficient_I_plus_6_log_CZ_upper_bound_under_corrected_RR": "-486.385",
+  "full_intersection_upper_bound_proved": false,
+  "corrected_global_RR_constant_certified": false,
+  "Faltings_lower_29_proved": false,
+  "height_bound_at_most_623_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "actual_curve_spectral_calculation_started": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Bound the full elliptic-section intersection term and reconcile the complete corrected global RR constant; assess a certified analytic inequality against I+6 average(log(C_corrected Zprime(1))) <= -486.385. No new spectral or precision-bank job is admitted. Exact structural identification remains an alternative.",
+  "completed_at": "2026-10-08T21:12:56.402500+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_finite_model_review_d143.json",
+    "sha256": "9822be7377959aceab6970ea5b112133f09fe561c4d6ffe735b64bd2b3a49c74"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/P1600-finite-model-cotangents-d143.md",
+    "sha256": "2121f8909125ccf94ce5b4f061b3f0a22bdf8a93b19e2cad9181fd16cdee3a76"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_finite_model_sources_d143.json",
+    "sha256": "adce7b6645a2059bbf208e679eea3a0408488c476d4f08dd443af0f64ba24de9"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_finite_model_review_d143_attempt01.job.json",
+      "sha256": "45c63b57c36a8d3fbe4444d8b4b86b38f7f03f4a905d6431566ac7f7d3f5c40d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_finite_model_review_d143_recheck01.job.json",
+      "sha256": "7140f759e3ebee80f4c31cb4ebc6ed701e0769b159b1e85333585ae3bb67b45d"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 60.05764391698176,
+      "seconds": 59.922238083032425,
+      "peak_rss_bytes": 227524608
+    },
+    {
+      "receipt_wall_seconds": 56.459578125039116,
+      "seconds": 56.36712287500268,
+      "peak_rss_bytes": 227196928
+    }
+  ],
+  "successful_bounded_jobs": 6,
+  "successful_input_jobs": 4,
+  "preserved_failed_bounded_jobs": 0,
+  "direct_source_bindings": 46,
+  "two_requested_finite_tasks_completed": true,
+  "global_identification_proof_completed": false
+}

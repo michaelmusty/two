@@ -1,0 +1,70 @@
+{
+  "status": "pass",
+  "milestone": "D146",
+  "scope": "Bound all omitted elliptic intersections and close the Faltings-only repair of the existing P1600 jet criterion.",
+  "external_sources": [
+    {
+      "title": "Xinyi Yuan: Modular Heights of Quaternionic Shimura Curves",
+      "url": "https://arxiv.org/pdf/2205.13995v3",
+      "location": "Proposition 4.1 and proof, pp. 54--56; section 4.1",
+      "download_sha256": "7dbf684fa65122ba3a15364079b6c3b1c7fdc2893bf2114a55ca9b448090762c",
+      "role": "Smooth maximal-level quotients, special-fibre compatibility, no vertical generic inertia, Hodge/orbifold comparison, and nearby-quaternion local stabilizers. Normalizer extension and intersection bounds are proved in our companion report."
+    },
+    {
+      "title": "The Stacks Project: A formula for the different",
+      "url": "https://stacks.math.columbia.edu/tag/0BWB",
+      "location": "Example 49.12.5 and Lemma 49.12.6",
+      "role": "Monogenic derivative and differential descriptions of the different. Applied to the finite flat smooth formal disk quotient; the orbit product and fixed-section estimate are derived in the report."
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-elliptic-intersections-d146.md",
+      "sha256": "0c53765a081be5211fc6bdc42f27ae6dc6784c81060ab6fbf922e16f573d2429"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-finite-model-cotangents-d143.md",
+      "sha256": "2121f8909125ccf94ce5b4f061b3f0a22bdf8a93b19e2cad9181fd16cdee3a76"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-joint-adjunction-RR-d144.md",
+      "sha256": "7f1e43faa2aabb16fb5443d23d64e878659a2ac79b4194cfb86326634b63a1bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-spectral-feasibility-d145.md",
+      "sha256": "62c8cd495721790fcf1a3e111822d4e8b66d1e8e4ef02fdca18dc36a29ed8d43"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-intrinsic-height-d104.md",
+      "sha256": "454495a0bfd60eeca0ca9cad8549b8372c74fb930872a9e6773bab77e4255a7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    }
+  ],
+  "source_applicability_notes_are_mathematical_review_not_machine_verification": true,
+  "normalizer_local_group_and_all_prime_arguments_are_our_derivations": true,
+  "no_new_CM_coordinates_or_canonical_lift_formula_assumed": true,
+  "RR_and_CM_normalizations_retain_prior_documented_source_reconciliations": true,
+  "safe_joint_strict_bounds": [
+    "48",
+    "79"
+  ],
+  "safe_Faltings_strict_upper": "4.2",
+  "Faltings_lower_29_disproved": true,
+  "candidate_identification_proved": false,
+  "relation_height_at_most_623_proved": false
+}

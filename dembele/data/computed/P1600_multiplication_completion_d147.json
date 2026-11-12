@@ -1,0 +1,129 @@
+{
+  "status": "pass",
+  "milestone": "D147",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146.json",
+    "sha256": "61903ddacf5ff8f478e35a9fef378e5f7b2ca5c304b8c27c982fcc7f0e86a3eb"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_determinant_d147_attempt01.job.json",
+        "sha256": "9cd289797244dd62c44cd5a45d6caf465d7e5bcd9b2b20afcf2a07c3e3f85b6b"
+      },
+      "wall_seconds": 5.451671165996231,
+      "conservative_peak_rss_bytes": 299417600
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_audit_d147_attempt01.job.json",
+        "sha256": "1e1154e27ac12d184c80bd82b117c49a21ce089bff1b7a40df3d9c8278a3716b"
+      },
+      "wall_seconds": 4.107628499972634,
+      "conservative_peak_rss_bytes": 302219264
+    }
+  ],
+  "preserved_failed_review_jobs": 1,
+  "failed_review_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_attempt01.job.json",
+    "sha256": "a4376ccbc1044e52dda522f5b2bcc92251f988f4ed6180d8d790d8e7c2d9a77e"
+  },
+  "failed_review_reason": "Legacy D99 status is uppercase PASS; the first review wrongly required lowercase pass. Mathematical primary and audit jobs passed unchanged.",
+  "actual_stable_fibre_multiplication_rank": 45,
+  "independent_cycle_pair_witnesses": 45,
+  "dyadic_multiplication_cokernel_length": 0,
+  "symmetric_metric_degree_correction_log2": "60",
+  "height_identity": "h_ext(I_2)=-4F-delta-60log(2)+R-t_mu, R=A_2+U_mu+Theta_frame",
+  "known_height_constant_strict_upper": "44.411750955",
+  "safe_sufficient_metric_residual_upper": "578",
+  "metric_residual_at_most_578_proved": false,
+  "ordinary_quadratic_differential_rank": 45,
+  "orbifold_weight4_rank": 72,
+  "elliptic_principal_parts_rank": 27,
+  "orbifold_n2_direct_substitution_valid": false,
+  "frame_determinant_alone_is_insufficient": true,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "best_current_proved_relation_height_upper": "83240",
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_curve_spectral_calculation_started": false,
+  "new_geodesic_census_started": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Bound the actual residue-frame comparison Theta_frame and ordinary bicanonical quotient-metric combination A_2+U_mu, preserving joint cancellations, against R<=578. An orbifold n=2 route first requires its 27 elliptic principal parts and metric/lattice comparisons. Exact structural identification remains an alternative. Existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "completed_at": "2026-10-09T01:37:30.134526+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147.json",
+    "sha256": "00162f3f1bcf50d2cad54bdf2625c3573307017c289e3d95d1e15887a2a9dd12"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/P1600-multiplication-determinant-d147.md",
+    "sha256": "5e912c829a0753c154e99363d64a30a0fc02b3d2dc0b79bccdf7f15c3dec32ea"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_sources_d147.json",
+    "sha256": "b3243d7c9ed17703d9c55d0519029d0b61dcd46c3f71bcc5725cab5fcf0616d4"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_attempt02.job.json",
+      "sha256": "85cd3a351483c7ae7cf63d09305f92b40a463113b05c9a77804038b726a4cdd3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_recheck01.job.json",
+      "sha256": "8540186c687903b8312553558ff52a886f0c49f61414c4be68b0ab7edbfe34ba"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 61.47119054099312,
+      "seconds": 61.37580916698789,
+      "peak_rss_bytes": 187416576
+    },
+    {
+      "receipt_wall_seconds": 62.395989042008296,
+      "seconds": 62.31449416698888,
+      "peak_rss_bytes": 165478400
+    }
+  ],
+  "successful_bounded_jobs": 5,
+  "input_bounded_jobs": 2,
+  "review_bounded_jobs": 2,
+  "completion_bounded_jobs": 1,
+  "failed_bounded_jobs": 1,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_completion_d147_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 41,
+  "next_unused_source": 620,
+  "entry_document_hashes_intentionally_not_frozen": true
+}

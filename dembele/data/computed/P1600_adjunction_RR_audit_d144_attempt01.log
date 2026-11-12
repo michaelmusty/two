@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/607_P1600_adjunction_RR_audit.py", line 184, in <module>
+    assert child.returncode==0 and 'D144_ADJUNCTION_AUDIT_WORKER_PASS' in child.stdout,(child.returncode,child.stdout,child.stderr)
+AssertionError: (1, '', 'Traceback (most recent call last):\n  File "/Users/musty/two/dembele/pari/607_P1600_adjunction_RR_audit.py", line 176, in <module>\n    worker(args.worker);sys.exit(0)\n    ^^^^^^^^^^^^^^^^^^^\n  File "/Users/musty/two/dembele/pari/607_P1600_adjunction_RR_audit.py", line 69, in worker\n    assert drops[0]==36 and drops[26]==36 and drops[17]==28\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n')

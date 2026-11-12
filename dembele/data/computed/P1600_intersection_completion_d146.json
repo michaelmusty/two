@@ -1,0 +1,126 @@
+{
+  "status": "pass",
+  "milestone": "D146",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145.json",
+    "sha256": "f70755392504a0b21476bb80465623bd5fddd2cca3134a9e11883d81ea5ea5c5"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_intersections_d146_attempt01.job.json",
+        "sha256": "160739fab3065b6f9cf1bb78dfe939b6517aaee7ef1822ef68b7acc95a052a4c"
+      },
+      "wall_seconds": 5.31851608294528,
+      "conservative_peak_rss_bytes": 303153152
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_audit_d146_attempt01.job.json",
+        "sha256": "a939ba642f03e2fe73a8ba90a4355a8a5bb21c49448965dd209ed259b1195262"
+      },
+      "wall_seconds": 4.041449167008977,
+      "conservative_peak_rss_bytes": 307150848
+    }
+  ],
+  "all_dyadic_intersections_on_Q_accounted_for": true,
+  "elliptic_intersections_away_from_2_and_3_vanish": true,
+  "wild_local_groups_at_3": [
+    "C3",
+    "S3"
+  ],
+  "odd_pair_cost_bounds_log3": [
+    "18",
+    "45"
+  ],
+  "safe_joint_strict_bounds": [
+    "48",
+    "79"
+  ],
+  "safe_Faltings_strict_upper": "4.2",
+  "Faltings_lower_29_disproved": true,
+  "all_three_D141_Faltings_only_critical_targets_excluded": true,
+  "RR_and_CM_normalizations_retain_prior_documented_source_reconciliations": true,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_curve_spectral_calculation_started": false,
+  "new_geodesic_census_started": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Investigate the actual relation-space exterior height target 623 via the determinant of the canonical multiplication sequence in the fixed rational residue frame, retaining integral indices and quotient metrics. Exact structural identification remains an alternative. The Faltings-only P1600 repair is ruled out; existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "completed_at": "2026-10-08T23:48:30.724480+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146.json",
+    "sha256": "61903ddacf5ff8f478e35a9fef378e5f7b2ca5c304b8c27c982fcc7f0e86a3eb"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/P1600-elliptic-intersections-d146.md",
+    "sha256": "0c53765a081be5211fc6bdc42f27ae6dc6784c81060ab6fbf922e16f573d2429"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_sources_d146.json",
+    "sha256": "ecb2f23b8d44316ff7f3f652ba09f78be02d68276741eb6d4922ed68244fe83d"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146_attempt01.job.json",
+      "sha256": "ffc29d8d9de16f74dd46dc400469fe4cee9872237f06feab2d057be69cbfa4c2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146_recheck01.job.json",
+      "sha256": "383e04c6138186bc41c6a467fc196be679cdb413be3d32f3b2958266a7d31d0b"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 59.046292458020616,
+      "seconds": 58.88606333301868,
+      "peak_rss_bytes": 224903168
+    },
+    {
+      "receipt_wall_seconds": 53.77853775001131,
+      "seconds": 53.70892158302013,
+      "peak_rss_bytes": 227753984
+    }
+  ],
+  "successful_bounded_jobs": 5,
+  "input_bounded_jobs": 2,
+  "review_bounded_jobs": 2,
+  "completion_bounded_jobs": 1,
+  "failed_bounded_jobs": 0,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/P1600_intersection_completion_d146_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 42,
+  "next_unused_source": 617,
+  "entry_document_hashes_intentionally_not_frozen": true
+}

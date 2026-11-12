@@ -1,0 +1,109 @@
+{
+  "status": "pass",
+  "milestone": "D141",
+  "completed_at": "2026-10-08T17:45:20.451593+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141.json",
+    "sha256": "3b091f291bc873dd5e4ffebdddbea43d6dc551faed658c9b0150103abd61d8e5"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+    "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_sources_d141.json",
+    "sha256": "4721e11c49a08d71e207eb479f4759fe88ed58a6c39b03218d650a9c41fd875e"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141_attempt01.job.json",
+      "sha256": "b6a6aef899ecf63b307139428d16f917c7a50f8d34fac07e0617ce44f0b3a0df"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141_recheck01.job.json",
+      "sha256": "085af6f0ab21945e6e47efdb8317a16738a65b61403f8aa192909937408de32f"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 59.24212045798777,
+      "seconds": 59.14219783403678,
+      "peak_rss_bytes": 217186304
+    },
+    {
+      "receipt_wall_seconds": 58.28131108399248,
+      "seconds": 58.20678725000471,
+      "peak_rss_bytes": 213057536
+    }
+  ],
+  "successful_bounded_jobs": 4,
+  "successful_input_jobs": 2,
+  "preserved_failed_bounded_jobs": 2,
+  "preserved_failed_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_diagnostics_d141_attempt01.job.json",
+      "sha256": "7ac0da957b60f9503e9c9bbb506b4b7fc00053cefa8b9b0f7b593e9ed15b801d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_audit_d141_attempt01.job.json",
+      "sha256": "aca8deaaa20f1f5c8dd06bc15f3b280567fdc63dee00efa12162b23ac0689d80"
+    }
+  ],
+  "failure_classification": "An overly strong comparison between the 96-digit conservative maximum-Pluecker bound and the candidate covolume bound, and an integer-division-to-float LDL pivot error. Corrected in new sources; both original receipts, logs and failed source snapshots retained.",
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_diagnostics_r2_d141_attempt01.job.json",
+        "sha256": "1762c1d616ccfea9eda96f85719995864a46c5d63738fba67b4d95334ace1639"
+      },
+      "wall_seconds": 0.4408010839833878,
+      "peak_rss_bytes": 34045952
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_audit_r2_d141_attempt01.job.json",
+        "sha256": "1ed1c7425a512727aa16c4320dab3f54122fc14cd8be66d8c08eb335468486a5"
+      },
+      "wall_seconds": 7.5964558749692515,
+      "peak_rss_bytes": 40042496
+    }
+  ],
+  "direct_source_bindings": 48,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_review_d140.json",
+    "sha256": "10e74cdfafcf46db04ab5cee473646aa88869c074ac30ed651193f156fadd42a"
+  },
+  "catalogue_graph_is_transitive": true,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "proof_gap_diagnostics_and_independent_audit_complete": true,
+  "exterior_log_height_623_would_identify_quadratic_space": true,
+  "Faltings_lower_29_would_suffice_at_P1600": true,
+  "Faltings_critical_intervals": [
+    [
+      "157776682536190442077718750648389886619653884103442667973378686459/5778386002510208977149035953533817319343023304401366970846412800",
+      "157776682536190442077718750648389886619654684602542608646341326851/5778386002510208977149035953533817319343023304401366970846412800"
+    ],
+    [
+      "160345833501679792292328505915814350949703986566385641054526316449/5778386002510208977149035953533817319343023304401366970846412800",
+      "160345833501679792292328505915814350949704400935210945199204891461/5778386002510208977149035953533817319343023304401366970846412800"
+    ],
+    [
+      "54094586690386251363931758887366503545354331604972581439663211203/1926128667503402992383011984511272439781007768133788990282137600",
+      "162283760071158754091795276662099510636063249243346451165738900361/5778386002510208977149035953533817319343023304401366970846412800"
+    ]
+  ],
+  "true_ideal_height_bound_proved": false,
+  "Faltings_lower_29_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "published_modular_height_is_not_used_as_Faltings_height": true,
+  "orbifold_cone_constant_reconciliation_remains_required": true,
+  "next_work": "Derive a corrected arithmetic Riemann-Roch comparison for the actual normalizer curve, retaining the finite-model, elliptic-fibre, metric and analytic terms; assess whether it can prove h_Fal above 28.084618 before any numerical spectral work. A true relation-space height bound at most 623 is the alternative."
+}

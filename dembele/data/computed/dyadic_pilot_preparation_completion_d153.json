@@ -1,0 +1,238 @@
+{
+  "status": "pass",
+  "milestone": "D153",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/precision_route_review_d152.json",
+    "sha256": "0f4cc7d5ed9a620ac659838c8ff6a2a8e5a0f108c497992e03f3bb1bc9a3d40f"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D152_direct_bindings": 23,
+  "D151_direct_bindings": 20,
+  "D150_direct_bindings": 32,
+  "D149_direct_bindings": 38,
+  "D148_direct_bindings": 44,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "indexed_receipt_coordinator_admitted": true,
+  "permitted_configs": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P3200_col02_config_d153.json",
+      "sha256": "22488d08608af229a07b099b971656ce2d386c9ffc23ecf5aa58f73ddfd542ae"
+    }
+  ],
+  "single_column_timing_pilot_only": true,
+  "production_schedule_launched": false,
+  "full_bank_or_higher_stage_admitted": false,
+  "preparation_state": {
+    "empty_initial_pool_only": true,
+    "initialized_rows": 0,
+    "actual_new_moments_evaluated": false,
+    "existing_create_receipt_will_be_reused": true,
+    "logical_store_bytes_at_preparation": 180473948
+  },
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_setup_d153_attempt01.job.json",
+        "sha256": "3db040b85d46fa0c4491018df91730e5e0427ac65ad0fafcaf88ed2f2f0d1a55"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_setup_d153.json",
+        "sha256": "ac2a6778ef3272027f7fcd208f3e8a7114567620315c075a91dcf16f44ad0ab5"
+      },
+      "wall_seconds": 0.33849908399861306,
+      "peak_rss_bytes": 39862272
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P3200_col02_d153_create_attempt01.job.json",
+        "sha256": "d4da0c22d5cf6e92dd139a92961ac1670d6aed224af88b91118ef6a3d9d8d913"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P3200_col02_d153_create.json",
+        "sha256": "07d7713797425b57ab3875a1974850becbed6b2bc436b79c635eed792ead4860"
+      },
+      "wall_seconds": 0.1868665000074543,
+      "peak_rss_bytes": 41598976
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_states_control_d153_attempt01.job.json",
+        "sha256": "a18c10671fb4b1511dfae4547471dee98adb7fb95a615d79cb9e8b27e52d5fa4"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_states_control_d153.json",
+        "sha256": "4aac67c6d68c2f984584a857f6806d34069d902aff5c12a810bca25a4a407d73"
+      },
+      "wall_seconds": 1.9285617909627035,
+      "peak_rss_bytes": 40189952
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_cm_control_d153_attempt01.job.json",
+        "sha256": "f1099af3a23c7acd68cecf8fad4a887e8876756717787760d789288bc05f1b51"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_cm_control_d153.json",
+        "sha256": "bae8ffd7336c3aab0329bbccd445c1160b815e21606ffe667dc7a9310720225a"
+      },
+      "wall_seconds": 0.4541485830559395,
+      "peak_rss_bytes": 82853888
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_ordinary_state_control_d153_attempt01.job.json",
+        "sha256": "bcdb64c61a389b2238e25aec7824b17d23bad1bf97ccad71df5612898899f42a"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_ordinary_state_control_d153.json",
+        "sha256": "0c883547923a18a7c469431d38be7f313c90a0f8c28c751c6eb2d8ef67280ee2"
+      },
+      "wall_seconds": 1.2567166250082664,
+      "peak_rss_bytes": 47939584
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_ordinary_cm_control_d153_attempt01.job.json",
+        "sha256": "1efd795e0881fe34a7d7f5f2397df34b10115616fc5e27461919dcd36e492dc6"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_ordinary_cm_control_d153.json",
+        "sha256": "386a928918381ead0ced3acadf3ae8c17d80da4376b2087a8ff3464fc1d60796"
+      },
+      "wall_seconds": 6.438359791005496,
+      "peak_rss_bytes": 60112896
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_horner_control_d153_attempt01.job.json",
+        "sha256": "b6ebfd52e5daa2679498fef470c5ee2153d84b15cf41b9bce16549aaf536bf0a"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_horner_control_d153.json",
+        "sha256": "1b86e9a5405c6a2f5a3c766c548d2cc8f49717a8c5a115eed7ea27da66591049"
+      },
+      "wall_seconds": 1.544614082959015,
+      "peak_rss_bytes": 47267840
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_review_control_d153_attempt01.job.json",
+        "sha256": "347e7693cba90675d86f82a6180350227fe4915136c779f4f9ded72472265d24"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_review_control_d153.json",
+        "sha256": "145536a38b2f53b824120729e71061f21696c6584dddadaaa8b802a56dabc9ec"
+      },
+      "wall_seconds": 33.39536595798563,
+      "peak_rss_bytes": 479936512
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_controls_d153_attempt01.job.json",
+        "sha256": "0f67666524a119adb38273243a2dc7cce3f1940246cecf8bff2b2083b83b0e2e"
+      },
+      "metadata": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_controls_d153.json",
+        "sha256": "4e13233d4be84a0cf2e237ec0103b8fff58dc84e98604cfe3da264168a33a630"
+      },
+      "wall_seconds": 3.9119326249929145,
+      "peak_rss_bytes": 150405120
+    }
+  ],
+  "completed_input_jobs": 9,
+  "preserved_failed_input_jobs": 0,
+  "production_jobs": 12495,
+  "archive_jobs": 49,
+  "audit_jobs": 24,
+  "column_review_jobs": 2,
+  "total_pilot_jobs": 12570,
+  "working_store_bound_bytes": 304049792,
+  "direct_seed_native_bindings": 30,
+  "independent_full_old_weighted_overlap_scalars": 2227200,
+  "independent_full_old_CM_overlap_scalars": 435200,
+  "independent_original_equations_are_sampled": true,
+  "free_bytes_observed": 55296000000,
+  "free_bytes_required_including_reserve": 11368085472,
+  "modeled_pilot_active_hours": [
+    2.8821465446275316,
+    3.44243562857983
+  ],
+  "runtime_is_empirical_not_a_bound": true,
+  "resource_caps_changed": false,
+  "finite_rational_transfer_search_remains_parked": true,
+  "candidate_identification_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "report_local_links_checked": 18,
+  "next_work": "Run only the reviewed column-2 P3200 pilot, then all 24 audits and both column reviews; record integrated timing and reassess before any next column or stage.",
+  "completed_at": "2026-10-09T19:29:50.420272+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_preparation_review_d153.json",
+    "sha256": "6e9445f237ee9d687091c0f69b15988f766f3cfd1ec438d2d37d51fd370fae9b"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/dyadic-pilot-preparation-d153.md",
+    "sha256": "3e25b16a6b3f78cc3f962a285ad5cc4862950b12d5a6ebb9c0cfc7f3e71a4c10"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_preparation_sources_d153.json",
+    "sha256": "dcb90badfcabdfab4425856d240740e30586b36c9c1c36ee0a59d0a629d80c13"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_preparation_review_d153_attempt01.job.json",
+      "sha256": "2b5592cbe3544291d464a9d5e6348ef186bbcf863ac63f2447f0d09aaf3cfe64"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_preparation_review_d153_recheck01.job.json",
+      "sha256": "b33ea7a35675dafcd758367868828e52c2a261694161b427b44d3a4cf9ebac4a"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 77.86869629099965,
+      "wall_seconds": 77.66671800002223,
+      "peak_rss_bytes": 363528192
+    },
+    {
+      "receipt_wall_seconds": 76.53863462497247,
+      "wall_seconds": 76.31938862497918,
+      "peak_rss_bytes": 262914048
+    }
+  ],
+  "successful_bounded_jobs": 12,
+  "input_bounded_jobs": 9,
+  "review_bounded_jobs": 2,
+  "completion_bounded_jobs": 1,
+  "failed_bounded_jobs": 0,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_preparation_completion_d153_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 89,
+  "next_unused_source": 640,
+  "entry_document_hashes_intentionally_not_frozen": true,
+  "all_D153_preparation_jobs_sequential": true
+}

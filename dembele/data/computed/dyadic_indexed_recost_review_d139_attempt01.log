@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/581_dyadic_indexed_recost_review.py", line 352, in <module>
+    saved = build()
+  File "/Users/musty/two/dembele/pari/581_dyadic_indexed_recost_review.py", line 248, in build
+    close(model['measured_P1600_worker_seconds_per_job_floors'][phase], statistics.median(samples) / phase_counts[phase])
+KeyError: 'prepare-begin-000'

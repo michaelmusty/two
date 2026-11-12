@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "milestone": "D150",
+  "branches_checked": 348,
+  "distinct_target_nonaffine_branch_count": 275,
+  "field_backend_independent_of_source_626": true,
+  "nonaffine_Taylor_recurrence_checked_through_degree": 12,
+  "primary_cycle_verified": true,
+  "alternative_cycle_states": [
+    118,
+    154,
+    136,
+    92,
+    149,
+    165,
+    118
+  ],
+  "alternative_cycle_determinant_valuation_pi": 6,
+  "rational_pole_control_squared_poles": [
+    "2",
+    "1/2",
+    "1/8",
+    "1/32",
+    "1/128",
+    "1/512",
+    "1/2048",
+    "1/8192",
+    "1/32768"
+  ],
+  "strict_contraction_hypothesis_control_passed": true,
+  "finite_congruence_and_equal_rank_controls_passed": true,
+  "dual_identity_and_corruption_controls_passed": true,
+  "controls_are_not_actual_candidate_counterexamples": true,
+  "infinite_pole_orbit_argument_is_companion_proof": true,
+  "summed_transfer_cancellations_excluded": false,
+  "exact_candidate_transfer_identity_constructed": false,
+  "candidate_identification_proved": false,
+  "new_precision_bank_admitted": false,
+  "wall_seconds": 0.2265111249871552,
+  "peak_rss_bytes": 30244864,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_moment_transports_d113.json",
+      "sha256": "4c9e8772420261993282cf75d459a51394db9169daa02ddda518f4d43823e5db"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_identification_audit_d150.json",
+      "sha256": "84e740f31a8f47ec9d2af7fd8573eecfcf4f1ab8317e943f6525b0ebd47be14e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/399_definite_dyadic_review.py",
+      "sha256": "381baec8ff3a6d061f1fc183cfdb118583bacb5185a518b5acc987e922af65ab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/402_dyadic_group_transport_review.py",
+      "sha256": "657721e87e6e26a32da1feb32f2a92d5c59001f566a3288babe43bbb493e640f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/405_dyadic_edge_reducer.py",
+      "sha256": "d1897608bffff74265910fdc9d3deb448fa76819308d69a2a27a3408c8e75e2c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/627_structural_transfer_controls.py",
+      "sha256": "a94548720375b70672e6615d426ebb097d9cfb00303fc6ac398078cb94eeacc4"
+    }
+  ]
+}

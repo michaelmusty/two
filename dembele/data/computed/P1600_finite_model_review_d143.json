@@ -1,0 +1,267 @@
+{
+  "status": "pass",
+  "milestone": "D143",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_review_d142.json",
+    "sha256": "49fa39830fc894cccf5db07bd45e884bb9933b6fb1f72f70fdd4134025db96b9"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 4,
+  "preserved_failed_input_jobs": 0,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143_attempt01.job.json",
+        "sha256": "1470d9adadb82994bb1ea8420439ba538fe5b215d883d928aa41d93100059ddd"
+      },
+      "wall_seconds": 5.4306071670143865,
+      "conservative_peak_rss_bytes": 323682304
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143_attempt01.job.json",
+        "sha256": "c2f2c8d65e1dfb90a2ff3c62de395a93f7461fd5dd31325c76fecd93e440de3a"
+      },
+      "wall_seconds": 4.432943833991885,
+      "conservative_peak_rss_bytes": 312279040
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_diagnostic_d143_attempt01.job.json",
+        "sha256": "ac128234d309292425972c98104408f689f448d9b2db605e7fd14d5f079fe65e"
+      },
+      "wall_seconds": 4.268012125045061,
+      "conservative_peak_rss_bytes": 324845568
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143_attempt01.job.json",
+        "sha256": "9aea5745f7dab3f844372f93bc4f3ec7df41e708feb7dbf723f7b27104abd36f"
+      },
+      "wall_seconds": 4.3817519579897635,
+      "conservative_peak_rss_bytes": 322764800
+    }
+  ],
+  "normalizer_finite_model_comparison_proved": true,
+  "E_model_coefficient_log2": "-12421/6144",
+  "elliptic_cotangent_bounds_proved": true,
+  "cotangent_strict_upper_bounds": {
+    "H3": "3.948",
+    "H32": "99.372",
+    "Psi": "164.846"
+  },
+  "good_reduction_away_from_2": true,
+  "delta_other": 0,
+  "sufficient_I_plus_6_log_CZ_upper_bound_under_corrected_RR": "-486.385",
+  "full_intersection_upper_bound_proved": false,
+  "corrected_global_RR_constant_certified": false,
+  "Faltings_lower_29_proved": false,
+  "height_bound_at_most_623_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "actual_curve_spectral_calculation_started": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Bound the full elliptic-section intersection term and reconcile the complete corrected global RR constant; assess a certified analytic inequality against I+6 average(log(C_corrected Zprime(1))) <= -486.385. No new spectral or precision-bank job is admitted. Exact structural identification remains an alternative.",
+  "wall_seconds": 59.916163165995385,
+  "sources": [
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-finite-model-cotangents-d143.md",
+      "sha256": "2121f8909125ccf94ce5b4f061b3f0a22bdf8a93b19e2cad9181fd16cdee3a76"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-arithmetic-d105.md",
+      "sha256": "145547211ff8f699907747a05a72767e981406014a778f712b165e12d42382b6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-intrinsic-height-d104.md",
+      "sha256": "454495a0bfd60eeca0ca9cad8549b8372c74fb930872a9e6773bab77e4255a7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-cm-matching-d112.md",
+      "sha256": "17eaae2f3c36acbf805713d7fd271ed229d344f4b4f48b2cf27b31b0ef04e228"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-harmonic-d111.md",
+      "sha256": "73f600897ed2afc624bab4316acd65846e1ed9c63cf3a08be7603902fbab8398"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143.json",
+      "sha256": "d4614e3af30ac4e39ecd8d26b5900c2406f566c6be86c79ef8b0fb6e816fd4e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143_attempt01.job.json",
+      "sha256": "9aea5745f7dab3f844372f93bc4f3ec7df41e708feb7dbf723f7b27104abd36f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143_attempt01.log",
+      "sha256": "37410decc37d0280955ec43b870c2f865f350355714fdbf0e30a9fa98bead68d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143_worker.json",
+      "sha256": "2c4065c31bfaf413fbd75ed73d708d36a5dac296683f5e5de253b5cd6cf47aa9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_diagnostic_d143.json",
+      "sha256": "130a844e382dedbf896d3bb096f3bba1e2c9b8872f687a1a8ec63d4dcbce594e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_diagnostic_d143_attempt01.job.json",
+      "sha256": "ac128234d309292425972c98104408f689f448d9b2db605e7fd14d5f079fe65e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_diagnostic_d143_attempt01.log",
+      "sha256": "b96ade6d918ea1f968805b939de7ec811cfd61aed609eeb5c73fd3d4c0ffff61"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_diagnostic_d143_worker.json",
+      "sha256": "d8d3ee0c1c51d9621539e6930fb7bf80abe627af9101eab518751473a032e1bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143.json",
+      "sha256": "8f15df78c8eb5064396ef0dd761821a1b0f0739d0f3b6a58e7830012e18de282"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143_attempt01.job.json",
+      "sha256": "c2f2c8d65e1dfb90a2ff3c62de395a93f7461fd5dd31325c76fecd93e440de3a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143_attempt01.log",
+      "sha256": "8b0621dc9a4615fbd74641fd9f5a23d8f7645375d89214d6aae70b4c1608749b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143_worker.json",
+      "sha256": "456fb3e9473067cd25f5d1424cbc3177c05d39af70a6e78cd5bd4f3cf6d65030"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143.json",
+      "sha256": "42f16ac5a41fccbbd0b6c64a2be05bd583358e5d216b210cf3a3b5b62ef79072"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143_attempt01.job.json",
+      "sha256": "1470d9adadb82994bb1ea8420439ba538fe5b215d883d928aa41d93100059ddd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143_attempt01.log",
+      "sha256": "52884febb0e9b38a59ae24312f2b66e97936868e7050973a6bca0b7f2df91b7e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143_worker.json",
+      "sha256": "4dd075fa638530be746ae9583aca6c3e2c15a62426114c90fe5cf9a0a0e818b0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_finite_model_sources_d143.json",
+      "sha256": "adce7b6645a2059bbf208e679eea3a0408488c476d4f08dd443af0f64ba24de9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142.json",
+      "sha256": "4c843dd5573f11b1172dcd4bfb2166c7658786086cc3afdd6385a5b37f415ce9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_completion_d142.json",
+      "sha256": "bdab7290ca5428bab45bdecd0b164a2a82c57bcfcfe02b80445db77de54841dc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_review_d142.json",
+      "sha256": "49fa39830fc894cccf5db07bd45e884bb9933b6fb1f72f70fdd4134025db96b9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_review_d142_attempt01.job.json",
+      "sha256": "1d2eab6263db5eb1ba513e00a5575d6260329f3129985b8a20e7c55a0a9b87f0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_review_d142_attempt01.log",
+      "sha256": "15f78ac35b970516ac126acb2e023631ff1055d3337bd5366f1bdd82c805e856"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_review_d142_recheck01.job.json",
+      "sha256": "2632a6461107115eeabf801b59d3fa878153fdd848cf026f979c84871c66ae5d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_review_d142_recheck01.log",
+      "sha256": "f741c387bb8b07c482528b72f81ea52799a485eb835187b57c5d0e3b98e79651"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/definite_dyadic_certificate_d109.json",
+      "sha256": "80394caf7dc1a63590fbd2b0870d16b05b6f728ad67bd8c9ffd99477794ec8e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_harmonic_certificate_d111.json",
+      "sha256": "d4c1a33d9d918767e55a856e6cf85b3d88a5135ae4396ae86977789bc35de84a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_quotient_export_d111.json",
+      "sha256": "a7b447891c27f36e29ba694fe0c3d557fc14a6abf6fac107da8ce7e4601d9e94"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/600_P1600_two_height_review.py",
+      "sha256": "b4f9619ab5e416c04e1c94e3cabcc94ea57edea966d0c63fb8ca227944e432cb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/601_P1600_elliptic_heights.py",
+      "sha256": "f7c932281c8d196aaaa75d4f7b19c2ae7d0597677da723158fd6163e417c888e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/602_P1600_elliptic_height_audit.py",
+      "sha256": "49b25f5c19b4780ee848e30a5735c96d1032d81eb183d5fd9636b52999857bce"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/603_P1600_dyadic_model_diagnostic.py",
+      "sha256": "2e2f95a2dc9925c557520b6ae9da780264db04a1fcdf460ee11047c4af59bd46"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/604_P1600_dyadic_model_audit.py",
+      "sha256": "174c117e0e02e08494b482082cdca516572bc9868e129a5c91c16de028c17394"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/605_P1600_finite_model_review.py",
+      "sha256": "e176e26cc930b632e4a7b20f1b551393c7f21418a084257e9aaa408c35c0e6e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "peak_rss_bytes": 227475456
+}

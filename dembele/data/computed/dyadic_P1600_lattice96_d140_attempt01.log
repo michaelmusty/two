@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/584_dyadic_P1600_lattice_recognition.py", line 132, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/584_dyadic_P1600_lattice_recognition.py", line 93, in main
+    assert child.returncode == 0 and 'D140_LLL_WORKER_PASS' in child.stdout, (child.returncode, child.stdout, child.stderr)
+AssertionError: (1, 'Could not find SageMath-10-6.app\nPlease start sage from the GUI to restore your environment.\n', 'failed to scan /Users/musty/Applications: -10822\n from spotlight')

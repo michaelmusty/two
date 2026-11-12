@@ -1,0 +1,25 @@
+{
+  "kind": "operational_Magma_access_test_not_a_research_certificate",
+  "observed_UTC": "2026-10-05T17:22:48.963032+00:00",
+  "command": [
+    "/Applications/Magma/magma",
+    "-b"
+  ],
+  "version": "V2.29-8",
+  "exit_code": 0,
+  "wall_seconds": 0.4214591659838334,
+  "timeout_seconds": 30,
+  "timeout_terminates_process_group": true,
+  "stdout": "REMOTE_MAGMA_OK\n42\nMAGMA_ARITHMETIC_OK\n",
+  "stderr": "",
+  "rosetta_install_successful": true,
+  "checks": [
+    "checked-in smoke test: REMOTE_MAGMA_OK and 42",
+    "target base number field has degree 8",
+    "finite field GF(256) has 256 elements",
+    "defining polynomial vanishes at the field generator"
+  ],
+  "pass": true,
+  "D133_coordinator_admission_hold_seconds": 3.7187475000100676,
+  "D133_coordinator_resumed": true
+}

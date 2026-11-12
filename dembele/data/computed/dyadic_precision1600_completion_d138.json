@@ -1,0 +1,103 @@
+{
+  "status": "pass",
+  "milestone": "D138",
+  "sixteen_column_checkpoint_complete": true,
+  "full_bank_precision_pi": 1600,
+  "column_precisions": {
+    "0": 6400,
+    "1": 1600,
+    "2": 1600,
+    "3": 1600,
+    "4": 1600,
+    "5": 1600,
+    "6": 1600,
+    "7": 1600,
+    "8": 1600,
+    "9": 1600,
+    "10": 1600,
+    "11": 1600,
+    "12": 1600,
+    "13": 1600,
+    "14": 1600,
+    "15": 1600
+  },
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_precision1600_review_d138.json",
+    "sha256": "303783e953a3ebe5fff18b4fadadb765adfb6f3f2fb6c74d9e6ed4df2fc912a5"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision1600_review_d138_attempt01.job.json",
+      "sha256": "0963a9be2a8a52a1d0447e1c2539e16cc9077ebba1cf3d7daaebd10d3ff0c43f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_precision1600_review_d138_recheck01.job.json",
+      "sha256": "e339ea9a0cd0010c8eeea593a96594595ececaec7435308009ce7eaa78e37ec9"
+    }
+  ],
+  "completed_at": "2026-10-07T19:23:52.796036+00:00",
+  "column_run_completion": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_columns_completed_r2_d137.json",
+    "sha256": "3ec46237c52d95f0e0e2eb5835b6eeb761ba9ad7a20dfeda614d48fc2b613c0b"
+  },
+  "D137_successful_column_jobs": 92946,
+  "D138_successful_comparison_and_review_jobs": 22,
+  "D138_failed_bounded_jobs": 0,
+  "inherited_catalogue_hash_occurrences_replayed": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "new_review_sources": 315,
+  "comparison_certificates": {
+    "all_bank_assembled_coarse_values_checked": 1088,
+    "frame_relation_certified_error_beta": 2901,
+    "change_column_error_bounds_beta": [
+      2937,
+      2936,
+      2937,
+      2936,
+      2936,
+      2940,
+      2936,
+      2939,
+      2937,
+      2937,
+      2938,
+      2936,
+      2939,
+      2936,
+      2936,
+      2936
+    ],
+    "inherited_inverse_norm_preserved_by_overlap_beta": 799,
+    "all_actual_jet_values_checked": 1088,
+    "independent_quadric_coefficients_checked": 6188,
+    "positive_coefficients_checked": 4641,
+    "certified_mismatch_count": 0,
+    "degree16_section_lower_beta": [
+      6594,
+      6545,
+      6528
+    ],
+    "anchor_section_lower_beta": [
+      6376,
+      6048,
+      5784
+    ],
+    "sufficient_nonanchor_beta": [
+      25155,
+      25269,
+      25376
+    ],
+    "W_Gaussian": {
+      "valuation_beta": 1024,
+      "error_beta": 3625
+    },
+    "W_Gaussian_inverted": false,
+    "positive_exact_vanishing_proved": false,
+    "method": "integer quotient absolute-error balls, frame residual bounds, gradients and polar forms"
+  },
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "next_precision_bank_admitted": false,
+  "next_work": "Remove repeated directory-wide receipt searches with bounded independent controls, then update the cost of the next precision stage before requesting a larger bank decision."
+}

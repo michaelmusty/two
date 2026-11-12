@@ -1,0 +1,36 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/590_dyadic_P1600_recognized_lattice_comparison_revision.py",
+    "--output",
+    "dyadic_P1600_recognized_lattice_comparison_r2_d140"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 4.959198875003494,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognized_lattice_comparison_r2_d140_attempt01.log",
+    "sha256": "ab10e58f538ab1de21a15822bd8ba4d30c4dbb2e1f8db15b8002c7d3ea9eec38"
+  },
+  "private_process_group": 5437,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/590_dyadic_P1600_recognized_lattice_comparison_revision.py",
+    "sha256": "47a754ad73d5aa3ed9098918149d2a5a8d408605e70138e1eef68103338a3074"
+  }
+}

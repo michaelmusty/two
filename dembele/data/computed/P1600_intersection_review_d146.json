@@ -1,0 +1,244 @@
+{
+  "status": "pass",
+  "milestone": "D146",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145.json",
+    "sha256": "f70755392504a0b21476bb80465623bd5fddd2cca3134a9e11883d81ea5ea5c5"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_intersections_d146_attempt01.job.json",
+        "sha256": "160739fab3065b6f9cf1bb78dfe939b6517aaee7ef1822ef68b7acc95a052a4c"
+      },
+      "wall_seconds": 5.31851608294528,
+      "conservative_peak_rss_bytes": 303153152
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_audit_d146_attempt01.job.json",
+        "sha256": "a939ba642f03e2fe73a8ba90a4355a8a5bb21c49448965dd209ed259b1195262"
+      },
+      "wall_seconds": 4.041449167008977,
+      "conservative_peak_rss_bytes": 307150848
+    }
+  ],
+  "all_dyadic_intersections_on_Q_accounted_for": true,
+  "elliptic_intersections_away_from_2_and_3_vanish": true,
+  "wild_local_groups_at_3": [
+    "C3",
+    "S3"
+  ],
+  "odd_pair_cost_bounds_log3": [
+    "18",
+    "45"
+  ],
+  "safe_joint_strict_bounds": [
+    "48",
+    "79"
+  ],
+  "safe_Faltings_strict_upper": "4.2",
+  "Faltings_lower_29_disproved": true,
+  "all_three_D141_Faltings_only_critical_targets_excluded": true,
+  "RR_and_CM_normalizations_retain_prior_documented_source_reconciliations": true,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_curve_spectral_calculation_started": false,
+  "new_geodesic_census_started": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Investigate the actual relation-space exterior height target 623 via the determinant of the canonical multiplication sequence in the fixed rational residue frame, retaining integral indices and quotient metrics. Exact structural identification remains an alternative. The Faltings-only P1600 repair is ruled out; existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "wall_seconds": 58.88154045899864,
+  "sources": [
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-elliptic-intersections-d146.md",
+      "sha256": "0c53765a081be5211fc6bdc42f27ae6dc6784c81060ab6fbf922e16f573d2429"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-finite-model-cotangents-d143.md",
+      "sha256": "2121f8909125ccf94ce5b4f061b3f0a22bdf8a93b19e2cad9181fd16cdee3a76"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-joint-adjunction-RR-d144.md",
+      "sha256": "7f1e43faa2aabb16fb5443d23d64e878659a2ac79b4194cfb86326634b63a1bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-spectral-feasibility-d145.md",
+      "sha256": "62c8cd495721790fcf1a3e111822d4e8b66d1e8e4ef02fdca18dc36a29ed8d43"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-intrinsic-height-d104.md",
+      "sha256": "454495a0bfd60eeca0ca9cad8549b8372c74fb930872a9e6773bab77e4255a7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143.json",
+      "sha256": "d4614e3af30ac4e39ecd8d26b5900c2406f566c6be86c79ef8b0fb6e816fd4e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_diagnostic_d143.json",
+      "sha256": "130a844e382dedbf896d3bb096f3bba1e2c9b8872f687a1a8ec63d4dcbce594e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143.json",
+      "sha256": "8f15df78c8eb5064396ef0dd761821a1b0f0739d0f3b6a58e7830012e18de282"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143.json",
+      "sha256": "42f16ac5a41fccbbd0b6c64a2be05bd583358e5d216b210cf3a3b5b62ef79072"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_intersections_d146.json",
+      "sha256": "5eed02404042e2dc7ffe7d1aca23a572e0730f68821c0134c230873fde98d6b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_intersections_d146_attempt01.job.json",
+      "sha256": "160739fab3065b6f9cf1bb78dfe939b6517aaee7ef1822ef68b7acc95a052a4c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_intersections_d146_attempt01.log",
+      "sha256": "9bd4eea491a099f1a50ab83d13988d0b6320b9e812556eac511ace4e7d905b31"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_intersections_d146_worker.json",
+      "sha256": "ef53fb8ba1f33180257cd637731c20ca70e85fd6e3ab007bbade546e32a37105"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_audit_d146.json",
+      "sha256": "cd256ba464eba09b238e8c5fc89eaf132bd550c5e31a42543d5cda2dd7c74be9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_audit_d146_attempt01.job.json",
+      "sha256": "a939ba642f03e2fe73a8ba90a4355a8a5bb21c49448965dd209ed259b1195262"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_audit_d146_attempt01.log",
+      "sha256": "b601c7f40e79ed6a9073b0467f79a49b54335f41291152810c7a1b55d48890bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_audit_d146_worker.json",
+      "sha256": "2063cc60e177f3a1f8ff6269cbc488052848db51e6e2ff9c0aea816460da57da"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_sources_d146.json",
+      "sha256": "ecb2f23b8d44316ff7f3f652ba09f78be02d68276741eb6d4922ed68244fe83d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_joint_adjunction_d144.json",
+      "sha256": "92a1655c5190824b0fc44c1a6ea040244ea2bece80072750bc4ca1e632f74443"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141.json",
+      "sha256": "3b091f291bc873dd5e4ffebdddbea43d6dc551faed658c9b0150103abd61d8e5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_completion_d145.json",
+      "sha256": "586a9144dc8786703b9b2e36b7862f443fc9077dffac852e5e7eae74515a0513"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_completion_d145_attempt01.job.json",
+      "sha256": "e008972e28e4bab644982c2a7db40dc106555638882453eb02b4d52fa76164b9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_completion_d145_attempt01.log",
+      "sha256": "75620a6f9b4ce34e943f0784b4ff6e1cbb9af67ded9027581dad2bfc28160b47"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_feasibility_audit_d145.json",
+      "sha256": "6292e65d6ac0184a28a82ff1c0d823698e2f690f5b3d8893230dd26aea78e4fd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145.json",
+      "sha256": "f70755392504a0b21476bb80465623bd5fddd2cca3134a9e11883d81ea5ea5c5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145_attempt01.job.json",
+      "sha256": "035368c21c8c72aec8b0b4902b5cd2262547654e6dc867eea21c50ff1beac6c0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145_attempt01.log",
+      "sha256": "3b2a1b1c6127c08270aa5d9f9214bbf472ae12fefaa465e34041c534c3ac79e8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145_recheck01.job.json",
+      "sha256": "51aa6bd8767ac5e81ba0208f33b5b78e599a62c895dec2c6caa606d237910c77"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145_recheck01.log",
+      "sha256": "ec5afe7ddc29dac6bbbbc65feca94c94977e2e1e30334deb7a48e2d182036622"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/613_P1600_spectral_review.py",
+      "sha256": "9b9d42d76f5a733ac01b18433b17b4d07fc53dd37934bc8cb7ff9ba45dcd9dc6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/614_P1600_elliptic_intersections.py",
+      "sha256": "715ee905d927a172d1903dfaccd380abb7fc8d479644b88daa2314de1f35bc35"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/615_P1600_intersection_audit.py",
+      "sha256": "a52a5a6ef1250fb65e1cd4f9e83f00c722912e1e520196735fac74beb83d4d55"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/616_P1600_intersection_review.py",
+      "sha256": "9b0e412ba9cdfd87da7c3aa796c60514c09ab7de913c69aff812df08986ffd22"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "peak_rss_bytes": 224886784
+}

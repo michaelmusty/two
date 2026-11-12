@@ -1,0 +1,18 @@
+{
+  "kind": "operational_credential_validation_not_a_research_certificate",
+  "observed_UTC": "2026-10-05T19:49:41.319979+00:00",
+  "status": "authentication_rejected",
+  "authorization": "User explicitly approved testing .env.bak on Chatelet and replacing .env only if the backup works.",
+  "endpoint": "https://chatelet.mit.edu/api/v1/project_exec",
+  "credential_source": ".env.bak",
+  "same_configured_host_and_project_verified": true,
+  "requested_command": "/usr/local/bin/magma --version",
+  "HTTP_status": 400,
+  "API_error": "No account found. Is your API key wrong?",
+  "remote_command_execution_not_established": true,
+  "env_replaced": false,
+  "credential_files_modified": false,
+  "secret_values_printed_or_recorded": false,
+  "approval_review_allowed_this_attempt": true,
+  "next_step": "Create a fresh account API key on chatelet.mit.edu and install it using python3 remote_magma/set_key.py; then recheck remote access."
+}

@@ -1,0 +1,252 @@
+{
+  "status": "pass",
+  "milestone": "D148",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147.json",
+    "sha256": "00162f3f1bcf50d2cad54bdf2625c3573307017c289e3d95d1e15887a2a9dd12"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 1,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_bound_d148_attempt01.job.json",
+        "sha256": "43387ae0c95084b13cdd2bf56c016b35b65995ef08ed963599744ccd9cab3ed5"
+      },
+      "wall_seconds": 5.127654040989,
+      "conservative_peak_rss_bytes": 290766848
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt02.job.json",
+        "sha256": "19021c2d53942013ae449ec027e7ed199f711ff19c56ac67b853c460371e5ad0"
+      },
+      "wall_seconds": 3.784744208038319,
+      "conservative_peak_rss_bytes": 292323328
+    }
+  ],
+  "failed_audit_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt01.job.json",
+    "sha256": "8071fdb3a70ac7f19b8ea8b11156da6abba5ca7d572973254591d381ce45bef2"
+  },
+  "failed_audit_reason": "A two-argument Sage QQ call in an exterior-norm control raised NotImplementedError. Replaced with exact rational division; dual-field and height calculations passed unchanged.",
+  "previous_relation_height_upper": 83240,
+  "best_current_proved_relation_height_upper": 15237,
+  "effective_R_minus_t_strict_upper": 15193,
+  "worst_filtration_ranks": [
+    17,
+    15,
+    13
+  ],
+  "field_size_removed_majorant_strict_lower": 11266,
+  "majorant_floor_is_not_an_actual_height_lower_bound": true,
+  "field_vector_norm_refinement_alone_cannot_reach_623_in_this_majorant": true,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_curve_spectral_calculation_started": false,
+  "new_geodesic_census_started": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Assess a relation-specific exterior comparison or a primitive principal-parts pencil comparison that avoids the full rank-91 ambient cofactor-frame majorant. Any cancellation must apply to the actual relation space and retain D119 horizontal-order/global-normalization data. Field-vector norm refinement alone cannot reach 623 in the present bound. Exact structural identification remains an alternative; existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "wall_seconds": 60.123185458010994,
+  "sources": [
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-forward-frame-bound-d148.md",
+      "sha256": "df3af6bf1a25467ef33c2c9a850264c1009179091abcf4afb13a5f0a392c4e04"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-multiplication-determinant-d147.md",
+      "sha256": "5e912c829a0753c154e99363d64a30a0fc02b3d2dc0b79bccdf7f15c3dec32ea"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-compound-height-d116.md",
+      "sha256": "5e25d087596efeee0a676525d19f76acc1dc6e3cfe316d743457efe225cd5b5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-disk-and-exactness-d117.md",
+      "sha256": "a4d5cc5655faecb55eef85adbddcc58ac57b8fe4c428e603f3961371358ae031"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-residue-lattice-d102.md",
+      "sha256": "c1f765330d02567a904444252b3dfb7fc2ac8e0746678a2a2efbc0ff19d68080"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148.json",
+      "sha256": "bab6daecfda4447867bb46459568b11fb9812a88937881a10584c5132361f3fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt01.job.json",
+      "sha256": "8071fdb3a70ac7f19b8ea8b11156da6abba5ca7d572973254591d381ce45bef2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt01.log",
+      "sha256": "e4ffdd9a7230666d30c83be92da57187f5a612062579abff2426416e1de01e4b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt01_failed.py",
+      "sha256": "ace27560600c3b2aa16bfa7cd454e91e64ce3285b446744da93aefc591341165"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt02.job.json",
+      "sha256": "19021c2d53942013ae449ec027e7ed199f711ff19c56ac67b853c460371e5ad0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt02.log",
+      "sha256": "e5f0cdef170a8b72e1c1151a45f3492d63447da09df05837f8ffd0f83cabbfbb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_worker.json",
+      "sha256": "493798a5e6a49e4c24d06788f4841bffda5da2e23f02847568485d10f1e51724"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_bound_d148.json",
+      "sha256": "80e6491b23859c0704c4e6e6556cb7aa049ce402d87aff3d837544bd85374ec9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_bound_d148_attempt01.job.json",
+      "sha256": "43387ae0c95084b13cdd2bf56c016b35b65995ef08ed963599744ccd9cab3ed5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_bound_d148_attempt01.log",
+      "sha256": "0ef59af36026980fd892f86a085c2a508b2155a1427cad0c293786a5c2b89d69"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_bound_d148_worker.json",
+      "sha256": "fd26dc5a3db8e7607b153690c9ab3e354990dfa35468068344d9b200afbc0236"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_sources_d148.json",
+      "sha256": "9d3f9920a60d6b500ad0e3f6cd57e011d23957de1e92754b0c5e4626c585b851"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_completion_d147.json",
+      "sha256": "53fc2bc7ee273b0a2787f0bd5228921111a3c92e3f15b6cf00ebaa1d55ae52ee"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_completion_d147_attempt01.job.json",
+      "sha256": "a5ee14544e90c91d67d6d8e9c4789dbde1c5b1e69c80e1d3c7a560eb463bc10d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_completion_d147_attempt01.log",
+      "sha256": "a4d22b52cde19f8de2d02f6b091a6c8883098e63cc26fdc2f4d39f8688e463cb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_determinant_d147.json",
+      "sha256": "fd3b2444872e90959ff05d6259a51c48796194165b111dd30d8a6084e8d08736"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147.json",
+      "sha256": "00162f3f1bcf50d2cad54bdf2625c3573307017c289e3d95d1e15887a2a9dd12"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_attempt02.job.json",
+      "sha256": "85cd3a351483c7ae7cf63d09305f92b40a463113b05c9a77804038b726a4cdd3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_attempt02.log",
+      "sha256": "cdf4b1f0c178eb6acecc8f95496b8dc99d8ae169f6729189c8b8cf6d7086e862"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_recheck01.job.json",
+      "sha256": "8540186c687903b8312553558ff52a886f0c49f61414c4be68b0ab7edbfe34ba"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_recheck01.log",
+      "sha256": "7205c1bab5734ddee96141f1e1031025e334ecc500bd504ef30dbf4bf1600357"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_audit.json",
+      "sha256": "03968cdf38f3b8ab5a0acfcf6bdd2a672908b8b7d17260dfcb501168dbcce281"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_field_recognition.json",
+      "sha256": "b9585a6b40f6c21f4ffadd62caad290cd731cf2f432c54d1f61790d85c6e0ce8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_residue_lattice_d102.json",
+      "sha256": "5191728d51fbdaa909740824ee45b84ef27ce151b9ae581c2d9d00329a6704fb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/619_P1600_multiplication_review.py",
+      "sha256": "d32c8b49299698e692f1474df628e27f88033d6e5b53be4fc04520d65bf3d9e2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/620_P1600_forward_frame_bound.py",
+      "sha256": "2d5e1e6af3fcaaec86414d28a4460a84c014f6159786f75f54a329d551eb0753"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/621_P1600_forward_frame_audit.py",
+      "sha256": "7c860a1988bf714e73116ab35277c1db794f03fde057be893b6c6ac6fc31776f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/622_P1600_forward_frame_review.py",
+      "sha256": "ac644291b5f259d979881729e02fe961dcd0b4c216090e242193d716705cb832"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "peak_rss_bytes": 216612864
+}

@@ -1,0 +1,50 @@
+{
+  "status": "running",
+  "kind": "nonmathematical_progress_observation",
+  "milestone": "D137",
+  "revision": 2,
+  "observed_at": "2026-10-06T20:40:38.812923+00:00",
+  "completed_production_records_observed": 518,
+  "latest_logged_phase": "operator001_e024_024",
+  "first_seed_solve_verification_archive_cycle_passed": true,
+  "passing_barrier_receipts": [
+    {
+      "key": "low_verify_000_00",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_r2_d137_low_verify_000_00_attempt01.job.json",
+        "sha256": "42b3496740c83b68a0fb04f5efae62fc38d3a109346a54eb54a9223f2494cf36"
+      },
+      "seconds": 9.560862499987707
+    },
+    {
+      "key": "sweep_finish_000",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_r2_d137_sweep_finish_000_attempt01.job.json",
+        "sha256": "137caf404e47ec4a514eefd759ebd54b00330a6dfcc61851325746294121d9c0"
+      },
+      "seconds": 0.23690504196565598
+    },
+    {
+      "key": "archive_sweep_finish_000",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_r2_d137_archive_sweep_finish_000_attempt01.job.json",
+        "sha256": "f7e24f494b0c24cb47cd6ce2d4abe0778f5e056e85a44ac21560161ad07a0c03"
+      },
+      "seconds": 32.52444595802808
+    },
+    {
+      "key": "low_begin_001",
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_r2_d137_low_begin_001_attempt01.job.json",
+        "sha256": "7b7c82020c288bdbe67ea7ef6ed1c3150e7a5cfb9e3ca3d53934e19e060603c9"
+      },
+      "seconds": 0.18291437503648922
+    }
+  ],
+  "maximum_observed_production_job_seconds": 11.847593041020446,
+  "maximum_observed_production_RSS_bytes": 138821632,
+  "last_log_observation_contains_worker_traceback": false,
+  "full_bank_comparison_still_P800": true,
+  "snapshot_not_a_completed_P1600_column_certificate": true,
+  "log_path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_bank_r2_d137_run01.log"
+}

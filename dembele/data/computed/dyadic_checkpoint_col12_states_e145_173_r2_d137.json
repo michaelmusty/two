@@ -1,0 +1,94 @@
+{
+  "status": "pass",
+  "milestone": "D137",
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col12_config_r2_d137.json",
+    "sha256": "498d2940e3eb9d58df7632d96ee21962963d50484d068db23cbb84a4d3197d08"
+  },
+  "working_precision_pi": 1600,
+  "harmonic_basis_column": 12,
+  "phase": "states",
+  "certificates": {
+    "first_state": 145,
+    "last_state": 173,
+    "complete_old_weighted_overlap_scalars": 185600,
+    "exact_masses": 29,
+    "final_residual_zero_rows": 29,
+    "row_sha256": [
+      "06dd035334677071525c46e4cbb7b5f84c42ccd39ebd2ccddc87b8fdd93f0984",
+      "6a417c3ba24d63cc54a3bd1e1989cc2d30ed9c0a32a90e47ab02caccff5c96dd",
+      "447883c45bffe89e9e7be6fef55b12e55e3a0e5eed2589f4d8980782ce0b9ef4",
+      "e83c8269790a33bcc9d7cb7bea42127a7418d8d582b4f7b3404ddfec8e481f8d",
+      "7a0058b977f7995529467529db8a772a1b1cb234169c4279035140bcf0a03a3e",
+      "596f2dc7ddb6280b02c24ecf7e051969d05351ee6823d2f8fafdb9254429e592",
+      "62946e339bff0ffa40af0dcdf4e34e1f6428076a4cd5b9aff34adc2d5caafdee",
+      "cb03ec20ff1edf565d189ef54bdb74a46ef5b57e8a8183da47cc0dcbbac024b4",
+      "8004a91b806d6fc6033d9fa87b91f5eb461a9c6056740fcc3a6617df9be89a1e",
+      "79735f274755f608fa9da96aec1fff94a5c0cb947c8c965e6e710d85cee7bded",
+      "62107581caadb6c29b52b089d97bc8b5f898d83b2ade77a1b21c611f01df9daa",
+      "a4fe3b58e6b6f7a907bbaaaf6e3830d677599c17aa1b923f6a7a3b64badea421",
+      "899e8dd978af8a9d971a9e938c971c4a6b975740a87b3a116eec88227d25a922",
+      "d56b66549b3142db591734a6024b906803e3113bba9e43acc6d1b1de380c1ab8",
+      "6ea47f40d957a3b50fb686381a012e93c0bce103aa03a3d1ded07c64ced4d1f3",
+      "763c4d6212d1906eb08a324183ebd206b569deeef496c21cccdf9af2f3d5e09d",
+      "fde9c9892df6ba057b3d23f887fa6961d1a6c1f2af0bf238e6267f79cb15688b",
+      "9c7503758f9fde40df81f654e0b749663224860cdb7bcc3ab751907d11015ba8",
+      "ecda4c5dc38f1ec5b1db848dc99ab3ff6a4993c5e5383afaa77e176fab156d61",
+      "736f7d797379630a53f349bde01b9959e6bec56f562726959eefdd304033d83b",
+      "70cec1b8e6a9296bbf185dadded7ebf4f05bc29e2cec1b8a721aa0d09df27c9d",
+      "3e3b4636a8dfc0a693e90a7a38ab67003466035376f3edba4db0abb8de016e71",
+      "16b6d4d712b6ea1b2c4242ae9a9ee007fbbdaeea7cfa2edaf4eb155f8cb1d3ce",
+      "172a35cb0cec53aedf994b25118b63eba49d9b677bfee60c0e4f7586d1e1f0b0",
+      "2f488f70ccf12365d63e517fdc548db9a34c6d397b8f611869878bda25945b85",
+      "ba029fa16bcadaadfe38884da7fe9dff95998bdcb201058815a0ac2b346dbd16",
+      "8bc0e9dd8ddccede92ad5d7278620533d00c6eaecde7fc0130b1439db28a8686",
+      "c138e586d9ab5402fa70f95c68f7c3bd091172cd67370f96cd6bcefd9b6710cd",
+      "64d629bdd67425b3358499d7c186b1edfc7aa25221b83cb8f3ec322e9d408532"
+    ]
+  },
+  "production_arithmetic_not_imported": true,
+  "wall_seconds": 0.27683124999748543,
+  "peak_rss_bytes": 25509888,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_harmonic_certificate_d111.json",
+      "sha256": "d4c1a33d9d918767e55a856e6cf85b3d88a5135ae4396ae86977789bc35de84a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col12_r2_d132/CURRENT.json",
+      "sha256": "915aa14809c9ffb011f1bea9aaff39c9fd4d707cfb8505f3aac50d9ae81632f4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col12_r2_d132/INPUTS.json",
+      "sha256": "27d8204707fd8a8202142b42e2cb57f36814b56e42397232ef7decbb1e73a47d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col12_r2_d132/SEALED.json",
+      "sha256": "f438859d29a401da4e210876833393930ce43a4506051a46ca2c8f568b627c9f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col12_r2_d132/aux_ready024.bin",
+      "sha256": "2d882e4b78b51a71e4201d967f273a3a18e3d12efeee32c5eacd69e43a11fe8b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col12_r2_d132/state.bin",
+      "sha256": "73d51ad380c3385e8432a2f51773c14613216aa068ae19a588484470f381386e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col12_config_r2_d137.json",
+      "sha256": "498d2940e3eb9d58df7632d96ee21962963d50484d068db23cbb84a4d3197d08"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_weighted_P800_col12_reconstructed_d125_state.bin",
+      "sha256": "a9ac8c83d89e47b2bcb0ae027ed47967131e9540fbfaab011b9a9760797d91d8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/564_dyadic_checkpoint_independent.py",
+      "sha256": "3f98c8b88031b573ab0aa5179d7c4450d59aa11d7462d4bcd1911dfcef9b66f1"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "status": "pass",
+  "milestone": "D143",
+  "arb_precision_bits": 224,
+  "independent_grounded_Laplacian_solution": [
+    "12",
+    "15",
+    "8",
+    "18",
+    "25",
+    "5",
+    "2",
+    "2",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "order3_points_by_component": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_tail_contractions": [
+    [
+      38,
+      26,
+      "1",
+      "4/3",
+      "1/9"
+    ],
+    [
+      37,
+      25,
+      "1",
+      "4/3",
+      "1/9"
+    ],
+    [
+      36,
+      24,
+      "1",
+      "4/3",
+      "1/9"
+    ],
+    [
+      35,
+      23,
+      "1",
+      "4/3",
+      "1/9"
+    ],
+    [
+      5,
+      4,
+      "16",
+      "47/32",
+      "225/64"
+    ],
+    [
+      4,
+      2,
+      "8",
+      "47/32",
+      "225/128"
+    ],
+    [
+      1,
+      2,
+      "8",
+      "2/3",
+      "8/9"
+    ],
+    [
+      2,
+      3,
+      "8",
+      "205/96",
+      "11881/1152"
+    ],
+    [
+      3,
+      6,
+      "4",
+      "205/96",
+      "11881/2304"
+    ]
+  ],
+  "coarse_correction_coefficient_b": "-153/4",
+  "tail_correction_coefficient_b": "16955/768",
+  "minimal_regular_model_correction_coefficient_b": "-12421/768",
+  "E_model_coefficient_log2": "-12421/6144",
+  "E_model_interval": [
+    "-3634833206340820586800796141584371/2593902639772810479030075517881046",
+    "-9023958774441766836228405266928195/6439709653084623280716359668691849"
+  ],
+  "E_model_computed": true,
+  "E_model_sign_proved": true,
+  "good_reduction_away_from_2": true,
+  "delta_other": 0,
+  "RR_main_term_after_model_interval": [
+    "18043963837216457253784308025227149/681899724124191230301716098248053",
+    "15869838486705188461182344009690804/597640254599711866877134316070745"
+  ],
+  "sufficient_I_plus_spectral_upper_target_interval": [
+    "-95627927844223531878887686210766073/196609743328893271384325426077322",
+    "-129434184191281376522960353754967763/266165765940935583570902185816398"
+  ],
+  "safe_sufficient_negative_target": "-97277/200",
+  "equivalent_sufficient_log_CZ_plus_I_over6_upper": "-97277/1200",
+  "display_E_model": -1.4012990120011524,
+  "display_negative_target": -486.385,
+  "geometric_claims_require_companion_proof": true,
+  "corrected_global_RR_constant_certified": false,
+  "Faltings_lower_29_proved": false,
+  "candidate_identification_proved": false,
+  "peak_rss_bytes": 19988480,
+  "wall_seconds": 4.320809125027154,
+  "child_peak_rss_bytes": 302776320,
+  "conservative_peak_rss_bytes": 322764800,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/604_P1600_dyadic_model_audit.py",
+      "sha256": "174c117e0e02e08494b482082cdca516572bc9868e129a5c91c16de028c17394"
+    },
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143_worker.json",
+      "sha256": "2c4065c31bfaf413fbd75ed73d708d36a5dac296683f5e5de253b5cd6cf47aa9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_quotient_export_d111.json",
+      "sha256": "a7b447891c27f36e29ba694fe0c3d557fc14a6abf6fac107da8ce7e4601d9e94"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_diagnostic_d143.json",
+      "sha256": "130a844e382dedbf896d3bb096f3bba1e2c9b8872f687a1a8ec63d4dcbce594e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142.json",
+      "sha256": "4c843dd5573f11b1172dcd4bfb2166c7658786086cc3afdd6385a5b37f415ce9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143.json",
+      "sha256": "8f15df78c8eb5064396ef0dd761821a1b0f0739d0f3b6a58e7830012e18de282"
+    }
+  ]
+}

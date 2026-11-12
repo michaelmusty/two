@@ -1,0 +1,75 @@
+{
+  "status": "pass",
+  "milestone": "D146",
+  "arb_precision_bits": 224,
+  "different_product_controls_independent": true,
+  "factorial_valuation_negative_control_rejected": true,
+  "pair_cost_two_sided_linear_identities_verified": true,
+  "individual_dyadic_marks_and_tails_replayed": true,
+  "dyadic_combined_log2_coefficient": "1193197/6144",
+  "joint_Psi_plus_I_lower_interval": [
+    "13672409261177430666552051018013663/279799347414010867085865982806530",
+    "43925543414009129569277798467867006/897946222732027226989299900436811"
+  ],
+  "joint_Psi_plus_I_upper_interval": [
+    "59374096216964343554537095402301771/756092247190596152298985585479875",
+    "52681489202715072860181813046150864/670415811504269583048462529889715"
+  ],
+  "Faltings_upper_interval": [
+    "15392398248471023879900166589946007/3743884032873275387026140224356673",
+    "698709707861662442878676544061975/169446726073013644815921277240243"
+  ],
+  "all_three_D141_Faltings_only_critical_targets_excluded": true,
+  "safe_joint_strict_bounds": [
+    "48",
+    "79"
+  ],
+  "safe_Faltings_strict_upper": "4.2",
+  "Faltings_lower_29_disproved": true,
+  "candidate_identification_proved": false,
+  "relation_height_at_most_623_proved": false,
+  "new_precision_bank_admitted": false,
+  "mathematical_claims_require_companion_derivations": true,
+  "peak_rss_bytes": 20021248,
+  "wall_seconds": 3.959944166999776,
+  "child_peak_rss_bytes": 287129600,
+  "conservative_peak_rss_bytes": 307150848,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/615_P1600_intersection_audit.py",
+      "sha256": "a52a5a6ef1250fb65e1cd4f9e83f00c722912e1e520196735fac74beb83d4d55"
+    },
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_audit_d146_worker.json",
+      "sha256": "2063cc60e177f3a1f8ff6269cbc488052848db51e6e2ff9c0aea816460da57da"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_intersections_d146.json",
+      "sha256": "5eed02404042e2dc7ffe7d1aca23a572e0730f68821c0134c230873fde98d6b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143.json",
+      "sha256": "d4614e3af30ac4e39ecd8d26b5900c2406f566c6be86c79ef8b0fb6e816fd4e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143.json",
+      "sha256": "8f15df78c8eb5064396ef0dd761821a1b0f0739d0f3b6a58e7830012e18de282"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_review_d141.json",
+      "sha256": "3b091f291bc873dd5e4ffebdddbea43d6dc551faed658c9b0150103abd61d8e5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_feasibility_audit_d145.json",
+      "sha256": "6292e65d6ac0184a28a82ff1c0d823698e2f690f5b3d8893230dd26aea78e4fd"
+    }
+  ]
+}

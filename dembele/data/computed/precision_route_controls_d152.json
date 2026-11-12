@@ -1,0 +1,126 @@
+{
+  "status": "pass",
+  "milestone": "D152",
+  "independent_uncollected_section_thresholds": [
+    10416,
+    10480,
+    10552
+  ],
+  "rank45_two_positive_order_sufficient_P": 10480,
+  "strict_previous_multiple_of_8_rejected": true,
+  "shorter_basis_does_not_reduce_two_order_target": true,
+  "inventories_checked": [
+    {
+      "seed": 1600,
+      "target": 3200,
+      "jobs": 12570,
+      "weighted_bytes": 113343600,
+      "reported_peak_live_files_reconstructed": 304049792
+    },
+    {
+      "seed": 3200,
+      "target": 6400,
+      "jobs": 24579,
+      "weighted_bytes": 449407200,
+      "reported_peak_live_files_reconstructed": 973167872
+    },
+    {
+      "seed": 6400,
+      "target": 10480,
+      "jobs": 31419,
+      "weighted_bytes": 1200909024,
+      "reported_peak_live_files_reconstructed": 2005700320
+    }
+  ],
+  "rejected_direct_inventory": {
+    "seed": 1600,
+    "target": 10480,
+    "jobs": 69035,
+    "weighted_bytes": 1200909024,
+    "reported_peak_live_files_reconstructed": 4711815952
+  },
+  "costs_recomputed_with_rational_phase_weighting": true,
+  "filesystem_shortfalls_checked_against_saved_observation": true,
+  "D136_complete_synthetic_chart_count": 17,
+  "D136_max_measured_chart_RSS_bytes": 1914568704,
+  "D136_sum_three_largest_measured_RSS_bytes": 5087657984,
+  "rank_deficient_restriction_control_rejected": true,
+  "rank_criterion_geometric_proof_mechanically_verified": false,
+  "times_are_empirical_allowances_not_runtime_bounds": true,
+  "new_precision_bank_admitted": false,
+  "actual_harmonic_precision_increased": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "wall_seconds": 1.6384776249760762,
+  "peak_rss_bytes": 110002176,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/construction-reassessment-d120.md",
+      "sha256": "065569ba19e1cc59baed54f475300e2102ca8878acc9168bc74b9ab7f9e71641"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-P1600-recognition-d140.md",
+      "sha256": "8fc9103b0d5c10b5cad2f9cc37b10155a1b1639a834e155ee4dc145ad77cdb92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-indexed-recost-d139.md",
+      "sha256": "19a30e8d18d1892409806058548f308586302ea382f847436ad0d92edc88a915"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-target-charts-d136.md",
+      "sha256": "a381a53f75924835b482484b27c205709b173454cab61dcaf536d89cfa062880"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_proof_gap_diagnostics_r2_d141.json",
+      "sha256": "a54f5b37e70476631580cecce7fac08d15d622cd8b4910bae25c8c6310a656e6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_height_budget_d118.json",
+      "sha256": "23246bb6effb1f20fcee619d0413424f099bf7f0e8ff61ea0c9eb8f1c5b5f8a6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_review_d140.json",
+      "sha256": "10e74cdfafcf46db04ab5cee473646aa88869c074ac30ed651193f156fadd42a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_indexed_bank_recost_r2_d139.json",
+      "sha256": "426c4547f6204be49063b62578669c896c928ff652d55cab871dc60061d2e17c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_integral_quadrics1600_d138.json",
+      "sha256": "2a50ca1dac4a1dbb06caab63ed5178fc618b69ab159e34164e5934aa38bc15d2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_chart_review_d136.json",
+      "sha256": "992a8f9cf179cbe5cee15faca6a93fea138f97951eaf8cfbb87c348e5e7f82c6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/precision_route_cost_d152.json",
+      "sha256": "d1b13eeab80b1f294bf5fee82a017c73184b15d87466c8c92909df9aa774328c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_review_d151.json",
+      "sha256": "d4b87f5533e63efffde0b04aa678ee92eb7ed015d28252b399842c0b81e8b8bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/447_cm_disk_vanishing_budget.py",
+      "sha256": "20214cdbff53e5a7ba74b1c00260192e4fad5c2834ca3e4aa49a9d7166321d40"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/450_cm_disk_exactness_review.py",
+      "sha256": "11fb5334aa26c933e399b67cb168ae20df73e2b56c472f5050e94c0aa739b29d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py",
+      "sha256": "1b7c77403b090c0f6e25c4367d4ae628c380ae8b21db2c75e3686c39b7eb7b23"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/632_precision_route_cost.py",
+      "sha256": "737f0a1b82b4277ca94f1bd22a133a2dc2c36c4022ad0e221846a126a97f1055"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/633_precision_route_controls.py",
+      "sha256": "6d4e3798adfedd1c802cb12735fe99083f5bf60ebb9b999b5e37447e41f3513e"
+    }
+  ]
+}

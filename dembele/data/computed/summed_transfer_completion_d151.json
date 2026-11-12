@@ -1,0 +1,129 @@
+{
+  "status": "pass",
+  "milestone": "D151",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/structural_identification_review_d150.json",
+    "sha256": "61da55a71288b9b11f657608b9c1c77d4e5472c2ff619d17eb7edad5cd7ecc30"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D150_direct_bindings": 32,
+  "D149_direct_bindings": 38,
+  "D148_direct_bindings": 44,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/summed_transfer_obstruction_d151_attempt01.job.json",
+        "sha256": "ad3b03ec0fc1f24c35c3319957766ad6d562bdfcb26e661adfee71577e2659f5"
+      },
+      "wall_seconds": 0.31465725001180544,
+      "peak_rss_bytes": 19185664
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/summed_transfer_controls_d151_attempt01.job.json",
+        "sha256": "9736d09dac4fbd9c494a80f895111657a00829468455041834b68ed2903d0798"
+      },
+      "wall_seconds": 0.6196743749896996,
+      "peak_rss_bytes": 22069248
+    }
+  ],
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "selected_quadric_index_zero_based": 0,
+  "selected_CM_index_zero_based": 0,
+  "selected_coarse_order": 1,
+  "nonzero_gradient_coordinate_zero_based": 0,
+  "cleared_residual_total_degree": 240,
+  "scalar_input_count": 288,
+  "finite_rational_transfer_certificate_excluded_for_selected_residual_by_companion_proof": true,
+  "summed_cancellations_allowed_in_obstruction": true,
+  "all_polynomial_moments_preserved_by_obstruction_functionals": true,
+  "obstruction_functionals_are_discontinuous": true,
+  "finite_rational_witness_search_parked": true,
+  "actual_bounded_measure_uniqueness_refuted": false,
+  "candidate_identification_proved": false,
+  "candidate_refuted": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "field_polynomial_constructed": false,
+  "best_current_proved_relation_height_upper": 15237,
+  "sufficient_height_target": 623,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "inspected_report_count": 5,
+  "report_local_links_checked_including_pending_packet_outputs": 11,
+  "next_work": "End the finite rational witness search. Any further identification attempt must name additional analytic or geometric input, or reassess the cost of the established sufficient precision/height route without admitting a larger bank. Preserve rank-45/order-four and downstream marking obligations.",
+  "completed_at": "2026-10-09T16:50:27.613306+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/summed_transfer_review_d151.json",
+    "sha256": "d4b87f5533e63efffde0b04aa678ee92eb7ed015d28252b399842c0b81e8b8bb"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/summed-transfer-obstruction-d151.md",
+    "sha256": "0ffdef0e34581a1e835d4870321b0c62bedefd7f161814b153a23495530f4023"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/summed_transfer_sources_d151.json",
+    "sha256": "27d292e27a69a8734ed12662d406527ae0eafb69acb65e50a3e2f18861b12f2c"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_review_d151_attempt01.job.json",
+      "sha256": "536a9888b66fef1ea471dbe6ebbb83d712feb986e340f0118f50f4a7ea1e811e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_review_d151_recheck01.job.json",
+      "sha256": "ceea8683b0cd99fa0ae80834acdf2619ac1faf42ead2cac34e5c72847a80d4da"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 60.29623741598334,
+      "seconds": 60.17127866699593,
+      "peak_rss_bytes": 231784448
+    },
+    {
+      "receipt_wall_seconds": 57.84063487499952,
+      "seconds": 57.73884308303241,
+      "peak_rss_bytes": 231718912
+    }
+  ],
+  "successful_bounded_jobs": 5,
+  "input_bounded_jobs": 2,
+  "review_bounded_jobs": 2,
+  "completion_bounded_jobs": 1,
+  "failed_bounded_jobs": 0,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/summed_transfer_completion_d151_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 20,
+  "next_unused_source": 632,
+  "entry_document_hashes_intentionally_not_frozen": true,
+  "all_D151_jobs_sequential": true
+}

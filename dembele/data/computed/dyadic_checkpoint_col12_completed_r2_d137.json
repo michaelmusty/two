@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "milestone": "D137",
+  "column": 12,
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col12_config_r2_d137.json",
+    "sha256": "498d2940e3eb9d58df7632d96ee21962963d50484d068db23cbb84a4d3197d08"
+  },
+  "production": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col12_r2_d137_completed.json",
+    "sha256": "dc24445494afd99588cca439d3223557f35355ef0dd6cf4801b56672a26d85b2"
+  },
+  "audits": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col12_audit_plan_r2_d137_completed.json",
+    "sha256": "6d8ce92ecb68b9a842f6a228115b57e28c3e05b4600f6c0a12e1b11d5ff15cf6"
+  },
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col12_review_r2_d137.json",
+    "sha256": "382ffa9dc5e1e00771dc8c316a4bb482ff60c5d3828136fd6fb1d619557beef7"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col12_review_r2_d137_attempt01.job.json",
+      "sha256": "d56a848a2a6928c1865e8660ff608d2d61e54ed7ebc911ad768bfab16b1f204b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col12_review_r2_d137_recheck01.job.json",
+      "sha256": "adb6c8166f21461fc24d7e591348e39ce236ded8eaa8b8aad061cd6284403947"
+    }
+  ],
+  "completed_at": "2026-10-07T11:49:11.337644+00:00",
+  "prior_admission": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_admission_r2_d137.json",
+    "sha256": "a4a7dab098b093a62ce696f496419d62d48d9254efa0aaddd007bb71e5004e92"
+  }
+}

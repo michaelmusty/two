@@ -1,0 +1,77 @@
+{
+  "updated_utc": "2026-10-13T05:45:14.073055+00:00",
+  "supervisor_pid": 60514,
+  "status": "stopped_after_failure",
+  "completed_stages": [
+    {
+      "name": "production",
+      "command": [
+        "python3",
+        "dembele/pari/run_d139_indexed_production.py",
+        "--config",
+        "dyadic_staged_P6400_col02_config_d156",
+        "--workers",
+        "3"
+      ],
+      "started_utc": "2026-10-12T17:21:19.204815+00:00",
+      "ended_utc": "2026-10-13T05:44:26.669371+00:00",
+      "monotonic_seconds": 33762.582466083,
+      "exit_code": 0,
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_production_d157_run01.log",
+        "sha256": "686476dd6094516af782148fe58d450ccf1055e4f218f94a6a112c951164036a"
+      },
+      "output": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_d156_completed.json",
+        "sha256": "0d02d2982c561ae19e9210e8d32cc13aac617d285b60a24dd9f4659fb9d5bc48"
+      }
+    },
+    {
+      "name": "audits",
+      "command": [
+        "python3",
+        "dembele/pari/run_d137_audits.py",
+        "--plan",
+        "dyadic_higher_pilot_col02_audit_plan_d156",
+        "--workers",
+        "3"
+      ],
+      "started_utc": "2026-10-13T05:44:26.737903+00:00",
+      "ended_utc": "2026-10-13T05:44:47.329041+00:00",
+      "monotonic_seconds": 20.591108832973987,
+      "exit_code": 0,
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_audits_d157_run01.log",
+        "sha256": "042b7232430a5a41f5e78b5e4d5e16af91cefdf170d13bb1190bb46de73fe94a"
+      },
+      "output": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_audit_plan_d156_completed.json",
+        "sha256": "0cdcfdba60e5fc02e0dfe9f7736b41d18c90e3f46b67650193042fa4b5387195"
+      }
+    },
+    {
+      "name": "column_review",
+      "command": [
+        "python3",
+        "dembele/pari/run_dyadic_capped.py",
+        "dembele/pari/647_dyadic_higher_pilot_column_review.py",
+        "dyadic_higher_pilot_col02_review_d156_attempt01",
+        "PASS|647_DYADIC_HIGHER_PILOT_COLUMN_REVIEW",
+        "--config",
+        "dyadic_staged_P6400_col02_config_d156",
+        "--output",
+        "dyadic_higher_pilot_col02_review_d156"
+      ],
+      "started_utc": "2026-10-13T05:44:47.334975+00:00",
+      "ended_utc": "2026-10-13T05:45:14.072326+00:00",
+      "monotonic_seconds": 26.737311625038274,
+      "exit_code": 1,
+      "log": {
+        "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_column_review_d157_run01.log",
+        "sha256": "43f62a9ddaf4fdf1902e0272260b0e0dfde3d6b0202b1b61f7c9fe24f44370c9"
+      }
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"/Users/musty/two/dembele/pari/run_d157_higher_pilot.py\", line 136, in main\n    assert code == 0, f'{name} failed; inspect its log and preserve all partial data'\nAssertionError: column_review failed; inspect its log and preserve all partial data\n",
+  "automatic_retry_attempted": false
+}

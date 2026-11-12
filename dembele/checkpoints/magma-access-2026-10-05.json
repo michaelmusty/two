@@ -1,0 +1,57 @@
+{
+  "kind": "operational_Magma_access_status_not_a_research_certificate",
+  "observed_UTC": "2026-10-05T17:25:05.227319+00:00",
+  "local": {
+    "status": "pass",
+    "version": "V2.29-8",
+    "fix": "Installed Rosetta 2 for the existing x86_64 binary",
+    "test_record": {
+      "path": "dembele/checkpoints/magma-access-2026-10-05-local.json",
+      "sha256": "2ddcb2740a6e5db2d02829eaf581da2403e2b536f50f84ab6491a623eea6120c"
+    }
+  },
+  "chatelet": {
+    "status": "blocked_on_account_authentication",
+    "TLS_fixed": true,
+    "fix": "Added verified Let's Encrypt YR1 intermediate to existing supplemental bundle",
+    "CA_bundle": {
+      "path": "remote_magma/ca_extra.pem",
+      "sha256": "0b69b14bf724f2d5c8a184441edc503e92decc7a0e5ba9c14509131d855a8b35"
+    },
+    "check_hostname": true,
+    "verify_mode": "VerifyMode.CERT_REQUIRED",
+    "verification_controls": [
+      {
+        "check": "current_chain",
+        "exit_code": 0,
+        "pass": true,
+        "diagnostic": "/private/tmp/two-chatelet-presented-chain-20261005.pem: OK"
+      },
+      {
+        "check": "old_bundle_rejected",
+        "exit_code": 2,
+        "pass": true,
+        "diagnostic": "CN=chatelet.mit.edu\nerror 20 at 0 depth lookup: unable to get local issuer certificate\nerror /private/tmp/two-chatelet-presented-chain-20261005.pem: verification failed"
+      },
+      {
+        "check": "wrong_hostname_rejected",
+        "exit_code": 2,
+        "pass": true,
+        "diagnostic": "CN=chatelet.mit.edu\nerror 62 at 0 depth lookup: hostname mismatch\nerror /private/tmp/two-chatelet-presented-chain-20261005.pem: verification failed"
+      }
+    ],
+    "API_HTTP_status": 400,
+    "API_error": "No account found. Is your API key wrong?",
+    "remote_arithmetic_run": false,
+    "credentials_modified": false,
+    "backup_credential_test_executed": false,
+    "backup_credential_test_auto_review_rejected": true,
+    "next_step": "User replaces account key with hidden-input helper or explicitly approves checking the existing backup key."
+  },
+  "references": [
+    "https://magma.maths.usyd.edu.au/magma/download/",
+    "https://support.apple.com/en-us/102527",
+    "https://letsencrypt.org/certificates/",
+    "https://letsencrypt.org/certs/gen-y/int-yr1.pem"
+  ]
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/554_dyadic_resumable_staged_production.py", line 465, in <module>
+    if __name__=='__main__':main()
+  File "/Users/musty/two/dembele/pari/554_dyadic_resumable_staged_production.py", line 442, in main
+    cert=dispatch(eng,a);st=eng.store
+  File "/Users/musty/two/dembele/pari/554_dyadic_resumable_staged_production.py", line 401, in dispatch
+    if a.phase=='create':return eng.create()
+  File "/Users/musty/two/dembele/pari/554_dyadic_resumable_staged_production.py", line 132, in create
+    else:self.store=j.Store(self.path,create=True)
+  File "/Users/musty/two/dembele/pari/547_dyadic_staged_store.py", line 31, in __init__
+    assert self.path.parent==DATA and re.fullmatch(r'dyadic_rowjournal_[A-Za-z0-9_]+_d132',self.path.name)
+AssertionError

@@ -1,0 +1,145 @@
+{
+  "status": "pass",
+  "milestone": "D133",
+  "execution_status": "actual_column_and_audits_complete_pending_fixed_review",
+  "source_numbers": [
+    556,
+    557
+  ],
+  "passing_input_jobs": 24577,
+  "failed_bounded_jobs": 0,
+  "actual_phases": 24456,
+  "metadata_archive_jobs": 97,
+  "independent_audit_jobs": 24,
+  "prior_fixed_review": "dyadic_staged_integration_review_d132.json",
+  "prior_hash_count": 18589,
+  "sum_input_wall_seconds": 83012.16985717445,
+  "maximum_input_wall_seconds": 28.544547957833856,
+  "maximum_recorded_successful_arithmetic_RSS_bytes": 862683136,
+  "production_phase_timings": {
+    "cm": {
+      "jobs": 17,
+      "summed_seconds": 398.9885173739167,
+      "maximum_seconds": 27.171188832988264
+    },
+    "cm-begin": {
+      "jobs": 1,
+      "summed_seconds": 0.513535290985601,
+      "maximum_seconds": 0.513535290985601
+    },
+    "coarse": {
+      "jobs": 68,
+      "summed_seconds": 213.1243870430044,
+      "maximum_seconds": 3.599998666992178
+    },
+    "create": {
+      "jobs": 1,
+      "summed_seconds": 0.519138750154525,
+      "maximum_seconds": 0.519138750154525
+    },
+    "extend": {
+      "jobs": 174,
+      "summed_seconds": 1828.7969540352933,
+      "maximum_seconds": 14.161091249901801
+    },
+    "init-finish": {
+      "jobs": 1,
+      "summed_seconds": 1.0018776671495289,
+      "maximum_seconds": 1.0018776671495289
+    },
+    "low-begin": {
+      "jobs": 97,
+      "summed_seconds": 26.552067921118578,
+      "maximum_seconds": 0.5079737089981791
+    },
+    "low-residual": {
+      "jobs": 149,
+      "summed_seconds": 1474.0846830391383,
+      "maximum_seconds": 19.585383917205036
+    },
+    "low-solve": {
+      "jobs": 149,
+      "summed_seconds": 2213.7802862995013,
+      "maximum_seconds": 20.982237249991158
+    },
+    "low-verify": {
+      "jobs": 149,
+      "summed_seconds": 1691.2510102484666,
+      "maximum_seconds": 18.56510225008242
+    },
+    "operator": {
+      "jobs": 16878,
+      "summed_seconds": 44758.21626585436,
+      "maximum_seconds": 25.1481090830639
+    },
+    "prepare-begin": {
+      "jobs": 97,
+      "summed_seconds": 74.46320074566756,
+      "maximum_seconds": 0.9737615419726353
+    },
+    "prepare-finish": {
+      "jobs": 97,
+      "summed_seconds": 71.00556741520995,
+      "maximum_seconds": 0.9161047500092536
+    },
+    "prepare-rows": {
+      "jobs": 582,
+      "summed_seconds": 3362.0886951705324,
+      "maximum_seconds": 9.489502624986926
+    },
+    "rhs": {
+      "jobs": 5626,
+      "summed_seconds": 21857.60631755626,
+      "maximum_seconds": 28.544547957833856
+    },
+    "seal": {
+      "jobs": 1,
+      "summed_seconds": 0.889858083013678,
+      "maximum_seconds": 0.889858083013678
+    },
+    "sweep-begin": {
+      "jobs": 97,
+      "summed_seconds": 23.754415079572937,
+      "maximum_seconds": 0.39755504101049155
+    },
+    "sweep-finish": {
+      "jobs": 97,
+      "summed_seconds": 89.65759371006425,
+      "maximum_seconds": 1.2013388749983278
+    },
+    "verify": {
+      "jobs": 174,
+      "summed_seconds": 3705.727244506008,
+      "maximum_seconds": 27.88830337501713
+    },
+    "verify-begin": {
+      "jobs": 1,
+      "summed_seconds": 5.143041916977381,
+      "maximum_seconds": 5.143041916977381
+    }
+  },
+  "actual_column_precisions_after_review": {
+    "0": 6400,
+    "1": 1600
+  },
+  "full_bank_precision_pi": 800,
+  "report": "dembele/certificates/dyadic-precision6400-d133.md",
+  "actual_summary": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col00_d133_completed.json",
+    "sha256": "afd1f8a488f63d54f0f0a7070536fc023e1a512d5090a15f7e762f0c351bebd6"
+  },
+  "audit_summary": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_precision6400_audit_plan_d133_completed.json",
+    "sha256": "7ab5eb9135e2449d4df08a945e8cdc749c8f91fadd21e77bcf1367fe362c84f3"
+  },
+  "completion_coordinator": {
+    "path": "/Users/musty/two/dembele/pari/run_d133_completion.py",
+    "sha256": "0a60a65ab8c0eb4ae1323c2c4b55217f4f431daa5fd6dcb21ff9f265b5c3171e"
+  },
+  "positive_exact_zero_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_launch_admitted": false,
+  "runtime_scope": "Complete measured one-column stage; no extrapolated bank ETA or automatic next launch.",
+  "next_task": "Review the conditional D134 cover criterion, then recost before selecting a bank schedule."
+}

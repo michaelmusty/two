@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/595_P1600_proof_gap_audit.py", line 215, in <module>
+    'exterior_review': exterior_review(packet), 'height_review': height_review(packet),
+  File "/Users/musty/two/dembele/pari/595_P1600_proof_gap_audit.py", line 111, in exterior_review
+    recomputed = gram_minors(rec['recognized_integer_vectors'])
+  File "/Users/musty/two/dembele/pari/595_P1600_proof_gap_audit.py", line 77, in gram_minors
+    assert running.denominator == 1
+AttributeError: 'float' object has no attribute 'denominator'

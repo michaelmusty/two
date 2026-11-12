@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "milestone": "D135",
+  "completed_utc": "2026-10-06T17:27:36.095988+00:00",
+  "kind": "reviewed_empirical_bank_recost",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_bank_recost_review_d135.json",
+    "sha256": "b6f9c0f13dc43f0e5ba5aac02bd467e6576925821a41a5c6505c801e6ea60267"
+  },
+  "fixed_review_source_count": 93928,
+  "prior_hash_count": 93912,
+  "model": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_bank_recost_d135.json",
+    "sha256": "1b327d679aaba13352b4ea38494faceda30c45bbd6977b0d7ff617456a6c14f3"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/dyadic-bank-recost-d135.md",
+    "sha256": "2b39626f46cf6001d58e32c86723ec72a74917b1f461046e289bf3ba5ecfaae9"
+  },
+  "passing_input_jobs": 1,
+  "passing_review_jobs": 2,
+  "resolved_failed_development_jobs": 1,
+  "failure_resolution": "Initial model assumed its prior review contained its own later wrapper receipts; the corrected model binds those through the completion record and directly verifies their driver/log hashes. Original failed receipt/log/source snapshot retained.",
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_bank_recost_review_d135_attempt01.job.json",
+      "sha256": "1d049ee334a53733f22ef124feb814dbcdbf1f229cba77a4d5cf54242da692f1"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_bank_recost_review_d135_recheck01.job.json",
+      "sha256": "fff7984c7d7ef6128bc7b2e9360d414d3b9c245c7728f7d1c6a363faba6e9d1d"
+    }
+  ],
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 6400,
+    "1": 1600
+  },
+  "actual_harmonic_precision_increased": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_launch_admitted": false,
+  "resource_caps_changed": false,
+  "next_unused_source": 562,
+  "next_task": "Bounded target CM memory controls and reviewed seed/CM plus incremental-review interfaces; obtain scope/storage preference before a multiweek bank commitment."
+}

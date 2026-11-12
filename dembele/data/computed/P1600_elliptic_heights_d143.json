@@ -1,0 +1,577 @@
+{
+  "status": "pass",
+  "milestone": "D143",
+  "arb_precision_bits": 192,
+  "CM_heights": [
+    {
+      "elliptic_order": 3,
+      "common_modulus": 96,
+      "primitive_characters": [
+        {
+          "m": 0,
+          "conductor": 3,
+          "L0_exact": "1/3",
+          "common_L0_exact": "2/3",
+          "primitive_values": {
+            "1": "1",
+            "2": "-1"
+          }
+        },
+        {
+          "m": 1,
+          "conductor": 96,
+          "L0_exact": "-2*zeta8^3 + 2*zeta8^2 + 2",
+          "common_L0_exact": "-2*zeta8^3 + 2*zeta8^2 + 2",
+          "primitive_values": {
+            "1": "1",
+            "5": "-zeta8",
+            "7": "zeta8^2",
+            "11": "zeta8",
+            "13": "-zeta8^3",
+            "17": "1",
+            "19": "-zeta8^3",
+            "23": "zeta8^2",
+            "25": "zeta8^2",
+            "29": "-zeta8^3",
+            "31": "1",
+            "35": "-zeta8^3",
+            "37": "zeta8",
+            "41": "zeta8^2",
+            "43": "-zeta8",
+            "47": "1",
+            "49": "-1",
+            "53": "zeta8",
+            "55": "-zeta8^2",
+            "59": "-zeta8",
+            "61": "zeta8^3",
+            "65": "-1",
+            "67": "zeta8^3",
+            "71": "-zeta8^2",
+            "73": "-zeta8^2",
+            "77": "zeta8^3",
+            "79": "-1",
+            "83": "zeta8^3",
+            "85": "-zeta8",
+            "89": "-zeta8^2",
+            "91": "zeta8",
+            "95": "-1"
+          }
+        },
+        {
+          "m": 2,
+          "conductor": 48,
+          "L0_exact": "-2*zeta8^2",
+          "common_L0_exact": "-2*zeta8^2",
+          "primitive_values": {
+            "1": "1",
+            "5": "-zeta8^2",
+            "7": "-1",
+            "11": "-zeta8^2",
+            "13": "-zeta8^2",
+            "17": "-1",
+            "19": "-zeta8^2",
+            "23": "1",
+            "25": "-1",
+            "29": "zeta8^2",
+            "31": "1",
+            "35": "zeta8^2",
+            "37": "zeta8^2",
+            "41": "1",
+            "43": "zeta8^2",
+            "47": "-1"
+          }
+        },
+        {
+          "m": 3,
+          "conductor": 96,
+          "L0_exact": "-2*zeta8^2 - 2*zeta8 + 2",
+          "common_L0_exact": "-2*zeta8^2 - 2*zeta8 + 2",
+          "primitive_values": {
+            "1": "1",
+            "5": "-zeta8^3",
+            "7": "-zeta8^2",
+            "11": "zeta8^3",
+            "13": "-zeta8",
+            "17": "1",
+            "19": "-zeta8",
+            "23": "-zeta8^2",
+            "25": "-zeta8^2",
+            "29": "-zeta8",
+            "31": "1",
+            "35": "-zeta8",
+            "37": "zeta8^3",
+            "41": "-zeta8^2",
+            "43": "-zeta8^3",
+            "47": "1",
+            "49": "-1",
+            "53": "zeta8^3",
+            "55": "zeta8^2",
+            "59": "-zeta8^3",
+            "61": "zeta8",
+            "65": "-1",
+            "67": "zeta8",
+            "71": "zeta8^2",
+            "73": "zeta8^2",
+            "77": "zeta8",
+            "79": "-1",
+            "83": "zeta8",
+            "85": "-zeta8^3",
+            "89": "zeta8^2",
+            "91": "zeta8^3",
+            "95": "-1"
+          }
+        },
+        {
+          "m": 4,
+          "conductor": 24,
+          "L0_exact": "2",
+          "common_L0_exact": "2",
+          "primitive_values": {
+            "1": "1",
+            "5": "1",
+            "7": "1",
+            "11": "1",
+            "13": "-1",
+            "17": "-1",
+            "19": "-1",
+            "23": "-1"
+          }
+        },
+        {
+          "m": 5,
+          "conductor": 96,
+          "L0_exact": "2*zeta8^3 + 2*zeta8^2 + 2",
+          "common_L0_exact": "2*zeta8^3 + 2*zeta8^2 + 2",
+          "primitive_values": {
+            "1": "1",
+            "5": "zeta8",
+            "7": "zeta8^2",
+            "11": "-zeta8",
+            "13": "zeta8^3",
+            "17": "1",
+            "19": "zeta8^3",
+            "23": "zeta8^2",
+            "25": "zeta8^2",
+            "29": "zeta8^3",
+            "31": "1",
+            "35": "zeta8^3",
+            "37": "-zeta8",
+            "41": "zeta8^2",
+            "43": "zeta8",
+            "47": "1",
+            "49": "-1",
+            "53": "-zeta8",
+            "55": "-zeta8^2",
+            "59": "zeta8",
+            "61": "-zeta8^3",
+            "65": "-1",
+            "67": "-zeta8^3",
+            "71": "-zeta8^2",
+            "73": "-zeta8^2",
+            "77": "-zeta8^3",
+            "79": "-1",
+            "83": "-zeta8^3",
+            "85": "zeta8",
+            "89": "-zeta8^2",
+            "91": "-zeta8",
+            "95": "-1"
+          }
+        },
+        {
+          "m": 6,
+          "conductor": 48,
+          "L0_exact": "2*zeta8^2",
+          "common_L0_exact": "2*zeta8^2",
+          "primitive_values": {
+            "1": "1",
+            "5": "zeta8^2",
+            "7": "-1",
+            "11": "zeta8^2",
+            "13": "zeta8^2",
+            "17": "-1",
+            "19": "zeta8^2",
+            "23": "1",
+            "25": "-1",
+            "29": "-zeta8^2",
+            "31": "1",
+            "35": "-zeta8^2",
+            "37": "-zeta8^2",
+            "41": "1",
+            "43": "-zeta8^2",
+            "47": "-1"
+          }
+        },
+        {
+          "m": 7,
+          "conductor": 96,
+          "L0_exact": "-2*zeta8^2 + 2*zeta8 + 2",
+          "common_L0_exact": "-2*zeta8^2 + 2*zeta8 + 2",
+          "primitive_values": {
+            "1": "1",
+            "5": "zeta8^3",
+            "7": "-zeta8^2",
+            "11": "-zeta8^3",
+            "13": "zeta8",
+            "17": "1",
+            "19": "zeta8",
+            "23": "-zeta8^2",
+            "25": "-zeta8^2",
+            "29": "zeta8",
+            "31": "1",
+            "35": "zeta8",
+            "37": "-zeta8^3",
+            "41": "-zeta8^2",
+            "43": "zeta8^3",
+            "47": "1",
+            "49": "-1",
+            "53": "-zeta8^3",
+            "55": "zeta8^2",
+            "59": "zeta8^3",
+            "61": "-zeta8",
+            "65": "-1",
+            "67": "-zeta8",
+            "71": "zeta8^2",
+            "73": "zeta8^2",
+            "77": "-zeta8",
+            "79": "-1",
+            "83": "-zeta8",
+            "85": "zeta8^3",
+            "89": "zeta8^2",
+            "91": "-zeta8^3",
+            "95": "-1"
+          }
+        }
+      ],
+      "conductors": [
+        3,
+        24,
+        48,
+        48,
+        96,
+        96,
+        96,
+        96
+      ],
+      "CM_field_discriminant": "30257271966902092038144",
+      "relative_discriminant_norm": "6561",
+      "common_gamma_coefficients": {
+        "1": "8/3",
+        "5": "0",
+        "7": "8/3",
+        "11": "0",
+        "13": "8/3",
+        "17": "-4/3",
+        "19": "8/3",
+        "23": "-4/3",
+        "25": "8/3",
+        "29": "-4/3",
+        "31": "8/3",
+        "35": "-4/3",
+        "37": "0",
+        "41": "-4/3",
+        "43": "0",
+        "47": "-4/3",
+        "49": "4/3",
+        "53": "0",
+        "55": "4/3",
+        "59": "0",
+        "61": "4/3",
+        "65": "-8/3",
+        "67": "4/3",
+        "71": "-8/3",
+        "73": "4/3",
+        "77": "-8/3",
+        "79": "4/3",
+        "83": "-8/3",
+        "85": "0",
+        "89": "-8/3",
+        "91": "0",
+        "95": "-8/3"
+      },
+      "Euler_inflation_log_derivative_correction_interval": [
+        "23284702797233953815370618369/67185450508285599254033063738",
+        "36278278971889822975721147731/104676986329463619043112045004"
+      ],
+      "finite_L_log_derivative_interval": [
+        "-235585121252211221213378526485/24049289384677714571177568841",
+        "-106440823021841622382931818114/10865822686887991609135449435"
+      ],
+      "absolute_Hodge_height_interval": [
+        "96496651682209887109871060597/134301686351415234675874608547",
+        "87641570417611474347632167427/121977400214203700223880389544"
+      ],
+      "cotangent_height_upper_interval": [
+        "200960227092509546542725547940/50911072979041540456860289867",
+        "141498566426456325965793238693/35847112366423008931071825474"
+      ],
+      "CM_formula": "Yuan_1_2_no_common_ramification"
+    },
+    {
+      "elliptic_order": 32,
+      "common_modulus": 32,
+      "primitive_characters": [
+        {
+          "m": 0,
+          "conductor": 4,
+          "L0_exact": "1/2",
+          "common_L0_exact": "1/2",
+          "primitive_values": {
+            "1": "1",
+            "3": "-1"
+          }
+        },
+        {
+          "m": 1,
+          "conductor": 32,
+          "L0_exact": "-zeta8^3 - zeta8^2 + zeta8 + 1",
+          "common_L0_exact": "-zeta8^3 - zeta8^2 + zeta8 + 1",
+          "primitive_values": {
+            "1": "1",
+            "3": "-zeta8^3",
+            "5": "zeta8",
+            "7": "-zeta8^2",
+            "9": "-zeta8^2",
+            "11": "zeta8",
+            "13": "-zeta8^3",
+            "15": "1",
+            "17": "-1",
+            "19": "zeta8^3",
+            "21": "-zeta8",
+            "23": "zeta8^2",
+            "25": "zeta8^2",
+            "27": "-zeta8",
+            "29": "zeta8^3",
+            "31": "-1"
+          }
+        },
+        {
+          "m": 2,
+          "conductor": 16,
+          "L0_exact": "zeta8^2 + 1",
+          "common_L0_exact": "zeta8^2 + 1",
+          "primitive_values": {
+            "1": "1",
+            "3": "zeta8^2",
+            "5": "zeta8^2",
+            "7": "1",
+            "9": "-1",
+            "11": "-zeta8^2",
+            "13": "-zeta8^2",
+            "15": "-1"
+          }
+        },
+        {
+          "m": 3,
+          "conductor": 32,
+          "L0_exact": "zeta8^3 + zeta8^2 - zeta8 + 1",
+          "common_L0_exact": "zeta8^3 + zeta8^2 - zeta8 + 1",
+          "primitive_values": {
+            "1": "1",
+            "3": "-zeta8",
+            "5": "zeta8^3",
+            "7": "zeta8^2",
+            "9": "zeta8^2",
+            "11": "zeta8^3",
+            "13": "-zeta8",
+            "15": "1",
+            "17": "-1",
+            "19": "zeta8",
+            "21": "-zeta8^3",
+            "23": "-zeta8^2",
+            "25": "-zeta8^2",
+            "27": "-zeta8^3",
+            "29": "zeta8",
+            "31": "-1"
+          }
+        },
+        {
+          "m": 4,
+          "conductor": 8,
+          "L0_exact": "1",
+          "common_L0_exact": "1",
+          "primitive_values": {
+            "1": "1",
+            "3": "1",
+            "5": "-1",
+            "7": "-1"
+          }
+        },
+        {
+          "m": 5,
+          "conductor": 32,
+          "L0_exact": "zeta8^3 - zeta8^2 - zeta8 + 1",
+          "common_L0_exact": "zeta8^3 - zeta8^2 - zeta8 + 1",
+          "primitive_values": {
+            "1": "1",
+            "3": "zeta8^3",
+            "5": "-zeta8",
+            "7": "-zeta8^2",
+            "9": "-zeta8^2",
+            "11": "-zeta8",
+            "13": "zeta8^3",
+            "15": "1",
+            "17": "-1",
+            "19": "-zeta8^3",
+            "21": "zeta8",
+            "23": "zeta8^2",
+            "25": "zeta8^2",
+            "27": "zeta8",
+            "29": "-zeta8^3",
+            "31": "-1"
+          }
+        },
+        {
+          "m": 6,
+          "conductor": 16,
+          "L0_exact": "-zeta8^2 + 1",
+          "common_L0_exact": "-zeta8^2 + 1",
+          "primitive_values": {
+            "1": "1",
+            "3": "-zeta8^2",
+            "5": "-zeta8^2",
+            "7": "1",
+            "9": "-1",
+            "11": "zeta8^2",
+            "13": "zeta8^2",
+            "15": "-1"
+          }
+        },
+        {
+          "m": 7,
+          "conductor": 32,
+          "L0_exact": "-zeta8^3 + zeta8^2 + zeta8 + 1",
+          "common_L0_exact": "-zeta8^3 + zeta8^2 + zeta8 + 1",
+          "primitive_values": {
+            "1": "1",
+            "3": "zeta8",
+            "5": "-zeta8^3",
+            "7": "zeta8^2",
+            "9": "zeta8^2",
+            "11": "-zeta8^3",
+            "13": "zeta8",
+            "15": "1",
+            "17": "-1",
+            "19": "-zeta8",
+            "21": "zeta8^3",
+            "23": "-zeta8^2",
+            "25": "-zeta8^2",
+            "27": "zeta8^3",
+            "29": "-zeta8",
+            "31": "-1"
+          }
+        }
+      ],
+      "conductors": [
+        4,
+        8,
+        16,
+        16,
+        32,
+        32,
+        32,
+        32
+      ],
+      "CM_field_discriminant": "18446744073709551616",
+      "relative_discriminant_norm": "4",
+      "common_gamma_coefficients": {
+        "1": "4",
+        "3": "0",
+        "5": "4",
+        "7": "0",
+        "9": "4",
+        "11": "0",
+        "13": "0",
+        "15": "-4",
+        "17": "4",
+        "19": "0",
+        "21": "0",
+        "23": "-4",
+        "25": "0",
+        "27": "-4",
+        "29": "0",
+        "31": "-4"
+      },
+      "Euler_inflation_log_derivative_correction_interval": [
+        "0",
+        "0"
+      ],
+      "finite_L_log_derivative_interval": [
+        "-298747937376800691762582752749/72746190473344680829595446995",
+        "-106996223222797132477499817811/26053962758166107341510685314"
+      ],
+      "absolute_Hodge_height_interval": [
+        "24818398262210857928884851133/44584387866531273511132313878",
+        "63162002813269746651826590127/113465792679358071837589367725"
+      ],
+      "cotangent_height_upper_interval": [
+        "681390827396852252906874069722/6857030946169692501348745525",
+        "1280405772298730710078970954015/12885089806460256875711728551"
+      ],
+      "CM_formula": "Zhao_7_4_common_dyadic_ramification_D104_normalization"
+    }
+  ],
+  "higher_derivative_controls": [
+    {
+      "order": 2,
+      "D_power_at_zero": "1/2",
+      "archimedean_norm": "2"
+    },
+    {
+      "order": 3,
+      "D_power_at_zero": "3/4",
+      "archimedean_norm": "6"
+    },
+    {
+      "order": 32,
+      "D_power_at_zero": "122529844256906551386796875/2",
+      "archimedean_norm": "263130836933693530167218012160000000"
+    }
+  ],
+  "H2_upper_interval": [
+    "128653327807837117836523605379/48254243045500855394625262635",
+    "56825063866767031298090051411/21313482438625646596454140496"
+  ],
+  "total_elliptic_cotangent_upper_interval": [
+    "1138792711582587604713129752417/6908230231770493376020182081",
+    "841980129737515831020095147830/5107683362953203917496331727"
+  ],
+  "sufficient_model_intersection_spectral_target_interval": [
+    "283829266184566897508098749761/585347341446322976490270708",
+    "2698382315575697965409684403070/5563867819156497788850546893"
+  ],
+  "target_formula": "E_model - I - 6 average(log(C_corrected Zprime(1))) >= target_upper",
+  "dyadic_only_model_comparison_support": true,
+  "good_reduction_away_from_2": true,
+  "E_model_computed": false,
+  "E_model_sign_proved": false,
+  "Faltings_lower_29_proved": false,
+  "height_bound_at_most_623_proved": false,
+  "candidate_identification_proved": false,
+  "corrected_global_RR_constant_certified": false,
+  "peak_rss_bytes": 20004864,
+  "wall_seconds": 5.297497583029326,
+  "child_peak_rss_bytes": 303677440,
+  "conservative_peak_rss_bytes": 323682304,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/601_P1600_elliptic_heights.py",
+      "sha256": "f7c932281c8d196aaaa75d4f7b19c2ae7d0597677da723158fd6163e417c888e"
+    },
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_heights_d143_worker.json",
+      "sha256": "4dd075fa638530be746ae9583aca6c3e2c15a62426114c90fe5cf9a0a0e818b0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142.json",
+      "sha256": "4c843dd5573f11b1172dcd4bfb2166c7658786086cc3afdd6385a5b37f415ce9"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "status": "pass",
+  "milestone": "D155",
+  "scope": "Conditional base-curve criterion; no new precision or cost experiment.",
+  "external_sources": [
+    {
+      "url": "https://arxiv.org/pdf/2309.08886",
+      "version": "v1, 16 September 2023",
+      "location": "Theorems 6.1, 7.3, 7.4; page 25 visually checked",
+      "use": "Ramified CM Hodge identity; factor reconciled in report, not author-confirmed."
+    },
+    {
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v187-n2-p04-p.pdf",
+      "location": "Theorem 1.1, Corollary 2.6, Theorems 2.7 and 4.7",
+      "use": "Averaged and nearby CM heights; structural integral Hodge system and its metric.",
+      "excluded_application": "CM-point theorems requiring disjoint finite ramification."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1810.02637",
+      "location": "Formula (1.11) and section 12",
+      "use": "Stable curve Faltings lower bound and matching determinant metric."
+    },
+    {
+      "url": "https://www.math.u-bordeaux.fr/~qliu/articles/modcove.pdf",
+      "location": "Proposition 4.4; Remark 4.5",
+      "use": "Extension to stable models; no extension claim for minimal regular models."
+    }
+  ],
+  "external_sources_and_geometric_proofs_mechanically_verified": false,
+  "inspected_reports": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-compound-height-d116.md",
+      "sha256": "5e25d087596efeee0a676525d19f76acc1dc6e3cfe316d743457efe225cd5b5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-arithmetic-d105.md",
+      "sha256": "145547211ff8f699907747a05a72767e981406014a778f712b165e12d42382b6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-verification.md",
+      "sha256": "f04f008409582f840dcdff4e6fab47fd27d7a08c44f9d41e759567442c4f8313"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-intrinsic-height-d104.md",
+      "sha256": "454495a0bfd60eeca0ca9cad8549b8372c74fb930872a9e6773bab77e4255a7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-cm-matching-d112.md",
+      "sha256": "17eaae2f3c36acbf805713d7fd271ed229d344f4b4f48b2cf27b31b0ef04e228"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-review-d99.md",
+      "sha256": "8d3d3b53be8f0ef102c5b539645e1362e09d19540e7ffaa86ee724df7b0233fa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/marked-descent.md",
+      "sha256": "131944c1260cfe7a15026534c024f5ab900c549d8ea3ffd6a73521a98ad96463"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/proof-criterion-review-d155.md",
+      "sha256": "824baff2fb56b53f9feba9a0eb1fa92a48e8f72c7b7f7aa59472c66e1d9598f4"
+    }
+  ]
+}

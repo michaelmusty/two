@@ -1,0 +1,243 @@
+{
+  "status": "pass",
+  "milestone": "D147",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146.json",
+    "sha256": "61903ddacf5ff8f478e35a9fef378e5f7b2ca5c304b8c27c982fcc7f0e86a3eb"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_determinant_d147_attempt01.job.json",
+        "sha256": "9cd289797244dd62c44cd5a45d6caf465d7e5bcd9b2b20afcf2a07c3e3f85b6b"
+      },
+      "wall_seconds": 5.451671165996231,
+      "conservative_peak_rss_bytes": 299417600
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_audit_d147_attempt01.job.json",
+        "sha256": "1e1154e27ac12d184c80bd82b117c49a21ce089bff1b7a40df3d9c8278a3716b"
+      },
+      "wall_seconds": 4.107628499972634,
+      "conservative_peak_rss_bytes": 302219264
+    }
+  ],
+  "preserved_failed_review_jobs": 1,
+  "failed_review_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_attempt01.job.json",
+    "sha256": "a4376ccbc1044e52dda522f5b2bcc92251f988f4ed6180d8d790d8e7c2d9a77e"
+  },
+  "failed_review_reason": "Legacy D99 status is uppercase PASS; the first review wrongly required lowercase pass. Mathematical primary and audit jobs passed unchanged.",
+  "actual_stable_fibre_multiplication_rank": 45,
+  "independent_cycle_pair_witnesses": 45,
+  "dyadic_multiplication_cokernel_length": 0,
+  "symmetric_metric_degree_correction_log2": "60",
+  "height_identity": "h_ext(I_2)=-4F-delta-60log(2)+R-t_mu, R=A_2+U_mu+Theta_frame",
+  "known_height_constant_strict_upper": "44.411750955",
+  "safe_sufficient_metric_residual_upper": "578",
+  "metric_residual_at_most_578_proved": false,
+  "ordinary_quadratic_differential_rank": 45,
+  "orbifold_weight4_rank": 72,
+  "elliptic_principal_parts_rank": 27,
+  "orbifold_n2_direct_substitution_valid": false,
+  "frame_determinant_alone_is_insufficient": true,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "best_current_proved_relation_height_upper": "83240",
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_curve_spectral_calculation_started": false,
+  "new_geodesic_census_started": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Bound the actual residue-frame comparison Theta_frame and ordinary bicanonical quotient-metric combination A_2+U_mu, preserving joint cancellations, against R<=578. An orbifold n=2 route first requires its 27 elliptic principal parts and metric/lattice comparisons. Exact structural identification remains an alternative. Existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "wall_seconds": 61.37159149994841,
+  "sources": [
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-elliptic-intersections-d146.md",
+      "sha256": "0c53765a081be5211fc6bdc42f27ae6dc6784c81060ab6fbf922e16f573d2429"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-multiplication-determinant-d147.md",
+      "sha256": "5e912c829a0753c154e99363d64a30a0fc02b3d2dc0b79bccdf7f15c3dec32ea"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-adjugate-height-d103.md",
+      "sha256": "bf7b9301b745815e07f3072b2262c19b66f1d6f2d598b82fe54bc68cb55c514c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-compound-height-d116.md",
+      "sha256": "5e25d087596efeee0a676525d19f76acc1dc6e3cfe316d743457efe225cd5b5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-residue-lattice-d102.md",
+      "sha256": "c1f765330d02567a904444252b3dfb7fc2ac8e0746678a2a2efbc0ff19d68080"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-review-d99.md",
+      "sha256": "8d3d3b53be8f0ef102c5b539645e1362e09d19540e7ffaa86ee724df7b0233fa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142.json",
+      "sha256": "4c843dd5573f11b1172dcd4bfb2166c7658786086cc3afdd6385a5b37f415ce9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_completion_d146.json",
+      "sha256": "9096219a1c2d61aa2c3ba253d24317ad555706130f8e4c72a9c8eddeac690708"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_completion_d146_attempt01.job.json",
+      "sha256": "abb27ebb8ec65d3ae7c35135a17173a6d095b392ac68cf5da2c0a25225f25835"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_completion_d146_attempt01.log",
+      "sha256": "c93166a3f000351ced6e962f71586bb7456b7021994976f9d44788450a56bb03"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146.json",
+      "sha256": "61903ddacf5ff8f478e35a9fef378e5f7b2ca5c304b8c27c982fcc7f0e86a3eb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146_attempt01.job.json",
+      "sha256": "ffc29d8d9de16f74dd46dc400469fe4cee9872237f06feab2d057be69cbfa4c2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146_attempt01.log",
+      "sha256": "077d8c0a2b0efbfadd9a232884c57cbe9202f19128594d760546fd9234cfdefd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146_recheck01.job.json",
+      "sha256": "383e04c6138186bc41c6a467fc196be679cdb413be3d32f3b2958266a7d31d0b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_intersection_review_d146_recheck01.log",
+      "sha256": "effe50dafc6eb1cd74de25194a0ed13aff26a23d48db3b6ebcf7d35934d99aeb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_audit_d147.json",
+      "sha256": "04fe5aa4c178a35acbb3402ad97e842de1e850a8a2511e9b04cf12480f5828a7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_audit_d147_attempt01.job.json",
+      "sha256": "1e1154e27ac12d184c80bd82b117c49a21ce089bff1b7a40df3d9c8278a3716b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_audit_d147_attempt01.log",
+      "sha256": "a3cbfe76b2c1f52d210256a876663441e316a614456d6d3e335369d4a7b2e4ed"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_audit_d147_worker.json",
+      "sha256": "c6a60ebd505d42510a3b7cec9973474c5f71d1edb592e03044a75bbd42bca387"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_determinant_d147.json",
+      "sha256": "fd3b2444872e90959ff05d6259a51c48796194165b111dd30d8a6084e8d08736"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_determinant_d147_attempt01.job.json",
+      "sha256": "9cd289797244dd62c44cd5a45d6caf465d7e5bcd9b2b20afcf2a07c3e3f85b6b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_determinant_d147_attempt01.log",
+      "sha256": "7b0045de3225769c7e90c173f3b819b59f60d1644ecc7916eba0e70201a88067"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_determinant_d147_worker.json",
+      "sha256": "0512960dcc39ffebb0822e515b65fd708e5b925b5d1782df98add4a349945731"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_attempt01.job.json",
+      "sha256": "a4376ccbc1044e52dda522f5b2bcc92251f988f4ed6180d8d790d8e7c2d9a77e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_attempt01.log",
+      "sha256": "53c367c8d75f387ca59c532b0484f728e2cdc6f4a225aa15a83fe351a0ecf1ab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147_attempt01_failed.py",
+      "sha256": "9504b767e0cb221358a4db77190e77c81dcf04bbc10046cdf01e678d90f641d6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_sources_d147.json",
+      "sha256": "b3243d7c9ed17703d9c55d0519029d0b61dcd46c3f71bcc5725cab5fcf0616d4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/hyperellipticity_graph_review_d99.json",
+      "sha256": "66316e083be6ff816eadc85155a5525bee4a1799ea7d627cb05f8e522041201e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/616_P1600_intersection_review.py",
+      "sha256": "9b0e412ba9cdfd87da7c3aa796c60514c09ab7de913c69aff812df08986ffd22"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/617_P1600_multiplication_determinant.py",
+      "sha256": "e22f8f536f63b0cd45f16bde6dd482cb2e8633147f0134687aab099a7da4c6e3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/618_P1600_multiplication_audit.py",
+      "sha256": "59ce61e0114863b92922de07e20607094740fcb5d74233020df3b444e6cb67ca"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/619_P1600_multiplication_review.py",
+      "sha256": "d32c8b49299698e692f1474df628e27f88033d6e5b53be4fc04520d65bf3d9e2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "peak_rss_bytes": 187351040
+}

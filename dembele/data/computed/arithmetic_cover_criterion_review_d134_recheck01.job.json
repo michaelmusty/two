@@ -1,0 +1,35 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/559_arithmetic_cover_criterion_review.py",
+    "--check"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 22.669960708008148,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/arithmetic_cover_criterion_review_d134_recheck01.log",
+    "sha256": "81bcfea6dea86d6c10a3c9b18c7fd18ecc7fdcb9c0b3e94c5579e48250122483"
+  },
+  "private_process_group": 59425,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/559_arithmetic_cover_criterion_review.py",
+    "sha256": "4aa92510073ddca4c229d76ff04f7ed956036723db7bd269fbb30067c50b3919"
+  }
+}

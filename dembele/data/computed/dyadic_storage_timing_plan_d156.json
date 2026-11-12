@@ -1,0 +1,294 @@
+{
+  "status": "pass",
+  "milestone": "D156",
+  "stages": [
+    {
+      "seed": 1600,
+      "target": 3200,
+      "remaining_columns": 14,
+      "inventory": {
+        "seed": 1600,
+        "target": 3200,
+        "corrections": 48,
+        "production_jobs": 12495,
+        "phase_counts": {
+          "create": 1,
+          "extend": 174,
+          "init-finish": 1,
+          "verify-begin": 1,
+          "verify": 174,
+          "cm-begin": 1,
+          "cm": 17,
+          "coarse": 68,
+          "seal": 1,
+          "low-begin": 49,
+          "prepare-begin": 49,
+          "prepare-finish": 49,
+          "sweep-begin": 49,
+          "sweep-finish": 49,
+          "rhs": 2842,
+          "prepare-rows": 294,
+          "operator": 8526,
+          "low-residual": 50,
+          "low-solve": 50,
+          "low-verify": 50
+        },
+        "archive_jobs": 49,
+        "independent_audit_jobs_allowance": 24,
+        "review_jobs_allowance": 2,
+        "largest_working_store": {
+          "phase": "operator_sweep",
+          "step": 1,
+          "bytes": 304049792
+        },
+        "fits_2GiB_store_cap": true,
+        "weighted_bytes": 113343600,
+        "CM_bytes": 43520000,
+        "sealed_payload_bytes": 156915104,
+        "sealed_metadata_logical_allowance_bytes": 58122240
+      },
+      "column_jobs": 12570,
+      "retained_allowance_per_column_bytes": 483532544,
+      "active_extra_bytes": 147134688,
+      "single_column_free_bytes_with_reserve": 11368085472,
+      "modeled_column_seconds": [
+        9216.661481735078,
+        10869.44045358702
+      ]
+    },
+    {
+      "seed": 3200,
+      "target": 6400,
+      "remaining_columns": 15,
+      "inventory": {
+        "seed": 3200,
+        "target": 6400,
+        "corrections": 96,
+        "production_jobs": 24456,
+        "phase_counts": {
+          "create": 1,
+          "extend": 174,
+          "init-finish": 1,
+          "verify-begin": 1,
+          "verify": 174,
+          "cm-begin": 1,
+          "cm": 17,
+          "coarse": 68,
+          "seal": 1,
+          "low-begin": 97,
+          "prepare-begin": 97,
+          "prepare-finish": 97,
+          "sweep-begin": 97,
+          "sweep-finish": 97,
+          "rhs": 5626,
+          "prepare-rows": 582,
+          "operator": 16878,
+          "low-residual": 149,
+          "low-solve": 149,
+          "low-verify": 149
+        },
+        "archive_jobs": 97,
+        "independent_audit_jobs_allowance": 24,
+        "review_jobs_allowance": 2,
+        "largest_working_store": {
+          "phase": "operator_sweep",
+          "step": 1,
+          "bytes": 973167872
+        },
+        "fits_2GiB_store_cap": true,
+        "weighted_bytes": 449407200,
+        "CM_bytes": 174080000,
+        "sealed_payload_bytes": 623538704,
+        "sealed_metadata_logical_allowance_bytes": 106192896
+      },
+      "column_jobs": 24579,
+      "retained_allowance_per_column_bytes": 1254739040,
+      "active_extra_bytes": 349629168,
+      "single_column_free_bytes_with_reserve": 12341786448,
+      "modeled_column_seconds": [
+        34364.67076231972,
+        43133.740370552194
+      ]
+    },
+    {
+      "seed": 6400,
+      "target": 10480,
+      "remaining_columns": 16,
+      "inventory": {
+        "seed": 6400,
+        "target": 10480,
+        "corrections": 123,
+        "production_jobs": 31269,
+        "phase_counts": {
+          "create": 1,
+          "extend": 174,
+          "init-finish": 1,
+          "verify-begin": 1,
+          "verify": 174,
+          "cm-begin": 1,
+          "cm": 17,
+          "coarse": 68,
+          "seal": 1,
+          "low-begin": 124,
+          "prepare-begin": 124,
+          "prepare-finish": 124,
+          "sweep-begin": 124,
+          "sweep-finish": 124,
+          "rhs": 7192,
+          "prepare-rows": 744,
+          "operator": 21576,
+          "low-residual": 233,
+          "low-solve": 233,
+          "low-verify": 233
+        },
+        "archive_jobs": 124,
+        "independent_audit_jobs_allowance": 24,
+        "review_jobs_allowance": 2,
+        "largest_working_store": {
+          "phase": "operator_sweep",
+          "step": 1,
+          "bytes": 2005700320
+        },
+        "fits_2GiB_store_cap": true,
+        "weighted_bytes": 1200909024,
+        "CM_bytes": 467491840,
+        "sealed_payload_bytes": 1668452368,
+        "sealed_metadata_logical_allowance_bytes": 134160384
+      },
+      "column_jobs": 31419,
+      "retained_allowance_per_column_bytes": 2473722592,
+      "active_extra_bytes": 337247952,
+      "single_column_free_bytes_with_reserve": 13548388784,
+      "modeled_column_seconds": [
+        68326.70981945941,
+        103842.52985707842
+      ]
+    }
+  ],
+  "all_existing_frozen_files_retained": true,
+  "deletion_relocation_compression_or_clone_savings_assumed": false,
+  "remaining_column_jobs": 1047369,
+  "remaining_retained_allowance_bytes": 65170102688,
+  "largest_active_extra_bytes": 349629168,
+  "planning_reserve_bytes": 10737418240,
+  "required_remaining_free_bytes": 76257150096,
+  "rounded_full_bank_free_gate_bytes": 77309411328,
+  "cumulative_stage_storage_scenarios": [
+    {
+      "through_precision_pi": 3200,
+      "free_bytes_with_reserve": 17654008544,
+      "columns_or_stage_admitted": false
+    },
+    {
+      "through_precision_pi": 6400,
+      "free_bytes_with_reserve": 36677588624,
+      "columns_or_stage_admitted": false
+    },
+    {
+      "through_precision_pi": 10480,
+      "free_bytes_with_reserve": 76257150096,
+      "columns_or_stage_admitted": false
+    }
+  ],
+  "conditional_remaining_active_days": [
+    20.217648130903825,
+    28.493762823489654
+  ],
+  "pilot": {
+    "column": 2,
+    "seed": 3200,
+    "target": 6400,
+    "production_jobs": 24456,
+    "archive_jobs": 97,
+    "independent_audit_jobs": 24,
+    "column_review_jobs": 2,
+    "column_jobs": 24579,
+    "working_store_bound_bytes": 973167872,
+    "retained_allowance_bytes": 1254739040,
+    "active_extra_bytes": 349629168,
+    "recommended_free_bytes_including_10GiB_reserve": 12341786448,
+    "rounded_free_gate_bytes": 12884901888,
+    "timing_scenarios": [
+      {
+        "scenario": 0,
+        "column_cycle_seconds": 34364.67076231972,
+        "graph_review_seconds_allowance": 4052.730729878187,
+        "common_comparison_seconds_allowance": 424.3694602327887,
+        "total_active_hours": 10.78938082011964
+      },
+      {
+        "scenario": 1,
+        "column_cycle_seconds": 43133.740370552194,
+        "graph_review_seconds_allowance": 6079.096094817281,
+        "common_comparison_seconds_allowance": 424.3694602327887,
+        "total_active_hours": 13.78811275711174
+      }
+    ],
+    "retained_overhead_source": "D139 one-target-column graph allowance plus D152 common comparison allowance",
+    "timing_is_not_a_bound_or_deadline": true,
+    "does_not_measure_P10480_cost": true
+  },
+  "space_gate_policy": "Refresh free space immediately before launch; require the rounded pilot gate for the single column and the separately rounded remaining-route gate before a full-bank commitment. Preserve frozen data.",
+  "storage_destination": "/Users/musty/two",
+  "alternate_volume_selected": false,
+  "alternate_volume_requires_separate_path_and_provenance_review": true,
+  "new_precision_or_pilot_admitted_by_cost_packet": false,
+  "actual_harmonic_precision_increased": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "resource_caps_changed": false,
+  "filesystem_observation": {
+    "observed_utc": "2026-10-12T16:54:08.812703+00:00",
+    "total": 494384795648,
+    "used": 446461595648,
+    "free": 47923200000,
+    "workspace_device": 16777234,
+    "visible_volume_entries": [
+      {
+        "path": "/Volumes/Macintosh HD",
+        "resolved_path": "/",
+        "same_device_as_workspace": true
+      }
+    ],
+    "not_a_reservation": true
+  },
+  "modeled_full_bank_shortfall_bytes": 28333950096,
+  "rounded_full_bank_gate_shortfall_bytes": 29386211328,
+  "pilot_fits_observed_rounded_gate": true,
+  "wall_seconds": 0.16530591703485698,
+  "peak_rss_bytes": 45137920,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_indexed_bank_recost_r2_d139.json",
+      "sha256": "426c4547f6204be49063b62578669c896c928ff652d55cab871dc60061d2e17c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_timing_d154.json",
+      "sha256": "4a567593eff57acf78d29dee8e974cb77bbc73ae43b02049eb5dc608c854072a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/precision_route_cost_d152.json",
+      "sha256": "d1b13eeab80b1f294bf5fee82a017c73184b15d87466c8c92909df9aa774328c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/proof_criterion_completion_d155.json",
+      "sha256": "9f4a56e9a121d19cf5e56a7965aec47e5c6654eabf5de099294bba55b5925f50"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py",
+      "sha256": "1b7c77403b090c0f6e25c4367d4ae628c380ae8b21db2c75e3686c39b7eb7b23"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/567_dyadic_checkpoint_admission_revision.py",
+      "sha256": "224ad01fa7777004da412ecf7fb0cc9b2f8ea96806359d8933b52018b1296716"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/645_dyadic_storage_timing_plan.py",
+      "sha256": "d4c7202bde1a25aa628481f11099d8e0c0c0afd68d84a275a2fd8cd921679b7d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_d139_indexed_production.py",
+      "sha256": "3dec1d16bd3a64ad6041217ba800e807f5bf9d72f0a156b4196d23110797d418"
+    }
+  ]
+}

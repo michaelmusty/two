@@ -1,0 +1,105 @@
+{
+  "status": "pass",
+  "milestone": "D144",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_finite_model_review_d143.json",
+    "sha256": "9822be7377959aceab6970ea5b112133f09fe561c4d6ffe735b64bd2b3a49c74"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_joint_adjunction_d144_attempt01.job.json",
+        "sha256": "c5a9319bda4e5ebb9831c84863d40b03f6b8f9cb20c9c7f11edfb6fb658b15d9"
+      },
+      "wall_seconds": 5.3991517089889385,
+      "conservative_peak_rss_bytes": 262225920
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_adjunction_RR_audit_d144_attempt02.job.json",
+        "sha256": "d8c0e4e15f5aa85047bc44245ef1363f9efa6a1c63542479fcba71797ed466db"
+      },
+      "wall_seconds": 4.2019381250138395,
+      "conservative_peak_rss_bytes": 305496064
+    }
+  ],
+  "preserved_failed_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_adjunction_RR_audit_d144_attempt01.job.json",
+    "sha256": "2bee83fcc0ba467ec75c2e8fd37c6a5e19be3bf20628c86b0694908bc34c497e"
+  },
+  "joint_Psi_plus_I_upper_bound_proved": true,
+  "joint_strict_upper": "85.172",
+  "full_intersection_upper_bound_proved": false,
+  "corrected_global_RR_constant_certified": true,
+  "RR_scope": "compact orbifolds, with the companion derivation",
+  "source_corrections_are_our_derivations_not_author_confirmed": true,
+  "signature_log_C_formula": "15log(pi)+(5081/192)log2+log3-485/64",
+  "Faltings_lower_affine_formula": "hFal > -19.410 - average(log Zprime(1))/2",
+  "safe_sufficient_average_log_Zprime_target_for_Faltings29": "-96.820",
+  "safe_implied_average_log_Zprime_lower": "-98.900",
+  "Faltings_lower_29_proved": false,
+  "height_bound_at_most_623_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "actual_curve_spectral_calculation_started": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Derive and assess a certified analytic route to average(log Zprime(1)) <= -96.820 before admitting actual-curve numerical spectral work. Exact structural identification remains an alternative. Existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "completed_at": "2026-10-08T21:45:42.086631+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_joint_RR_review_d144.json",
+    "sha256": "746975cb8a9a41d81949da4e89fb332011c0ed015ec8020335de6a692cac650c"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/P1600-joint-adjunction-RR-d144.md",
+    "sha256": "7f1e43faa2aabb16fb5443d23d64e878659a2ac79b4194cfb86326634b63a1bb"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_joint_RR_sources_d144.json",
+    "sha256": "cd076c6ea7c3af12452d80b7092cb1637582746d9f682e1b8fa90d4e9bb5748c"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_joint_RR_review_d144_attempt01.job.json",
+      "sha256": "4d2c399314454047fe399ee26bd230e3393efe864897fd84bdabd9520b20afae"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_joint_RR_review_d144_recheck01.job.json",
+      "sha256": "f09546c0833ab92b4102286f3a82bd541b229ca3d99a06e31b27cf919b12a2bd"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 59.864559249952435,
+      "seconds": 59.74783029197715,
+      "peak_rss_bytes": 226295808
+    },
+    {
+      "receipt_wall_seconds": 59.76651537499856,
+      "seconds": 59.68170387495775,
+      "peak_rss_bytes": 151863296
+    }
+  ],
+  "successful_bounded_jobs": 4,
+  "successful_input_jobs": 2,
+  "preserved_failed_bounded_jobs": 1,
+  "direct_source_bindings": 40,
+  "two_handoff_tasks_completed": true,
+  "global_identification_proof_completed": false,
+  "next_unused_source": 609
+}

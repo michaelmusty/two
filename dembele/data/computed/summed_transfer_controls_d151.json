@@ -1,0 +1,96 @@
+{
+  "status": "pass",
+  "milestone": "D151",
+  "selected_quadric_index_zero_based": 0,
+  "selected_coarse_order": 1,
+  "nonzero_gradient_coordinate_zero_based": 0,
+  "gradient_at_V0_power_coordinates": [
+    "-1319914447538691206632/11563101439788991",
+    "-1482815522308937580958/11563101439788991",
+    "1683627026611335620663/11563101439788991",
+    "2252397569802293895275/11563101439788991",
+    "30377185077731223231/11563101439788991",
+    "-1160129054100579233995/11563101439788991",
+    "-1785740681903718753728/11563101439788991",
+    "-77390362088934525253/11563101439788991",
+    "1286834228216067526419/11563101439788991",
+    "6596872097307828966/11563101439788991",
+    "-34528542626820594591/11563101439788991",
+    "474254645125371239502/11563101439788991",
+    "219103628713525544753/11563101439788991",
+    "-41510514528002340974/11563101439788991",
+    "-7349048001963683732/11563101439788991",
+    "-38424199381019405128/11563101439788991",
+    "25291805149702105212/11563101439788991"
+  ],
+  "gradient_checked_by_exact_central_difference": true,
+  "trace_zero_basis_power_coordinate_rank": 16,
+  "explicit_leaf_count_partitions_checked": 9,
+  "visual_center_swap_preserves_weights": true,
+  "cleared_first_jet_controls": [
+    {
+      "genus": 3,
+      "degree": 6,
+      "unscaled_residual": "72",
+      "scaled_residual": "4608",
+      "two_formulas_agree": true
+    },
+    {
+      "genus": 4,
+      "degree": 12,
+      "unscaled_residual": "145800",
+      "scaled_residual": "597196800",
+      "two_formulas_agree": true
+    },
+    {
+      "genus": 5,
+      "degree": 20,
+      "unscaled_residual": "16344763200",
+      "scaled_residual": "17138726417203200",
+      "two_formulas_agree": true
+    }
+  ],
+  "cleared_residual_total_degree": 240,
+  "scalar_input_count": 288,
+  "odd_stabilizer_character_and_dropped_pole_controls_rejected": true,
+  "infinite_functional_construction_mechanically_verified": false,
+  "finite_rational_transfer_certificate_excluded_for_selected_residual_by_companion_proof": true,
+  "actual_bounded_measure_uniqueness_refuted": false,
+  "candidate_identification_proved": false,
+  "candidate_refuted": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "new_precision_bank_admitted": false,
+  "actual_harmonic_precision_increased": false,
+  "wall_seconds": 0.5561223330441862,
+  "peak_rss_bytes": 22069248,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_field_recognition.json",
+      "sha256": "b9585a6b40f6c21f4ffadd62caad290cd731cf2f432c54d1f61790d85c6e0ce8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_identification_review_d150.json",
+      "sha256": "61da55a71288b9b11f657608b9c1c77d4e5472c2ff619d17eb7edad5cd7ecc30"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_obstruction_d151.json",
+      "sha256": "377b847d50f2f3f5400a4b123f32d81efa2a2b28481ad287c0d3dfbd18d0ab00"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/389_cm_ratio_jet_review.py",
+      "sha256": "fdb94a47da01e3389627d1dfae3a6e5873e3a1802466a2ec63695e2d9afc98af"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/629_summed_transfer_obstruction.py",
+      "sha256": "490c70c4b35e245e9229d94ca47ffc737127aecc3bd1781282233d3c538fb60f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/630_summed_transfer_controls.py",
+      "sha256": "433072f306df0990dfb0b19b662e11351f4bde2a9d837e2f624160aba431a3a5"
+    }
+  ]
+}

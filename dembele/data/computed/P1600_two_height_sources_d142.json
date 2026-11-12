@@ -1,0 +1,88 @@
+{
+  "status": "pass",
+  "milestone": "D142",
+  "scope": "Both D141 height targets investigated; arithmetic bounds and local source correction do not close the identification proof.",
+  "external_sources": [
+    {
+      "title": "Freixas i Montplet and von Pippich: Riemann-Roch isometries in the non-compact orbifold setting",
+      "url": "https://arxiv.org/pdf/1604.00284v2",
+      "location": "Sections 1.1 and 4.2.1, Theorem 2.5, equation (9.2), Theorem 10.1",
+      "role": "Comparison template, metric conversion and local cone denominator; old spectral constant not accepted unchanged.",
+      "download_sha256": "838c6e0d15a990853acc39ac2fbae1adb9caa997e3f46e494f4a39023a87ceb4"
+    },
+    {
+      "title": "Kalvin: Determinant of Friedrichs Dirichlet Laplacians on 2-dimensional hyperbolic cones",
+      "url": "https://arxiv.org/pdf/2011.05407v1",
+      "location": "Corollary 1.2, equation (1.5), Remark 3.2",
+      "role": "Corrected local cone input; D142 derives and evaluates its difference from the older expression.",
+      "download_sha256": "95b7b4512abf65e1e6cbd97f07cb7f91425459673af3290e301e9a91716360fc"
+    },
+    {
+      "title": "Yuan: Modular Heights of Quaternionic Shimura Curves",
+      "url": "https://arxiv.org/pdf/2205.13995v3",
+      "location": "Section 1.1, Petersson metric and Theorem 1.1",
+      "role": "Modular main term, with field-degree normalization; actual normalizer finite-model difference retained."
+    },
+    {
+      "title": "Bertram: Riemann Surfaces and Graphs, Special Divisors",
+      "url": "https://www.math.utah.edu/~bertram/6180/Special.pdf",
+      "location": "Clifford theorem and equality case, pages 3-4",
+      "role": "Nonhyperelliptic degree-four divisor has at most two sections, yielding jet rank at least 32."
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-P1600-recognition-d140.md",
+      "sha256": "8fc9103b0d5c10b5cad2f9cc37b10155a1b1639a834e155ee4dc145ad77cdb92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-review-d99.md",
+      "sha256": "8d3d3b53be8f0ef102c5b539645e1362e09d19540e7ffaa86ee724df7b0233fa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-arithmetic-d105.md",
+      "sha256": "145547211ff8f699907747a05a72767e981406014a778f712b165e12d42382b6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-comparison-and-strategy-d115.md",
+      "sha256": "393aecfd4e3f07eb2b72a0dfa51844559c4fb0b7d6657f52213803b9890fc419"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-compound-height-d116.md",
+      "sha256": "5e25d087596efeee0a676525d19f76acc1dc6e3cfe316d743457efe225cd5b5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-disk-and-exactness-d117.md",
+      "sha256": "a4d5cc5655faecb55eef85adbddcc58ac57b8fe4c428e603f3961371358ae031"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/construction-reassessment-d120.md",
+      "sha256": "065569ba19e1cc59baed54f475300e2102ca8878acc9168bc74b9ab7f9e71641"
+    }
+  ],
+  "source_applicability_notes_are_mathematical_review_not_machine_verification": true,
+  "corrected_global_RR_constant_certified": false,
+  "Faltings_lower_29_proved": false,
+  "height_bound_at_most_623_proved": false,
+  "candidate_identification_proved": false
+}

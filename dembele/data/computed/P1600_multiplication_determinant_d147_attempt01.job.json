@@ -1,0 +1,34 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/617_P1600_multiplication_determinant.py"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 5.451671165996231,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_determinant_d147_attempt01.log",
+    "sha256": "7b0045de3225769c7e90c173f3b819b59f60d1644ecc7916eba0e70201a88067"
+  },
+  "private_process_group": 80442,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/617_P1600_multiplication_determinant.py",
+    "sha256": "e22f8f536f63b0cd45f16bde6dd482cb2e8633147f0134687aab099a7da4c6e3"
+  }
+}

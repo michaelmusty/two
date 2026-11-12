@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "milestone": "D145",
+  "all_arithmetic_exact_rational": true,
+  "root_isolation_independently_verified": true,
+  "independent_enumeration_method": "support, magnitudes, signs",
+  "trace_families": [
+    {
+      "family": "unit",
+      "independent_signed_pairs": 2229,
+      "exactly_central_pairs_removed": 1,
+      "admissible_hyperbolic_pairs": 0
+    },
+    {
+      "family": "dyadic",
+      "independent_signed_pairs": 1864,
+      "exactly_central_pairs_removed": 0,
+      "admissible_hyperbolic_pairs": 0
+    }
+  ],
+  "bound80_fully_replayed": true,
+  "omitted_vector_control_rejected": true,
+  "independent_exp_and_log_series_with_rational_remainders": true,
+  "gamma_lower_proof": "H_32-log(32)-1/64 < Euler gamma",
+  "elementary_log_Zprime_lower": "-695255321/17052000",
+  "uniform_strict_log_Zprime_lower": "-41",
+  "D144_sufficient_spectral_target_ruled_out": true,
+  "Faltings_lower_29_proved": false,
+  "Faltings_lower_29_disproved": false,
+  "candidate_identification_proved": false,
+  "actual_curve_eigenvalue_computation_started": false,
+  "wall_seconds": 0.72627687494969,
+  "peak_rss_bytes": 20774912,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/612_P1600_spectral_feasibility_audit.py",
+      "sha256": "2e01a4457a1b93677360dd22ef9fb39f085665bce4fddadaadc25494e71593c9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_trace_systole_d145.json",
+      "sha256": "ee808ac6551e0e16d7b4b22d1a9f9e8309f1d962444840e221dc7109c6d643dd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_trace_systole_audit_d145.json",
+      "sha256": "4c72e1044e39fdbeae65c3170ac75960cdaa499419cb0c1648d94a27de27f3c9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_feasibility_d145.json",
+      "sha256": "811095e63376681917500875bc7c03ca2418ac79ba9f62848ffb96f70420fec3"
+    }
+  ],
+  "conservative_peak_rss_bytes": 20774912
+}

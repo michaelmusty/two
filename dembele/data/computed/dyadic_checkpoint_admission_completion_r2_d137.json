@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "milestone": "D137",
+  "revision": 2,
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_admission_r2_d137.json",
+    "sha256": "a4a7dab098b093a62ce696f496419d62d48d9254efa0aaddd007bb71e5004e92"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_admission_r2_d137_attempt01.job.json",
+      "sha256": "ba0aebc00fe1b65c84c4c761e3cf50eb4a52e6722189ca135623424b4c468d46"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_admission_r2_d137_recheck01.job.json",
+      "sha256": "e7b48a00f32c3c2fd2873205a5cbd5e9a604c7c9563b126e9c4b2e269ef0a656"
+    }
+  ],
+  "actual_create_preflight": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_r2_d137_create_attempt01.job.json",
+    "sha256": "63a42fe325c6b93d8a17921ab0c2d689c126b4ff2380a0c8640ed8c09ab52dea"
+  },
+  "P1600_checkpoint_admitted": true,
+  "higher_precision_bank_admitted": false,
+  "completed_at": "2026-10-06T20:33:48.232444+00:00",
+  "inherited_catalogue_hashes": 94079,
+  "review_source_hashes": 94126,
+  "failed_initial_startup_preserved": {
+    "receipt": {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_d137_create_attempt01.job.json",
+      "sha256": "f90a9c7b07cfed4c671a75986aba540846293717a8b590ffcb5785b37e3f411f"
+    },
+    "reason": "frozen_store_requires_d132_namespace_suffix",
+    "mathematical_work_started": false,
+    "working_store_created": false,
+    "failed_attempt_preserved": true
+  }
+}

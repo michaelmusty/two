@@ -1,0 +1,178 @@
+{
+  "status": "pass",
+  "milestone": "D144",
+  "arb_precision_bits": 224,
+  "individual_mark_tail_replay": true,
+  "marked_points": 27,
+  "unordered_pair_slots": 351,
+  "independent_tail_joint_correction_coefficient_log2": "-19909/6144",
+  "all_17_D118_dyadic_contents_reconstructed": true,
+  "dyadic_contents_beta": [
+    "280",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17",
+    "17"
+  ],
+  "independent_joint_upper_interval": [
+    "85947363193555332951932303148311761/1009103569437016656047189840470723",
+    "102265686154864227782918214022353237/1200696159780935247279622314424520"
+  ],
+  "joint_strict_upper": "85.172",
+  "universal_variable_cut_cancellation": true,
+  "boundary_anomaly_derived_from_radial_terms": true,
+  "Deligne_pairing_topological_sign_checked": true,
+  "universal_Gamma_cancellation_checked": true,
+  "Teo_n1_spectral_controls": [
+    {
+      "order": 1,
+      "Teo_elliptic_constant_interval": [
+        "0",
+        "0"
+      ],
+      "overlaps_final_FvP_8_1": true
+    },
+    {
+      "order": 2,
+      "Teo_elliptic_constant_interval": [
+        "-2626353356684275893128293282408293/23263542433502536471966068421106768",
+        "-2222562286456008553373120349352123/19686868079072192272691641382374541"
+      ],
+      "overlaps_final_FvP_8_1": true
+    },
+    {
+      "order": 3,
+      "Teo_elliptic_constant_interval": [
+        "-2452264596221633930058596978612824/14538402474526800306794071117579121",
+        "-2311626755107043444717857477731737/13704622326812399541340166635126970"
+      ],
+      "overlaps_final_FvP_8_1": true
+    },
+    {
+      "order": 4,
+      "Teo_elliptic_constant_interval": [
+        "-2014752156405473579483515618956753/10501490934319319272116985895160332",
+        "-3373192005817103826319233730464520/17582085794615049935853082931421823"
+      ],
+      "overlaps_final_FvP_8_1": true
+    },
+    {
+      "order": 5,
+      "Teo_elliptic_constant_interval": [
+        "-718022251314932161262041388279283/3788076439698209663260558093891144",
+        "-2802152353527008244477854648477288/14783340337157321617840663402412751"
+      ],
+      "overlaps_final_FvP_8_1": true
+    },
+    {
+      "order": 8,
+      "Teo_elliptic_constant_interval": [
+        "-1246095811949111848057582182011375/19797920331557884571290018916245114",
+        "-624245637678639028575118410893759/9917989679102582879033817614378272"
+      ],
+      "overlaps_final_FvP_8_1": true
+    },
+    {
+      "order": 16,
+      "Teo_elliptic_constant_interval": [
+        "2558323790780459193526524978654429/2909344543641795339876118966359299",
+        "2786415439562370315448374170083858/3168732036431155096208596175651015"
+      ],
+      "overlaps_final_FvP_8_1": true
+    },
+    {
+      "order": 32,
+      "Teo_elliptic_constant_interval": [
+        "4435439856090777266752356757497714/1024367844494265441026422980316891",
+        "5830270100705672107741625357327479/1346504835969756684607046566866952"
+      ],
+      "overlaps_final_FvP_8_1": true
+    },
+    {
+      "order": 64,
+      "Teo_elliptic_constant_interval": [
+        "17308856272532577994317755417369935/1184013130434264378888842931420646",
+        "40530751508822241454984616447981705/2772507970325431194645424282261371"
+      ],
+      "overlaps_final_FvP_8_1": true
+    }
+  ],
+  "independent_log_C_interval": [
+    "72704589790822792258309205903397051/2504070238890314807306985207080470",
+    "23415774282088831052407141734168675/806479256248456222668917190460808"
+  ],
+  "independent_affine_Faltings_baseline_interval": [
+    "-26360429052171158164094439887456558/1358096226159529890668579058686829",
+    "-36680549628502197130574378040664036/1890545193520447683008631424938509"
+  ],
+  "safe_affine_Faltings_baseline": "-19.410",
+  "independent_sufficient_log_Zprime_target_interval": [
+    "-116149532579137046476442878299637603/1199647995699973480895750544290777",
+    "-85426576994015967914633079893001467/882467645474755501585038645415051"
+  ],
+  "safe_sufficient_average_log_Zprime_target": "-96.820",
+  "implied_average_log_Zprime_lower_interval": [
+    "-22800008403317152059641267353576663/230540248832117646292190080257319",
+    "-67830914563770605799683091345637808/685973572437130801767002118302967"
+  ],
+  "safe_implied_average_log_Zprime_lower": "-98.900",
+  "source_corrections_are_our_derivations_not_author_confirmed": true,
+  "geometric_and_analytic_claims_require_companion_proof": true,
+  "actual_curve_spectral_calculation_started": false,
+  "Faltings_lower_29_proved": false,
+  "candidate_identification_proved": false,
+  "peak_rss_bytes": 20381696,
+  "wall_seconds": 4.109076249995269,
+  "child_peak_rss_bytes": 285114368,
+  "conservative_peak_rss_bytes": 305496064,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/607_P1600_adjunction_RR_audit.py",
+      "sha256": "b312bed8c6bb4ae394eff0463ddeff6bf555895269051ab94325a87f6f15d590"
+    },
+    {
+      "path": "/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12",
+      "sha256": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_adjunction_RR_audit_d144_worker.json",
+      "sha256": "01718467788df9c45b42dcbb7f8cfe215ba0704847717b22496297486cb93122"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_joint_adjunction_d144.json",
+      "sha256": "92a1655c5190824b0fc44c1a6ea040244ea2bece80072750bc4ca1e632f74443"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_elliptic_height_audit_d143.json",
+      "sha256": "8f15df78c8eb5064396ef0dd761821a1b0f0739d0f3b6a58e7830012e18de282"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_dyadic_model_audit_d143.json",
+      "sha256": "d4614e3af30ac4e39ecd8d26b5900c2406f566c6be86c79ef8b0fb6e816fd4e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_height_routes_audit_d142.json",
+      "sha256": "4c843dd5573f11b1172dcd4bfb2166c7658786086cc3afdd6385a5b37f415ce9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_finite_height_review_d118.json",
+      "sha256": "1d87209f22db7384b5eee38f74f3790dc3647f37ddba1eed6c96356c98a0cf5f"
+    }
+  ]
+}

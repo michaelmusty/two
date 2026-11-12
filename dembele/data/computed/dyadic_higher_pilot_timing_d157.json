@@ -1,0 +1,475 @@
+{
+  "status": "pass",
+  "milestone": "D157",
+  "column": 2,
+  "seed_precision_pi": 3200,
+  "precision_pi": 6400,
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_config_d156.json",
+    "sha256": "db255a0cf6dd07be16e3b539e78acb62c46b36507687887b436953984b2e2e67"
+  },
+  "fixed_column_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_r2_d157.json",
+    "sha256": "46cd471fc008d52796e16bb3d994f99acf353c7543aec51367a57d80d405d4c2"
+  },
+  "production_jobs": 24456,
+  "archive_jobs": 97,
+  "audit_jobs": 24,
+  "column_review_jobs": 2,
+  "total_column_jobs": 24579,
+  "prior_preparation_create_jobs_reused": 1,
+  "new_passing_column_jobs_this_continuation": 24578,
+  "preserved_failed_column_review_attempts": 1,
+  "failed_column_review_seconds": 26.704227708047256,
+  "review_regression_control_seconds": 1.2181849170010537,
+  "production_coordinator_seconds": 33762.17473279103,
+  "audit_coordinator_seconds": 20.485077916062437,
+  "column_review_seconds": [
+    33.696996332961135,
+    12.302371166064404
+  ],
+  "prior_create_seconds": 0.34755558299366385,
+  "measured_column_cycle_active_seconds": 33829.00673378911,
+  "measured_column_cycle_active_hours": 9.396946314941419,
+  "observed_cycle_plus_failed_review_and_regression_seconds": 33856.92914641416,
+  "measurement_excludes_preparation_other_than_create_and_final_timing_assessment": true,
+  "successful_cycle_separates_preserved_failed_review_and_regression_overhead": true,
+  "clock_observations": {
+    "production": {
+      "started_utc": "2026-10-12T17:21:19.204815+00:00",
+      "ended_utc": "2026-10-13T05:44:26.669371+00:00",
+      "supervisor_wall_span_seconds": 44587.464556,
+      "supervisor_monotonic_seconds": 33762.582466083,
+      "wall_span_minus_supervisor_monotonic_seconds": 10824.882089917002,
+      "coordinator_monotonic_seconds": 33762.17473279103
+    },
+    "audits": {
+      "started_utc": "2026-10-13T05:44:26.737903+00:00",
+      "ended_utc": "2026-10-13T05:44:47.329041+00:00",
+      "supervisor_wall_span_seconds": 20.591138,
+      "supervisor_monotonic_seconds": 20.591108832973987,
+      "wall_span_minus_supervisor_monotonic_seconds": 2.916702601396537e-05,
+      "coordinator_monotonic_seconds": 20.485077916062437
+    },
+    "column_review": {
+      "started_utc": "2026-10-13T05:44:47.334975+00:00",
+      "ended_utc": "2026-10-13T05:45:14.072326+00:00",
+      "supervisor_wall_span_seconds": 26.737351,
+      "supervisor_monotonic_seconds": 26.737311625038274,
+      "wall_span_minus_supervisor_monotonic_seconds": 3.93749617266792e-05
+    }
+  },
+  "wall_clock_gap_cause_not_established": true,
+  "monotonic_computation_time_distinguished_from_supervisor_wall_span": true,
+  "temporary_idle_sleep_assertion_cleanup_recorded": true,
+  "permanent_power_settings_changed": false,
+  "owned_coordinator_locks_observed_free": [
+    "dyadic_higher_pilot_pipeline_d157_run01.lock",
+    "dyadic_staged_P6400_col02_d156.lock",
+    "dyadic_higher_pilot_col02_audit_plan_d156.lock"
+  ],
+  "separate_prior_create_charge_included": true,
+  "production_worker_seconds": 81144.01282702514,
+  "archive_worker_seconds": 69.25615216582082,
+  "audit_worker_seconds": 59.355587250203826,
+  "phase_timings": {
+    "cm": {
+      "jobs": 17,
+      "worker_seconds": 382.4952190431068,
+      "maximum_job_seconds": 26.545624999911524,
+      "median_job_seconds": 23.169499917072244,
+      "summed_callback_seconds": 383.3057222890202,
+      "summed_nonnegative_callback_overhead_seconds": 0.8105032459134236
+    },
+    "cm-begin": {
+      "jobs": 1,
+      "worker_seconds": 0.3894847920164466,
+      "maximum_job_seconds": 0.3894847920164466,
+      "median_job_seconds": 0.3894847920164466,
+      "summed_callback_seconds": 0.4258035420207307,
+      "summed_nonnegative_callback_overhead_seconds": 0.036318750004284084
+    },
+    "coarse": {
+      "jobs": 68,
+      "worker_seconds": 209.45794220629614,
+      "maximum_job_seconds": 3.5294924579793587,
+      "median_job_seconds": 3.0568888330017217,
+      "summed_callback_seconds": 212.28012432914693,
+      "summed_nonnegative_callback_overhead_seconds": 2.8221821228507906
+    },
+    "create": {
+      "jobs": 1,
+      "worker_seconds": 0.34755558299366385,
+      "maximum_job_seconds": 0.34755558299366385,
+      "median_job_seconds": 0.34755558299366385,
+      "summed_callback_seconds": 0.0018520000157877803,
+      "summed_nonnegative_callback_overhead_seconds": 0
+    },
+    "extend": {
+      "jobs": 174,
+      "worker_seconds": 1839.266578493989,
+      "maximum_job_seconds": 14.222730458015576,
+      "median_job_seconds": 9.128888875013217,
+      "summed_callback_seconds": 1846.7147457499523,
+      "summed_nonnegative_callback_overhead_seconds": 7.448167255963199
+    },
+    "init-finish": {
+      "jobs": 1,
+      "worker_seconds": 0.9533806249964982,
+      "maximum_job_seconds": 0.9533806249964982,
+      "median_job_seconds": 0.9533806249964982,
+      "summed_callback_seconds": 1.0068160840310156,
+      "summed_nonnegative_callback_overhead_seconds": 0.05343545903451741
+    },
+    "low-begin": {
+      "jobs": 97,
+      "worker_seconds": 25.029581835260615,
+      "maximum_job_seconds": 0.7964242079760879,
+      "median_job_seconds": 0.26504108402878046,
+      "summed_callback_seconds": 28.735403371974826,
+      "summed_nonnegative_callback_overhead_seconds": 3.705821536714211
+    },
+    "low-residual": {
+      "jobs": 149,
+      "worker_seconds": 1461.9510533398716,
+      "maximum_job_seconds": 21.849170792032965,
+      "median_job_seconds": 10.50393412495032,
+      "summed_callback_seconds": 1467.829856663593,
+      "summed_nonnegative_callback_overhead_seconds": 5.878803323721513
+    },
+    "low-solve": {
+      "jobs": 149,
+      "worker_seconds": 2184.2317937896587,
+      "maximum_job_seconds": 19.425729333073832,
+      "median_job_seconds": 14.703929417068139,
+      "summed_callback_seconds": 2190.176230076235,
+      "summed_nonnegative_callback_overhead_seconds": 5.944436286576092
+    },
+    "low-verify": {
+      "jobs": 149,
+      "worker_seconds": 1664.177168964292,
+      "maximum_job_seconds": 19.70689533301629,
+      "median_job_seconds": 11.526680249953642,
+      "summed_callback_seconds": 1670.2320542888483,
+      "summed_nonnegative_callback_overhead_seconds": 6.0548853245563805
+    },
+    "operator": {
+      "jobs": 16878,
+      "worker_seconds": 44589.67223435629,
+      "maximum_job_seconds": 24.68980954203289,
+      "median_job_seconds": 2.103407624992542,
+      "summed_callback_seconds": 45270.37654837547,
+      "summed_nonnegative_callback_overhead_seconds": 680.7043140191818
+    },
+    "prepare-begin": {
+      "jobs": 97,
+      "worker_seconds": 69.46963758766651,
+      "maximum_job_seconds": 0.8260786249302328,
+      "median_job_seconds": 0.6905534999677911,
+      "summed_callback_seconds": 73.26277849765029,
+      "summed_nonnegative_callback_overhead_seconds": 3.7931409099837765
+    },
+    "prepare-finish": {
+      "jobs": 97,
+      "worker_seconds": 68.40646366530564,
+      "maximum_job_seconds": 0.8038132500369102,
+      "median_job_seconds": 0.6905997500289232,
+      "summed_callback_seconds": 72.1638218271546,
+      "summed_nonnegative_callback_overhead_seconds": 3.7573581618489698
+    },
+    "prepare-rows": {
+      "jobs": 582,
+      "worker_seconds": 3274.1059583398746,
+      "maximum_job_seconds": 8.036999500007369,
+      "median_job_seconds": 5.785210229514632,
+      "summed_callback_seconds": 3297.669299617759,
+      "summed_nonnegative_callback_overhead_seconds": 23.56334127788432
+    },
+    "rhs": {
+      "jobs": 5626,
+      "worker_seconds": 21702.89932116412,
+      "maximum_job_seconds": 29.166061999974772,
+      "median_job_seconds": 3.231591770541854,
+      "summed_callback_seconds": 21925.44868038001,
+      "summed_nonnegative_callback_overhead_seconds": 222.54935921588913
+    },
+    "seal": {
+      "jobs": 1,
+      "worker_seconds": 0.803351332899183,
+      "maximum_job_seconds": 0.803351332899183,
+      "median_job_seconds": 0.803351332899183,
+      "summed_callback_seconds": 0.844550917041488,
+      "summed_nonnegative_callback_overhead_seconds": 0.04119958414230496
+    },
+    "sweep-begin": {
+      "jobs": 97,
+      "worker_seconds": 23.384766413946636,
+      "maximum_job_seconds": 0.3306440419983119,
+      "median_job_seconds": 0.2584248749772087,
+      "summed_callback_seconds": 27.050978089449927,
+      "summed_nonnegative_callback_overhead_seconds": 3.666211675503291
+    },
+    "sweep-finish": {
+      "jobs": 97,
+      "worker_seconds": 84.36829220748041,
+      "maximum_job_seconds": 1.2203143750084564,
+      "median_job_seconds": 0.8105474170297384,
+      "summed_callback_seconds": 88.10966166236904,
+      "summed_nonnegative_callback_overhead_seconds": 3.741369454888627
+    },
+    "verify": {
+      "jobs": 174,
+      "worker_seconds": 3558.380999451154,
+      "maximum_job_seconds": 26.6052980000386,
+      "median_job_seconds": 17.464301458501723,
+      "summed_callback_seconds": 3565.235673875897,
+      "summed_nonnegative_callback_overhead_seconds": 6.85467442474328
+    },
+    "verify-begin": {
+      "jobs": 1,
+      "worker_seconds": 4.222043833928183,
+      "maximum_job_seconds": 4.222043833928183,
+      "median_job_seconds": 4.222043833928183,
+      "summed_callback_seconds": 4.260085458983667,
+      "summed_nonnegative_callback_overhead_seconds": 0.038041625055484474
+    }
+  },
+  "archive_maximum_seconds": 2.0002901669358835,
+  "archive_median_seconds": 0.567724333028309,
+  "maximum_passing_column_job_seconds": 33.696996332961135,
+  "maximum_production_or_audit_RSS_bytes": 957874176,
+  "maximum_observed_working_store_bytes": 960593766,
+  "proved_working_store_bound_bytes": 973167872,
+  "maximum_recorded_production_concurrency": 3,
+  "conservative_production_concurrent_RSS_bytes": 2715713536,
+  "storage_observation": {
+    "sealed_store": {
+      "files": 1304,
+      "logical_bytes": 650457594,
+      "allocated_bytes": 652419072
+    },
+    "external_column_artifacts": {
+      "files": 73741,
+      "logical_bytes": 107020468,
+      "allocated_bytes": 336261120
+    }
+  },
+  "D156_pilot_scenario_comparison": [
+    {
+      "scenario": 0,
+      "modeled_column_seconds": 34364.67076231972,
+      "modeled_total_hours_with_shared_allowances": 10.78938082011964,
+      "observed_to_modeled_column_ratio": 0.9844123625616702,
+      "retained_shared_allowance_seconds": 4477.100190110976
+    },
+    {
+      "scenario": 1,
+      "modeled_column_seconds": 43133.740370552194,
+      "modeled_total_hours_with_shared_allowances": 13.78811275711174,
+      "observed_to_modeled_column_ratio": 0.7842817813426746,
+      "retained_shared_allowance_seconds": 6503.465555050069
+    }
+  ],
+  "remaining_full_route_job_count": 1022790,
+  "conditional_remaining_scenarios": [
+    {
+      "scenario": 0,
+      "remaining_P3200_columns": 14,
+      "remaining_P6400_columns": 14,
+      "remaining_P10480_columns": 16,
+      "same_cost_remaining_P3200_hours": 29.763533632128514,
+      "same_cost_remaining_P6400_hours": 131.55724840917986,
+      "unchanged_unmeasured_P10480_hours": 303.67426586426404,
+      "unchanged_graph_and_comparison_hours": 8.59962746896705,
+      "remaining_total_active_hours": 473.59467537453946,
+      "remaining_total_active_days": 19.733111473939147
+    },
+    {
+      "scenario": 1,
+      "remaining_P3200_columns": 14,
+      "remaining_P6400_columns": 14,
+      "remaining_P10480_columns": 16,
+      "same_cost_remaining_P3200_hours": 29.763533632128514,
+      "same_cost_remaining_P6400_hours": 131.55724840917986,
+      "unchanged_unmeasured_P10480_hours": 461.52235492034856,
+      "unchanged_graph_and_comparison_hours": 12.840501000640465,
+      "remaining_total_active_hours": 635.6836379622974,
+      "remaining_total_active_days": 26.48681824842906
+    }
+  ],
+  "remaining_scenarios_replace_only_P3200_and_P6400_column_costs": true,
+  "P10480_integrated_cost_still_unmeasured": true,
+  "one_column_does_not_bound_other_columns_or_higher_stages": true,
+  "full_route_free_space_requirement_before_pilot_bytes": 76257150096,
+  "completed_pilot_retained_allowance_debited_bytes": 1254739040,
+  "conditional_remaining_free_bytes_including_10GiB_reserve": 75002411056,
+  "rounded_remaining_bank_free_gate_bytes": 75161927680,
+  "remaining_storage_keeps_full_largest_active_extra_and_reserve": true,
+  "completed_actual_column_2_precision_pi": 6400,
+  "full_sixteen_column_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_column_or_higher_stage_admitted": false,
+  "candidate_identification_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "field_polynomial_constructed": false,
+  "resource_caps_changed": false,
+  "finite_rational_transfer_search_remains_parked": true,
+  "wall_seconds": 7.658578458009288,
+  "filesystem_observation": {
+    "observed_at": "2026-10-13T12:56:44.585158+00:00",
+    "free_bytes": 47104000000
+  },
+  "peak_rss_bytes": 216678400,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_audits_d157_run01.log",
+      "sha256": "042b7232430a5a41f5e78b5e4d5e16af91cefdf170d13bb1190bb46de73fe94a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_audit_plan_d156.json",
+      "sha256": "73a75952530aa132b67a3b74eb63b8c7ce8de9aaf8d636a34012098ef913c496"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_audit_plan_d156_completed.json",
+      "sha256": "0cdcfdba60e5fc02e0dfe9f7736b41d18c90e3f46b67650193042fa4b5387195"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_d156_attempt01.job.json",
+      "sha256": "43f62a9ddaf4fdf1902e0272260b0e0dfde3d6b0202b1b61f7c9fe24f44370c9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_d156_attempt01.log",
+      "sha256": "e32397d79a1b7c24f8c173f67273c3e7747576fcbdbc85204e18490d840e62d9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_d156_attempt01_failed.py",
+      "sha256": "af3dc62ed8d6f4da2432da87c4ba7cc6e5d934903b4026562144a0f0084a9a37"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_r2_d157.json",
+      "sha256": "46cd471fc008d52796e16bb3d994f99acf353c7543aec51367a57d80d405d4c2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_r2_d157_attempt01.job.json",
+      "sha256": "f725f6b0e54f35f914ecf122d58aa4a1929c66f5672b6278e805d4b2bb103c0f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_r2_d157_attempt01.log",
+      "sha256": "4d122150af3cea28901111f394b690a33e9d7101c821ce53435603f9846afe0d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_r2_d157_recheck01.job.json",
+      "sha256": "2b10abd17d6d0ba51502b2ea63e7c60336c7ac852cdbc17473a7d305fcbae7b2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_r2_d157_recheck01.log",
+      "sha256": "4d122150af3cea28901111f394b690a33e9d7101c821ce53435603f9846afe0d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_column_review_d157_run01.log",
+      "sha256": "43f62a9ddaf4fdf1902e0272260b0e0dfde3d6b0202b1b61f7c9fe24f44370c9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_launchcheck_d156_attempt01.job.json",
+      "sha256": "228e9754e4cc739eb091538d546c5a432f72e57b43206000f741ed16f6103508"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_launchcheck_d156_attempt01.log",
+      "sha256": "57071bce97ac4e69f39d88c56760a95c301cb1d13ec43baddf52928ec8ed00e5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_pipeline_d157_run01.log",
+      "sha256": "181260bf9ba03ca75dfcdf51bd28e12e5dd49721a5f193e5964db6c8433ee656"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_pipeline_d157_run01_launch.json",
+      "sha256": "1b3e2dbe2295cd4374358058ac50e8d5142e1226beee77418b2b0f0fbc6e7c20"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_pipeline_d157_run01_power_assertion_finished.json",
+      "sha256": "8c230b303d9e9f5f0184ecd01d41520ab590d89a376097f5c5cb19d35e3b8269"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_pipeline_d157_run01_status.json",
+      "sha256": "625294b717159031bb521c69150e04e1289fa65da54b755a756d4d91b22941ff"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_preparation_review_d156.json",
+      "sha256": "660119f4a0f02fd6d613fdfd527cde4d86b93716a8d8d08c5ac9f87377e3e416"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_production_d157_run01.log",
+      "sha256": "686476dd6094516af782148fe58d450ccf1055e4f218f94a6a112c951164036a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_review_controls_d157.json",
+      "sha256": "ae0abd36f6bc7d3b483e620260db298458ad1a64d663db7f042719c37d10a766"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_review_controls_d157_attempt01.job.json",
+      "sha256": "504d98a786481d96865ce6be4f65e58f04155ec42797391b10e5cf10e1d28915"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_timing_d154.json",
+      "sha256": "4a567593eff57acf78d29dee8e974cb77bbc73ae43b02049eb5dc608c854072a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_config_d156.json",
+      "sha256": "db255a0cf6dd07be16e3b539e78acb62c46b36507687887b436953984b2e2e67"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_d156_completed.json",
+      "sha256": "0d02d2982c561ae19e9210e8d32cc13aac617d285b60a24dd9f4659fb9d5bc48"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_storage_timing_plan_d156.json",
+      "sha256": "cfb66aefcc7f6ffc59dbb37a261686f3d98c10d2e0a22e51448b23d9e80b6f49"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/precision_route_cost_d152.json",
+      "sha256": "d1b13eeab80b1f294bf5fee82a017c73184b15d87466c8c92909df9aa774328c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/647_dyadic_higher_pilot_column_review.py",
+      "sha256": "af3dc62ed8d6f4da2432da87c4ba7cc6e5d934903b4026562144a0f0084a9a37"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/650_dyadic_higher_pilot_preparation_review.py",
+      "sha256": "51dd180b82b8acd77ee001a7976985069b794946ab5c527ad4542b93b4805a87"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/651_dyadic_higher_pilot_column_review_revision.py",
+      "sha256": "4c819f4fe60cc05c2e7b575b17056c7e1702a733d5c4f271b14213013905b7ec"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/653_dyadic_higher_pilot_timing.py",
+      "sha256": "4893607a16fbeef00a0f41ae078fb4e657d665f54b07b7d8f1bb8ff8c96de634"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_d137_audits.py",
+      "sha256": "f1176f55d20eb8b39dab3db7435bda2855449bfd028ccf0076350d0db9bd0e9a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_d139_indexed_production.py",
+      "sha256": "3dec1d16bd3a64ad6041217ba800e807f5bf9d72f0a156b4196d23110797d418"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_d157_higher_pilot.py",
+      "sha256": "d78695296d9efd7ff5488efc2f1411056edd87c3e2eb579b22ac3deaf80e3658"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "remaining_space_shortfall_at_observation_bytes": 27898411056,
+  "rounded_remaining_gate_shortfall_at_observation_bytes": 28057927680
+}

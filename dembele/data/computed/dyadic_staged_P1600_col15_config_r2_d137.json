@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "milestone": "D132",
+  "execution_milestone": "D137",
+  "namespace": "dyadic_rowjournal_P1600_col15_r2_d132",
+  "output_prefix": "dyadic_staged_P1600_col15_r2_d137",
+  "precision_pi": 1600,
+  "seed_precision_pi": 800,
+  "column": 15,
+  "seed": "dyadic_weighted_P800_col15_verified_d125",
+  "CM_reference": "dyadic_CM_P800_col15_d137",
+  "prior_review": "dyadic_checkpoint_admission_r2_d137",
+  "admission_review": "dyadic_checkpoint_admission_r2_d137",
+  "digit_bits": 200,
+  "state_chunk": 1,
+  "rhs_chunk": 3,
+  "CM_chunk": 1,
+  "audit_plan": "dyadic_checkpoint_col15_audit_plan_r2_d137",
+  "CM_output": "dyadic_CM_P1600_col15_r2_d137",
+  "column_review": "dyadic_checkpoint_col15_review_r2_d137",
+  "working_store_bound_bytes": 141761896,
+  "purpose": "User-authorized P1600 full-bank checkpoint; do not continue to P3200 or P10552."
+}

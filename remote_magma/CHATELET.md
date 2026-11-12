@@ -9,9 +9,11 @@ The setup is adapted from the
 
 ## Remote environment
 
-- Magma: `/usr/local/bin/magma`, V2.29-8.
+- Magma: `/usr/local/bin/magma`, V2.29-10 (verified 2026-10-05).
 - Capacity: 24 cores and approximately 94 GB RAM.
-- Eight parallel Magma lanes are reasonable for small jobs.
+- Current project policy allows at most three mathematical workers globally,
+  including the active local D133 workers. Reserve capacity before starting
+  a remote job.
 - `/tmp` is shared by all CoCalc projects on the host. Use the project-local
   `two_remote_magma` directory instead.
 
@@ -28,9 +30,52 @@ COCALC_BASE=https://chatelet.mit.edu
 The key must be account-level; CoCalc project keys cannot execute commands.
 The client sends it only as the HTTP Basic username and never prints it.
 
-Chatelet omits a Let's Encrypt intermediate from its served certificate
-chain. `remote_magma/ca_extra.pem` supplies the missing certificates and is
-loaded in addition to the normal Python or `certifi` trust store.
+Chatelet omits the intermediate certificates from its served certificate
+chain. `remote_magma/ca_extra.pem` supplies YR1, YR2 and cross-signed Root YR,
+loaded in addition to the normal Python or `certifi` trust store. Certificate
+validation and hostname checks remain enabled.
+
+On 2026-10-05 the server presented a certificate issued by YR1, valid from
+2026-09-29 through 2026-12-28. The previous bundle contained YR2, so Python
+failed with `unable to get local issuer certificate`. YR1 was downloaded
+over verified HTTPS from the official [Let's Encrypt certificate catalogue](https://letsencrypt.org/certificates/)
+at [int-yr1.pem](https://letsencrypt.org/certs/gen-y/int-yr1.pem), then checked
+as an untrusted intermediate against the existing trusted roots before
+being added. Its DER SHA-256 fingerprint is:
+
+```text
+13:94:96:34:D9:9C:D6:FD:6A:A8:0B:C0:34:FE:FA:CC:EB:19:69:FE:EF:98:65:86:71:3E:CD:BB:05:75:8D:3F
+```
+
+If issuance changes again, obtain the needed intermediate from that
+catalogue and verify its chain. Keep TLS and hostname verification enabled.
+
+### Verified access and credential replacement
+
+The user installed a fresh account key on 2026-10-05. Authentication and
+the Magma V2.29-10 version check pass. The checked-in smoke test passes
+through file upload/execution/cleanup; inline checks of the degree-eight
+base field, its defining equation and GF(256) also pass. See the
+[remote test record](../dembele/checkpoints/magma-access-2026-10-05-remote-restored.json).
+The two tests took 2.480 and 0.486 seconds. D133's coordinator was held
+while existing workers drained, then resumed after 4.897 seconds, preserving
+the global worker limit.
+
+The earlier configured key and explicitly authorized backup-key test both
+returned HTTP 400 with `No account found. Is your API key wrong?`; the
+[backup-key check](../dembele/checkpoints/magma-backup-key-check-2026-10-05.json)
+records that resolved authentication outage. If this error recurs, create
+a fresh account key on `chatelet.mit.edu` in Account settings, under API Keys
+and Add API key; see the [CoCalc account-key instructions](https://doc.cocalc.com/apikeys.html#account-api-keys).
+Run the helper below in your own interactive Terminal, enter the key at
+the hidden prompt, then rerun the smoke test:
+
+```sh
+python3 remote_magma/set_key.py
+```
+
+Do not paste credentials into logs or documentation. Existing project
+settings are preserved by the helper.
 
 ## Running jobs
 

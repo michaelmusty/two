@@ -1,0 +1,41 @@
+{
+  "kind": "operational_Magma_access_test_not_a_research_certificate",
+  "observed_UTC": "2026-10-05T20:08:07.024271+00:00",
+  "status": "pass",
+  "host": "chatelet.mit.edu",
+  "Magma_version": "V2.29-10",
+  "credential_source": "user_replacement_saved_with_remote_magma/set_key.py",
+  "secret_values_recorded": false,
+  "TLS_verification_enabled": true,
+  "TLS_hostname_checks_enabled": true,
+  "remote_existing_Magma_workers_before_tests": 0,
+  "remote_API_CPU_timeout_seconds": 30,
+  "remote_socket_timeout_seconds": 45,
+  "sequential_remote_tests": [
+    {
+      "test": "checked_in_file_upload_execution_and_cleanup",
+      "exit_code": 0,
+      "stdout": "REMOTE_MAGMA_OK\n42\n",
+      "stderr": "",
+      "wall_seconds": 2.480482375016436,
+      "pass": true
+    },
+    {
+      "test": "inline_number_field_degree_defining_equation_and_GF256",
+      "exit_code": 0,
+      "stdout": "MAGMA_ARITHMETIC_OK\n",
+      "stderr": "",
+      "source_sha256": "2357011b1acfb3311dfd388916dc927ae73fc3ddfcb0a34dd884cf581de81a4c",
+      "wall_seconds": 0.4860720839933492,
+      "pass": true
+    }
+  ],
+  "D133_coordinator_admission_hold_seconds": 4.897493291005958,
+  "D133_coordinator_resumed": true,
+  "local_Magma_version_previously_verified": "V2.29-8",
+  "local_test_record": "dembele/checkpoints/magma-access-2026-10-05-local.json",
+  "supersedes_authentication_block_in": [
+    "dembele/checkpoints/magma-access-2026-10-05.json",
+    "dembele/checkpoints/magma-backup-key-check-2026-10-05.json"
+  ]
+}

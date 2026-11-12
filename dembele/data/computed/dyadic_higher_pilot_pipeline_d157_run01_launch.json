@@ -1,0 +1,86 @@
+{
+  "status": "started",
+  "milestone": "D157",
+  "started_utc": "2026-10-12T17:21:19.202254+00:00",
+  "supervisor_pid": 60514,
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_config_d156.json",
+    "sha256": "db255a0cf6dd07be16e3b539e78acb62c46b36507687887b436953984b2e2e67"
+  },
+  "supervisor": {
+    "path": "/Users/musty/two/dembele/pari/run_d157_higher_pilot.py",
+    "sha256": "d78695296d9efd7ff5488efc2f1411056edd87c3e2eb579b22ac3deaf80e3658"
+  },
+  "admission": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_preparation_review_d156.json",
+    "sha256": "660119f4a0f02fd6d613fdfd527cde4d86b93716a8d8d08c5ac9f87377e3e416"
+  },
+  "launch_check_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_launchcheck_d156_attempt01.job.json",
+    "sha256": "228e9754e4cc739eb091538d546c5a432f72e57b43206000f741ed16f6103508"
+  },
+  "maximum_mathematical_workers": 3,
+  "mathematical_job_timeout_seconds": 180,
+  "no_other_column_or_stage_admitted": true,
+  "stages": [
+    {
+      "name": "production",
+      "command": [
+        "python3",
+        "dembele/pari/run_d139_indexed_production.py",
+        "--config",
+        "dyadic_staged_P6400_col02_config_d156",
+        "--workers",
+        "3"
+      ],
+      "log": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_production_d157_run01.log",
+      "output": "/Users/musty/two/dembele/data/computed/dyadic_staged_P6400_col02_d156_completed.json"
+    },
+    {
+      "name": "audits",
+      "command": [
+        "python3",
+        "dembele/pari/run_d137_audits.py",
+        "--plan",
+        "dyadic_higher_pilot_col02_audit_plan_d156",
+        "--workers",
+        "3"
+      ],
+      "log": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_audits_d157_run01.log",
+      "output": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_audit_plan_d156_completed.json"
+    },
+    {
+      "name": "column_review",
+      "command": [
+        "python3",
+        "dembele/pari/run_dyadic_capped.py",
+        "dembele/pari/647_dyadic_higher_pilot_column_review.py",
+        "dyadic_higher_pilot_col02_review_d156_attempt01",
+        "PASS|647_DYADIC_HIGHER_PILOT_COLUMN_REVIEW",
+        "--config",
+        "dyadic_staged_P6400_col02_config_d156",
+        "--output",
+        "dyadic_higher_pilot_col02_review_d156"
+      ],
+      "log": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_column_review_d157_run01.log",
+      "output": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_d156_attempt01.job.json"
+    },
+    {
+      "name": "column_replay",
+      "command": [
+        "python3",
+        "dembele/pari/run_dyadic_capped.py",
+        "dembele/pari/647_dyadic_higher_pilot_column_review.py",
+        "dyadic_higher_pilot_col02_review_d156_recheck01",
+        "PASS|647_DYADIC_HIGHER_PILOT_COLUMN_REVIEW",
+        "--config",
+        "dyadic_staged_P6400_col02_config_d156",
+        "--output",
+        "dyadic_higher_pilot_col02_review_d156",
+        "--check"
+      ],
+      "log": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_column_replay_d157_run01.log",
+      "output": "/Users/musty/two/dembele/data/computed/dyadic_higher_pilot_col02_review_d156_recheck01.job.json"
+    }
+  ]
+}

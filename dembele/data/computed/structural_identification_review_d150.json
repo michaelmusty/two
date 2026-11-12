@@ -1,0 +1,203 @@
+{
+  "status": "pass",
+  "milestone": "D150",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_review_d149.json",
+    "sha256": "d66c62f50094888d60523fd5e1f0cc6e231d79ea67c9d09e83fb1e6b87b08cde"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D149_direct_bindings": 38,
+  "D148_direct_bindings": 44,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/structural_identification_audit_d150_attempt01.job.json",
+        "sha256": "c4d53c10990995948a2dd9d8393ea2f9449969577e6b00c01c1540da899ef159"
+      },
+      "wall_seconds": 0.3475302499718964,
+      "peak_rss_bytes": 28901376
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/structural_transfer_controls_d150_attempt01.job.json",
+        "sha256": "98c4b07655af667ff44b570e6bb67e08e7b9d785330aad992fb7d4697cbb1229"
+      },
+      "wall_seconds": 0.2942299999995157,
+      "peak_rss_bytes": 30244864
+    }
+  ],
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "structural_inventory_complete_for_named_packets": true,
+  "strict_contracting_branches_checked": 348,
+  "distinct_target_nonaffine_branches_checked": 275,
+  "reachable_cycle_determinant_valuations_pi": [
+    4,
+    6
+  ],
+  "ordinary_moment_cutoff_is_not_exact": true,
+  "branchwise_finite_rational_closure_excluded_by_companion_proof": true,
+  "summed_transfer_cancellations_excluded": false,
+  "exact_candidate_transfer_identity_constructed": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "best_current_proved_relation_height_upper": 15237,
+  "sufficient_height_target": 623,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "inspected_report_count": 17,
+  "report_local_links_checked_including_pending_packet_outputs": 20,
+  "next_work": "Test whether summed transfer relations and actual quaternionic symmetries yield a finite exact identity for one cleared positive-order candidate residual, or a multiplication-compatible geometric comparison. Branchwise rational closure is excluded; summed cancellations are not. No unbounded witness search or precision increase is admitted. A height alternative needs new actual-curve input.",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/arithmetic-twist-classification-d134.md",
+      "sha256": "d2855d3b276650f876ca77b4c0127186678e771568558afe850bff2e88e34c35"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-marks.md",
+      "sha256": "d381853e6dc0126ae476404e0665a3bcae7ec79ba89b6cec54dbfb6e45d31c49"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-verification.md",
+      "sha256": "f04f008409582f840dcdff4e6fab47fd27d7a08c44f9d41e759567442c4f8313"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/curve-identification-audit.md",
+      "sha256": "31f963149f8ab14092348dcc6706d252ff08a50df79b4dada3a762acfc744e2e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/d88-cm-expansion-identification-review.md",
+      "sha256": "da5b7ed2495737040efe79e4d96946510e9e3ec61427f3fcf966908e0441d665"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-P1600-recognition-d140.md",
+      "sha256": "8fc9103b0d5c10b5cad2f9cc37b10155a1b1639a834e155ee4dc145ad77cdb92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-cm-matching-d112.md",
+      "sha256": "17eaae2f3c36acbf805713d7fd271ed229d344f4b4f48b2cf27b31b0ef04e228"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-comparison-and-strategy-d115.md",
+      "sha256": "393aecfd4e3f07eb2b72a0dfa51844559c4fb0b7d6657f52213803b9890fc419"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-group-transport-d110.md",
+      "sha256": "4e59bb8ef995a26414064e800e28cde4add858f86fdc3f7f4ef7e1a199942b93"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-harmonic-d111.md",
+      "sha256": "73f600897ed2afc624bab4316acd65846e1ed9c63cf3a08be7603902fbab8398"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-moments-d113.md",
+      "sha256": "da0d98a949ad1b41726017820436d3a731f0631a094e7ff65fda742748cdfbb4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-precision1600-bank-d138.md",
+      "sha256": "16a13ac2ed131aa84b4a26f900136794d2a8acd64ebc9ad1b696fdf8bc3f677b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-review-d99.md",
+      "sha256": "8d3d3b53be8f0ef102c5b539645e1362e09d19540e7ffaa86ee724df7b0233fa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-global-identification-d95.md",
+      "sha256": "c48f69eb681cc83d5f0d53153188127464a25dfeb428c5f0e7fd4d5d51a9fe6b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/structural-identification-audit-d150.md",
+      "sha256": "62dc2e066a664d0d0ef3238503259f4aaae5270f7b5d21f087772d65fc656413"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/target-realization.md",
+      "sha256": "93d1a5955ff62f9886fbc0f639ad6b8b1f7551fcd7656b8a3f010c645f0dfac0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_completion_d149.json",
+      "sha256": "4e33fcc544a46c4ffd9a0bab96fdd83a766b237b719b3d89ae193aac191b6737"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_completion_d149_attempt01.job.json",
+      "sha256": "bb96fbf54b7ceec03b38d50fa90770b74b544fe6cca70ed63d1a7496ef8c9d71"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_review_d149.json",
+      "sha256": "d66c62f50094888d60523fd5e1f0cc6e231d79ea67c9d09e83fb1e6b87b08cde"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_review_d149_attempt01.job.json",
+      "sha256": "342b728dcda80b05690de6fac05591619b75e2c34b6858536775c1b4434cc1e6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_review_d149_recheck01.job.json",
+      "sha256": "9aa520a68a16daa1eedf91fb4d85cb7cd50ad05ad19c17e239bf19d46ae13b96"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_identification_audit_d150.json",
+      "sha256": "84e740f31a8f47ec9d2af7fd8573eecfcf4f1ab8317e943f6525b0ebd47be14e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_identification_audit_d150_attempt01.job.json",
+      "sha256": "c4d53c10990995948a2dd9d8393ea2f9449969577e6b00c01c1540da899ef159"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_identification_sources_d150.json",
+      "sha256": "bc384db165bf592b62bf50945152217f8fd2a7f581bcb3f36b29bc4e8d05b524"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_transfer_controls_d150.json",
+      "sha256": "ea85ed2b2430058f8bbd5e27094533dcda167c49ade7222a68caca1f2cc347f3"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_transfer_controls_d150_attempt01.job.json",
+      "sha256": "98c4b07655af667ff44b570e6bb67e08e7b9d785330aad992fb7d4697cbb1229"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/625_P1600_primitive_frame_review.py",
+      "sha256": "35408c3352d62faec8f7173786fae79d124ad4c4d39ee03fb20754c48498379c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/626_structural_identification_audit.py",
+      "sha256": "ff1924862eb2e27bcb31277cf8512687eadb1e062ad07f16104683b4c6f772cc"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/627_structural_transfer_controls.py",
+      "sha256": "a94548720375b70672e6615d426ebb097d9cfb00303fc6ac398078cb94eeacc4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/628_structural_identification_review.py",
+      "sha256": "d970d6feb976ff95201c300738809f3aa3f8c010130c744f8f7812f93db2b18f"
+    }
+  ],
+  "wall_seconds": 65.67231112497393,
+  "peak_rss_bytes": 133939200
+}

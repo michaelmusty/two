@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/593_P1600_proof_gap_diagnostics.py", line 181, in <module>
+    ext = [exterior(bits) for bits in (96, 160)]
+  File "/Users/musty/two/dembele/pari/593_P1600_proof_gap_diagnostics.py", line 181, in <listcomp>
+    ext = [exterior(bits) for bits in (96, 160)]
+  File "/Users/musty/two/dembele/pari/593_P1600_proof_gap_diagnostics.py", line 94, in exterior
+    assert candidate_covolume_upper <= threshold
+AssertionError

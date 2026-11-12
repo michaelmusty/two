@@ -1,0 +1,31 @@
+{
+  "status": "started",
+  "milestone": "D137",
+  "revision": 2,
+  "pid": 7481,
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    "python3",
+    "-u",
+    "dembele/pari/run_d137_bank_r2.py"
+  ],
+  "started_at": "2026-10-06T20:33:48.236162+00:00",
+  "log_path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_bank_r2_d137_run01.log",
+  "coordinator": {
+    "path": "/Users/musty/two/dembele/pari/run_d137_bank_r2.py",
+    "sha256": "d0aa4144860364d9704381e20e1b7ca2470a97ad195386f58ab0c1ec2f6ca316"
+  },
+  "admission_completion": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_admission_completion_r2_d137.json",
+    "sha256": "6f2a6a56659bf2dfb4d8b3011d41545579ecb669679ecb78d2b749397567d47f"
+  },
+  "actual_create_preflight": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col02_r2_d137_create_attempt01.job.json",
+    "sha256": "63a42fe325c6b93d8a17921ab0c2d689c126b4ff2380a0c8640ed8c09ab52dea"
+  },
+  "user_authorization": "proceed: recommended full-bank P1600 checkpoint",
+  "mathematical_worker_limit": 3,
+  "idle_sleep_inhibited_only_while_coordinator_runs": true,
+  "full_bank_comparison_pending": true
+}

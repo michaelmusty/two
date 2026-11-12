@@ -1,0 +1,100 @@
+{
+  "status": "pass",
+  "milestone": "D150",
+  "scope": "Audit the saved actual/candidate structural comparison; certify finite hypotheses for the branchwise rational-closure obstruction and state an uninstantiated summed-transfer identity criterion.",
+  "external_sources": [
+    {
+      "title": "van Bommel, Costa, Poonen, Srinivasan, Curve equations from expansions of 1-forms at a nonrational point",
+      "url": "https://arxiv.org/pdf/2506.14026",
+      "checked_on": "2026-10-09",
+      "role": "Lemma 4.1 and Corollary 4.2 give the divisor-degree zero test assuming exact arithmetic expansions. D88 supplies the rank refinement; the paper supplies no evaluator for this datum."
+    },
+    {
+      "title": "Franc and Masdeu, Computing fundamental domains for the Bruhat-Tits tree for GL2(Qp), p-adic automorphic forms, and the canonical embedding of Shimura curves",
+      "url": "https://arxiv.org/pdf/1201.0356",
+      "checked_on": "2026-10-09",
+      "role": "Introduction and section 6.2 distinguish numerical equation recognition from proof. D113 provides the direct ramified scalar contraction; D150 pole-orbit and tensor identities are companion derivations."
+    }
+  ],
+  "inspected_reports": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/arithmetic-twist-classification-d134.md",
+      "sha256": "d2855d3b276650f876ca77b4c0127186678e771568558afe850bff2e88e34c35"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-marks.md",
+      "sha256": "d381853e6dc0126ae476404e0665a3bcae7ec79ba89b6cec54dbfb6e45d31c49"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-frame-verification.md",
+      "sha256": "f04f008409582f840dcdff4e6fab47fd27d7a08c44f9d41e759567442c4f8313"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/curve-identification-audit.md",
+      "sha256": "31f963149f8ab14092348dcc6706d252ff08a50df79b4dada3a762acfc744e2e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/d88-cm-expansion-identification-review.md",
+      "sha256": "da5b7ed2495737040efe79e4d96946510e9e3ec61427f3fcf966908e0441d665"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-P1600-recognition-d140.md",
+      "sha256": "8fc9103b0d5c10b5cad2f9cc37b10155a1b1639a834e155ee4dc145ad77cdb92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-cm-matching-d112.md",
+      "sha256": "17eaae2f3c36acbf805713d7fd271ed229d344f4b4f48b2cf27b31b0ef04e228"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-comparison-and-strategy-d115.md",
+      "sha256": "393aecfd4e3f07eb2b72a0dfa51844559c4fb0b7d6657f52213803b9890fc419"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-group-transport-d110.md",
+      "sha256": "4e59bb8ef995a26414064e800e28cde4add858f86fdc3f7f4ef7e1a199942b93"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-harmonic-d111.md",
+      "sha256": "73f600897ed2afc624bab4316acd65846e1ed9c63cf3a08be7603902fbab8398"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-moments-d113.md",
+      "sha256": "da0d98a949ad1b41726017820436d3a731f0631a094e7ff65fda742748cdfbb4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-precision1600-bank-d138.md",
+      "sha256": "16a13ac2ed131aa84b4a26f900136794d2a8acd64ebc9ad1b696fdf8bc3f677b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/hyperellipticity-review-d99.md",
+      "sha256": "8d3d3b53be8f0ef102c5b539645e1362e09d19540e7ffaa86ee724df7b0233fa"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-global-identification-d95.md",
+      "sha256": "c48f69eb681cc83d5f0d53153188127464a25dfeb428c5f0e7fd4d5d51a9fe6b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/target-realization.md",
+      "sha256": "93d1a5955ff62f9886fbc0f639ad6b8b1f7551fcd7656b8a3f010c645f0dfac0"
+    }
+  ],
+  "actual_and_candidate_claims_distinguished_in_report": true,
+  "branchwise_closure_obstruction_is_companion_proof": true,
+  "summed_transfer_identity_is_sufficient_not_instantiated": true,
+  "no_general_impossibility_of_identification_claimed": true,
+  "finite_checks_do_not_mechanically_verify_geometric_proofs": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/structural-identification-audit-d150.md",
+      "sha256": "62dc2e066a664d0d0ef3238503259f4aaae5270f7b5d21f087772d65fc656413"
+    }
+  ]
+}

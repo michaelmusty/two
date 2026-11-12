@@ -1,0 +1,35 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/600_P1600_two_height_review.py",
+    "--check"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 56.782497167005204,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_two_height_review_d142_recheck01.log",
+    "sha256": "f741c387bb8b07c482528b72f81ea52799a485eb835187b57c5d0e3b98e79651"
+  },
+  "private_process_group": 35229,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/600_P1600_two_height_review.py",
+    "sha256": "b4f9619ab5e416c04e1c94e3cabcc94ea57edea966d0c63fb8ca227944e432cb"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "status": "pass",
+  "milestone": "D154",
+  "independent_finite_review_complete": true,
+  "catalogue_graph_is_transitive": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_preparation_review_d153.json",
+    "sha256": "6e9445f237ee9d687091c0f69b15988f766f3cfd1ec438d2d37d51fd370fae9b"
+  },
+  "D153_direct_bindings": 89,
+  "D152_direct_bindings": 23,
+  "D151_direct_bindings": 20,
+  "D150_direct_bindings": 32,
+  "D149_direct_bindings": 38,
+  "D148_direct_bindings": 44,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "new_column_catalogue_root": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_col02_review_d153.json",
+    "sha256": "18a929925c8443ecce80505c40ed0741547547f4e057f92f3a406f80b56f3966"
+  },
+  "new_column_catalogue_bindings": 38446,
+  "new_column_catalogue_rehashed": true,
+  "column_review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_col02_review_d153_attempt01.job.json",
+      "sha256": "3e63327be666a33aae59e66f1f6f74b90cd5cb443c1e33692a615d8af102a3e0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_col02_review_d153_recheck01.job.json",
+      "sha256": "70af80debff14d17befa3c4d3764756865dcd55e061fec0798f3f36a608c45e9"
+    }
+  ],
+  "timing_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_timing_d154_attempt01.job.json",
+    "sha256": "41bda238f911286b5ac38464d76a03d2816f3cbc9fb44ab1ff1ea64850139400"
+  },
+  "measured_column_cycle_active_seconds": 7653.480076833046,
+  "remaining_active_days_scenarios": [
+    20.217648130903825,
+    28.493762823489654
+  ],
+  "remaining_free_bytes_including_reserve": 76257150096,
+  "remaining_space_shortfall_at_observation_bytes": 24647550096,
+  "complete_column_jobs": 12570,
+  "inherited_preparation_create_jobs": 1,
+  "new_column_jobs_this_continuation": 12569,
+  "failed_bounded_input_jobs": 0,
+  "actual_column2_precision_pi": 3200,
+  "full_sixteen_column_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "working_store_bound_bytes": 304049792,
+  "all_caps_retained": true,
+  "actual_complete_original_weighted_equations_certified": true,
+  "complete_new_operator_independently_recomputed": false,
+  "timing_totals_and_conditional_repeat_scenarios_independently_checked": true,
+  "one_column_does_not_bound_higher_stages": true,
+  "next_column_or_stage_admitted": false,
+  "candidate_identification_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "field_polynomial_constructed": false,
+  "finite_rational_transfer_search_remains_parked": true,
+  "report_local_links_checked": 11,
+  "completed_at": "2026-10-09T23:20:37.226414+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_timing_review_d154.json",
+    "sha256": "3f6e29beb942c15da3f6d6bb6cebc18a1d22eeacf140138d1dd99b2d582a3381"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/dyadic-pilot-timing-d154.md",
+    "sha256": "57b8c7aa5d4fadcf1049a13ac60073c918538fdace4e5b7efa95072e40ee2d8b"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_timing_sources_d154.json",
+    "sha256": "c9666def32864780640e27b08c9ceac8309c885b5f96122a58e3d2511714e1fd"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_timing_review_d154_attempt01.job.json",
+      "sha256": "ff086d78fe9d3ebe210eb44483d1d17b571dd87ccbb59e7e5075629bcc988368"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_timing_review_d154_recheck01.job.json",
+      "sha256": "04ac44aabd464ecb695ada05391e6a0232d7df0499e1223a22399b2053840f99"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 65.75979287497466,
+      "wall_seconds": 65.64253637497313,
+      "peak_rss_bytes": 331481088
+    },
+    {
+      "receipt_wall_seconds": 64.84112774999812,
+      "wall_seconds": 64.71832975000143,
+      "peak_rss_bytes": 332595200
+    }
+  ],
+  "successful_bounded_jobs_this_continuation": 12573,
+  "reused_preparation_create_jobs": 1,
+  "total_column_jobs_including_reused_create": 12570,
+  "additional_timing_and_fixed_review_jobs": 4,
+  "failed_bounded_jobs_this_continuation": 0,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/dyadic_pilot_timing_completion_d154_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 36,
+  "next_unused_source": 642,
+  "entry_document_hashes_intentionally_not_frozen": true
+}

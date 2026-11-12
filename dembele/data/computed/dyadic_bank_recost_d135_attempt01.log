@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py", line 464, in <module>
+    main()
+  File "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py", line 265, in main
+    by_phase, by_step, low, profiles, measured, archive_mean, audits, reviews, overhead = measure()
+  File "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py", line 191, in measure
+    review_seconds = [read(Path(r['path']).stem)['wall_seconds'] for r in completion['review_receipts']]
+  File "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py", line 191, in <listcomp>
+    review_seconds = [read(Path(r['path']).stem)['wall_seconds'] for r in completion['review_receipts']]
+  File "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py", line 44, in read
+    assert KNOWN[str(path)] == hashlib.sha256(raw).hexdigest(), stem
+KeyError: '/Users/musty/two/dembele/data/computed/dyadic_precision6400_review_d133_attempt01.job.json'

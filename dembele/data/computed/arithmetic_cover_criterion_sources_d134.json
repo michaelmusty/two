@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "milestone": "D134",
+  "execution_status": "finite_replay_complete_pending_fixed_review",
+  "source_numbers": [
+    558,
+    559
+  ],
+  "passing_input_jobs": 1,
+  "failed_bounded_jobs": 0,
+  "prior_fixed_review": "dyadic_precision6400_review_d133.json",
+  "prior_hash_count": 93638,
+  "input": {
+    "path": "/Users/musty/two/dembele/data/computed/arithmetic_cover_criterion_d134.json",
+    "sha256": "ebc75eaa0c68ac37adcea662940c6edca1ce3cd1de11c5e2b7b4cc417ed4cef4"
+  },
+  "input_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/arithmetic_cover_criterion_d134_attempt01.job.json",
+    "sha256": "08b9ca788f970e164ca537b6ba255a3e2b81a5a34c0b180f0ed91f74469488cd"
+  },
+  "input_wall_seconds": 0.456214000005275,
+  "input_peak_rss_bytes": 60915712,
+  "canonical_Hecke_order_P16_at32": 1640801490553691915934375,
+  "conditional_rational_branch_half_uniqueness": true,
+  "D77_conditional_scalar_twist_uniqueness_restored": true,
+  "marked_base_and_canonical_Hecke_hypotheses_remain_required": true,
+  "report": "dembele/certificates/arithmetic-twist-classification-d134.md",
+  "actual_marked_base_identified": false,
+  "actual_arithmetic_cover_identified": false,
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 6400,
+    "1": 1600
+  },
+  "positive_exact_zero_proved": false,
+  "field_polynomial_constructed": false,
+  "reference_roles": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/09EE",
+      "checked": "2026-09-29",
+      "role": "Characteristic-zero faithful inertia character; D77 supplies its application."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BFH",
+      "checked": "2026-09-29",
+      "role": "Etaleness of multiplication by an invertible integer on an abelian variety."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/03RP",
+      "checked": "2026-09-29",
+      "role": "Finite torsion group schemes; specialization and cover comparison are our deductions."
+    }
+  ],
+  "freeze": "558/559, passing replay/review bindings and merged D77 catalogue, preserving all D133 hashes."
+}

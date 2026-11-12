@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "milestone": "D151",
+  "scope": "Test the D150 finite rational summed-transfer certificate on the first positive CM coefficient of saved candidate quadric zero; give a principal-part functional obstruction and park that witness search.",
+  "external_sources": [
+    {
+      "title": "Franc and Masdeu, Computing fundamental domains for the Bruhat-Tits tree for GL2(Qp), p-adic automorphic forms, and the canonical embedding of Shimura curves",
+      "url": "https://arxiv.org/pdf/1201.0356",
+      "checked_on": "2026-10-09",
+      "role": "Section 4.2 distinguishes finite additive distributions from integration of continuous/analytic functions using boundedness and convergent series. D113 supplies the direct ramified boundedness argument. The D151 obstruction is a companion derivation, not attributed to the paper."
+    }
+  ],
+  "inspected_reports": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-compound-height-d116.md",
+      "sha256": "5e25d087596efeee0a676525d19f76acc1dc6e3cfe316d743457efe225cd5b5b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-cm-matching-d112.md",
+      "sha256": "17eaae2f3c36acbf805713d7fd271ed229d344f4b4f48b2cf27b31b0ef04e228"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-coarse-d114.md",
+      "sha256": "f41b2d10c22aee1e48e2d4ef51dbc4afcfbba2afa49ee30553e5311151247f9c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-moments-d113.md",
+      "sha256": "da0d98a949ad1b41726017820436d3a731f0631a094e7ff65fda742748cdfbb4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/structural-identification-audit-d150.md",
+      "sha256": "62dc2e066a664d0d0ef3238503259f4aaae5270f7b5d21f087772d65fc656413"
+    }
+  ],
+  "principal_part_functional_construction_is_companion_proof": true,
+  "actual_bounded_measures_distinguished_from_discontinuous_functionals": true,
+  "nonconstant_formal_residual_distinguished_from_actual_nonvanishing": true,
+  "finite_checks_do_not_mechanically_verify_infinite_or_geometric_proofs": true,
+  "candidate_not_refuted": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/summed-transfer-obstruction-d151.md",
+      "sha256": "0ffdef0e34581a1e835d4870321b0c62bedefd7f161814b153a23495530f4023"
+    }
+  ]
+}

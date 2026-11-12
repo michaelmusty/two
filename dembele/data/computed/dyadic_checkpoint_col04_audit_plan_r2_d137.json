@@ -1,0 +1,358 @@
+{
+  "status": "pass",
+  "milestone": "D137",
+  "kind": "bounded_job_plan",
+  "config": "dyadic_staged_P1600_col04_config_r2_d137",
+  "requires_completed_and_sealed_actual_column": true,
+  "maximum_workers": 3,
+  "jobs": [
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_states_e000_028_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "0",
+        "--last",
+        "28",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_states_e029_057_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "29",
+        "--last",
+        "57",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_states_e058_086_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "58",
+        "--last",
+        "86",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_states_e087_115_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "87",
+        "--last",
+        "115",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_states_e116_144_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "116",
+        "--last",
+        "144",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_states_e145_173_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "states",
+        "--first",
+        "145",
+        "--last",
+        "173",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_ordinary_state_e000_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-state",
+        "--state",
+        "0",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_ordinary_state_e083_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-state",
+        "--state",
+        "83",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_ordinary_state_e173_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-state",
+        "--state",
+        "173",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_cm_c00_02_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "0",
+        "--last",
+        "2",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_cm_c03_05_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "3",
+        "--last",
+        "5",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_cm_c06_08_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "6",
+        "--last",
+        "8",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_cm_c09_11_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "9",
+        "--last",
+        "11",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_cm_c12_14_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "12",
+        "--last",
+        "14",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_cm_c15_16_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "cm",
+        "--first",
+        "15",
+        "--last",
+        "16",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_ordinary_cm_c00_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-cm",
+        "--chart",
+        "0",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_ordinary_cm_c08_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-cm",
+        "--chart",
+        "8",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_ordinary_cm_c16_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "ordinary-cm",
+        "--chart",
+        "16",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_horner_c00_o0_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "0",
+        "--order",
+        "0",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_horner_c00_o3_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "0",
+        "--order",
+        "3",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_horner_c08_o0_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "8",
+        "--order",
+        "0",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_horner_c08_o3_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "8",
+        "--order",
+        "3",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_horner_c16_o0_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "16",
+        "--order",
+        "0",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    },
+    {
+      "driver": "dembele/pari/564_dyadic_checkpoint_independent.py",
+      "stem": "dyadic_checkpoint_col04_horner_c16_o3_r2_d137",
+      "marker": "PASS|564_DYADIC_CHECKPOINT_INDEPENDENT",
+      "args": [
+        "--phase",
+        "coarse-horner",
+        "--chart",
+        "16",
+        "--order",
+        "3",
+        "--config",
+        "dyadic_staged_P1600_col04_config_r2_d137"
+      ]
+    }
+  ]
+}

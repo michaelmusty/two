@@ -1,0 +1,195 @@
+{
+  "status": "running",
+  "kind": "nonmathematical_progress_observation",
+  "milestone": "D137",
+  "revision": 2,
+  "observed_at": "2026-10-07T11:00:58.147097+00:00",
+  "completed_new_columns": [
+    {
+      "column": 2,
+      "completed_at": "2026-10-06T21:30:46.170429+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 56.75120057708312
+    },
+    {
+      "column": 3,
+      "completed_at": "2026-10-06T22:32:07.359160+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 61.1415108625001
+    },
+    {
+      "column": 4,
+      "completed_at": "2026-10-06T23:38:11.507253+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 65.8606282284658
+    },
+    {
+      "column": 5,
+      "completed_at": "2026-10-07T00:48:34.071569+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 70.16673149723307
+    },
+    {
+      "column": 6,
+      "completed_at": "2026-10-07T02:04:23.087276+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 75.60396573958278
+    },
+    {
+      "column": 7,
+      "completed_at": "2026-10-07T03:25:31.024666+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 80.92358344583384
+    },
+    {
+      "column": 8,
+      "completed_at": "2026-10-07T04:52:17.337826+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 86.56298135971592
+    },
+    {
+      "column": 9,
+      "completed_at": "2026-10-07T06:26:09.453152+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 93.66026445069971
+    },
+    {
+      "column": 10,
+      "completed_at": "2026-10-07T08:06:41.466795+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 100.32545785693316
+    },
+    {
+      "column": 11,
+      "completed_at": "2026-10-07T09:54:16.828449+00:00",
+      "audit_jobs": 24,
+      "review_receipts": 2,
+      "production_minutes": 107.38245471874932
+    }
+  ],
+  "completed_new_column_count": 10,
+  "total_new_columns": 14,
+  "all_columns_with_reviewed_precision_at_least_1600": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "current_column": 12,
+  "current_column_completed_production_records": 3866,
+  "production_phases_per_column": 6588,
+  "latest_logged_phase": "sweep_finish_014",
+  "no_new_worker_failure_reported_since_revision2_launch": true,
+  "estimated_column_run_hours_remaining": [
+    7,
+    8
+  ],
+  "estimate_is_advisory": true,
+  "estimated_column_completion_local_window": "2026-10-07 approximately 14:00\u201315:00 America/New_York",
+  "estimate_excludes_subsequent_bank_comparison_and_final_review": true,
+  "prior_15_to_18_hour_estimate_will_be_exceeded": true,
+  "observed_bookkeeping_and_archive_overhead_increases_between_columns": true,
+  "no_additional_user_decision_needed_now": true,
+  "disk_free_GiB": 44.6319580078125,
+  "full_bank_comparison_still_P800": true,
+  "log_path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_bank_r2_d137_run01.log",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col02_completed_r2_d137.json",
+      "sha256": "6361a26d265b2850dbfd88e0bf93e16c3e8f856d78b21a259121263b18d59faf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col02_review_r2_d137.json",
+      "sha256": "6a285bcaeb9fef611e9fff459c4cb01f5c36eb969e80d333cac6f950859fcdf7"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col03_completed_r2_d137.json",
+      "sha256": "c416c1fee6d9b85ba8240b4e36c08b442413fdf2122e2e1b1d2a6349cbeb003c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col03_review_r2_d137.json",
+      "sha256": "d610b95eb7476e63794649a116c36081ca2029bb3971fae4bd806b5a42323385"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col04_completed_r2_d137.json",
+      "sha256": "e10839866a97e63d79a583c0fd8c53f1f55b8cdce396a79f490e08ccef132535"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col04_review_r2_d137.json",
+      "sha256": "8f5debbd7fe78a4fa591579245f0c8ecc2851ea819451a1ba8ed85b915cdcde4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col05_completed_r2_d137.json",
+      "sha256": "82e89cad45ac6fb43cd6b4ec3d7daabf9f98aa2e751b29b670bd5ee274768376"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col05_review_r2_d137.json",
+      "sha256": "5c19bb0c93ca2294c8b48ab1499489acc47283e10071118e08892a4fac41a5a2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col06_completed_r2_d137.json",
+      "sha256": "27bd448022ebce75b0035432efda099a71f41f96fb70b99a5941a469246a6037"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col06_review_r2_d137.json",
+      "sha256": "d550e74695e31f9fd4448dc39aa9a8dd2909f37a57a3a558c0fc7868c0061580"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col07_completed_r2_d137.json",
+      "sha256": "537cb64870ee7e2db9b478b6c114fe3ad8034534154001a8f185f045283e7817"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col07_review_r2_d137.json",
+      "sha256": "07d6deaa32dbd4efc373cf3e35b8d3a8764563937a5eda73d5f803348f772ab9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col08_completed_r2_d137.json",
+      "sha256": "22dbb242b01b96726e36d746f2841d48eabfc26aaf6fa650ed37ee40d60cf027"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col08_review_r2_d137.json",
+      "sha256": "b5409215187ed4aa8fe25b8ad4035a8524e618787bda13a83a08bd0e7d960dfe"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col09_completed_r2_d137.json",
+      "sha256": "917c9897ff1a21cba6f48b504747da24117e40cbda5abe195eeea8baff5feacf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col09_review_r2_d137.json",
+      "sha256": "69b3e843c08d995875356113eebf1d669b01f1a680227ae6645b0a1468c5242f"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col10_completed_r2_d137.json",
+      "sha256": "81ced4f9278058d63eb826fb4220a45561c4da1f0d36b574a6b7a8898be205a0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col10_review_r2_d137.json",
+      "sha256": "8299625f6f2625a3803171ecb512ebd945667b72cb637a7f323d458a826ffe91"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col11_completed_r2_d137.json",
+      "sha256": "2668892403440c53ee0044d5e84a2a140fe88738a0660a95d08a4dfed186e640"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_checkpoint_col11_review_r2_d137.json",
+      "sha256": "90684a3dae3dfd8597462bb07d6f837dab15d769bda3249acaa1cf639d1311aa"
+    }
+  ]
+}

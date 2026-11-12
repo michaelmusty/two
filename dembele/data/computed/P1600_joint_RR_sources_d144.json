@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "milestone": "D144",
+  "scope": "Joint elliptic adjunction bound and reconstructed compact RR normalization; actual spectral inequality and exact identification remain open.",
+  "external_sources": [
+    {
+      "title": "Freixas i Montplet and von Pippich: Riemann--Roch isometries in the non-compact orbifold setting",
+      "url": "https://perso.pages.math.cnrs.fr/users/gerard.freixas/articles/freixas-pippich-JEMS.pdf",
+      "location": "Final author version, sections 3--5 and 8--9; equations (4.2)--(4.5), anomaly formula (5.1), Proposition 8.1",
+      "role": "Smooth RR, truncated metric pairings, surgery and scalar spectral normalization. D144 rederives the boundary and topological factors; the collected constants (4.6), 5.3(ii), and (1.2) are not accepted as printed. This reconstruction covers the compact case only.",
+      "download_sha256": "3a4a71434b245cb2bf81c6a5aab117d2a7888835486afcc1d3eecebd66c5506f"
+    },
+    {
+      "title": "Kalvin: Determinant of Friedrichs Dirichlet Laplacians on 2-dimensional hyperbolic cones",
+      "url": "https://arxiv.org/pdf/2011.05407v1",
+      "location": "Corollary 1.2 and equation (1.5)",
+      "role": "Correct cone determinant constant at angle 2pi/m. D142 local corrections retained, with the remaining compact gluing factors independently reconstructed here.",
+      "download_sha256": "95b7b4512abf65e1e6cbd97f07cb7f91425459673af3290e301e9a91716360fc"
+    },
+    {
+      "title": "Teo: Resolvent Trace Formula and Determinants of n Laplacians on Orbifold Riemann Surfaces",
+      "url": "https://www.imath.kiev.ua/~sigma/2021/083/sigma21-083.pdf",
+      "location": "Equations (6.3), (6.6), Theorem 6.2; n=1, no cusps",
+      "role": "Independent verification of the scalar spectral factor through the nonzero function/one-differential spectrum and Gamma recurrence. Confirms the final author Proposition 8.1 normalization, rather than the earlier arXiv v2 expression.",
+      "download_sha256": "2018d77e4701bde0654cec346b98eea3f4fca9669ea2e452bd5e21dd1166450b"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-joint-adjunction-RR-d144.md",
+      "sha256": "7f1e43faa2aabb16fb5443d23d64e878659a2ac79b4194cfb86326634b63a1bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-finite-model-cotangents-d143.md",
+      "sha256": "2121f8909125ccf94ce5b4f061b3f0a22bdf8a93b19e2cad9181fd16cdee3a76"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-two-height-routes-d142.md",
+      "sha256": "5ed117cb464637272a8e3259ecaf5e718163f3442fbea10b076a501c382895b5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-cartier-frame-d119.md",
+      "sha256": "218a5f55d8e53a9a537629d5c0e26b720217b5c11355243574586b9ce01943cd"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-intrinsic-height-d104.md",
+      "sha256": "454495a0bfd60eeca0ca9cad8549b8372c74fb930872a9e6773bab77e4255a7d"
+    }
+  ],
+  "source_applicability_notes_are_mathematical_review_not_machine_verification": true,
+  "joint_Psi_plus_I_upper_bound_proved": true,
+  "joint_strict_upper": "85.172",
+  "corrected_global_RR_constant_certified": true,
+  "RR_scope": "compact orbifolds, with the companion derivation",
+  "corrections_are_our_derivations_not_author_confirmed": true,
+  "boundary_cutoff_independence_derived": true,
+  "Deligne_pairing_sign_rederived": true,
+  "full_intersection_upper_bound_proved": false,
+  "Faltings_lower_29_proved": false,
+  "height_bound_at_most_623_proved": false,
+  "candidate_identification_proved": false
+}

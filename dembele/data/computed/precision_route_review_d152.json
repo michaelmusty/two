@@ -1,0 +1,178 @@
+{
+  "status": "pass",
+  "milestone": "D152",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/summed_transfer_review_d151.json",
+    "sha256": "d4b87f5533e63efffde0b04aa678ee92eb7ed015d28252b399842c0b81e8b8bb"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D151_direct_bindings": 20,
+  "D150_direct_bindings": 32,
+  "D149_direct_bindings": 38,
+  "D148_direct_bindings": 44,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/precision_route_cost_d152_attempt01.job.json",
+        "sha256": "a3a2aadbfc1cc99d6928df8c57af82a73f0cbb1549ffa64192050a9ddaa40cb4"
+      },
+      "wall_seconds": 0.18340545799583197,
+      "peak_rss_bytes": 38469632
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/precision_route_controls_d152_attempt01.job.json",
+        "sha256": "da4b382a9f2259b2d7ed3094a559ab6c06aade7f3254386aa0dace57472e7d8e"
+      },
+      "wall_seconds": 1.7035822910256684,
+      "peak_rss_bytes": 110002176
+    }
+  ],
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "rank45_two_positive_order_sufficient_P": 10480,
+  "four_coefficient_sufficient_P": 10552,
+  "P10480_sufficiency_requires_future_certified_zero_enclosures": true,
+  "uniform_error_law_and_rank_implication_checked": true,
+  "full_target_job_count": 1059939,
+  "pilot_job_count": 12570,
+  "full_target_modeled_active_days": [
+    20.57761573681081,
+    29.140671223120933
+  ],
+  "pilot_modeled_active_hours": [
+    2.8821465446275316,
+    3.44243562857983
+  ],
+  "full_target_free_bytes_with_reserve": 76740682640,
+  "observed_free_bytes": 55296000000,
+  "full_target_space_shortfall_bytes": 21444682640,
+  "direct_seed_to_target_exceeds_store_cap": true,
+  "D136_complete_CM_memory_controls_reused": true,
+  "times_and_storage_are_empirical_scenarios": true,
+  "finite_rational_transfer_search_remains_parked": true,
+  "candidate_identification_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "field_polynomial_constructed": false,
+  "best_current_proved_relation_height_upper": 15237,
+  "P1600_sufficient_height_target": 623,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "pilot_launch_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "inspected_report_count": 8,
+  "report_local_links_checked": 13,
+  "next_work": "Prepare a concrete, separately reviewed P1600-to-P3200 timing pilot for column 2 using its existing reviewed seed/CM data and the D139 indexed coordinator. Preserve source-554 direct dependency admission, independent audits, bounded provenance, and all caps. No launch follows from this cost checkpoint; the multiweek bank also needs about 20 GiB more free space.",
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-forward-frame-bound-d148.md",
+      "sha256": "df3af6bf1a25467ef33c2c9a850264c1009179091abcf4afb13a5f0a392c4e04"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/construction-reassessment-d120.md",
+      "sha256": "065569ba19e1cc59baed54f475300e2102ca8878acc9168bc74b9ab7f9e71641"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-P1600-recognition-d140.md",
+      "sha256": "8fc9103b0d5c10b5cad2f9cc37b10155a1b1639a834e155ee4dc145ad77cdb92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-indexed-recost-d139.md",
+      "sha256": "19a30e8d18d1892409806058548f308586302ea382f847436ad0d92edc88a915"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-precision1600-bank-d138.md",
+      "sha256": "16a13ac2ed131aa84b4a26f900136794d2a8acd64ebc9ad1b696fdf8bc3f677b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-target-charts-d136.md",
+      "sha256": "a381a53f75924835b482484b27c205709b173454cab61dcaf536d89cfa062880"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/precision-route-cost-d152.md",
+      "sha256": "65d486bbcbe95854922e6a4f7b2d7f46ab5c80b82d4208531c75ef5223c21fa0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/summed-transfer-obstruction-d151.md",
+      "sha256": "0ffdef0e34581a1e835d4870321b0c62bedefd7f161814b153a23495530f4023"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/precision_route_controls_d152.json",
+      "sha256": "5bf3d769b27d5fc4efdaa201dbe99b398ab39a5322fdf1f2e5dcf860bf485f18"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/precision_route_controls_d152_attempt01.job.json",
+      "sha256": "da4b382a9f2259b2d7ed3094a559ab6c06aade7f3254386aa0dace57472e7d8e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/precision_route_cost_d152.json",
+      "sha256": "d1b13eeab80b1f294bf5fee82a017c73184b15d87466c8c92909df9aa774328c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/precision_route_cost_d152_attempt01.job.json",
+      "sha256": "a3a2aadbfc1cc99d6928df8c57af82a73f0cbb1549ffa64192050a9ddaa40cb4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/precision_route_sources_d152.json",
+      "sha256": "0d2991389ea64884227591e09ba1e6e450abbca9f5e5216c667733f96812ee0a"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_completion_d151.json",
+      "sha256": "3fbac087624aeb102dd425385a1028c98a7416fb57b7d50ea13ae21ed008a1ca"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_completion_d151_attempt01.job.json",
+      "sha256": "9cd1b9ce13c5ca378ed14ee41b8ed19572b4967a78e049266f8014f4608c6bb6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_review_d151.json",
+      "sha256": "d4b87f5533e63efffde0b04aa678ee92eb7ed015d28252b399842c0b81e8b8bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_review_d151_attempt01.job.json",
+      "sha256": "536a9888b66fef1ea471dbe6ebbb83d712feb986e340f0118f50f4a7ea1e811e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/summed_transfer_review_d151_recheck01.job.json",
+      "sha256": "ceea8683b0cd99fa0ae80834acdf2619ac1faf42ead2cac34e5c72847a80d4da"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/631_summed_transfer_review.py",
+      "sha256": "215d26fb114b0fb51b9fc97ff21987fca785c67c61c556184bce9ba20e3562bb"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/632_precision_route_cost.py",
+      "sha256": "737f0a1b82b4277ca94f1bd22a133a2dc2c36c4022ad0e221846a126a97f1055"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/633_precision_route_controls.py",
+      "sha256": "6d4e3798adfedd1c802cb12735fe99083f5bf60ebb9b999b5e37447e41f3513e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/634_precision_route_review.py",
+      "sha256": "1addcee10ce3ffe5c0c854bdb7072eeed125cd03e6b5a019bfe50f32c079ff0f"
+    }
+  ],
+  "wall_seconds": 63.15630400000373,
+  "peak_rss_bytes": 268763136
+}

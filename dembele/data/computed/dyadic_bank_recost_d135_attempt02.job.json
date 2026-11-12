@@ -1,0 +1,36 @@
+{
+  "command": [
+    "python3",
+    "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py",
+    "--output",
+    "dyadic_bank_recost_d135"
+  ],
+  "status": "pass",
+  "exit_code": 0,
+  "wall_seconds": 9.616804166988004,
+  "timeout_seconds": 180,
+  "log": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_bank_recost_d135_attempt02.log",
+    "sha256": "8b4d4c4094e9c142ca0a4182e7d10675a8a0539fce2aecd4ea0ccd695fde59c5"
+  },
+  "private_process_group": 40995,
+  "timeout_terminates_process_group": true,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/pari/272_cm_frame_bounded_jobs.py",
+      "sha256": "3123d8def6e485f4c479c88eedd3cc234dc163ebbc4df674680c4efee4bfeaf8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/125_cm_frame_resolvent_lift_check.py",
+      "sha256": "90e35824377e5d89d1692d98d734885380d205ff120a676b6194a520e5dcadc0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/run_dyadic_capped.py",
+      "sha256": "c800da74fcec9a5247fc8f764195563953a2ae98845fd9738e6adc84de513fb7"
+    }
+  ],
+  "driver": {
+    "path": "/Users/musty/two/dembele/pari/560_dyadic_bank_recost.py",
+    "sha256": "1b7c77403b090c0f6e25c4367d4ae628c380ae8b21db2c75e3686c39b7eb7b23"
+  }
+}

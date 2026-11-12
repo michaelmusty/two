@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "milestone": "D141",
+  "scope": "Applicability of height sources; no missing geometric height estimate asserted.",
+  "external_sources": [
+    {
+      "title": "Lenstra, Lenstra and Lovasz: Factoring polynomials with rational coefficients",
+      "url": "https://ir.cwi.nl/pub/9304/9304D.pdf",
+      "location": "Section 1",
+      "role": "Lattice/Gram-Schmidt background; the outside-span exterior criterion is derived in D141."
+    },
+    {
+      "title": "de Jong and Shokrieh: Faltings height and Neron-Tate height of a theta divisor",
+      "url": "https://arxiv.org/pdf/1810.02637",
+      "location": "Theorems A/B, equation (1.11), metric (12.1)",
+      "role": "Correct Faltings invariant and its uncomputed nonnegative terms; D118 fixes the normalization."
+    },
+    {
+      "title": "Yuan: Modular Heights of Quaternionic Shimura Curves",
+      "url": "https://arxiv.org/pdf/2205.13995v3",
+      "location": "Section 1.1 and Theorem 1.1",
+      "role": "Arithmetic Hodge self-intersection; not a direct Jacobian Faltings formula."
+    },
+    {
+      "title": "Freixas i Montplet and von Pippich: Riemann-Roch isometries in the non-compact orbifold setting",
+      "url": "https://arxiv.org/pdf/1604.00284v2",
+      "location": "Sections 1 and 10; Theorem 2.5 and section 7 require the reconciliation below",
+      "role": "Potential metric comparison with additional finite and analytic inputs; no numerical constant imported."
+    },
+    {
+      "title": "Kalvin: Determinant of Friedrichs Dirichlet Laplacians on 2-dimensional hyperbolic cones",
+      "url": "https://arxiv.org/pdf/2011.05407v1",
+      "location": "Introduction, Corollary 1.2 and Remark 3.2",
+      "role": "Identifies and replaces a model-cone determinant formula used by the preceding source; comparison must be reconciled before numerical use."
+    }
+  ],
+  "source_applicability_notes_are_mathematical_review_not_machine_verification": true,
+  "candidate_identification_proved": false,
+  "Faltings_lower_29_proved": false,
+  "true_ideal_height_bound_proved": false,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-proof-gap-d141.md",
+      "sha256": "c9cb6bf111dbb09222bcc64b179d9abc93d890ede049d3f41ee13e2dd330e639"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-P1600-recognition-d140.md",
+      "sha256": "8fc9103b0d5c10b5cad2f9cc37b10155a1b1639a834e155ee4dc145ad77cdb92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-flag-height.md",
+      "sha256": "8b3daed3d9881e43dd049c879b524bb2f1102693f97896a5f7503ad3d63ae2d9"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-rational-frame-jets-d106.md",
+      "sha256": "4fc8cfde87c7bc54e1929d39146f890d910e58d780d536c83da32a1fdd3f1bef"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/cm-finite-height-d118.md",
+      "sha256": "765091211dac114a95a4169e89f39e65743b1c8a590d29d128304811f39d1fa5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/construction-reassessment-d120.md",
+      "sha256": "065569ba19e1cc59baed54f475300e2102ca8878acc9168bc74b9ab7f9e71641"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/dyadic-precision1600-bank-d138.md",
+      "sha256": "16a13ac2ed131aa84b4a26f900136794d2a8acd64ebc9ad1b696fdf8bc3f677b"
+    }
+  ]
+}

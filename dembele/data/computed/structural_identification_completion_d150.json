@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "milestone": "D150",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_primitive_frame_review_d149.json",
+    "sha256": "d66c62f50094888d60523fd5e1f0cc6e231d79ea67c9d09e83fb1e6b87b08cde"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D149_direct_bindings": 38,
+  "D148_direct_bindings": 44,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/structural_identification_audit_d150_attempt01.job.json",
+        "sha256": "c4d53c10990995948a2dd9d8393ea2f9449969577e6b00c01c1540da899ef159"
+      },
+      "wall_seconds": 0.3475302499718964,
+      "peak_rss_bytes": 28901376
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/structural_transfer_controls_d150_attempt01.job.json",
+        "sha256": "98c4b07655af667ff44b570e6bb67e08e7b9d785330aad992fb7d4697cbb1229"
+      },
+      "wall_seconds": 0.2942299999995157,
+      "peak_rss_bytes": 30244864
+    }
+  ],
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 0,
+  "structural_inventory_complete_for_named_packets": true,
+  "strict_contracting_branches_checked": 348,
+  "distinct_target_nonaffine_branches_checked": 275,
+  "reachable_cycle_determinant_valuations_pi": [
+    4,
+    6
+  ],
+  "ordinary_moment_cutoff_is_not_exact": true,
+  "branchwise_finite_rational_closure_excluded_by_companion_proof": true,
+  "summed_transfer_cancellations_excluded": false,
+  "exact_candidate_transfer_identity_constructed": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "best_current_proved_relation_height_upper": 15237,
+  "sufficient_height_target": 623,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "inspected_report_count": 17,
+  "report_local_links_checked_including_pending_packet_outputs": 20,
+  "next_work": "Test whether summed transfer relations and actual quaternionic symmetries yield a finite exact identity for one cleared positive-order candidate residual, or a multiplication-compatible geometric comparison. Branchwise rational closure is excluded; summed cancellations are not. No unbounded witness search or precision increase is admitted. A height alternative needs new actual-curve input.",
+  "completed_at": "2026-10-09T15:44:24.439474+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/structural_identification_review_d150.json",
+    "sha256": "61da55a71288b9b11f657608b9c1c77d4e5472c2ff619d17eb7edad5cd7ecc30"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/structural-identification-audit-d150.md",
+    "sha256": "62dc2e066a664d0d0ef3238503259f4aaae5270f7b5d21f087772d65fc656413"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/structural_identification_sources_d150.json",
+    "sha256": "bc384db165bf592b62bf50945152217f8fd2a7f581bcb3f36b29bc4e8d05b524"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_identification_review_d150_attempt01.job.json",
+      "sha256": "99e16f152821e7570d28a77b6550697f5e6a2b943fe896908d2955266594657d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/structural_identification_review_d150_recheck01.job.json",
+      "sha256": "8da56ccc2647f1da7abd1e836ee00a4f5806d51ac7703e2e0785ef28c031ac0e"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 65.81267162499717,
+      "seconds": 65.67265187494922,
+      "peak_rss_bytes": 133939200
+    },
+    {
+      "receipt_wall_seconds": 68.41098666703328,
+      "seconds": 68.29699083295418,
+      "peak_rss_bytes": 134381568
+    }
+  ],
+  "successful_bounded_jobs": 5,
+  "input_bounded_jobs": 2,
+  "review_bounded_jobs": 2,
+  "completion_bounded_jobs": 1,
+  "failed_bounded_jobs": 0,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/structural_identification_completion_d150_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 32,
+  "next_unused_source": 629,
+  "entry_document_hashes_intentionally_not_frozen": true,
+  "all_D150_jobs_sequential": true,
+  "system_wide_process_listing_unavailable_in_sandbox": true
+}

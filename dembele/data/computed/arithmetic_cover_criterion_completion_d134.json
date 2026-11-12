@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "milestone": "D134",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/arithmetic_cover_criterion_review_d134.json",
+    "sha256": "9ef38419c9b727dd7e90bc7bac97f811124b178243fddd59b58ceab94972b86f"
+  },
+  "fixed_review_source_count": 93912,
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/arithmetic_cover_criterion_review_d134_attempt01.job.json",
+      "sha256": "f914c5638e6b4a1d40045c4c2196f69221dcb55385364dc00561822c6ea59a1c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/arithmetic_cover_criterion_review_d134_recheck01.job.json",
+      "sha256": "ba1dcc8fbd323e2cd08179935d3d973ecd6fef62ed6e2bd549b55ebcd5856395"
+    }
+  ],
+  "passing_input_jobs": 1,
+  "passing_review_jobs": 2,
+  "total_passing_jobs": 3,
+  "failed_bounded_jobs": 0,
+  "full_bank_precision_pi": 800,
+  "actual_column_precisions": {
+    "0": 6400,
+    "1": 1600
+  },
+  "positive_exact_zero_proved": false,
+  "candidate_identification_proved": false,
+  "arithmetic_cover_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "full_bank_launch_admitted": false,
+  "next_unused_source": 560,
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "README.md",
+    "CLAUDE.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "documentation_updated": true,
+  "frozen_report_sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/arithmetic-twist-classification-d134.md",
+      "sha256": "d2855d3b276650f876ca77b4c0127186678e771568558afe850bff2e88e34c35"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/arithmetic_cover_criterion_sources_d134.json",
+      "sha256": "dde24e6a2bb29188214ed796c5e72b34dcfb279e5f59fa13c75eec812049f6e1"
+    }
+  ],
+  "completion_coordinator": {
+    "path": "/Users/musty/two/dembele/pari/run_d133_completion.py",
+    "sha256": "0a60a65ab8c0eb4ae1323c2c4b55217f4f431daa5fd6dcb21ff9f265b5c3171e"
+  },
+  "next_task": "Recost the full-bank schedule from the completed D133 stage; marked-base and Y construction remain open."
+}

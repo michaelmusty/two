@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/647_dyadic_higher_pilot_column_review.py", line 538, in <module>
+    if __name__=='__main__':main()
+  File "/Users/musty/two/dembele/pari/647_dyadic_higher_pilot_column_review.py", line 515, in main
+    packets,actual,execution=execution_review(history,archived);audit,independent=audit_review()
+  File "/Users/musty/two/dembele/pari/647_dyadic_higher_pilot_column_review.py", line 396, in audit_review
+    assert packet['execution_milestone'] == 'D153' and packet['weighted_seed_supported']
+AssertionError

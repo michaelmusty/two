@@ -1,0 +1,104 @@
+{
+  "status": "pass",
+  "milestone": "D155",
+  "rank_replays": [
+    {
+      "training_2_bits": 96,
+      "replayed_actual_matrix_entries": 6528,
+      "minor_size": 45,
+      "inverse_loss_bits": 13,
+      "Neumann_remainder_2_valuation_at_least": 83,
+      "all_matrix_errors_cover_certificate_modulus": true
+    },
+    {
+      "training_2_bits": 160,
+      "replayed_actual_matrix_entries": 6528,
+      "minor_size": 45,
+      "inverse_loss_bits": 13,
+      "Neumann_remainder_2_valuation_at_least": 147,
+      "all_matrix_errors_cover_certificate_modulus": true
+    }
+  ],
+  "rank_replay_candidate_equations_read": false,
+  "rank_replay_production_ball_arithmetic_imported": false,
+  "independent_uncollected_height_thresholds": [
+    10416,
+    10480,
+    10552
+  ],
+  "failure_controls": {
+    "zero_containment_does_not_imply_exact_zero": true,
+    "non_strict_height_inequality_rejected": true,
+    "rank_certificate_at_precision_loss_boundary_rejected": true,
+    "extension_field_dimension_cannot_bound_restricted_scalar_rank": true,
+    "second_jet_depends_on_first_jet_until_exact_vanishing": true,
+    "nodal_binomial_integrality_controls": 183,
+    "matrix_error_offsets_reconstructed": [
+      103,
+      331,
+      261,
+      296
+    ],
+    "controls_are_examples_not_proofs_of_general_geometry": true
+  },
+  "geometric_implications_require_companion_proof": true,
+  "actual_harmonic_precision_increased": false,
+  "exact_positive_vanishing_proved": false,
+  "new_precision_bank_admitted": false,
+  "wall_seconds": 1.9642083329963498,
+  "peak_rss_bytes": 30212096,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_arithmetic_height_budget_d118.json",
+      "sha256": "23246bb6effb1f20fcee619d0413424f099bf7f0e8ff61ea0c9eb8f1c5b5f8a6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_field_recognition.json",
+      "sha256": "b9585a6b40f6c21f4ffadd62caad290cd731cf2f432c54d1f61790d85c6e0ce8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_frame_curve_candidate.json",
+      "sha256": "7aa6ae61a3397b965249ac573c84f154b94cd99bf85b0fef83a27db1325da095"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/cm_intrinsic_height_review_d104.json",
+      "sha256": "359b3b2270588217a488139909a07e97fc895d33ed7586234616e237c09ead16"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_certificates160_d140.json",
+      "sha256": "62495a809e5b07b95f4e6d10b10aa2f00c2e35185696ce02df059a75e3c5fea6"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_recognition_certificates96_d140.json",
+      "sha256": "201bf852338b77457afa175905672d2f622719eed078bf348352d8d9b7154b9c"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_relation_probe160_d140.json",
+      "sha256": "a008558bb554f856bca8f104fe23e06a26f94482b0fc4c295f7d56de49a279f4"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_P1600_relation_probe96_d140.json",
+      "sha256": "2a71c4355c4902f4e340dab7dd4e429ae0acce1736948d088a9eccb3ae408ce5"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_residue_frame1600_d138.json",
+      "sha256": "a0c8926b310e8a3e8fc11a117f3a6c25a439c4f55ea90f243e5ef23b0323df05"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/proof_criterion_bounds_d155.json",
+      "sha256": "767a7301f739721fb90ff6039a3a17112ea50cc85e883c9d4bd3bffee3e9398b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/450_cm_disk_exactness_review.py",
+      "sha256": "11fb5334aa26c933e399b67cb168ae20df73e2b56c472f5050e94c0aa739b29d"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/642_proof_criterion_bounds.py",
+      "sha256": "3932d4b9ef0b19f9abe8e4f3abb1573e9fca5631d467778a48cd728091cdbd62"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/643_proof_criterion_controls.py",
+      "sha256": "3aca83b97d7689850d7cbd7904a34ceb8b8651aa17661861886e8e1a22f12484"
+    }
+  ]
+}

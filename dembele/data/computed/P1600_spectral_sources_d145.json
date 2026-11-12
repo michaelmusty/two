@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "milestone": "D145",
+  "scope": "Uniform spectral lower bound refutes the D144 sufficient target; the Faltings height and identification remain undecided.",
+  "external_sources": [
+    {
+      "title": "Garbin and Jorgenson: Heat kernel asymptotics on sequences of elliptically degenerating Riemann surfaces",
+      "url": "https://www.jstage.jst.go.jp/article/kodaimath/43/1/43_84/_pdf",
+      "location": "Kodai Math. J. 43 (2020), 84--128, Remark 2.7 and equations (2.7)--(2.8), p. 101",
+      "download_sha256": "5b69c4e4b5ef4294ecc31679e05b0e10758cbb83b7bbee176a24bd36a797e38c",
+      "role": "Compact scalar heat decomposition into positive identity, elliptic and hyperbolic terms. The two-time comparison, elementary tails, and Zprime lower bound are our derivations."
+    },
+    {
+      "title": "Blomer and Brumley: On the Ramanujan conjecture over number fields",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v174-n1-p18-p.pdf",
+      "location": "Annals of Mathematics 174 (2011), 581--605, Definition 1 and Theorem 1, pp. 582--583",
+      "download_sha256": "187908253723fccc383ce36079178479e931e2bf61adbcde7bd177ceb7d84868",
+      "role": "Exponent 7/64 at every place, applied at the split real place after quaternionic Jacquet--Langlands transfer; constants separated; normalizer spectrum is a subspace."
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-spectral-feasibility-d145.md",
+      "sha256": "62c8cd495721790fcf1a3e111822d4e8b66d1e8e4ef02fdca18dc36a29ed8d43"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/marked-descent.md",
+      "sha256": "131944c1260cfe7a15026534c024f5ab900c549d8ea3ffd6a73521a98ad96463"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-norm-one-control-d92.md",
+      "sha256": "926cb80afdc0ea5d16673ab0b7e8f2e5e1ee02ec29634093bab8c4fd558c1fa8"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-global-identification-d95.md",
+      "sha256": "c48f69eb681cc83d5f0d53153188127464a25dfeb428c5f0e7fd4d5d51a9fe6b"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/nelson-spectral-ideal-d98.md",
+      "sha256": "b8d21717aa3b795b5ac584190075e1ee461c4fbe20e2661c609be1a90003cf26"
+    },
+    {
+      "path": "/Users/musty/two/dembele/certificates/P1600-joint-adjunction-RR-d144.md",
+      "sha256": "7f1e43faa2aabb16fb5443d23d64e878659a2ac79b4194cfb86326634b63a1bb"
+    }
+  ],
+  "source_applicability_notes_are_mathematical_review_not_machine_verification": true,
+  "trace_normalization_and_conjugate_uniformity_proved_in_companion_report": true,
+  "spectral_lower_bound_independent_of_D144_RR_corrections": true,
+  "uniform_strict_log_Zprime_lower": "-41",
+  "D144_sufficient_spectral_target_ruled_out": true,
+  "safe_necessary_joint_S_upper_for_Faltings29": "-249",
+  "Faltings_lower_29_proved": false,
+  "Faltings_lower_29_disproved": false,
+  "candidate_identification_proved": false
+}

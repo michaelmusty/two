@@ -1,0 +1,126 @@
+{
+  "status": "pass",
+  "milestone": "D148",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_multiplication_review_d147.json",
+    "sha256": "00162f3f1bcf50d2cad54bdf2625c3573307017c289e3d95d1e15887a2a9dd12"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D147_direct_bindings": 41,
+  "D146_direct_bindings": 42,
+  "D145_direct_bindings": 41,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 2,
+  "preserved_failed_input_jobs": 1,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_bound_d148_attempt01.job.json",
+        "sha256": "43387ae0c95084b13cdd2bf56c016b35b65995ef08ed963599744ccd9cab3ed5"
+      },
+      "wall_seconds": 5.127654040989,
+      "conservative_peak_rss_bytes": 290766848
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt02.job.json",
+        "sha256": "19021c2d53942013ae449ec027e7ed199f711ff19c56ac67b853c460371e5ad0"
+      },
+      "wall_seconds": 3.784744208038319,
+      "conservative_peak_rss_bytes": 292323328
+    }
+  ],
+  "failed_audit_receipt": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_audit_d148_attempt01.job.json",
+    "sha256": "8071fdb3a70ac7f19b8ea8b11156da6abba5ca7d572973254591d381ce45bef2"
+  },
+  "failed_audit_reason": "A two-argument Sage QQ call in an exterior-norm control raised NotImplementedError. Replaced with exact rational division; dual-field and height calculations passed unchanged.",
+  "previous_relation_height_upper": 83240,
+  "best_current_proved_relation_height_upper": 15237,
+  "effective_R_minus_t_strict_upper": 15193,
+  "worst_filtration_ranks": [
+    17,
+    15,
+    13
+  ],
+  "field_size_removed_majorant_strict_lower": 11266,
+  "majorant_floor_is_not_an_actual_height_lower_bound": true,
+  "field_vector_norm_refinement_alone_cannot_reach_623_in_this_majorant": true,
+  "height_bound_at_most_623_proved": false,
+  "height_bound_at_most_623_disproved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_curve_spectral_calculation_started": false,
+  "new_geodesic_census_started": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Assess a relation-specific exterior comparison or a primitive principal-parts pencil comparison that avoids the full rank-91 ambient cofactor-frame majorant. Any cancellation must apply to the actual relation space and retain D119 horizontal-order/global-normalization data. Field-vector norm refinement alone cannot reach 623 in the present bound. Exact structural identification remains an alternative; existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "completed_at": "2026-10-09T11:42:41.073014+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_review_d148.json",
+    "sha256": "006e795146f129a95805d3029bbef944b957fdd6166fb3e500af406860e02aaf"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/P1600-forward-frame-bound-d148.md",
+    "sha256": "df3af6bf1a25467ef33c2c9a850264c1009179091abcf4afb13a5f0a392c4e04"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_sources_d148.json",
+    "sha256": "9d3f9920a60d6b500ad0e3f6cd57e011d23957de1e92754b0c5e4626c585b851"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_review_d148_attempt01.job.json",
+      "sha256": "a76f6003c736f8a23056c70e705a9d88bdfe4c09fb43caa01c1a6a85e69c7d53"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_review_d148_recheck01.job.json",
+      "sha256": "860a74303466e2d026e459c0851d96f8666a3646844e979c10f0872db1343608"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 60.259860792022664,
+      "seconds": 60.127790250000544,
+      "peak_rss_bytes": 216645632
+    },
+    {
+      "receipt_wall_seconds": 59.06158916698769,
+      "seconds": 58.96427100000437,
+      "peak_rss_bytes": 212058112
+    }
+  ],
+  "successful_bounded_jobs": 5,
+  "input_bounded_jobs": 2,
+  "review_bounded_jobs": 2,
+  "completion_bounded_jobs": 1,
+  "failed_bounded_jobs": 1,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/P1600_forward_frame_completion_d148_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 44,
+  "next_unused_source": 623,
+  "entry_document_hashes_intentionally_not_frozen": true
+}

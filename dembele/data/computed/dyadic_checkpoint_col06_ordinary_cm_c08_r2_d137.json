@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "milestone": "D137",
+  "config": {
+    "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col06_config_r2_d137.json",
+    "sha256": "35d24dd01bcce0ed7c97b095907521cc508f5817b2818608bfed70c44fd919f2"
+  },
+  "working_precision_pi": 1600,
+  "harmonic_basis_column": 6,
+  "phase": "ordinary-cm",
+  "certificates": {
+    "chart": 8,
+    "degrees": [
+      1,
+      2,
+      3
+    ],
+    "ordinary_CM_scalar_checks": 24,
+    "complete_CM_operator_independently_recomputed": false
+  },
+  "production_arithmetic_not_imported": true,
+  "wall_seconds": 0.45316208398435265,
+  "peak_rss_bytes": 36274176,
+  "sources": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col06_r2_d132/CM.bin",
+      "sha256": "e5c64fea79bf01c9dd5edf5a0797c2d018d3cf8ff1d30e354f8899a0c89b2138"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col06_r2_d132/CURRENT.json",
+      "sha256": "6241c5b86847e89170b99a6035a90bbaf375062e8c0638074c59984ed387d7bf"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col06_r2_d132/SEALED.json",
+      "sha256": "248f707de80debce2ef6593b22efbec21d7f84d57b4a2b734afc24c2aaf6992e"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col06_r2_d132/pool_CM.json",
+      "sha256": "94cdc33fe11c87fd4254da54d1e1c60f7349e4d7d21ab27916e2f2ba4d6c3075"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_rowjournal_P1600_col06_r2_d132/state.bin",
+      "sha256": "01f226096d3d7bc7d19f03ec178adb75cd981ac73f864c1b2c605fa6901cd9ac"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_staged_P1600_col06_config_r2_d137.json",
+      "sha256": "35d24dd01bcce0ed7c97b095907521cc508f5817b2818608bfed70c44fd919f2"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/dyadic_target_transports_d121.json",
+      "sha256": "6fe59369355747b5286c4b10dce9ab3bf3f091b9e438166f19c9068898d4ad92"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/486_dyadic_precision400_independent.py",
+      "sha256": "d458ae4f7caad0c73d2a3c459ccfa2c987a94967152dcff5649f4bdee8a76060"
+    },
+    {
+      "path": "/Users/musty/two/dembele/pari/564_dyadic_checkpoint_independent.py",
+      "sha256": "3f98c8b88031b573ab0aa5179d7c4450d59aa11d7462d4bcd1911dfcef9b66f1"
+    }
+  ]
+}

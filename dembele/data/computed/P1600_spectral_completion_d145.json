@@ -1,0 +1,132 @@
+{
+  "status": "pass",
+  "milestone": "D145",
+  "independent_finite_review_complete": true,
+  "inherited_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_joint_RR_review_d144.json",
+    "sha256": "746975cb8a9a41d81949da4e89fb332011c0ed015ec8020335de6a692cac650c"
+  },
+  "catalogue_graph_is_transitive": true,
+  "D144_direct_bindings": 40,
+  "D143_direct_bindings": 46,
+  "D142_direct_bindings": 38,
+  "D141_direct_bindings": 48,
+  "D140_direct_bindings": 80,
+  "parent_direct_bindings": 1298,
+  "D138_direct_bindings": 315,
+  "inherited_catalogue_roots": 15,
+  "inherited_catalogue_hash_occurrences": 380188,
+  "unique_inherited_file_hashes": 379923,
+  "completed_input_jobs": 4,
+  "preserved_failed_input_jobs": 0,
+  "input_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_trace_systole_d145_attempt01.job.json",
+        "sha256": "9864c07398ee9613a935f74f03d86940fc1e2b6d00f19d335fe1a659645a8bee"
+      },
+      "wall_seconds": 5.6353010419989005,
+      "conservative_peak_rss_bytes": 319062016
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_trace_systole_audit_d145_attempt01.job.json",
+        "sha256": "d57f3e27da3dca8129479ace2b9787f3fd9fe63494fb9da60907b62f784dfc13"
+      },
+      "wall_seconds": 4.3506690000067465,
+      "conservative_peak_rss_bytes": 323780608
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_feasibility_d145_attempt01.job.json",
+        "sha256": "d804929622ded4a7dab59e46b9ac19751916dd22e7948678ce49786104da69a5"
+      },
+      "wall_seconds": 3.9915709160268307,
+      "conservative_peak_rss_bytes": 298729472
+    },
+    {
+      "receipt": {
+        "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_feasibility_audit_d145_attempt01.job.json",
+        "sha256": "9d50fc32d14af9659519285d20e76542224b1735228584fc076bc9a882792fad"
+      },
+      "wall_seconds": 0.832918250001967,
+      "conservative_peak_rss_bytes": 20774912
+    }
+  ],
+  "normalizer_systole_strict_lower": "acosh(25)>39/10",
+  "necessary_trace_pairs_checked": 4093,
+  "trace_candidates_are_not_asserted_to_embed": true,
+  "spectral_gap_used": "3/16",
+  "uniform_strict_log_Zprime_lower": "-41",
+  "D144_sufficient_spectral_target_ruled_out": true,
+  "spectral_lower_bound_independent_of_D144_RR_corrections": true,
+  "safe_necessary_joint_S_upper_for_Faltings29": "-249",
+  "Faltings_lower_29_proved": false,
+  "Faltings_lower_29_disproved": false,
+  "height_bound_at_most_623_proved": false,
+  "positive_exact_quadric_vanishing_proved": false,
+  "candidate_identification_proved": false,
+  "field_polynomial_constructed": false,
+  "actual_curve_spectral_calculation_started": false,
+  "new_geodesic_census_started": false,
+  "actual_harmonic_precision_increased": false,
+  "next_precision_bank_admitted": false,
+  "resource_caps_changed": false,
+  "full_bank_precision_pi": 1600,
+  "column0_precision_pi": 6400,
+  "next_work": "Assess the omitted geometric intersection terms using saved derivative contents and local constraints against the necessary S<-249 condition. The D144 spectral upper target is false. Exact structural identification remains an alternative; existing precision, spectral, level, Hecke and cubic pauses persist.",
+  "completed_at": "2026-10-08T22:22:15.678822+00:00",
+  "fixed_review": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145.json",
+    "sha256": "f70755392504a0b21476bb80465623bd5fddd2cca3134a9e11883d81ea5ea5c5"
+  },
+  "report": {
+    "path": "/Users/musty/two/dembele/certificates/P1600-spectral-feasibility-d145.md",
+    "sha256": "62c8cd495721790fcf1a3e111822d4e8b66d1e8e4ef02fdca18dc36a29ed8d43"
+  },
+  "source_applicability_ledger": {
+    "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_sources_d145.json",
+    "sha256": "bd5fa23377a4fabdc3769f2ab21de48ea3d854c9b26c491c20ce2c08a32bc65e"
+  },
+  "review_receipts": [
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145_attempt01.job.json",
+      "sha256": "035368c21c8c72aec8b0b4902b5cd2262547654e6dc867eea21c50ff1beac6c0"
+    },
+    {
+      "path": "/Users/musty/two/dembele/data/computed/P1600_spectral_review_d145_recheck01.job.json",
+      "sha256": "51aa6bd8767ac5e81ba0208f33b5b78e599a62c895dec2c6caa606d237910c77"
+    }
+  ],
+  "review_resources": [
+    {
+      "receipt_wall_seconds": 58.570598708000034,
+      "seconds": 58.46373766701436,
+      "peak_rss_bytes": 226426880
+    },
+    {
+      "receipt_wall_seconds": 56.7356294580386,
+      "seconds": 56.66417145798914,
+      "peak_rss_bytes": 226131968
+    }
+  ],
+  "successful_bounded_jobs": 7,
+  "input_bounded_jobs": 4,
+  "review_bounded_jobs": 2,
+  "completion_bounded_jobs": 1,
+  "failed_bounded_jobs": 0,
+  "completion_job_receipt_path": "/Users/musty/two/dembele/data/computed/P1600_spectral_completion_d145_attempt01.job.json",
+  "entry_documents_updated": [
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "README.md",
+    "DECISIONS.md",
+    "REFERENCES.md",
+    "dembele/README.md",
+    "dembele/pari/README.md"
+  ],
+  "current_artifact_links_checked": 28,
+  "direct_source_bindings": 41,
+  "next_unused_source": 614,
+  "entry_document_hashes_intentionally_not_frozen": true
+}

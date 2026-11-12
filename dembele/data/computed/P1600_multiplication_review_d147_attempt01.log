@@ -1,0 +1,9 @@
+D147_TRANSITIVE_GRAPH_PASS
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/619_P1600_multiplication_review.py", line 204, in <module>
+    assert not OUT.exists();saved=build()
+  File "/Users/musty/two/dembele/pari/619_P1600_multiplication_review.py", line 76, in build
+    original=read('hyperellipticity_graph_review_d99')
+  File "/Users/musty/two/dembele/pari/619_P1600_multiplication_review.py", line 30, in read
+    p=DATA/(stem+'.json');source(p);r=json.loads(p.read_text());assert r['status']=='pass';return r
+AssertionError
