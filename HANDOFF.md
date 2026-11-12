@@ -1,5 +1,142 @@
 # Session handoff
 
+<!-- Fresh-session entry: 2026-11-12, new-machine setup after the D157 push -->
+
+**Moving to another machine: set up the items Git does not carry.**
+Commit `22395c95` on `origin/main` holds everything through D157, including
+2.4 GB of Git LFS payloads. No computation was running when it was made and
+none should start on checkout. This entry is operational only; the latest
+mathematical checkpoint is still D157 and the "Next" in the 2026-10-16
+entry below is unchanged. Source 655 is still next unused.
+
+### 1. Checkout
+
+```sh
+git lfs install
+git clone git@github.com:michaelmusty/two.git /Users/musty/two
+cd /Users/musty/two
+git lfs pull
+git lfs fsck          # every LFS object present and uncorrupted
+git status --short    # expect no output
+```
+
+Use the path `/Users/musty/two` on an Apple-silicon Mac if you intend to
+run or replay the dyadic jobs: frozen receipts bind absolute paths under
+that root, and the three production `.dylib` files in
+`dembele/data/computed/` are macOS ARM64 builds linked against
+`/opt/homebrew/opt/{flint,gmp}`. Those libraries travel in LFS and must not
+be rebuilt in place. Any other OS or checkout root is fine for reading and
+new development but needs the separately reviewed portability adapter
+described in [CHECKPOINT.md](CHECKPOINT.md#continue-with-dots).
+
+### 2. External tools
+
+| Item | Version on the original host | Setup |
+|---|---|---|
+| Homebrew GMP, FLINT, MPFR, pkgconf | 6.3.0, 3.6.0, 4.2.2, 3.0.7 | `brew install gmp flint mpfr pkgconf` |
+| Python | 3.10.12, with NumPy 2.2.6 | `python3 -m pip install numpy` |
+| SageMath | 10.6 (bundles PARI 2.17.1, GAP) | sagemath.org binaries; `sage` on `PATH` |
+| Magma | V2.29-8 local (Intel binary) | licensed install, then `softwareupdate --install-rosetta` |
+| Julia | 1.12.6 (legacy `belyi_jl/` only) | `julia --project=belyi_jl -e 'using Pkg; Pkg.instantiate()'` |
+
+Homebrew may install a newer FLINT. The production libraries load
+`libflint.24.0.dylib`; if that soname is absent, stop and record it rather
+than relinking or rebuilding a frozen library.
+
+### 3. Secrets (`.env`, gitignored)
+
+Create `.env` at the repository root with these names. Never commit it or
+paste values into logs.
+
+```text
+ARISTOTLE_API_KEY=...
+AXIOMATIC_API_KEY=...
+COCALC_ACCOUNT_API_KEY=sk_...
+COCALC_PROJECT_ID=<uuid>
+COCALC_BASE=https://chatelet.mit.edu
+```
+
+Copy the file from the old machine over a private channel, or regenerate:
+for Chatelet, create an account-level key (Account settings, API Keys) and
+run `python3 remote_magma/set_key.py` in your own Terminal; it prompts
+without echo and preserves the other settings. Details and the smoke test
+are in [remote_magma/CHATELET.md](remote_magma/CHATELET.md). The Aristotle
+key is needed only for the legacy Lean work.
+
+### 4. Ignored directories
+
+None of these is needed by the current dyadic route (D109 onward); they
+serve earlier routes and the 111-test suite.
+
+- **`.venv/`** (Aristotle CLI only):
+  `python3 -m venv .venv && . .venv/bin/activate && pip install aristotlelib`
+- **`dembele/vendor/LiftTors`**:
+  ```sh
+  git clone https://github.com/nmascot/LiftTors.git dembele/vendor/LiftTors
+  git -C dembele/vendor/LiftTors checkout fd6403caf7147b21b67dcb17dbedccea762d6262
+  ```
+- **`dembele/vendor/rickards-fdom`**:
+  ```sh
+  git clone --branch klein https://github.com/JamesRickards-Canada/Fundamental-domains-for-Shimura-curves.git dembele/vendor/rickards-fdom
+  git -C dembele/vendor/rickards-fdom checkout 79a12d3f108edce3e78d30c4a59dfc0fb01012d8
+  ```
+- **`dembele/pari/.build/`** is a build cache. After the vendor checkouts:
+  ```sh
+  python3 dembele/pari/build_rickards.py
+  python3 dembele/pari/build_lifttors.py
+  python3 dembele/pari/build_lifttors_rows.py
+  python3 dembele/pari/build_lifttors_reduction.py
+  python3 dembele/pari/build_lifttors_profile.py
+  ```
+  The `cm_acb`, `cover` and `belyi_bridge` entries are compiled on first
+  use by their Python modules and need `pkg-config flint` to resolve.
+  See [the PARI README](dembele/pari/README.md#software-and-build).
+- **Checkouts outside the repository** (revisions in
+  [dembele/upstream.lock](dembele/upstream.lock)):
+  ```sh
+  git clone https://github.com/edgarcosta/hilbertmodularforms ~/hilbertmodularforms
+  git -C ~/hilbertmodularforms checkout f5ce65826697ee1ba7ed6e77a3fda0ef779f633b
+  git clone https://github.com/michaelmusty/inverse-galois-hmf ~/inverse-galois-hmf
+  git -C ~/inverse-galois-hmf checkout 4d60ea1943376636a7dca2c0ab805fb8f403aa0b
+  ```
+  The optional Belyi material (`~/Belyi` at `c8721709…`, and the papers
+  under `~/michaelmusty.github.io/assets/`) is the user's own; copy it if
+  the Belyi route is revisited.
+
+### 5. Verify the transfer
+
+`scripts/verify_transfer.py` defaults to the 2026-09-30 inventory. That
+inventory predates D133–D157 and the D133 journal has since advanced, so
+it is not a verifier for this checkpoint and must not be overwritten.
+Use instead, in order:
+
+1. `git lfs fsck` and a clean `git status` (step 1): transferred bytes.
+2. The source-654 transitive replay, which rechecks the D157 catalogue and
+   every inherited hash. Use a fresh receipt stem; never reuse one.
+   ```sh
+   export PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+     MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+   python3 dembele/pari/run_dyadic_capped.py \
+     dembele/pari/654_dyadic_higher_pilot_timing_review.py \
+     dyadic_higher_pilot_timing_review_d157_newhost_YYYYMMDD_recheck01 \
+     'PASS|654_DYADIC_HIGHER_PILOT_TIMING_REVIEW' --check
+   ```
+   It took 85–100 seconds on the original host, under the 180-second cap.
+3. For runtime readiness (engine import, dependency closure, the three
+   native libraries, coordinator locks, free space), write a new dated
+   check modelled on
+   [d157_cleanup_check_20261016.py](dembele/checkpoints/d157_cleanup_check_20261016.py).
+   Do not rerun that script: it refuses to overwrite its own record.
+4. Optional, needs Sage: `OPENBLAS_NUM_THREADS=1 sage -python -m unittest
+   discover -s dembele/tests -v` (111 tests) and the Magma smoke tests in
+   `remote_magma/CHATELET.md`.
+
+Record the new host's results in a dated file under `dembele/checkpoints/`
+and refresh the free-space observation against the 70 GiB gate before any
+launch. All caps, pauses and freezes in the entries below still apply.
+
+<!-- End new-machine setup -->
+
 <!-- Fresh-session entry: 2026-10-16, post-cleanup integrity and capacity -->
 
 **The required D157 checkpoint is intact after the user's disk cleanup.**
