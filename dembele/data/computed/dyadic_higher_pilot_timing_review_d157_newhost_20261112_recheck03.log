@@ -1,0 +1,59 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/654_dyadic_higher_pilot_timing_review.py", line 361, in <module>
+    saved=read(OUT.stem);checked(saved['sources']);inherited=graph();values=inputs()
+                                                             ^^^^^^^
+  File "/Users/musty/two/dembele/pari/654_dyadic_higher_pilot_timing_review.py", line 72, in graph
+    inherited=prior.graph()
+              ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/650_dyadic_higher_pilot_preparation_review.py", line 61, in graph
+    inherited=prior.graph()
+              ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/644_proof_criterion_review.py", line 96, in graph
+    inherited = prior.graph()
+                ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/641_dyadic_pilot_timing_review.py", line 67, in graph
+    inherited=prior.graph()
+              ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/639_dyadic_pilot_preparation_review.py", line 60, in graph
+    return {'D152_direct_bindings':23,**prior.graph()}
+                                        ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/634_precision_route_review.py", line 63, in graph
+    inherited = prior.graph()
+                ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/631_summed_transfer_review.py", line 63, in graph
+    inherited = prior.graph()
+                ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/628_structural_identification_review.py", line 64, in graph
+    inherited = prior.graph(parent['inherited_review'])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/625_P1600_primitive_frame_review.py", line 35, in graph
+    inherited=prior.graph(parent['inherited_review']);assert len(parent['sources'])==44
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/622_P1600_forward_frame_review.py", line 35, in graph
+    inherited=prior.graph(parent['inherited_review']);assert len(parent['sources'])==41
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/619_P1600_multiplication_review.py", line 35, in graph
+    inherited=prior.graph(parent['inherited_review']);assert len(parent['sources'])==42
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/616_P1600_intersection_review.py", line 35, in graph
+    inherited=prior.graph(parent['inherited_review']);assert len(parent['sources'])==41
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/613_P1600_spectral_review.py", line 38, in graph
+    inherited=prior.graph(parent['inherited_review']);assert len(parent['sources'])==40
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/608_P1600_joint_RR_review.py", line 51, in graph
+    inherited=prior.graph(parent['inherited_review'])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/605_P1600_finite_model_review.py", line 53, in graph
+    inherited = prior.graph(parent['inherited_review'])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/600_P1600_two_height_review.py", line 48, in graph
+    inherited = prior.graph(d141['inherited_review'])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/597_P1600_proof_gap_review.py", line 54, in graph
+    inherited = prior.inherited_graph(d140['inherited_review'])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/592_dyadic_P1600_recognition_review.py", line 74, in inherited_graph
+    assert raw_source(item['path']) == item, item['path']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: /Users/musty/hilbertmodularforms/ModFrmHil/definite.m

@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/Users/musty/two/dembele/pari/654_dyadic_higher_pilot_timing_review.py", line 361, in <module>
+    saved=read(OUT.stem);checked(saved['sources']);inherited=graph();values=inputs()
+                                                             ^^^^^^^
+  File "/Users/musty/two/dembele/pari/654_dyadic_higher_pilot_timing_review.py", line 72, in graph
+    inherited=prior.graph()
+              ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/650_dyadic_higher_pilot_preparation_review.py", line 61, in graph
+    inherited=prior.graph()
+              ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/644_proof_criterion_review.py", line 96, in graph
+    inherited = prior.graph()
+                ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/641_dyadic_pilot_timing_review.py", line 67, in graph
+    inherited=prior.graph()
+              ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/639_dyadic_pilot_preparation_review.py", line 60, in graph
+    return {'D152_direct_bindings':23,**prior.graph()}
+                                        ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/634_precision_route_review.py", line 63, in graph
+    inherited = prior.graph()
+                ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/631_summed_transfer_review.py", line 63, in graph
+    inherited = prior.graph()
+                ^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/628_structural_identification_review.py", line 62, in graph
+    checked(parent['sources'])
+  File "/Users/musty/two/dembele/pari/628_structural_identification_review.py", line 47, in checked
+    assert raw_source(ref['path']) == ref, ref['path']
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/two/dembele/pari/628_structural_identification_review.py", line 36, in raw_source
+    return {'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
+                                                     ^^^^^^^^^^^^^^
+  File "/Users/musty/.pyenv/versions/3.11.2/lib/python3.11/pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/musty/.pyenv/versions/3.11.2/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12'

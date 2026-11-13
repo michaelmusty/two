@@ -1,0 +1,116 @@
+{
+  "record": "new-host setup observation; operational only, not a mathematical certificate",
+  "host": "otto.local",
+  "arch": "arm64",
+  "macos": "27.2.1",
+  "checkout_root": "/Users/musty/two",
+  "commit": "1c00c635b5",
+  "observed_utc": "2026-11-12T18:58:53Z",
+  "status": "incomplete: source-654 transitive replay has not passed on this host (three preserved failed attempts)",
+  "completed": {
+    "homebrew": {
+      "git-lfs": "3.8.1",
+      "gmp": "6.3.0",
+      "flint": "3.6.0",
+      "mpfr": "4.2.2",
+      "pkgconf": "2.5.1"
+    },
+    "libflint_soname_present": "libflint.24.0.dylib",
+    "python": "3.11.2 (pyenv; original host used 3.10.12)",
+    "numpy": "2.2.6",
+    "git_lfs": {
+      "objects": 2482,
+      "all_present": true,
+      "fsck": "OK",
+      "local_store_size": "11G"
+    },
+    "git_status_after_lfs_pull": "clean",
+    "native_libraries_load": [
+      "dembele/data/computed/dyadic_block_kernel_d121.dylib",
+      "dembele/data/computed/dyadic_polynomial_kernel_d122.dylib",
+      "dembele/data/computed/dyadic_adaptive_polynomial_kernel_d124.dylib"
+    ],
+    "magma_local": "binary present at /Applications/Magma/magma; Rosetta available; smoke test not run",
+    "hilbertmodularforms_checkout": "present at ~/hilbertmodularforms; revision not checked"
+  },
+  "failed_replay_attempt": {
+    "stem": "dyadic_higher_pilot_timing_review_d157_newhost_20261112_recheck01",
+    "wall_seconds": 0.62,
+    "cause": "FileNotFoundError for the hash-bound interpreter /Applications/SageMath-10-6.app/Contents/Frameworks/Sage.framework/Versions/10.6/local/var/lib/sage/venv-python3.12.5/bin/python3.12 (SageMath 10.6 not installed); raised in source 628's inherited source check. Environmental, not a hash mismatch.",
+    "receipt_sha256": "bd95c40a36abc7fb06546ad38c3db79020a0f6ef1eabaca92391e723603363e6",
+    "log_sha256": "1359dadbd06fdf477c6b9121997d6b024e477baa05cb4a46b444dc45cee7d0b8",
+    "preserved": true,
+    "next_stem": "dyadic_higher_pilot_timing_review_d157_newhost_20261112_recheck02"
+  },
+  "sage": {
+    "requirement": "the review catalogues bind that interpreter by absolute path and SHA-256 c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab",
+    "candidate_installer": "SageMath-10.6_arm64.dmg, release v2.6.0 of github.com/3-manifolds/Sage_macOS (1114721783 bytes)",
+    "hash_of_interpreter_inside_mounted_image": "c5ad6c3880f6517a985e1296dccd506174ca79b884e31b727203ffe177922eab",
+    "matches_binding": true,
+    "installed": false,
+    "note": "copying the app into /Applications was not permitted in the agent session; left for the user"
+  },
+  "not_done": [
+    ".env (secrets) absent",
+    "SageMath 10.6 not installed; sage, gp not on PATH",
+    "Julia absent (legacy belyi_jl only)",
+    ".venv, dembele/vendor/{LiftTors,rickards-fdom}, dembele/pari/.build absent (earlier routes and the 111-test suite only)",
+    "~/inverse-galois-hmf absent",
+    "runtime-readiness check (handoff step 5.3) not written or run",
+    "111-test suite and Magma smoke tests not run"
+  ],
+  "capacity": {
+    "free_GiB_before_lfs_pull": 43,
+    "free_GiB_at_observation": 18.19,
+    "sage_install_estimate_GiB": 4,
+    "remaining_bank_gate_GiB": 70,
+    "P10480_single_column_gate_GiB": 13,
+    "note": "LFS store plus working copies used about 23 GiB, not the 2.4 GB stated in the handoff. This host is about 52 GiB below the full-bank gate and, after installing Sage, would be at or just above the single-column P10480 gate. No launch is admitted."
+  },
+  "jobs_running": "none; no production, audit or coordinator job was started",
+  "update_2026-11-13": {
+    "sage_installed": "/Applications/SageMath-10-6.app copied from the v2.6.0 arm64 image; bound interpreter SHA-256 matches",
+    "hilbertmodularforms": "~/hilbertmodularforms moved from a 2023 commit to pinned f5ce6582 (detached HEAD); hmf-sparse-hecke.patch applied to ModFrmHil/definite.m; hmf-raw-innerproduct.patch is prose, not a diff, and a mechanical reconstruction did not reproduce the bound hash dcdb6b76...",
+    "replay_attempts": {
+      "recheck02": "failed 1.76 s: ~/hilbertmodularforms/Mestre/Qsqrt3.m absent (checkout was at an old commit)",
+      "recheck03": "failed 1.87 s: source 592 inherited check, hash mismatch on ~/hilbertmodularforms/ModFrmHil/definite.m (old host carried local patches)"
+    },
+    "external_binding_scan": {
+      "catalogue_files_scanned": 367,
+      "external_paths": 288,
+      "ok": 280,
+      "missing": [
+        "/Users/musty/Belyi/Cext/powser_arnoldi.c",
+        "/Users/musty/Belyi/Code/belyi_main.m",
+        "/Users/musty/Belyi/Code/recognition.m",
+        "/Users/musty/Belyi/README.md"
+      ],
+      "mismatch": [
+        "/Users/musty/hilbertmodularforms/ModFrmHil/definite.m",
+        "/opt/homebrew/Cellar/flint/3.6.0/lib/libflint.24.0.dylib",
+        "/opt/homebrew/Cellar/gmp/6.3.0/include/gmp.h",
+        "/opt/homebrew/Cellar/gmp/6.3.0/lib/libgmp.10.dylib"
+      ],
+      "note": "same versions but different Homebrew bottle bytes on macOS 27; byte-identical copies of these eight files from the original host are needed for the frozen transitive replay to pass here. Not rebuilt or substituted."
+    },
+    "chatelet": {
+      "tls_with_repo_bundle": "ok, issuer YR1, certificate valid to 2026-12-28",
+      "env": ".env created (0600) with COCALC_BASE only; COCALC_ACCOUNT_API_KEY and COCALC_PROJECT_ID must be supplied by the user; authentication and smoke test not yet run"
+    },
+    "free_GiB": 12.3,
+    "next_replay_stem": "dyadic_higher_pilot_timing_review_d157_newhost_20261112_recheck04"
+  },
+  "update_2026-11-13_b": {
+    "chatelet": "authenticated; smoke test passes (REMOTE_MAGMA_OK, 42); 24 cores, 125 GB RAM (107 available), 1.1 TB free on /projects, no Magma job running; remote two_hilbertmodularforms at f5ce6582 with patched ModFrmHil/definite.m",
+    "definite_m": "byte-identical bound file (sha256 dcdb6b76...821f) fetched from Chatelet two_hilbertmodularforms and installed at ~/hilbertmodularforms/ModFrmHil/definite.m; previous partial copy kept as definite.m.otto-partial-20261113.bak",
+    "external_files_still_needed": 7,
+    "remaining": [
+      "4 files in ~/Belyi",
+      "libflint.24.0.dylib",
+      "libgmp.10.dylib",
+      "gmp.h"
+    ],
+    "replay": "not re-attempted; next stem remains ..._recheck04",
+    "jobs_running": "none"
+  }
+}

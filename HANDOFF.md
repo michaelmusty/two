@@ -1,5 +1,71 @@
 # Session handoff
 
+<!-- D158 methodology pivot, 2026-11-13 -->
+
+**Current direction: D158 — methodology pivot (2026-11-13).** The user
+adopted the [D158 review](dembele/certificates/methodology-pivot-d158.md):
+stop proving that the genus-16 candidate is the Shimura quotient; assume
+it, compute the degree-257 polynomial by p-adic torsion at a prime chosen
+for small Frobenius order, and verify the final polynomial directly. The
+P10480 bank is off the route. New-track work lives in `dembele/pivot/`
+and runs on Chatelet without the 180-second/2 GiB/three-worker limits or
+the frozen-replay requirement; logs are kept, and DECISIONS, HANDOFF and
+REFERENCES are updated as work proceeds. All earlier frozen artifacts stay
+untouched. Blocks below this one are historical.
+
+**Resume here.** Host `otto` setup notes are in the next entry (Magma is
+not licensed locally; Chatelet works: `.env` complete, smoke test passes,
+24 cores, 125 GB, 1.1 TB free). Step 1 of the plan is in progress: the
+Frobenius-order scan. Validate at 97 against Dembélé's table (expect 51
+and 257), then launch one detached Magma per rational prime under
+`two_remote_magma/pivot_scan/` and collect `RESULT|` lines. Record results
+in `dembele/pivot/` and update this entry.
+
+<!-- Fresh-session entry: 2026-11-12, new-host setup on otto (incomplete) -->
+
+**Setup on `otto.local` is partly done; the source-654 replay has not yet
+passed here.** See the [setup record](dembele/checkpoints/newhost-setup-2026-11-12.json).
+Done: Homebrew git-lfs/GMP 6.3.0/FLINT 3.6.0 (`libflint.24.0.dylib`
+present)/MPFR, NumPy 2.2.6 on Python 3.11.2, `git lfs pull` (2482 objects,
+`fsck` OK, clean status), and all three native libraries load.
+
+The first replay attempt, stem `..._newhost_20261112_recheck01`, failed in
+0.62 s: the catalogues hash-bind the SageMath 10.6 interpreter at
+`/Applications/SageMath-10-6.app/...`, which is not installed. Its receipt,
+log and snapshot are preserved; this is environmental, not a mismatch.
+The interpreter inside `SageMath-10.6_arm64.dmg` (3-manifolds/Sage_macOS
+v2.6.0) has the bound SHA-256.
+
+**Update 2026-11-13.** Sage 10.6 is installed and its hash matches.
+`~/hilbertmodularforms` is now at pinned `f5ce6582` with
+`hmf-sparse-hecke.patch` applied. Attempts `recheck02`/`recheck03` failed
+(preserved): the old host's `ModFrmHil/definite.m` also carried the
+prose-only `hmf-raw-innerproduct.patch`, which could not be reproduced
+byte-for-byte. A scan of 288 out-of-repository bindings finds 280 matching;
+the other eight need byte-identical copies from the original host:
+`definite.m`, four files in `~/Belyi`, and Homebrew's `libflint.24.0.dylib`,
+`libgmp.10.dylib` and `gmp.h` (same versions, different bottle bytes on
+macOS 27). Do not rebuild or substitute them. **Next:** obtain those files,
+then replay with stem `..._newhost_20261112_recheck04` and write the
+step 5.3 readiness check. Chatelet TLS verifies with the repository
+bundle; `.env` holds only `COCALC_BASE`, so the account key and project id
+are still needed before the smoke test.
+
+**Update 2026-11-13 (later).** Chatelet is authenticated and the smoke
+test passes (24 cores, 125 GB RAM, 1.1 TB free, idle). The bound
+`ModFrmHil/definite.m` (sha256 dcdb6b76…) was fetched from Chatelet's
+`two_hilbertmodularforms` and installed locally, so seven external files
+remain (four in `~/Belyi`, Homebrew `libflint`, `libgmp`, `gmp.h`). The
+replay was not re-attempted; `..._recheck04` is still the next stem.
+
+**Capacity:** the LFS store plus working copies use about 23 GiB (not
+2.4 GB). Free space is **12.3 GiB** after Sage, below the 13 GiB
+single-column P10480 gate and about 58 GiB below the 70 GiB bank gate.
+Nothing is admitted or running. The mathematical checkpoint is still
+D157; source 655 is still unused.
+
+<!-- End new-host setup on otto -->
+
 <!-- Fresh-session entry: 2026-11-12, new-machine setup after the D157 push -->
 
 **Moving to another machine: set up the items Git does not carry.**

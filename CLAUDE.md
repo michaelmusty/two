@@ -1,5 +1,26 @@
 # Project: making Dembélé's field explicit
 
+<!-- D158 methodology pivot -->
+
+**Current direction: D158 — methodology pivot (2026-11-13).** The user
+adopted the [D158 review](dembele/certificates/methodology-pivot-d158.md):
+stop proving that the genus-16 candidate is the Shimura quotient; assume
+it, compute the degree-257 polynomial by p-adic torsion at a prime chosen
+for small Frobenius order, and verify the final polynomial directly. The
+P10480 bank is off the route. New-track work lives in `dembele/pivot/`
+and runs on Chatelet without the 180-second/2 GiB/three-worker limits or
+the frozen-replay requirement; logs are kept, and DECISIONS, HANDOFF and
+REFERENCES are updated as work proceeds. All earlier frozen artifacts stay
+untouched. Blocks below this one are historical.
+
+**Next steps (D158 plan):** (1) Frobenius-order scan,
+`dembele/pivot/01_frobenius_order_scan.m`, one Magma process per rational
+prime on Chatelet (`HMF_ROOT=two_hilbertmodularforms`); (2) rebuild the
+p-adic model of Y at the chosen prime; (3) cost one torsion point (go/no-go);
+(4) compute, recognize and verify the polynomial. Local Magma is not
+licensed on host `otto`; use Chatelet. The D157 replay cannot pass on
+`otto` and is not required.
+
 <!-- D157 higher pilot timing checkpoint -->
 
 **Current checkpoint: D157 — the approved column-2 P3200-to-P6400 pilot

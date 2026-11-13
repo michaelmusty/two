@@ -1,5 +1,40 @@
 # References and attributions
 
+<!-- D158 methodology pivot -->
+
+**Current direction: D158 — methodology pivot (2026-11-13).** The user
+adopted the [D158 review](dembele/certificates/methodology-pivot-d158.md):
+stop proving that the genus-16 candidate is the Shimura quotient; assume
+it, compute the degree-257 polynomial by p-adic torsion at a prime chosen
+for small Frobenius order, and verify the final polynomial directly. The
+P10480 bank is off the route. New-track work lives in `dembele/pivot/`
+and runs on Chatelet without the 180-second/2 GiB/three-worker limits or
+the frozen-replay requirement; logs are kept, and DECISIONS, HANDOFF and
+REFERENCES are updated as work proceeds. All earlier frozen artifacts stay
+untouched. Blocks below this one are historical.
+
+**D158 sources (2026-11-13).**
+
+- **[method, motivation for the pivot]** Shaowu Zhang,
+  [*Rigidity to Non-Rigidity: The Inverse Galois Problem for M23 and Beyond*](https://math.mit.edu/~drew/vantage/ZhangSlides.pdf),
+  VaNTAGe slides, 2026-11-10; and Huang–Jackson–Lee–Poonen–Pries–Zhang,
+  [arXiv:2608.08538](https://arxiv.org/abs/2608.08538). Used for the
+  principle of verifying only the final polynomial, the coordinate lesson
+  for recognition, and CRT reconstruction. Slides read in full; the paper
+  itself was not re-read for D158 (D53 reviewed an earlier version).
+- **[software, context]** [michaelmusty/Belyi pull request 41](https://github.com/michaelmusty/Belyi/pull/41),
+  genus-4 non-hyperelliptic Belyi maps. Read: PR description and
+  `Doc/genus4.md`. Used as evidence on representative/pivot choice and
+  recognition reach; not used computationally in D158.
+- **[theory, unchecked remark]** Anderson–Ihara, pro-l branched coverings
+  of P^1 (1988), and Ihara (1986): pro-2-by-abelian image of the outer
+  action. Cited from memory in D158 section 2; not verified against the
+  sources.
+- **[theory, from memory]** Beckmann's good-reduction theorem and
+  Takeuchi's list of arithmetic triangle groups, as in D158 section 2.
+- **[data]** Dembélé, arXiv:0811.4379, Table 1 (Frobenius orders at norms
+  31 and 97), via `dembele/data/published/dembele_2009.json`.
+
 <!-- D157 higher pilot timing checkpoint -->
 
 **Current checkpoint: D157 — the approved column-2 P3200-to-P6400 pilot

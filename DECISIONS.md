@@ -1,5 +1,34 @@
 # Decision log
 
+<!-- D158 methodology pivot -->
+
+**Current direction: D158 — methodology pivot (2026-11-13).** The user
+adopted the [D158 review](dembele/certificates/methodology-pivot-d158.md):
+stop proving that the genus-16 candidate is the Shimura quotient; assume
+it, compute the degree-257 polynomial by p-adic torsion at a prime chosen
+for small Frobenius order, and verify the final polynomial directly. The
+P10480 bank is off the route. New-track work lives in `dembele/pivot/`
+and runs on Chatelet without the 180-second/2 GiB/three-worker limits or
+the frozen-replay requirement; logs are kept, and DECISIONS, HANDOFF and
+REFERENCES are updated as work proceeds. All earlier frozen artifacts stay
+untouched. Blocks below this one are historical.
+
+**D158 (2026-11-13). Pivot from certified identification to compute-then-verify.**
+*Fork:* (a) build a Linux adapter and run the 20–27-day P10480 bank to
+prove the base identification; (b) de-risk downstream links first, keeping
+the bank as the goal; (c) drop the identification proof and verify only
+the final polynomial. *Chosen:* (c), by the user, after reviewing the M23
+method (final-object verification, coordinate choice over precision, CRT).
+*Reasons:* identification is not needed for the stated goal; quadratic
+twists cannot change the mod-2 field; a p-adic Y plus functions from the
+exact C replaces the exact cubic; the bottleneck is the residue extension
+degree, which a better prime may shrink (255/257 at norm 31, 51/257 at
+norm 97 are the only known values). *Also decided:* relaxed process for
+the new track; the frozen D157 replay is not required on `otto` since
+seven external files are unavailable. *Rejected as routes to the field:*
+rigidity and Belyi maps (ramification at primes dividing |G|; 2-group
+case is the legacy obstruction).
+
 <!-- D157 higher pilot timing checkpoint -->
 
 **Current checkpoint: D157 — the approved column-2 P3200-to-P6400 pilot
