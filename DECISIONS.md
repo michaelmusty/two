@@ -1,5 +1,20 @@
 # Decision log
 
+<!-- D160 -->
+
+**D160 (2026-11-14): 17 is unusable with the current model; use 673.**
+Reducing the exact data mod 17: C keeps dimension 1 and degree 30, but the
+B3 scheme is nonreduced, the D17 ideal has degree 33 instead of 17, and
+the B3 nonic has 17 in its denominators. The coordinates were normalized
+by traces over the degree-17 CM divisor, so 17 is special for the model
+whatever the reduction of the curve itself is. Alternatives: change the
+model at 17 (unknown effort); 641 (-3 nonsquare, constants F_641^2); 673
+(-3 is a square, B3 nonic splits 3+3+3 as at 31, so scripts port
+directly). Chosen: 673. Only system b has order 17 at the scanned prime;
+that suffices if, as the group structure SL2(F256)^2.C8 indicates, a and b
+are exchanged by Gal(F/Q) up to automorphisms of F256 (not checked).
+Torsion field F_673^17, about 2^160.
+
 <!-- D159 -->
 
 **D159 (2026-11-14): provisional prime choice 17.** The

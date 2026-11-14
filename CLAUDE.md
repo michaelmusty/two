@@ -17,7 +17,9 @@ untouched. Blocks below this one are historical.
 `dembele/pivot/01_frobenius_order_scan.m`, one Magma process per rational
 prime on Chatelet (`HMF_ROOT=two_hilbertmodularforms`); (2) rebuild the
 p-adic model of Y at the chosen prime; (3) cost one torsion point (go/no-go);
-(4) compute, recognize and verify the polynomial. Local Magma is not
+(4) compute, recognize and verify the polynomial. Scan done (D159); the
+model is degenerate mod 17, so step 2 runs at norm 673 (D160); see the
+top of HANDOFF. Local Magma is not
 licensed on host `otto`; use Chatelet. The D157 replay cannot pass on
 `otto` and is not required.
 
