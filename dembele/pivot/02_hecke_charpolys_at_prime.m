@@ -3,7 +3,8 @@
 // spaces being cut out by the banked T31 new characteristic polynomials
 // (dembele/data/computed/levelraise_p2k_charpolys.m, script 58).
 // Env: HMF_ROOT, BANK (path to the bank file), GEN (8 comma-separated
-// integer coordinates of a generator of P in the power basis of b).
+// integer coordinates of a generator of P in the power basis of b),
+// KLIST (optional, levels p2^k to do, default 1,2).
 // Output: C02|... lines; polynomials in z are charpolys of T_P.
 SetColumns(0);
 SetQuitOnError(true);
@@ -34,7 +35,8 @@ restrict := function(T31, TP, f)
     B := BasisMatrix(W);
     return Zz!CharacteristicPolynomial(Solution(B, B*ChangeRing(TP, Rationals())));
 end function;
-for k in [1, 2] do
+klist := GetEnv("KLIST") eq "" select [1, 2] else [StringToInteger(c) : c in Split(GetEnv("KLIST"), ",")];
+for k in klist do
     t0 := Cputime();
     M := HilbertCuspForms(F, p2^k, wt);
     T31 := Matrix(InternalHMFRawHeckeDefiniteSparse(M, p31));

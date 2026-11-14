@@ -91,7 +91,10 @@ polys4 := [R4!g : g in polys]; IC4 := ideal<R4 | polys4>;
 n4 := R4!n; den4 := R4!den; ell4 := R4!ell;
 points := {@ @}; seen := {k4|}; checked := 0;
 while #points lt 1700 do
-    repeat a0 := Random(k4); until not a0 in seen;
+    // The first 60 fibres are over the prime field, to obtain F_q-points
+    // (the odd-degree auxiliary divisor needs a Frobenius-fixed point).
+    if #seen lt 60 then a0 := k4!#seen;
+    else repeat a0 := Random(k4); until not a0 in seen; end if;
     seen join:= {a0, a0^q};
     S := Scheme(P4, IC4 + ideal<R4 | R4.15 - a0*R4.16>);
     if Dimension(S) ne 0 then continue; end if;
@@ -126,7 +129,7 @@ for i in [1..nn] do
     if #aux + #orb le NAUX then aux cat:= orb; used join:= Seqset(orb); end if;
     if #aux eq NAUX then break; end if;
 end for;
-assert #aux eq NAUX;
+assert #aux eq NAUX; assert #[i : i in aux | frob[i] eq i] ge 1;
 evals := [];
 for i in [1..nn] do
     orb := {i, frob[i], tau[i], frob[tau[i]]};
@@ -210,7 +213,7 @@ minusD := NegClass(D);
 assert EqualClass(DeckClass(D), minusD);
 assert ZeroClass(AddClass(D, minusD));
 tripleD := AddClass(ChordClass(minusD, minusD), D);
-printf "S03|Delta nonzero, F_289-rational, anti-invariant; killed by three: %o [%o s]\n", ZeroClass(tripleD), Cputime(started);
+printf "S03|Delta nonzero, F_q-rational, anti-invariant; killed by three: %o [%o s]\n", ZeroClass(tripleD), Cputime(started);
 
 function Enc(c)
     return Seqint([Integers()!e : e in Eltseq(c)], p);
