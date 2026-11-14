@@ -1,5 +1,17 @@
 # Decision log
 
+<!-- D159 -->
+
+**D159 (2026-11-14): provisional prime choice 17.** The
+[scan](dembele/pivot/results/frobenius_order_scan.md) of 19 primes (norm
+up to 991) reproduces Dembélé's orders at 97 and finds order 17 for both
+systems at the norm-289 prime above 17; 641 and 673 give 17 for one
+system; the rest are 51, 85, 255 or 257. Alternatives: 641/673 (larger
+field, one system only), or wait for 7 and 47 (norms 2401, 2209), which
+win only if the order there is 3 or 5. Decision: plan step 2 at 17,
+revisit when 7 and 47 finish. Unchecked: target isolation in J(Y)[2] at 17
+and whether Y has good, usable reduction data there.
+
 <!-- D158 methodology pivot -->
 
 **Current direction: D158 — methodology pivot (2026-11-13).** The user

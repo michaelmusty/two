@@ -1,5 +1,19 @@
 # Session handoff
 
+<!-- D159 scan result, 2026-11-14 -->
+
+**Resume here (2026-11-14): Frobenius-order scan done except p=7, 47.**
+[Results](dembele/pivot/results/frobenius_order_scan.md). Validation at
+norm 97 passes (257, 51). The prime above 17 of norm 289 has order 17 for
+both systems (D159: provisional choice). Jobs for 7 and 47 still run on
+Chatelet in `two_remote_magma/pivot_scan/` (`p7.out`, `p47.out`, and
+backups `p7.run2.out`, `p47.run2.out`); an order 3 or 5 there would beat
+17. Launch detached Chatelet jobs through `rexec(env(), cmd,
+timeout=<cpu seconds>, sock_timeout=60)`: the CLI `--timeout` is also the
+CPU limit of any child. Never use `pkill -n` there. Next: D158 step 2,
+rebuild the p-adic model of Y at the chosen prime (residue field F_289),
+then cost one torsion point over its degree-17 extension.
+
 <!-- D158 methodology pivot, 2026-11-13 -->
 
 **Current direction: D158 — methodology pivot (2026-11-13).** The user
