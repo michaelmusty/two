@@ -1,5 +1,27 @@
 # Decision log
 
+<!-- D162 -->
+
+**D162 (2026-11-15): step-3 design; target isolation holds at 673.**
+Isolation: L_Y mod 2 = (t+1)^96 * (two degree-8 factors, system a,
+multiplicity 1) * g^2, g | t^17-1; so V_b is exactly ker g(Frob) on
+J(Y)[2], and #J(Y)(F_673^17)/#J(Y)(F_673) has 2-valuation 16. A torsion
+point: x random in J(K), (Frob-1)x, times the odd part of
+Res(L, Phi_17) (about 10200 bits). Engine choice: own Makdisi
+evaluation-representation code in Magma on Chatelet (already used on X),
+rather than Mascot's PARI code, for the mod-p gate; alternative kept for
+the p-adic stage. Benchmark: Makdisi-size primitives over F_673^17 take
+1-3 s, so one point is estimated at about a day of one core (estimate,
+not measured). Model of Y: sections of pi^*(D_C) on Y are
+s0 + s1*v + tau(s1)*a/v with v^3 = h, s0 in L_C(D_C),
+s1 in L_X(E_R - D_minus - pi^*G); with D_C = 2H - G, G = 17 rational
+points of C with no rational point of Y above, D0_Y has degree 129 and
+66 sections (28 + 38). Evaluation points: the rational points of Y
+(692 > 4*129), so no extension-field points are needed in the model;
+K-points of Y are needed only to form random classes. Possible later
+saving: replace the integer cofactor by a short element of Z[zeta_17]
+(about 600-bit coefficients).
+
 <!-- D161 -->
 
 **D161 (2026-11-15): genus-64 cover built mod 673; point count matches Hecke.**

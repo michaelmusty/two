@@ -1,5 +1,18 @@
 # Session handoff
 
+<!-- D162, 2026-11-15 -->
+
+**Resume here (2026-11-15, later): step-3 design and isolation check (D162).**
+See DECISIONS D162. Target isolation at 673 holds from Hecke data
+(`dembele/pivot/results/isolation673.txt`): the Frobenius polynomial of Y
+mod 2 is (t+1)^96 * g_a1 * g_a2 * g^2 with g = t^8+t^7+t^6+t^4+t^2+t+1
+dividing t^17-1, so V_b = ker g(Frob) in J(Y)[2] and
+J(K)[2^inf] = J(F_673)[2^inf] + V_b for K = F_673^17 (2-valuations 40 and
+56). Linear-algebra benchmark over K: `results/bench17_linear_algebra.txt`.
+Next to write: `dembele/pivot/07_*` building the evaluation model of Y
+mod 673 with D0_Y = pi^*(2H - G), deg 129 (design in D162), checked by
+[#J(Y)(F_673)] * random class = 0; then one torsion point over K.
+
 <!-- D161, 2026-11-15 -->
 
 **Resume here (2026-11-15): Y is built mod 673 and matches Hecke (D161).**
