@@ -78,14 +78,18 @@ function LocalCoordinates(pt, polys, R, prec)
 end function;
 
 U<T> := PolynomialRing(k); total := 0; counts := [0,0,0,0];
-exceptional := 0; branch := 0;
+exceptional := 0; branch := 0; b3pts := 0; d17pts := 0;
 for idx in [1..#points] do
     pt := points[idx];
-    assert not &and[Evaluate(z, pt) eq 0 : z in B3_linear_forms];
-    assert not &and[Evaluate(z, pt) eq 0 : z in D17_extra_quadrics];
-    if C_candidate!pt eq P32_candidate then
+    onB3 := &and[Evaluate(z, pt) eq 0 : z in B3_linear_forms];
+    onD17 := &and[Evaluate(z, pt) eq 0 : z in D17_extra_quadrics];
+    if onB3 then
+        // Total ramification (order-three inertia): one point above.
+        assert not onD17; amount := 1; b3pts +:= 1;
+    elif onD17 or C_candidate!pt eq P32_candidate then
         // Transposition inertia has normalizer itself: both inertia orbits are rational.
         amount := 2; branch +:= 1;
+        if onD17 then d17pts +:= 1; end if;
     else
         av := Evaluate(A4, pt); qv := Evaluate(Q4, pt); pv := Evaluate(P10, pt);
         if qv ne 0 and 108*av^3 - 27*(pv/qv)^2 ne 0 then
@@ -126,7 +130,8 @@ for idx in [1..#points] do
     end if;
     total +:= amount; counts[amount+1] +:= 1;
 end for;
-assert branch eq 1 and &+counts eq #points;
+assert branch eq 1 + d17pts and &+counts eq #points;
+printf "S06|rational points on D17: %o, on B3: %o\n", d17pts, b3pts;
 expected := StringToInteger(GetEnv("EXPECTED"));
 printf "S06|fibre count distribution (0,1,2,3 points): %o; exceptional fibres %o\n", counts, exceptional;
 printf "S06|cubic point count %o; Hecke prediction %o; match %o [%o s]\n", total, expected, total eq expected, Cputime(started);

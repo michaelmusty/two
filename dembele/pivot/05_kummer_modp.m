@@ -11,6 +11,11 @@ load "third_in.m";
 Third := Dec(st_third);
 assert NEV eq 1024;
 Fp := GF(p);
+k := Fp;
+load "cm_frame_curve_candidate.m";
+load "cm_frame_marks.m";
+load "cm_frame_B3_rational_model.m";
+load "cm_frame_B3_fiber.m";
 function IsRat(c) return c^q eq c; end function;
 function TauVec(v) return Vector(k4, [v[i] : i in etau]); end function;
 function IndependentIndices(M)
@@ -109,8 +114,6 @@ assert &or[u[j]*qt[j] - ut[j]*qv[j] ne 0 : j in [1..NEV]];
 printf "S05|Kummer divisor and norm identity pass; norm scalar %o [%o s]\n", Fp!c, Cputime(started);
 
 // Reflection quotient: y^3 - 3*a*y - btrace = 0, a = c*f, h = c*u/q.
-k := Fp;
-load "cm_frame_curve_candidate.m";
 IC := Ideal(C_candidate); GC := GroebnerBasis(IC); LM := [LeadingMonomial(z) : z in GC];
 FB := [R!1]; layer := [R!1]; depth := 0;
 repeat

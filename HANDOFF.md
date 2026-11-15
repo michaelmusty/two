@@ -1,5 +1,23 @@
 # Session handoff
 
+<!-- D161, 2026-11-15 -->
+
+**Resume here (2026-11-15): Y is built mod 673 and matches Hecke (D161).**
+Step 2 of the D158 plan is done modulo 673 except for the 673-adic lift.
+Hecke charpolys at norm 673 are in `dembele/pivot/results/hecke673_raw.txt`
+(each level took about 14 h). Predicted Prym order 3^2*m; m*Delta = 0
+confirmed; third A = c*Delta with 3c = -1 mod m (script 04). Script 05
+builds the Kummer function and the cubic Q4*T^3 - 3*A4*Q4*T - P10 = 0;
+coefficients in `dembele/pivot/results/cubic673.m`. Script 06 counts
+#C(F_673) = 670 and #Y(F_673) = 692, both equal to the Hecke predictions
+(674 - 4 and 674 + 18). Logs: `dembele/pivot/results/cover673_logs.txt`.
+Remote-only files in `two_remote_magma/pivot_cover17/`: `state673.m`,
+`third673.m` (sha256 2bfdaea4..., 16ec9377...). Not done: count over
+F_673^2; the eight alternative thirds were not constructed (the first
+one matched). Next: 673-adic lift of the cover data, then step 3 (cost
+of one torsion point over F_673^17). Scans at 7 and 47 still running
+(`pivot_scan/p7.run2.out`, `p47.run2.out`), no longer on the route.
+
 <!-- D160, 2026-11-14 -->
 
 **Resume here (2026-11-14, later): prime changed from 17 to 673 (D160).**

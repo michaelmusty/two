@@ -1,5 +1,20 @@
 # Decision log
 
+<!-- D161 -->
+
+**D161 (2026-11-15): genus-64 cover built mod 673; point count matches Hecke.**
+Inputs: T_P charpolys at the norm-673 prime on the p2-new (16+24) and
+p2^2-new (48) spaces. Outcome: Prym order prediction 3^2*m verified in
+the form m*Delta = 0; Delta has trivial 3-part, so the third is c*Delta
+as at 31. #C(F_673) = 670 and #Y(F_673) = 692 match the predictions.
+Choice: accept this third without constructing the other eight
+candidates, since the first matched; alternative (build all nine, count
+over F_673^2 as in D84) deferred as an optional check. New fact: at 673
+the CM divisor D17 has one rational point (none at 31); such a point has
+transposition inertia and contributes 2 points to Y; script 06 handles
+rational D17 and B3 points. The redundant level-p2^2 recomputation in the
+first Hecke job was stopped by PID after the parallel job finished.
+
 <!-- D160 -->
 
 **D160 (2026-11-14): 17 is unusable with the current model; use 673.**
