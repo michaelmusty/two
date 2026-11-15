@@ -1,5 +1,27 @@
 # Decision log
 
+<!-- D164 -->
+
+**D164 (2026-11-15): scans at 7 and 47 finished; stay at 673, keep 7 as a fallback.**
+47 (norm 2209): order 17 for both systems, field F_47^34, worse than 673.
+7 (norm 2401, inert of degree 4): order 2 on system a (trace 0, unipotent)
+and order 3 on b (trace 1), so the torsion fields would be F_7^8 and
+F_7^12. Probes mod 7 (Chatelet, `pivot_cover17/probe7.m`, `probe7b.m`): C
+has dimension 1, degree 30; D17 reduced (8+8+1); B3 nonic separable
+(1+4+4); B2, B3, T have the right degrees; but one point of T coincides
+with a point of B3, so `03_cover_class_modp.m` fails its assertion
+div(n) = B2 + 2 B3 + T (ideal form) at line 45. Smoothness of C mod 7 not
+checked. Alternatives: (a) switch to 7: needs constants F_2401 throughout
+scripts 03-08 (too few points over F_7 or F_49), the collision handled,
+Hecke charpolys at norm 2401 (days) to predict the count and to decide
+isolation, and isolation is doubtful for a (Frobenius unipotent, so no
+Frobenius polynomial separates V_a from the rest of J[2]); gain in the
+lifting stage is only the field degree 8 or 12 against 17. (b) Stay at
+673, where the cover, count, isolation and Y model are verified and five
+torsion runs are 75% done. Chosen: (b). Revisit 7 (system b, order 3) only
+if the 673-adic lift over the degree-17 unramified extension proves too
+expensive.
+
 <!-- D163 -->
 
 **D163 (2026-11-15): step 3 gate measured: about 9 CPU-hours per torsion point; go.**

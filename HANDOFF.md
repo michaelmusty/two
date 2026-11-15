@@ -1,5 +1,16 @@
 # Session handoff
 
+<!-- D164, 2026-11-15 -->
+
+**Update (2026-11-15, 17:00 UTC): scans done; route unchanged (D164).**
+47 gives order 17/17 (field F_47^34); 7 gives orders 2 (a) and 3 (b) but
+the model has a T/B3 collision mod 7 and isolation is unverified; see
+DECISIONS D164 and `dembele/pivot/results/frobenius_order_scan.md`. The
+five torsion runs in `two_remote_magma/pivot_tors/` (seeds 11, 13-16) run
+at about 15 s per addition (five in parallel), about 15.5 CPU-hours per
+point, expected end about 20:20 UTC; the D163 block below is otherwise
+current.
+
 <!-- D163, 2026-11-15 -->
 
 **Resume here (2026-11-15, 04:50 UTC): step 3 measured; five torsion-point runs in progress (D163).**
