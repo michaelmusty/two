@@ -1,5 +1,26 @@
 # Session handoff
 
+<!-- D163, 2026-11-15 -->
+
+**Resume here (2026-11-15, 04:50 UTC): step 3 measured; five torsion-point runs in progress (D163).**
+`dembele/pivot/07_Y_model_modp.m` builds the evaluation model of Y mod 673
+(66 sections of pi^*(2H-G) at 679 rational points; ranks 195 and 324 as
+Riemann-Roch predicts; the predicted #J(Y)(F_673) kills two random
+classes, order+2 does not; log `results/ymodel673_log.txt`; model file
+remote only: `two_remote_magma/pivot_cover17/ymodel673.m`).
+`dembele/pivot/08_torsion_point_modp.m` computes one point of V_b over
+K = F_673^17: timing run in `results/torsion_timing673.txt` (one addition
+about 8-9 s; multiplier has 601-bit coefficients, about 3,800 additions,
+so about 9 h per point). Running in `two_remote_magma/pivot_tors/`:
+seeds 11, 13, 14, 15, 16 (`pt<seed>.out`, checkpoints `pt<seed>.ck` every
+30 min, results `pt<seed>.pt`); seed 12 stopped at start (too few
+K-points in its pool). To resume a run, relaunch with the same SEED and
+TAG. Expected end about 14:00 UTC. Each run prints whether y is zero,
+whether 2y = 0, and g(Frob)y = 0 for the two degree-8 factors.
+Next: check the outputs; two or three nonzero points and their Frobenius
+conjugates should span V_b (verify rank 16 over F_2); then the 673-adic
+lift (model and points) and evaluation, step 4.
+
 <!-- D162, 2026-11-15 -->
 
 **Resume here (2026-11-15, later): step-3 design and isolation check (D162).**

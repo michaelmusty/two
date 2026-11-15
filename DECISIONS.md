@@ -1,5 +1,20 @@
 # Decision log
 
+<!-- D163 -->
+
+**D163 (2026-11-15): step 3 gate measured: about 9 CPU-hours per torsion point; go.**
+Model of Y mod 673 verified by Riemann-Roch ranks and the group order.
+Multiplier: x1 = (Frob-1)x, then e(Frob) with e a short vector (LLL) of
+the ideal (L(zeta_17)) * p2^-2 in Z[zeta_17], p2 the prime above 2 with
+valuation 2; e not in p2; coefficients at most 601 bits; Straus
+multi-scalar multiplication with NAF digits (3,187 nonzero digits).
+Alternative (integer cofactor of about 10,200 bits) rejected as about
+three times slower. Measured: one addition 8-9 s on Chatelet. Since
+Frobenius has order 17 on V_b and acts through F_2[Frob], each nonzero
+point gives an 8-dimensional F_2-space; three points should suffice.
+Not yet verified: that the computed points are nonzero 2-torsion (runs
+in progress); the p-adic lifting stage is not designed in detail.
+
 <!-- D162 -->
 
 **D162 (2026-11-15): step-3 design; target isolation holds at 673.**
