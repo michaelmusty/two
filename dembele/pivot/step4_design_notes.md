@@ -1,0 +1,83 @@
+# Step 4 design notes (673-adic lift and evaluation)
+
+Date: 2026-11-15. Working notes, not a certificate. Nothing here is
+computed unless stated. Status of inputs: five points of V_b mod 673
+(`results/torsion_points673_log.txt`); span check in progress (script 09).
+
+## 1. The evaluation function must be global
+
+The polynomial has coefficients in F only if the function evaluated on
+V_b is defined over F. The cubic model of Y mod 673 (scripts 05, 07)
+depends on choices made mod 673 (q, moving section, representative of the
+third), so sections of the Y model are not global objects. Global objects
+available exactly: C, X, the divisors D17, P32, B3, T, E on C, and
+pullbacks to Y of functions on C. The two points of Y above P32 (one
+ramified, one not) are canonical points of Y.
+
+Proposed function. For x in V_b, take M on C of degree 21 defined over Q
+and R2 the unramified point of Y above P32. deg(pi^*M + R2) = 64 = g(Y),
+so generically there is one effective D_x in |x + pi^*M + R2|. Its
+pushforward pi_*(D_x) is an effective divisor of degree 64 on C in the
+class 3M + P32 (the norm of x is 0), i.e. a point of P(L_C(3M + P32)),
+an exactly known projective space of dimension 48 over Q. Ratios of its
+coordinates are Galois-equivariant functions of x that involve Y only
+through the map pi. Not yet implemented, not yet tested mod 673.
+
+## 2. The F_256-structure is not visible from Frobenius alone
+
+The 257 roots are the lines of V_b for the Hecke field H = F_256. At 673
+we only have Frob, with minimal polynomial g of degree 8, so V_b is a
+2-dimensional space over F' = F_2[Frob], and every F'-line is
+Frob-stable. H commutes with Frob, and Frob has eigenvalues lambda,
+lambda^-1 = lambda^16 on two H-lines L1, L2. H acts as F' on L1 and as F'
+twisted by the 4th power of the 2-Frobenius on L2. So H is determined by
+the unordered pair {L1, L2} of F'-lines: 257*256/2 = 32896 candidates.
+Hecke operators are self-adjoint for the Weil pairing, which forces L1,
+L2 to be isotropic; if the count of isotropic F'-lines is 17 (unitary
+form in dimension 2 over F_256/F_16; not double-checked) this leaves 136
+candidates. The correct pair is the one for which the degree-257
+polynomial has coefficients in F; this can only be decided after lifting
+(recognition test on a coefficient that depends on the partition, e.g.
+sum over lines of (sum of values on the line)^2). The Weil pairing on
+V_b mod 673 is not implemented.
+
+## 3. Coefficient field may be Q(sqrt 2)
+
+V_b as an F_2-space is the kernel of a maximal ideal of the Z-Hecke
+algebra, so it is stable under the subgroup C4 of Gal(F/Q) = C8 that
+fixes the system b up to automorphisms of F_256 (assuming a and b are
+exchanged by the other coset, unchecked, D160). If Y and the function of
+section 1 are defined over Q(sqrt 2) (or Q), the 257 lines form a
+G_Q(sqrt 2)-stable set and the polynomial has coefficients in Q(sqrt 2).
+Recognition would then need precision 2*h instead of 8*h (h = coefficient
+height). Unverified; depends on the field of definition of Y.
+
+## 4. Cost model and the height risk
+
+- Lift of the model: X is exact. The third A over Z/p^N is c*Delta with
+  3c = -1 mod m*p^(N-1) (scalar of about 224 + 9.4N bits; arithmetic over
+  Z/p^N on X, constants Z_673). Then ports of 05 and 07 over Z/p^N need
+  linear algebra over Z/p^N (Hensel-lifted nullspaces).
+- Lift of torsion points: over W_N(K), K = F_673^17. Multiplying an
+  arbitrary lift by p^(N-1) costs about 14 N additions at full precision:
+  too slow beyond small N. Mascot's linearized lifting is needed.
+- All of V_b: 65535 nonzero points, 3855 Frobenius orbits; one addition
+  and one evaluation each at full precision.
+- Size: an element of W_N(K) has 160 N bits. A class matrix (66 x 400) at
+  N = 1000 is about 530 MB; intermediate 324 x 400 matrices 2.6 GB.
+- The precision N needed is (2 or 8) * h / log(673), and h is unknown.
+  Mascot's computations over Q at genus about 50 used thousands of p-adic
+  digits. If h is of that order, N at 673 would be in the thousands to
+  tens of thousands, where a single addition costs hours to days. This is
+  the main risk of step 4 and is not resolved.
+
+## 5. Order of work
+
+1. Span check of two points (running).
+2. Implement the function of section 1 mod 673; check Frobenius
+   equivariance and that it separates points.
+3. Weil pairing on V_b mod 673; list the isotropic F'-lines.
+4. Prototype arithmetic over W_N(K) at N = 2, 4, 8 to measure cost
+   against N before committing to a lift.
+5. Decide feasibility with measured costs; the fallback prime 7 (D164)
+   has field degree 12 for system b.
