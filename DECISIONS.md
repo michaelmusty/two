@@ -1,5 +1,22 @@
 # Decision log
 
+<!-- D166 -->
+
+**D166 (2026-11-16): evaluation function verified mod 673; lift by a tangency system, not by Jacobian arithmetic on Y.**
+Scripts 10 and 11 ([notes, section 6](dembele/pivot/step4_design_notes.md)):
+the C-based function f_x in L_C(44 P32) is well defined on classes,
+Frobenius-equivariant and separates points (two points tested); each
+2-torsion class is an isolated solution (kernel 9 = gauge of 414) of the
+rank-one minor equations for six functions in the 69-dimensional
+G44 = H^0(Y, pi^*O(44 P32)). Reason for the change: Makdisi arithmetic on
+Y over W_N(F_673^17) needs class matrices of about 0.5 MB * N and hours
+to days per addition at N in the thousands, for 3855 Frobenius orbits;
+the tangency system has 414 unknowns per point. Rough estimate (not
+measured): a few CPU-hours per point at 170 kbit. Alternatives kept:
+Mascot-style lifting on Y (rejected on size), prime 7 (D164). Open:
+673-adic model of Y over C to high precision; the F_256-structure (136
+or 32896 candidates); the coefficient height.
+
 <!-- D165 -->
 
 **D165 (2026-11-15): V_b mod 673 is spanned; step 4 feasibility is open.**

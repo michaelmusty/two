@@ -1,5 +1,17 @@
 # Session handoff
 
+<!-- D166, 2026-11-16 -->
+
+**Resume here (2026-11-16): evaluation function and tangency system pass mod 673 (D166).**
+Scripts `dembele/pivot/10_eval_function_modp.m` and
+`11_tangency_system_modp.m` (run in `two_remote_magma/pivot_tors/`, env
+`TAGS=pt11,pt13`, about 90 s each). No Chatelet job is running. Next:
+(1) design and prototype the 673-adic model of Y over C (G44, G88 and
+multiplication over Z/673^N, N = 2 first), then one Newton step of the
+tangency system for pt11; (2) enumerate V_b mod 673 (3855 Frobenius
+orbits, about 13 s each) and compute all g_ij mod 673; (3) Weil pairing
+or another way to cut the 32896 candidate F_256-structures.
+
 <!-- D165, 2026-11-15 -->
 
 **Resume here (2026-11-15, 22:15 UTC): V_b mod 673 is in hand (D165).**

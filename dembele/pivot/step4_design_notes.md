@@ -81,3 +81,33 @@ height). Unverified; depends on the field of definition of Y.
    against N before committing to a lift.
 5. Decide feasibility with measured costs; the fallback prime 7 (D164)
    has field degree 12 for system b.
+
+## 6. Results of 2026-11-16 and revised lifting route (D166)
+
+Computed mod 673 (logs `results/eval_function673_log.txt`,
+`results/tangency673_log.txt`; scripts 10, 11):
+
+- The function of section 1 is implemented with N = 22*P32 and without the
+  points above P32: S_x = H^0(x (x) pi^*O(22 P32)) is 3-dimensional; the
+  trace forms b(s,s') = Tr_{Y/C}(s s'/(phi Q^2)) lie in L_C(44 P32)
+  (29-dim, checked by solving); the leading coefficient at P32 gives a
+  form of rank 2 on S_x whose radical is the section vanishing at both
+  points above P32; f_x = b(s_x, s_x). On pt11 and pt13: two
+  representatives of the class give the same f_x; f(Frob y) = Frob f(y);
+  f separates y from Frob y and pt11 from pt13. 4 s per evaluation over K.
+- G44 = H^0(Y, pi^*O(44 P32)) has dimension 69; the six functions
+  g_ij = s_i s_j / phi lie in G44 and satisfy the 2x2 minor equations;
+  the linearized minor map on the 414 coefficients has rank 405, kernel 9
+  = the GL_3 gauge. So each 2-torsion class is an isolated solution of a
+  quadratic system in G44.
+
+Revised route. Do not lift Jacobian arithmetic on Y. Lift, for each
+point of V_b, the six functions g_ij in G44 by Newton/Hensel on the minor
+equations (414 unknowns over W_N(K)), starting from the mod-673 values
+computed with scripts 08-11. f_x is read off from the g_ij (trace to C
+and the leading coefficient at P32). Needed first: G44 and G88 with
+their multiplication to precision N, i.e. the 673-adic model of Y over C
+(the functions a, h of the cubic, or equivalently the third A), over
+Z_673 only (constants of degree 1). The third can be lifted by the same
+device on X (cubes instead of squares). Cost estimates are in D166 and
+are not measured.
