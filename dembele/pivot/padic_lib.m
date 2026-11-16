@@ -117,3 +117,27 @@ function DeckN(A, perm)
     h := Ncols(A) div 2;
     return Cols_(A, perm cat [h + j : j in perm]);
 end function;
+// Plain versions (all evaluation points rational): pointwise product = column scaling.
+function ScaleP(A, f)
+    return A*DiagonalMatrix(BaseRing(A), Eltseq(f));
+end function;
+function ProductP(A, B, dim)
+    out := ZeroMatrix(BaseRing(A), 0, Ncols(A));
+    for trial in [1..32] do
+        out := BasisN(VerticalJoin(out, ScaleP(B, RandSec(A))));
+        assert Nrows(out) le dim;
+        if Nrows(out) eq dim then return out; end if;
+    end for;
+    error "ProductP: dimension not reached";
+end function;
+function QuotP(A, B, V, dim)
+    eqs := Transpose(KerN(Transpose(B)));
+    current := V;
+    for trial in [1..16] do
+        ker := KerN(ScaleP(current, RandSec(A))*eqs);
+        current := ker*current;
+        assert Nrows(current) ge dim;
+        if Nrows(current) eq dim then return current; end if;
+    end for;
+    error "QuotP: dimension not reached";
+end function;

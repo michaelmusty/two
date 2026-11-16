@@ -4,7 +4,8 @@
 // the cube system of script 13. The effective representative of the third
 // is E' = S + S'_1 (S = 79 lifted auxiliary points), not the E_R of script
 // 05; the Kummer function is h' = c'*c111/q, with h'/h = (c'/c)*beta1^3.
-// Files: state_in.m, cubic_in.m, exact_lists.m, padic_lib.m.
+// Files: state_in.m, cubic_in.m, ymodel_in.m, exact_lists.m, padic_lib.m, padic_points.m,
+// padic_vals.m.
 // Env: PREC (N), OUT.
 SetQuitOnError(true); SetColumns(0); SetSeed(215);
 started := Cputime();
@@ -12,92 +13,9 @@ N := StringToInteger(GetEnv("PREC")); OUT := GetEnv("OUT");
 NPAIR := 256;
 load "state_in.m";
 load "cubic_in.m";
+load "ymodel_in.m";
 load "exact_lists.m";
-p := st_p; Fp := GF(p); ZN := Integers(p^N); Z1 := Integers(p);
-LIBP := p; LIBF := Fp;
-assert #st_modulus eq 3 and st_modulus[3] eq 1;
-m0 := st_modulus[1]; m1 := st_modulus[2];
-LC0 := -m0; LC1 := -m1;
-load "padic_lib.m";
-Up<tt> := PolynomialRing(Fp); k4<b> := ext<Fp | Up!st_modulus>;
-function DecE(c)
-    s := Intseq(c, p); s cat:= [0 : i in [#s+1..2]];
-    return k4!s;
-end function;
-PZ<xx> := PolynomialRing(ZN); GG<th> := quo<PZ | xx^2 + m1*xx + m0>;
-function Pair(g)
-    s := Coefficients(PZ!g); s cat:= [ZN!0 : i in [#s+1..2]];
-    return s;
-end function;
-function LiftK(c)
-    s := Eltseq(c);
-    return GG!(PZ![ZZ!s[1], ZZ!s[2]]);
-end function;
-function InvG(g)
-    s := Pair(g);
-    nr := s[1]^2 + LC1*s[1]*s[2] - LC0*s[2]^2;
-    return GG!(PZ![(s[1] + LC1*s[2])*nr^-1, -s[2]*nr^-1]);
-end function;
-function Q2Z(x)
-    x := Rationals()!x;
-    return ZN!Numerator(x)*(ZN!Denominator(x))^-1;
-end function;
-function ToZ1(M)
-    return ChangeRing(ChangeRing(M, ZZ), Z1);
-end function;
-function ToZN(M)
-    return ChangeRing(ChangeRing(M, ZZ), ZN);
-end function;
-rowsZ := Matrix(ZN, [[Q2Z(c) : c in r] : r in rows]);
-rowsK := ChangeRing(Red(rowsZ), k4); rowsG := ChangeRing(rowsZ, GG);
-Lmat := [ZeroMatrix(ZN, 91, 16) : j in [1..16]];
-for t in [1..#pairs] do
-    a := pairs[t][1]; c := pairs[t][2];
-    for i in [1..91] do
-        Lmat[a][i, c] +:= rowsZ[i, t];
-        Lmat[c][i, a] +:= rowsZ[i, t];
-    end for;
-end for;
-LmatK := [ChangeRing(Red(L), k4) : L in Lmat]; LmatG := [ChangeRing(L, GG) : L in Lmat];
-numG := Matrix(GG, 1, #pairs, [GG!Q2Z(c) : c in rational_numerator]);
-denG := Matrix(GG, 1, #pairs, [GG!Q2Z(c) : c in rational_denominator]);
-function Mon2(x)
-    return [x[pr[1]]*x[pr[2]] : pr in pairs];
-end function;
-function Mons(x, exps)
-    return [&*[x[t]^e[t] : t in [1..16] | e[t] ne 0] : e in exps];
-end function;
-halfG := GG!((ZN!2)^-1);
-// Hensel lift of a point (16 coordinates with x16 = 1, and w) of X.
-function LiftPoint(pt)
-    x0 := pt[1..16]; assert x0[16] eq 1;
-    xc := Matrix(k4, 16, 1, x0);
-    Jk := HorizontalJoin([LmatK[j]*xc : j in [1..14]]);
-    inds := IndRows(Jk);
-    if #inds ne 14 then return false, 0, 0; end if;
-    Jinv := Matrix(GG, 14, 14, [LiftK(c) : c in Eltseq(Rows_(Jk, inds)^-1)]);
-    Lsel := [Rows_(LmatG[j], inds) : j in [1..14]];
-    rsel := Rows_(rowsG, inds);
-    x := [LiftK(c) : c in x0];
-    two := ScalarMatrix(GG, 14, 2);
-    e := 1;
-    while e lt N do
-        X := Matrix(GG, 16, 1, x);
-        J := HorizontalJoin([Lsel[j]*X : j in [1..14]]);
-        Jinv := Jinv*(two - J*Jinv);
-        d := Jinv*(rsel*Matrix(GG, #pairs, 1, Mon2(x)));
-        for j in [1..14] do x[j] -:= d[j, 1]; end for;
-        e *:= 2;
-    end while;
-    mon := Matrix(GG, #pairs, 1, Mon2(x));
-    assert IsZero(rowsG*mon);
-    target := (numG*mon)[1, 1]*InvG((denG*mon)[1, 1]);
-    w := LiftK(pt[17]); e := 1;
-    while e lt N do w := (w + target*InvG(w))*halfG; e *:= 2; end while;
-    assert w^2 eq target;
-    return true, x, w;
-end function;
-
+load "padic_points.m";
 plist := [[DecE(c) : c in x] : x in st_points]; nn := #plist;
 orbs := []; used := {Integers()|};
 for i in [1..nn] do
@@ -121,14 +39,6 @@ while #reps lt 2*NPAIR do
 end while;
 h := #reps; etau := &cat[[2*j, 2*j-1] : j in [1..NPAIR]];
 printf "S15|%o evaluation points lifted (orbits used up to %o) [%o s]\n", h, oi, Cputime(started);
-function RealMatrix(cols)   // cols: list of sequences of GG elements (one per point); rows = sections
-    A := []; B := [];
-    for c in cols do
-        prs := [Pair(g) : g in c];
-        Append(~A, [s[1] : s in prs]); Append(~B, [s[2] : s in prs]);
-    end for;
-    return Transpose(Matrix(ZN, A cat B));
-end function;
 
 // Odd cubics: cubic forms on C vanishing on E + U, by exact linear conditions.
 hc := NPAIR;
@@ -158,21 +68,10 @@ assert RowSpace(Red(Kodd)) eq RowSpace(oddF);
 piv := PivCols(oddF);
 Kodd := InvN(Cols_(Kodd, piv))*Kodd;
 assert Red(Kodd) eq oddF;
-oddMN := Transpose(Kodd); oddG := ChangeRing(oddMN, GG);
+oddMN := Transpose(Kodd);
 print "S15|odd cubics reduce to the stored basis mod p";
 
-ellG := [GG!Q2Z(c) : c in branch_parameter_linear_form];
-function Vals(x, w, top)
-    lv := &+[ellG[j]*x[j] : j in [1..16]];
-    odd := Eltseq(Matrix(GG, 1, 75, Mons(x, st_exps3))*oddG);
-    wl := w*InvG(lv);
-    v1 := Mons(x, st_exps2) cat [wl*c : c in odd];
-    v2 := [v1[pr[1]]*v1[pr[2]] : pr in st_pairs2];
-    if top eq 2 then return v1, v2, 0, 0; end if;
-    v3 := [v1[pr[1]]*v2[pr[2]] : pr in st_pairs3];
-    v4 := [v1[pr[1]]*v3[pr[2]] : pr in cub_pairs4];
-    return v1, v2, v3, v4;
-end function;
+load "padic_vals.m";
 c1 := []; c2 := []; c3 := []; c4 := [];
 for z in lifted do
     v1, v2, v3, v4 := Vals(z[1], z[2], 4);
@@ -183,25 +82,6 @@ delete c1, c2, c3, c4;
 assert Rank(Red(G1)) eq 81 and Rank(Red(G2)) eq 201 and Rank(Red(G3)) eq 321 and Rank(Red(G4)) eq 441;
 printf "S15|ranks 81, 201, 321, 441 mod p [%o s]\n", Cputime(started);
 
-// Branch data over Z/p^N.
-UA<a> := PolynomialRing(ZN);
-fA := UA![Q2Z(c) : c in fiber_nonic_coefficients]; fA := fA*LeadingCoefficient(fA)^-1;
-A<aa> := quo<UA | fA>;
-function Coefs(v)
-    s := Coefficients(UA!v); s cat:= [ZN!0 : i in [#s+1..9]];
-    return s;
-end function;
-s3 := ZN!st_sqrt_minus3; e := 1;
-while e lt N do s3 := (s3 - 3*s3^-1)*(ZN!2)^-1; e *:= 2; end while;
-assert s3^2 eq ZN!-3;
-bpt := [A!UA![Q2Z(c) : c in row] : row in fiber_point_coordinates];
-wr := s3*(A!UA![Q2Z(c) : c in branch_branch_ratio]);
-ev2b := Mons(bpt, st_exps2);
-ev3b := Eltseq(Matrix(A, 1, 75, Mons(bpt, st_exps3))*ChangeRing(oddMN, A));
-plus1 := ev2b cat [wr*v : v in ev3b]; minus1 := ev2b cat [-wr*v : v in ev3b];
-bp1 := Matrix(ZN, [Coefs(v) : v in plus1]); bm1 := Matrix(ZN, [Coefs(v) : v in minus1]);
-assert Red(bp1) eq Matrix(Fp, st_branch_plus) and Red(bm1) eq Matrix(Fp, st_branch_minus);
-bp2 := Matrix(ZN, [Coefs(plus1[pr[1]]*plus1[pr[2]]) : pr in st_pairs2]);
 printf "S15|branch data lifted; reductions match the state [%o s]\n", Cputime(started);
 
 // q in L(D0 - Dminus), B = Dplus + Q, L(4*D0 - B).
@@ -228,12 +108,25 @@ while npair lt 39 do
     Append(~Scols, [s[1] : s in prs]); Append(~Scols, [s[2] : s in prs]);
     npair +:= 1;
 end while;
+// The rational point of S: no rational point of Y above it (h a non-cube mod p)
+// and not above G, so that v' = lambda*beta1*v is a unit at all points of Y used later.
+function FpVal(g)
+    s := Pair(g); assert (ZZ!s[2]) mod p eq 0;
+    return Fp!(ZZ!s[1]);
+end function;
+gbases := {[Fp!c : c in z[1..16]] : z in ym_G_points};
 ri := 0;
 repeat
-    ri +:= 1;
+    ri +:= 1; found := false;
     ok, x, w := LiftPoint(plist[ratpts[ri]]);
-until ok;
-v1, v2 := Vals(x, w, 2);
+    if not ok or [FpVal(c) : c in x] in gbases then continue; end if;
+    v1, v2, v3, v4 := Vals(x, w, 4);
+    qo := &+[cub_q_coefficients[j]*FpVal(v1[j]) : j in [1..81]];
+    uo := &+[cub_u_coefficients[j]*FpVal(v4[j]) : j in [1..441]];
+    if qo eq 0 or uo eq 0 then continue; end if;
+    found := (cub_norm_scalar*uo/qo)^((p-1) div 3) ne 1;
+until found;
+printf "S15|rational point of S: state point %o (no rational point of Y above)\n", ratpts[ri];
 prs := [Pair(g) : g in v2];
 assert &and[s[2] eq 0 : s in prs];
 Append(~Scols, [s[1] : s in prs]);
@@ -333,12 +226,32 @@ assert lhs eq cN*rhs;
 ratio := (Fp!(ZZ!cN))/(Fp!cub_norm_scalar);
 printf "S15|norm identity u*tau(u) = c*f^3*q*tau(q) holds at all points; c'/c is a cube mod p: %o [%o s]\n", IsPower(ratio, 3), Cputime(started);
 
+// A fixed r in L(2*D0 - E') and T0 = L(2*D0 - R''), div(r) = E' + R'' - 2*D0:
+// functions with poles on E' are written t/r, t in T0.
+// r must be a unit at the points of X below the stored points of Y and at pi^*G.
+ycols := [];
+for z in [[DecE(c) : c in y[1..17]] : y in ym_points] cat [[k4!(Fp!c) : c in y] : y in ym_G_points] do
+    ok, x, w := LiftPoint(z); assert ok;
+    v1, v2 := Vals(x, w, 2); Append(~ycols, v2);
+    v1, v2 := Vals(x, -w, 2); Append(~ycols, v2);
+end for;
+VY := RealMatrix(ycols); delete ycols;
+tries := 0;
+repeat
+    rcN := Vector(ZN, [Random(0, p-1) : i in [1..81]])*WRc;
+    rvN := rcN*G2; tries +:= 1;
+until IsUnitVec(rvN) and IsUnitVec(rcN*VY);
+printf "S15|r in L(2*D0 - E') without zeros at the %o points below Y and G (%o trials) [%o s]\n", Ncols(VY) div 2, tries, Cputime(started);
+T0N := QuotN(WR, ScaleRows(G2, rvN), G2, 81);
+Tc0N := SolN(G2, T0N);
+printf "S15|L(2*D0 - R''): 81 [%o s]\n", Cputime(started);
 function IntSeq(v) return [ZZ!c : c in Eltseq(v)]; end function;
 function IntMat(M) return [IntSeq(r) : r in Rows(M)]; end function;
 PrintFile(OUT, Sprintf("lx_p := %o;\nlx_N := %o;\nlx_c := %o;", p, N, ZZ!cN) : Overwrite := true);
 PrintFile(OUT, Sprintf("lx_odd := %o;", IntMat(Kodd)));
 PrintFile(OUT, Sprintf("lx_q := %o;\nlx_u := %o;\nlx_f := %o;", IntSeq(qcoef), IntSeq(ucoef), IntSeq(fcoef)));
 PrintFile(OUT, Sprintf("lx_WR := %o;", IntMat(WRc)));
+PrintFile(OUT, Sprintf("lx_r := %o;\nlx_T0 := %o;", IntSeq(rcN), IntMat(Tc0N)));
 PrintFile(OUT, Sprintf("lx_beta1_num := %o;\nlx_beta1_den := %o;", IntSeq(bc[1]), IntSeq(rc)));
 printf "S15|written %o [%o s]\n", OUT, Cputime(started);
 print "DONE|15_LIFT_X";
