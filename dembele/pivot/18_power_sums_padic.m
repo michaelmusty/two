@@ -26,8 +26,9 @@ end function;
 sums := [ZN!0 : k in [1..KMAX]]; count := 0; seen := {}; rk := {};
 for fn in Split(GetEnv("LIST"), ",") do
     body := Read(fn);
-    i0 := Position(body, "<");
+    i0 := Position(body, "\n<");
     if i0 eq 0 then continue; end if;
+    i0 +:= 1;
     j0 := #body; while body[j0] ne ">" do j0 -:= 1; end while;
     for rec in eval ("[* " cat body[i0..j0] cat " *]") do
         assert not <rec[1], rec[2]> in seen; Include(~seen, <rec[1], rec[2]>);

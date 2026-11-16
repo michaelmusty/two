@@ -13,6 +13,26 @@ the frozen-replay requirement; logs are kept, and DECISIONS, HANDOFF and
 REFERENCES are updated as work proceeds. All earlier frozen artifacts stay
 untouched. Blocks below this one are historical.
 
+**D166-D168 sources (2026-11-16), step 4 of the pivot.**
+
+- **[method]** Kamal Khuri-Makdisi, evaluation-representation arithmetic
+  on Jacobians (the papers already listed below). Used mod 673 for the
+  torsion points and the enumeration of V_b (scripts 08-12); the
+  operations "product of section spaces" and "quotient {s : s A in B}"
+  are also the building blocks of the 673-adic lift (scripts 15-16,
+  `dembele/pivot/padic_lib.m`). Not re-read for D166-D168.
+- **[idea, not the algorithm]** Nicolas Mascot, p-adic lifting of torsion
+  points for Galois representations (entries below). The pivot takes
+  from it the plan "torsion mod p, lift p-adically, evaluate a rational
+  function, recognize". The lifting itself is different here: Newton on
+  small quadratic systems (cube system on X; g g' = h^2 in G44 per
+  point) with Hensel-lifted linear algebra, written for this project
+  (D166-D168). No code of Mascot's is used on this track.
+- **[data]** D68, D70, D76, D77 exact files of this repository (curve,
+  marks, rational double cover, Veronese forms, B3 fibre): the only
+  characteristic-zero input of the lift
+  (`dembele/pivot/exact_lists.m`).
+
 **D158 sources (2026-11-13).**
 
 - **[method, motivation for the pivot]** Shaowu Zhang,
