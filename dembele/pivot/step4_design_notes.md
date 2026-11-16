@@ -111,3 +111,25 @@ their multiplication to precision N, i.e. the 673-adic model of Y over C
 Z_673 only (constants of degree 1). The third can be lifted by the same
 device on X (cubes instead of squares). Cost estimates are in D166 and
 are not measured.
+
+## 7. The third as a cube system on X (script 13, passed mod 673)
+
+With S = 79 auxiliary points of X, L(E_R - S) is 2-dimensional; the four
+functions c_ijk = beta_i beta_j beta_k u lie in U = L(4 D0 - 3S - B)
+(84-dim) and satisfy the twisted-cubic relations; the linearized
+relations have rank 332 of 336, kernel 4 = the GL_2 gauge (log
+`results/cube_system673_log.txt`, 6 s). So the cubic cover is also an
+isolated solution of a small quadratic system, over Z_673 (constants of
+degree 1). For the lift, S must be replaced by an exactly defined divisor
+(or by points lifted to Z_673; the class of the solution does not depend
+on S, only the functions do).
+
+Work packages for the lift (none started):
+1. X-level section spaces over Z/673^N as value vectors at lifted points
+   (port of script 03; the odd cubics lifted by linear algebra).
+2. Branch data Dplus, Dminus over Z/673^N (nonic algebra).
+3. Newton lift of the c_ijk; recover E_R, u, q, f at precision N.
+4. G44, G88, multiplication, trace to C, leading coefficient at P32.
+5. Newton lift of the g_ij for each Frobenius orbit of V_b, over W_N(K).
+6. An exact Q-basis of L_C(44 P32).
+7. F_256-structure and recognition of the coefficients.
