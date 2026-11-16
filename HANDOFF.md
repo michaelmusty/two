@@ -10,6 +10,13 @@ scripts 10, 11, 13 (in `pivot_cover17/`), 14. Next: the work packages in
 `dembele/pivot/step4_design_notes.md` section 7, with the per-point
 system of section 8, first at N = 2.
 
+Update 2026-11-16 06:00 UTC: the enumeration finished. All 16 jobs end
+with `control ... true`; 3855 records, 3855 distinct labels, 3855
+distinct f_x, one G44 basis checksum (15772820). Files
+`two_remote_magma/pivot_tors/vb_<k>.txt` (82 MB, on Chatelet only;
+sha256 in `dembele/pivot/results/enumeration673_log.txt`). No Chatelet
+job is running.
+
 <!-- D166, 2026-11-16 -->
 
 **Resume here (2026-11-16): evaluation function and tangency system pass mod 673 (D166).**
