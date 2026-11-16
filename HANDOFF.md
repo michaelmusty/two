@@ -11,7 +11,11 @@ outputs `lx_in.m`, `ly_in.m`, `fx.txt`. Script 16 spends 80 s in the
 mod-673 header. Per point: about 6 s at N = 2, 40 s at N = 32.
 Launch only detached (`nohup ./chain.sh N &` inside a subshell); a job
 started inside a remote command without `nohup` dies with the command.
-Running: `chain.sh 213` (about 2 kbit). Next: (1) time one point at
+Update 08:00 UTC: `chain.sh 213` passed (cube system, G44, two points:
+all residuals zero mod 673^213; 122 s per point alone). Running since
+08:00 UTC: `./full.sh 213` (31 jobs of script 17 over all 3855 records,
+outputs `prec_213/fx_<k>_<first>.txt`, then script 18 into
+`prec_213/s18.out`, last line `FULL_DONE`); estimate 6-8 hours. Next: (1) time one point at
 N = 213; (2) run all 3855 records (31 jobs over `vb_<k>.txt`);
 (3) script 18: r(x) = ratio of the Laurent coefficients t^-42 / t^-43
 of f_x, e_1 = sum of traces over all records, recognition in Q,
