@@ -112,11 +112,11 @@ function LiftRecord(rec)
     Xinv := WInvStep(XJac(x, DM, I, Jc), Xinv);
     assert WIsZero(XRes(x, DM));
     // phase B: precision p^N, M0 digits per step
-    x := WRing(x, ZN); XinvN := WRing(Xinv, ZN); steps := 0;
+    x := WRing(x, ZN); XinvN := WPre(WRing(Xinv, ZN)); steps := 0;
     for it in [1..(N div M0) + 3] do
         F := XRes(x, DN);
         if WIsZero(F) then break; end if;
-        Update(~x, I, WMul(WCols(F, Jc), XinvN)); steps +:= 1;
+        Update(~x, I, WMulPre(WCols(F, Jc), XinvN)); steps +:= 1;
     end for;
     assert WIsZero(XRes(x, DN));
     t1 := Cputime();
@@ -138,12 +138,12 @@ function LiftRecord(rec)
     X2 := WFromField(Cols_(AKI, Jc2)^-1, ZM);
     e := 1;
     while e lt 2*M0 do X2 := WInvStep(A2, X2); e *:= 2; end while;
-    X2N := WRing(X2, ZN);
+    X2N := WPre(WRing(X2, ZN));
     y := WFromField(Matrix(y0), ZN);
     for it in [1..(N div M0) + 3] do
         r := YRes(y, DN, g, h);
         if WIsZero(r) then break; end if;
-        Update(~y, I2, WMul(WCols(r, Jc2), X2N));
+        Update(~y, I2, WMulPre(WCols(r, Jc2), X2N));
     end for;
     r, ga, gb := YRes(y, DN, g, h);
     assert WIsZero(r);

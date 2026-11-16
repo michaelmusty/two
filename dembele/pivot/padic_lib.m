@@ -98,13 +98,16 @@ function ProductN(A, B, dim)
 end function;
 // {s in V : s*A in B}
 function QuotN(A, B, V, dim)
+    // Conditions from several random multipliers are stacked until the kernel
+    // mod p has the expected dimension; only then is the kernel lifted (a single
+    // multiplier with a zero mod p on the base locus would make the rank jump).
     eqs := Transpose(KerN(Transpose(B)));
-    current := V;
+    cons := ZeroMatrix(BaseRing(V), Nrows(V), 0);
     for trial in [1..16] do
-        ker := KerN(ScaleRows(current, RandSec(A))*eqs);
-        current := ker*current;
-        assert Nrows(current) ge dim;
-        if Nrows(current) eq dim then return current; end if;
+        cons := HorizontalJoin(cons, ScaleRows(V, RandSec(A))*eqs);
+        d := Nrows(V) - Rank(Red(cons));
+        assert d ge dim;
+        if d eq dim then return KerN(cons)*V; end if;
     end for;
     error "QuotN: dimension not reached";
 end function;
@@ -131,13 +134,16 @@ function ProductP(A, B, dim)
     error "ProductP: dimension not reached";
 end function;
 function QuotP(A, B, V, dim)
+    // Conditions from several random multipliers are stacked until the kernel
+    // mod p has the expected dimension; only then is the kernel lifted (a single
+    // multiplier with a zero mod p on the base locus would make the rank jump).
     eqs := Transpose(KerN(Transpose(B)));
-    current := V;
+    cons := ZeroMatrix(BaseRing(V), Nrows(V), 0);
     for trial in [1..16] do
-        ker := KerN(ScaleP(current, RandSec(A))*eqs);
-        current := ker*current;
-        assert Nrows(current) ge dim;
-        if Nrows(current) eq dim then return current; end if;
+        cons := HorizontalJoin(cons, ScaleP(V, RandSec(A))*eqs);
+        d := Nrows(V) - Rank(Red(cons));
+        assert d ge dim;
+        if d eq dim then return KerN(cons)*V; end if;
     end for;
     error "QuotP: dimension not reached";
 end function;
