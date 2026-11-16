@@ -1,5 +1,22 @@
 # Session handoff
 
+<!-- D168, 2026-11-16 -->
+
+**Resume here (2026-11-16, 07:00 UTC): the 673-adic lift passes at N = 1, 2, 5, 32 (D168).**
+Chain on Chatelet, directory `two_remote_magma/pivot_lift/`:
+`./chain.sh N [FIRST LAST]` runs scripts 15, 16, 17 in `prec_N/`
+(inputs linked from the parent; records FIRST..LAST of
+`../pivot_tors/vb_0.txt`). Logs `prec_N/s15.out`, `s16.out`, `s17.out`;
+outputs `lx_in.m`, `ly_in.m`, `fx.txt`. Script 16 spends 80 s in the
+mod-673 header. Per point: about 6 s at N = 2, 40 s at N = 32.
+Launch only detached (`nohup ./chain.sh N &` inside a subshell); a job
+started inside a remote command without `nohup` dies with the command.
+Running: `chain.sh 213` (about 2 kbit). Next: (1) time one point at
+N = 213; (2) run all 3855 records (31 jobs over `vb_<k>.txt`);
+(3) script 18: r(x) = ratio of the Laurent coefficients t^-42 / t^-43
+of f_x, e_1 = sum of traces over all records, recognition in Q,
+Q(sqrt 2), F by LLL at each of the 8 embeddings.
+
 <!-- D167, 2026-11-16 -->
 
 **Resume here (2026-11-16, 04:00 UTC): lifting route fixed in outline (D167).**

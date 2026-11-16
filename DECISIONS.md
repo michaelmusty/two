@@ -1,5 +1,30 @@
 # Decision log
 
+<!-- D168 -->
+
+**D168 (2026-11-16): the 673-adic lift works end to end at low precision; lift on X through a pinned representative E' = S + S'_1.**
+Scripts 15 (X level), 16 (Y model, G44, L_C(44 P32)), 17 (per point)
+with `padic_lib.m`, `padic_points.m`, `padic_vals.m`, `witt_lib.m`
+([notes, section 9](dembele/pivot/step4_design_notes.md)). Everything
+is lifted by linear algebra over Z/673^N from exact data, plus Newton
+on the cube system (X) and on g g' = h^2 (per point); the function
+value is given by Laurent coefficients of f_x at P32, which are global
+functionals. Checks at N = 1, 2, 5, 32: every lifted kernel is verified
+exactly; the cube system and the norm identity hold at all evaluation
+points; the lifted L(D0_Y) and G44 reduce to the stored spaces; for two
+points of V_b all 678 equations of the 197-unknown system vanish mod
+673^N, the traces lie in L_C(44 P32), and f_x reduces to the stored
+value. Choices: (a) the effective representative of the third is
+E' = S + S'_1 with S = 79 lifted points (39 conjugate pairs and one
+rational point with no rational point of Y above), not the E_R of
+script 05, which has no p-adic pinning; (b) evaluation at conjugate
+pairs of F_673^2-points in real coordinates, so that all matrices are
+over Z/673^N; (c) quotient spaces are lifted only after stacking
+multipliers until the kernel mod p has the Riemann-Roch dimension (a
+single multiplier caused a rank jump at N = 5); (d) products over
+W_N(F_673^17) by evaluation at 33 points. Not done: all orbits, the
+recognition of e_1, the F_256-structure.
+
 <!-- D167 -->
 
 **D167 (2026-11-16): per-point system reduced to 199 unknowns; staged precision.**

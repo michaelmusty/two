@@ -156,3 +156,46 @@ F_256-structure and has the height of a single value. That measures the
 height and decides the coefficient field (Q(sqrt 2) or F) before any
 high-precision run. Per-point cost at 170 kbit is estimated at 2-3 hours
 with a frozen low-precision inverse and linear iteration (not measured).
+
+## 9. The lift as implemented (D168; scripts 15-17)
+
+Representation. X-level functions are value vectors at 512 points of X
+over F_673^2 (256 tau-orbits of conjugate pairs), lifted by Hensel; a
+value a + b*theta at a pair is stored as two columns over Z/673^N, so
+all linear algebra is over Z/673^N (`padic_lib.m`). Kernels are lifted
+from mod-p pivots and verified exactly.
+
+X level (script 15). Odd cubics: cubic forms g on C with g*lambda_i in
+ell*cubics (B3 linear forms; vanishing on U) and g*D, g*E in F*cubics
+(D76 Veronese forms F = s0^2, D = s0 s1, E = s0 s2; vanishing on E).
+Branch data from the exact nonic algebra. The third: S = 79 lifted
+points; U = L(4 D0 - 3S - B); the four c_ijk solve the cube system
+(336 unknowns, 4 pinned, frozen Jacobian). Then E' = S + S'_1 with
+L(2 D0 - E') = {g in L(2 D0 - S) : g c_112 in c_111 L(2 D0)}, Kummer
+function h' = c' c_111 / q, norm function f', scalar c' (norm identity
+checked at all points), r in L(2 D0 - E') and T0 = L(2 D0 - R'').
+
+Y level (script 16). Points of Y: v' = lambda beta1 v mod p (lambda^3 =
+c'/c, fixed by a' = lambda^2 beta1 tau(beta1) a), then Hensel. Sections
+of pi^*(2H - G): s0 + s1 v' + tau(s1) a'/v' with s1 = t/r,
+t in L(2 D0 - R'' - Dminus - pi^*G). The space reduces to the stored
+`ym_W1` space; the basis is changed to reduce to the stored basis. G44
+by the same quotient as mod p, with Q and A_N from the 22 jets at P32
+over Z/673^N; the basis reduces to the stored one (checksum 15772820).
+L_C(44 P32) with values at the fibre base points and the Laurent
+coefficients t^-44..t^0 in the parameter t at P32 (anchor and parameter
+coordinates as in LocalCoordinates).
+
+Per point (script 17), W = W_N(F_673^17) in coordinates (`witt_lib.m`).
+From the stored g_ij: a, b with s_A = sum a_i s_i, s_B = sum b_i s_i
+vanishing at two points of fibre 1, 2; Newton on g g' = h^2 (199
+unknowns, 2 pinned; quadratic to 673^16, then 16 digits per step with
+the frozen inverse); a third section through the linear system
+gamma h = g gamma' (138 unknowns, kernel of rank 3); the six products
+s s'/phi' at 115 complete fibres, traces, coordinates in L_C(44 P32)
+(115 equations, 29 unknowns, checked), Laurent coefficients; kernel of
+the 3 x 3 leading-coefficient matrix by a cross product; f_x. The
+coefficient of t^-44 of f_x vanishes; the first nonzero one is t^-43.
+
+Function for the polynomial (proposal, not yet used): r(x) = ratio of
+the coefficients of t^-42 and t^-43 of f_x.
