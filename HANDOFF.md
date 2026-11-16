@@ -15,7 +15,12 @@ Update 08:00 UTC: `chain.sh 213` passed (cube system, G44, two points:
 all residuals zero mod 673^213; 122 s per point alone). Running since
 08:00 UTC: `./full.sh 213` (31 jobs of script 17 over all 3855 records,
 outputs `prec_213/fx_<k>_<first>.txt`, then script 18 into
-`prec_213/s18.out`, last line `FULL_DONE`); estimate 6-8 hours. Next: (1) time one point at
+`prec_213/s18.out`, last line `FULL_DONE`); estimate 6-8 hours.
+Correction 07:30 UTC: the 31 jobs of `full.sh 213` were killed while
+loading (project memory peaked at 64 GB; no kernel OOM record). Relaunched
+as `./full2.sh 213` (starts 20 s apart, about 1 GB per job); markers
+`prec_213/running_<k>_<first>`; log `full2_213.log`. Job 0_1 was started
+by hand and is not a child of `full2.sh`. Next: (1) time one point at
 N = 213; (2) run all 3855 records (31 jobs over `vb_<k>.txt`);
 (3) script 18: r(x) = ratio of the Laurent coefficients t^-42 / t^-43
 of f_x, e_1 = sum of traces over all records, recognition in Q,
