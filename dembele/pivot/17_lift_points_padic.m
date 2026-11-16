@@ -7,8 +7,8 @@
 //     linear system gamma*h = g*gamma' (kernel of rank 3, 3 coordinates pinned).
 //  3. Trace forms b(s,s') in L_C(44*P32) from the complete fibres, their Laurent
 //     coefficients at P32; the radical of the leading coefficient gives s_x and
-//     f_x = b(s_x,s_x). Output: Laurent coefficients t^-44..t^0 of f_x (global
-//     functionals, up to one scalar per point).
+//     f_x = b(s_x,s_x). Output: Laurent coefficients t^-43..t^-38 of f_x (global
+//     functionals, up to one scalar per point; the coefficient of t^-44 is zero).
 // All linear solves use an inverse at precision p^M0 (M0 = min(N,16)) and
 // iterative refinement; all residuals are checked at every evaluation point.
 // Files: ly_in.m (script 16), padic_lib.m, witt_lib.m. Env: PREC, VB, FIRST,
@@ -191,13 +191,15 @@ i0 := Position(body, "<"); j0 := #body;
 while body[j0] ne ">" do j0 -:= 1; end while;
 recs := eval ("[* " cat body[i0..j0] cat " *]");
 printf "S17|N = %o, M0 = %o; %o records in %o; records %o..%o [%o s]\n", N, M0, #recs, VB, FIRST, LAST, Cputime(started);
-PrintFile(OUT, Sprintf("// f_x Laurent coefficients t^-44..t^0 at P32 modulo %o^%o; <mask1, mask2, 45 x 17 integers>", p, N) : Overwrite := true);
+NCOEF := 6;
+PrintFile(OUT, Sprintf("// f_x Laurent coefficients t^-43..t^-%o at P32 modulo %o^%o; <mask1, mask2, %o x 17 integers>", 44 - NCOEF, p, N, NCOEF) : Overwrite := true);
 for ri in [FIRST..Min(LAST, #recs)] do
     rec := recs[ri];
     fL, okp, steps, tm := LiftRecord(rec);
     fK := WToField(fL);
     supp := [j : j in [1..Ncols(fK)] | fK[1, j] ne 0];
-    PrintFile(OUT, Sprintf("<%o, %o, %o>,", rec[1], rec[2], [[ZZ!fL[i][1, j] : i in [1..WD]] : j in [1..Ncols(fL[1])]]));
+    assert &and[fL[i][1, 1] eq 0 : i in [1..WD]];      // the coefficient of t^-44 vanishes exactly
+    PrintFile(OUT, Sprintf("<%o, %o, %o>,", rec[1], rec[2], [[ZZ!fL[i][1, j] : i in [1..WD]] : j in [2..NCOEF+1]]));
     printf "S17|record %o (%o,%o): Newton steps %o; all residuals zero mod p^%o; reduces to the stored f_x: %o; first nonzero Laurent index mod p: %o; times %o\n", ri, rec[1], rec[2], steps, N, okp, supp[1], tm;
     assert okp;
 end for;
