@@ -1,0 +1,28 @@
+# 15_lift_X_padic.m on Chatelet, 2026-11-16 (two_remote_magma/pivot_lift)
+## PREC=1
+S15|N = 1; 393 orbits of size 4, 62 rational points in the state [0.110 s]
+S15|512 evaluation points lifted (orbits used up to 256) [0.840 s]
+S15|odd cubics: dimension 36 (expected 36) [1.110 s]
+S15|odd cubics reduce to the stored basis mod p
+S15|ranks 81, 201, 321, 441 mod p [1.830 s]
+S15|branch data lifted; reductions match the state [1.840 s]
+S15|L(4*D0 - B): 321 [1.960 s]
+S15|L(6*D0 - 3*S): 444 [2.160 s]
+S15|U = L(4*D0 - 3*S - B): dimension 84 (expected 84) [2.350 s]
+S15|L(E_R - S) mod p: dimension 2 (expected 2)
+S15|the four c_ijk mod p lie in U mod p
+S15|cube system: 336 unknowns, rank 332 mod p (expected 332) [2.500 s]
+S15|cube system solved mod p^1 in 0 steps (all 3072 equations vanish) [2.580 s]
+S15|L(2*D0 - E'): dimension 81 (expected 81)
+S15|E' is linearly equivalent to the stored E_R mod p: true [2.680 s]
+S15|norm identity u*tau(u) = c*f^3*q*tau(q) holds at all points; c'/c is a cube mod p: true [2.820 s]
+S15|written lx_1.m [2.820 s]
+DONE|15_LIFT_X
+## PREC=2, 5, 16 (final lines)
+S15|cube system solved mod p^2 in 1 steps (all 3072 equations vanish) [3.100 s]
+S15|norm identity u*tau(u) = c*f^3*q*tau(q) holds at all points; c'/c is a cube mod p: true [3.350 s]
+S15|cube system solved mod p^5 in 4 steps (all 3072 equations vanish) [11.400 s]
+S15|norm identity u*tau(u) = c*f^3*q*tau(q) holds at all points; c'/c is a cube mod p: true [13.140 s]
+S15|cube system solved mod p^16 in 15 steps (all 3072 equations vanish) [20.780 s]
+S15|norm identity u*tau(u) = c*f^3*q*tau(q) holds at all points; c'/c is a cube mod p: true [25.290 s]
+## consistency: lx_16.m reduces to lx_5.m modulo 673^5 (c, u, WR, odd cubics): true
