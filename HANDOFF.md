@@ -1,5 +1,18 @@
 # Session handoff
 
+<!-- D165, 2026-11-15 -->
+
+**Resume here (2026-11-15, 22:15 UTC): V_b mod 673 is in hand (D165).**
+Points: `two_remote_magma/pivot_tors/pt{11,13,14,15,16}.pt` (sha256 in
+`dembele/pivot/results/torsion_points673_log.txt`); pt11 and any other
+span V_b with Frobenius conjugates (`results/span_check673_log.txt`,
+script `dembele/pivot/09_span_check_modp.m`). No Chatelet job is running.
+Next, in order (see `dembele/pivot/step4_design_notes.md`): (1) implement
+the global evaluation function mod 673 and test Frobenius equivariance;
+(2) Weil pairing on V_b, isotropic F_2[Frob]-lines; (3) prototype
+arithmetic over W_N(F_673^17) for N = 2, 4, 8 and measure cost; (4)
+decide feasibility of the lift. Nothing of step 4 is computed yet.
+
 <!-- D164, 2026-11-15 -->
 
 **Update (2026-11-15, 17:00 UTC): scans done; route unchanged (D164).**

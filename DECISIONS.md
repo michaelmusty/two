@@ -1,5 +1,23 @@
 # Decision log
 
+<!-- D165 -->
+
+**D165 (2026-11-15): V_b mod 673 is spanned; step 4 feasibility is open.**
+Five points from script 08 (seeds 11, 13-16; about 16 CPU-hours each, five
+in parallel) are nonzero, 2-torsion and killed by g(Frob), g = u^8+u^7+
+u^6+u^4+u^2+u+1. Script 09: none of pt13-pt16 is one of the 255
+F_2[Frob]-multiples of pt11 (control: the Gray-code walk ends at Frob^7
+pt11), so pt11 with any one of them and their Frobenius conjugates span
+the 16-dimensional V_b. Design of step 4:
+[notes](dembele/pivot/step4_design_notes.md). Decisions: build the
+evaluation function from the exact curve C (pushforward of the effective
+divisor in |x + pi^*M + R2|), because the Y model mod 673 is not global;
+determine the Hecke F_256-structure among finitely many candidates after
+lifting; measure cost against 673-adic precision on a prototype before
+committing to the lift. Alternative considered and rejected: multiply an
+arbitrary lift by p^(N-1) (about 14N additions at full precision).
+Open risk: the coefficient height, hence the precision, is unknown.
+
 <!-- D164 -->
 
 **D164 (2026-11-15): scans at 7 and 47 finished; stay at 673, keep 7 as a fallback.**
