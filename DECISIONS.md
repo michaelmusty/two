@@ -1,5 +1,19 @@
 # Decision log
 
+<!-- D167 -->
+
+**D167 (2026-11-16): per-point system reduced to 199 unknowns; staged precision.**
+Script 13: the third is an isolated solution of a cube system on X (336
+unknowns, kernel 4 = gauge). Script 14: each point of V_b is an isolated
+solution of g g' = h^2 in subspaces of G44 (199 unknowns, kernel 2 =
+scalings), tested on two points. The 414-unknown system of D166 is
+dropped for cost (measured W_N products: 2 ms at 9.4 kbit, 16 ms at 47
+kbit). Plan: precision is a parameter; first all orbits at about 2 kbit
+and recognition of the single sum e_1, which measures the height and the
+coefficient field before a high-precision run
+([notes, sections 7-8](dembele/pivot/step4_design_notes.md)).
+Enumeration of V_b mod 673 (script 12, 16 jobs) is running.
+
 <!-- D166 -->
 
 **D166 (2026-11-16): evaluation function verified mod 673; lift by a tangency system, not by Jacobian arithmetic on Y.**

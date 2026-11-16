@@ -1,5 +1,15 @@
 # Session handoff
 
+<!-- D167, 2026-11-16 -->
+
+**Resume here (2026-11-16, 04:00 UTC): lifting route fixed in outline (D167).**
+Running on Chatelet in `two_remote_magma/pivot_tors/`: 15 jobs of
+`12_enumerate_Vb_modp.m` (`en<k>.out`, results `vb_<k>.txt`, k = 0..14;
+`vb_15.txt` is done), about 256 points each. Tests passed mod 673:
+scripts 10, 11, 13 (in `pivot_cover17/`), 14. Next: the work packages in
+`dembele/pivot/step4_design_notes.md` section 7, with the per-point
+system of section 8, first at N = 2.
+
 <!-- D166, 2026-11-16 -->
 
 **Resume here (2026-11-16): evaluation function and tangency system pass mod 673 (D166).**

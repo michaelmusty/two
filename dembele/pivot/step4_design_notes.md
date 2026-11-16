@@ -133,3 +133,26 @@ Work packages for the lift (none started):
 5. Newton lift of the g_ij for each Frobenius orbit of V_b, over W_N(K).
 6. An exact Q-basis of L_C(44 P32).
 7. F_256-structure and recognition of the coefficients.
+
+## 8. Smaller per-point system and a staged precision plan (D167)
+
+Measured (Chatelet, Magma): one product in W_N(F_673^17) takes 2 ms at
+N = 1000 (9.4 kbit) and 16 ms at N = 5000 (47 kbit), schoolbook over the 17
+coefficients. A 405-dimensional linear solve per point at 170 kbit would
+cost days, so the 414-unknown system of section 6 is too large.
+
+Smaller system (script 14, passed mod 673 on pt11 and pt13): take two
+complete rational fibres of Y -> C; s_A, s_B in S_x vanish at two points of
+the first, resp. second fibre; g = s_A^2/phi, g' = s_B^2/phi,
+h = s_A s_B/phi lie in G44 with those simple zeros imposed (dimensions
+67, 67, 65) and satisfy g g' = h^2. Linearization: 199 unknowns, rank 197,
+kernel 2 = the two scalings. The fibres need not be global; f_x is then
+obtained from g by a second, linear step (S_x from s_A: not yet written).
+
+Staged plan. Build the pipeline with the precision as a parameter; run all
+3855 orbits first at low precision (about 2 kbit); try to recognize
+e_1 = sum of r(x) over all nonzero x in V_b, which does not depend on the
+F_256-structure and has the height of a single value. That measures the
+height and decides the coefficient field (Q(sqrt 2) or F) before any
+high-precision run. Per-point cost at 170 kbit is estimated at 2-3 hours
+with a frozen low-precision inverse and linear iteration (not measured).
