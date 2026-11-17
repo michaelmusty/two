@@ -1,5 +1,24 @@
 # Decision log
 
+<!-- D170 -->
+
+**D170 (2026-11-17): script 17 revised (4 times faster at N = 852); full run at 673^852 launched.**
+The trial at N = 852 on two records passed, at about 3070 s per
+record (137 CPU-days for 3855 records). Instead of launching that,
+the per-point iteration was changed: (i) the quadratic phase doubles
+the working ring p^2, p^4, ..., p^M0 instead of working mod p^M0
+throughout; (ii) in the linear phase the residual F is divisible by
+p^e, and the correction is p^e ((F/p^e) Xinv mod p^M0), so the
+product with the frozen inverse is done mod p^M0 instead of mod p^N;
+(iii) M0 is a parameter (env `M0`). Measured on record (1,0) at
+N = 852: M0 = 32, 64, 128, 256 give 1472, 931, 757, 1070 s. All
+residual checks are unchanged (zero mod p^N at every evaluation
+point), and r(x) agrees mod 673^852 with the output of the old script.
+*Chosen:* M0 = 128, 20 processes (`full3.sh 852 128 20`), about 34
+CPU-days. *Not done:* computing the residual at step e only mod
+p^(e+M0) (would save up to half of the linear phase).
+*Outcome:* pending (run started 06:17 UTC).
+
 <!-- D169 -->
 
 **D169 (2026-11-17): all 3855 orbits lifted to 673^213; the power sums of r(x) are not recognized at that precision; next stage N = 852.**

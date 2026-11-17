@@ -1,5 +1,29 @@
 # Session handoff
 
+<!-- D170, 2026-11-17 -->
+
+**Resume here (2026-11-17, 06:20 UTC): full run at N = 852 in progress (D170).**
+The trial `chain.sh 852 1 2` passed (scripts 15, 16: 7878 s, 1161 s;
+old script 17: about 3070 s per record). Script 17 was revised (env
+`M0` = Newton block, default 16; corrections computed mod p^M0): 757 s
+per record at M0 = 128 (931 s at 64, 1472 s at 32, 1070 s at 256), a
+job holds about 3.5 GB; `19_compare_r.m` gives agreement mod 673^852
+with the trial output `prec_852/fx.txt` on record (1,0).
+Running since 06:17 UTC in `two_remote_magma/pivot_lift/`:
+`./full3.sh 852 128 20` (log `full3_852.log`; 121 chunks of 32 records
+listed in `prec_852/chunks.txt`, 20 processes at a time, outputs
+`prec_852/fx_<k>_<a>.txt`, logs `s17_<k>_<a>.out`). Estimate: about
+40 hours. It then runs script 18 (`prec_852/s18.out`, last line
+FULL_DONE). It is restartable: rerun the same command (from an exec
+with `--timeout 864000`); chunks whose log has a DONE line are
+skipped. Before trusting `s18.out`, count the `S17|record` lines over
+`s17_*_*.out` (must be 3855) and look for `Killed`/errors in
+`full3_852.log`. The old script is `17_old_lift_points_padic.m.bak`
+on Chatelet (and in git history). Test files `fxb_*.txt`,
+`s17b_*.out` in `prec_852/` are from the timing runs.
+Recognition thresholds at N = 852: about 890 bits per coefficient in
+F, 2670 in Q(sqrt 2), 4000 in Q.
+
 <!-- D169, 2026-11-17 -->
 
 **Resume here (2026-11-17, 00:40 UTC): N = 213 complete, recognition negative (D169); N = 852 trial started.**

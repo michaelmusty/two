@@ -9,10 +9,11 @@
 //     coefficients at P32; the radical of the leading coefficient gives s_x and
 //     f_x = b(s_x,s_x). Output: Laurent coefficients t^-43..t^-38 of f_x (global
 //     functionals, up to one scalar per point; the coefficient of t^-44 is zero).
-// All linear solves use an inverse at precision p^M0 (M0 = min(N,16)) and
-// iterative refinement; all residuals are checked at every evaluation point.
+// All linear solves use an inverse at precision p^M0 (M0 = min(N, env M0),
+// default 16) and iterative refinement with corrections computed mod p^M0
+// (D170); all residuals are checked at every evaluation point.
 // Files: ly_in.m (script 16), padic_lib.m, witt_lib.m. Env: PREC, VB, FIRST,
-// LAST, OUT.
+// LAST, OUT, M0 (optional).
 SetQuitOnError(true); SetColumns(0); SetSeed(317);
 started := Cputime();
 N := StringToInteger(GetEnv("PREC")); OUT := GetEnv("OUT"); VB := GetEnv("VB");
@@ -23,7 +24,8 @@ LIBP := p; LIBF := Fp; LC0 := 0; LC1 := 0;
 load "padic_lib.m";
 K := GF(p, 17);
 load "witt_lib.m";
-M0 := Min(N, 16); ZM := Integers(p^M0);
+m0s := GetEnv("M0");
+M0 := Min(N, m0s eq "" select 16 else StringToInteger(m0s)); ZM := Integers(p^M0);
 function ToR(M, R) return ChangeRing(ChangeRing(M, ZZ), R); end function;
 G44N := Matrix(ZN, ly_G44); NG := Ncols(G44N); fibs := ly_fibs; NF := #fibs;
 LfibN := Matrix(ZN, ly_Lfib); LaurN := Matrix(ZN, ly_Laur);
@@ -69,6 +71,16 @@ function XJac(x, D, I, Jc)     // Jacobian rows I, columns Jc
     A1 := Cols_(D[1], Jc); A2 := Cols_(D[2], Jc); A3 := Cols_(D[3], Jc);
     return [Rows_(VerticalJoin(ScaleP(A1, Cols_(gp[i], Jc)[1]), VerticalJoin(ScaleP(A2, Cols_(g[i], Jc)[1]), -2*ScaleP(A3, Cols_(h[i], Jc)[1]))), I) : i in [1..WD]];
 end function;
+// Correction for a residual F divisible by p^e: (F/p^e)*Xinv is computed
+// mod p^M0 only and scaled back (Xinv is an inverse mod p^M0).
+function Corr(F, e, XinvM)
+    pe := p^e;
+    Fz := [ChangeRing(F[i], ZZ) : i in [1..WD]];
+    assert &and[c mod pe eq 0 : c in Eltseq(Fz[i]), i in [1..WD]];
+    Fm := [Matrix(ZM, 1, Ncols(Fz[i]), [c div pe : c in Eltseq(Fz[i])]) : i in [1..WD]];
+    d := WMulPre(Fm, XinvM);
+    return [(ZN!pe)*ChangeRing(ChangeRing(d[i], ZZ), ZN) : i in [1..WD]];
+end function;
 procedure Update(~x, I, d)
     for i in [1..WD] do
         for t in [1..#I] do x[i][1, I[t]] -:= d[i][1, t]; end for;
@@ -101,22 +113,25 @@ function LiftRecord(rec)
     I := IndRows(JK); assert #I eq NU - 2;
     JKI := Rows_(JK, I); Jc := PivCols(JKI);
     // phase A: precision p^M0, quadratic
-    x := WFromField(Matrix(x0), ZM);
-    Xinv := WFromField(Cols_(JKI, Jc)^-1, ZM);
+    x := WFromField(Matrix(x0), Integers(p));
+    Xinv := WFromField(Cols_(JKI, Jc)^-1, Integers(p));
     e := 1;
-    while e lt M0 do
-        Xinv := WInvStep(XJac(x, DM, I, Jc), Xinv);
-        Update(~x, I, WMul(WCols(XRes(x, DM), Jc), Xinv));
-        e *:= 2;
+    while e lt M0 do      // precision doubles, ring p^(2e) at each step
+        e := Min(2*e, M0); Re := Integers(p^e); De := Data(Re);
+        x := WRing(x, Re); Xinv := WRing(Xinv, Re);
+        Xinv := WInvStep(XJac(x, De, I, Jc), Xinv);
+        Update(~x, I, WMul(WCols(XRes(x, De), Jc), Xinv));
     end while;
+    x := WRing(x, ZM); Xinv := WRing(Xinv, ZM);
     Xinv := WInvStep(XJac(x, DM, I, Jc), Xinv);
     assert WIsZero(XRes(x, DM));
+    assert WIsZero(WSub(WMul(XJac(x, DM, I, Jc), Xinv), WOne(ZM, #I)));
     // phase B: precision p^N, M0 digits per step
-    x := WRing(x, ZN); XinvN := WPre(WRing(Xinv, ZN)); steps := 0;
+    x := WRing(x, ZN); XinvM := WPre(Xinv); steps := 0; e := M0;
     for it in [1..(N div M0) + 3] do
         F := XRes(x, DN);
         if WIsZero(F) then break; end if;
-        Update(~x, I, WMulPre(WCols(F, Jc), XinvN)); steps +:= 1;
+        Update(~x, I, Corr(WCols(F, Jc), Min(e, N), XinvM)); steps +:= 1; e +:= M0;
     end for;
     assert WIsZero(XRes(x, DN));
     t1 := Cputime();
@@ -135,15 +150,20 @@ function LiftRecord(rec)
     gM := WRing(g, ZM); hM := WRing(h, ZM);
     G4s := Cols_(DM[4], Jc2);
     A2 := [Rows_(VerticalJoin(ScaleP(G4s, Cols_(hM[i], Jc2)[1]), -ScaleP(G4s, Cols_(gM[i], Jc2)[1])), I2) : i in [1..WD]];
-    X2 := WFromField(Cols_(AKI, Jc2)^-1, ZM);
+    X2 := WFromField(Cols_(AKI, Jc2)^-1, Integers(p));
     e := 1;
-    while e lt 2*M0 do X2 := WInvStep(A2, X2); e *:= 2; end while;
-    X2N := WPre(WRing(X2, ZN));
-    y := WFromField(Matrix(y0), ZN);
-    for it in [1..(N div M0) + 3] do
+    while e lt M0 do
+        e := Min(2*e, M0); Re := Integers(p^e);
+        X2 := WInvStep(WRing(A2, Re), WRing(X2, Re));
+    end while;
+    X2 := WRing(X2, ZM);
+    assert WIsZero(WSub(WMul(A2, X2), WOne(ZM, #I2)));
+    X2M := WPre(X2);
+    y := WFromField(Matrix(y0), ZN); e := 1;
+    for it in [1..(N div M0) + 4] do
         r := YRes(y, DN, g, h);
         if WIsZero(r) then break; end if;
-        Update(~y, I2, WMulPre(WCols(r, Jc2), X2N));
+        Update(~y, I2, Corr(WCols(r, Jc2), Min(e, N), X2M)); e := e eq 1 select M0 else e + M0;
     end for;
     r, ga, gb := YRes(y, DN, g, h);
     assert WIsZero(r);
