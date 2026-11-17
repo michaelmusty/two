@@ -1,5 +1,40 @@
 # Decision log
 
+<!-- D169 -->
+
+**D169 (2026-11-17): all 3855 orbits lifted to 673^213; the power sums of r(x) are not recognized at that precision; next stage N = 852.**
+The campaign of D168 finished: 3855 records, every one with all
+residuals zero mod 673^213 and reducing to the stored f_x; the values
+r(x) mod 673 are pairwise distinct on the orbit representatives
+([log](dembele/pivot/results/power_sums_213_log.txt)). One of the 31
+jobs (records 1..128 of `vb_0`, started by hand) had died at launch;
+it was rerun as 16 jobs (`rerun_job.sh`), and script 18 was rerun on
+the complete set (`s18b.out`; the first output `s18.out` covers 3727
+records and is not a valid sum). Result: p_1, p_2, p_3 are not
+recognized in Q (numerator and denominator below 1000 bits), in
+Q(sqrt 2) (coefficients below 666 bits) or in F at any of the 8
+embeddings (coefficients below 221 bits); the LLL vectors have the
+size expected for a random residue. Control for a dependence on
+auxiliary choices (`chain_alt.sh`, `19_compare_r.m`): a run at N = 5
+with another seed in script 15 (another r, hence another T0 and
+s1-space) and other points of fibres 1, 2 for s_A, s_B gives the same
+r(x) mod 673^5 on three records. An attempted control with other
+points S did not run (the loop choosing r does not terminate when S
+is shifted by 20 orbits; other shifts exceed the list of orbits), so
+independence of S is not tested.
+*Reading (mine):* r(x) is canonical as far as tested, so the likely
+cause is height: the F-coefficients of p_1 exceed about 220 bits (or
+p_1 is not in F, which would contradict the working assumption of
+D158). This is the height risk of the design notes, section 4.
+*Alternatives:* (a) raise the precision; per-point cost grew by 3.1
+from N = 32 to N = 213, so N = 852 is affordable (threshold about 890
+bits per coefficient in F, 2670 in Q(sqrt 2)); (b) look for a function
+of lower height than the Laurent ratio; no candidate is known.
+*Chosen:* (a), staged: `chain.sh 852` on two records to measure cost,
+then the full run if the cost allows. *Open:* the height itself; no
+bound is known, and a height of 10^4 bits per coefficient would put
+the direct route out of reach on Chatelet.
+
 <!-- D168 -->
 
 **D168 (2026-11-16): the 673-adic lift works end to end at low precision; lift on X through a pinned representative E' = S + S'_1.**

@@ -1,5 +1,26 @@
 # Session handoff
 
+<!-- D169, 2026-11-17 -->
+
+**Resume here (2026-11-17, 00:40 UTC): N = 213 complete, recognition negative (D169); N = 852 trial started.**
+All 3855 records are in `two_remote_magma/pivot_lift/prec_213/`
+(`fx_<k>_<a>.txt`; records 1..128 of `vb_0` are in `fx_0r_<a>.txt`,
+a = 1, 9, ..., 121; `fx_0_1.txt` is an empty leftover of the dead job
+and must be left out of LIST). `s18b.out` is the valid script-18
+output; `s18.out` is not (3727 records). Nothing recognized in Q,
+Q(sqrt 2), F. Control `./chain_alt.sh 5 1 3` (directory `prec_5alt`)
+and `PREC=5 FA=prec_5alt/fx.txt FB=prec_213/fx_0r_1.txt magma -b
+19_compare_r.m`: r(x) agrees mod 673^5 on three records.
+Running: `./chain.sh 852 1 2` (started 00:35 UTC, detached with
+`setsid nohup`; log `chain_852.log`, outputs in `prec_852/`). When it
+ends (`CHAIN_DONE` in `prec_852/s17.out`): read the per-record times
+in `s17.out` and the memory, choose the number of simultaneous jobs
+(at N = 213 a job held 1 GB, 2 GB while loading), adapt `full2.sh`
+(it starts 31 jobs; `fx.txt` of the trial is not in its LIST pattern)
+and launch the full run; script 18 runs at the end.
+Launch note: `(nohup ./x.sh &)` lost one job twice; use
+`(setsid nohup ./x.sh > log 2>&1 < /dev/null &)`.
+
 <!-- D168, 2026-11-16 -->
 
 **Resume here (2026-11-16, 07:00 UTC): the 673-adic lift passes at N = 1, 2, 5, 32 (D168).**

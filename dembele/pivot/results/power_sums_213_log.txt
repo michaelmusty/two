@@ -1,0 +1,41 @@
+# prec_213/s18b.out (all 3855 records, 2026-11-16)
+S18|records 3855; distinct r(x) mod p among representatives: 3855; N = 213 [12.470 s]
+S18|p_1 mod p = 49
+S18|p_1 in Q: num/den bits 1000, 998 (random: 1001 each)
+S18|p_1 in Q(sqrt 2): max coefficient bits 665 (random: 667)
+S18|p_1 in F: max coefficient bits per embedding [ 222, 221, 221, 221, 221, 221, 221, 222 ] (random: 222)
+S18|p_2 mod p = 41
+S18|p_2 in Q: num/den bits 999, 999 (random: 1001 each)
+S18|p_2 in Q(sqrt 2): max coefficient bits 666 (random: 667)
+S18|p_2 in F: max coefficient bits per embedding [ 221, 221, 221, 221, 221, 221, 221, 221 ] (random: 222)
+S18|p_3 mod p = 391
+S18|p_3 in Q: num/den bits 998, 999 (random: 1001 each)
+S18|p_3 in Q(sqrt 2): max coefficient bits 664 (random: 667)
+S18|p_3 in F: max coefficient bits per embedding [ 221, 221, 221, 221, 221, 221, 221, 221 ] (random: 222)
+DONE|18_POWER_SUMS [12.560 s]
+FULL_DONE
+# prec_213/s18.out (3727 records, job 0_1 missing: not a valid sum)
+S18|records 3727; distinct r(x) mod p among representatives: 3727; N = 213 [12.050 s]
+S18|p_1 mod p = 609
+S18|p_1 in Q: num/den bits 1000, 997 (random: 1001 each)
+S18|p_1 in Q(sqrt 2): max coefficient bits 666 (random: 667)
+S18|p_1 in F: max coefficient bits per embedding [ 221, 221, 222, 221, 221, 222, 221, 221 ] (random: 222)
+S18|p_2 mod p = 294
+S18|p_2 in Q: num/den bits 998, 1000 (random: 1001 each)
+S18|p_2 in Q(sqrt 2): max coefficient bits 666 (random: 667)
+S18|p_2 in F: max coefficient bits per embedding [ 222, 221, 221, 221, 221, 221, 221, 222 ] (random: 222)
+S18|p_3 mod p = 161
+S18|p_3 in Q: num/den bits 998, 999 (random: 1001 each)
+S18|p_3 in Q(sqrt 2): max coefficient bits 665 (random: 667)
+S18|p_3 in F: max coefficient bits per embedding [ 221, 221, 221, 221, 221, 221, 221, 221 ] (random: 222)
+DONE|18_POWER_SUMS [12.150 s]
+FULL_DONE
+# control: PREC=5 FA=prec_5alt/fx.txt FB=prec_213/fx_0r_1.txt 19_compare_r.m
+S19|record (1,0): r agrees mod p^5 (N = 5)
+S19|record (1,1): r agrees mod p^5 (N = 5)
+S19|record (1,3): r agrees mod p^5 (N = 5)
+DONE|19_COMPARE 3 common records
+# job summary
+46
+3855
+3855

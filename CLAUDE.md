@@ -19,7 +19,9 @@ prime on Chatelet (`HMF_ROOT=two_hilbertmodularforms`); (2) rebuild the
 p-adic model of Y at the chosen prime; (3) cost one torsion point (go/no-go);
 (4) compute, recognize and verify the polynomial. Scan done (D159); the
 model is degenerate mod 17, so step 2 runs at norm 673 (D160); Y is
-built mod 673 and its point count matches Hecke (D161); see the
+built mod 673 and its point count matches Hecke (D161); all 3855
+Frobenius orbits of V_b are lifted to 673^213 but the power sums are
+not recognized there (D169), a run at 673^852 is next; see the
 top of HANDOFF. Local Magma is not
 licensed on host `otto`; use Chatelet. The D157 replay cannot pass on
 `otto` and is not required.
