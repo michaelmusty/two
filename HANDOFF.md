@@ -11,15 +11,21 @@ output; `s18.out` is not (3727 records). Nothing recognized in Q,
 Q(sqrt 2), F. Control `./chain_alt.sh 5 1 3` (directory `prec_5alt`)
 and `PREC=5 FA=prec_5alt/fx.txt FB=prec_213/fx_0r_1.txt magma -b
 19_compare_r.m`: r(x) agrees mod 673^5 on three records.
-Running: `./chain.sh 852 1 2` (started 00:35 UTC, detached with
-`setsid nohup`; log `chain_852.log`, outputs in `prec_852/`). When it
-ends (`CHAIN_DONE` in `prec_852/s17.out`): read the per-record times
+Running: `./chain.sh 852 1 2` (started 00:58 UTC; log `chain_852.log`,
+outputs in `prec_852/`). When it ends (`CHAIN_DONE` in
+`prec_852/s17.out`, with `ly_in.m` present): read the per-record times
 in `s17.out` and the memory, choose the number of simultaneous jobs
 (at N = 213 a job held 1 GB, 2 GB while loading), adapt `full2.sh`
 (it starts 31 jobs; `fx.txt` of the trial is not in its LIST pattern)
 and launch the full run; script 18 runs at the end.
-Launch note: `(nohup ./x.sh &)` lost one job twice; use
-`(setsid nohup ./x.sh > log 2>&1 < /dev/null &)`.
+**Launch rule (cause of all silent job deaths so far):** the CoCalc
+exec call sets `ulimit -t` (CPU seconds per process, hard limit) to its
+`--timeout`, and detached children inherit it. A job launched from
+`cocalc.py --timeout 30 exec ...` is killed after 30 CPU seconds
+(message `Killed` in the runner log, nothing in the Magma output).
+Launch long jobs only from an exec with a large timeout, e.g.
+`python3 remote_magma/cocalc.py --timeout 864000 exec '... (nohup ./x.sh > log 2>&1 &)'`,
+and check `grep "cpu time" /proc/<pid>/limits`.
 
 <!-- D168, 2026-11-16 -->
 

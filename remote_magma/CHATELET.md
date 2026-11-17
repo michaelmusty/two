@@ -167,3 +167,13 @@ The checked-in smoke test should print `REMOTE_MAGMA_OK` and `42`:
 python3 remote_magma/cocalc.py --timeout 30 run \
   remote_magma/smoke_test.m
 ```
+
+## CPU limit inherited by detached jobs (found 2026-11-17)
+
+The exec endpoint sets `ulimit -t` (CPU seconds per process, soft and
+hard) to the `--timeout` of the call. Detached children inherit it, so a
+job started with `--timeout 30` is killed after 30 CPU seconds with only
+`Killed` in the launching shell's log. Launch long jobs from a call with
+a large timeout (`python3 remote_magma/cocalc.py --timeout 864000 exec
+'... (nohup ./job.sh > log 2>&1 &)'`) and verify with
+`grep "cpu time" /proc/<pid>/limits`.
