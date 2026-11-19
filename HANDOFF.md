@@ -2,6 +2,20 @@
 
 <!-- D170, 2026-11-17 -->
 
+**Update (2026-11-19, 14:55 UTC): two host reboots; continuation `full4.sh` running.**
+Chatelet rebooted about 07:50 UTC on 18 Nov and about 23:17 UTC on
+18 Nov; each time all jobs died and nothing restarts by itself. The
+first restart (`full3.sh`, 18 Nov 12:27) lost the interrupted chunks.
+Now running: `./full4.sh 852 128 20` (same log). It keeps the 40
+finished chunks and the complete records of the 20 interrupted ones
+(1868 records; originals in `fx_*.txt.orig`, logs `*.out.partial`)
+and runs the missing 1987 records in 504 chunks of at most 4
+(`prec_852/chunks4.txt`), then script 18. After a reboot: rerun the
+same command from an exec with `--timeout 864000`; a chunk cut short
+is simply rerun (at most 4 records lost per job). Rate under load:
+about 57 records per hour. Before trusting `s18.out`: the count of
+`^]>,$` lines over `fx_*_*.txt` must be 3855.
+
 **Resume here (2026-11-17, 06:20 UTC): full run at N = 852 in progress (D170).**
 The trial `chain.sh 852 1 2` passed (scripts 15, 16: 7878 s, 1161 s;
 old script 17: about 3070 s per record). Script 17 was revised (env
