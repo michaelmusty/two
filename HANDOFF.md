@@ -1,5 +1,27 @@
 # Session handoff
 
+<!-- D172, 2026-11-21 -->
+
+**Resume here (2026-11-21, 17:10 UTC): model-only test (D172); runs at N = 1704 and 3408 in progress.**
+`dembele/pivot/20_model_invariants.m` (env PREC, optional LIST =
+script-17 outputs) computes invariants of the cover Y -> C from
+`ly_in.m` alone and tries to recognize them. At N = 852: the rational
+control on C is recognized (1966 bits); the cover invariant J_Y and
+the t-independent torsion sum are not
+(`dembele/pivot/results/model_invariants_852_log.txt`; remote
+`prec_852/s20.out`). Running since 17:05 UTC in
+`two_remote_magma/pivot_lift/`: `./chain_model.sh 1704` and
+`./chain_model.sh 3408` (scripts 15, 16, 20 in `prec_<N>/`; logs
+`s15.out`, `s16.out`, `s20.out`, last line MODEL_DONE; estimates 8 h
+and 28 h). They are not restartable: after a host reboot rerun the
+same commands from an exec with `--timeout 864000`. Read in
+`s20.out`: lines `J_Y` and the following `in <field>` lines
+(RECOGNIZED flag). If J_Y is recognized: record field and height,
+then decide the precision of a torsion run. If not at 3408: the cover
+is not over F(sqrt -3) or its height exceeds about 3550 bits per
+coefficient; reconsider the choice of the third (D84, D88).
+`prec_5/fx.txt` is in an old format (do not pass it as LIST).
+
 <!-- D171, 2026-11-21 -->
 
 **Resume here (2026-11-21, 13:00 UTC): N = 852 complete, recognition negative (D171); nothing running.**

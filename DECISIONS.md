@@ -1,5 +1,57 @@
 # Decision log
 
+<!-- D172 -->
+
+**D172 (2026-11-21): test on the model of Y itself (no torsion points): a rational control on C is recognized at 673^852 with 1966-bit numerator and denominator; invariants of the cover Y -> C are not recognized; model-only runs at 673^1704 and 673^3408 launched.**
+Question after D171: is the failure in the torsion sums, or earlier?
+Script `20_model_invariants.m` uses only the output of script 16
+(G44 at complete fibres, L_C(44 P32), Laurent coefficients at P32).
+Construction: Tr: G44 -> L_C(44 P32) and the trace-zero part W (dim
+40); L_C(88 P32) from products; B_k(g, g') = coefficient of t^(-88+k)
+of Tr(g g'); F_n = {g : B_k(g, .) = 0 for k < 44 - n} = H^0(Y,
+pi^*(n P32) + ramified point above P32) (local trace duality). W meet
+F_n is zero for n < 24 and a line for n = 24, generator g0, canonical
+up to a scalar; q0 = Tr(g0^2) has pole order 49 and z = Norm(g0) pole
+order 73 at P32. All of this is checked mod 673^852 (memberships in
+L_C(44 P32), L_C(88 P32) at 116 fibres; kernel dimensions equal to
+those mod p; the dimensions follow the Riemann-Roch count 2n - 47).
+Numbers: for u with pole order m, r_u = c(t^(-m+1))/c(t^-m); D(u, w) =
+r_u/m - r_w/n scales under a change of t, and ratios of two D's do not
+depend on t.
+Results ([log](dembele/pivot/results/model_invariants_852_log.txt)):
+(1) *Control, C only:* f17 = the function on C with pole order 17 at
+P32 (dim L_C(n P32) = 1 for n <= 16). r_f17 is recognized in Q at
+673^852: numerator 1967 bits, denominator 1966 bits (LLL vector 1966
+bits against 4002 random); the next two coefficient ratios also, 2189
+and 2411 bits. They were not recognizable at 673^213 (2000 bits
+available). So the Laurent data, the parameter t and the recognition
+routine are right, and a first-order rational number attached to
+(C, P32, t) already has height about 2000 bits. Each further order
+adds about 222 bits (a rational rescaling of t would remove that
+part; the first 1744 bits are not of that form).
+(2) *Cover Y -> C:* J_Y = D(q0, z)/D(q0, f17) (independent of t) is
+not recognized in Q, Q(sqrt 2), Q(sqrt -3), Q(sqrt 2, sqrt -3), F,
+F(sqrt -3); same for the four ratios of q0. The standard and the
+alternative-seed model (prec_5, prec_5alt) give the same values mod
+673^4, so these numbers do not depend on the auxiliary choices.
+(3) *Torsion sum:* P1_inv = sum over x of D(f_x, f17)/D(q0, f17)
+(independent of t) is not recognized either.
+*Reading (mine):* the non-recognition is already present at the level
+of the cover, before any torsion point. If J_Y lies in F with
+coefficients no larger than the C-level control (2000 bits), it needs
+about 18000 bits, i.e. N of about 1900; 673^852 gives 8000. So D169
+and D171 could not have succeeded, and they say nothing against the
+assumptions. What is still not excluded: the cover is not defined
+over F (the chosen third not Galois-stable), or its height is far
+larger than that of C.
+*Chosen:* lift the model only (scripts 15, 16, then 20; no torsion)
+at N = 1704 and N = 3408 (`chain_model.sh`; estimated 8 and 28 hours,
+one process each; cost grew by 11 from 213 to 852). At 3408 the
+thresholds are about 3550 bits per coefficient in F and 16000 in Q.
+A recognized J_Y gives the field and the height of the cover and
+fixes the precision the torsion run needs; no torsion run before
+that. *Outcome:* pending.
+
 <!-- D171 -->
 
 **D171 (2026-11-21): all 3855 orbits lifted to 673^852; the power sums of r(x) are again not recognized.**
