@@ -1,5 +1,33 @@
 # Decision log
 
+<!-- D171 -->
+
+**D171 (2026-11-21): all 3855 orbits lifted to 673^852; the power sums of r(x) are again not recognized.**
+The run of D170 finished at 01:14 UTC on 21 Nov after two host reboots
+(18 Nov, about 07:50 and 23:17 UTC; continuation `full4.sh`, which
+keeps complete records and reruns the rest in chunks of 4). 3855
+records, every chunk log with its DONE line, no error or Killed line;
+the values r(x) mod 673 are pairwise distinct on the representatives
+([log](dembele/pivot/results/power_sums_852_log.txt)). Result: p_1,
+p_2, p_3 are not recognized in Q (numerator and denominator 3998 to
+4002 bits; random 4002), in Q(sqrt 2) (2667 bits; random 2668) or in F
+at any of the 8 embeddings (888 or 889 bits; random 889). Every LLL
+vector has the size expected for a random residue, as at N = 213.
+*Reading (mine):* either the F-coefficients of p_1 exceed about 890
+bits (about 7100 bits in all), or p_1 is not in F, or the lifted
+values are not the values of one global function at torsion points
+(the residual checks prove each record solves its own system mod
+673^852; they do not test that). The data do not separate these.
+Factor 4 in precision cost about 34 CPU-days and gave no change in
+the picture, so another factor 4 (N = 3408; not costed, and about
+14 GB per job if memory scales with N) is not justified without an
+independent estimate of the height or a test of the assumptions.
+*Not chosen yet:* the next step. Candidates: (a) a test that does
+not depend on height, e.g. an algebraic relation that the lifted
+values must satisfy if they come from one function on V_b defined
+over F; (b) a quantity of lower height; (c) N = 3408. *Open:* the
+height of p_1; independence of the choice of S (untested since D169).
+
 <!-- D170 -->
 
 **D170 (2026-11-17): script 17 revised (4 times faster at N = 852); full run at 673^852 launched.**
@@ -17,7 +45,7 @@ point), and r(x) agrees mod 673^852 with the output of the old script.
 *Chosen:* M0 = 128, 20 processes (`full3.sh 852 128 20`), about 34
 CPU-days. *Not done:* computing the residual at step e only mod
 p^(e+M0) (would save up to half of the linear phase).
-*Outcome:* pending (run started 06:17 UTC).
+*Outcome:* run complete, recognition negative (D171).
 
 <!-- D169 -->
 

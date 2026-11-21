@@ -1,5 +1,18 @@
 # Session handoff
 
+<!-- D171, 2026-11-21 -->
+
+**Resume here (2026-11-21, 13:00 UTC): N = 852 complete, recognition negative (D171); nothing running.**
+All 3855 records are in `two_remote_magma/pivot_lift/prec_852/`
+(`fx_<k>_<a>.txt`, 1.3 GB with logs; `*.orig` and `*.out.partial` are
+the pieces cut by the reboots, superseded). `s18.out` (copy:
+`dembele/pivot/results/power_sums_852_log.txt`): p_1..p_3 at the
+random size in Q, Q(sqrt 2) and F. No job of this work is running on
+Chatelet (a process `magma.exe -b u246st200.m` seen there earlier is
+not ours). The next step is not chosen: see D171 (height-independent
+test of the lifted values, a lower-height quantity, or N = 3408).
+Launch rule for long jobs is unchanged (exec `--timeout 864000`).
+
 <!-- D170, 2026-11-17 -->
 
 **Update (2026-11-19, 14:55 UTC): two host reboots; continuation `full4.sh` running.**
