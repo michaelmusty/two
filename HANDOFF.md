@@ -2,7 +2,13 @@
 
 <!-- D172, 2026-11-21 -->
 
-**Resume here (2026-11-21, 17:10 UTC): model-only test (D172); runs at N = 1704 and 3408 in progress.**
+**Resume here (2026-11-23, 00:10 UTC): model-only test (D172); N = 1704 negative, N = 3408 in progress.**
+N = 1704 finished on 22 November at 02:51 UTC: control recognized
+(1966 bits), J_Y not recognized in any of the six fields
+(`dembele/pivot/results/model_invariants_1704_log.txt`). N = 3408 is
+in script 15 (cube system solved at 109020 s CPU); expected
+MODEL_DONE around 17:00 UTC on 23 November. Earlier text of this
+block follows.
 `dembele/pivot/20_model_invariants.m` (env PREC, optional LIST =
 script-17 outputs) computes invariants of the cover Y -> C from
 `ly_in.m` alone and tries to recognize them. At N = 852: the rational

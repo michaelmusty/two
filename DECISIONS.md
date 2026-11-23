@@ -50,7 +50,15 @@ one process each; cost grew by 11 from 213 to 852). At 3408 the
 thresholds are about 3550 bits per coefficient in F and 16000 in Q.
 A recognized J_Y gives the field and the height of the cover and
 fixes the precision the torsion run needs; no torsion run before
-that. *Outcome:* pending.
+that. *Outcome at N = 1704 (2026-11-22, 02:51 UTC):* negative. The
+control on C is recognized again with the same 1966, 2189 and 2411
+bits; J_Y and the four ratios of Tr(g0^2) are at random size in all
+six fields (Q 8003 of 8004 bits, Q(sqrt 2) and Q(sqrt -3) 5335 of
+5336, Q(sqrt 2, sqrt -3) 3201 of 3202, F 1777 of 1779, F(sqrt -3) 941
+of 942). Log: `dembele/pivot/results/model_invariants_1704_log.txt`.
+Scripts 15, 16, 20 took 31674, 3536 and 634 s. N = 3408 is still in
+script 15 (cube system solved at 109020 s; expected to finish around
+17:00 UTC on 23 November).
 
 <!-- D171 -->
 
