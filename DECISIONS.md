@@ -1,5 +1,64 @@
 # Decision log
 
+<!-- D174 -->
+
+**D174 (2026-11-24): joint reconstruction at 673^852 negative; rational-point proxy rejected; calibrate on real 2-torsion of the genus-16 curve instead.**
+*Step 1 of D173 (done).* Script `dembele/pivot/21_joint_reconstruction.m`
+on the 3855 stored records at 673^852 (8003 bits): for the five Laurent
+ratios c(t^(-43+j))/c(t^-43), j = 1..5, the elementary symmetric
+functions e_1..e_6 over the 65535 points, reconstructed with one common
+denominator. In Q with n = 1, 2, ..., 30 quantities (random level
+4002 ... 7746 bits), in Q(sqrt 2) with n up to 20 (2668 ... 3904 bits)
+and in F with the five e_1 at all 8 embeddings (976 bits): every
+shortest vector is at the random level (log
+`dembele/pivot/results/joint_reconstruction_852_log.txt`, 225 s). A
+synthetic control with a planted common denominator is recovered below
+the random level and not above it (n = 30: 7500 bits recovered, 7800
+not). *Reading:* if the 30 quantities are rational with one common
+denominator, that denominator has more than about 7700 bits; without
+the sharing hypothesis the bound stays 4000 bits. The sharing
+hypothesis itself is not tested by a negative result.
+*Step 2 of D173 as proposed (rejected before any run).* Two defects
+found while designing it. (a) The value of the map at a non-torsion
+rational point x has height c*h_NT(x) + O(1) with h_NT(x) unknown, and
+the quantity wanted is the O(1) term at h_NT = 0; so rational points
+cannot calibrate the torsion height, and rank maps only roughly.
+(b) The rational classes available on Y (multiples of R1 - R2 above
+P32, pullbacks from C) lie in the locus where the section space is too
+large (pi^*L_C(k*P32) is contained in it), so the map is not defined
+there without further divisors (B3 fibre) and local expansions on Y
+that the stored model does not have.
+*Replacement (chosen):* measure on real torsion where the answer is
+cheap: the 2-torsion of J(C), C the genus-16 base curve, exact over Q.
+Facts used: its 2-torsion field is the Harbater field (D42), Galois
+group C17 x| C16 of order 272. At 31 (checked today from the banked
+T31 quartics): #J(C)(F_31) is odd, Frobenius on J(C)[2] has
+characteristic polynomial f1^2 f2^2 with f1, f2 of degree 8 and order
+17, so J(C)[2] = M1 + M2 with M_i of dimension 16, all points over
+F_31^17, in Frobenius orbits of size 17. At 673 Frobenius is unipotent
+(T mod 2 = z^16), so 673 is not used. No Galois-stable subspace is
+smaller than dimension 16 (a C16 generator sends zeta to zeta^3 and
+exchanges M1 and M2); M1 \ 0 (65535 points, 3855 orbits) is stable
+under an index-2 subgroup, so its sums lie in Q(sqrt 2), and
+(M1 u M2) \ 0 gives rational sums. This is the same point count as
+V_b at genus 16 instead of 64.
+*What it gives:* (1) the ratio (height of e_1 over the torsion
+points)/(height of the model invariant, 1966 bits on C), measured
+instead of extrapolated; applied to the 15585 bits on Y it replaces the
+110000-bit figure by an estimate with one transfer assumption;
+(2) a place to compare evaluation maps (leading Laurent ratio, Mascot's
+two-divisor ratio, bases) on real torsion at roughly 1/30 of the cost
+per point (55 unknowns instead of 199); (3) a testbed for precision
+doubling. *Work packages (none started):* Makdisi arithmetic on C mod
+31 with D0 = 2K (spaces of quadrics, quartics, sextics: 45, 105, 165);
+points of M1 from a random point of J(C)(F_31^17) and the odd cofactor;
+the analogue of f_x (S_x = H^0(x + N), deg N = 17 or 18, squares in
+quartics vanishing to high order at P32, Laurent ratio at P32); the
+lift over W_N(F_31^17) by the system g g' = h^2; recognition in
+Q(sqrt 2). *Risk:* this is a build of several sessions, and if e_1 on
+C is not recognized at affordable precision it yields only a lower
+bound for the ratio. *Outcome:* pending.
+
 <!-- D173 -->
 
 **D173 (2026-11-24): literature review on height and cost; plan before any further torsion run.**

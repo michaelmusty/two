@@ -1,5 +1,24 @@
 # Session handoff
 
+<!-- D174, 2026-11-24 -->
+
+**Resume here (2026-11-24, 23:00 UTC): D173 step 1 negative; step 2 redesigned (D174); nothing running.**
+Step 1: `dembele/pivot/21_joint_reconstruction.m` on `prec_852` (run
+there as `s21.out`, 225 s): all joint reconstructions at the random
+level; under the shared-denominator hypothesis the denominator of the
+torsion sums exceeds about 7700 bits. Step 2 with rational points of
+J(Y) is dropped (reasons in D174). Next action: the genus-16
+calibration of D174 at p = 31. First package: Makdisi arithmetic on C
+mod 31 (D0 = 2K; reuse `hdr12.m` for C, its points, quadric/quartic
+value matrices and the P32 jets; `makdisi_lib.m` with dimensions 45,
+105), then one point of M1 over F_31^17 using the L-polynomial from the
+four T31 quartics (in `two_remote_magma/pivot_hecke673/hecke673.out`,
+lines `C02|k=1|quartic`). Check first that C and P32 have good
+reduction at 31 in the model of `cm_frame_curve_candidate.m`.
+Scratch files on Chatelet in `pivot_lift/prec_852`: `c2.m`, `c31.m`
+(Frobenius structure at 673, 31), `ctl21.m` (synthetic control),
+`hecke_in.m` (copy of `results/hecke673_polys.m`).
+
 <!-- D173, 2026-11-24 -->
 
 **Resume here (2026-11-24, 18:00 UTC): literature review done (D173); nothing running.**

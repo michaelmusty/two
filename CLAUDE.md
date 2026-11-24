@@ -27,7 +27,10 @@ rational control on C is (D172), and the same holds at 673^1704;
 at 673^3408 two cover invariants are recognized as rational numbers
 of about 15600 bits (denominators share a 15577-bit factor), so the
 cover model is over Q with height 7.9 times the control's; the height
-of the torsion power sums is the open question; see the
+of the torsion power sums is the open question; a joint
+reconstruction with a shared denominator at 673^852 is negative
+(bound about 7700 bits), and the next step is a calibration on the
+2-torsion of the genus-16 curve at 31 (D174); see the
 top of HANDOFF. Local Magma is not
 licensed on host `otto`; use Chatelet. The D157 replay cannot pass on
 `otto` and is not required.
