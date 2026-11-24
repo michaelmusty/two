@@ -1,5 +1,15 @@
 # Session handoff
 
+<!-- D173, 2026-11-24 -->
+
+**Resume here (2026-11-24, 18:00 UTC): literature review done (D173); nothing running.**
+Plan in DECISIONS D173, sources in REFERENCES D173. Next action:
+step 1, joint reconstruction with a shared denominator on the stored
+`prec_852/fx_*.txt` records (extend script 18: all r(x) values,
+e_1..e_k, one lattice with a common denominator; also the other
+Laurent ratios). Then step 2, the map evaluated at rational points of
+J(Y) on `prec_3408/ly_in.m`.
+
 <!-- D172, 2026-11-21 -->
 
 **Resume here (2026-11-23, 00:10 UTC): model-only test (D172); N = 1704 negative, N = 3408 in progress.**

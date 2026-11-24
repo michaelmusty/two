@@ -1,5 +1,43 @@
 # Decision log
 
+<!-- D173 -->
+
+**D173 (2026-11-24): literature review on height and cost; plan before any further torsion run.**
+*Question:* the cover invariants are rational with about 15600 bits
+(D172) and the torsion power sums are unrecognized at 673^852; what
+do published computations say about the expected size and about ways
+to lower it? *Findings* (sources in REFERENCES, D173): (1) no
+explicit polynomial exists for a nonsolvable field ramified only at
+2, 3 or 7. (2) In Mascot's computations the coefficients share one
+denominator whose size is governed by the genus, about g^2.5 decimal
+digits on modular curves with g <= 26; extrapolated to g = 64 this is
+about 110000 bits (an extrapolation, not a bound; our control on C,
+g = 16, has 1966 bits against 3400 from the same rule). (3) The
+choice of evaluation map and of bases changes the height by factors
+from 2 to 180; published advice is to compute many maps and keep the
+smallest. (4) Tracing over scalar orbits (degree 257) does not lower
+the height. (5) No published way to get a small generator from
+p-adic conjugates without recognizing one polynomial; theta
+characteristic and uniformization methods stop at genus 4.
+*Own observations:* (a) our lifts are not quasi-linear: the model
+lift cost 714, 7878, 31674, 143523 s at N = 213, 852, 1704, 3408
+(about 4 per doubling; script 15 solves the cube system one digit per
+step), and script 17 gains M0 = 16 digits per step at full precision.
+(b) We reconstruct each power sum separately, which needs twice the
+bits of the denominator; with k coefficients sharing a denominator a
+joint lattice needs (k+1)/k times. (c) V_b is generated over
+F_2[Frobenius] by at most two points, so all 3855 orbits can be
+obtained from two lifted points by additions.
+*Chosen order of work:* 1. joint reconstruction with a shared
+denominator on the stored 852 records (elementary symmetric functions
+e_1..e_k and the other stored Laurent ratios); no new lifting. 2.
+calibrate the height per point by evaluating the same map at rational
+points of J(Y) (classes of rational divisors) on the 3408 model, and
+use that harness to compare candidate maps before any torsion run. 3.
+precision doubling in scripts 15 and 17, and generators plus
+additions instead of 3855 lifts. 4. only then a torsion run, at the
+precision that steps 1-2 indicate. *Outcome:* pending.
+
 <!-- D172 -->
 
 **D172 (2026-11-21): test on the model of Y itself (no torsion points): a rational control on C is recognized at 673^852 with 1966-bit numerator and denominator; invariants of the cover Y -> C are not recognized; model-only runs at 673^1704 and 673^3408 launched.**

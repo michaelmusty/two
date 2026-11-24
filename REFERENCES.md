@@ -13,6 +13,49 @@ the frozen-replay requirement; logs are kept, and DECISIONS, HANDOFF and
 REFERENCES are updated as work proceeds. All earlier frozen artifacts stay
 untouched. Blocks below this one are historical.
 
+**D173 sources (2026-11-24), literature review on height and cost.**
+Read by three search agents (arXiv full texts unless noted); figures
+below are theirs and were not rechecked by a second reading.
+
+- **[height of the output, choice of evaluation map]** N. Mascot,
+  *Computing modular Galois representations* (arXiv 1211.1635), sec.
+  3.6-3.7 and 4: the map alpha = ratio of two coordinates of the
+  section spanning L(2D0 - E1 - E2 - E_x) has poles on two translates
+  of Theta; tracing over scalar orbits lowers the degree, not the
+  height. *Certification of modular Galois representations* (arXiv
+  1312.6418), sec. 2: all coefficients share essentially one
+  denominator; its size is about g^2.5 decimal digits on X1(l) for
+  g <= 26 (heuristic). *Hensel-lifting torsion points...* (arXiv
+  1808.03939), Remarks 2.20, 2.21, 6.7 and sec. 6.3-6.4: the
+  one-divisor variant gives worse height; precision is chosen by
+  experience; cost is quasi-linear in the precision when the lift
+  doubles; lift only generators over F_l[Frobenius]. *Moduli-friendly
+  Eisenstein series...* (arXiv 2004.14683), sec. 7.1-7.2, Remark
+  8.1.3: compute many alpha and keep the smallest; a change of basis
+  alone changed the needed precision from 73^44 to about 73^8000.
+  *...eigenform over SL3...* (arXiv 1810.05885), Remark 4.2: genus 7,
+  3-torsion, degree 728, 11^1024, 191-digit common denominator.
+  *...families of curves* (arXiv 2304.04701), Remark 2.2. Largest
+  point counts in these papers: 960. Used for the D173 plan.
+- **[comparison of evaluation maps]** M. Derickx, M. van Hoeij,
+  J. Zeng, *Computing Galois representations and equations for modular
+  curves X_H(l)* (arXiv 1312.6819), sec. 3 and Table 2: Mascot's map
+  gives 2 to 4 times fewer digits than a low-degree function.
+- **[state of the art, context]** L. Dembélé (arXiv 0811.4379; root
+  discriminant below 2^(47/8), Serre's supplement 55.39); Dembélé,
+  Greenberg, Voight (arXiv 0906.4374); D. P. Roberts, *Nonsolvable
+  polynomials with field discriminant 5^A*, IJNT 7 (2011), read only
+  through its abstract and citations; L. Dieulefait (arXiv 1005.4209).
+  No explicit polynomial was found in the literature for a nonsolvable
+  field ramified only at 2, 3 or 7; Roberts' case p = 5 comes from
+  5-torsion of an elliptic curve.
+- **[not usable here]** Bruin, Poonen, Stoll (arXiv 1205.4456): theta
+  characteristics algebraically, genus 3 only; Franc-Masdeu (arXiv
+  1201.0356), Masdeu-Torrents (arXiv 2510.09356): p-adic
+  uniformization, small genus. No published method was found that
+  gives a small generator from p-adic conjugates without first
+  recognizing a polynomial.
+
 **D166-D168 sources (2026-11-16), step 4 of the pivot.**
 
 - **[method]** Kamal Khuri-Makdisi, evaluation-representation arithmetic
