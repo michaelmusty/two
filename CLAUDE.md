@@ -24,8 +24,10 @@ Frobenius orbits of V_b are lifted to 673^213 but the power sums are
 not recognized there (D169) nor at 673^852 (D171); invariants of
 the cover Y -> C alone are not recognized at 673^852 either, while a
 rational control on C is (D172), and the same holds at 673^1704;
-at 673^3408 two cover invariants fall 424 and 208 bits below random
-size in Q (height about 15600 bits, to be confirmed); see the
+at 673^3408 two cover invariants are recognized as rational numbers
+of about 15600 bits (denominators share a 15577-bit factor), so the
+cover model is over Q with height 7.9 times the control's; the height
+of the torsion power sums is the open question; see the
 top of HANDOFF. Local Magma is not
 licensed on host `otto`; use Chatelet. The D157 replay cannot pass on
 `otto` and is not required.

@@ -75,6 +75,22 @@ flags NEAR and prints the vector when a value in Q is more than 40
 bits below random; rerun at 3408 started 24 November 15:58 UTC
 (`prec_3408/s20b.out`) to obtain the two vectors and test them
 (common denominator factors, divisibility between orders).
+*Confirmed (2026-11-24, 16:40 UTC):* the rerun gives the two
+fractions (`dembele/pivot/results/model_invariants_3408_near_vectors.txt`).
+Numerator and denominator are coprime in each, with 15585/15581 and
+15801/15795 bits. The two denominators, found by separate lattice
+reductions, share a common factor of 15577 bits (cofactors of 5 and
+218 bits). The small primes are those of the control on C: 3^4, 17,
+19^2, 139, 311, 1549^2 in the first denominator and 3^8, 19^4, 139^2,
+311^2, 1549^4 in the second; 5, 18917, 25643 in the numerators. So
+c(t^-48)/c(t^-49) and c(t^-47)/c(t^-49) of Tr(g0^2) are rational
+numbers: the model of the cover Y -> C is defined over Q, and scripts
+15, 16, 20 are consistent with that. Their height is 7.9 times that
+of the control, which is why nothing was recognized at N <= 1704.
+J_Y (which involves Norm(g0), pole order 73) and the torsion power
+sums have larger height still; none has been recognized. *Open:* the
+height of the torsion power sums, which decides whether the route
+is affordable (the torsion run at 852 took four days on 24 cores).
 
 <!-- D171 -->
 

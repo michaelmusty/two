@@ -18,6 +18,13 @@ is in `prec_3408/s20b.out` (about 40 minutes; last line
 DONE|20_MODEL_INVARIANTS). Next: read the NEAR lines, check the two
 vectors against each other and against the control denominators, and
 record the result.
+**Update 2026-11-24, 16:45 UTC:** confirmed. The two ratios are
+rational with about 15585 and 15800 bits; their denominators share a
+15577-bit factor and the small primes of the control
+(`dembele/pivot/results/model_invariants_3408_near_vectors.txt`).
+The cover model is over Q; heights are 7.9 times the control's.
+Nothing is running on Chatelet. Next decision: how to bound or lower
+the height of the torsion power sums before any further torsion run.
 `dembele/pivot/20_model_invariants.m` (env PREC, optional LIST =
 script-17 outputs) computes invariants of the cover Y -> C from
 `ly_in.m` alone and tries to recognize them. At N = 852: the rational
