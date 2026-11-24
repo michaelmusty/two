@@ -2,7 +2,20 @@
 
 <!-- D174, 2026-11-24 -->
 
-**Resume here (2026-11-24, 23:00 UTC): D173 step 1 negative; step 2 redesigned (D174); nothing running.**
+**Resume here (2026-11-24, 21:40 UTC): D173 step 1 negative; step 2 redesigned (D174); nothing running.**
+**Update 22:20 UTC:** packages 1 and 2 of the genus-16 calibration pass
+mod 31 (scripts 22, 23; Chatelet `pivot_lift/c16`: `c16_pt_1_1.m` one
+point of N1, `c16_f_1_1.m` its (g, h, g') and r; logs `s22_1_1.out`).
+The calibration set is N1 u N2, 510 points (D174 outcome). Next:
+(a) a second generator of N1 over F_2[Frob] is not needed (N1 is one
+F_256-line: the 15 orbit representatives are c(Frob)*y for c in
+F_256^*/<Frob>), so enumerate by Frobenius combinations of y, and the
+same for N2 (PIDX=2); (b) p-adic model at 31: evaluation points over
+F_31 and F_961 lifted, quartic spaces B_86, B_87, B_88 from the Taylor
+expansion at P32 over Z/31^N (as script 16); (c) Newton lift of
+g*g' = h^2 over W_N(F_31^17) (as script 17), output c_88..c_93;
+(d) e_1 over the 510 points, recognition in Q (and N1 alone in
+Q(sqrt 2), F). The text below predates this update.
 Step 1: `dembele/pivot/21_joint_reconstruction.m` on `prec_852` (run
 there as `s21.out`, 225 s): all joint reconstructions at the random
 level; under the shared-denominator hypothesis the denominator of the

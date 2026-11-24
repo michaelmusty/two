@@ -57,7 +57,25 @@ quartics vanishing to high order at P32, Laurent ratio at P32); the
 lift over W_N(F_31^17) by the system g g' = h^2; recognition in
 Q(sqrt 2). *Risk:* this is a build of several sessions, and if e_1 on
 C is not recognized at affordable precision it yields only a lower
-bound for the ratio. *Outcome:* pending.
+bound for the ratio. *Outcome so far (24 November, 22:20 UTC):*
+packages 1 and 2 pass mod 31. Script 22 (`22_C_torsion_mod31.m`,
+936 s, 492 additions at 1.4 s): y = e(Frob) x1 has order 4, and 2y is
+a nonzero 2-torsion point killed by g1(Frob). So the part of
+J(C)(F_31^17) above one prime of Q(zeta_17) over 2 is cyclic of length
+2, Frobenius is not semisimple on J(C)[2] (order 34), and the
+statement above that all of J(C)[2] is rational over F_31^17 is
+corrected: J(C)[2](F_31^17) = N1 + N2 with N_i = ker g_i(Frob) of
+dimension 8 (255 points, 15 Frobenius orbits each). N1, N2 are the
+kernels of the two maximal ideals of residue field F_16 seen in T31
+mod 2 = (z^4+z+1)^2 (z^4+z^3+z^2+z+1)^2 (my identification, not
+checked against Hecke operators); they are the only Frobenius-stable
+8-dimensional subspaces, so N1 u N2 is Galois-stable over Q. The
+calibration set is therefore 510 points in 30 orbits, not 131070.
+Script 23 (`23_C_eval_mod31.m`, 18 s): the map f_x = s_x^2 in the
+quartics vanishing to order 88 at P32 is computed from the class; it
+does not depend on the representative, f(Frob x) = Frob f(x), and
+r(x) = c_89/c_88 has degree 17 over F_31. Remaining: enumerate N1 and
+N2, lift over W_N(F_31^17), recognize.
 
 <!-- D173 -->
 
