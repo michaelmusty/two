@@ -201,8 +201,8 @@ for iv in invs do
     for fd in fields do
         bits, vec := Recognize(v, fd[2]);
         rnd := Round(bitsM/(#fd[2] + 1));
-        printf "S20|  in %o: max coefficient bits %o (random: %o)%o\n", fd[1], bits, rnd, (bits lt 0.8*rnd and vec[#vec] ne 0) select "  RECOGNIZED" else "";
-        if bits lt 0.8*rnd and vec[#vec] ne 0 and (bits lt 400 or #fd[2] eq 1) then printf "S20|  vector (x0, a_1.., denominator): %o\n", vec; end if;
+        printf "S20|  in %o: max coefficient bits %o (random: %o)%o\n", fd[1], bits, rnd, (bits lt 0.8*rnd and vec[#vec] ne 0) select "  RECOGNIZED" else ((bits lt rnd - 40 and vec[#vec] ne 0) select "  NEAR (below random by more than 40 bits)" else "");
+        if bits lt rnd - 40 and vec[#vec] ne 0 and (bits lt 400 or #fd[2] eq 1) then printf "S20|  vector (x0, a_1.., denominator): %o\n", vec; end if;
     end for;
 end for;
 printf "DONE|20_MODEL_INVARIANTS [%o s]\n", Cputime(started);

@@ -59,6 +59,22 @@ of 942). Log: `dembele/pivot/results/model_invariants_1704_log.txt`.
 Scripts 15, 16, 20 took 31674, 3536 and 634 s. N = 3408 is still in
 script 15 (cube system solved at 109020 s; expected to finish around
 17:00 UTC on 23 November).
+*Outcome at N = 3408 (2026-11-23, 12:49 UTC):* no value passes the
+0.8 threshold, but two ratios of Tr(g0^2) fall clearly below random
+size in Q: c(t^-48)/c(t^-49) at 15584 bits and c(t^-47)/c(t^-49) at
+15800 bits, against 16008 (a deficit of 424 bits has chance about
+2^-848 for a random residue; the step of 216 bits per order is close
+to the 222 of the control on C). The next two ratios and J_Y are at
+random size, as expected if their heights exceed 16008 bits. The
+control is recognized as before, now also in F. Reading, not yet
+confirmed: the cover invariants are rational, with height about
+15600 bits, eight times the control. Scripts 15, 16, 20 took 143523,
+12182 and 2372 s. Log:
+`dembele/pivot/results/model_invariants_3408_log.txt`. Script 20 now
+flags NEAR and prints the vector when a value in Q is more than 40
+bits below random; rerun at 3408 started 24 November 15:58 UTC
+(`prec_3408/s20b.out`) to obtain the two vectors and test them
+(common denominator factors, divisibility between orders).
 
 <!-- D171 -->
 

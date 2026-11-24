@@ -9,6 +9,15 @@ N = 1704 finished on 22 November at 02:51 UTC: control recognized
 in script 15 (cube system solved at 109020 s CPU); expected
 MODEL_DONE around 17:00 UTC on 23 November. Earlier text of this
 block follows.
+**Update 2026-11-24, 16:00 UTC:** N = 3408 finished (23 November,
+12:49 UTC). Two ratios of Tr(g0^2) are 424 and 208 bits below random
+size in Q (15584 and 15800 of 16008 bits); J_Y is not. This points to
+rational cover invariants of height about 15600 bits; see the D172
+outcome in DECISIONS. A rerun of script 20 that prints these vectors
+is in `prec_3408/s20b.out` (about 40 minutes; last line
+DONE|20_MODEL_INVARIANTS). Next: read the NEAR lines, check the two
+vectors against each other and against the control denominators, and
+record the result.
 `dembele/pivot/20_model_invariants.m` (env PREC, optional LIST =
 script-17 outputs) computes invariants of the cover Y -> C from
 `ly_in.m` alone and tries to recognize them. At N = 852: the rational

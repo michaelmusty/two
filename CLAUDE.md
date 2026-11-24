@@ -24,7 +24,8 @@ Frobenius orbits of V_b are lifted to 673^213 but the power sums are
 not recognized there (D169) nor at 673^852 (D171); invariants of
 the cover Y -> C alone are not recognized at 673^852 either, while a
 rational control on C is (D172), and the same holds at 673^1704;
-a model-only run at 673^3408 is in progress; see the
+at 673^3408 two cover invariants fall 424 and 208 bits below random
+size in Q (height about 15600 bits, to be confirmed); see the
 top of HANDOFF. Local Magma is not
 licensed on host `otto`; use Chatelet. The D157 replay cannot pass on
 `otto` and is not required.
