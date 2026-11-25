@@ -2,6 +2,21 @@
 
 <!-- D174, 2026-11-24 -->
 
+**Resume here (2026-11-25): genus-16 calibration, lifts at 31^2048 running.**
+Galois stability of N1 u N2: argument in DECISIONS D174 (both pieces
+have a point of order 4, so both are 8-dimensional). Done on Chatelet
+(`pivot_lift/c16`): `c16_N1.m`, `c16_N2.m` (15 orbit representatives
+each, script 24); script 25 lifts one record in 349 s at 31^512
+(9 doubling steps, all steps at full precision: not yet optimised).
+Running since about 25 November: 30 processes
+`25_C_lift_points_padic.m`, PREC=2048, outputs `fx2048_<set>_<i>.txt`,
+logs `s25_2048_<set>_<i>.out` (last line DONE|25_C_LIFT). When all 30
+are done: `PREC=2048 LIST=$(ls fx2048_*.txt | tr '\n' ',' | sed 's/,$//')
+KMAX=6 SET=0 magma -b 26_C_recognize.m` (and SET=1, SET=2), save the
+logs under `dembele/pivot/results/`, record the heights in D174.
+If nothing is recognized at 2048 (10146 bits), lift at 4096 after
+making the Newton steps run at growing precision.
+
 **Resume here (2026-11-24, 21:40 UTC): D173 step 1 negative; step 2 redesigned (D174); nothing running.**
 **Update 22:20 UTC:** packages 1 and 2 of the genus-16 calibration pass
 mod 31 (scripts 22, 23; Chatelet `pivot_lift/c16`: `c16_pt_1_1.m` one
