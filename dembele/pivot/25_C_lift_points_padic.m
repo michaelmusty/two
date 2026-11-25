@@ -8,7 +8,9 @@
 //    more is zero, so the equation is the vanishing of the coefficients of
 //    t^174..t^240 of g*g' - h^2: 67 equations, 54 unknowns, 3 pinned (gauge
 //    s_A -> nu*s_A, s_B -> lambda*s_B + mu*s_A), Jacobian rank 51.
-//  - Newton with the inverse Jacobian updated at each step (precision doubles).
+//  - Newton with the inverse Jacobian updated at each step (precision doubles;
+//    each step runs in the ring of its target precision, and the last step
+//    does not update the inverse).
 // Output: Taylor coefficients c_88..c_93 of f_x = g (up to one scalar per point).
 // Files: curve and marks, padic_lib.m, output of script 24.
 // Env: PREC, IN, OUT, FIRST, LAST.
@@ -82,43 +84,49 @@ BK := [* ChangeRing(Red(B), K) : B in BN *];
 SBK := [* ChangeRing(Red(S), K) : S in SBN *];
 printf "S25|bases of B_88, B_87, B_86 lifted [%o s]\n", Cputime(started);
 
-// --- W = W_N(K) ---
+// --- W = W_e(K) at each precision level e ---
 phiZ := PolynomialRing(ZZ)![ZZ!c : c in Coefficients(DefiningPolynomial(K))];
-PWZ<yy> := PolynomialRing(ZN);
-WQ<om> := quo<PWZ | PWZ!phiZ>;
-PW<t> := PolynomialRing(WQ);
-function KtoW(c) return WQ!(PWZ![ZZ!e : e in Eltseq(c)]); end function;
-function WSeq(x) s := Coefficients(PWZ!x); return [ZZ!c : c in s] cat [0 : i in [#s+1..AEXT]]; end function;
-function WtoK(x) return K![Fp!c : c in WSeq(x)]; end function;
-SBW := [* [PW![WQ!c : c in Eltseq(S[b])] : b in [1..Nrows(S)]] : S in SBN *];
-function Series(x)       // x: sequence of NU elements of WQ -> G, H, Gp (polynomials of degree <= 66)
-    G := &+[x[b]*SBW[1][b] : b in [1..17]];
-    H := &+[x[17+b]*SBW[2][b] : b in [1..18]];
-    Gp := &+[x[35+b]*SBW[3][b] : b in [1..19]];
+function Level(e)
+    Re := Integers(p^e);
+    PWZe := PolynomialRing(Re);
+    WQe := quo<PWZe | PWZe!phiZ>;
+    PWe := PolynomialRing(WQe);
+    SBWe := [* [PWe![WQe!(Re!(ZZ!c)) : c in Eltseq(S[b])] : b in [1..Nrows(S)]] : S in SBN *];
+    return <Re, PWZe, WQe, PWe, SBWe>;
+end function;
+function WSeqL(x, L) s := Coefficients(L[2]!x); return [ZZ!c : c in s] cat [0 : i in [#s+1..AEXT]]; end function;
+function ToL(seq, L) return L[3]!(L[2]!seq); end function;
+function Series(x, L)       // x: sequence of NU elements of W -> G, H, Gp (polynomials of degree <= 66)
+    S := L[5];
+    G := &+[x[b]*S[1][b] : b in [1..17]];
+    H := &+[x[17+b]*S[2][b] : b in [1..18]];
+    Gp := &+[x[35+b]*S[3][b] : b in [1..19]];
     return G, H, Gp;
 end function;
-function Lo(f) return [Coefficient(f, j) : j in [0..NEQ-1]]; end function;
-function Res(x)
-    G, H, Gp := Series(x);
-    return Lo(G*Gp - H^2), G;
+function Res(x, L)
+    G, H, Gp := Series(x, L);
+    f := G*Gp - H^2;
+    return [Coefficient(f, j) : j in [0..NEQ-1]], G;
 end function;
-function Jac(x, I, Jc)
-    G, H, Gp := Series(x);
+function Jac(x, I, Jc, L)
+    G, H, Gp := Series(x, L); S := L[5];
     rws := [];
     for u in I do
-        if u le 17 then f := SBW[1][u]*Gp;
-        elif u le 35 then f := -2*SBW[2][u-17]*H;
-        else f := SBW[3][u-35]*G; end if;
+        if u le 17 then f := S[1][u]*Gp;
+        elif u le 35 then f := -2*S[2][u-17]*H;
+        else f := S[3][u-35]*G; end if;
         Append(~rws, [Coefficient(f, j-1) : j in Jc]);
     end for;
-    return Matrix(WQ, #I, #Jc, &cat rws);
+    return Matrix(L[3], #I, #Jc, &cat rws);
 end function;
 
+// Newton: at each level the ring has the target precision e2 = min(2e, N); the
+// inverse Jacobian (correct mod p^e) is lifted, x is corrected, and the inverse
+// is updated only if another level follows.
 function LiftRecord(rec)
     t0 := Cputime();
     v := [Vector(K, [DecKE(c) : c in rec[2+i]]) : i in [1..3]];        // g, h, g' in the quartic basis
     x0 := &cat[Eltseq(Solution(BK[i], v[i])) : i in [1..3]];
-    // Jacobian mod p
     PK<tk> := PolynomialRing(K);
     sk := [* [PK!Eltseq(SBK[i][b]) : b in [1..dims[i]]] : i in [1..3] *];
     GK := &+[x0[b]*sk[1][b] : b in [1..17]]; HK := &+[x0[17+b]*sk[2][b] : b in [1..18]]; GpK := &+[x0[35+b]*sk[3][b] : b in [1..19]];
@@ -127,34 +135,41 @@ function LiftRecord(rec)
     I := IndRows(JK); assert #I eq NU - 3;
     Jc := PivCols(Rows_(JK, I)); assert #Jc eq #I;
     XK := Cols_(Rows_(JK, I), Jc)^-1;
-    Xinv := Matrix(WQ, #I, #I, [KtoW(c) : c in Eltseq(XK)]);
-    x := [KtoW(c) : c in x0];
-    two := ScalarMatrix(WQ, #I, 2);
-    steps := 0; e := 1;
-    while true do
-        F, G := Res(x);
-        if &and[c eq 0 : c in F] then break; end if;
-        assert e lt 2*N;
-        d := Matrix(WQ, 1, #Jc, [F[j] : j in Jc])*Xinv;
+    xs := [[ZZ!c : c in Eltseq(u)] : u in x0];                         // integer coordinates of x
+    Xs := [[ZZ!c : c in Eltseq(u)] : u in Eltseq(XK)];                 // of the inverse (row-major)
+    steps := 0; e := 1; tl := [];
+    while e lt N do
+        ts := Cputime();
+        e2 := Min(2*e, N); L := Level(e2);
+        x := [ToL(u, L) : u in xs];
+        Xinv := Matrix(L[3], #I, #I, [ToL(u, L) : u in Xs]);
+        F := Res(x, L);
+        d := Matrix(L[3], 1, #Jc, [F[j] : j in Jc])*Xinv;
         for i in [1..#I] do x[I[i]] -:= d[1, i]; end for;
-        Xinv := Xinv*(two - Jac(x, I, Jc)*Xinv);
-        steps +:= 1; e *:= 2;
+        if e2 lt N then
+            Xinv := Xinv*(ScalarMatrix(L[3], #I, 2) - Jac(x, I, Jc, L)*Xinv);
+            Xs := [WSeqL(u, L) : u in Eltseq(Xinv)];
+        end if;
+        xs := [WSeqL(u, L) : u in x];
+        steps +:= 1; e := e2; Append(~tl, Cputime(ts));
     end while;
-    F, G := Res(x);
+    L := Level(N); x := [ToL(u, L) : u in xs];
+    F, G := Res(x, L);
     assert &and[c eq 0 : c in F];
-    co := [Coefficient(G, j) : j in [0..5]];
+    co := [WSeqL(Coefficient(G, j), L) : j in [0..5]];
     // mod p: the stored r = (c_89..c_93)/c_88
     rst := [DecKE(c) : c in rec[6]];
-    okp := WtoK(co[1]) ne 0 and [WtoK(co[j+1])/WtoK(co[1]) : j in [1..5]] eq rst;
-    return co, okp, steps, Cputime(t0);
+    ck := [K![Fp!c : c in u] : u in co];
+    okp := ck[1] ne 0 and [ck[j+1]/ck[1] : j in [1..5]] eq rst;
+    return co, okp, steps, Cputime(t0), tl;
 end function;
 
 PrintFile(OUT, Sprintf("// f_x Taylor coefficients t^88..t^93 at P32 modulo %o^%o; <prime index, representative, 6 x 17 integers>", p, N) : Overwrite := true);
 for ri in [FIRST..Min(LAST, #recs)] do
     rec := recs[ri];
-    co, okp, steps, tm := LiftRecord(rec);
-    PrintFile(OUT, Sprintf("<%o, %o, %o>,", rec[1], rec[2], [WSeq(c) : c in co]));
-    printf "S25|record %o (%o,%o): Newton steps %o; all 67 residuals zero mod p^%o; reduces to the stored r: %o; %o s\n", ri, rec[1], rec[2], steps, N, okp, tm;
+    co, okp, steps, tm, tl := LiftRecord(rec);
+    PrintFile(OUT, Sprintf("<%o, %o, %o>,", rec[1], rec[2], co));
+    printf "S25|record %o (%o,%o): Newton steps %o; all 67 residuals zero mod p^%o; reduces to the stored r: %o; %o s; last steps %o\n", ri, rec[1], rec[2], steps, N, okp, tm, tl[Max(1, #tl-2)..#tl];
     assert okp;
 end for;
 printf "DONE|25_C_LIFT [%o s]\n", Cputime(started);
