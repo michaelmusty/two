@@ -98,6 +98,26 @@ N_i = J[m_i], and Gal(F/Q) permutes them. Hence N1 u N2 is stable under
 G_Q, and each N_i is stable over Q or Q(sqrt 2). This is a proof under
 the stated assumptions, not an independent numerical check; the
 recognition of the sums will be the numerical confirmation.
+*First recognition attempt (25 November).* The PIDX=2 run also gives a
+point of order 4, so N2 has dimension 8 and the argument applies to
+both pieces. Scripts 24-26: 15 orbit representatives of each piece
+(15 distinct orbits each); lift in Taylor coefficients at P32 with a
+doubling Newton iteration (67 equations, 54 unknowns, rank 51); all 30
+representatives lifted to 31^2048 (10146 bits), every residual zero,
+reduction equal to the mod-31 values. Recognition (script 26; log
+`dembele/pivot/results/c16_recognition_2048_log.txt`): for the 510
+points and for each piece alone, in Q (n = 1..30), Q(sqrt 2) and F,
+every shortest vector is at the random level (Q, n = 1: 5072 of 5073
+bits; n = 30: 9818 of 9819). The trace routine was checked separately.
+*Reading:* the first symmetric function over the 510 points has height
+above about 5070 bits, or above about 9800 bits if the 30 quantities
+share a denominator; the ratio to the model invariant on C (1966 bits)
+is above 2.6 (5.0 with sharing). No positive control exists yet for the
+whole chain, so a defect in the stability assumption cannot be told
+apart from height at this point. The lift was then made about 40 times
+cheaper (each Newton step in the ring of its target precision, no
+inverse update at the last step: 139 s per point at 31^2048, identical
+output) and 30 lifts at 31^8192 (40585 bits) were started.
 
 <!-- D173 -->
 
