@@ -76,6 +76,28 @@ quartics vanishing to order 88 at P32 is computed from the class; it
 does not depend on the representative, f(Frob x) = Frob f(x), and
 r(x) = c_89/c_88 has degree 17 over F_31. Remaining: enumerate N1 and
 N2, lift over W_N(F_31^17), recognize.
+*Galois stability of N1 u N2 (25 November; argument, no new
+computation).* Assumptions: C is the Shimura quotient (D158), so T31 at
+the prime g31 of F acts on J(C) over F and Frob^2 - T31*Frob + 31 = 0
+at g31. Computed inputs: T31 mod 2 = h1^2 h2^2 with h1 = z^4+z+1,
+h2 = z^4+z^3+z^2+z+1; g1 = x^8+x^5+x^4+x^3+1 = x^4*h1(x + 1/x) (checked
+by hand; g1 is palindromic); #J(C)(F_31^17) has 2-part 2^32 with
+valuation 2 at each prime above 2 of Q(zeta_17), and the point of order
+4 from script 22 shows that the part at the first prime is cyclic of
+length 2, so N1 has dimension 8. (1) On A1 = ker h1(T31) in J(C)[2],
+Frobenius satisfies g1, which is separable of order 17, so A1 lies in
+J(C)[2](F_31^17) and in ker g1(Frob), i.e. in N1. Conversely on N1,
+T31 = Frob + Frob^-1 mod 2 satisfies h1. So N1 = ker h1(T31), which is
+stable under G_F. The same holds for N2 once its dimension 8 is
+confirmed by the PIDX=2 run. (2) A maximal ideal m of the mod-2 Hecke
+algebra above (2, h1(T31)) has residue field containing F_16 and J[m]
+is a nonzero F_16-space on which Frobenius has an irreducible quadratic
+characteristic polynomial, so dim_F2 J[m] >= 8; two such ideals would
+give 16 dimensions inside N1. So there are exactly two maximal ideals,
+N_i = J[m_i], and Gal(F/Q) permutes them. Hence N1 u N2 is stable under
+G_Q, and each N_i is stable over Q or Q(sqrt 2). This is a proof under
+the stated assumptions, not an independent numerical check; the
+recognition of the sums will be the numerical confirmation.
 
 <!-- D173 -->
 

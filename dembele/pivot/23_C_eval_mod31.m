@@ -100,7 +100,7 @@ B43 := ChangeRing(Bc(43), K)*V2;
 printf "S23|Taylor expansion at P32 to t^%o (anchor %o, parameter %o); orders 43, 86, 87, 88 impose independent conditions [%o s]\n", PT, anchor, parameter, Cputime(started);
 
 function Evaluate2T(W, iw)
-    w := W[iw];
+    w := RandSection(W);      // W may be row-reduced on the evaluation points; a random section has no zeros there
     Sx := QuotientSpace(W, ScaleRows(B43, w), B43, 2);
     Wn := QuotientSpace(W, ScaleRows(V2, w), V2, 45);
     qd := QuotientSpace(W, ScaleRows(Wn, w), Wn, 1)[1];
